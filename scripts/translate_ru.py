@@ -14,7 +14,11 @@ JS_KEYS = "label|title|content|hint|placeholder|tooltip|caption|message|descript
 JS_DQ = re.compile(r'(\b(?:'+JS_KEYS+r')\s*:\s*)"((?:\\.|[^"\\])*)"', re.S)
 JS_SQ = re.compile(r"(\b(?:"+JS_KEYS+r")\s*:\s*)'((?:\\.|[^'\\])*)'", re.S)
 JS_ASSIGN = re.compile(r'(\b(?:innerHTML|textContent|innerText|placeholder|ariaLabel|title|tooltip)\s*=\s*)"((?:\\.|[^"\\])*)"', re.S)
+JS_ASSIGN_SQ = re.compile(r"(\b(?:innerHTML|textContent|innerText|placeholder|ariaLabel|title|tooltip)\s*=\s*)'((?:\\.|[^'\\])*)'", re.S)
 JS_NOTIFY = re.compile(r'((?:ui\.notifications|Notifications)\.(?:info|warn|error|success)\s*\(\s*)"((?:\\.|[^"\\])*)"')
+JS_NOTIFY_SQ = re.compile(r"((?:ui\.notifications|Notifications)\.(?:info|warn|error|success)\s*\(\s*)'((?:\\.|[^'\\])*)'")
+JS_SETATTR_DQ = re.compile(r'((?:\.setAttribute\s*\(\s*)["\'](?:title|placeholder|aria-label|alt|data-tooltip)["\']\s*,\s*)"((?:\\.|[^"\\])*)"', re.I)
+JS_SETATTR_SQ = re.compile(r"((?:\.setAttribute\s*\(\s*)[\"'](?:title|placeholder|aria-label|alt|data-tooltip)[\"']\s*,\s*)'((?:\\.|[^'\\])*)'", re.I)
 TICK = chr(96)
 JS_TICK_PROP = re.compile(r'(\b(?:content|template|html|message|description|label|title)\s*:\s*)' + TICK + r'(.*?)' + TICK, re.S)
 JS_TICK_ASSIGN = re.compile(r'(\b(?:innerHTML|textContent|innerText)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
@@ -173,7 +177,7 @@ for p in js_files:
     for block in CONFIG_OBJ.findall(raw):
         for rx in (CONFIG_DQ,CONFIG_SQ):
             for m in rx.finditer(block): add(m.group(2),phrases)
-    for rx in (JS_DQ,JS_SQ,JS_ASSIGN,JS_NOTIFY):
+    for rx in (JS_DQ,JS_SQ,JS_ASSIGN,JS_ASSIGN_SQ,JS_NOTIFY,JS_NOTIFY_SQ,JS_SETATTR_DQ,JS_SETATTR_SQ):
         for m in rx.finditer(raw):
             val=m.group(2)
             if chr(36)+"{" not in val and "{{" not in val: add(val,phrases)
@@ -235,7 +239,11 @@ def js_sub(p, raw):
     raw=JS_DQ.sub(dq,raw)
     raw=JS_SQ.sub(sq,raw)
     raw=JS_ASSIGN.sub(dq,raw)
+    raw=JS_ASSIGN_SQ.sub(sq,raw)
     raw=JS_NOTIFY.sub(dq,raw)
+    raw=JS_NOTIFY_SQ.sub(sq,raw)
+    raw=JS_SETATTR_DQ.sub(dq,raw)
+    raw=JS_SETATTR_SQ.sub(sq,raw)
     raw=JS_TICK_PROP.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
     raw=JS_TICK_ASSIGN.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
     return raw.replace("systems/deathwatch/","systems/deathwatch-ru/")
