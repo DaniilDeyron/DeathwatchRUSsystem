@@ -236,8 +236,14 @@ for p in html_files:
 
 def config_sub(m):
     block=m.group(1)
-    block=CONFIG_DQ.sub(lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
-    block=CONFIG_SQ.sub(lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
+    # Translate only presentation maps. Enum values in WeaponDamageType and other
+    # gameplay config maps must remain canonical English, since mechanics compare them.
+    if "DWConfig.Skills" in block or "DWConfig.CharacteristicWords" in block:
+        block=CONFIG_DQ.sub(lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
+        block=CONFIG_SQ.sub(lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
+    elif "DWConfig.TestDifficulties" in block:
+        block=re.sub(r'(\blabel\s*:\s*)"([^"]*)"',lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
+        block=re.sub(r"(\blabel\s*:\s*)'([^']*)'",lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
     return block
 
 def js_sub(p, raw):
