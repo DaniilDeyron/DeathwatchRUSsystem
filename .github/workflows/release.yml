@@ -9,6 +9,7 @@ on:
         default: "v0.0.2-ru.1"
         type: string
   push:
+    branches: [main]
     tags:
       - "v*"
 
@@ -17,6 +18,7 @@ permissions:
 
 jobs:
   build-and-release:
+    if: github.event_name != 'push' || github.ref_type == 'tag' || startsWith(github.event.head_commit.message, '[build-ru]')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout translation repository
@@ -88,6 +90,8 @@ jobs:
         run: |
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             echo "tag_name=$INPUT_TAG" >> "$GITHUB_OUTPUT"
+          elif [[ "$EVENT_NAME" == "push" && "$REF_NAME" == "main" ]]; then
+            echo "tag_name=v0.0.2-ru.2" >> "$GITHUB_OUTPUT"
           else
             echo "tag_name=$REF_NAME" >> "$GITHUB_OUTPUT"
           fi
