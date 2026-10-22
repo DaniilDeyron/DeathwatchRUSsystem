@@ -1,0 +1,17 @@
+{
+  "_id": "CHANGEME0000001",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "name": "Item Name",
+  "system": {
+    "book": "",
+    "description": "",
+    "equipped": false,
+    "modifiers": [],
+    "page": "",
+    "renown": "",
+    "req": 0,
+    "shortDescription": "",
+    "wt": 0
+  },
+  "type": "gear"
+}

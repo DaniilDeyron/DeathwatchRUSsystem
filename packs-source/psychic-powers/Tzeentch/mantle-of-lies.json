@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000105",
+  "name": "Mantle of Lies",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "219",
+    "key": "mantle-of-lies",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> None</p><p><strong>Focus Power:</strong> Routine (+20) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker wraps himself in a cloak of deception, his lies becoming more convincing and his manipulations more effective. Tzeentch is the master of schemes and plots, and his followers gain supernatural skill at weaving webs of deceit.</p><p>While this power remains in effect, the psyker gains a bonus equal to +10 x his Psy Rating to all Deceive Tests and any Fellowship-based Tests that involve deception or manipulation.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

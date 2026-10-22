@@ -1,0 +1,22 @@
+{
+  "_id": "armorhist0000006",
+  "name": "Thy strength be legend",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/strength.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>The raw physical strength of the Adeptus Astartes is already the stuff of legend, which all power armour further enhances. This suit, however, makes the bearer's strength truly titanic. Such armour has created tales of burning vehicles levered from atop trapped comrades and crumbling buildings supported by the Battle-Brother alone. The bearer receives an extra +10 bonus to Strength, in addition to the normal bonus granted by power armour. The Strength bonus from this power armour is added in after the modifications for Unnatural Strength.</p>",
+    "modifiers": [
+      {
+        "_id": "armhistmod0009",
+        "name": "Titanic Strength",
+        "modifier": "10",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "str",
+        "enabled": true
+      }
+    ]
+  }
+}

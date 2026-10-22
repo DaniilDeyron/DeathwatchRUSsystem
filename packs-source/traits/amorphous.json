@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000001",
+  "name": "Amorphous",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>An amorphous creature has a malleable form, capable of squeezing its body or expanding it. It can change size by one step in either direction, though doing so does not change its speed. Creatures with this trait determine their movement rates using one-half their Agility Bonus (rounding up). Amorphous creatures are often missing senses and so rely on the Unnatural Senses Trait to perceive their surroundings.</p>",
+    "modifiers": []
+  }
+}

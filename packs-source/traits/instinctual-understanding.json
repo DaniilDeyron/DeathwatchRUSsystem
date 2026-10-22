@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000070",
+  "name": "Instinctual Understanding",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Mark Of the Xenos",
+    "page": "15",
+    "description": "<p>The Shaper may select one target that he can see. If the Shaper has previously devoured an example of the target's race, the Shaper may make a Challenging (+0) Scrutiny Test against the target as a Half Action.</p><p><strong>If successful, the Shaper may determine the number of Wounds that the target possesses, and may further determine a number of the target's characteristic bonuses equal to the degrees of success on the Scrutiny Test.</strong> The Shaper may select which characteristic bonuses he discovers when using this ability.</p><p><strong>The Shaper may use this ability once per target per encounter.</strong></p>",
+    "modifiers": []
+  }
+}

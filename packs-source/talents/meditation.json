@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000161",
+  "name": "Meditation",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "",
+    "benefit": "Willpower Test and 10 minutes to remove one level of Fatigue",
+    "description": "<p>The character has mastered his body and its reactions by the practice of meditative techniques, shutting down unnecessary functions that enables him to refresh both body and mind. <b>Success on a Willpower Test and 10 minutes without interruptions removes one level of Fatigue.</b></p>",
+    "compendiumId": "tal00000000161",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

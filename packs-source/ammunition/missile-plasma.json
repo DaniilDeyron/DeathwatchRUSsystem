@@ -1,0 +1,42 @@
+{
+  "_id": "ammo-missile-plasma",
+  "name": "Astartes Plasma Missile",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/weapons/missiles.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "150",
+    "capacity": { "value": 1, "max": 1 },
+    "quantity": 1,
+    "req": 25,
+    "renown": "Distinguished",
+    "description": "<p>A larger incarnation of the plasma grenade, a salvo of plasma missiles can easily turn enemy troops into a smoking crater. Indeed, a Battle-Brother must take care when firing one of these dangerous weapons that his own Kill-team is sufficiently out of harm's way. Plasma missiles have the same continuing effect as a plasma grenade. In addition, they pose an additional threat to vehicles. The plasma core can become fused with the hull, leaving no escape. If a plasma missile attack on a vehicle scores 4 or more degrees of success, the Blast radius becomes centred on the vehicle rather than a stationary point.</p><p><b>Damage:</b> 2d10+12 Energy, Pen 12</p><p><b>Qualities:</b> Blast (3), Volatile</p><p><b>Used with:</b> Missile Launchers (Cyclone, Soundstrike, Armoursbane)</p>",
+    "modifiers": [
+      {
+        "_id": "plasma0000000001",
+        "name": "Plasma Missile Damage",
+        "modifier": "2d10+12",
+        "type": "equipment",
+        "effectType": "weapon-damage-override",
+        "enabled": true
+      },
+      {
+        "_id": "plasma0000000002",
+        "name": "Plasma Missile Penetration",
+        "modifier": "12",
+        "type": "equipment",
+        "effectType": "weapon-penetration",
+        "enabled": true
+      },
+      {
+        "_id": "plasma0000000003",
+        "name": "Plasma Missile Blast",
+        "modifier": "3",
+        "type": "equipment",
+        "effectType": "weapon-blast",
+        "enabled": true
+      }
+    ],
+    "wt": 3
+  }
+}

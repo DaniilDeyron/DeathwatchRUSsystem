@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-leg0010",
+  "name": "Level 10",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Leg",
+    "description": "As above, except in addition, if the target is carrying any ammunition, it explodes dealing 1d10+5 Impact Damage to anyone within 1d10 metres. If the target is carrying any grenades or missiles, these too detonate on the target's person.",
+    "effects": []
+  }
+}

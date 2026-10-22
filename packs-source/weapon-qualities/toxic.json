@@ -1,0 +1,13 @@
+{
+  "_id": "toxic",
+  "name": "Toxic",
+  "type": "weapon-quality",
+  "img": "icons/svg/poison.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "toxic",
+    "value": "",
+    "description": "<p>Some weapons rely on toxins and poisons to do their damage. Anyone that takes Damage from a Toxic weapon after reduction for Armour and Toughness Bonus must make a Toughness Test with a –5 Penalty for every Point of Damage suffered. Success indicates no further effect from the weapon. Failure, however, deals an immediate 1d10 points of Impact Damage to the target with no reduction from Armour or Toughness Bonus.</p>"
+  }
+}

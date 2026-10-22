@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000016",
+  "name": "Flyer",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "132",
+    "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "_id": "armor00000000001",
+  "name": "Mark VII Aquila Power Armour",
+  "type": "armor",
+  "img": "systems/deathwatch/icons/armor/markvii.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "161",
+    "head": 8,
+    "body": 10,
+    "left_arm": 8,
+    "right_arm": 8,
+    "left_leg": 8,
+    "right_leg": 8,
+    "req": 0,
+    "renown": "",
+    "attachedHistories": [],
+    "description": "<p>The Mark VII 'Aquila' pattern is the most common type of Power Armour worn by the Adeptus Astartes. It is a marvel of technology, providing comprehensive protection while enhancing the wearer's strength and speed. The armour's machine spirit is linked to the wearer's Black Carapace, making it an extension of the Space Marine's body.</p><p>The Mark VII features the distinctive high collar and studded left shoulder pad that have become iconic symbols of the Space Marines.</p>",
+    "modifiers": [
+      {
+        "_id": "4d7fe3712ae670ea",
+        "name": "Enhanced Strength",
+        "modifier": "20",
+        "type": "equipment",
+        "effectType": "characteristic-post-multiplier",
+        "valueAffected": "str",
+        "enabled": true
+      },
+      {
+        "_id": "c82853fcf0d89f9c",
+        "name": "Giant Among Men",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "movement",
+        "enabled": true
+      },
+      {
+        "_id": "9a29efe9406cc26f",
+        "name": "Hulking Size",
+        "modifier": "-10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      }
+    ],
+    "armorEffects": [
+      {
+        "name": "Auto-senses",
+        "points": [
+          "Dark Sight trait",
+          "Heightened Senses: +10 to Sight and Sound-based Awareness tests",
+          "Stacks with Lyman's Ear and Occulobe for +20 total",
+          "Immunity to photon flash and stun grenades",
+          "Called Shot becomes a Half Action"
+        ]
+      },
+      {
+        "name": "Bio-monitor & Injectors",
+        "points": [
+          "+10 to tests resisting Toxic and poison effects",
+          "6 pain suppressor doses (each ignores Critical Effects for 1d10 rounds)",
+          "Stun effects last maximum 1 round"
+        ]
+      },
+      {
+        "name": "Osmotic Gill Life Sustainer",
+        "points": [
+          "Environmentally sealed with helmet",
+          "Maintains oxygen supply while powered"
+        ]
+      },
+      {
+        "name": "Vox Link",
+        "points": [
+          "Standard vox and data transmission",
+          "Squad bio-monitor feed"
+        ]
+      },
+      {
+        "name": "Magnetized Boot Soles",
+        "points": ["Activate for Magboots equivalent"]
+      },
+      {
+        "name": "Nutrient Recycling",
+        "points": [
+          "Sustains wearer for extended periods",
+          "After 2 weeks without food, Toughness Test or 1 Fatigue",
+          "Difficulty increases every 2 weeks without food"
+        ]
+      },
+      {
+        "name": "Recoil Suppression",
+        "points": [
+          "Fire Basic weapons one-handed",
+          "Non-Pistol ranged weapons still cannot be used in Close Combat"
+        ]
+      },
+      {
+        "name": "Giant Among Men",
+        "points": [
+          "Hulking size",
+          "Black Carapace negates enemy attack bonus from size",
+          "Penalties to Concealment and Silent Move for heavy armour"
+        ]
+      },
+      {
+        "name": "Poor Manual Dexterity",
+        "points": [
+          "-10 to delicate tasks without Astartes-designed equipment",
+          "Cannot wield non-Astartes ranged weapons",
+          "20 min to don/remove (min 5 min with assistance)"
+        ]
+      }
+    ]
+  }
+}

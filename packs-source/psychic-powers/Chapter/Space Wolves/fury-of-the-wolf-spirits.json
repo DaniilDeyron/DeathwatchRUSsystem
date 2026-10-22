@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000036",
+  "name": "Fury of the Wolf Spirits",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/space-wolves.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "198",
+    "key": "fury-of-the-wolf-spirits",
+    "range": "5 metre radius x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 2000,
+    "class": "Chapter",
+    "description": "<p>The Rune Priest summons up the spirits of the Thunderwolves, Freki the Fierce and Geri the Cunning, unleashing them upon his foes. As long as this power is sustained, the Rune Priest is flanked by two spectral wolves that he may direct against his foes with a verbal command. The wolves cannot be damaged by attacks nor can they be grappled (though effects that end or disrupt the power will affect them as normal). They also cannot stray outside the range of the power.</p><p>Each Round on the Librarian's Initiative, each wolf may make a single melee attack against any target within range (they move automatically into contact with their foe and are not impeded by any kind of terrain). Each attack will automatically hit unless Dodged or Parried. Freki's bite inflicts 1d10 x PR Rending damage, while Geri's bite inflicts 1d5 x PR Rending damage with a Penetration of 3 x PR. Any target that takes damage from either Freki or Geri must make a roll on the Shock Table (unless the target is immune to Fear) adding the damage taken to the result.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp"
+  }
+}

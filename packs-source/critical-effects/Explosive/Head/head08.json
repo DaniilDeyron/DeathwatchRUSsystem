@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-head0008",
+  "name": "Level 08",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Head",
+    "description": "In a series of unpleasant explosions the target's head and torso peel apart, leaving a gory mess on the ground. For the rest of the fight, anyone moving over this spot must make a Challenging (+0) Agility Test or fall prone.",
+    "effects": []
+  }
+}

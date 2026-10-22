@@ -1,0 +1,30 @@
+{
+  "_id": "cyb000000008",
+  "name": "Bionic Heart (Exceptional Craftsmanship)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/bionic-heart.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "equipped": false,
+    "description": "<p>A Space Marine is quite capable of living through the destruction of one of his two hearts. Naturally if this happens, the organ must be replaced. The necessarily lightweight materials of a bionic heart do not provide quite as much shielding as the thick plating of an external bionic, adding only 1 to the Body location's Toughness Bonus.</p><p><strong>Exceptional Craftsmanship:</strong> Can be triggered to pump more rapidly to increase physical capacity, though prolonged operation puts stress on the circulatory system. This provides the Sprint Talent, allowing the character to move at triple their normal movement rate as a Full Action once per encounter.</p>",
+    "modifiers": [
+      {
+        "_id": "mod000000007",
+        "name": "Bionic Heart Body Armor",
+        "modifier": 1,
+        "type": "equipment",
+        "effectType": "armor",
+        "valueAffected": "body",
+        "enabled": true
+      }
+    ],
+    "req": 15,
+    "renown": "Respected",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

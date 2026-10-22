@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000104",
+  "name": "Gholam Curse",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "219",
+    "key": "gholam-curse",
+    "range": "5 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "Yes",
+    "cost": 300,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> Willpower 45</p><p><strong>Focus Power:</strong> Challenging (+0) Opposed Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker reaches into the target's body and mind, warping and weakening one of his characteristics. This insidious curse can cripple even the mightiest warrior, leaving him a shadow of his former self.</p><p>The psyker must nominate a single target within range and line of sight, who may resist with an Opposed Willpower Test. If the psyker wins the test, the target suffers 1d5 points of damage to a characteristic of the psyker's choice.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

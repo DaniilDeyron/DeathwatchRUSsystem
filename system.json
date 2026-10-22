@@ -1,0 +1,221 @@
+{
+  "id": "deathwatch-ru",
+  "title": "Warhammer 40,000: Deathwatch — Русская версия",
+  "description": "Отдельная русифицированная версия системы Warhammer 40,000: Deathwatch для Foundry VTT. Включает оригинальное содержимое системы и стартовый слой русской локализации; перевод компендиумов и части интерфейса пока не завершён.",
+  "version": "0.0.2-ru.1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Aleslammer"
+    }
+  ],
+  "esmodules": [
+    "module/deathwatch.mjs"
+  ],
+  "styles": [
+    "styles/deathwatch.css",
+    "css/token-action-hud.css"
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "enemy": {},
+      "horde": {}
+    },
+    "Item": {
+      "weapon": {},
+      "armor": {},
+      "armor-history": {},
+      "gear": {},
+      "ammunition": {},
+      "demeanour": {},
+      "critical-effect": {},
+      "talent": {},
+      "trait": {},
+      "specialty": {},
+      "chapter": {},
+      "implant": {},
+      "cybernetic": {},
+      "weapon-quality": {},
+      "weapon-upgrade": {},
+      "psychic-power": {},
+      "special-ability": {},
+      "battle-trauma": {}
+    }
+  },
+  "packs": [
+    {
+      "name": "ammunition",
+      "label": "Боеприпасы",
+      "path": "packs/ammunition",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "gear",
+      "label": "Снаряжение",
+      "path": "packs/gear",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "weapons",
+      "label": "Оружие",
+      "path": "packs/weapons",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "armor",
+      "label": "Броня",
+      "path": "packs/armor",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "tables",
+      "label": "Таблицы",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "system": "deathwatch"
+    },
+    {
+      "name": "critical-effects",
+      "label": "Критические эффекты",
+      "path": "packs/critical-effects",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "demeanours",
+      "label": "Черты характера",
+      "path": "packs/demeanours",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "talents",
+      "label": "Таланты",
+      "path": "packs/talents",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "traits",
+      "label": "Особенности",
+      "path": "packs/traits",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "chapters",
+      "label": "Орденские главы",
+      "path": "packs/chapters",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "specialties",
+      "label": "Специализации",
+      "path": "packs/specialties",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "implants",
+      "label": "Импланты",
+      "path": "packs/implants",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "cybernetics",
+      "label": "Кибернетика",
+      "path": "packs/cybernetics",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "weapon-qualities",
+      "label": "Качества оружия",
+      "path": "packs/weapon-qualities",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "weapon-upgrades",
+      "label": "Улучшения оружия",
+      "path": "packs/weapon-upgrades",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "psychic-powers",
+      "label": "Психические силы",
+      "path": "packs/psychic-powers",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "battle-traumas",
+      "label": "Боевые травмы",
+      "path": "packs/battle-traumas",
+      "type": "Item",
+      "system": "deathwatch"
+    },
+    {
+      "name": "enemies",
+      "label": "Противники",
+      "path": "packs/enemies",
+      "type": "Actor",
+      "system": "deathwatch"
+    },
+    {
+      "name": "macros",
+      "label": "Макросы",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "deathwatch"
+    }
+  ],
+  "initiative": "1d10 + @agBonus + @initiativeBonus",
+  "grid": {
+    "distance": 3,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "wounds",
+  "secondaryTokenAttribute": "fatigue",
+  "socket": true,
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/Aleslammer/deathwatch_foundryvtt/main/src/icons/Deathwatch.png",
+      "caption": "Deathwatch"
+    },
+    {
+      "type": "icon",
+      "url": "https://raw.githubusercontent.com/Aleslammer/deathwatch_foundryvtt/main/src/icons/Deathwatch.png",
+      "caption": "Deathwatch"
+    },
+    {
+      "type": "setup",
+      "url": "https://raw.githubusercontent.com/Aleslammer/deathwatch_foundryvtt/main/src/icons/Deathwatch.png",
+      "caption": "Deathwatch"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "url": "https://github.com/REPLACE_WITH_YOUR_USERNAME/deathwatch-ru",
+  "manifest": "https://raw.githubusercontent.com/REPLACE_WITH_YOUR_USERNAME/deathwatch-ru/main/system.json",
+  "download": "https://github.com/REPLACE_WITH_YOUR_USERNAME/deathwatch-ru/archive/refs/heads/main.zip"
+}

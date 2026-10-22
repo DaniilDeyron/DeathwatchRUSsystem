@@ -1,0 +1,13 @@
+{
+  "name": "Sus-an Membrane",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Suspended animation ability",
+    "description": "<p>The Space Marine may voluntarily enter a form of suspended animation. To do so, the Space Marine must meditate for 1d5 Rounds. This organ also automatically activates if the Space Marine is knocked unconscious by Critical Damage. While in suspended animation, the Space Marine's wounds will not deteriorate or heal. It requires chemical therapy, auto-suggestion techniques, and a successful Hard (–20) Medicae Test to revive a Space Marine in suspended animation.</p>",
+    "modifiers": []
+  }
+}

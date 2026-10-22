@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000002",
+  "name": "Fire for Effect",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "221",
+    "key": "fire-for-effect",
+    "description": "<p>Working as a single well-oiled machine, the Kill-team can snap off shots at targets as they appear. While this power is in effect, the Kill-team may use their Reactions to make a Standard Attack with a ranged weapon.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Kill-team can make Semi-Auto Bursts and Full-Auto Bursts instead of a Standard Attack with ranged weapons</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team may use Reactions to make a Standard Attack with a ranged weapon",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Kill-team can make Semi-Auto Bursts and Full-Auto Bursts instead of a Standard Attack with ranged weapons"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "half"
+  }
+}

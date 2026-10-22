@@ -1,0 +1,25 @@
+{
+  "_id": "clip00000000004",
+  "name": "Dragonfire Rounds",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-dragonfire.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "159",
+    "capacity": { "value": 12, "max": 12 },
+    "quantity": 1,
+    "req": 28,
+    "renown": "Respected",
+    "description": "<p>Dragonfire shells replace their main explosive charge with an air-reactive concentrate. When the round detonates, the payload combusts in a burst of fire, offering area saturation comparable to a flamer.</p><p><b>Effects</b>: Decrease the weapon’s Damage by 2. Anyone within 2 metres of, and including, the target must succeed on an Agility Test or catch on fire. The firer may choose to target an object or specific area instead of an opponent. In this case the shot is Routine (+20), and everyone in the 2 metre radius must Test to avoid catching fire. <b>Used With</b>: All bolt weapons</p>",
+    "modifiers": [
+      {
+        "_id": "3d71465193a54382",
+        "name": "Dragonfire Damage Reduction",
+        "modifier": "-2",
+        "type": "equipment",
+        "effectType": "weapon-damage",
+        "enabled": true
+      }
+    ]
+  }
+}

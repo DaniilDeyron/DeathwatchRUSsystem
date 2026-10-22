@@ -1,0 +1,13 @@
+{
+  "_id": "flexible",
+  "name": "Flexible",
+  "type": "weapon-quality",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "flexible",
+    "value": "",
+    "description": "<p>Flexible weapons can be used to make attacks against targets that are normally protected by cover or other obstacles. When attacking a target in cover with a Flexible weapon, reduce the cover bonus by half (round down).</p>"
+  }
+}

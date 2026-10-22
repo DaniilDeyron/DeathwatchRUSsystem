@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000113",
+  "name": "Lash of Submission",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/slaanesh.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "217",
+    "key": "lash-of-submission",
+    "range": "Psy Rating metres",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "Yes",
+    "cost": 400,
+    "class": "Slaanesh",
+    "description": "<p><strong>Prerequisites:</strong> Aligned Slaanesh, Willpower 50+, Psy Rating 4</p><p><strong>Focus Power:</strong> Challenging (+0) Opposed Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The Sorcerer projects a lurid, glowing cord of energy that wraps itself around his enemies, worming itself into their minds and overwhelming their will for a few brief moments. Many sorcerers take a perverse pleasure in making others dance like puppets for them, becoming enthralled by the power and dominance they can exert and delighting in the horrific acts they can make others perform.</p><p>The Sorcerer nominates a single creature within range and line of sight, which may resist the power using a Willpower Test. If the test is failed, then the creature's actions, for a number of turns equal to the Sorcerer's Psy Rating, are chosen by the Sorcerer instead. The victim may only perform a single half action each turn he is controlled, and may not perform any action with the Concentration subtype.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

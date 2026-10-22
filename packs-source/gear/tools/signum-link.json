@@ -1,0 +1,15 @@
+{
+  "_id": "signumlink00001",
+  "name": "Signum Link",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/signum.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 0.5,
+    "req": 20,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>A signum is a useful tool alone, but by equipping the targeting systems of one or more squad members with a signum link, they can make optimal use of the signum’s readings to achieve unparalleled acts of teamwork by forming a web of their interconnected autosenses. This allows all participating members to make a concerted attack on the same foe, striking with a coordinated precision that makes their assault all but inescapable. </p><p>To form a signum web, at least one member of a Squad must be equipped with a signum. One or more other characters in the squad then equip their armour with signum links. All characters in Squad Mode on the web (via the signum or a link) may benefit from the rules for ganging up on an opponent, regardless of whether they are engaged in melee or using ranged attacks, and with the benefits applying both to Weapon Skill and Ballistic Skill. Characters in Solo mode gain no benefits from being part of the signum’s web.</p>"
+  }
+}

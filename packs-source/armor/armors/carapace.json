@@ -1,0 +1,59 @@
+{
+  "_id": "armor00000000006",
+  "name": "Carapace Armour",
+  "type": "armor",
+  "img": "systems/deathwatch/icons/armor/carapace.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "163",
+    "head": 6,
+    "body": 6,
+    "left_arm": 6,
+    "right_arm": 6,
+    "left_leg": 6,
+    "right_leg": 6,
+    "req": 0,
+    "renown": "",
+    "attachedHistories": [],
+    "description": "<p>While carapace armour may be a sign of status among standard Imperial forces, its protection is substantially inferior to power armour, and it is typically worn only by Space Marine Scouts. Made from moulded plates of armaplas, ceramite, or other strong materials, it can cover the entire body or just sections depending on the desired level of protection. Space Marine Scouts wear carapace plates that allow maximum freedom of movement for the stealth operations of their units, while Tau Fire Warriors wear thick, articulated suits complete  with helmets. </p>",
+    "modifiers": [],
+    "armorEffects": [
+      {
+        "name": "Auto-senses",
+        "points": [
+          "Dark Sight trait",
+          "Heightened Senses: +10 to Sight and Sound-based Awareness tests",
+          "Stacks with Lyman's Ear and Occulobe for +20 total",
+          "Immunity to photon flash and stun grenades",
+          "Called Shot becomes a Half Action"
+        ]
+      },
+      {
+        "name": "Bio-monitor & Injectors",
+        "points": [
+          "+10 to tests resisting Toxic and poison effects",
+          "6 pain suppressor doses (each ignores Critical Effects for 1d10 rounds)",
+          "Stun effects last maximum 1 round"
+        ]
+      },
+      {
+        "name": "Osmotic Gill Life Sustainer",
+        "points": [
+          "Environmentally sealed with helmet",
+          "Maintains oxygen supply while powered"
+        ]
+      },
+      {
+        "name": "Vox Link",
+        "points": [
+          "Standard vox and data transmission",
+          "Squad bio-monitor feed"
+        ]
+      },
+      {
+        "name": "Magnetized Boot Soles",
+        "points": ["Activate for Magboots equivalent"]
+      }
+    ]
+  }
+}

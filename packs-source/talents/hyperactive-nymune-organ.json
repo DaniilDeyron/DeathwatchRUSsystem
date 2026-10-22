@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000284",
+  "name": "Hyperactive Nymune Organ",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "Mark Of the Xenos",
+    "page": "15",
+    "prerequisite": "Kroot",
+    "benefit": "+1 Reaction, enhanced movement, risk of Fatigue",
+    "description": "<p>The Kroot's nymune organs are hyperactive, storing great amounts of energy. The Kroot's metabolism is sped up, improving his raw muscle speed, reflexes, and reaction time.</p><p><b>The Kroot gains one additional Reaction per round. When taking a Full Move Action, the Kroot may move an extra number of metres equal to his unmodified Agility Bonus. When taking the Run Action, he may double his movement for one Round.</b></p><p>He gains one level of Fatigue if he uses this Talent in two consecutive Turns unless he passes a Challenging (+0) Toughness Test.</p>",
+    "compendiumId": "tal00000000284",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

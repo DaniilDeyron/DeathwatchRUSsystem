@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000013",
+  "name": "Fuel",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/fuel.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 10, "max": 10 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Flame weapons use liquid fuel, which can vary greatly in composition and quality. Underhivers on poor Imperial worlds may construct shoddy weapons using nothing but flammable alcohols, while the Adeptus Astartes weapons use only the purest promethium. A fuel tank always provides shots equal to the weapon's full clip value.</p><p><b>Used With</b>: Flamers, hand flamers, heavy flamers.</p>"
+  }
+}

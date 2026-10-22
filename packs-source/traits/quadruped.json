@@ -1,0 +1,21 @@
+{
+  "_id": "trt000000000030",
+  "name": "Quadruped",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "134",
+    "description": "<p>Quadrupeds are much quicker over a distance than their bipedal counterparts. To calculate their movement, double their Agility Bonus. This trait is intended to cover creatures with hind legs and forepaws. Creatures with more than four legs may gain this trait but they increase the Agility Bonus by 1 multiplier for every extra set of legs (six legs equals AB ×3, eight legs AB × 4, and so on).</p>",
+    "modifiers": [
+      {
+        "_id": "quadruped-movement",
+        "name": "Quadruped",
+        "modifier": 2,
+        "type": "trait",
+        "effectType": "movement-multiplier",
+        "enabled": true
+      }
+    ]
+  }
+}

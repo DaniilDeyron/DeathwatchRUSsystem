@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000008",
+  "name": "Broadside Railgun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-broadside-railgun.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "3d10+30",
+    "dmgType": "Impact",
+    "penetration": "15",
+    "range": "500",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "mounted" }],
+    "description": "<p>The Broadside Railgun is one of the most powerful anti-armor weapons in the Tau arsenal. Mounted on the XV88 Broadside Battlesuit, this massive weapon fires electromagnetically accelerated projectiles at hypersonic velocities, capable of punching through the thickest armor plating.</p>",
+    "modifiers": [],
+    "key": "broadside-railgun"
+  }
+}

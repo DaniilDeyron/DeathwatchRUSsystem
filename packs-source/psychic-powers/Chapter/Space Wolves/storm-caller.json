@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000038",
+  "name": "Storm Caller",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/space-wolves.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "198",
+    "key": "storm-caller",
+    "range": "5 metre radius x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>The Rune Priest invokes the ancient rites of ice and snow, calling up a blizzard of psychic energy around himself and his allies. While this power is in effect, the Rune Priest and all allies within the power's radius become shrouded in ethereal mist. All ranged attacks they make, or that are made against them, suffer a penalty of –5 x PR. Any ally who moves outside the range of the power immediately loses its effects. The power’s effect moves with the Rune Priest for the duration of the power.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "tyranid000000009",
+  "name": "Lash Whip",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-lash-whip.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "373",
+    "class": "Melee",
+    "dmg": "1d10+3",
+    "dmgType": "Rending",
+    "penetration": "3",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "flexible" }, { "id": "snare" }],
+    "description": "<p>A Lash Whip is a living scourge of muscle and sinew. Its tendrils snake around an opponent's defences to strangle and ensnare those that are not sliced apart by the bony hooks at the tip of each tentacle.</p>",
+    "modifiers": []
+  }
+}

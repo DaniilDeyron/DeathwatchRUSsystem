@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000063",
+  "name": "Mob Rule",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Mark of Xenos",
+    "page": "56",
+    "description": "<p>All Orks are latently psychic, an ability that increases in strength the more of them there are in one place. This bolsters their confidence and courage to near-fearless levels when they gather en masse. For every additional Ork within 10m, the Ork’s Willpower gains a <b>+10 bonus to resist the effects of Fear and Pinning</b>. In a <b>Horde, Orks are immune to Fear and Pinning</b>.</p>",
+    "modifiers": []
+  }
+}

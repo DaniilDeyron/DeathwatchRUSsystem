@@ -1,0 +1,13 @@
+{
+  "_id": "force",
+  "name": "Force",
+  "type": "weapon-quality",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "142",
+    "key": "force",
+    "value": "",
+    "description": "<p>Force weapons are psychically-attuned weapons that are only effective in the hands of a psyker. When wielded by a non-psyker, a force weapon simply counts as a normal weapon of its type. In the hands of a psyker, these weapons are devastating. When a psyker damages an opponent, he may, as a Free Action, channel psychic force and make a Focus Power Test (Opposed by the target's Willpower). If the psyker wins the Opposed Test, the Force weapon's wielder deals an additional 1d10 Energy Damage per point of Psy Rating, ignoring Toughness Bonus and Armour.</p>"
+  }
+}

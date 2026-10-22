@@ -1,0 +1,14 @@
+{
+  "_id": "rending-arm0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Arm",
+    "description": "The blow mangles flesh and muscle as it hacks into the target's hand, liberating 1d5 fingers in the process (a roll of a 5 means that the thumb has been sheared off). The target takes 3 levels of Fatigue and must immediately make a Challenging (+0) Toughness Test or lose the use of his hand.",
+    "effects": []
+  }
+}

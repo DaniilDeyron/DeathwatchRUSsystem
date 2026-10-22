@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000259",
+  "name": "Thunder Charge",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "128",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Unarmed attack with Knock Down on Charge before normal attack",
+    "description": "<p>The Battle-Brother charges into combat using his armoured body as an additional weapon. Driven by his armour and the Battle-Brother's enhanced muscle, the impact of such a charge is like being struck by a thunderbolt. <b>When the Battle-Brother makes a Charge Action, first make an unarmed attack (see page 245 for more details) against every opponent he is charging. This represents slamming into the enemy with the character's armoured bulk. This attack automatically also has the potential to knock the opponent down in the same way as if the Battle-Brother had used the Knock Down Action (see page 241 for more details). Once this attack has been resolved, the Battle-Brother may make his normal Charge Attack as normal. If the Battle-Brother charges a Horde, he may make d5+1 unarmed attacks against the Horde.</b></p>",
+    "compendiumId": "tal00000000259",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

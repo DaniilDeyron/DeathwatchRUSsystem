@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000035",
+  "name": "Chem Geld",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "",
+    "benefit": "Immune to seduction, resistant to charm",
+    "description": "<p>Either chemical and surgical treatments or sheer will has rendered the character immune to most mundane temptations. Seduction attempts against him automatically fail, and <b>Charm Tests increase their Difficulty by one level</b>. Taking this Talent gives the character <b>one Insanity Point</b>.</p>",
+    "compendiumId": "tal00000000035",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

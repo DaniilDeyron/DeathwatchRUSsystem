@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000061",
+  "name": "Dominion",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "29",
+    "key": "dominion",
+    "range": "Special",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>The Tyranid creature reaches into the depths of the Hive Mind and strengthens its links to the indomitable alien will, projecting a blanket of control and purpose through its synapse to all Tyranid bio-forms nearby. While this power is in effect, the Tyranid creature's Synapse range (see Deathwatch page 135) is doubled. In addition, the hardened resolve of the Hive Mind gives both the creature and all other creatures with the Tyranid Trait affected by the power +10 to all Willpower tests for its duration.</p>"
+  }
+}

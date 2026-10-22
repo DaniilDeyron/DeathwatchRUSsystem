@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000004",
+  "name": "Dominate",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "190",
+    "key": "dominate",
+    "range": "10 metres x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "Yes",
+    "cost": 1000,
+    "class": "Telepathy",
+    "description": "<p>The psyker may take over the mind of another, controlling his victim with his will. This power only affects a single target and only if his total Wounds are less than 3 times the psyker's PR. An affected target is controlled by the psyker as if he was a puppet. For as long as the psyker maintains the power, he can divide his Actions between himself and the target. The dominated target uses its own Characteristics, but at –10 due to the crudity of the control. Any action deemed suicidal allows the target an Opposed Willpower Test to try and break the hold.</p>"
+  }
+}

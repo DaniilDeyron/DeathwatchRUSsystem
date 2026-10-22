@@ -1,0 +1,35 @@
+{
+  "_id": "tal00000000009",
+  "name": "Scourge of Heretics",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "125",
+    "prerequisite": "",
+    "benefit": "+10 WS and +2 melee damage against heretics",
+    "description": "<p>The character has taken a vow to purge heretics wherever he finds them and has honed his skills in dispatching them. This is not a blood-fuelled rage or the uncontrollable madness of death but rather a cold, calculated skill drilled into the character through countless hours of training and prayer. <b>The character gains a +10 to his Weapon Skill and +2 to melee weapon Damage when combating heretics.</b> It is up to the GM to decide exactly which enemies count as heretics.</p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000009",
+    "modifiers": [
+      {
+        "_id": "scourgehere00001",
+        "name": "Scourge of Heretics - WS Bonus",
+        "modifier": 10,
+        "type": "talent",
+        "effectType": "characteristic",
+        "valueAffected": "ws",
+        "enabled": true
+      },
+      {
+        "_id": "scourgehere00002",
+        "name": "Scourge of Heretics - Melee Damage",
+        "modifier": 2,
+        "type": "talent",
+        "effectType": "weapon-damage",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 4
+  }
+}

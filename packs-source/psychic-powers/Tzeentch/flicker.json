@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000103",
+  "name": "Flicker",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "219",
+    "key": "flicker",
+    "range": "Self",
+    "sustained": "No",
+    "action": "Reaction",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> None</p><p><strong>Focus Power:</strong> Routine (+20) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker's form shimmers and shifts, causing attacks to miss as reality itself bends around him. This power represents the ever-changing nature of Tzeentch, making the psyker difficult to pin down or harm.</p><p>This power is used as a Reaction when the psyker is hit by an attack. The attacker must immediately reroll the attack and take the worse of the two results. The psyker may use this power a number of times per round equal to his Psy Rating.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

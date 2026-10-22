@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000024",
+  "name": "Veil of Time",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "195",
+    "key": "veil-of-time",
+    "range": "5 metre radius x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 1500,
+    "class": "Codex",
+    "description": "<p>The Librarian attempts to predict the near future, seeing the flow of events and the actions of others. While this power is in effect, the Librarian benefits from this foreknowledge. Each Round, the Librarian has a pool of re-rolls, equal to 1/2 the PR used for this power (rounding up), which he may only use for himself. Any re-rolls not used by the beginning of the Librarian's next turn are lost. Remember that a re-roll may never itself be re-rolled.</p>"
+  }
+}

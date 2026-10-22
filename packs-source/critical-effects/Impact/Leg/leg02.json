@@ -1,0 +1,14 @@
+{
+  "_id": "impact-leg0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Leg",
+    "description": "A grazing strike against the leg slows the target. The target halves all movement for 1 Round and takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

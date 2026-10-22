@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000106",
+  "name": "Mindscourge",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "219",
+    "key": "mindscourge",
+    "range": "5 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 400,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> Willpower 50</p><p><strong>Focus Power:</strong> Very Hard (–30) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker unleashes a storm of psychic energy that ravages the minds of all nearby foes. This devastating attack can leave entire squads of enemies writhing in agony or dead from psychic shock.</p><p>This power is a Psychic Storm that deals 1d10 Energy Damage, +2 for every point of Psy Rating, with a Penetration of 5.</p>",
+    "damageFormula": "1d10+(PR*2)",
+    "penetrationFormula": "5",
+    "damageType": "Energy",
+    "attachedQualities": []
+  }
+}

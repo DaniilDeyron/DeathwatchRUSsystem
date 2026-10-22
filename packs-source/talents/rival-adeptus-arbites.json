@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000219",
+  "name": "Rival (Adeptus Arbites)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "125",
+    "prerequisite": "",
+    "benefit": "-10 Fellowship Tests with Adeptus Arbites",
+    "description": "<p>This Talent represents aggressive competition and some animosity with a particular social group or organisation. <b>The character suffer a –10 penalty to all Fellowship Tests when interacting with the group in question.</b> The GM and player may agree to award this Talent when appropriate to the storyline. This Talent may be removed with an Elite Advance and the approval of the GM if the character has taken suitable actions to earn the trust of the group.</p>",
+    "compendiumId": "tal00000000219",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

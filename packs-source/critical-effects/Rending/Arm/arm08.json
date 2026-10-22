@@ -1,0 +1,14 @@
+{
+  "_id": "rending-arm0008",
+  "name": "Level 08",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Arm",
+    "description": "With an assortment of unnatural, wet ripping sounds, the arm flies free of the body trailing blood behind it in a crimson arc. The target must immediately make a Challenging (+0) Toughness Test or die from shock. If he passes the Test, he is Stunned for 1d10 Turns and suffers Blood Loss. He also takes 1d10 levels of Fatigue and now has only one arm.",
+    "effects": []
+  }
+}

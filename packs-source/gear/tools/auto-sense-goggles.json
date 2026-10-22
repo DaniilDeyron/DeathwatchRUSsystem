@@ -1,0 +1,17 @@
+{
+  "_id": "gear00000000012",
+  "name": "Auto-Sense Goggles",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "equipped": false,
+    "wt": 2,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>These bulky goggles (most often worn by Space Marine Scout snipers) provide the wearer with a number of vision enhancements. There are many models and variants of these goggles.</p><h3>Features</h3><ul><li><strong>Photo-Visor:</strong> No penalties due to darkness</li><li><strong>Preysense:</strong> +20 to vision-based Perception Tests at night or in the dark</li><li><strong>Radiation Detection:</strong> Can detect and see a broad range of radioactivity frequencies</li><li><strong>Pict-Capture:</strong> Can record images</li><li><strong>Optical Enhancement:</strong> 5x magnification</li><li><strong>Micro-Magnification:</strong> 5x for close inspection</li><li><strong>Colored Filters:</strong> Multiple filters that can be flipped in and out of view ports</li><li><strong>Laser Range Finder:</strong> Allows wearer to act as forward observer or fire controller for artillery and aerospace units by pinpointing targets, calculating firing solutions, and broadcasting data. Grants +20 to allied unit's Ballistic Skill Test when guiding artillery or aerospace fire.</li></ul>",
+    "modifiers": []
+  }
+}

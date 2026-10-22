@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-head0001",
+  "name": "Level 01",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Head",
+    "description": "The explosion leaves the target confused. He can take only a Half Action on his next Turn and takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

@@ -1,0 +1,99 @@
+<div class="skills-section">
+  <!-- Skills Header Row -->
+  <div class="skills-header-row flexrow">
+    <div class="skill-name-header">Skill</div>
+    <div class="skill-descriptor-header">Descriptor</div>
+    <div class="skill-characteristic-header">Characteristic</div>
+    <div class="skill-trained-header">T</div>
+    <div class="skill-mastered-header">M</div>
+    <div class="skill-expert-header">E</div>
+    <div class="skill-modifier-header">Modifier</div>
+    <div class="skill-total-header">Target</div>
+  </div>
+
+  <div class="skills-header">
+    <h3>Basic Skills</h3>
+  </div>
+  <div class="skills-list">
+    {{#each system.skills as |skill key|}}
+      {{#if skill.isBasic}}
+        {{#if (lookup ../config.Skills key)}}
+        <div class="skill-item flexrow">
+          <div class="skill-name rollable" data-action="rollSkill" data-roll-type="skill" data-skill="{{key}}" data-label="{{lookup ../config.Skills key}}{{#if skill.descriptor}} ({{skill.descriptor}}){{/if}}">
+            {{lookup ../config.Skills key}}
+            {{#if (eq ../../actor.type "character")}}
+            {{#if (or (and skill.trained (eq skill.costTrain -1)) (and skill.mastered (eq skill.costMaster -1)) (and skill.expert (eq skill.costExpert -1)))}}
+            <i class="fas fa-exclamation-triangle" style="color: #ff6b6b; margin-left: 5px; font-size: 10px;" title="This skill has a training level with -1 XP cost. Character may not be eligible for this training level."></i>
+            {{/if}}
+            {{/if}}
+          </div>
+          <div class="skill-descriptor">
+            {{skill.descriptor}}
+          </div>
+          <div class="skill-characteristic">
+            ({{lookup ../config.CharacteristicWords skill.characteristic}})
+          </div>
+          <div class="skill-trained">
+            <input type="checkbox" name="system.skills.{{key}}.trained" {{checked skill.trained}} {{#unless skill.trainedAvailable}}disabled title="Available at Rank {{skill.trainedRankRequired}}"{{/unless}} />
+          </div>
+          <div class="skill-mastered">
+            <input type="checkbox" name="system.skills.{{key}}.mastered" {{checked skill.mastered}} {{#unless skill.trained}}disabled{{/unless}} {{#unless skill.masteredAvailable}}disabled title="Available at Rank {{skill.masteredRankRequired}}"{{/unless}} />
+          </div>
+          <div class="skill-expert">
+            <input type="checkbox" name="system.skills.{{key}}.expert" {{checked skill.expert}} {{#unless skill.mastered}}disabled{{/unless}} {{#unless skill.expertAvailable}}disabled title="Available at Rank {{skill.expertRankRequired}}"{{/unless}} />
+          </div>
+          <div class="skill-modifier">
+            <input type="number" name="system.skills.{{key}}.modifier" value="{{skill.modifier}}" data-dtype="Number" />
+          </div>
+          <div class="skill-total">
+            {{numberFormat skill.total decimals=0 sign=true}}
+          </div>
+        </div>
+        {{/if}}
+      {{/if}}
+    {{/each}}
+  </div>
+
+  <div class="skills-header">
+    <h3>Advanced Skills</h3>
+  </div>
+  <div class="skills-list">
+    {{#each system.skills as |skill key|}}
+      {{#unless skill.isBasic}}
+        {{#if (lookup ../config.Skills key)}}
+        <div class="skill-item flexrow">
+          <div class="skill-name rollable" data-action="rollSkill" data-roll-type="skill" data-skill="{{key}}" data-label="{{lookup ../config.Skills key}}{{#if skill.descriptor}} ({{skill.descriptor}}){{/if}}">
+            {{lookup ../config.Skills key}}
+            {{#if (eq ../../actor.type "character")}}
+            {{#if (or (and skill.trained (eq skill.costTrain -1)) (and skill.mastered (eq skill.costMaster -1)) (and skill.expert (eq skill.costExpert -1)))}}
+            <i class="fas fa-exclamation-triangle" style="color: #ff6b6b; margin-left: 5px; font-size: 10px;" title="This skill has a training level with -1 XP cost. Character may not be eligible for this training level."></i>
+            {{/if}}
+            {{/if}}
+          </div>
+          <div class="skill-descriptor">
+            {{skill.descriptor}}
+          </div>
+          <div class="skill-characteristic">
+            ({{lookup ../config.CharacteristicWords skill.characteristic}})
+          </div>
+          <div class="skill-trained">
+            <input type="checkbox" name="system.skills.{{key}}.trained" {{checked skill.trained}} {{#unless skill.trainedAvailable}}disabled title="Available at Rank {{skill.trainedRankRequired}}"{{/unless}} />
+          </div>
+          <div class="skill-mastered">
+            <input type="checkbox" name="system.skills.{{key}}.mastered" {{checked skill.mastered}} {{#unless skill.trained}}disabled{{/unless}} {{#unless skill.masteredAvailable}}disabled title="Available at Rank {{skill.masteredRankRequired}}"{{/unless}} />
+          </div>
+          <div class="skill-expert">
+            <input type="checkbox" name="system.skills.{{key}}.expert" {{checked skill.expert}} {{#unless skill.mastered}}disabled{{/unless}} {{#unless skill.expertAvailable}}disabled title="Available at Rank {{skill.expertRankRequired}}"{{/unless}} />
+          </div>
+          <div class="skill-modifier">
+            <input type="number" name="system.skills.{{key}}.modifier" value="{{skill.modifier}}" data-dtype="Number" />
+          </div>
+          <div class="skill-total">
+            {{numberFormat skill.total decimals=0 sign=true}}
+          </div>
+        </div>
+        {{/if}}
+      {{/unless}}
+    {{/each}}
+  </div>
+</div>

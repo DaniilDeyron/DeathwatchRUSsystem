@@ -1,0 +1,168 @@
+<div class="{{cssClass}} psychic-power-sheet" autocomplete="off">
+  <!-- Background Image Layer -->
+  <div class="power-background" style="background-image: url('{{item.img}}');"></div>
+  <div class="power-overlay"></div>
+
+  <!-- Header Section -->
+  <header class="power-header">
+      <div class="corner-frame corner-tl"></div>
+      <div class="corner-frame corner-tr"></div>
+      <div class="corner-frame corner-bl"></div>
+      <div class="corner-frame corner-br"></div>
+
+      <div class="header-content">
+        <div class="power-title-section">
+          <div class="power-icon-frame">
+            <img src="{{item.img}}" alt="{{item.name}}" class="power-icon" />
+            <div class="icon-glow"></div>
+          </div>
+          <div class="power-title-wrapper">
+            <label class="field-label">Power Designation</label>
+            <input name="name" type="text" value="{{item.name}}" placeholder="Enter power name" class="power-name-input" />
+          </div>
+        </div>
+
+        {{#if system.chapterImg}}
+        <div class="chapter-badge">
+          <img src="{{system.chapterImg}}" alt="Chapter" class="chapter-icon" />
+        </div>
+        {{/if}}
+      </div>
+    </header>
+
+    <!-- Tabs Navigation -->
+    <nav class="sheet-tabs tabs power-tabs" data-group="primary">
+      <a class="item tab-item" data-tab="description">
+        <span class="tab-icon">📜</span>
+        <span class="tab-text">Description</span>
+      </a>
+      <a class="item tab-item" data-tab="stats">
+        <span class="tab-icon">⚡</span>
+        <span class="tab-text">Attributes</span>
+      </a>
+      <a class="item tab-item" data-tab="source">
+        <span class="tab-icon">📖</span>
+        <span class="tab-text">Source</span>
+      </a>
+    </nav>
+
+    <!-- Tab Content -->
+    <section class="sheet-body power-body">
+      <div class="tab" data-group="primary" data-tab="description">
+        <div class="tab-content-frame">
+          {{#if editable}}
+          <prose-mirror name="system.description"
+                        value="{{source.description}}"
+                        document-uuid="{{item.uuid}}"
+                        class="power-editor">
+          </prose-mirror>
+          {{else}}
+          <div class="power-description-view">
+            <div class="description-content">{{{enriched.description}}}</div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class="tab" data-group="primary" data-tab="stats">
+        <div class="tab-content-frame">
+          <div class="stats-grid">
+            <div class="stat-group stat-primary">
+              <label class="stat-label">
+                <span class="label-icon">⚡</span>
+                <span class="label-text">Action</span>
+              </label>
+              <input type="text" name="system.action" value="{{system.action}}" placeholder="Full, Half, Free" class="stat-input" />
+            </div>
+
+            <div class="stat-group stat-primary">
+              <label class="stat-label">
+                <span class="label-icon">🎯</span>
+                <span class="label-text">Range</span>
+              </label>
+              <input type="text" name="system.range" value="{{system.range}}" placeholder="e.g., 30m, 5m × PR" class="stat-input" />
+            </div>
+
+            <div class="stat-group stat-secondary">
+              <label class="stat-label">
+                <span class="label-icon">⚔️</span>
+                <span class="label-text">Opposed</span>
+              </label>
+              <input type="text" name="system.opposed" value="{{system.opposed}}" placeholder="Yes/No" class="stat-input" />
+            </div>
+
+            <div class="stat-group stat-secondary">
+              <label class="stat-label">
+                <span class="label-icon">♾️</span>
+                <span class="label-text">Sustained</span>
+              </label>
+              <input type="text" name="system.sustained" value="{{system.sustained}}" placeholder="Yes/No" class="stat-input" />
+            </div>
+
+            <div class="stat-group stat-highlight">
+              <label class="stat-label">
+                <span class="label-icon">💀</span>
+                <span class="label-text">Damage</span>
+              </label>
+              <input type="text" name="system.damageFormula" value="{{system.damageFormula}}" placeholder="e.g., 1d10×PR" class="stat-input" />
+            </div>
+
+            <div class="stat-group stat-highlight">
+              <label class="stat-label">
+                <span class="label-icon">🛡️</span>
+                <span class="label-text">Penetration</span>
+              </label>
+              <input type="text" name="system.penetrationFormula" value="{{system.penetrationFormula}}" placeholder="e.g., PR, 2×PR" class="stat-input" />
+            </div>
+
+            <div class="stat-group stat-secondary">
+              <label class="stat-label">
+                <span class="label-icon">🔥</span>
+                <span class="label-text">Damage Type</span>
+              </label>
+              <input type="text" name="system.damageType" value="{{system.damageType}}" placeholder="Energy, Impact" class="stat-input" />
+            </div>
+
+            <div class="stat-group stat-cost">
+              <label class="stat-label">
+                <span class="label-icon">✦</span>
+                <span class="label-text">XP Cost</span>
+              </label>
+              <input type="number" name="system.cost" value="{{system.cost}}" placeholder="0" data-dtype="Number" class="stat-input stat-input-number" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab" data-group="primary" data-tab="source">
+        <div class="tab-content-frame">
+          <div class="source-grid">
+            <div class="source-field">
+              <label class="source-label">Source Codex</label>
+              <input type="text" name="system.book" value="{{system.book}}" placeholder="e.g., Core Rulebook" class="source-input" />
+            </div>
+            <div class="source-field">
+              <label class="source-label">Page Reference</label>
+              <input type="text" name="system.page" value="{{system.page}}" placeholder="e.g., 194" class="source-input" />
+            </div>
+            <div class="source-field">
+              <label class="source-label">
+                Animation Key
+                <i class="fas fa-info-circle" data-tooltip="Used by Automated Animations to identify this power for visual effects"></i>
+              </label>
+              <div class="key-display">
+                {{#if system.key}}
+                  {{system.key}}
+                {{else}}
+                  <span>(no key defined)</span>
+                {{/if}}
+              </div>
+              <p class="source-hint">
+                Configure this key in Automated Animations to set up custom effects for this power
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>

@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000006",
+  "name": "Long-Range Telepathy",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "191",
+    "key": "long-range-telepathy",
+    "range": "50 kilometres x PR",
+    "sustained": "Yes",
+    "action": "Free",
+    "opposed": "No",
+    "cost": 750,
+    "class": "Telepathy",
+    "description": "<p>This functions just the same as Short-range Telepathy, but with an extended range. In addition, once the psyker learns this power, such is his mastery of telepathy that he no longer incurs a chance of invoking Psychic Phenomena when using either Short- or Long-range Telepathy unless used at the Push power level. Sustaining this power is a Free Action.</p>"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000049",
+  "name": "Die Hard",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "WIL 40",
+    "benefit": "Roll twice to avoid death from blood loss",
+    "description": "<p>Through either willpower or sheer stubbornness, the character refuses to cross into shadow. <b>When the character suffers from blood loss, he may roll twice to avoid death.</b></p>",
+    "compendiumId": "tal00000000049",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

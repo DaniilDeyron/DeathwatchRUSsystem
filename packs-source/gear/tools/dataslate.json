@@ -1,0 +1,15 @@
+{
+  "_id": "dataslate000001",
+  "name": "Dataslate",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/data-slate.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "174",
+    "wt": 0.5,
+    "req": 5,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Data-slates are commonplace in the Imperium—the primary means of storing and reading printed text, schematics, and other media such as video (pict) or audio (vox) recordings. Models range from cheap, single purpose devices built to play only a certain recording, to sophisticated models that can rerecord new information and transmit and receive data from other devices.</p>"
+  }
+}

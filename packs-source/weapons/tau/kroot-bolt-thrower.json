@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000010",
+  "name": "Kroot Bolt Thrower",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/kroot-bolt-thrower.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "2d10+10",
+    "dmgType": "Explosive",
+    "penetration": "20",
+    "range": "150",
+    "rof": "S/-/2",
+    "clip": "—",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "blast", "value": "3" }, { "id": "mounted" }],
+    "description": "<p>The Kroot Bolt Thrower is a heavy weapon system used by Kroot auxiliaries. This vehicle-mounted weapon launches explosive projectiles capable of devastating area effects against enemy formations.</p>",
+    "modifiers": [],
+    "key": "kroot-bolt-thrower"
+  }
+}

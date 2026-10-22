@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000088",
+  "name": "Preternatural Awareness",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "227",
+    "key": "preternatural-awareness",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 100,
+    "class": "Divination",
+    "description": "<p><strong>Alternate Names:</strong> Unavoidable Sight</p><p><strong>Prerequisites:</strong> Precognition</p><p><strong>Focus Power:</strong> Challenging (+0) Psyniscience Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker's perceptions are focussed on his immediate surroundings, searching for even the slightest disturbance or most minor change.</p><p>While this power remains in effect, the psyker gains the Unnatural Perception Trait, at a rating equal to his Psy Rating. In addition, he gains a bonus to his Initiative equal to the Degrees of Success on his Focus Power Test.</p>"
+  }
+}

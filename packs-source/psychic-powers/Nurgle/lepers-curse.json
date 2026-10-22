@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000083",
+  "name": "Leper's Curse",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/nurgle.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "216",
+    "key": "lepers-curse",
+    "range": "5 metres x Psy Rating",
+    "sustained": "None",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 400,
+    "class": "Nurgle",
+    "description": "<p><strong>Prerequisites:</strong> Mark of Nurgle, Psy Rating 5</p><p><strong>Focus Power:</strong> Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p><strong>Alternate Names:</strong> Dessicant Word, Thousandth Necrotic Invocation, The Final Curse</p><p>Whispering an incantation taught to him by a Plaguebearer, the Sorcerer focuses a stream of decay into one of his victim's body parts. At this foul command, the victim's flesh and bone wither away in a display of glorious atrophy, leaving shrivelled ruin in the spell's wake. Some sorcerers know this as the Thousandth Necrotic Invocation, one in a long list of vile syllables beloved of the Grandfather of Pestilence and capable of inflicting terrible afflictions upon their victims.</p><p>This power is a Psychic Bolt that causes the target to suffer a single Rending Critical Effect equal to 1d10. Leper's Curse does not do Damage to Wounds, but can cause limb loss, blood loss, or even death, depending on the Critical Effect. An opponent can only be targeted by the Leper's Curse once per combat.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

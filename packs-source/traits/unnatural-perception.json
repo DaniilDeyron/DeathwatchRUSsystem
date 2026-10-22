@@ -1,0 +1,22 @@
+{
+  "_id": "trt000000000048",
+  "name": "Unnatural Characteristic (Perception)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "136",
+    "description": "<p>The creature's Perception Characteristic is unnatural. Each time this trait is gained, double its Perception Bonus. For example, a creature with Perception 41 normally has a 4 Perception Bonus. With this trait, its Perception Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Perception, the Bonus multiplier increases by 1. For example, one selection multiplies the Perception Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Perception with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+    "modifiers": [
+      {
+        "_id": "ee1193d07425b7a6",
+        "name": "Unnatural Perception",
+        "modifier": "x2",
+        "type": "trait",
+        "effectType": "characteristic-bonus",
+        "valueAffected": "per",
+        "enabled": true
+      }
+    ]
+  }
+}

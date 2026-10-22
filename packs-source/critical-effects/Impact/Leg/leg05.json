@@ -1,0 +1,14 @@
+{
+  "_id": "impact-leg0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Leg",
+    "description": "A powerful impact causes micro fractures in the target's bones, inflicting considerable agony. The target's Agility is reduced by –20 for 1d10 Rounds and he takes 1d5 levels of Fatigue.",
+    "effects": []
+  }
+}

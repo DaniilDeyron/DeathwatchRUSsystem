@@ -1,0 +1,350 @@
+{
+  "_id": "enmychaos0000005",
+  "name": "Bloodletter",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/bloodletter.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 50 },
+      "bs": { "base": 12 },
+      "str": { "base": 42 },
+      "tg": { "base": 42 },
+      "ag": { "base": 40 },
+      "int": { "base": 30 },
+      "per": { "base": 30 },
+      "wil": { "base": 34 },
+      "fs": { "base": 14 }
+    },
+    "wounds": { "base": 22, "max": 22, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "athletics": { "trained": true },
+      "awareness": { "trained": true },
+      "dodge": { "trained": true },
+      "forbidden_lore": { "trained": true },
+      "intimidate": { "trained": true, "mastered": true },
+      "parry": { "trained": true, "mastered": true, "expert": true },
+      "survival": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Bloodletters are the lesser servants of the Blood God, forming the core of his vast Daemonic Legions. Peerless and deadly warriors, they are amongst the most skilled warriors in the galaxy. Armed with dreaded Hellblades, great two-handed weapons said to be as sharp as Khorne's own hatred, they can hew apart the stoutest adversary in a shower of steaming gore.</p><p>The body of a Bloodletter is a deep gore-red and their humanoid bodies are topped with bestial snarling faces, burning pupil-less eyes, and horned elongated craniums that seem reminiscent of great war-helms. Their long, sinewy limbs possess an infamous strength, as renowned as the ferocity of their charges and the grim battle lust with which they tear apart anyone who opposes them. Everywhere they go, they are surrounded by the stench of blood.</p><p>Unlike other Daemons, Bloodletters march to war in regimented formations, for their creator is the Lord of Battle. Lines of the Daemons manoeuvre in ranks with supernatural precision, advancing in disciplined maniples. However, these echelons quickly break up after contact with the enemy, as each Bloodletter competes to slay as many of the foe as possible.</p><p><strong>Daemonic Presence:</strong> All enemies within 10 metres of a Bloodletter suffer –10 penalty to Willpower Tests.</p><p><strong>Blood for the Blood God:</strong> Creatures of Khorne suffer no penalties from gore and blood—all critical hit effects involving gore and blood (such as requiring an Agility Test not to fall over) do not apply to creatures of Khorne.</p><p><strong>Skills:</strong> Athletics (S), Awareness (Per), Dodge (Ag), Forbidden Lore (Daemonology) (Int), Intimidate (S) +10, Parry (WS) +20, Survival (Per).</p><p><strong>Talents:</strong> Battle Rage, Berserk Charge, Blademaster, Combat Master, Crippling Strike, Crushing Blow, Frenzy, Furious Assault, Swift Attack.</p><p><strong>Traits:</strong> Daemonic (4), Fear (2), From Beyond, Size (Hulking), Unnatural Strength (+3), Warp Instability.</p><p><strong>Source:</strong> Black Crusade, p. 351</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos050000001",
+      "_sourceId": "tal00000000026",
+      "name": "Battle Rage",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "Frenzy",
+        "benefit": "Parry while frenzied",
+        "description": "<p>Long experience and indomitable will have allowed the character to master the beast within him, directing its rage while keeping a clear head. The character may Parry while Frenzied.</p>",
+        "compendiumId": "tal00000000026",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000002",
+      "_sourceId": "tal00000000027",
+      "name": "Berserk Charge",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "",
+        "benefit": "+10 WS when charging",
+        "description": "<p>The character has learned to put the whole force of his momentum behind his weapon blows. When the character charges into combat, few can stand before him. If the character uses the Charge Action, he gains a <b>+20 bonus to Weapon Skill instead of +10</b>.</p>",
+        "compendiumId": "tal00000000027",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000003",
+      "_sourceId": "tal00000000029",
+      "name": "Blademaster",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "WS 30, Melee Weapon Training (any) ",
+        "benefit": "Re-roll missed attack",
+        "description": "<p>The character’s mastery of bladed weapons and martial disciplines has no peer. When attacking with any bladed weapon, including chainswords and power swords, the character may re-roll one missed attack per Round.</p>",
+        "compendiumId": "tal00000000029",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000004",
+      "_sourceId": "tal00000000038",
+      "name": "Combat Master",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "WS 30",
+        "benefit": "No ganging up bonus against you",
+        "description": "<p>The character's weapon seems to be everywhere at once, keeping many more opponents at bay in close combat than would seem possible. <b>Opponents fighting the character in hand-to-hand combat gain no bonuses for outnumbering him.</b></p>",
+        "compendiumId": "tal00000000038",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000005",
+      "_sourceId": "tal00000000043",
+      "name": "Crippling Strike",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "115",
+        "prerequisite": "WS 50",
+        "benefit": "+4 Critical Damage",
+        "description": "<p>The character can land his blows precisely where they inflict the most harm, cutting into seams or hammering at weak points. <b>When the character's melee attack causes Critical Damage add +4 Damage.</b></p>",
+        "compendiumId": "tal00000000043",
+        "modifiers": [
+          {
+            "_id": "crippstrike00001",
+            "name": "Crippling Strike - Critical Damage",
+            "modifier": 4,
+            "type": "talent",
+            "effectType": "critical-damage",
+            "valueAffected": "melee",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos050000006",
+      "_sourceId": "tal00000000055",
+      "name": "Crushing Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "Strength 40",
+        "benefit": "Stunned results become normal hits",
+        "description": "<p>The character's will or faith can sustain him when his flesh fails. <b>He ignores the effects of injury, Fatigue, and Stunning during combat.</b> This Talent does not prevent the Damage, but allows the character to temporarily ignore its effects for the duration of the combat. Death still affects him normally.</p>",
+        "compendiumId": "tal00000000055",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000007",
+      "_sourceId": "tal00000000090",
+      "name": "Frenzy",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "",
+        "benefit": "Enter rage for combat bonuses",
+        "description": "<p>The character's temper and passion boil just below the surface of his psyche, mostly held in check by his rational mind, but easily released when needed. <b>If the character spends one full Round fuelling his anger—by flagellation, drugs, or other means—on the next Round he goes into an uncontrolled rage, gaining a +10 bonus to Weapon Skill, Strength, Toughness, and Willpower, but suffering a –20 penalty to Ballistic Skill and Intelligence.</b></p><p>The character must attack the nearest enemy in melee combat if possible. If he is not engaged with the nearest enemy, he must move towards that enemy and engage it if possible. The character will not take obviously suicidal actions such as leaping off a building in order to engage someone on the ground, but he will take any actions that have a reasonable opportunity to engage in melee with the nearest enemy.</p><p>While Frenzied, he is immune to Fear, Pinning, Stunning effects, the effects of Fatigue, and he may not Parry, retreat, or flee. He remains Frenzied for the duration of the combat. Unless the character has a Talent that allows him to do so, he may not use Psychic Techniques whilst in Frenzy. Some beings are either permanently Frenzied or can Frenzy at will.</p>",
+        "compendiumId": "tal00000000090",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000008",
+      "_sourceId": "tal00000000091",
+      "name": "Furious Assault",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Spend Reaction for extra melee attack after All Out Attack",
+        "description": "<p>The character's speed and martial prowess allow him to land several blows where lesser combatants land one. <b>If the character successfully hits his target using the All Out Attack Action, he may spend his Reaction to make an additional attack using the same bonuses or penalties as the original attack.</b></p>",
+        "compendiumId": "tal00000000091",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000009",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "WS 35",
+        "benefit": "Half Action melee attack twice",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000010",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000011",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000012",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000013",
+      "_sourceId": "trt000000000060",
+      "name": "Size (Hulking)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Hulking. Enemies gain +10 to hit it, and it suffers –10 to Concealment. Its base movement is Agility Bonus +1.</p>",
+        "modifiers": [
+          {
+            "_id": "b70df60aff07990c",
+            "name": "Size (Hulking)",
+            "modifier": 1,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "273c48b2d24be279",
+            "name": "Size (Hulking)",
+            "modifier": -10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos050000014",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos050000015",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos050000016",
+      "_sourceId": "trt000000000054",
+      "name": "Warp Instability",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>Most warp-entities have a tenuous hold on our reality, often maintained only by horror and bloodshed, and may be disrupted if sufficient harm can be done to their manifested forms. If a creature with this trait takes damage and does not deal damage or Insanity Points on other creatures by the end of its next turn, it must make a Willpower Test. The creature takes 1 damage for failure, plus 1 damage for each degree of failure. If this would deal damage equal to or in excess of the creature's Wounds, it is cast back into the warp.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos050000017",
+      "name": "Hellblade",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/chainsword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+1",
+        "dmgType": "Rending",
+        "penetration": "10",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "balanced" }, { "id": "power-field" }],
+        "attachedUpgrades": [],
+        "description": "<p>A great two-handed daemon weapon said to be as sharp as Khorne's own hatred. The blade deals an additional +2 damage for every foe it kills during combat.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bloodletter",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

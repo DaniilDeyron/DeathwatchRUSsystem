@@ -1,0 +1,27 @@
+{
+  "_id": "combitool000001",
+  "name": "Combi-Tool",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/combi-tool.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "174",
+    "equipped": false,
+    "wt": 1,
+    "req": 15,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Commonly found in the hands of Techmarines, combi-tools are versatile, if somewhat bizarre, mechanical devices. They are spindled with small implements that interface, cut, solder, and anoint, granting a <b>+10 bonus to Tech-Use Tests</b>.</p>",
+    "modifiers": [
+      {
+        "_id": "combitoolmod0001",
+        "name": "Tech-Use Bonus",
+        "modifier": "10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "tech_use",
+        "enabled": true
+      }
+    ]
+  }
+}

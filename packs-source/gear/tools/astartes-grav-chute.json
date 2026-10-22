@@ -1,0 +1,17 @@
+{
+  "_id": "gear00000000011",
+  "name": "Astartes Grav Chute",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "equipped": false,
+    "wt": 10,
+    "req": 5,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>On occasion, Space Marine Scout Squads must deploy stealthily, unable to utilise more common methods like teleportation or drop pods. Under those unusual circumstances, the Scouts utilise an Astartes grav chute. Grav chutes rely on suspensor fields to counter gravity and slow descent.</p><p>Unlike a jump pack, which allows the user to leap into the air, a grav chute's lower power output only allows for a safe, guided fall such as a combat drop from a transport. It allows for a safe fall from any height.</p>",
+    "modifiers": []
+  }
+}

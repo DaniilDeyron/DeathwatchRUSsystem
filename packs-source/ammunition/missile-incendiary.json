@@ -1,0 +1,42 @@
+{
+  "_id": "ammo-missile-incendiary",
+  "name": "Astartes Incendiary Missile",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/weapons/missiles.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "150",
+    "capacity": { "value": 1, "max": 1 },
+    "quantity": 1,
+    "req": 15,
+    "renown": "",
+    "description": "<p>Incendiary explosives are commonly employed to flush out enemies entrenched behind cover. These projectiles contain slow-burning promethium distillate that ignites when the grenade explodes. Any target within the Blast radius must succeed on an Agility Test or catch fire. Furthermore, the area remains on fire for another 1d5 Rounds as the promethium continues to burn. Anyone remaining within that area must continue to take Agility Tests or catch fire until the flames die.</p><p><b>Damage:</b> 1d10+3 Energy, Pen 0</p><p><b>Qualities:</b> Blast (5), Flame</p><p><b>Used with:</b> Missile Launchers (Cyclone, Soundstrike, Armoursbane)</p>",
+    "modifiers": [
+      {
+        "_id": "incen00000000001",
+        "name": "Incendiary Missile Damage",
+        "modifier": "1d10+3",
+        "type": "equipment",
+        "effectType": "weapon-damage-override",
+        "enabled": true
+      },
+      {
+        "_id": "incen00000000002",
+        "name": "Incendiary Missile Penetration",
+        "modifier": "0",
+        "type": "equipment",
+        "effectType": "weapon-penetration",
+        "enabled": true
+      },
+      {
+        "_id": "incen00000000003",
+        "name": "Incendiary Missile Blast",
+        "modifier": "5",
+        "type": "equipment",
+        "effectType": "weapon-blast",
+        "enabled": true
+      }
+    ],
+    "wt": 2
+  }
+}

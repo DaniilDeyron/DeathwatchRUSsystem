@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000261",
+  "name": "True Grit",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "128",
+    "prerequisite": "Toughness 40",
+    "benefit": "Halve Critical Damage (rounding up)",
+    "description": "<p>The character is able to shrug off wounds that would fell lesser men. <b>Whenever the character suffers Critical Damage, halve the result (rounding up).</b></p><p><b>Example:</b> Agamemnon takes a grievous wound from a tyranid warrior. After reduction for Armour and Toughness, the Scything Talon strike still does 8 Damage. Unfortunately, it's been tough going and Agamemnon only has 4 Wounds remaining, which would normally result in 4 points of Critical Damage. However, since he has the True Grit Talent, he only takes 2 points of Critical Damage.</p>",
+    "cost": 0,
+    "compendiumId": "tal00000000261",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

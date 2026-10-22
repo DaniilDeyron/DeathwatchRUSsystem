@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000059",
+  "name": "Hypnotic Gaze",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "29",
+    "key": "hypnotic-gaze",
+    "range": "10 metres",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>The Broodlord can use its powerful gaze to snare the mind of a nearby warrior, holding it immobile and helpless as long as its stare remains unbroken. The Broodlord can affect a single enemy with this power, provided it can make eye contact with its intended target. If the target succumbs to the power, it is then held immobile (counts as being Helpless) until it can break free by winning an Opposed Willpower Test at the start of any of its turns, or the Broodlord's gaze is somehow broken.</p>"
+  }
+}

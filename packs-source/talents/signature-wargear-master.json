@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000241",
+  "name": "Signature Wargear (Master)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "126",
+    "prerequisite": "Signature Wargear for the item selected",
+    "benefit": "Increase Req limit to 40, choose one special effect",
+    "description": "<p>The Battle-Brother has forged a bond with his chosen tool of war, and can perform impressive feats with it. <b>The maximum Requisition cost of his Signature Wargear increases to 40. (At the time this Talent is purchased, you may choose to apply additional Upgrades to your existing Signature Wargear, or replace the Signature Wargear item with a new item worth up to 40 Requisition.) Choose one applicable effect from the table below and apply it when equipped with the Signature Wargear.</b></p><table><thead><tr><th>Effect</th><th>Applies To</th></tr></thead><tbody><tr><td>You know how to wield the weapon to maximum effect. Gain +10 to Attack Tests made with this weapon.</td><td>Weapons</td></tr><tr><td>Your defences are at their best wearing this armour. Add +10 to Dodge Tests.</td><td>Armour</td></tr><tr><td>Your affinity with this device serves you on and off the battlefield. Re-roll failed Skill Tests made to use the item.</td><td>Wargear</td></tr><tr><td>The machine spirit is as trusted as any Battle-Brother. Gain +1 Cohesion.</td><td>Any item</td></tr><tr><td>Your guardian machine spirit aids you in thwarting enemies. Gain +2 Initiative.</td><td>Any item</td></tr><tr><td>Faith in your war gear bolsters your morale. Gain +5 on WP tests.</td><td>Any item</td></tr></tbody></table>",
+    "cost": 1000,
+    "compendiumId": "tal00000000241",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

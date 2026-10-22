@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000027",
+  "name": "Berserk Charge",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "114",
+    "prerequisite": "",
+    "benefit": "+20 Bonus when Charging",
+    "description": "<p>The character has learned to put the whole force of his momentum behind his weapon blows. When the character charges into combat, few can stand before him. If the character uses the Charge Action, he gains a <b>+20 bonus to Weapon Skill instead of +10</b>.</p>",
+    "compendiumId": "tal00000000027",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

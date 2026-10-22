@@ -1,0 +1,104 @@
+{
+  "_id": "enmytau000000004",
+  "name": "Fire Warrior",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tau/fire-warrior.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 25 },
+      "bs": { "base": 35 },
+      "str": { "base": 30 },
+      "tg": { "base": 30 },
+      "ag": { "base": 25 },
+      "int": { "base": 30 },
+      "per": { "base": 20 },
+      "wil": { "base": 30 },
+      "fs": { "base": 30 }
+    },
+    "wounds": { "base": 12, "max": 12, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "common_lore_tau_empire": { "trained": true },
+      "speak_language_tau": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Tau Fire Warriors are the line infantry of the Tau army. All are drawn from the Fire Castes, and are therefore bred for war and utterly dedicated to the Greater Good. Fire Warrior teams are extremely well equipped, utilising the pulse rifle or pulse carbine, as well as highly effective armour. Each wears a helmet into which is built a range of communication and sensor devices, ensuring each is constantly in contact with the commander and ready to respond at a moment's notice to his orders.</p><p>Fire Warrior tactics emphasise fluid manoeuvre warfare over the stubborn, hidebound approach favoured by many human armies. They will give ground and re-deploy when the situation warrants it, always seeking to bring the enemy to battle on the most favourable terms possible. This approach aims to bring the team's considerable firepower to bear with devastating precision, and the Fire Warriors are adept at singling out the most dangerous foe, destroying him utterly, before moving to a new position from which to target the next enemy.</p><p><strong>Skills:</strong> Awareness (Per), Common Lore (Tau Empire) (Int), Speak Language (Tau) (Int).</p><p><strong>Gear:</strong> Micro-bead, photo-visor.</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 367</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eitau04000000001",
+      "name": "Tau Fire Warrior Armour",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 6,
+        "body": 6,
+        "left_arm": 6,
+        "right_arm": 6,
+        "left_leg": 6,
+        "right_leg": 6,
+        "description": "<p>Highly effective Tau armour with integrated communication and sensor systems built into the helmet.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eitau04000000002",
+      "name": "Pulse Rifle",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tau-pulse-rifle.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+12",
+        "dmgType": "Energy",
+        "penetration": "4",
+        "range": "150",
+        "rof": "S/3/-",
+        "clip": "36",
+        "reload": "Half",
+        "equipped": true,
+        "attachedQualities": [{ "id": "gyro-stabilised" }],
+        "attachedUpgrades": [],
+        "description": "<p>Standard issue Tau pulse rifle, firing superheated plasma bolts.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau04000000003",
+      "name": "Pulse Carbine",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tau-pulse-carbine.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+12",
+        "dmgType": "Energy",
+        "penetration": "4",
+        "range": "60",
+        "rof": "S/-/-",
+        "clip": "24",
+        "reload": "Full",
+        "equipped": false,
+        "attachedQualities": [
+          { "id": "devastating", "value": "1" },
+          { "id": "gyro-stabilised" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>Shorter-ranged Tau pulse carbine, more compact than the pulse rifle.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Fire Warrior",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

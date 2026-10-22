@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000248",
+  "name": "Storm of Iron",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "127",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Double Magnitude damage against Hordes with flamer or Semi/Full Auto",
+    "description": "<p>When facing massed enemy, the Battle-Brother's firepower is laid down in precise patterns and well trained rhythm, so that they create a storm of iron that kills and maims many. By such discipline, the Battle-Brother has faced enemies many times his number and emerged victorious. <b>When using a flamer or firing a Semi or Full Auto Burst against an enemy with the Horde trait, the Battle-Brother doubles any Damage that he deals to the Horde's Magnitude. For example, if the Battle-Brother's attacks would reduce the Horde's Magnitude by 5, this amount is doubled to 10.</b></p>",
+    "compendiumId": "tal00000000248",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

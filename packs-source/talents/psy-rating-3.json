@@ -1,0 +1,26 @@
+{
+  "_id": "tal00000000275",
+  "name": "Psy Rating 3",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "",
+    "benefit": "Psy Rating 3",
+    "description": "<p>The character is a psyker with Psy Rating 3. A Librarian begins play with Psy Rating 3. See Chapter VI: Psychic Powers for detailed rules on the game mechanics of this ability.</p>",
+    "cost": -1,
+    "compendiumId": "tal00000000275",
+    "modifiers": [
+      {
+        "_id": "ca715db33c55fe01",
+        "name": "Psy Rating 3",
+        "modifier": "3",
+        "type": "talent",
+        "effectType": "psy-rating",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "tal00000000043",
+  "name": "Crippling Strike",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "WS 50",
+    "benefit": "+4 Critical Damage",
+    "description": "<p>The character can land his blows precisely where they inflict the most harm, cutting into seams or hammering at weak points. <b>When the character's melee attack causes Critical Damage add +4 Damage.</b></p>",
+    "compendiumId": "tal00000000043",
+    "modifiers": [
+      {
+        "_id": "crippstrike00001",
+        "name": "Crippling Strike - Critical Damage",
+        "modifier": 4,
+        "type": "talent",
+        "effectType": "critical-damage",
+        "valueAffected": "melee",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

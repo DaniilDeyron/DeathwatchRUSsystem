@@ -1,0 +1,25 @@
+{
+  "_id": "grenade000000003",
+  "name": "Astartes Frag Grenade",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/frag-grenade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "150",
+    "class": "Thrown",
+    "dmg": "2d10+2",
+    "dmgType": "Explosive",
+    "penetration": "0",
+    "range": "SBx3",
+    "rof": "S/-/-",
+    "clip": "1",
+    "reload": "-",
+    "equipped": false,
+    "wt": 0.8,
+    "req": 1,
+    "renown": "",
+    "attachedQualities": [{ "id": "blast", "value": "4" }],
+    "description": "<p>The Adeptus Astartes fill their large fragmentation (or frag) grenades and missiles with powerful explosives and aerodynamic metallic shards. The high velocity shrapnel created when they detonate is deadly against common infantry.</p>",
+    "modifiers": []
+  }
+}

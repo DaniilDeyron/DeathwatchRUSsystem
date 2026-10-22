@@ -1,0 +1,25 @@
+{
+  "_id": "plas00000000003",
+  "name": "Astartes Plasma Pistol",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/plasma-pistol-barrage.webp",
+  "system": {
+    "book": "Ries of Battle",
+    "page": "135",
+    "class": "Pistol",
+    "dmg": "1d10+8",
+    "dmgType": "Energy",
+    "penetration": "8",
+    "range": "40",
+    "rof": "S/3/-",
+    "clip": "9",
+    "reload": "3 Full",
+    "equipped": false,
+    "wt": 7,
+    "req": 32,
+    "renown": "Famed",
+    "attachedQualities": [{ "id": "volatile" }, { "id": "overheats" }],
+    "description": "<p>These deadly plasma side arms are unique to the Jericho Reach Deathwatch, and few exist even within their hallowed armouries. Like their larger siblings, the Barrage plasma pistols feature a higher rate fo fire at the cost of increased overheating and energy consumption.</p>",
+    "modifiers": []
+  }
+}

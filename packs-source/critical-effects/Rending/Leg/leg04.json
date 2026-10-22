@@ -1,0 +1,14 @@
+{
+  "_id": "rending-leg0004",
+  "name": "Level 04",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Leg",
+    "description": "The attack rips the kneecap free from the target's leg, causing it to collapse out from under him. The target moves at half speed until medical attention is received. In addition, he takes 2 levels of Fatigue.",
+    "effects": []
+  }
+}

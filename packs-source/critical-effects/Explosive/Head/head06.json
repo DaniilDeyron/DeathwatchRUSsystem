@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-head0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Head",
+    "description": "The target's head explodes under the force of the attack, leaving his headless corpse to spurt blood from the neck for the next few minutes. Needless to say this is instantly fatal.",
+    "effects": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "warp-weapon",
+  "name": "Warp Weapon",
+  "type": "weapon-quality",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "book": "Black Crusade",
+    "page": "213",
+    "key": "warp-weapon",
+    "value": "",
+    "description": "<p>Rare weapons are sometimes composed of the raw power of the Warp or crafted with foul sorcery to hold its power and make them anathema to all living things. Warp weapons ignore Armour and the AP generated from cover. Force fields and armour specially warded work normally against them.</p>"
+  }
+}

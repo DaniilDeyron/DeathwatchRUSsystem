@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000019",
+  "name": "Machine Curse",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "195",
+    "key": "machine-curse",
+    "range": "20m x PR",
+    "sustained": "No",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Codex",
+    "description": "<p>The Librarian calls down a terrible curse on nearby machines and vehicles. The Librarian can either target a single vehicle (such as a battle tank or landspeeder) or a number of mechanical devices (such as guns or servitors) equal to his PR. If a single vehicle is targeted then it may not move or fire any of its weapons for a number of Rounds equal to the Librarian's PR as it shorts and sparks alarmingly. If a number of mechanical devices are chosen then they will be rendered useless for the following Round. Guns will jam (see page 249) and must be unjammed before they can be used. Warded vehicles and devices may be resistant or even immune to this power at the GM's discretion.</p>"
+  }
+}

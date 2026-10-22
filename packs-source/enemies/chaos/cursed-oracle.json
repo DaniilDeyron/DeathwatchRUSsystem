@@ -1,0 +1,205 @@
+{
+  "_id": "enmychaos0000016",
+  "name": "Cursed Oracle",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/cursed-oracle.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 28 },
+      "bs": { "base": 34 },
+      "str": { "base": 38 },
+      "tg": { "base": 36 },
+      "ag": { "base": 35 },
+      "int": { "base": 45 },
+      "per": { "base": 38 },
+      "wil": { "base": 49 },
+      "fs": { "base": 33 }
+    },
+    "wounds": { "base": 12, "max": 12, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "forbidden_lore": { "trained": true },
+      "intimidate": { "trained": true },
+      "parry": { "trained": true },
+      "psyniscience": { "mastered": true }
+    },
+    "psyRating": { "value": 4, "base": 4 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>The gods of Chaos are unpredictable with their gifts, and while some may seem the greatest of blessings, their reality may be a foul curse. It is well known that psykers possess abilities which both allow them access to the powers of the warp and put both their soul and sanity at risk. Occasionally, a chaos psyker will be given a truly magnificent gift, but one few mortals are capable of handling—glimpses into the strands of future fate. Such knowledge can unravel even the strongest mind and those blessed with this gift are often driven mad by it. Despite this, their insane mutterings come to pass with relative frequency and few can deny the power of their knowledge.</p><p>If discovered by a more powerful source, these babbling mystics are often made into advisers and their powers channelled to direct the actions of their new master. In addition to their foresight, being so blessedly open a vessel to the powers of Chaos grants these oracles impressive psychic abilities. In the rare case that an oracle masters his visions without being driven mad, they are a truly fearsome force, utilising their psychic powers to direct the course of entire empires.</p><p><strong>Skills:</strong> Forbidden Lore (Daemonology, Heresy) (Int), Intimidate (S), Parry (WS), Psyniscience (WP) +10.</p><p><strong>Talents:</strong> Psy Rating 4, Strong Minded, Warp Sense.</p><p><strong>Traits:</strong> Fear (1).</p><p><strong>Source:</strong> Black Crusade, p. 360</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos160000001",
+      "_sourceId": "tal00000000250",
+      "name": "Strong Minded",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Willpower 30, Resistance (Psychic Powers)",
+        "benefit": "Re-roll failed Willpower Tests to resist mind-affecting Psychic Powers",
+        "description": "<p>The character's conditioned mind acts as a fortress against psychic attacks. <b>The character may re-roll failed Willpower Tests to resist any Psychic Powers that affect his mind. Psychic Powers that have a physical effect, such as Telekinesis, are unaffected by this Talent.</b></p>",
+        "compendiumId": "tal00000000250",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos160000002",
+      "_sourceId": "tal00000000271",
+      "name": "Warp Sense",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "129",
+        "prerequisite": "Psy Rating, Psyniscience Skill, Perception 30",
+        "benefit": "Use Psyniscience Skill as Half Action instead of Full Action",
+        "description": "<p>The character's senses have evolved to perceive the warp in parallel with the physical world, though it requires some concentration to do so. <b>After gaining this Talent, using the Psyniscience Skill requires a Half Action instead of a Full Action.</b></p>",
+        "compendiumId": "tal00000000271",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos160000003",
+      "name": "Fear (1)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>This creature inspires fear. When first encountering the creature, characters must pass a Willpower test or suffer the effects of Fear.</p>",
+        "modifiers": [],
+        "_sourceId": "Compendium.deathwatch.traits.trt000000000013"
+      }
+    },
+    {
+      "_id": "eichaos160000004",
+      "name": "Reinforced Robes",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 0,
+        "body": 3,
+        "left_arm": 3,
+        "right_arm": 3,
+        "left_leg": 3,
+        "right_leg": 3,
+        "description": "<p>Heavy robes reinforced with concealed armor plates, providing protection to all body locations except the head.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eichaos160000005",
+      "name": "Sword",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A standard sword wielded by the oracle in combat.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos160000006",
+      "name": "Doombolt",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "360",
+        "key": "doombolt",
+        "range": "Special",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Codex",
+        "description": "<p><strong>Placeholder:</strong> This psychic power has not yet been fully implemented. See Black Crusade page 360 for full details.</p>",
+        "_sourceId": "Compendium.deathwatch.psychic-powers.Item.doombolt",
+        "damageFormula": "",
+        "penetrationFormula": "",
+        "damageType": ""
+      }
+    },
+    {
+      "_id": "eichaos160000007",
+      "name": "Precognition",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "360",
+        "key": "precognition",
+        "range": "Self",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Divination",
+        "description": "<p><strong>Placeholder:</strong> This psychic power has not yet been fully implemented. See Black Crusade page 360 for full details.</p>",
+        "_sourceId": "Compendium.deathwatch.psychic-powers.Item.precognition"
+      }
+    },
+    {
+      "_id": "eichaos160000008",
+      "name": "Precognitive Dodge",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "360",
+        "key": "precognitive-dodge",
+        "range": "Self",
+        "sustained": "No",
+        "action": "Reaction",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Divination",
+        "description": "<p><strong>Placeholder:</strong> This psychic power has not yet been fully implemented. See Black Crusade page 360 for full details.</p>",
+        "_sourceId": "Compendium.deathwatch.psychic-powers.Item.precognitive-dodge"
+      }
+    },
+    {
+      "_id": "eichaos160000009",
+      "name": "Glimpse",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "360",
+        "key": "glimpse",
+        "range": "Special",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Divination",
+        "description": "<p><strong>Placeholder:</strong> This psychic power has not yet been fully implemented. See Black Crusade page 360 for full details.</p>",
+        "_sourceId": "Compendium.deathwatch.psychic-powers.Item.glimpse"
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cursed Oracle",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

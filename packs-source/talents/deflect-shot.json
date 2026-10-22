@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000048",
+  "name": "Deflect Shot",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "AG 50",
+    "benefit": "Parry primitive/thrown ranged attacks",
+    "description": "<p>The character's weapons move with such speed that they can deflect thrown weapons and shots fired from primitive weapons. <b>The character may spend a Reaction to Parry an incoming ranged attack from a primitive or thrown weapon.</b></p>",
+    "compendiumId": "tal00000000048",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

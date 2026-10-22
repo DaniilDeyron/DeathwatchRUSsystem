@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000130",
+  "name": "Heightened Senses (Taste)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "PER 30",
+    "benefit": "+10 to Awareness Tests involving taste",
+    "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Taste) would apply to an Awareness Test to detect poison in food, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his tongue</b>.</p>",
+    "compendiumId": "tal00000000130",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

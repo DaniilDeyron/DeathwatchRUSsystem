@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000037",
+  "name": "Living Lightning",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/space-wolves.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "198",
+    "key": "living-lightning",
+    "range": "30 metre radius x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>The Rune Priest cries out to the sky and calls forth a dancing bolt of sentient electricity arcing down from the heavens. While this power is in effect, the Rune Priest can direct the bolt of lightning against any target within range, changing targets between turns regardless of how far apart they are. Those struck by the lightning will suffer 1d10 x PR Energy damage with the Shocking quality. If the target passes a Challenging (+0) Agility Test, he reduces this damage by half (round up).</p><p>This power can only be used outside under an open sky.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp",
+    "damageFormula": "1d10*PR",
+    "penetrationFormula": "0",
+    "damageType": "Energy"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "tau000000007",
+  "name": "Airbursting Fragmentation Launcher",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-airbursting-launcher.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "1d10+5",
+    "dmgType": "Explosive",
+    "penetration": "4",
+    "range": "60",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [
+      { "id": "arm-weapon-mounting" },
+      { "id": "blast", "value": "5" },
+      { "id": "devastating", "value": "2" }
+    ],
+    "description": "<p>The Airbursting Fragmentation Launcher fires specialized munitions that detonate above the target area, showering enemies with lethal shrapnel. The weapon is particularly effective against infantry formations and lightly armored targets.</p>",
+    "modifiers": [],
+    "key": "airbursting-fragmentation-launcher"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-arm0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Arm",
+    "description": "The attack sends a fracture through the limb. The target drops anything held in the hand and takes 2 levels of Fatigue.",
+    "effects": []
+  }
+}

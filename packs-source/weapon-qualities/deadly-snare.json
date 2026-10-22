@@ -1,0 +1,13 @@
+{
+  "_id": "deadly-snare",
+  "name": "Deadly Snare",
+  "type": "weapon-quality",
+  "img": "icons/svg/net.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "key": "deadly-snare",
+    "value": "",
+    "description": "<p>The weapon envelops the target in snares which not only constrict but seek to strangle and flay their victim. This weapon quality functions in the same way as the Snare weapon quality (see Weapon Special Qualities on page 142 in Chapter V: Armoury), except that any character entangled by the weapon suffers the weapon's damage again in their turn every round if they do not break free.</p><p>On a successful hit, the target must make an Agility Test or be immobilised. An immobilised target can attempt to burst the bonds (a Strength Test) or wriggle free (an Agility Test) on his Turn. The target is considered helpless until he escapes. While entangled, the target takes the weapon's full damage at the start of each of their turns.</p>"
+  }
+}

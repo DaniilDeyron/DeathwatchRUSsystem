@@ -1,0 +1,14 @@
+{
+  "_id": "energy-body0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Body",
+    "description": "Struck by the full force of the attack, the target is sent reeling to the ground, smoke spiralling out of the wound. The target is knocked to the ground, Stunned for 1d10 Rounds, and takes 1d5 levels of Fatigue. In addition, he must make an Agility Test or catch fire (see Special Damage on page 210).",
+    "effects": []
+  }
+}

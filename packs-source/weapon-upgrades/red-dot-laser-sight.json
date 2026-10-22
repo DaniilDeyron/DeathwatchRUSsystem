@@ -1,0 +1,27 @@
+{
+  "name": "Red-Dot Laser Sight",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "red-dot-laser-sight",
+    "singleShotOnly": true,
+    "req": 10,
+    "renown": "",
+    "wt": 0.5,
+    "description": "<p>This is a laser sight that grants a +10 bonus to Ballistic Skill Tests when the weapon is fired on single shot.</p><p><strong>Upgrades:</strong> Any Pistol or Basic ranged weapon of the following types: Las, Solid Projectile, Bolt, or Plasma. A red-dot laser sight counts as a sight, and a gun may only have one sight.</p>",
+    "modifiers": [
+      {
+        "_id": "7cbe76ec3ec5fa83",
+        "name": "Red-Dot Laser Sight",
+        "modifier": "10",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true,
+        "singleShotOnly": true
+      }
+    ]
+  }
+}

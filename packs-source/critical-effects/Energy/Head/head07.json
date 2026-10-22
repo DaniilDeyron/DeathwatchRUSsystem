@@ -1,0 +1,14 @@
+{
+  "_id": "energy-head0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "253",
+    "damageType": "Energy",
+    "location": "Head",
+    "description": "In a gruesome display, the flesh is burned from the target's head, exposing charred bone and muscle underneath. The target is blinded permanently and takes 1d10 levels of Fatigue. Also, roll 1d10. This is the target's new Fellowship, unless their Fellowship is already 10 or less, in which case nobody really notices the difference.",
+    "effects": []
+  }
+}

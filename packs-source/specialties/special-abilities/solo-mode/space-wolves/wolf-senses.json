@@ -1,0 +1,28 @@
+{
+  "_id": "smch00000000004",
+  "name": "Wolf Senses",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "217",
+    "key": "wolf-senses",
+    "description": "<p>As part of the genetic gifts of their Primarch Leman Russ, the Space Wolves have almost preternatural senses that exceed even those of other Space Marines. Whenever a Battle-Brother of the Space Wolves Chapter is in Solo Mode he may re-roll any failed Perception-based Tests and counts as possessing the Dark Sight Trait. However, it is important to note that none of these bonuses apply if the Space Wolf is wearing a helmet for a sealed set of armour (e.g., Power Armour, Artificer Armour, or Terminator Armour).</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Adds +10 to all Perception-based Tests</td></tr><tr><td>5</td><td>Gains Unnatural Perception (×2) Trait</td></tr><tr><td>7</td><td>Once per session, automatically pass any Perception-based test (counts as rolling 01 for Opposed Tests)</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Space Wolves",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp",
+    "effect": "Re-roll failed Perception-based Tests and gain Dark Sight (passive while in Solo Mode; no helmet)",
+    "improvements": [
+      { "rank": 3, "effect": "Adds +10 to all Perception-based Tests" },
+      { "rank": 5, "effect": "Gains Unnatural Perception (×2) Trait" },
+      {
+        "rank": 7,
+        "effect": "Once per session, automatically pass any Perception-based test (counts as 01 for Opposed Tests)"
+      }
+    ]
+  }
+}

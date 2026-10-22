@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000076",
+  "name": "Gift of Chaos",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/unaligned.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "214",
+    "key": "gift-of-chaos",
+    "range": "1 metre x Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "Yes",
+    "cost": 400,
+    "class": "Unaligned",
+    "description": "<p><strong>Prerequisites:</strong> Psy Rating 5, Infamy 40+</p><p><strong>Focus Power:</strong> Opposed Hard (-20) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The Sorcerer tears a miniscule hole in reality for the briefest of moments, exposing a single foe to the full splendour of the warp. In seconds, their flesh is remade anew by the glory of Chaos, creating a howling, screaming mass of corrupted matter that thrashes and flails as it succumbs to mutation after mutation.</p><p>The target opposes this power with a Toughness Test. If the target wins, it suffers no Damage. If it loses, it suffers 1d10 Damage +2 per Degree of Failure, ignoring Toughness Bonus and Armour. If the target loses the Test by four or more Degrees, the target mutates, immediately suffering a random Gift of Gods (see page 291)—at the GM's discretion, minor NPCs or adversaries can simply be transformed into a mewling, disgusting, and harmless Chaos Spawn, effectively killing them.</p>",
+    "damageFormula": "1d10",
+    "penetrationFormula": "0",
+    "damageType": "Energy",
+    "attachedQualities": []
+  }
+}

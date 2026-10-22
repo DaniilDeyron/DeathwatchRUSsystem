@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000013",
+  "name": "Kroot Rifle",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/kroot-rifle.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Basic",
+    "dmg": "1d10+5",
+    "dmgType": "Energy",
+    "penetration": "1",
+    "range": "110",
+    "rof": "S/2/-",
+    "clip": "6",
+    "reload": "2Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [],
+    "description": "<p>The standard ranged weapon of the Kroot warriors. The Kroot Rifle fires energy bolts and features an integrated bladed stock that can be used in melee combat (see Kroot Rifle Melee variant).</p>",
+    "modifiers": [],
+    "key": "kroot-rifle"
+  }
+}

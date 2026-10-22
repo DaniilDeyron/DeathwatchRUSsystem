@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000239",
+  "name": "Sharpshooter",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "126",
+    "prerequisite": "Ballistic Skill 40, Deadeye Shot",
+    "benefit": "No penalty for Called Shots with ranged weapons",
+    "description": "<p>The character's steady hand and eagle eye allow him to place shots exactly where he wants. <b>When making a Called Shot, the character does not incur the normal –20 penalty. The effect of this Talent replaces those of Deadeye Shot.</b></p>",
+    "compendiumId": "tal00000000239",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "tal00000000042",
+  "name": "Crack Shot",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "BS 40",
+    "benefit": "+2 Critical Damage",
+    "description": "<p>The character can place his shots where they inflict more harm, at creases, gaps, or joints in armour. <b>When the character's ranged attack causes Critical Damage, add +2 to the Damage.</b></p>",
+    "compendiumId": "tal00000000042",
+    "modifiers": [
+      {
+        "_id": "crackshot0000001",
+        "name": "Crack Shot - Critical Damage",
+        "modifier": 2,
+        "type": "talent",
+        "effectType": "critical-damage",
+        "valueAffected": "ranged",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

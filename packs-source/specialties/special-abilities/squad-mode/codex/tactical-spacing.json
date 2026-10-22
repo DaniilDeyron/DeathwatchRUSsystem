@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000012",
+  "name": "Tactical Spacing",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "tactical-spacing",
+    "description": "<p>Formation and spacing are an important part of a squad's function on the battlefield and influence their ability to warn each other of danger and defend themselves against attack. While this ability is in effect, the Battle-Brother and those in Support Range of him can share their Reactions. For example, one member of the Kill-team could give his Reaction (losing it for himself for the turn) to another member of the Kill-team to use. If the Space Marine has extra reactions (such as the bonus reactions granted from the Step Aside Talent), these may also be shared.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>All members gain an additional Reaction while this ability is in effect</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team in Support Range may share Reactions (including bonus Reactions from talents like Step Aside)",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "All members gain an additional Reaction while this ability is in effect"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 1,
+    "sustained": true,
+    "action": "full"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000053",
+  "name": "Noble Praetorian",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/imperial-fists.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "50",
+    "key": "noble-praetorian",
+    "range": "Self/line of sight",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>Rogal Dorn is remembered by many as the right hand of the Emperor, his most faithful son who stood watch over him and enacted his every command with unshakable loyalty. Reaching into his soul and his genetic inheritance, the Librarian channels a portion of Dorn's noble spirit, making himself a champion of the weak and a defender of the just. While this power is in effect, the Imperial Fists Librarian and all other friendly characters (including NPCs) that can see him may re-roll failed Willpower Tests made to avoid the effects of Fear.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/imperial-fists.webp"
+  }
+}

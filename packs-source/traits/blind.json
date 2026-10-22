@@ -1,0 +1,31 @@
+{
+  "_id": "trt000000000005",
+  "name": "Blind",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>Blind creatures automatically fail all tests based on vision and automatically fail all Ballistic Skill Tests. Such creatures take a –30 penalty to Weapon Skill Tests and most other tests that ordinarily involve or are benefited by vision.</p>",
+    "modifiers": [
+      {
+        "_id": "blind-bs-penalty",
+        "name": "Blind (BS)",
+        "modifier": -100,
+        "type": "trait",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true
+      },
+      {
+        "_id": "blind-ws-penalty",
+        "name": "Blind (WS)",
+        "modifier": -30,
+        "type": "trait",
+        "effectType": "characteristic",
+        "valueAffected": "ws",
+        "enabled": true
+      }
+    ]
+  }
+}

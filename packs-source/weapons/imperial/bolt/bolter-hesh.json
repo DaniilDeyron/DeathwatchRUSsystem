@@ -1,0 +1,29 @@
+{
+  "_id": "bolt00000000007",
+  "name": "Astartes Bolter (Hesh)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/bolter-hesh.webp",
+  "system": {
+    "book": "Rits of Battle",
+    "page": "134",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Explosive",
+    "penetration": "4",
+    "range": "50",
+    "rof": "S/3/-",
+    "clip": "28",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 15,
+    "req": 0,
+    "renown": "Special",
+    "attachedQualities": [
+      { "id": "tearing" },
+      { "id": "accurate" },
+      { "id": "reliable" }
+    ],
+    "description": "<p>The Hesh-pattern bolter first appeared in Deathwatch armouries in M36. It was initially designed by Magos Cymbry Jamis, an adherent of the Omnissiah, and gifted to Deathwatch in appreciation for services rendered to the Mechanicus and Holy Mars. These bolters are of exceptional craftsmanship, and more compact than typical weapons of their type. Thanks to their relatively smaller size and ease of use, Hesh-pattern bolters are well suited to close-quarters combat, such as in buildings or aboard voidships, and are favoured by vehicle crews, Tactical Marines specialising in close combat, and, to a lesser degree, Assault Marines. Along with their fine craftsmanship, these bolters also have an integral folding stock, motion predictor, and preysense sight. Hesh-pattern Bolters are automatically of best Craftsmanship (all bonuses have already been added into the weapon's statistics).</p>",
+    "modifiers": []
+  }
+}

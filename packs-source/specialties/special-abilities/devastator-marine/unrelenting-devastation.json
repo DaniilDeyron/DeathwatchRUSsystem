@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000007",
+  "name": "Unrelenting Devastation",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "77",
+    "key": "unrelenting-devastation",
+    "description": "<p>When the Devastator Marine successfully attacks and damages a Horde with a Heavy weapon, he deals an additional 1d5 damage to the Horde’s Magnitude. This additional damage stacks with any other additional damage dealt to the Horde, such as damage from a Blast weapon or a Flame weapon. This additional damage applies per attack, not per hit  (so unless there are exceptional circumstances afoot, it will only apply once per Turn). If the attack deals damage to multiple Hordes, the Marine chooses which Horde takes the extra damage.</p>",
+    "specialty": "Devastator Marine",
+    "specialtyImg": "systems/deathwatch/icons/specialty/devastatormarine.webp"
+  }
+}

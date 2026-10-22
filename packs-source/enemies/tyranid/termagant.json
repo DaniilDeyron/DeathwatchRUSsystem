@@ -1,0 +1,225 @@
+{
+  "_id": "enmytyranid00002",
+  "name": "Termagant",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tyranid/termagant.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 30 },
+      "bs": { "base": 33 },
+      "str": { "base": 32 },
+      "tg": { "base": 30 },
+      "ag": { "base": 40 },
+      "int": { "base": 10 },
+      "per": { "base": 40 },
+      "wil": { "base": 30 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 9, "max": 9, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "climb": { "trained": true },
+      "dodge": { "trained": true },
+      "silent_move": { "trained": true },
+      "swim": { "trained": true, "mastered": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Termagants are the most numerous of the Tyranid bioforms, forming the bulk of any Tyranid swarm. They are small, skittering creatures armed with living ranged weapons called Fleshborers that fire borer beetles at the enemy. While individually weak, their sheer numbers make them a significant threat.</p><p><strong>Traits:</strong> Tyranid, Natural Armour (3), Improved Natural Weapons (Teeth and Claws), Instinctive Behaviour (Lurk), Dark Sight</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 369</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eityranid0200001",
+      "_sourceId": "tal00000000143",
+      "name": "Leap Up",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Agility 30",
+        "benefit": "Stand up as Free Action",
+        "description": "<p>A combination of athletic ability and speed allow the character to spring to his feet in virtually any circumstance. <b>The character may stand up as a Free Action.</b></p>",
+        "compendiumId": "tal00000000143",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200002",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200003",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (3)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "3",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0200004",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons (Teeth and Claws)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200005",
+      "_sourceId": "trt000000000021",
+      "name": "Instinctive Behaviour (Lurk)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A Tyranid creature with this trait will be reduced to acting according to their instincts if they are separated from the controlling presence of the Hive Mind. In effect, this means that any encounter in which creatures with this trait are not accompanied by a Tyranid creature with the Synapse Creature trait (see page 135 in this chapter), they will behave in a particular way. The creature's instinctive behaviour is noted in parentheses and has the following effects:</p><p><strong>Feed:</strong> The creature's instinct is to feed on flesh, blood, and bone and its hunger can never be sated. The creature will try to find and attack any living, biological, non-Tyranid creature and eat them. In this state, the creature gains the Fearless and Frenzy talents. The same applies to a Horde with this trait not under the influence of a synapse creature.</p><p><strong>Lurk:</strong> The creature's instincts are to find shelter from attack, to hide and survive. It will try to flee and find shelter in whatever way the situation allows. In a starship, for example, it may scuttle into the ducting system. When confronted, the creature's aim is to try to escape and will only attack if left no avenue for escape or in order to survive. If a Horde with this trait is not under the influence of a synapse creature, it will automatically break (see Breaking a Horde on page 360 of this chapter).</p><p><strong>Stalk:</strong> The creature's instinct is to remain unseen, to find prey, slay it, feed, and then resume its hunt for others. In this state, the creature gains the Stealth (Ag) +10 skill. It will not attack enemies unless it can take them by surprise or outnumbers them. Having made a kill, the creature briefly feeds before fleeing. A horde with this trait automatically breaks (see Breaking a Horde on page 360 of this chapter), with individual creatures scattering to find shadows from which to begin their hunt.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200006",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200007",
+      "name": "Fleshborer",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-fleshborer.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+9",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "20",
+        "rof": "S/-/-",
+        "clip": "—",
+        "reload": "—",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "proven" },
+          { "id": "tearing" },
+          { "id": "living-ammunition" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A Fleshborer is a nest for razor-fanged borer beetles which it ejects towards enemies.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200008",
+      "name": "Teeth and Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-scything-talons.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+3",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>Sharp teeth and claws used in close combat.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200009",
+      "name": "Spike Rifle",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-spike-rifle.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+4",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "80",
+        "rof": "S/-/-",
+        "clip": "—",
+        "reload": "—",
+        "equipped": false,
+        "attachedQualities": [{ "id": "living-ammunition" }],
+        "attachedUpgrades": [],
+        "description": "<p>Essentially a long tube of muscle, the spike rifle fires a short harpoon-like bone into its targets over a considerable distance. Razor sharp and fired with great force, the spike is able to punch through light armour and even right through unarmoured targets. Once embedded in flesh it becomes very difficult to remove as it has tiny barbs which dig into the victim, holding it in place.</p><p>Spike Rifles are usually carried by Termagants and these creatures may replace their Fleshborer with a Spike Rifle should the GM choose.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0200010",
+      "name": "Strangleweb",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-strangleweb.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "30",
+        "rof": "S/-/-",
+        "clip": "—",
+        "reload": "—",
+        "equipped": false,
+        "attachedQualities": [
+          { "id": "deadly-snare" },
+          { "id": "devastating", "value": "1" },
+          { "id": "living-ammunition" },
+          { "id": "flame" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A composite creature, like all Tyranid weapons, the Strangleweb fires a spray of sticky mucus at its target, enveloping them in strands of glistening web. Almost immediately the web begins to harden and those covered become enmeshed in a cocoon of constricting fibers which begins to crush them. Those that survive the crushing are left to the mercy of the swarm.</p><p>This weapon uses the Flame Quality rules but does not set anyone on fire.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Termagant",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

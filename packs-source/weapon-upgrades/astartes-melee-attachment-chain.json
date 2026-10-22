@@ -1,0 +1,16 @@
+{
+  "name": "Astartes Melee Attachment (Chain)",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "astartes-melee-attachment-chain",
+    "singleShotOnly": false,
+    "req": 9,
+    "renown": "",
+    "wt": 8,
+    "description": "<p>A whirring chain attachment that allows the weapon to count as a Chainsword in close combat. Note: This attachment lacks the Balanced Quality.</p><p><strong>Upgrades:</strong> Any Basic ranged weapon</p>",
+    "modifiers": []
+  }
+}

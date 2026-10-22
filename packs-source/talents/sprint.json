@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000245",
+  "name": "Sprint",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "126",
+    "prerequisite": "",
+    "benefit": "Full Move +AG Bonus metres, Run doubles movement for one Round",
+    "description": "<p>The character can move at great speeds. <b>When taking a Full Move Action, the character can move an extra number of metres equal to his Agility Bonus. When taking the Run Action, the character may double his movement for one Round. The character gains one level of Fatigue if he uses this Talent two Turns in a row.</b></p>",
+    "cost": 600,
+    "compendiumId": "tal00000000245",
+    "modifiers": [],
+    "rankRequired": 4
+  }
+}

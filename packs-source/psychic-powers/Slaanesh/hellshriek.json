@@ -1,0 +1,25 @@
+{
+  "_id": "psy00000000112",
+  "name": "Hellshriek",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/slaanesh.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "217",
+    "key": "hellshriek",
+    "range": "3 metres x Psy Rating radius",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 400,
+    "class": "Slaanesh",
+    "description": "<p><strong>Prerequisites:</strong> Mark of Slaanesh, Corruption 50+</p><p><strong>Focus Power:</strong> Challenging (+0) Corruption Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The Sorcerer reaches deep into the warp and produces a soul-shattering noise that inflicts terrible pain upon those that hear it. Many sorcerers attribute this power to the genetic tampering of Fabius Bile during the early days of the Heresy, and to the engineered talents of Lord-Commander Eidolon of the Emperor's Children.</p><p>A Hellshriek is a Psychic Blast centred on the Sorcerer. Any creature within the area of effect, with the exception of the Sorcerer, suffers 2d10 + Psy Rating Rending Damage with the Concussive (1) and Warp Weapon Qualities.</p><p><strong>Psychic Phenomena:</strong> The shrieking cry of the Sorcerer reverberates through the warp, echoing for moments after the initial blast of sound, lingering in the ears and minds of those nearby. Until the start of the Sorcerer's next turn, all creatures within range of the power suffer a –20 penalty to all Perception Tests. This is in addition to any normal psychic phenomena.</p>",
+    "damageFormula": "2d10+PR",
+    "penetrationFormula": "0",
+    "damageType": "Rending",
+    "attachedQualities": [
+      { "id": "concussive", "value": "1" },
+      { "id": "warp-weapon" }
+    ]
+  }
+}

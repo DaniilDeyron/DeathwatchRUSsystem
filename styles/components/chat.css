@@ -1,0 +1,310 @@
+/* Chat Message Styling */
+
+/* Foundry chat message content styling */
+.chat-message .message-content {
+  padding: 12px !important;
+  position: relative;
+
+  /* Aged parchment effect - lighter for readability */
+  background:
+    /* Vignette darkening at edges */
+    radial-gradient(
+      ellipse at center,
+      transparent 50%,
+      rgba(139, 111, 78, 0.15) 100%
+    ),
+    /* Subtle paper texture */
+    repeating-linear-gradient(
+      45deg,
+      rgba(212, 165, 116, 0.05),
+      rgba(212, 165, 116, 0.05) 1px,
+      transparent 1px,
+      transparent 2px
+    ),
+    /* Light parchment base */
+    linear-gradient(
+      135deg,
+      rgba(240, 230, 210, 0.98),
+      rgba(230, 220, 200, 0.98)
+    ) !important;
+
+  background-blend-mode: multiply, normal, normal;
+
+  /* Imperial gold accent border */
+  border-left: 4px solid var(--dw-imperial-gold) !important;
+  border-radius: 2px;
+
+  /* Depth shadows */
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset -1px 0 0 rgba(212, 165, 116, 0.2) !important;
+}
+
+/* Message header styling */
+.chat-message .message-header {
+  background: linear-gradient(135deg, rgba(139, 111, 78, 0.3), rgba(160, 130, 95, 0.3)) !important;
+  border-bottom: 2px solid #5a4416 !important;
+  padding: 8px 12px !important;
+  margin-bottom: 0;
+}
+
+.chat-message .message-sender {
+  font-family: var(--dw-font-display) !important;
+  color: #5a4416 !important;
+  font-size: 1em !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+  margin: 0;
+}
+
+.chat-message .message-header .flavor-text {
+  font-family: var(--dw-font-body) !important;
+  color: #3a2a18 !important;
+  font-size: 0.9em !important;
+  font-weight: normal;
+  margin-top: 4px;
+  display: block;
+  width: 100%;
+}
+
+/* Illuminated border corner (top-left) */
+.chat-message .message-content::before {
+  content: '' !important;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-top: 2px solid var(--dw-imperial-gold) !important;
+  border-left: 2px solid var(--dw-imperial-gold) !important;
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Illuminated border corner (bottom-right) */
+.chat-message .message-content::after {
+  content: '' !important;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid var(--dw-imperial-gold) !important;
+  border-right: 2px solid var(--dw-imperial-gold) !important;
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Typography for chat messages */
+.chat-message .message-content h3 {
+  margin: 0 0 8px 0 !important;
+  color: #5a4416 !important;
+  font-family: var(--dw-font-display) !important;
+  font-size: 1.1em !important;
+  font-weight: bold !important;
+  border-bottom: 1px solid rgba(90, 68, 22, 0.5) !important;
+  padding-bottom: 4px !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+}
+
+.chat-message .message-content p {
+  margin: 4px 0 !important;
+  color: #1a1410 !important;
+}
+
+/* Target specific item card types */
+.deathwatch-chat-card,
+[class$="-card"] {
+  padding: 12px;
+  position: relative;
+}
+
+/* Legacy class support */
+.deathwatch-chat-card::before,
+[class$="-card"]::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-top: 2px solid var(--dw-imperial-gold);
+  border-left: 2px solid var(--dw-imperial-gold);
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.deathwatch-chat-card::after,
+[class$="-card"]::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid var(--dw-imperial-gold);
+  border-right: 2px solid var(--dw-imperial-gold);
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.deathwatch-chat-card h3,
+[class$="-card"] h3 {
+  margin: 0 0 8px 0;
+  color: var(--dw-imperial-gold-light);
+  font-family: var(--dw-font-display);
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(138, 155, 168, 0.3);
+  padding-bottom: 4px;
+  text-shadow: 0 0 4px rgba(212, 165, 116, 0.3);
+}
+
+.deathwatch-chat-card p,
+[class$="-card"] p {
+  margin: 4px 0;
+  color: var(--dw-deathwatch-silver-light);
+}
+
+/* Insanity Test Result Styling */
+.insanity-test-result .test-breakdown {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.insanity-test-result .test-breakdown .test-total {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #555;
+}
+
+.insanity-test-result .roll-result {
+  font-size: 1.05em;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  margin: 8px 0;
+}
+
+.insanity-test-result .success {
+  color: var(--dw-success-bright);
+  font-weight: bold;
+  font-size: 1.05em;
+  padding: 6px 8px;
+  background: rgba(78, 204, 163, 0.2);
+  border-left: 3px solid var(--dw-success-green);
+  border-radius: 3px;
+}
+
+.insanity-test-result .failure {
+  color: var(--dw-critical-damage);
+  font-weight: bold;
+  font-size: 1.05em;
+  padding: 6px 8px;
+  background: rgba(220, 20, 60, 0.2);
+  border-left: 3px solid var(--dw-critical-damage);
+  border-radius: 3px;
+}
+
+/* Battle Trauma Roll Styling */
+.battle-trauma-roll h3 {
+  color: #f0e6d2;
+  font-weight: bold;
+}
+
+.battle-trauma-roll .roll-result {
+  font-size: 1.05em;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  margin: 8px 0;
+}
+
+/* Cohesion Chat Messages */
+.cohesion-chat {
+  font-size: 1em;
+  padding: 6px 8px;
+}
+
+/* Roll flavor text styling */
+.chat-message .flavor-text,
+.chat-message .dice-flavor {
+  font-family: var(--dw-font-display) !important;
+  color: #5a4416 !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+  margin-bottom: 8px;
+}
+
+/* Roll result styling */
+.chat-message .dice-roll {
+  margin: 0;
+}
+
+.chat-message .dice-total {
+  font-family: var(--dw-font-mono) !important;
+  color: #1a3d12 !important;
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Chat buttons */
+.chat-message button {
+  background: linear-gradient(135deg, var(--dw-imperial-gold-dark), var(--dw-imperial-gold)) !important;
+  border: 1px solid var(--dw-imperial-gold) !important;
+  color: var(--dw-deathwatch-black) !important;
+  padding: 6px 12px !important;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: var(--dw-font-body) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.chat-message button:hover {
+  background: linear-gradient(135deg, var(--dw-imperial-gold), var(--dw-imperial-gold-light)) !important;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 0 8px rgba(212, 165, 116, 0.4) !important;
+  transform: translateY(-1px);
+}
+
+.chat-message button:active {
+  transform: translateY(0);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.4),
+    0 1px 2px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Apply Damage button visibility control */
+.apply-damage-btn {
+  display: none;
+}
+
+.apply-damage-btn[data-can-apply="true"] {
+  display: inline-block;
+}
+
+/* Roll Critical button visibility control */
+.roll-critical-btn {
+  display: none;
+}
+
+.roll-critical-btn[data-can-apply="true"] {
+  display: inline-block;
+}

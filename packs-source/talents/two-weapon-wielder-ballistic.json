@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000262",
+  "name": "Two-Weapon Wielder (Ballistic)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "128",
+    "prerequisite": "Ballistic Skill 35, Agility 35",
+    "benefit": "Attack with two ranged weapons as Full Action with -20 penalty",
+    "description": "<p>Years of training allow the character to use a weapon in each hand when needed. <b>When armed with two weapons of the same type, the character may spend a Full Action to attack with both. Both tests made to attack with the weapons suffer a –20 penalty (see Chapter VIII: Combat for more details on fighting with two weapons). The character must possess Two-Weapon Wielder (Melee) and Two-Weapon Wielder (Ballistic) if he wishes to use a gun and hand weapon with this Talent.</b></p>",
+    "compendiumId": "tal00000000262",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "soli00000000005",
+  "name": "Astartes Assault Shotgun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/assault-shotgun.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "136",
+    "class": "Basic",
+    "dmg": "1d10+10",
+    "dmgType": "Impact",
+    "penetration": "4",
+    "range": "30",
+    "rof": "S/3/5",
+    "clip": "20",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 10,
+    "req": 7,
+    "renown": "",
+    "attachedQualities": [{ "id": "shocking" }, { "id": "smoke" }],
+    "description": "<p>While not as iconic or widespread amongst Space Marines as the Astartes bolter, the Astartes assault shotgun is a powerful and versatile weapon used by their Scouts. These bulky, clip-fed shotguns can fire in single shots and in both semi- and fully automatic modes, and can use an array of specialty ammunition ranging from armour-piercing penetrator rounds to the powerful manstopper rounds. Assault shotguns are best used in urban and close-quarters combat, as well as in boarding actions aboard voidships.</p>",
+    "modifiers": []
+  }
+}

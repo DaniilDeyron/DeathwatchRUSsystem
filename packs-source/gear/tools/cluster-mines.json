@@ -1,0 +1,15 @@
+{
+  "_id": "clustermines001",
+  "name": "Cluster Mines",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/cluster-mines.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 4,
+    "req": 5,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Cluster mines are designed not just for explosive power, but to avoid the enemy’s notice until he is blown into tiny bits. Cluster mines achieve this aim by packing triple-intensity fyceline or similarly potent explosives into dozens of micro-explosive nodules that are linked to a single trigger, typically a tripwire or pressure sensor. The networked explosives have a synergistic effect and produce a massive blast when detonated.</p><p>A standard mine array covers two square metres; this can be increased by linking multiple mine arrays, but the area’s smallest dimension must not be less than one metre for the mines to have their full effect. Cluster mines are designed for even the relatively green Scout squads to plant without extensive training. When setting cluster mines, the character makes a <b>Concealment Test, receiving a +20 bonus if he is also trained in Demolitions</b>. Note the degrees of success, as any character about to pass through a mined area Opposes those successes with an Awareness Test. If the potential victim wins the contest, he may stop short to avoid the mines. If he fails, he and anyone else in the mined area take <b>4d10 X Damage with a Penetration of 4</b>.</p><p>A successful Demolitions Test while planting mines allows for more sophisticated trigger techniques such as time-delays. These booby traps are particularly effective when used to damage the vulnerable underside of most vehicles. Cluster mines double their Penetration to any vehicle in their area of effect</p>"
+  }
+}

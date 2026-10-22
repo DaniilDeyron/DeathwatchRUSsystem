@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000169",
+  "name": "Mimic",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "",
+    "benefit": "Accurately mimic voices after one hour of study",
+    "description": "<p>Vox synthesisers, training, or innate abilities allow the character to accurately mimic the voice of another. <b>The character must study the voice patterns of his intended target for at least one hour for proper imitation, and speak the same language. The character cannot accurately copy the voice of a xenos due to the difference in physiology and the subtle complexities of most alien languages. Listeners must succeed on a Difficult (–10) Scrutiny Test to penetrate the deception. If the character's study used vox recordings or comm-link conversations rather than in-person observation, the Difficulty of the Scrutiny Test is reduced to Challenging (+0). The character's deception automatically fails if the listener can clearly see him.</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000169",
+    "modifiers": [],
+    "rankRequired": 5
+  }
+}

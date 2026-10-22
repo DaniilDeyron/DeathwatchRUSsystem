@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000015",
+  "name": "Astartes Weapon Training",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "",
+    "description": "<p>Battle-Brothers of the Adeptus Astartes spend years becoming proficient with all manner of weapons. By the time that a Battle-Brother has entered service in a squad, he will have not only trained with both heavy and melee weapons, but used those weapons on countless battlefields. The Battle-Brother is proficient with bolt, chain, melta, plasma, power, flame, primitive (ranged and melee), las weapons, launchers, solid projectile, and thrown weapons of all Classes. In essence, the only weapons that the Battle-Brother is not proficient with are exotic weapons; for these, he must acquire individual proficiencies as normal.</p>",
+    "cost": 0,
+    "compendiumId": "tal00000000015",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "proven",
+  "name": "Proven",
+  "type": "weapon-quality",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "142",
+    "key": "proven",
+    "value": "3",
+    "description": "<p>Weapons with the Proven Quality have a minimum damage die result equal to the rating. Thus, a weapon with the Proven 3 Weapon Quality has a minimum result of 3 for all damage dice. These dice are not re-rolled; any result lower than the rating is considered to instead be equal to the rating.</p>"
+  }
+}

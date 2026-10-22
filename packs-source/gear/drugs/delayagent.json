@@ -1,0 +1,17 @@
+{
+  "_id": "delayagent00001",
+  "name": "Delay Agent",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/toxin.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "172",
+    "wt": 0,
+    "req": 6,
+    "renown": "",
+    "shortDescription": "Drugs",
+    "description": "<p>Not a toxin in and of itself, a delay agent encapsulates the molecules of drugs and poisons with a slowly decaying non-reactive microshell that allows the payload to take effect substantially after delivery. Any drug or toxin may be cut with a delay agent, causing it to take effect <b>1d5 hours after</b> it is administered.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

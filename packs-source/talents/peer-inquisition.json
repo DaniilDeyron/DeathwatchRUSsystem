@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000184",
+  "name": "Peer (Inquisition)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Fellowship 30",
+    "benefit": "+10 Fellowship Tests with Inquisition",
+    "description": "<p>The character knows how to deal with a particular social group or organisation. <b>He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.</b> The GM and player may agree to award this Talent when appropriate to the adventure or campaign.</p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000184",
+    "modifiers": [],
+    "rankRequired": 5
+  }
+}

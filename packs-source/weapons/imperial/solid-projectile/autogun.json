@@ -1,0 +1,24 @@
+{
+  "_id": "soli00000000001",
+  "name": "Autogun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/autogun.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+3",
+    "dmgType": "Impact",
+    "penetration": "0",
+    "range": "100",
+    "rof": "S/3/-",
+    "clip": "30",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 3.5,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Cheap and easy to produce, autoguns are a common weapon across the galaxy; even alien races acquire and use them or sometimes make their own equivalents. These rapid-firing automatic weapons use common solid low-calibre shells fed via standardized clips. Reliable, rugged, and easily stocked with ammunition, they are a mainstay on many a planet.</p>",
+    "modifiers": []
+  }
+}

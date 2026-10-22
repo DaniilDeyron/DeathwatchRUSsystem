@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000252",
+  "name": "Swift Attack",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "127",
+    "prerequisite": "Weapon Skill 35",
+    "benefit": "Make two melee attacks as Full Action",
+    "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+    "compendiumId": "tal00000000252",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

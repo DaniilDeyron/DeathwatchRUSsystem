@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000085",
+  "name": "Ferric Lure",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "Techmarine or Mechanicus Implants",
+    "benefit": "Pull metal objects to hand",
+    "description": "<p>The character can cause an unsecured metal object within his field of vision to fly into his hand. <b>The object may weigh up to 1 kilogram per point of the character's Willpower Bonus, and must lie within 20 metres.</b> Using this Talent requires a Full Action and a successful a Willpower Test.</p>",
+    "compendiumId": "tal00000000085",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "ct-da-003",
+  "name": "Robe (Seeker's Robe)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 1,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Dark Angels Chapter Trapping",
+    "description": "<p>Hooded robes are a common sight amongst Dark Angels. While they are most often worn by veterans and other high ranking warriors, Battle-Brothers of all ranks may be found wearing them. The exact reasons and hidden meanings of wearing such a robe are difficult to discern even for members of the Chapter.</p><p><strong>Effect:</strong> Add +3 to Scrutiny Tests.</p>",
+    "modifiers": [
+      {
+        "_id": "ct-da-003-mod-01",
+        "name": "Seeker's Robe",
+        "modifier": "3",
+        "type": "chapter",
+        "effectType": "skill",
+        "valueAffected": "scrutiny",
+        "enabled": true
+      }
+    ],
+    "key": "dark-angels-robe-seeker"
+  }
+}

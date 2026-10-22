@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000134",
+  "name": "Improved Warp Sense",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "Warp Sense",
+    "benefit": "Use Psyniscience Skill as Free Action",
+    "description": "<p>The character can now see the warp and physical universe side by side, no longer taking any concentration on his part. <b>After gaining this Talent, the character may use the Psyniscience Skill as a Free Action.</b></p>",
+    "compendiumId": "tal00000000134",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

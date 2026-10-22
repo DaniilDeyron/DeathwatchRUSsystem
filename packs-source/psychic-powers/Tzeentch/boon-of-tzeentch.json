@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000102",
+  "name": "Boon of Tzeentch",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "218",
+    "key": "boon-of-tzeentch",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 300,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> Willpower 40</p><p><strong>Focus Power:</strong> Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker calls upon the power of Tzeentch to remake his body and mind, boosting his abilities beyond mortal limits. The Changer of Ways does not grant such gifts freely, however, and the psyker's flesh writhes with mutation as payment for this power.</p><p>While this power remains in effect, the psyker increases one characteristic of his choice by +20 and gains the Unnatural Characteristic (chosen characteristic) (x2) Trait for the duration. However, the psyker suffers 1d5 points of Corruption and must roll on Table 6-2: Gifts of the Gods.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-leg0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Leg",
+    "description": "The force of the explosion takes the target's feet out from under him. He lands Prone and takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000094",
+  "name": "Precision Telekinesis",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telekinesis.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "226",
+    "key": "precision-telekinesis",
+    "range": "5 metres per Psy Rating",
+    "sustained": "Half Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 100,
+    "class": "Telekinesis",
+    "description": "<p><strong>Prerequisites:</strong> Mind over Matter</p><p><strong>Focus Power:</strong> Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The true Telekine does not just manipulate large objects with clumsy force. Precision and care are essential for the more complex applications of telekinetic force. Adeptus Astra Telepathica Savants speak of the subtle will as a state of calm determination, while Eldar legend tells of the seeress Edriané, whose gifts produced a psychic touch of peerless dexterity.</p><p>This power allows the psyker to perform any task he could accomplish with his bare hands, such as operating complex controls, picking a pocket, wielding a weapon or grabbing an adversary. In any situation where the task in question would require a Characteristic Test, the psyker substitutes his Willpower instead. The psyker's Psy Rating substitutes for his Strength Bonus while using this power.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

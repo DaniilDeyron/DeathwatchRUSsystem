@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000019",
+  "name": "Astartes Backpack Ammo Supply (Flame)",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/backpack-supply.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "159",
+    "capacity": { "value": 75, "max": 75 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Many weapons require larger ammunition sources to function during extended battles. A backpack supply fits over the standard backpack power unit on Astartes power armour. For flame weapons, the supply consists of volatile fuel tanks. A weapon connected to a backpack supply uses that supply for its ammunition and ignores its normal clip size. Backpack Ammo/Power supplies weigh 40 kg and are automatically issued with any heavy weapon.</p><p><b>Used With</b>: Flame weapons.</p>"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000024",
+  "name": "Basic Weapon Training (Universal)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "",
+    "benefit": "Use all weapon groups without penalty.",
+    "description": "<p>The character has received Basic Weapon Training in all weapon groups (Universal), and can use them without penalty. The Universal group includes the Bolt, Las, Launcher, Melta, Plasma, Primitive, and Solid Projectile groups. <b>Weapon Skill or Ballistic Skill Tests used with a weapon that a character does not have training for suffer a –20 penalty.</b></p>",
+    "compendiumId": "tal00000000024",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

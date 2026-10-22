@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-leg0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Leg",
+    "description": "Explosive force removes part of the target's foot and scatters it over a wide area. The target must make an immediate Challenging (+0) Toughness Test or permanently lose the use of his foot, inflicting 1d5 levels of Fatigue. On a success, the target takes 1d5 levels of Fatigue and halves his movement until he receives medical attention.",
+    "effects": []
+  }
+}

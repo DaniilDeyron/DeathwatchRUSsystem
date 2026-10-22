@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000018",
+  "name": "Swift Withdrawal",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Honour The Chapter",
+    "page": "86",
+    "key": "swift-withdrawal",
+    "description": "<p>Like the Raven Guard, the Raptors excel at hit and run tactics, striking and then falling back before they can be attacked. These kinds of manoeuvres also lend themselves to rapid extraction when the squad finds itself unexpectedly in danger, falling away from an ambush or sudden assault before the enemy can press their advantage. When the squad has been surprised by an enemy, this ability can be used to disengage before combat truly begins. The GM should make the Surprise attacks for the enemies (see page 235 of the DEATHWATCH Core Rulebook) then if the squad chooses to make a swift withdrawal, combat immediately ends and the squad makes a retreat. The GM should use his discretion to decide whether retreat would be possible and where the squad would be able to retreat to. However, unless they would absolutely not be able to withdraw from their foes or there is nowhere to run, the GM should allow the squad to disengage from combat without further attacks made against them.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>Battle-Brothers can each take a Half Action before making their retreat, which can be an attack against their foes</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Raptors",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/raptors.webp",
+    "effect": "When surprised, after enemy Surprise attacks, squad can immediately end combat and retreat (GM discretion on feasibility)",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "Battle-Brothers can each take a Half Action before making their retreat, which can be an attack against their foes"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 3,
+    "sustained": false,
+    "action": "reaction"
+  }
+}

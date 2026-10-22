@@ -1,0 +1,14 @@
+{
+  "_id": "rending-leg0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Leg",
+    "description": "The attack rips a length of flesh from the leg, causing blood to gush from the wound. The target takes 1 level of Fatigue and suffers Blood Loss.",
+    "effects": []
+  }
+}

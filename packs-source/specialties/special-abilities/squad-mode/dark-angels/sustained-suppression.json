@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000003",
+  "name": "Sustained Suppression",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "222",
+    "key": "sustained-suppression",
+    "description": "<p>Dark Angels are masters of holding their ground and have a keen understanding of the tactics of overlapping fields of fire and kill zones. While this ability is in effect, the Battle-Brother and those in Support Range of him may take actions normally while maintaining Overwatch, such as moving and making attacks.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Pinning test for enemies in kill zone increases from Hard (–20) to Very Hard (–30)</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Dark Angels",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp",
+    "effect": "Kill-team in Support Range may take actions normally while maintaining Overwatch",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Pinning test for enemies in kill zone increases from Hard (–20) to Very Hard (–30)"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "free"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000026",
+  "name": "Fear the Darkness",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/blood-angel.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "196",
+    "key": "fear-the-darkness",
+    "range": "25 metres x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>Casting a psychic shadow across the battlefield, the Librarian fills his foes with intense dread and terror. This power affects a number of foes equal to the Librarian's PR. Those affected by this power count all enemies as having the Fear 1 (Frightening) Trait. Enemies that already cause Fear have their Fear level increased by 1 (to a maximum of Fear 4) against those affected by this power. If this power is sustained, targets may make a Willpower Test with a penalty of –5 x PR at the start of each of their turns to shake off the effects.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp"
+  }
+}

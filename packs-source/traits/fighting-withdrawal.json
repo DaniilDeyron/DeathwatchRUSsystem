@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000014",
+  "name": "Fighting Withdrawal (Horde)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "132",
+    "description": "<p>Though broken, the horde does not simply flee, but makes a fighting withdrawal that prevents its enemies from simply overwhelming it. When a Horde with this trait breaks, it does not flee moving at its Sprint rate of movement, but instead withdraws at any movement rate that is appropriate. The Horde will also continue to make ranged attacks as it withdraws.</p>",
+    "modifiers": []
+  }
+}

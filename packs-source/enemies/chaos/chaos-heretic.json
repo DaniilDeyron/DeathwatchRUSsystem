@@ -1,0 +1,167 @@
+{
+  "_id": "enmychaos0000004",
+  "name": "Chaos Heretic",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/chaos-heretic.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 28 },
+      "bs": { "base": 25 },
+      "str": { "base": 30 },
+      "tg": { "base": 30 },
+      "ag": { "base": 30 },
+      "int": { "base": 20 },
+      "per": { "base": 30 },
+      "wil": { "base": 40 },
+      "fs": { "base": 20 }
+    },
+    "wounds": { "base": 10, "max": 10, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "climb": { "trained": true },
+      "speak_language": { "trained": true },
+      "swim": { "trained": true },
+      "survival": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Few prosper or survive in the service and worship of the Dark Gods thanks to their cruelty, capriciousness and thirst for human life. Those that do are fanatics, dark souls who have given themselves over utterly to the worship of Chaos, steeped in sin and depravity and far from sane. Although often undisciplined and unskilled in the arts of warfare, they are nevertheless extraordinarily dangerous, particularly in large numbers, because they are without fear and willing to die for their foul gods. They stop at nothing, no matter how horrific the deed, in the name of Chaos.</p><p><strong>Skills:</strong> Awareness (Per), Climb (S), Speak Language (Low Gothic, Unholy Tongue) (Int), Swim (S), Survival (Int).</p><p><strong>Talents:</strong> Berserk Charge, Furious Assault, Melee Weapon Training (Primitive), Pistol Training (SP).</p><p><strong>Traits:</strong> Resistance (Fear).</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 364</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos040000001",
+      "_sourceId": "tal00000000027",
+      "name": "Berserk Charge",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "",
+        "benefit": "+10 WS when charging",
+        "description": "<p>The character has learned to put the whole force of his momentum behind his weapon blows. When the character charges into combat, few can stand before him. If the character uses the Charge Action, he gains a <b>+20 bonus to Weapon Skill instead of +10</b>.</p>",
+        "compendiumId": "tal00000000027",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos040000002",
+      "_sourceId": "tal00000000091",
+      "name": "Furious Assault",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Spend Reaction for extra melee attack after All Out Attack",
+        "description": "<p>The character's speed and martial prowess allow him to land several blows where lesser combatants land one. <b>If the character successfully hits his target using the All Out Attack Action, he may spend his Reaction to make an additional attack using the same bonuses or penalties as the original attack.</b></p>",
+        "compendiumId": "tal00000000091",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos040000003",
+      "_sourceId": "tal00000000164",
+      "name": "Melee Weapon Training (Primitive)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "123",
+        "prerequisite": "",
+        "benefit": "Use primitive melee weapons",
+        "description": "<p>The character has trained extensively with hand-to-hand weaponry, becoming proficient in the use of virtually all hand-held close combat arms. <b>When a character attempts to use a weapon he does not have the correct Weapon Training Talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill Test.</b></p>",
+        "compendiumId": "tal00000000164",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos040000004",
+      "_sourceId": "tal00000000198",
+      "name": "Pistol Weapon Training (SP)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "124",
+        "prerequisite": "",
+        "benefit": "Use solid projectile pistols",
+        "description": "<p>The character has practised with nearly every single-handed ranged weapon within the confines of the Imperium, and no small number without. <b>When a character attempts to use a weapon he does not have the correct Weapon Training Talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill Test.</b></p>",
+        "compendiumId": "tal00000000198",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos040000005",
+      "name": "Flak Robes and Brazen Carapace",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 4,
+        "body": 6,
+        "left_arm": 5,
+        "right_arm": 5,
+        "left_leg": 4,
+        "right_leg": 4,
+        "description": "<p>Makeshift armor composed of flak cloth robes and scavenged carapace plates bearing the blasphemous symbols of Chaos.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eichaos040000006",
+      "name": "Monoedged Blade",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+0",
+        "dmgType": "Rending",
+        "penetration": "2",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A crude blade with a single sharpened edge, deadly in the hands of a fanatic.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos040000007",
+      "name": "Autopistol",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/autopistol.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "1d10+2",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "30",
+        "rof": "S/-/6",
+        "clip": "18",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A common solid-projectile sidearm, favored by cultists and heretics.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Chaos Heretic",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

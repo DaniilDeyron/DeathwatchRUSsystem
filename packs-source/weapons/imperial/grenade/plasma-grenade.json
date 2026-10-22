@@ -1,0 +1,28 @@
+{
+  "_id": "grenade000000011",
+  "name": "Astartes Plasma Grenade",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/plasma-grenade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "150",
+    "class": "Thrown",
+    "dmg": "1d10+12",
+    "dmgType": "Energy",
+    "penetration": "8",
+    "range": "SBx3",
+    "rof": "S/-/-",
+    "clip": "1",
+    "reload": "-",
+    "equipped": false,
+    "wt": 2,
+    "req": 20,
+    "renown": "Distinguished",
+    "attachedQualities": [
+      { "id": "blast", "value": "1" },
+      { "id": "volatile" }
+    ],
+    "description": "<p>These highly lethal grenades use a deliberate plasma containment failure, erupting into blasts of white-hot energy. The dense plasma core of an Astartes plasma grenade is not fully consumed in the initial explosion and leaves a glowing, energized orb that continues to sear the area like a miniature sun. This tiny stellar body continues to do the plasma grenade’s full damage to the Blast area for an additional 1d5 Rounds after the Round it detonated.</p>",
+    "modifiers": []
+  }
+}

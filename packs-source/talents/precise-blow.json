@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000201",
+  "name": "Precise Blow",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Weapon Skill 40, Sure Strike",
+    "benefit": "No penalty for called shots with melee weapons",
+    "description": "<p>The character's eye, hand, and weapon act seamlessly together, placing the character blows exactly where the character intends. <b>When making a called shot with a melee weapon, the character does not incur the normal –20 penalty.</b></p>",
+    "compendiumId": "tal00000000201",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_id": "trt000000000002",
+  "name": "Armour Plating",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>The creature is encased in armour plating, increasing its Armour Points by 2 to all locations.</p>",
+    "modifiers": [
+      {
+        "_id": "armour-plating-mod",
+        "name": "Armour Plating",
+        "modifier": 2,
+        "type": "trait",
+        "effectType": "armor",
+        "enabled": true
+      }
+    ]
+  }
+}

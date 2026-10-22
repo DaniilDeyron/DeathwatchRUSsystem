@@ -1,0 +1,268 @@
+{
+  "name": "Librarian",
+  "type": "specialty",
+  "img": "systems/deathwatch/icons/specialty/librarian.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "50",
+    "hasPsyRating": true,
+    "description": "<p>Librarians are psykers who have been trained to harness the power of the Warp. They serve as the Chapter's psychic warriors and keepers of lore, wielding devastating psychic powers in battle.</p><h3>Deathwatch Librarian Psychic Power Advances</h3><table><thead><tr><th>Rank</th><th>Values</th></tr></thead><tbody><tr><td>1</td><td>Psychic Power (x2)</td></tr><tr><td>2</td><td>Psychic Power</td></tr><tr><td>4</td><td>Psychic Power</td></tr><tr><td>6</td><td>Psychic Power</td></tr><tr><td>8</td><td>Psychic Power</td></tr></tbody></table>",
+    "characteristicCosts": {
+      "ws": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "bs": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "str": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "tg": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "ag": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "int": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "per": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "wil": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "fs": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      }
+    },
+    "talentCosts": { "tal00000000275": 0 },
+    "rankCosts": {
+      "1": {
+        "skills": {
+          "invocation": { "costTrain": 400 },
+          "lore_common_adeptus_arbites": { "costTrain": 400 },
+          "lore_common_adeptus_astartes": { "costTrain": 400 },
+          "lore_common_adeptus_mechanicus": { "costTrain": 400 },
+          "lore_common_administratum": { "costTrain": 400 },
+          "lore_common_deathwatch": { "costTrain": 400 },
+          "lore_common_ecclesiarchy": { "costTrain": 400 },
+          "lore_common_imperial_creed": { "costTrain": 400 },
+          "lore_common_imperial_guard": { "costTrain": 400 },
+          "lore_common_imperial_navy": { "costTrain": 400 },
+          "lore_common_imperium": { "costTrain": 400 },
+          "lore_common_jericho_reach": { "costTrain": 400 },
+          "lore_common_tech": { "costTrain": 400 },
+          "lore_common_war": { "costTrain": 400 },
+          "lore_forbidden_adeptus_astartes": { "costTrain": 200 },
+          "lore_forbidden_psykers": { "costTrain": 400 },
+          "lore_forbidden_warp": { "costTrain": 400 },
+          "lore_scholastic_archaic": { "costTrain": 400 },
+          "lore_scholastic_astromancy": { "costTrain": 400 },
+          "lore_scholastic_beasts": { "costTrain": 400 },
+          "lore_scholastic_bureaucracy": { "costTrain": 400 },
+          "lore_scholastic_chymistry": { "costTrain": 400 },
+          "lore_scholastic_codex_astartes": { "costTrain": 400 },
+          "lore_scholastic_cryptology": { "costTrain": 400 },
+          "lore_scholastic_heraldry": { "costTrain": 400 },
+          "lore_scholastic_imperial_creed": { "costTrain": 400 },
+          "lore_scholastic_judgement": { "costTrain": 400 },
+          "lore_scholastic_legend": { "costTrain": 400 },
+          "lore_scholastic_numerology": { "costTrain": 400 },
+          "lore_scholastic_occult": { "costTrain": 400 },
+          "lore_scholastic_philosophy": { "costTrain": 400 },
+          "lore_scholastic_tactica_imperialis": { "costTrain": 400 },
+          "psyniscience": { "costTrain": 0 }
+        },
+        "talents": {
+          "tal00000000089": 600,
+          "tal00000000217": 400,
+          "tal00000000271": 500
+        }
+      },
+      "2": {
+        "skills": {
+          "invocation": { "costMaster": 400 },
+          "lore_forbidden_adeptus_astartes": { "costMaster": 200 },
+          "lore_forbidden_daemonology": { "costTrain": 400 },
+          "lore_forbidden_psykers": { "costMaster": 400 },
+          "lore_forbidden_traitor_legions": { "costTrain": 400 },
+          "lore_forbidden_warp": { "costMaster": 400 },
+          "lore_scholastic_archaic": { "costMaster": 400 },
+          "lore_scholastic_astromancy": { "costMaster": 400 },
+          "lore_scholastic_beasts": { "costMaster": 400 },
+          "lore_scholastic_bureaucracy": { "costMaster": 400 },
+          "lore_scholastic_chymistry": { "costMaster": 400 },
+          "lore_scholastic_codex_astartes": { "costMaster": 400 },
+          "lore_scholastic_cryptology": { "costMaster": 400 },
+          "lore_scholastic_heraldry": { "costMaster": 400 },
+          "lore_scholastic_imperial_creed": { "costMaster": 400 },
+          "lore_scholastic_judgement": { "costMaster": 400 },
+          "lore_scholastic_legend": { "costMaster": 400 },
+          "lore_scholastic_numerology": { "costMaster": 400 },
+          "lore_scholastic_occult": { "costMaster": 400 },
+          "lore_scholastic_philosophy": { "costMaster": 400 },
+          "lore_scholastic_tactica_imperialis": { "costMaster": 400 },
+          "psyniscience": { "costMaster": 400 }
+        },
+        "talents": { "tal00000000276": 500 }
+      },
+      "3": {
+        "skills": {
+          "cipher_chapter_runes": { "costTrain": 400 },
+          "cipher_deathwatch": { "costTrain": 400 },
+          "cipher_imperial_codes": { "costTrain": 400 },
+          "cipher_inquisition": { "costTrain": 400 },
+          "cipher_mercenary_cant": { "costTrain": 400 },
+          "cipher_underworld": { "costTrain": 400 },
+          "cipher_xenos_markings": { "costTrain": 400 },
+          "invocation": { "costExpert": 400 },
+          "lore_common_adeptus_arbites": { "costMaster": 400 },
+          "lore_common_adeptus_astartes": { "costMaster": 400 },
+          "lore_common_adeptus_mechanicus": { "costMaster": 400 },
+          "lore_common_administratum": { "costMaster": 400 },
+          "lore_common_deathwatch": { "costMaster": 400 },
+          "lore_common_ecclesiarchy": { "costMaster": 400 },
+          "lore_common_imperial_creed": { "costMaster": 400 },
+          "lore_common_imperial_guard": { "costMaster": 400 },
+          "lore_common_imperial_navy": { "costMaster": 400 },
+          "lore_common_imperium": { "costMaster": 400 },
+          "lore_common_jericho_reach": { "costMaster": 400 },
+          "lore_common_tech": { "costMaster": 400 },
+          "lore_common_war": { "costMaster": 400 },
+          "lore_forbidden_adeptus_astartes": { "costExpert": 200 },
+          "lore_forbidden_daemonology": { "costMaster": 400 },
+          "lore_forbidden_heresy": { "costTrain": 800 },
+          "lore_forbidden_psykers": { "costExpert": 400 },
+          "lore_forbidden_traitor_legions": { "costMaster": 400 },
+          "lore_forbidden_warp": { "costExpert": 400 },
+          "lore_scholastic_archaic": { "costExpert": 400 },
+          "lore_scholastic_astromancy": { "costExpert": 400 },
+          "lore_scholastic_beasts": { "costExpert": 400 },
+          "lore_scholastic_bureaucracy": { "costExpert": 400 },
+          "lore_scholastic_chymistry": { "costExpert": 400 },
+          "lore_scholastic_codex_astartes": { "costExpert": 400 },
+          "lore_scholastic_cryptology": { "costExpert": 400 },
+          "lore_scholastic_heraldry": { "costExpert": 400 },
+          "lore_scholastic_imperial_creed": { "costExpert": 400 },
+          "lore_scholastic_judgement": { "costExpert": 400 },
+          "lore_scholastic_legend": { "costExpert": 400 },
+          "lore_scholastic_numerology": { "costExpert": 400 },
+          "lore_scholastic_occult": { "costExpert": 400 },
+          "lore_scholastic_philosophy": { "costExpert": 400 },
+          "lore_scholastic_tactica_imperialis": { "costExpert": 400 },
+          "psyniscience": { "costExpert": 400 }
+        },
+        "talents": {
+          "tal00000000161": 500,
+          "tal00000000252": 700,
+          "tal00000000250": 800,
+          "tal00000000277": 500
+        }
+      },
+      "4": {
+        "skills": {
+          "lore_forbidden_daemonology": { "costExpert": 800 },
+          "lore_forbidden_heresy": { "costMaster": 800 },
+          "lore_forbidden_traitor_legions": { "costExpert": 400 }
+        },
+        "talents": {
+          "tal00000000039": 1000,
+          "tal00000000134": 1500,
+          "tal00000000136": 1000,
+          "tal00000000146": 1000,
+          "tal00000000270": 1000,
+          "tal00000000278": 1000
+        }
+      },
+      "5": {
+        "skills": {
+          "cipher_chapter_runes": { "costMaster": 400 },
+          "cipher_deathwatch": { "costMaster": 400 },
+          "cipher_imperial_codes": { "costMaster": 400 },
+          "cipher_inquisition": { "costMaster": 400 },
+          "cipher_mercenary_cant": { "costMaster": 400 },
+          "cipher_underworld": { "costMaster": 400 },
+          "cipher_xenos_markings": { "costMaster": 400 },
+          "lore_common_adeptus_arbites": { "costExpert": 400 },
+          "lore_common_adeptus_astartes": { "costExpert": 400 },
+          "lore_common_adeptus_mechanicus": { "costExpert": 400 },
+          "lore_common_administratum": { "costExpert": 400 },
+          "lore_common_deathwatch": { "costExpert": 400 },
+          "lore_common_ecclesiarchy": { "costExpert": 400 },
+          "lore_common_imperial_creed": { "costExpert": 400 },
+          "lore_common_imperial_guard": { "costExpert": 400 },
+          "lore_common_imperial_navy": { "costExpert": 400 },
+          "lore_common_imperium": { "costExpert": 400 },
+          "lore_common_jericho_reach": { "costExpert": 400 },
+          "lore_common_tech": { "costExpert": 400 },
+          "lore_common_war": { "costExpert": 400 },
+          "lore_forbidden_heresy": { "costExpert": 800 }
+        },
+        "talents": { "tal00000000279": 1200 }
+      },
+      "6": {
+        "skills": {},
+        "talents": {
+          "tal00000000025": 1000,
+          "tal00000000051": 500,
+          "tal00000000247": 500,
+          "tal00000000280": 1500
+        }
+      },
+      "7": {
+        "skills": {
+          "cipher_chapter_runes": { "costExpert": 400 },
+          "cipher_deathwatch": { "costExpert": 400 },
+          "cipher_imperial_codes": { "costExpert": 400 },
+          "cipher_inquisition": { "costExpert": 400 },
+          "cipher_mercenary_cant": { "costExpert": 400 },
+          "cipher_underworld": { "costExpert": 400 },
+          "cipher_xenos_markings": { "costExpert": 400 }
+        },
+        "talents": {
+          "tal00000000044": 800,
+          "tal00000000083": 800,
+          "tal00000000145": 800,
+          "tal00000000281": 2000
+        }
+      },
+      "8": {
+        "skills": {},
+        "talents": {
+          "tal00000000091": 800,
+          "tal00000000202": 2000,
+          "tal00000000282": 2500
+        }
+      }
+    },
+    "skillCosts": { "psyniscience": { "costTrain": 0 } }
+  }
+}

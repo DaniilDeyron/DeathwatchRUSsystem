@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000205",
+  "name": "Psychic Techniques",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "",
+    "benefit": "Gain one additional Psychic Technique (can be taken multiple times)",
+    "description": "<p>Either through training or natural development, the character has learned an additional Psychic Technique. <b>Once this Talent has been selected, the character may select one new Psychic Technique in any Discipline he possesses with an XP cost equal to or lower than the Talent's XP cost. Note that when a Psychic Technique is selected, the character does not have to spend more XP -he spent the required XP when he purchased the Talent. This Talent may be chosen multiple times, each selection granting an additional Technique.</b></p>",
+    "compendiumId": "tal00000000205",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

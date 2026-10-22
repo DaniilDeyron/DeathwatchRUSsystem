@@ -1,0 +1,144 @@
+{
+  "name": "Assault Marine",
+  "type": "specialty",
+  "img": "systems/deathwatch/icons/specialty/assaultmarine.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "48",
+    "description": "<p>Assault Marines are close combat specialists who use jump packs to rapidly close with the enemy. They excel at shock assaults and are often the first to engage the foe in melee combat.</p>",
+    "characteristicCosts": {
+      "ws": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "bs": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "str": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "tg": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "ag": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "int": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "per": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "wil": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "fs": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      }
+    },
+    "talentCosts": { "tal00000000252": 0 },
+    "rankCosts": {
+      "1": {
+        "skills": {},
+        "talents": {
+          "tal00000000034": 200,
+          "tal00000000052": 200,
+          "tal00000000253": 500,
+          "tal00000000262": 500,
+          "tal00000000263": 500
+        }
+      },
+      "2": {
+        "skills": { "pilot_personal": { "costMaster": 500 } },
+        "talents": {
+          "tal00000000044": 600,
+          "tal00000000146": 500,
+          "tal00000000251": 500,
+          "tal00000000145": 600
+        }
+      },
+      "3": {
+        "skills": {
+          "acrobatics": { "costTrain": 400 },
+          "pilot_personal": { "costExpert": 500 }
+        },
+        "talents": {
+          "tal00000000027": 700,
+          "tal00000000143": 500,
+          "tal00000000201": 700,
+          "tal00000000244": 1000,
+          "tal00000000268": 700
+        }
+      },
+      "4": {
+        "skills": {},
+        "talents": {
+          "tal00000000041": 600,
+          "tal00000000054": 500,
+          "tal00000000114": 800
+        }
+      },
+      "5": {
+        "skills": { "acrobatics": { "costMaster": 400 } },
+        "talents": {
+          "tal00000000013": 500,
+          "tal00000000046": 900,
+          "tal00000000050": 500,
+          "tal00000000091": 500
+        }
+      },
+      "6": {
+        "skills": {},
+        "talents": {
+          "tal00000000029": 800,
+          "tal00000000115": 600,
+          "tal00000000247": 800
+        }
+      },
+      "7": {
+        "skills": { "acrobatics": { "costExpert": 400 } },
+        "talents": {
+          "tal00000000043": 400,
+          "tal00000000053": 600,
+          "tal00000000135": 800
+        }
+      },
+      "8": {
+        "skills": {},
+        "talents": {
+          "tal00000000038": 500,
+          "tal00000000113": 700,
+          "tal00000000202": 1000,
+          "tal00000000273": 1000
+        }
+      }
+    },
+    "skillCosts": { "pilot_personal": { "costTrain": 0 } }
+  }
+}

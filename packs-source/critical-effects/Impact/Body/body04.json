@@ -1,0 +1,14 @@
+{
+  "_id": "impact-body0004",
+  "name": "Level 04",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "256",
+    "damageType": "Impact",
+    "location": "Body",
+    "description": "The blow batters the target, shattering ribs. The target takes 1d5 levels of Fatigue and is Stunned for 1 Round.",
+    "effects": []
+  }
+}

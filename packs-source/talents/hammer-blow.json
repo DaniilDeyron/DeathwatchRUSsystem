@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000114",
+  "name": "Hammer Blow",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Add half Strength Bonus to AP and Shocking quality on All Out Attack",
+    "description": "<p>The Battle-Brother strikes a single blow with such focus and force that it breaks armour and pulps flesh as it strikes. <b>When the Battle-Brother makes an All Out Attack manoeuvre to make a single melee attack, he may add half his Strength Bonus to the weapon's Armour Penetration. The attack also counts as having the Shocking quality to represent the concussive force of the blow's impact.</b></p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000114",
+    "modifiers": [],
+    "rankRequired": 6
+  }
+}

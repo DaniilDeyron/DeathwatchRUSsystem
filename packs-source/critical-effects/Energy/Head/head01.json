@@ -1,0 +1,14 @@
+{
+  "_id": "energy-head0001",
+  "name": "Level 01",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "253",
+    "damageType": "Energy",
+    "location": "Head",
+    "description": "A grazing blow to the head frazzles the target's senses, imposing a –10 penalty to all Tests (except Toughness) for 1 Round.",
+    "effects": []
+  }
+}

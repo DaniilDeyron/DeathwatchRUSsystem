@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000081",
+  "name": "Exotic Weapon Training",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "117",
+    "prerequisite": "",
+    "benefit": "Use exotic weapon without penalty",
+    "description": "<p><b>Talent Groups:</b> Each exotic weapon</p><p>The character is trained to use a particularly obscure type of weapon, allowing him to use armaments few others have ever seen. Weapons requiring this unique Talent are noted in their armoury descriptions. <b>Weapon Skill or Ballistic Skill Tests used with a weapon that a character does not have training for suffer a –20 penalty.</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000081",
+    "modifiers": [],
+    "rankRequired": 3
+  }
+}

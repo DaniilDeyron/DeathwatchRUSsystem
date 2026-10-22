@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000116",
+  "name": "Hardy",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "Toughness 40",
+    "benefit": "Recover damage as if Lightly Damaged",
+    "description": "<p>The character's constitution rebounds quickly from shock or injury. <b>When undergoing medical treatment or healing from injures, the character recovers Damage as if Lightly Damaged.</b></p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000116",
+    "modifiers": [],
+    "rankRequired": 5
+  }
+}

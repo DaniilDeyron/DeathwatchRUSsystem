@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000048",
+  "name": "Glory of the Emperor",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/ultramarines.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "200",
+    "key": "glory-of-the-emperor",
+    "range": "10 metre radius x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 2000,
+    "class": "Chapter",
+    "description": "<p>For the briefest of instants the Librarian channels the light of the Emperor, bathing all those nearby in His glory. The Librarian may affect a number of allies equal to his PR within line of sight and range of this power. Those affected are healed by the divine light and will recover Wounds equal to the Librarian's PR. This healing cannot restore Critical Damage, nor will it take a creature above its starting Wound total.</p><p>Channelling this power is difficult and draining, and a Librarian may only use it a number of times each day (within a 24 hour period) equal to his Willpower Bonus.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/ultramarines.webp"
+  }
+}

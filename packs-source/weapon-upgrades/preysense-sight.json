@@ -1,0 +1,16 @@
+{
+  "name": "Preysense Sight",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "preysense-sight",
+    "singleShotOnly": false,
+    "req": 10,
+    "renown": "",
+    "wt": 0.5,
+    "description": "<p>This is a weapon sight that shows thermal images and reveals the hiding places of enemies who lurk in the darkness. A character using a preysense sight suffers no penalties due to darkness and gains a +20 bonus to vision based Perception Tests at night.</p><p><strong>Upgrades:</strong> Any Basic Las, Solid Projectile, Bolt, or Plasma weapon. A preysense sight counts as a sight, and a gun may only have one sight.</p>",
+    "modifiers": []
+  }
+}

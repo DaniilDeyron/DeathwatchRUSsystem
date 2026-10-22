@@ -1,0 +1,77 @@
+{
+  "name": "Dark Angels",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/dark_angels.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "44",
+    "description": "<p>The Dark Angels are the First Legion, the first Space Marine Chapter created by the Emperor. They are secretive and monastic, haunted by a dark past from the Horus Heresy.</p><p>Known for their stubborn determination and tactical flexibility, they maintain specialized wings: the Deathwing for close assault and the Ravenwing for rapid strike operations.</p>",
+    "skillCosts": {
+      "interrogation": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "lore_forbidden_adeptus_astartes": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "lore_forbidden_inquisition": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      },
+      "lore_forbidden_traitor_legions": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      }
+    },
+    "talentCosts": {
+      "tal00000000117": 500,
+      "tal00000000004": 500,
+      "tal00000000171": 500,
+      "tal00000000254": 500
+    },
+    "modifiers": [
+      {
+        "_id": "355331789b75064c",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true
+      },
+      {
+        "_id": "067793c033feb356",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "int",
+        "enabled": true
+      }
+    ],
+    "curseName": "The Secret",
+    "curseDescription": "<p>The Dark Angels have a shadowy past hidden by the weight of history and shrouded in the smoke and blood of the Horus Heresy itself. Few outside the Chapter can even guess at the exact facts surrounding the Chapter's beginning, and those within its ranks guard their secrets well. Such weighty secrets can come to press heavily on a Battle-Brother's soul.</p>",
+    "curseLevel1Name": "Dark Dreams",
+    "curseLevel1Description": "<p>The Battle-Brother is beset with memories of past times and deep, hidden secrets that cast a shadow over periods of rest and meditation. At the start of any mission, the Battle-Brother must pass a <strong>Challenging (+0) Toughness Test</strong> or begin play with a level of Fatigue.</p>",
+    "curseLevel1Effect": "custom",
+    "curseLevel1Modifier": 0,
+    "curseLevel1Target": "",
+    "curseLevel2Name": "Scorn of Outsiders",
+    "curseLevel2Description": "<p>The Dark Angel has grown to view those outside the Chapter as misguided or ignorant of the truth and cannot bring himself to deal with them any more than necessary. The Battle-Brother cannot use the Command Skill on anyone who is not either a member of his Kill-team or a fellow Dark Angel.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Deep Suspicions",
+    "curseLevel3Description": "<p>Trained in an atmosphere of silence and secrets, the Dark Angel has become very distrustful of anyone outside his Chapter and cannot take the words or promises of others at face value. Unless the Battle-Brother's Kill-team is solely comprised of Dark Angels, its <strong>Cohesion is reduced by 2</strong>.</p>",
+    "curseLevel3Effect": "cohesionPenalty",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 2
+  }
+}

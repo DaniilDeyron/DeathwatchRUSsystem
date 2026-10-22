@@ -1,0 +1,350 @@
+/* Wounds Box Styles */
+.deathwatch .wounds-box {
+  width: 106px;
+  height: 100px;
+  text-align: center;
+  border: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  border-radius: var(--dw-border-radius-sm);
+  position: relative;
+  background: rgba(144, 238, 144, 0.2); /* Light green default (0-25%) */
+}
+
+/* Wounds box with Medica icon */
+.deathwatch .wounds-box::before {
+  content: '✚';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--dw-critical-damage);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure wounds content above watermark */
+.deathwatch .wounds-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fatigue Box Styles */
+.deathwatch .fatigue-box {
+  width: 106px;
+  height: 100px;
+  text-align: center;
+  border: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  border-radius: var(--dw-border-radius-sm);
+  position: relative;
+  background: rgba(173, 216, 230, 0.2); /* Light blue default */
+}
+
+/* Fatigue box with skull icon */
+.deathwatch .fatigue-box::before {
+  content: '☠';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: var(--dw-hud-amber);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure fatigue content above watermark */
+.deathwatch .fatigue-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.deathwatch .fatigue-box.unconscious {
+  background: rgba(128, 0, 128, 0.3); /* Purple for unconscious */
+}
+
+.deathwatch .fatigue-box h4.box-title {
+  line-height: var(--dw-font-size-lg);
+  margin: var(--dw-spacing-sm) var(--dw-spacing-sm) var(--dw-spacing-md);
+  font-size: var(--dw-font-size-md);
+  border-bottom: var(--dw-border-width) solid var(--dw-color-text-beige);
+}
+
+.deathwatch .fatigue-box .fatigue-center {
+  display: none;
+}
+
+.deathwatch .fatigue-box input[type="text"].fatigue-center-input {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  margin: 0;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: var(--dw-font-size-xxl);
+  font-weight: bold;
+  padding: 0;
+}
+
+.deathwatch .fatigue-box .fatigue-modifiers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.deathwatch .fatigue-box .fatigue-modifiers span.fatigue-max {
+  flex: 1;
+  height: 30px;
+  overflow: hidden;
+  border-top: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  font-size: var(--dw-font-size-sm);
+  padding: var(--dw-spacing-md) 0 0;
+  background: #f0f0f0;
+}
+
+/* Movement Box - neutral background */
+.deathwatch .movement-box {
+  width: 106px;
+  min-height: 100px;
+  text-align: center;
+  border: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  border-radius: var(--dw-border-radius-sm);
+  position: relative;
+  background: #f5f5f5;
+  overflow: visible;
+}
+
+.deathwatch .movement-box h4.box-title {
+  line-height: var(--dw-font-size-lg);
+  margin: var(--dw-spacing-sm) var(--dw-spacing-sm) var(--dw-spacing-md);
+  font-size: var(--dw-font-size-md);
+  border-bottom: var(--dw-border-width) solid var(--dw-color-text-beige);
+}
+
+/* Yellow tint for 26-74% */
+.deathwatch .wounds-box.wounds-warning {
+  background: rgba(255, 255, 0, 0.2);
+}
+
+/* Red tint for 75%+ */
+.deathwatch .wounds-box.wounds-danger {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.deathwatch .wounds-box h4.box-title {
+  line-height: var(--dw-font-size-lg);
+  margin: var(--dw-spacing-sm) var(--dw-spacing-sm) var(--dw-spacing-md);
+  font-size: var(--dw-font-size-md);
+  border-bottom: var(--dw-border-width) solid var(--dw-color-text-beige);
+}
+
+.deathwatch .wounds-box .wounds-center {
+  display: none;
+}
+
+.deathwatch .wounds-box input[type="text"].wounds-center-input {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  margin: 0;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: var(--dw-font-size-xxl);
+  font-weight: bold;
+  padding: 0;
+}
+
+.deathwatch .wounds-box .wounds-modifiers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deathwatch .wounds-box .wounds-modifiers span.wounds-max,
+.deathwatch .wounds-box .wounds-modifiers input[type="text"].wounds-base {
+  flex: 0 0 40px;
+  height: 30px;
+  overflow: hidden;
+  border-top: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .wounds-box .wounds-modifiers span.wounds-max {
+  border-right: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  padding: var(--dw-spacing-md) 0 0;
+  background: #f0f0f0;
+}
+
+.deathwatch .wounds-box .wounds-modifiers input[type="text"].wounds-base {
+  border-left: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  border-radius: 0;
+}
+
+/* Psy Rating Box Styles */
+.deathwatch .psy-rating-box {
+  width: 106px;
+  height: 100px;
+  text-align: center;
+  border: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  border-radius: var(--dw-border-radius-sm);
+  position: relative;
+}
+
+.deathwatch .psy-rating-box h4.box-title {
+  line-height: var(--dw-font-size-lg);
+  margin: var(--dw-spacing-sm) var(--dw-spacing-sm) var(--dw-spacing-md);
+  font-size: var(--dw-font-size-md);
+  border-bottom: var(--dw-border-width) solid var(--dw-color-text-beige);
+}
+
+.deathwatch .psy-rating-box .psy-rating-center {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: var(--dw-font-size-xxl);
+  font-weight: bold;
+}
+
+.deathwatch .psy-rating-box .psy-rating-modifiers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.deathwatch .psy-rating-box .psy-rating-modifiers input[type="text"].psy-rating-base {
+  flex: 1;
+  height: 30px;
+  overflow: hidden;
+  border-top: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  font-size: var(--dw-font-size-sm);
+  border-radius: 0;
+  text-align: center;
+}
+
+/* Horde Armor Box Styles */
+.deathwatch .horde-armor-center {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: var(--dw-font-size-xxl);
+  font-weight: bold;
+}
+
+.deathwatch .horde-armor-split {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  display: flex;
+  border-top: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+}
+
+.deathwatch .horde-armor-half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.deathwatch .horde-armor-half.natural {
+  border-left: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  background: rgba(144, 238, 144, 0.15);
+}
+
+.deathwatch .horde-armor-half .horde-armor-label {
+  font-size: 0.55em;
+  color: #666;
+  line-height: 1;
+  position: absolute;
+  top: 1px;
+}
+
+.deathwatch .horde-armor-half input[type="text"] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: var(--dw-font-size-sm);
+  font-weight: bold;
+  padding-top: 6px;
+}
+
+.deathwatch .horde-armor-half .horde-armor-value {
+  font-size: var(--dw-font-size-sm);
+  font-weight: bold;
+  padding-top: 6px;
+}
+
+/* Critical wounds pulse (wounds ≤ 25%) */
+.wounds-box.critical {
+  animation: critical-pulse 2s infinite;
+}
+
+@keyframes critical-pulse {
+  0%, 100% {
+    border-color: var(--dw-critical-damage);
+    box-shadow:
+      0 0 8px rgba(220, 20, 60, 0.6),
+      inset 0 0 12px rgba(220, 20, 60, 0.2);
+  }
+  50% {
+    border-color: var(--dw-critical-severe);
+    box-shadow:
+      0 0 20px rgba(220, 20, 60, 0.9),
+      0 0 40px rgba(220, 20, 60, 0.4),
+      inset 0 0 20px rgba(220, 20, 60, 0.4);
+  }
+}
+
+/* Exhausted pulse (fatigue ≥ TB) */
+.fatigue-box.exhausted {
+  animation: exhausted-pulse 2.5s infinite;
+}
+
+@keyframes exhausted-pulse {
+  0%, 100% {
+    border-color: var(--dw-hud-amber);
+    box-shadow:
+      0 0 8px rgba(255, 191, 0, 0.5),
+      inset 0 0 8px rgba(255, 191, 0, 0.15);
+  }
+  50% {
+    border-color: var(--dw-hud-amber-bright);
+    box-shadow:
+      0 0 16px rgba(255, 191, 0, 0.8),
+      0 0 32px rgba(255, 191, 0, 0.3),
+      inset 0 0 16px rgba(255, 191, 0, 0.3);
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_id": "armorhist0000004",
+  "name": "Death is Joy",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/joy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>Some warriors are simply made to kill. This armour epitomises that archetype, and though it is of comparatively recent manufacture, numberless foes have learned to fear its countenance. The longer a warrior bears this armour, the more the two become one. As time goes on, bringing a swift end to the enemies of Man is as easy as breathing. Add +2 Damage to any of the wearer's attacks that do Critical Damage and increase the damage to a Horde's Magnitude by 1 with any successful attack against a Horde.</p>",
+    "modifiers": [
+      {
+        "_id": "deathisjoy0000001",
+        "name": "Death is Joy - Critical Damage",
+        "modifier": 2,
+        "type": "equipment",
+        "effectType": "critical-damage",
+        "enabled": true
+      },
+      {
+        "_id": "deathisjoy0000002",
+        "name": "Death is Joy - Anti-Horde",
+        "modifier": 1,
+        "type": "equipment",
+        "effectType": "magnitude-bonus-damage",
+        "enabled": true
+      }
+    ]
+  }
+}

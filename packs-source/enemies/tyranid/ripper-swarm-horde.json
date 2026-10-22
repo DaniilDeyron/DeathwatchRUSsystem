@@ -1,0 +1,239 @@
+{
+  "_id": "hordtyranid00004",
+  "name": "Ripper Swarm Horde",
+  "type": "horde",
+  "img": "systems/deathwatch/icons/enemies/tyranid/ripper-swarm.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 35 },
+      "bs": { "base": 0 },
+      "str": { "base": 25 },
+      "tg": { "base": 30 },
+      "ag": { "base": 40 },
+      "int": { "base": 10 },
+      "per": { "base": 30 },
+      "wil": { "base": 30 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 30, "max": 30, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "climb": { "trained": true },
+      "dodge": { "trained": true },
+      "silent_move": { "trained": true },
+      "swim": { "trained": true },
+      "tracking": { "trained": true, "mastered": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>A seething carpet of serpentine Rippers, their mandibles snapping and tearing at anything in their path. Individually small, en masse they can immobilise and drag down even the strongest Battle-Brother.</p><p><strong>Magnitude:</strong> 30</p><p><strong>Tenacious Grappler:</strong> When attempting to grapple an opponent armed with a melee weapon, Rippers suffer a -10 to their WS instead of the normal -20.</p><p><strong>Horde Bonuses:</strong> While in a Horde, Rippers gain the Rampage, Relentless, and Overwhelming Traits, the Swift Attack Talent, and their attacks gain the Tearing quality.</p><p><strong>Traits:</strong> Burrower (1), Crawler, Dark Sight, Fear 1 (Disturbing), Improved Natural Weapons (Mandibles), Instinctive Behaviour (Feed), Natural Armour (2), Overwhelming (Horde), Tyranid</p><p><strong>Source:</strong> Mark of the Xenos, p. 43</p>",
+    "gearArmor": 0,
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "hityranid0400001",
+      "_sourceId": "tal00000000002",
+      "name": "Fearless",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "118",
+        "prerequisite": "",
+        "benefit": "Immune to Fear and Pinning",
+        "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+        "compendiumId": "tal00000000002",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400002",
+      "_sourceId": "tal00000000128",
+      "name": "Heightened Senses (Smell)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "",
+        "benefit": "+10 to Awareness tests involving smell",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Smell) would apply to an Awareness Test to detect a faint odor, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his nose</b>.</p>",
+        "compendiumId": "tal00000000128",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400003",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400004",
+      "_sourceId": "trt000000000008",
+      "name": "Burrower (1)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait can move through solid objects by burrowing through them. This trait always includes a number to indicate speed. Such creatures can burrow through soil, rock, sand, and so on, though some (expressed in the creature's entry) can burrow through metal. When a creature burrows, it leaves behind a tunnel. Creatures of one size smaller than the creature that created the tunnel can enter these areas without impediment. There is a 50% chance each round that the tunnel collapses behind the creature.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400005",
+      "_sourceId": "trt000000000009",
+      "name": "Crawler",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Worms, serpents, and similar creatures crawl and slither rather than walk. The base move for a creature with this trait is half its Agility Bonus, but it does not take penalties for moving over difficult terrain.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400006",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400007",
+      "_sourceId": "trt000000000013",
+      "name": "Fear 1 (Disturbing)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400008",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons (Mandibles)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400009",
+      "_sourceId": "trt000000000021",
+      "name": "Instinctive Behaviour (Feed)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A Tyranid creature with this trait will be reduced to acting according to their instincts if they are separated from the controlling presence of the Hive Mind. In effect, this means that any encounter in which creatures with this trait are not accompanied by a Tyranid creature with the Synapse Creature trait (see page 135 in this chapter), they will behave in a particular way. The creature's instinctive behaviour is noted in parentheses and has the following effects:</p><p><strong>Feed:</strong> The creature's instinct is to feed on flesh, blood, and bone and its hunger can never be sated. The creature will try to find and attack any living, biological, non-Tyranid creature and eat them. In this state, the creature gains the Fearless and Frenzy talents. The same applies to a Horde with this trait not under the influence of a synapse creature.</p><p><strong>Lurk:</strong> The creature's instincts are to find shelter from attack, to hide and survive. It will try to flee and find shelter in whatever way the situation allows. In a starship, for example, it may scuttle into the ducting system. When confronted, the creature's aim is to try to escape and will only attack if left no avenue for escape or in order to survive. If a Horde with this trait is not under the influence of a synapse creature, it will automatically break (see Breaking a Horde on page 360 of this chapter).</p><p><strong>Stalk:</strong> The creature's instinct is to remain unseen, to find prey, slay it, feed, and then resume its hunt for others. In this state, the creature gains the Stealth (Ag) +10 skill. It will not attack enemies unless it can take them by surprise or outnumbers them. Having made a kill, the creature briefly feeds before fleeing. A horde with this trait automatically breaks (see Breaking a Horde on page 360 of this chapter), with individual creatures scattering to find shadows from which to begin their hunt.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400010",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "2",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hityranid0400011",
+      "_sourceId": "trt000000000027",
+      "name": "Overwhelming (Horde)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>The creatures that make up the horde are capable of swarming over enemies and ripping them apart with a thousand cuts. The horde with this trait always rolls an extra 1d10 for damage caused by the horde in close combat as long as it has a magnitude equal to or greater than 20.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400012",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hityranid0400013",
+      "name": "Mandibles",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-scything-talons.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d5+3",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>Rows of exceedingly sharp ripping hooks and razor-edged boney ridges. Horde attacks gain the Tearing quality.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ripper Swarm Horde",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

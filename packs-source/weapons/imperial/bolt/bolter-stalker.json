@@ -1,0 +1,29 @@
+{
+  "_id": "bolt00000000003",
+  "name": "Astartes Bolter (Stalker)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/bolter-stalker.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Explosive",
+    "penetration": "5",
+    "range": "200",
+    "rof": "S/-/-",
+    "clip": "24",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 17,
+    "req": 15,
+    "renown": "Respected",
+    "attachedQualities": [
+      { "id": "accurate" },
+      { "id": "tearing" },
+      { "id": "stalker-pattern" }
+    ],
+    "description": "<p>The Stalker-pattern boltgun is most impressive when used in conjunction with Stalker Rounds, but it is still an effective sniping weapon with any ammunition type. It significantly muffles the sound of any shell fired, and produces no muzzle flash.</p><p>Awareness Tests to hear shots made with a Stalker-pattern boltgun suffer an additional –30 penalty and can only be attempted at half the normal distance. See Stalker Rounds in the Ammunition section for more information on combining the two.</p>",
+    "modifiers": []
+  }
+}

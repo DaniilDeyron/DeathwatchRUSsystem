@@ -1,0 +1,22 @@
+{
+  "_id": "smcd00000000005",
+  "name": "Mental Fortress",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "216",
+    "key": "mental-fortress",
+    "description": "<p>The Adeptus Astartes are as strong of mind as they are of body, their training and devotion to the Emperor hardening their wills against the perils of a deadly universe. Once per game session, a Battle-Brother may use the Mental Fortress ability to re-roll a failed Willpower Test to resist a Psychic Power or an attempt to subvert his will.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>7</td><td>May add +20 to the result of the re-roll</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 5,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Re-roll a failed Willpower Test to resist a Psychic Power or will subversion (once per session)",
+    "improvements": [
+      { "rank": 7, "effect": "May add +20 to the result of the re-roll" }
+    ]
+  }
+}

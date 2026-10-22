@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000013",
+  "name": "Possibility Shield",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "193",
+    "key": "possibility-shield",
+    "range": "5 metre radius x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Divination",
+    "description": "<p>Using his understanding of future events and his perception of the flow of time, the psyker surrounds himself and nearby allies in a possibility shield. While this power is active, the psyker and a number of allies equal to his PR within range of the psyker gain a +10 bonus to one roll each Round. In addition, due to his ability to see attacks before they are coming the psyker himself adds +5 x PR to all Dodge and Parry Tests.</p>"
+  }
+}

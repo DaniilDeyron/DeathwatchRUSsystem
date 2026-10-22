@@ -1,0 +1,333 @@
+{
+  "_id": "enmytau000000001",
+  "name": "Tau Commander",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tau/tau-commander.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 35 },
+      "bs": { "base": 55 },
+      "str": { "base": 50 },
+      "tg": { "base": 57 },
+      "ag": { "base": 45 },
+      "int": { "base": 40 },
+      "per": { "base": 55 },
+      "wil": { "base": 55 },
+      "fs": { "base": 30 }
+    },
+    "wounds": { "base": 90, "max": 90, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "acrobatics": { "trained": true },
+      "awareness": { "trained": true },
+      "command": { "trained": true, "mastered": true, "expert": true },
+      "dodge": { "trained": true },
+      "speak_language_tau": { "trained": true },
+      "speak_language_kroot": { "trained": true },
+      "speak_language_low_gothic": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Tau Commanders are the heroes of the Tau Empire—they have dedicated their lives utterly to the pursuit of the so-called 'Greater Good'. Each is wise and insightful, and an inspirational figure to his troops. Tau Commanders maintain their heroic presence by wearing, or rather piloting, a suit of the most sophisticated battle armour. Unlike the generals of many other races, Tau leaders do not observe the battle from miles behind the lines. Instead, Tau doctrine states that the Commander must be wherever he is needed, so that if necessary, he can lead from the very front. Under normal circumstances, a general would be in great danger so near the front line, but his battle suit provides unprecedented levels of armour protection, prodigious firepower, and an array of secondary systems that aid him in the command and control of those units under his command. A Tau Commander is a fearsome opponent and one the Deathwatch have learned to respect.</p><p><strong>Skills:</strong> Acrobatics (Ag), Awareness (Per), Command (+20), Common Lore (Tau Empire) (Int), Dodge (Ag), Speak Language (Tau, Kroot, Low Gothic) (Int).</p><p><strong>Gear:</strong> Crisis Battlesuit, incorporating Failsafe Detonator or Ejection System (choose one), micro-bead, xenos-crafted auspex.</p><p><strong>Failsafe Detonator:</strong> So dedicated to the Greater Good are some of the Tau Empire's heroes that they will equip themselves to make the ultimate sacrifice should defeat be inevitable, and in so doing they might allow their compatriots to escape and fight another day. Should the Commander's Wounds reach 0, do not roll on the Critical Hits tables. Instead, one of two things happens. The Commander may, in the instant before he looses consciousness, override the Failsafe Detonator, shutting the battlesuit down, and thus he will play no further part in the encounter. Or, if he judges it will further the Greater Good, he may allow the explosive charge embedded in the Battlesuit to detonate, in the hope of slaying his enemies and saving his friends, even as he dies. The Failsafe Detonator explodes the instant the Commander's Wounds reach 0 (unless overridden), inflicting 4d10 Explosive Damage over a blast radius of 10 metres.</p><p><strong>Ejection System:</strong> Some Tau Commanders are considered too valuable to the Empire to be allowed to die, yet they will not serve anywhere other than the front lines. As a compromise, some allow their Battlesuit to be fitted with an ejector system, which throws their body clear of the Battlesuit should it sustain overwhelming damage. The instant the Commander is reduced to 0 Wounds, the Ejector System comes online and throws him 2d6 metres in a random direction. A Commander that has ejected has a Strength of 32, Toughness 37, and 10 Wounds. His Movement becomes 3/6/9/18 and he loses all the Traits listed on his profile (those are provided by the Battlesuit). The Commander is equipped with a micro-bead and a pulse pistol, the better to aid him in his subsequent bid for escape.</p><p><strong>The Patient Hunter:</strong> Tau Commanders are Masters of the ancient doctrines of the Fire Caste, which are founded in martial philosophy and wisdom. They weigh the strengths and weaknesses of their own troops, and of their enemies, striking at the most opportune moment with overwhelming force. Should the Kill-team be reduced to 0 Cohesion, the Tau Commander may spend a full action in order to invoke the Patient Hunter. All units under his command equipped with a micro-bead may re-roll any missed ranged attacks against the Kill-team while it remains at 0 Cohesion.</p><p><strong>Traits:</strong> Auto-stabilised, Dark Sight, Flyer (12), Size (Enormous), Unnatural Strength (x2), Unnatural Toughness (x2)</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 365</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eitau01000000001",
+      "_sourceId": "tal00000000010",
+      "name": "Air of Authority",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "Fel 30",
+        "benefit": "Affect more targets with test",
+        "description": "<p>The character was born to command, either motivating or terrifying those under his charge. On a successful Command Test, the character may affect a number of targets equal to <b>1d10 plus his Fellowship Bonus</b>. Furthermore the character’s voice commands such respect that even those not in his retinue pay heed. The character may make a Command Test on those not under his authority with a –10 penalty. This Talent has no effect on hostile targets, and only affects NPCs.</p>",
+        "compendiumId": "tal00000000010",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000002",
+      "_sourceId": "tal00000000011",
+      "name": "Ambidextrous",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "Ag 30",
+        "benefit": "Use either hand equally well",
+        "description": "<p>This Talent does not represent true ambidexterity so much as sufficient training with both hands to make the distinction moot. The character may use either hand equally well for any task, and does not suffer the <b>–20 penalty for actions using his off hand</b>.</p><p>Special: When combined with a Two-Weapon Wielder Talent, the penalty for making attacks with both weapons in the same turn drops to –10.</p>",
+        "compendiumId": "tal00000000011",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000003",
+      "_sourceId": "tal00000000053",
+      "name": "Dual Shot",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "AG 40, Two-Weapon Wielder",
+        "benefit": "One BS hits target twice",
+        "description": "<p>The character's skill with guns is such that he can target two shots on exactly the same point. <b>When armed with two pistols, the character may fire both simultaneously as a Full Action.</b> A single Ballistic Skill Test is made, and if successful, the character hits his target with both shots. As the character is firing both guns as a single attack, he may take an Aim Action before firing to get a +10 or +20 bonus to the BS Test, and a red-dot laser sight mounted on any one of the weapons provides its +10 bonus. <b>The character does not suffer from the normal –20 Ballistic Skill penalty for wielding two weapons.</b> If the attack hits, the target's armour gets applied as normal to both hits individually, but Toughness only counts once against the combined damage rolls of both hits. A single successful Dodge Test from the target avoids both shots.</p>",
+        "compendiumId": "tal00000000053",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000004",
+      "_sourceId": "tal00000000135",
+      "name": "Independent Targeting",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Ballistic Skill 40",
+        "benefit": "Fire two weapons at targets more than 10 metres apart",
+        "description": "<p>The character has developed his peripheral vision and situational awareness to a point where he can fire in two directions within a split second. <b>When firing two weapons as part of a single Action, the targets need not be fewer than 10 metres apart.</b></p>",
+        "compendiumId": "tal00000000135",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000005",
+      "_sourceId": "tal00000000161",
+      "name": "Meditation",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "123",
+        "prerequisite": "",
+        "benefit": "Willpower Test and 10 minutes to remove one level of Fatigue",
+        "description": "<p>The character has mastered his body and its reactions by the practice of meditative techniques, shutting down unnecessary functions that enables him to refresh both body and mind. <b>Success on a Willpower Test and 10 minutes without interruptions removes one level of Fatigue.</b></p>",
+        "compendiumId": "tal00000000161",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000006",
+      "_sourceId": "tal00000000207",
+      "name": "Rapid Reaction",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "124",
+        "prerequisite": "Agility 40",
+        "benefit": "Agility Test to act normally when surprised or ambushed",
+        "description": "<p>The character has honed his reactions to a razor's edge, allowing them to act while most stand dumbfounded. <b>When surprised or ambushed, a successful Agility Test allows the character to act normally.</b></p>",
+        "compendiumId": "tal00000000207",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000007",
+      "_sourceId": "tal00000000245",
+      "name": "Sprint",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "126",
+        "prerequisite": "",
+        "benefit": "Full Move +AG Bonus metres, Run doubles movement for one Round",
+        "description": "<p>The character can move at great speeds. <b>When taking a Full Move Action, the character can move an extra number of metres equal to his Agility Bonus. When taking the Run Action, the character may double his movement for one Round. The character gains one level of Fatigue if he uses this Talent two Turns in a row.</b></p>",
+        "compendiumId": "tal00000000245",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000008",
+      "_sourceId": "trt000000000003",
+      "name": "Auto-stabilised",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature always counts as braced when firing heavy weapons and may fire on semi- or full-automatic as a Half Action.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000009",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000010",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (12)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000011",
+      "_sourceId": "trt000000000033",
+      "name": "Size (Enormous)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Enormous. Enemies gain +20 to hit it, and it suffers –20 to Concealment. Its base movement is Agility Bonus +2.</p>",
+        "modifiers": [
+          {
+            "_id": "f944ed87cd28be1d",
+            "name": "Size (Enormous)",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "f71f6a2270313730",
+            "name": "Size (Enormous)",
+            "modifier": -20,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eitau01000000012",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eitau01000000013",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eitau01000000014",
+      "name": "XV8 Crisis Suit",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 9,
+        "body": 9,
+        "left_arm": 9,
+        "right_arm": 9,
+        "left_leg": 9,
+        "right_leg": 9,
+        "description": "<p>The XV8 Crisis Battlesuit is the most sophisticated battle armour in the Tau arsenal, providing unprecedented levels of armour protection, prodigious firepower, and an array of secondary systems that aid in command and control. The suit is equipped with jet propulsion (Flyer 12) and advanced targeting systems.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eitau01000000015",
+      "name": "Plasma Rifle",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tau-plasmarifle.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "2d10+9",
+        "dmgType": "Energy",
+        "penetration": "10",
+        "range": "90",
+        "rof": "S/2/-",
+        "clip": "—",
+        "reload": "—",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A sophisticated Tau energy weapon that fires superheated plasma bolts capable of melting through even the thickest armor.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau01000000016",
+      "name": "Missile Pod",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tau-missile-pod.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "3d10+8",
+        "dmgType": "Explosive",
+        "penetration": "6",
+        "range": "90",
+        "rof": "S/2/-",
+        "clip": "—",
+        "reload": "—",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A battlesuit-mounted missile launcher system that fires volleys of high-explosive warheads at enemy targets.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Tau Commander",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 2,
+    "height": 2,
+    "bar1": { "attribute": "wounds" }
+  }
+}

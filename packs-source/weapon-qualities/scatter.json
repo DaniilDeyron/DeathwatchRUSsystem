@@ -1,0 +1,13 @@
+{
+  "_id": "scatter",
+  "name": "Scatter",
+  "type": "weapon-quality",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "scatter",
+    "value": "",
+    "description": "<p>The standard ammunition of these weapons spreads out when fired, hitting more of the target. If fired at a foe within Point Blank Range, every two degrees of success indicates another hit (use Table 8–2: Multiple Hits on page 239). However, at longer ranges this spread of small projectiles reduces its effectiveness. Double all Armour Points against hits from Scatter weapons at Long or Extreme Range.</p>"
+  }
+}

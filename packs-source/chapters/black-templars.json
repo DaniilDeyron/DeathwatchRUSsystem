@@ -1,0 +1,67 @@
+{
+  "name": "Black Templars",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/black_templars.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "38",
+    "description": "<p>The Black Templars are a Crusading Chapter, and one of the most zealous of all Space Marines. They have forsworn the use of Librarians and eschew the Codex Astartes in favor of their own traditions.</p><p>Descended from the Imperial Fists, they are known for their righteous fury, close combat prowess, and eternal crusade against the enemies of the Emperor.</p>",
+    "skillCosts": {
+      "interrogation": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      }
+    },
+    "talentCosts": {
+      "tal00000000001": 800,
+      "tal00000000002": 800,
+      "tal00000000003": 500,
+      "tal00000000004": 500,
+      "tal00000000005": 500,
+      "tal00000000006": 1000,
+      "tal00000000007": 1000,
+      "tal00000000008": 500,
+      "tal00000000009": 500
+    },
+    "modifiers": [
+      {
+        "_id": "ab0db91157e12610",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "ws",
+        "enabled": true
+      },
+      {
+        "_id": "3e17f48bb39f00d7",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "wil",
+        "enabled": true
+      }
+    ],
+    "curseName": "Burn the Witch",
+    "curseDescription": "<p>Black Templars are filled with a righteous power and hatred for the witch and heretic even beyond that of the other Chapters. It is a religious madness that is often expressed with valour and fearlessness on the battlefield, but it can also turn the Battle-Brother against all creatures touched with the psyker's gift, be they friend or foe.</p>",
+    "curseLevel1Name": "Fear the Witch",
+    "curseLevel1Description": "<p>The Battle-Brother is uncomfortable around psykers and feels their dark powers crawling on his flesh and burrowing into his brain. All Fellowship based tests used on characters with psychic abilities suffer a <strong>–20 penalty</strong>, as the Battle-Brother's disquiet shows through.</p>",
+    "curseLevel1Effect": "fellowshipPenalty",
+    "curseLevel1Modifier": -20,
+    "curseLevel1Target": "fel",
+    "curseLevel2Name": "Hate the Witch",
+    "curseLevel2Description": "<p>The Battle-Brother can scarcely stand the presence of psykers and abhors their sight. If there is a psyker in the Battle-Brother's Kill-team (such as a Librarian Player Character) or he must work with a psyker ally, his Kill-team's <strong>Cohesion is reduced by 1</strong> (until such time as the psyker leaves or is killed).</p>",
+    "curseLevel2Effect": "cohesionPenalty",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 1,
+    "curseLevel3Name": "Kill the Witch",
+    "curseLevel3Description": "<p>The Battle-Brother cannot stand any psykers to live and flies into a rage when he sees them. When fighting enemy psykers, the Battle-Brother must seek them out (choosing the most obviously powerful first) and kill them to the exclusion of all other foes. This can be especially problematic for the Kill-team, should they need to take a psyker alive.</p>",
+    "curseLevel3Effect": "behavioralRequirement",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 0
+  }
+}

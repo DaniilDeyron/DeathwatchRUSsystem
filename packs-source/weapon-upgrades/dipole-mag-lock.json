@@ -1,0 +1,16 @@
+{
+  "name": "Dipole Mag-Lock",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "dipole-mag-lock",
+    "singleShotOnly": false,
+    "req": 5,
+    "renown": "",
+    "wt": 0,
+    "description": "<p>For warriors in power armour, mag-locks are as common as holsters for securing weapons. The typical mag-lock consists of strong electromagnets near a suit of power armour's surface, and mirrored magnets on the weapon to be attached. A dipole mag-lock can reverse its magnetic field to literally propel the weapon into the wielder's hand. This is typically accomplished by embedding small proximity triggers in the glove of the weapon hand that cause the magnet to reverse polarity when brought near it. However, versions using verbal and more sophisticated somatic cues also exist.</p><p>A dipole mag-lock grants the Quick Draw Talent for the upgraded weapon. If the character already has Quick Draw, he may draw his weapon as part of a Parry, allowing him to go from unarmed to deflecting an enemy blade with his own in the blink of an eye.</p><p><strong>Upgrades:</strong> Any Pistol or Basic ranged weapon, or any melee weapon that may be wielded in one hand</p>",
+    "modifiers": []
+  }
+}

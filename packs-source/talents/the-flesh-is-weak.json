@@ -1,0 +1,25 @@
+{
+  "_id": "tal00000000257",
+  "name": "The Flesh is Weak",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "128",
+    "prerequisite": "Mechanicus or Techmarine Implants",
+    "benefit": "Gain Machine Trait with AP equal to times taken (can be taken multiple times)",
+    "description": "<p>The character's body has undergone significant bionic replacement to the point where he is far more machine than man. <b>This Talent grants the character the Machine Trait (see page 133) with Armour Points equal to the number of times this Talent has been taken. The character may purchase this Talent multiple times in accordance with his Career Path. In this case, note the number of times this Talent has been taken, such as The Flesh is Weak 3.</b></p>",
+    "compendiumId": "tal00000000257",
+    "modifiers": [
+      {
+        "_id": "flesh-weak-armor-mod",
+        "name": "The Flesh is Weak",
+        "modifier": 1,
+        "type": "talent",
+        "effectType": "armor",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

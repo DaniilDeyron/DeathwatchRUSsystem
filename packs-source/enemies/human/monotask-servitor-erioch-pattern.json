@@ -1,0 +1,133 @@
+{
+  "_id": "enmyhuman0000002",
+  "name": "Monotask Servitor (Erioch-Pattern)",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/human/monotask-servitor-erioch-pattern.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 25 },
+      "bs": { "base": 25 },
+      "str": { "base": 40 },
+      "tg": { "base": 40 },
+      "ag": { "base": 20 },
+      "int": { "base": 20 },
+      "per": { "base": 20 },
+      "wil": { "base": 30 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 15, "max": 15, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "trade_technomat": { "mastered": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Attempting to count all the servitors of this type that carry out the Imperium's most tedious labours would be impossible, nor would most think to attempt it any more than they would care to count the links in a Land Raider's treads. Techmarines often replace at least one of such a servitor's hands with a less powerful version of their own servo-arm manipulators. Monotask servitors will not hold up long in the gruelling battles Space Marines face, but they can be useful on missions for simple repairs, menial labour, and sentry duty.</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 376</p>",
+    "classification": "human"
+  },
+  "items": [
+    {
+      "_id": "eihuman020000001",
+      "_sourceId": "trt000000000022",
+      "name": "Machine (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>A creature with the Machine trait is fashioned from inorganic materials and is generally more rigourous than fleshy folks. Machines do not breathe, are immune to the effects of a vacuum, extremes of cold, any mind-influencing psychic effect, and their Armour Points apply toward fire damage. Machines are also resilient to injury, having 1 to 5 Armour Points for each location. This number is indicated next to the trait.</p>",
+        "modifiers": [
+          {
+            "_id": "machine-armour-mod",
+            "name": "Machine",
+            "modifier": "4",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman020000002",
+      "_sourceId": "trt000000000026",
+      "name": "Natural Weapon (Servo-fist)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has sharp claws, teeth, spines or some other natural weapon with which it can slice and dice its foes. It counts as being armed even when not wielding weapons. Its attacks deal 1d10 points of damage plus its Strength Bonus. The creature may make attacks with its Natural Weapons using its Weapon Skill, though it cannot parry with its natural weapons, nor can it be disarmed—unless, of course, you hack off its limbs! Natural weapons always count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman020000003",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman020000004",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman020000005",
+      "name": "Servo-fist",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+8",
+        "dmgType": "Impact",
+        "penetration": "6",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A servo-augmented fist used for menial labour and simple repairs. Less powerful than a full Battle Servitor's servo-fist.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Monotask Servitor (Erioch-Pattern)",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

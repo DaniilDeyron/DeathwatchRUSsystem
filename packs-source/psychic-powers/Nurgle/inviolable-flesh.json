@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000082",
+  "name": "Inviolable Flesh",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/nurgle.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "215",
+    "key": "inviolable-flesh",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Nurgle",
+    "description": "<p><strong>Prerequisites:</strong> Aligned Nurgle, Toughness 40+</p><p><strong>Focus Power:</strong> Hard (-20) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p><strong>Alternate Names:</strong> Effluent Form, Vigour Mortis</p><p>The Sorcerer's flesh twists and changes to resemble the blessed effluents of the Plague God, becoming crusted with filth and foulness such that the blows of the enemy do not cut so deep. Gifted with such a pestilential form, the Sorcerer can shrug off injuries that would fell a lesser man.</p><p>While this power is in effect, the Sorcerer gains the Unnatural Toughness Trait with a rating equal to the sorcerer's Psy Rating. However, so encumbered by filth is the Sorcerer that he suffers a -10 penalty to his Agility characteristic.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

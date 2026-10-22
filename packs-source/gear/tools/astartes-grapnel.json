@@ -1,0 +1,17 @@
+{
+  "_id": "gear00000000010",
+  "name": "Astartes Grapnel",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "equipped": false,
+    "wt": 3,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Sometimes used by Space Marine Scout Squads in the field, a grapnel fires a hooked or magnetic grapnel from a bolt pistol, connected to the launcher with a thin but strong 100m wire. Once the grapnel attaches to the desired rock outcropping, gargoyle edifice or other anchor, the user can manually climb the line or activate a powered winch.</p><p>In a pinch, a grapnel can also be used as a crude—and messy—projectile weapon, doing 1d10+2 R Damage with a Penetration of 2.</p>",
+    "modifiers": []
+  }
+}

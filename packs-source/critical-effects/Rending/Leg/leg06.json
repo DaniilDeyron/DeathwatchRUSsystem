@@ -1,0 +1,14 @@
+{
+  "_id": "rending-leg0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Leg",
+    "description": "The blow slices a couple of centimetres off the end of the target's foot. The target must make an immediate Challenging (+0) Toughness Test or permanently lose the use of his foot. On a success, movement is halved until he receives medical attention. In either case, the target takes 1d5 levels of Fatigue.",
+    "effects": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "laun00000000002",
+  "name": "Auxiliary Grenade Launcher",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/grenade-launcher.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "n/a",
+    "dmg": "Varies",
+    "dmgType": "Explosive",
+    "penetration": "Varies",
+    "range": "45",
+    "rof": "S/-/-",
+    "clip": "4",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 3,
+    "req": 15,
+    "renown": "Respected",
+    "description": "<p>When a Space Marine’s enhanced strength is not adequate to propel his choice of grenades far enough, an auxiliary grenade launcher can be employed. These compact tubes hold a small row of pre-primed grenades. An auxiliary grenade launcher is most commonly mounted above or below the barrel of a basic weapon in a manner similar to a combi-weapon. However, models with standalone trigger mechanisms are also available. If attached to another weapon, the user must choose which one to fire; the launcher cannot be fired in the same Turn as the weapon it is attached to. This weapon may also be mounted on Terminator Armour. Doing so, however, doubles this weapon’s Requisition cost.</p>",
+    "modifiers": []
+  }
+}

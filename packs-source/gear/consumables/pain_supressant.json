@@ -1,0 +1,17 @@
+{
+  "_id": "painsupress0001",
+  "name": "Pain Supressant",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/pain-supression.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 0,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Consumeable",
+    "description": "<p>The same chemical is found in most Astartes power armour injectors and allows a character to ignore Critical Effects for 1d10 Rounds. Additional doses are often carried in nartheciums, and may also be used in the Sacraments of Renewal to refill power armour injectors with a <b>Routine (+10) Tech-Use Test</b>.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

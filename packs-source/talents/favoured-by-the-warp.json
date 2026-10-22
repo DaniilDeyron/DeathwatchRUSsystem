@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000083",
+  "name": "Favoured by The Warp",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "WIL 35",
+    "benefit": "Roll twice on Psychic Phenomena table",
+    "description": "<p>Whenever a Psychic Power results in Psychic Phenomena, <b>the character may roll twice on that table and take the more favourable result.</b></p>",
+    "compendiumId": "tal00000000083",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

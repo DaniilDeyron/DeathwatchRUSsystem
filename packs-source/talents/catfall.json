@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000034",
+  "name": "Catfall",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "Ag 30",
+    "benefit": "Reduce falling damage",
+    "description": "<p>Gymnastic ability and natural balance enables the character to fall great distances without harm. Whenever he falls, the character may take an Agility Test as a Free Action. Success, and each additional Degree of Success, reduces the distance fallen by a number of metres equal to the character’s Agility Bonus for the purposes of determining Damage from the fall.</p>",
+    "compendiumId": "tal00000000034",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000006",
+  "name": "Inspire Wrath",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "Fellowship 30",
+    "benefit": "+20 to Interaction Tests inspiring hatred, doubles affected individuals",
+    "description": "<p>The character knows just the turn of phrase that incites individuals or groups to rage against others. <b>The character's rhetoric grants him +20 to Interaction Tests when inspiring hatred or anger, and this Talent doubles the number of individuals affected. This Talent can be combined with Master Orator to further increase the number of listeners affected.</b></p>",
+    "compendiumId": "tal00000000006",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

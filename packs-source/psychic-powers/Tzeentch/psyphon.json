@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000108",
+  "name": "Psyphon",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "220",
+    "key": "psyphon",
+    "range": "10 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "Yes",
+    "cost": 300,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> Willpower 40</p><p><strong>Focus Power:</strong> Difficult (–10) Opposed Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker reaches out with his mind and tears the psychic power from an enemy psyker, draining his abilities and adding them to his own. This parasitic attack is particularly feared by enemy psykers, who see their own powers turned against them.</p><p>This power is a Psychic Bolt that deals 1d10 Energy Damage, +1 per point of Psy Rating, with a Penetration of 5. If the target is a psyker and suffers damage from this attack, the target's Psy Rating is reduced by the psyker's Psy Rating (to a minimum of 0) and the psyker's own Psy Rating is increased by the same amount for the rest of the encounter.</p>",
+    "damageFormula": "1d10+PR",
+    "penetrationFormula": "5",
+    "damageType": "Energy",
+    "attachedQualities": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000001",
+  "name": "Avenger",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "194",
+    "key": "avenger",
+    "range": "30m",
+    "sustained": "No",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Codex",
+    "description": "<p>The Librarian summons up the ancestors of his Chapter and shapes them into a flaming vengeful avatar of death. The construct then billows forward to incinerate those in its path. The Avenger power works exactly like a shot from an Adeptus Astartes heavy flamer (see page 145), with all the usual chances to hit and set targets on fire, and affecting Hordes as an Adeptus Astartes heavy flamer rather than as a psychic power normally would (see page 360). However, due to the horrific nature of the psychic flames, the Penetration of the attack is equal to 2 x PR.</p>",
+    "damageFormula": "1d10+12",
+    "penetrationFormula": "2*PR",
+    "damageType": "Energy",
+    "attachedQualities": [{ "id": "flame" }]
+  }
+}

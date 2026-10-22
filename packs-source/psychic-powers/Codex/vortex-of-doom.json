@@ -1,0 +1,21 @@
+{
+  "_id": "psy00000000022",
+  "name": "Vortex of Doom",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "195",
+    "key": "vortex-of-doom",
+    "range": "10m x PR",
+    "sustained": "No",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 2000,
+    "class": "Codex",
+    "description": "<p>With an utter disregard for reality, the Librarian opens up a flickering vortex in the fabric of space and time. The vortex is 2 metres in diameter and may be placed anywhere within range of the psyker. Once created, however, the Librarian has no more control over it. Each Round after its creation the GM should roll a dice for the vortex. On a 1–4 its diameter shrinks by 1 metre, on a 5–8 its diameter grows by 1 metre, and on a 9–0 its diameter grows by 2 metres. If the vortex is ever reduced to 0 diameter then it vanishes. The GM then rolls a random direction for the vortex to travel 2d10 metres (use the Scatter diagram from page 248). Anything that touches the vortex, either when created or as it moves, must make a Challenging (+0) Agility Test or suffer 1d10 Energy damage x PR. Those killed by the vortex are sucked away into the Warp and lost forever.</p><p>Having an open rift to Warp is dangerous to the souls of anyone present. The first time any creature (including the Librarian) comes within 10 metres of the vortex, it must make a Hard (–20) Willpower Test or gain 1d5 Corruption Points.</p>",
+    "damageFormula": "1d10*PR",
+    "penetrationFormula": "0",
+    "damageType": "Energy"
+  }
+}

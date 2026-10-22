@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-body0004",
+  "name": "Level 04",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Body",
+    "description": "The explosion sends the target sprawling to the ground. He takes 1d5 levels of Fatigue, is Stunned for 1 Round, and must spend a Full Action to regain his feet.",
+    "effects": []
+  }
+}

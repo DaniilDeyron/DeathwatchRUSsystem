@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000064",
+  "name": "Paroxysm",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "30",
+    "key": "paroxysm",
+    "range": "25 metres x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>Summoning the power of the Hive Mind, the creature assails its foes with crippling pain, tearing at their nerve endings and filling their minds with agony that makes it difficult for them to stand let alone fight. The Tyranid creature chooses a number of foes within range equal to its Psy Rating (or a single Horde of any Magnitude). Those that fail their Opposed Test reduce both their Weapon Skill and Ballistic Skill to 10 while they remain affected by the power. The pain is also quite distracting when trying to concentrate and therefore targets under the effects of Paroxysm suffer a -10 to all Intelligence, Perception, Willpower and Fellowship Characteristic and Skill Tests.</p>"
+  }
+}

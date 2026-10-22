@@ -1,0 +1,35 @@
+{
+  "_id": "hord00000000000",
+  "name": "Horde Name",
+  "type": "horde",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 0 },
+      "bs": { "base": 0 },
+      "str": { "base": 0 },
+      "tg": { "base": 0 },
+      "ag": { "base": 0 },
+      "int": { "base": 0 },
+      "per": { "base": 0 },
+      "wil": { "base": 0 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 30, "max": 30, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "armor": 0,
+    "skills": {},
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Description here.</p>",
+    "psyRating": { "value": 0, "base": 0 }
+  },
+  "items": [],
+  "prototypeToken": {
+    "name": "Horde Name",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

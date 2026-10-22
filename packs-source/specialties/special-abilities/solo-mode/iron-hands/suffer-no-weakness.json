@@ -1,0 +1,34 @@
+{
+  "_id": "smch00000000007",
+  "name": "Suffer No Weakness",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "First Founding",
+    "page": "12",
+    "key": "suffer-no-weakness",
+    "description": "<p>Space Marines of the Iron Hands Chapter find strength in bolstering their bodies with augmetics and bionics. Harnessing cold fury and hatred into their assaults, the Iron Hands are powerful warriors. Once per combat, the Battle-Brother may select a single enemy. For the duration of the combat, the Battle-Brother gains the Hatred Talent against his chosen foe and gains a bonus to Damage equal to one-half (rounding up) of his unmodified Intelligence Bonus.</p><p><strong>Note:</strong> For this Solo Mode Ability, The Flesh Is Weak Talent counts its level as an equal number of cybernetics. Thus, a Space Marine with The Flesh Is Weak 3 and 2 cybernetics would count as having 5 cybernetics for the purposes of this Solo Mode Ability.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Battle-Brother gains the Sturdy Trait (requires at least 4 cybernetics)</td></tr><tr><td>5</td><td>All Interaction Skill Tests used against the Battle-Brother suffer a –30 penalty (requires at least 5 cybernetics)</td></tr><tr><td>7</td><td>Battle-Brother gains the Undying Trait (requires at least 6 cybernetics)</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Iron Hands",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/iron_hands.webp",
+    "effect": "Once per combat, select enemy and gain Hatred Talent + bonus Damage equal to ceil(Intelligence Bonus ÷ 2) against chosen foe",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "Battle-Brother gains the Sturdy Trait (requires at least 4 cybernetics)"
+      },
+      {
+        "rank": 5,
+        "effect": "All Interaction Skill Tests used against the Battle-Brother suffer a –30 penalty (requires at least 5 cybernetics)"
+      },
+      {
+        "rank": 7,
+        "effect": "Battle-Brother gains the Undying Trait (requires at least 6 cybernetics)"
+      }
+    ]
+  }
+}

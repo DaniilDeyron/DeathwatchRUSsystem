@@ -1,0 +1,64 @@
+{
+  "name": "Raptors",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/raptors.webp",
+  "system": {
+    "book": "Honour The Chapter",
+    "page": "82",
+    "description": "<p>The Raptors are a successor Chapter known for their pragmatic approach to warfare and expertise in stealth operations. They favor camouflage, reconnaissance, and precision strikes.</p><p>Unlike many Chapters, they eschew glory and honor in favor of tactical efficiency, using concealment and marksmanship to eliminate threats with minimal casualties.</p>",
+    "skillCosts": {
+      "acrobatics": { "costTrain": 100, "costMaster": 100, "costExpert": 100 },
+      "concealment": { "costTrain": 100, "costMaster": 200, "costExpert": 300 },
+      "silent_move": { "costTrain": 100, "costMaster": 200, "costExpert": 300 },
+      "tactics_recon_and_stealth": {
+        "costTrain": 100,
+        "costMaster": 200,
+        "costExpert": 300
+      }
+    },
+    "talentCosts": {
+      "tal00000000013": 400,
+      "tal00000000046": 400,
+      "tal00000000154": 600
+    },
+    "modifiers": [
+      {
+        "_id": "9a37521a6b316bec",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "ag",
+        "enabled": true
+      },
+      {
+        "_id": "03aff384888de9cb",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "per",
+        "enabled": true
+      }
+    ],
+    "curseName": "Grim Determination",
+    "curseDescription": "<p>Raptors are as intensely loyal as any of the Chapters of the Adeptus Astartes and do not take their duty lightly nor the oaths they take to the Emperor or the Deathwatch. Regardless, however, they retain a fatalism which can cling to them even in their most triumphant moments. Unlike the stubborn adherence to duty that other Chapters might possess, which would see a battle-brother fight on until claimed by death, the Raptors have instead a grim determination to do their duty. This is not so much a desire to die as it is an acceptance that death is the only end to the path a Space Marine treads, and everything they do is another step along that path and one closer to their eventual demise. As this condition increases, the Battle-Brother can become more and more fatalistic about their chances, citing the many times the Raptors have suffered near extinction or that the Imperium itself has come close to the edge. These black moods will not affect their willingness to do their duty nor make them turn from their brothers, but it can press in upon their squad mates all the same.</p>",
+    "curseLevel1Name": "The Shadow of Death",
+    "curseLevel1Description": "<p>The Battle-Brother starts to see death in everything. He becomes distant and makes little effort to forge new alliances with new squad members, knowing they will soon be in the grave. He becomes more dismissive of death and the praising of the dead, seeing little glory in their sacrifice, only the inevitable end to their duty and another corpse to feed the gods of war. This attitude can grate on those around the Battle Brother and he suffers a <strong>–10 to his Fellowship</strong> when dealing with other soldiers or members of the Adeptus Astartes.</p>",
+    "curseLevel1Effect": "modifier",
+    "curseLevel1Modifier": -10,
+    "curseLevel1Target": "fel",
+    "curseLevel2Name": "The Bad Beneath the Good",
+    "curseLevel2Description": "<p>The Battle-Brother cannot help but reflect on the worst side of a new development and will endeavour to find the worst aspect of even the most favourable of circumstances. Quite apart from causing friction within his squad, the drawing of focus onto potential problems and unforeseen dangers (regardless of the actual likelihood they will impact on the squad's mission) can cause compromises in command and less than direct tactical judgements. When the Battle-Brother's squad embarks on a mission, he must choose one of the Secondary or Primary objectives to cast doubt on. This objective then requires <strong>3d10 more Kill-markers than normal to complete</strong>.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Game Over",
+    "curseLevel3Description": "<p>Death is inevitable and the Battle Brother is already a walking corpse just waiting for the moment when an enemy's blade or bullet ends him. Filled with visions of his own demise, the Battle-Brother begins to act recklessly, accepting that it is his time and there is nothing he can do to prevent it coming. This will not only place him in danger but can endanger his entire squad. The Battle-Brother <strong>does not contribute to the squad Cohesion</strong> as he fails to adequately aid them in battle. In addition, he only gains <strong>half the normal armour points from cover</strong>, as even when behind barricades and walls he exposes himself to fire with little mind to remaining concealed.</p>",
+    "curseLevel3Effect": "custom",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 0
+  }
+}

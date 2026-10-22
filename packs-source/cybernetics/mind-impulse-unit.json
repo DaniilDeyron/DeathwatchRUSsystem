@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000015",
+  "name": "Mind Impulse Unit (MIU)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/cybernetics.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "178",
+    "equipped": false,
+    "description": "<p>These devices, also known as sense-links, allow the owner to directly interface with a machine or technological device. MIUs see widespread use among Techmarines.</p><p>A basic MIU implant involves a single spinal or cortex connector, while advanced variants include wrist connector probes—and possibly mechadendrite connectors—in addition to the spinal plug.</p><p><strong>Game Effects:</strong> Gives no modifiers to machine spirit communication. Grants a +10 bonus to Tech-Use, Pilot, or Drive Tests used in conjunction with devices capable of MIU link.</p><p><em>Note: Bonuses only apply when directly interfaced with MIU-capable devices/systems.</em></p>",
+    "modifiers": [],
+    "req": 15,
+    "renown": "",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

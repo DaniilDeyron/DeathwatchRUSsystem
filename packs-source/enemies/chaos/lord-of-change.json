@@ -1,0 +1,301 @@
+{
+  "_id": "enmychaos0000013",
+  "name": "Lord of Change",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/lord-of-change.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 54 },
+      "bs": { "base": 63 },
+      "str": { "base": 45 },
+      "tg": { "base": 63 },
+      "ag": { "base": 54 },
+      "int": { "base": 99 },
+      "per": { "base": 72 },
+      "wil": { "base": 81 },
+      "fs": { "base": 45 }
+    },
+    "wounds": { "base": 180, "max": 180, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "command": { "trained": true, "mastered": true, "expert": true },
+      "commerce": { "trained": true },
+      "common_lore": { "trained": true, "mastered": true, "expert": true },
+      "deceive": { "trained": true, "mastered": true, "expert": true },
+      "dodge": { "trained": true },
+      "forbidden_lore": { "trained": true, "mastered": true, "expert": true },
+      "inquiry": { "trained": true, "mastered": true },
+      "interrogation": { "trained": true, "mastered": true },
+      "intimidate": { "trained": true },
+      "logic": { "trained": true, "mastered": true, "expert": true },
+      "linguistics": { "trained": true, "mastered": true, "expert": true },
+      "medicae": { "trained": true },
+      "parry": { "trained": true },
+      "psyniscience": { "trained": true },
+      "scholastic_lore": { "trained": true, "mastered": true, "expert": true },
+      "scrutiny": { "trained": true, "mastered": true, "expert": true }
+    },
+    "psyRating": { "value": 9, "base": 9 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>In realspace, these creatures appear as towering beings with gangling limbs, vast feathered wings, and a hook-beaked head resting on a long, crooked neck. Their hunched shoulders are often draped with what looks like the robes of a high priest or a court wizard from ages long-past. Their bent, bird-like legs are scaly and end in vicious talons; their lank arms terminate in broad, clawed hands. Their enormous wings sprout from their shoulders and are of an indeterminate colour, seeming to change their hue and tone with each passing second. Most Lords of Change carry long ceremonial staves, which they use to channel their considerable psychic power. These powerful daemonic servants of Tzeentch carry themselves with a regal grace, though when driven to action their savagery is remarkable.</p><p>Few beings in the galaxy can claim to possess greater stores of knowledge than a Lord of Change, and this holds true on the battlefield as well. The greater daemons of Tzeentch craft strategies and tactics as though battles were game-boards and their forces were merely pieces. They utilise their great magic to steer the flow of battle and bolster their own forces as well as to annihilate their enemies. The battle plans of these beings of supernatural genius seem to script the engagements as much as anticipate possible events. Should a Lord of Change be confronted with a being with psychic powers comparable to its own, it is not unheard of for the greater daemons of Tzeentch to wade into close-quarters combat. Their incredible reach and sharp talons are the match of most mortals should these powerful psykers ever resort to such a confrontation.</p><p><strong>Master of Plotters:</strong> All Daemons of Tzeentch are master schemers, their very essence a primal form of deceit and treachery, and the Lords of Change are the greatest masterminds of all. No matter the circumstances, a Lord of Change always has a plan. Once per session, the Lord of Change may add a number of Degrees of Success equal to his Intelligence Bonus to any one Test.</p><p><strong>Supreme Sorcerer:</strong> The Lord of Change may activate any Tzeentch or Unaligned Power; he passes the Focus Power Test automatically with 1d5 Degrees of Success. He counts as having a Psy Rating of 9.</p><p><strong>Weaver of Fates:</strong> Lord of Change can turn its gaze upon a mortal and alter their fate. Once per round, as a Reaction, the Lord of Change may force a target to pass a Challenging (+0) Agility or Challenging (+0) Willpower Test. If the target fails, it must immediately spend an Infamy Point as the Lord of Change sees fit. The target may be forced to heal themselves, reroll a failed Test or any other use they could normally make.</p><p><strong>Daemonic Presence:</strong> All enemies within 20 metres of a Lord of Change suffer –20 penalty to Willpower Tests.</p><p><strong>Skills:</strong> Awareness (Per), Command (Fel)+20, Commerce (Int), Common Lore (All) (Int) +20, Deceive (Fel)+20, Dodge (Ag), Forbidden Lore (All) (Int)+20, Inquiry (Fel)+10, Interrogation (WP)+10, Intimidate (S), Logic (Int)+20, Linguistics (Int)+20, Medicae (Int), Parry (WS), Psyniscience (Per), Scholastic Lore (All) (Int)+20, Scrutiny (Per)+20.</p><p><strong>Talents:</strong> Combat Master, Resistance (Psychic Powers), Swift Attack, Strong Minded.</p><p><strong>Traits:</strong> Daemonic (+5), Dark Sight, Fear (4), Flyer (5), From Beyond, Sturdy, Unnatural Strength (+12), Unnatural Toughness (+5), The Stuff of Nightmares.</p><p><strong>Source:</strong> Black Crusade, p. 357</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos130000001",
+      "_sourceId": "tal00000000038",
+      "name": "Combat Master",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "WS 30",
+        "benefit": "No ganging up bonus against you",
+        "description": "<p>The character's weapon seems to be everywhere at once, keeping many more opponents at bay in close combat than would seem possible. <b>Opponents fighting the character in hand-to-hand combat gain no bonuses for outnumbering him.</b></p>",
+        "compendiumId": "tal00000000038",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000002",
+      "_sourceId": "tal00000000213",
+      "name": "Resistance (Psychic Powers)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "125",
+        "prerequisite": "",
+        "benefit": "+10 to resist Psychic Power effects",
+        "description": "<p>The character's background, experience, training, exposure, or plain stubbornness has developed a resistance within him. <b>The character gains a +10 bonus when making tests to resist the effects of this group.</b> The character's GM may wish to approve certain choices or have them justified by the character's past.</p>",
+        "compendiumId": "tal00000000213",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000003",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "WS 35",
+        "benefit": "Half Action melee attack twice",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000004",
+      "_sourceId": "tal00000000250",
+      "name": "Strong Minded",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Willpower 30, Resistance (Psychic Powers)",
+        "benefit": "Re-roll failed Willpower Tests to resist mind-affecting Psychic Powers",
+        "description": "<p>The character's conditioned mind acts as a fortress against psychic attacks. <b>The character may re-roll failed Willpower Tests to resist any Psychic Powers that affect his mind. Psychic Powers that have a physical effect, such as Telekinesis, are unaffected by this Talent.</b></p>",
+        "compendiumId": "tal00000000250",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000005",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (5)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000006",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000007",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000008",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (5)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000009",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000010",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000011",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos130000012",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos130000013",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos130000014",
+      "_sourceId": "trt000000000040",
+      "name": "The Stuff of Nightmares",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Some warp entities are so terribly powerful the will perpetuating their bodies in our reality is almost impossible to break or disrupt. Such entities are completely immune to the effects of poisons, diseases, the need to breathe, most environmental hazards, bleeding, stunning, and any critical result other than one that would destroy them outright, unless caused by a psychic power, force weapon, or holy attack.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos130000015",
+      "name": "Talons",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+0",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "razor-sharp" }],
+        "attachedUpgrades": [],
+        "description": "<p>The Lord of Change's vicious talons are sharp as razors and benefit from the creature's incredible reach. Despite preferring to wield psychic power, the Lord of Change is a deadly melee combatant when pressed into close quarters.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Lord of Change",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 2,
+    "height": 2,
+    "bar1": { "attribute": "wounds" }
+  }
+}

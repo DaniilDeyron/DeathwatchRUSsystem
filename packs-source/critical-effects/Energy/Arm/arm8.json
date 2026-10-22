@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0008",
+  "name": "Level 08",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "Energy sears through the arm at the shoulder, causing the limb to be severed from the body. The target must take a Toughness Test or become Stunned for 1 Round. In addition the target takes 1d10 levels of Fatigue and is suffering from Blood Loss. The target now only has one arm.",
+    "effects": []
+  }
+}

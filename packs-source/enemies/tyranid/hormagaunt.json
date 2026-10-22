@@ -1,0 +1,204 @@
+{
+  "_id": "enmytyranid00001",
+  "name": "Hormagaunt",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tyranid/hormagaunt.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 45 },
+      "bs": { "base": 20 },
+      "str": { "base": 35 },
+      "tg": { "base": 30 },
+      "ag": { "base": 55 },
+      "int": { "base": 10 },
+      "per": { "base": 40 },
+      "wil": { "base": 30 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 9, "max": 9, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "acrobatics": { "trained": true, "mastered": true, "expert": true },
+      "awareness": { "trained": true },
+      "dodge": { "trained": true, "mastered": true },
+      "silent_move": { "trained": true },
+      "swim": { "trained": true, "mastered": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Hormagaunts are fast-moving Tyranid assault organisms. They bound forward on powerful legs, leaping over obstacles to close with the enemy and tear them apart with their scything talons. They are among the most numerous of Tyranid bioforms and are often the first wave of a Tyranid assault.</p><p><strong>Traits:</strong> Tyranid, Natural Armour (2), Natural Weapons, Instinctive Behaviour (Feed), Unnatural Speed</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 369</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eityranid0100001",
+      "_sourceId": "tal00000000143",
+      "name": "Leap Up",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Agility 30",
+        "benefit": "Stand up as Free Action",
+        "description": "<p>A combination of athletic ability and speed allow the character to spring to his feet in virtually any circumstance. <b>The character may stand up as a Free Action.</b></p>",
+        "compendiumId": "tal00000000143",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0100002",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0100003",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0100004",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (3)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "3",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0100005",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0100006",
+      "_sourceId": "trt000000000021",
+      "name": "Instinctive Behaviour (Feed)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A Tyranid creature with this trait will be reduced to acting according to their instincts if they are separated from the controlling presence of the Hive Mind. In effect, this means that any encounter in which creatures with this trait are not accompanied by a Tyranid creature with the Synapse Creature trait (see page 135 in this chapter), they will behave in a particular way. The creature's instinctive behaviour is noted in parentheses and has the following effects:</p><p><strong>Feed:</strong> The creature's instinct is to feed on flesh, blood, and bone and its hunger can never be sated. The creature will try to find and attack any living, biological, non-Tyranid creature and eat them. In this state, the creature gains the Fearless and Frenzy talents. The same applies to a Horde with this trait not under the influence of a synapse creature.</p><p><strong>Lurk:</strong> The creature's instincts are to find shelter from attack, to hide and survive. It will try to flee and find shelter in whatever way the situation allows. In a starship, for example, it may scuttle into the ducting system. When confronted, the creature's aim is to try to escape and will only attack if left no avenue for escape or in order to survive. If a Horde with this trait is not under the influence of a synapse creature, it will automatically break (see Breaking a Horde on page 360 of this chapter).</p><p><strong>Stalk:</strong> The creature's instinct is to remain unseen, to find prey, slay it, feed, and then resume its hunt for others. In this state, the creature gains the Stealth (Ag) +10 skill. It will not attack enemies unless it can take them by surprise or outnumbers them. Having made a kill, the creature briefly feeds before fleeing. A horde with this trait automatically breaks (see Breaking a Horde on page 360 of this chapter), with individual creatures scattering to find shadows from which to begin their hunt.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0100007",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0100008",
+      "_sourceId": "trt000000000027",
+      "name": "Overwhelming (Horde)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>The creatures that make up the horde are capable of swarming over enemies and ripping them apart with a thousand cuts. The horde with this trait always rolls an extra 1d10 for damage caused by the horde in close combat as long as it has a magnitude equal to or greater than 20.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0100009",
+      "_sourceId": "trt000000000050",
+      "name": "Unnatural Speed",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature moves with incredible speed. For the purposes of determining movement, the creature doubles its Agility Bonus (after modifying AB from other traits and factors, specifically size).</p>",
+        "modifiers": [
+          {
+            "_id": "e2b28bb6ce2fa7ae",
+            "name": "Unnatural Speed",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "movement-multiplier",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0100010",
+      "name": "Scything Talons",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-scything-talons.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+3",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>Razor-edged claws of fused chitin and serrated bone.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Hormagaunt",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

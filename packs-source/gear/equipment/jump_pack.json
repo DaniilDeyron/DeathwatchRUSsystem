@@ -1,0 +1,15 @@
+{
+  "_id": "jumppack00000001",
+  "name": "Jump Pack",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/jump_pack.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "171",
+    "wt": 50,
+    "req": 15,
+    "renown": "",
+    "shortDescription": "General",
+    "description": "<p>These large rocket thrusters typically attach to the backpack power unit on Astartes power armour. The user triggers a jump pack to lift high into the air and then swoops down as part of his assault. Jump packs are also useful in leaping over high obstacles and reaching distant enemies. Most Battle-Brothers receive the specialised training necessary to operate these devices as part of an assault squad, where the extra noise and bulk is secondary to the extra mobility that would allow him to charge that much faster into the thick of battle.</p><p>A Jump Pack requires the Pilot (Personal) skill to operate effectively. An Astartes Jump Pack allows for a safe, guided fall from any height, and any number of short jumps. Such jumps allow the Battle-Brother to double his Base Movement and travel in any direction without regard for obstacles. For all other purposes, he counts as having taken the appropriate Movement action. He must land by the end of his Turn. Alternatively, the pack can use maximal thrust to duplicate the Flyer (12) trait for up to a minute before the turbines require a minute to cool.</p>"
+  }
+}

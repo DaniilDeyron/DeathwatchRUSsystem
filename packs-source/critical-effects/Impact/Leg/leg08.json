@@ -1,0 +1,14 @@
+{
+  "_id": "impact-leg0008",
+  "name": "Level 08",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Leg",
+    "description": "The force of the attack rips the lower half of the leg away in a stream of blood. The target must immediately make a Challenging (+0) Toughness Test or die from shock. On a success, the target is Stunned for 1d10 rounds, takes 1d5 levels of Fatigue and suffers Blood Loss. He now only has one leg.",
+    "effects": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "rending-head0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Head",
+    "description": "The attack slices open the target's scalp which immediately begins to bleed profusely. Due to blood pouring into the target's eyes, he suffers a –10 penalty to both Weapon Skill and Ballistic Skill for the next 1d10 Turns. The target takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

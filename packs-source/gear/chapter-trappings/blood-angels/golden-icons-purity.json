@@ -1,0 +1,18 @@
+{
+  "_id": "ct-ba-004",
+  "name": "Golden Icons (Purity Focus)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Blood Angels Chapter Trapping",
+    "description": "<p>Blood Angels frequently hang sacred gilded icons on their armour or from their belts. The exact form of these items varies, but they are considered a display of devotion as well as serving as a focus for spiritual meditation.</p><p><strong>Effect:</strong> Whenever the Battle-Brother gains Corruption Points, reduce the total by 1.</p>",
+    "modifiers": [],
+    "key": "blood-angels-golden-icons-purity"
+  }
+}

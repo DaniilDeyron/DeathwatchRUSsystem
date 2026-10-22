@@ -1,0 +1,26 @@
+{
+  "_id": "tal00000000281",
+  "name": "Psy Rating 9",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Psy Rating 8",
+    "benefit": "Psy Rating 9",
+    "description": "<p>The character increases their Psy Rating to 9. See Chapter VI: Psychic Powers for detailed rules on the game mechanics of this ability.</p>",
+    "cost": -1,
+    "compendiumId": "tal00000000281",
+    "modifiers": [
+      {
+        "_id": "238a85f3180a2569",
+        "name": "Psy Rating 9",
+        "modifier": "1",
+        "type": "talent",
+        "effectType": "psy-rating",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

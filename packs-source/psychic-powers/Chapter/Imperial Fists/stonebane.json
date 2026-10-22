@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000055",
+  "name": "Stonebane",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/imperial-fists.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "50",
+    "key": "stonebane",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>No wall or fortification can stand against the will of Dorn made manifest. The Librarian channels his powers into an attack so terrible that no stone will be left standing upon another. The ground quakes, the skies darken and the air itself screams as a mighty etheric hammer manifests itself in the Librarian's grip. Stonebane may be used when the Librarian is faced with a wall, fortification, bunker or similar structure, that he wishes to smash asunder. While the power is in effect, he counts as equipped with an Astartes Thunder Hammer. The Stonebane may only be used to strike stationary, non-living structures and objects, and is of no use against any other type of target.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/imperial-fists.webp"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000043",
+  "name": "Crown of Lightning",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/storm-wardens.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "199",
+    "key": "crown-of-lightning",
+    "range": "5 metres x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>The Librarian encases one of his foes in a crackling cage of lightning, searing his flesh and contorting his muscles. This power may only be used against a single target. The target suffers 1d10 Energy damage x PR counting as having the Shock Quality (see page 144). If this power is sustained, the target suffers 2d10 Energy damage in each of the Librarian's turns.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp",
+    "damageFormula": "1d10*PR",
+    "penetrationFormula": "0",
+    "damageType": "Energy"
+  }
+}

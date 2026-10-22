@@ -1,0 +1,25 @@
+{
+  "_id": "lase00000000003",
+  "name": "Laspistol",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/laspistol.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Pistol",
+    "dmg": "1d10+3",
+    "dmgType": "Energy",
+    "penetration": "0",
+    "range": "30",
+    "rof": "S/-/-",
+    "clip": "30",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 1.5,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "reliable" }],
+    "description": "<p>The laspistol is most commonly used by lower ranking Imperial officers and agents. On many worlds it is common for almost every member of society to be armed with one as a matter of course. Almost every Forge World has their own pattern and style, as the basic weapon is so simple that it allows a multitude of variations.</p>",
+    "modifiers": []
+  }
+}

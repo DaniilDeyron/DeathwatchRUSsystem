@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000007",
+  "name": "Mind Probe",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "191",
+    "key": "mind-probe",
+    "range": "1 metre x PR",
+    "sustained": "Yes",
+    "action": "Extended (5)",
+    "opposed": "Yes",
+    "cost": 750,
+    "class": "Telepathy",
+    "description": "<p>This power allows the psyker to peel back the layers of another's mind to read the basic surface thoughts and beyond. This power works only against a single target, and if the psyker wants to perform the Probe without the target's knowledge, then the psyker takes a -20 penalty to his Focus Power Test and cannot Push the power. The amount of information the psyker gains from the probe depends on his PR as detailed on Table 6-4: Mind Probe. The Librarian has the option of using some of his Psy Rating to reduce the number of rounds required to use this power instead (trading speed for force), to a minimum of 1 Round. For instance, a Librarian with a Psy Rating of 8 could use 4 of his Psy Rating to reduce the time required to a single Round, and he would then gain information from Table 6-4 as if his Psy Rating was 4 (8 - 4 = 4).</p><table><thead><tr><th style=\"width:75px\">PR</th><th>Results</th></tr></thead><tbody><tr><td>1-3</td><td>The psyker makes initial contact and learns basic information about the target such as his name, mood, Insanity level, and the state of his physical health.</td></tr><tr><td>4-5</td><td>As above, plus the psyker can sense the thoughts uppermost in the target's mind such as immediate fears/concerns, conscious lies, etc. The psyker also learns the target's Corruption Level.</td></tr><tr><td>6-7</td><td>As all the above, plus the psyker can sort through the target's memories over the last 12 hours. The psyker can also glean less casual information that the subject hides, such as simple passwords or recent secret experiences.</td></tr><tr><td>8-9</td><td>As all the above, plus the psyker gains detailed information about people, places, or objects that the target considers important, as well as how these all relate to each other. The psyker learns about the target's beliefs, motivations, and personal goals, as well as any contacts or complicated hidden ciphers the target might know about. The psyker also becomes aware of the pivotal moments in the target's life.</td></tr><tr><td>10+</td><td>As all the above, plus the psyker may plunder the target's mind at will. Any information contained in the target's psyche is an open book for the psyker. The psyker can also use this technique to break down implanted memories or personalities within the target.</td></tr></tbody></table>"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000011",
+  "name": "Kroot Bow",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/kroot-bow.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Basic",
+    "dmg": "1d10+3",
+    "dmgType": "Rending",
+    "penetration": "3",
+    "range": "40",
+    "rof": "S/4/8",
+    "clip": "20",
+    "reload": "2Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }, { "id": "toxic" }],
+    "description": "<p>The Kroot Bow is a traditional weapon of the Kroot species, modified with Tau technology. It fires barbed, toxin-coated projectiles that tear through flesh and deliver lethal poisons. The bow can fire in rapid succession, making it deadly in the hands of skilled Kroot hunters.</p>",
+    "modifiers": [],
+    "key": "kroot-bow"
+  }
+}

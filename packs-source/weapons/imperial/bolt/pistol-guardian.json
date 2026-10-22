@@ -1,0 +1,29 @@
+{
+  "_id": "bolt00000000006",
+  "name": "Astartes Guardian Bolt Pistol",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/bolt-pistol-guardian.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "134",
+    "class": "Pistol",
+    "dmg": "1d10+9",
+    "dmgType": "Explosive",
+    "penetration": "4",
+    "range": "30",
+    "rof": "S/2/-",
+    "clip": "14",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 5.5,
+    "req": 0,
+    "renown": "Distinguished",
+    "attachedQualities": [
+      { "id": "tearing" },
+      { "id": "accurate" },
+      { "id": "reliable" }
+    ],
+    "description": "<p>Awarded to Deathwatch Space Marines of any rank for conspicuous gallantry, courage under fire, or actions above and beyond the call of duty, these finely made bolt pistols are as much a sign of status among Deathwatch Space Marines as they are a weapon. Any Space Marine wearing one of these bolt pistols on his person is immediattely recognised as a veteran combatant who has gone above and beyond to protect mankind from ravening xenos. When issued to a deserving Space Marine, his name and deeds are inscribed on the weapon by Deathwatch Techmarine during the awarding ceremony. Each weapon is one of a kind, tailored specifically to the receiving Space Marine, and is his to keep when he returns to his home capter. Many guardian bolt pistols that have not gone to the grave with their owners have found their way back into the Deathwatch armouries. These 'foundling' weapons are never re-issued, instead they are enshrined in the Deathwatch data vaults along with the details of the owner's glorius deeds.</p>",
+    "modifiers": []
+  }
+}

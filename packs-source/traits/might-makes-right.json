@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000064",
+  "name": "Might Makes Right",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "56",
+    "description": "<p>Amongst Orks, Intimidate can be substituted for Command Tests.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000035",
+  "name": "Soul-Bound",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "135",
+    "description": "<p>The soul of this creature is bound to a higher purpose or being, in return for a measure of protection. When this trait is first gained, the entity to which the soul is bound must be decided. Many Imperial psykers, especially Astropaths, are soul-bound to the Emperor, for example, whereas Chaos Sorcerers may be bound to one of the ruinous powers. A soul-bound psyker rolls an additional die when forced to roll on the Perils of the Warp table, discarding whichever one he chooses to get a more favourable result.</p><p>Upon becoming soul-bound, a character must choose one of the following effects: 1d10 Insanity Points, the permanent loss of their sight, permanent loss of 1d10 from one Characteristic, or a random mutation.</p><p>In addition, a soul-bound character is permanently indebted to the entity, which undoubtedly entails all manner of other duties and consequences.</p>",
+    "modifiers": []
+  }
+}

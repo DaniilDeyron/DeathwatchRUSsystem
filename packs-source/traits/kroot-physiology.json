@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000069",
+  "name": "Kroot Physiology",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Mark Of the Xenos",
+    "page": "15",
+    "description": "<p>The Kroot possess a unique physiology adapted for their carnivorous lifestyle and rapid evolutionary adaptation. Their powerful legs allow them to make prodigious leaps, their beaks can tear through flesh and bone, and their digestive system can extract genetic material from consumed prey. They are extremely agile and possess keen senses, making them formidable hunters.</p><p><strong>Armor Restriction:</strong> Kroot are most comfortable wearing light armour or piecemeal protection scavenged from the battlefield. <strong>When a Kroot wears armour that provides more than 3 APs, he loses the benefits of the Unnatural Perception and Fieldcraft Traits.</strong></p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000040",
+  "name": "Thunderclap",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/space-wolves.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "198",
+    "key": "thunderclap",
+    "range": "10 metre radius x PR",
+    "sustained": "No",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>With a word of power and a clap of his mighty hands, the Rune Priest creates a deafening crack of thunder that rolls across the battlefield. All those within range of this power (friends or foes, though not including the Rune Priest) suffer 1d5 x PR Impact damage. This damage is reduced by Toughness as normal. However, only armour worn on the head protects against it.</p><p>In addition, anyone suffering damage from this attack must make a Toughness Test with a penalty of –5 x PR or be deafened for 1d10 rounds (see page 260 for the effects of being deafened). Finally, fragile objects such as mundane glass, crystal or fine ceramics within the power's range are shattered (though the GM has the final say on whether an object is affected).</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp",
+    "damageFormula": "1d5*PR",
+    "penetrationFormula": "0",
+    "damageType": "Impact"
+  }
+}

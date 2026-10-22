@@ -1,0 +1,240 @@
+{
+  "_id": "hordchaos0000005",
+  "name": "Mutant Devotee Horde",
+  "type": "horde",
+  "img": "systems/deathwatch/icons/enemies/chaos/mutant-devotee-horde.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 36 },
+      "bs": { "base": 22 },
+      "str": { "base": 42 },
+      "tg": { "base": 34 },
+      "ag": { "base": 21 },
+      "int": { "base": 18 },
+      "per": { "base": 23 },
+      "wil": { "base": 22 },
+      "fs": { "base": 13 }
+    },
+    "wounds": { "base": 30, "max": 30, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "forbidden_lore_daemonology": { "trained": true },
+      "forbidden_lore_heresy": { "trained": true },
+      "intimidate": { "trained": true },
+      "parry": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Despite their best efforts, the powers of the Imperium are unable to curb the forces of Chaos from acting on the masses of humanity. Throughout the whole of humankind, twisted creatures exist, the result of Chaos' manipulations. Primarily found in the lower levels of Imperial society, these mutants scrape by in an existence both reviled and tenuous. Many such \"twists,\" as they are often called by their betters, embrace their warped form, believing themselves true children of Chaos and devoting themselves to the will of the dark gods out of desperation and despair. Many cults and traitor militia include mutants such as these, filling out the rank and file, as well as being utilised as shock troopers thanks to their hearty and resilient forms.</p><p>The majority of these mutants are little more than men with twisted and malformed limbs and visages, though some are truly horrific beings, blessed with the worst mutations the nightmare intelligence of the warp can offer. These creatures might possess snapping claws, thickened, chitinous hides, vestigial limbs and eyes, lashing, venomous tails and tongues, or worse. Rhyme and reason play no part in the shaping of these wretched creatures and the possible forms are limitless. Many bear arms in the service of their masters, though without exception these are makeshift and shoddy.</p><p><strong>Skills:</strong> Forbidden Lore (Daemonology) (Int), Forbidden Lore (Heresy) (Int), Intimidate (S), Parry (WS).</p><p><strong>Talents:</strong> Frenzy, Lightning Attack.</p><p><strong>Traits:</strong> Horde, Natural Weapons, Natural Armour (2 All), Unnatural Toughness (x2).</p><p><strong>Source:</strong> Black Crusade, p. 360</p>",
+    "gearArmor": 2,
+    "classification": "chaos",
+    "book": "Black Crusade",
+    "page": "360"
+  },
+  "items": [
+    {
+      "_id": "hichaos050000001",
+      "_sourceId": "tal00000000090",
+      "name": "Frenzy",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "",
+        "benefit": "Enter rage for combat bonuses",
+        "description": "<p>The character's temper and passion boil just below the surface of his psyche, mostly held in check by his rational mind, but easily released when needed. <b>If the character spends one full Round fuelling his anger—by flagellation, drugs, or other means—on the next Round he goes into an uncontrolled rage, gaining a +10 bonus to Weapon Skill, Strength, Toughness, and Willpower, but suffering a –20 penalty to Ballistic Skill and Intelligence.</b></p><p>The character must attack the nearest enemy in melee combat if possible. If he is not engaged with the nearest enemy, he must move towards that enemy and engage it if possible. The character will not take obviously suicidal actions such as leaping off a building in order to engage someone on the ground, but he will take any actions that have a reasonable opportunity to engage in melee with the nearest enemy.</p><p>While Frenzied, he is immune to Fear, Pinning, Stunning effects, the effects of Fatigue, and he may not Parry, retreat, or flee. He remains Frenzied for the duration of the combat. Unless the character has a Talent that allows him to do so, he may not use Psychic Techniques whilst in Frenzy. Some beings are either permanently Frenzied or can Frenzy at will.</p>",
+        "compendiumId": "tal00000000090",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos050000002",
+      "_sourceId": "tal00000000145",
+      "name": "Lightning Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Swift Attack",
+        "benefit": "Make three melee attacks as Full Action",
+        "description": "<p>The character's speed with weapons is legendary, allowing him to launch flurries of attacks in melee. <b>As a Full Action, the character may make three melee attacks on his turn. The effects of this Talent replace those of Swift Attack rather than adding to them. The use of Lightning Attack may not be combined with Dual Strike.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Lightning Attack with only one of the weapons, and a single attack with the other. If the character has the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, they gain the advantage of Lightning Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000145",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos050000003",
+      "_sourceId": "trt000000000027",
+      "name": "Horde",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>The creatures that make up the horde are capable of swarming over enemies and ripping them apart with a thousand cuts. The horde with this trait always rolls an extra 1d10 for damage caused by the horde in close combat as long as it has a magnitude equal to or greater than 20.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos050000004",
+      "_sourceId": "trt000000000026",
+      "name": "Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has sharp claws, teeth, spines or some other natural weapon with which it can slice and dice its foes. It counts as being armed even when not wielding weapons. Its attacks deal 1d10 points of damage plus its Strength Bonus. The creature may make attacks with its Natural Weapons using its Weapon Skill, though it cannot parry with its natural weapons, nor can it be disarmed—unless, of course, you hack off its limbs! Natural weapons always count as Primitive.</p>",
+        "modifiers": []
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.deathwatch.traits.trt000000000026"
+      },
+      "flags": {
+        "core": { "sourceId": "Compendium.deathwatch.traits.trt000000000026" }
+      }
+    },
+    {
+      "_id": "hichaos050000005",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "2",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.deathwatch.traits.trt000000000025"
+      },
+      "flags": {
+        "core": { "sourceId": "Compendium.deathwatch.traits.trt000000000025" }
+      }
+    },
+    {
+      "_id": "hichaos050000006",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Characteristic (Toughness)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.deathwatch.traits.trt000000000052"
+      },
+      "flags": {
+        "core": { "sourceId": "Compendium.deathwatch.traits.trt000000000052" }
+      }
+    },
+    {
+      "_id": "hichaos050000007",
+      "name": "Chitinous Appendage",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "360",
+        "class": "Melee",
+        "dmg": "1d10+2",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "primitive" }, { "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A mutated chitinous limb used as a weapon. Primitive (9), Tearing.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos050000008",
+      "name": "Venomous Barb",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "360",
+        "class": "Basic",
+        "dmg": "1d10+4",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "10",
+        "rof": "S/-/-",
+        "clip": "1",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "primitive" }, { "id": "toxic" }],
+        "attachedUpgrades": [],
+        "description": "<p>A venomous projectile fired from a mutated limb. Primitive (8), Toxic.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos050000009",
+      "name": "Shoddy Shotgun",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/shotgun.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "360",
+        "class": "Basic",
+        "dmg": "1d10+4",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "20",
+        "rof": "S/-/-",
+        "clip": "6",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "inaccurate" },
+          { "id": "scatter" },
+          { "id": "unreliable" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A makeshift shotgun of crude construction. Inaccurate, Scatter, Unreliable.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Mutant Devotee Horde",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

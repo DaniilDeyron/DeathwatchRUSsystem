@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000096",
+  "name": "Telekinetic Weapon",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telekinesis.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "226",
+    "key": "telekinetic-weapon",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Telekinesis",
+    "description": "<p><strong>Prerequisites:</strong> Mind over Matter</p><p><strong>Focus Power:</strong> Difficult (–10) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker's mind cuts deeper than any mortal blade, manifesting as an impossibly sharp blade of psychic force that shears through flesh and armour with contemptuous ease. Rumours abound of psychic murder-cults in the depths of hive-worlds that employ these powers as tools of assassination, slaying without any tangible weapon.</p><p>While this power remains in effect, the psyker bears a sword of telekinetic force, which imposes no penalty for lacking the required Weapon Training Talent. The psyker may use the Telekinetic Weapon as he would any other melee weapon, and the blade may be parried, though it cannot be destroyed by weapons with the Power Field quality. The weapon deals 1d10 plus Psy Rating Rending Damage with a Pen equal to the psyker's Psy Rating. This is further modified by the wielder's Strength Bonus as normal for a melee weapon.</p>",
+    "damageFormula": "1d10+PR",
+    "penetrationFormula": "PR",
+    "damageType": "Rending",
+    "attachedQualities": []
+  }
+}

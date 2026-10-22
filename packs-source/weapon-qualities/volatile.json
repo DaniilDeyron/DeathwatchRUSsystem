@@ -1,0 +1,13 @@
+{
+  "_id": "volatile",
+  "name": "Volatile",
+  "type": "weapon-quality",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "volatile",
+    "value": "",
+    "description": "<p>Volatile matter is charged with potential energy, and reacts violently on a solid hit. If a 10 is rolled for Damage on a weapon with the Volatile Quality, Righteous Fury occurs automatically, dealing another 1d10 points of Damage. If the second roll results in 10, further Damage is possible (see Righteous Fury on page 245).</p>"
+  }
+}

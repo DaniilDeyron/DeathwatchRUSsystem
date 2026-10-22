@@ -1,0 +1,172 @@
+<div class="{{cssClass}} specialty-sheet" autocomplete="off">
+  <!-- Background Image Layer -->
+  <div class="specialty-background" style="background-image: url('{{item.img}}');"></div>
+  <div class="specialty-overlay"></div>
+
+  <!-- Header Section -->
+  <header class="specialty-header">
+      <div class="corner-frame corner-tl"></div>
+      <div class="corner-frame corner-tr"></div>
+      <div class="corner-frame corner-bl"></div>
+      <div class="corner-frame corner-br"></div>
+
+      <div class="header-content">
+  <!-- Left: Item Icon with Gold Glow -->
+  <div class="specialty-icon-frame">
+    <img src="{{item.img}}" alt="{{item.name}}" class="specialty-icon" />
+    <div class="icon-glow glow-gold"></div>
+  </div>
+
+  <!-- Center: Title Input -->
+  <div class="specialty-title-wrapper">
+    <label class="field-label">Specialty Designation</label>
+    <input name="name" type="text" value="{{item.name}}" placeholder="Enter specialty name" class="specialty-name-input" />
+  </div>
+</div>
+    </header>
+
+    <!-- Tabs Navigation -->
+    <nav class="sheet-tabs tabs specialty-tabs" data-group="primary">
+  <a class="item tab-item" data-tab="description">
+    <span class="tab-icon">📜</span>
+    <span class="tab-text">Description</span>
+  </a>
+  <a class="item tab-item" data-tab="characteristics">
+    <span class="tab-icon">💎</span>
+    <span class="tab-text">Characteristic Costs</span>
+  </a>
+  <a class="item tab-item" data-tab="ranks">
+    <span class="tab-icon">⭐</span>
+    <span class="tab-text">Rank Advances</span>
+  </a>
+  <a class="item tab-item" data-tab="source">
+    <span class="tab-icon">📖</span>
+    <span class="tab-text">Source</span>
+  </a>
+</nav>
+
+    <!-- Tab Content -->
+    <section class="sheet-body specialty-body">
+      <div class="tab" data-group="primary" data-tab="description">
+        <div class="tab-content-frame">
+          {{#if editable}}
+          <prose-mirror name="system.description"
+                        value="{{source.description}}"
+                        document-uuid="{{item.uuid}}"
+                        class="specialty-editor">
+          </prose-mirror>
+          {{else}}
+          <div class="specialty-description-view">
+            <div class="description-content">{{{enriched.description}}}</div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class="tab" data-group="primary" data-tab="characteristics">
+  <div class="tab-content-frame">
+    <h3 class="section-header">Characteristic Advance Costs</h3>
+    <table class="gothic-table characteristic-costs-table">
+      <thead>
+        <tr>
+          <th class="text-left">Characteristic</th>
+          <th class="text-center">Simple</th>
+          <th class="text-center">Intermediate</th>
+          <th class="text-center">Trained</th>
+          <th class="text-center">Expert</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each system.characteristicCosts as |costs key|}}
+        <tr>
+          <td class="text-left">{{lookup ../characteristics key}}</td>
+          <td class="text-center">
+            <input type="number" name="system.characteristicCosts.{{key}}.simple" value="{{costs.simple}}" data-dtype="Number" class="table-input"/>
+          </td>
+          <td class="text-center">
+            <input type="number" name="system.characteristicCosts.{{key}}.intermediate" value="{{costs.intermediate}}" data-dtype="Number" class="table-input"/>
+          </td>
+          <td class="text-center">
+            <input type="number" name="system.characteristicCosts.{{key}}.trained" value="{{costs.trained}}" data-dtype="Number" class="table-input"/>
+          </td>
+          <td class="text-center">
+            <input type="number" name="system.characteristicCosts.{{key}}.expert" value="{{costs.expert}}" data-dtype="Number" class="table-input"/>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tab" data-group="primary" data-tab="ranks">
+  <div class="tab-content-frame">
+    <h3 class="section-header">Rank-Based Advance Costs</h3>
+    <p class="hint-text">Cost overrides for skills and talents at each rank.</p>
+
+    {{#each system.rankCosts as |rankData rankNum|}}
+    <div class="rank-section">
+      <h4 class="rank-header">Rank {{rankNum}} Advances</h4>
+      {{#if (or (hasKeys rankData.skills) (hasKeys rankData.talents))}}
+        <table class="gothic-table rank-advances-table">
+          <thead>
+            <tr>
+              <th class="text-left">Advance</th>
+              <th class="text-center">Cost</th>
+              <th class="text-center">Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each rankData.skills as |costs skillKey|}}
+            <tr>
+              <td class="text-left">
+                {{lookup ../../skillNames skillKey}}
+                {{#if costs.costMaster}} +10{{else}}{{#if costs.costExpert}} +20{{/if}}{{/if}}
+              </td>
+              <td class="text-center">
+                {{#if costs.costTrain}}{{costs.costTrain}}{{/if}}
+                {{#if costs.costMaster}}{{costs.costMaster}}{{/if}}
+                {{#if costs.costExpert}}{{costs.costExpert}}{{/if}}
+              </td>
+              <td class="text-center">Skill</td>
+            </tr>
+            {{/each}}
+            {{#each rankData.talents as |cost talentId|}}
+            <tr>
+              <td class="text-left">
+                {{#if (lookup ../../talentNames talentId)}}
+                  {{lookup ../../talentNames talentId}}
+                {{else}}
+                  {{talentId}}
+                {{/if}}
+              </td>
+              <td class="text-center">{{cost}}</td>
+              <td class="text-center">Talent</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      {{else}}
+        <p class="empty-state">No advances defined for this rank.</p>
+      {{/if}}
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+      <div class="tab" data-group="primary" data-tab="source">
+        <div class="tab-content-frame">
+          <div class="source-grid">
+            <div class="source-field">
+              <label class="source-label">Source Codex</label>
+              <input type="text" name="system.book" value="{{system.book}}" placeholder="e.g., Core Rulebook" class="source-input" />
+            </div>
+            <div class="source-field">
+              <label class="source-label">Page Reference</label>
+              <input type="text" name="system.page" value="{{system.page}}" placeholder="e.g., 194" class="source-input" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>

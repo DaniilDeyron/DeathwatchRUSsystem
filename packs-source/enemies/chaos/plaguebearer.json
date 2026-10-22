@@ -1,0 +1,196 @@
+{
+  "_id": "enmychaos0000010",
+  "name": "Plaguebearer of Nurgle",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/plaguebearer.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 35 },
+      "bs": { "base": 21 },
+      "str": { "base": 43 },
+      "tg": { "base": 56 },
+      "ag": { "base": 30 },
+      "int": { "base": 28 },
+      "per": { "base": 31 },
+      "wil": { "base": 35 },
+      "fs": { "base": 11 }
+    },
+    "wounds": { "base": 20, "max": 20, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "psyniscience": { "trained": true },
+      "scholastic_lore": { "trained": true },
+      "speak_language": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>For some, the greatest terror is the failure of the mortal shell. Decay, pestilence, and rot are constants in a galaxy populated with an uncountable number of living souls. When Nurgle's ubiquitous Rot consumes the body of a human victim, the soul is likewise consumed. This process brings into being the wretched Plaguebearers.</p><p>These one-eyed daemons appear as frail, wasted human bodies with bloated stomachs, long gangling arms, and broad mouths full of broken fangs and dripping with infectious spittle. Their foreheads are peaked with a single ivory horn, crusted with dried blood, mucus and pus. In their gnarled hands, they carry thick, rusty cleavers and broad slashing blades which they use on the battlefield to spread their virulent infections.</p><p>Surrounded by a thick cloud of enormous black flies, they are a horrific foe. The body of a Plaguebearer appears weak and fragile, but their constant exposure to the vilest concoctions of Nurgle's cauldron has made them unnaturally resilient. Inured to pain, ignorant of the idea of injury, they fight on, even laughing at the sight of their own dismemberment.</p><p>The attitude of a Plaguebearer is often more frightening to mortals than their appearance. They solemnly drudge along, steady in the suffering and despair they cause. This is not some sadistic pleasure, but rather a determined appreciation of Nurgle's genius. Their wish to spread disease is driven by their wish to share their Father's gifts with the galaxy. As they march, they chant out the list of poxes, plagues, and pestilence their Father has created, ever certain in their growing number and increasing virulence.</p><p><strong>Infected Wounds:</strong> Whenever a target fails the Toxic Test from a Plaguebearer's attacks they also suffer 1d5 Toughness Damage. This takes into account the Plague Sword's rules.</p><p><strong>Vomit:</strong> As a Half Action, a Plaguebearer can vomit on one victim within five metres. It must succeed on a Ballistic Skill Test to hit its foe. The target may Dodge the spew but may not Parry it. On a successful hit, the vomit deals 1d10+5 Damage. If the attack would deal Critical Damage, the vomit deals 2d10 points of Toughness Damage.</p><p><strong>Daemonic Presence:</strong> All enemies within 10 metres of a Plaguebearer suffer –10 penalty to Willpower Tests.</p><p><strong>Skills:</strong> Awareness (Per), Psyniscience (Per), Scholastic Lore (Numerology) (Int), Speak Language (Low Gothic) (Int).</p><p><strong>Talents:</strong> Crippling Strike.</p><p><strong>Traits:</strong> Daemonic (+5), Dark Sight, Fear (3), From Beyond, Natural Weapons, Warp Instability.</p><p><strong>Source:</strong> Black Crusade, p. 355</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos100000001",
+      "_sourceId": "tal00000000043",
+      "name": "Crippling Strike",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "115",
+        "prerequisite": "WS 50",
+        "benefit": "+4 Critical Damage",
+        "description": "<p>The character can land his blows precisely where they inflict the most harm, cutting into seams or hammering at weak points. <b>When the character's melee attack causes Critical Damage add +4 Damage.</b></p>",
+        "compendiumId": "tal00000000043",
+        "modifiers": [
+          {
+            "_id": "crippstrike00001",
+            "name": "Crippling Strike - Critical Damage",
+            "modifier": 4,
+            "type": "talent",
+            "effectType": "critical-damage",
+            "valueAffected": "melee",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos100000002",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (5)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos100000003",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos100000004",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (3)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos100000005",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos100000006",
+      "_sourceId": "trt000000000026",
+      "name": "Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has sharp claws, teeth, spines or some other natural weapon with which it can slice and dice its foes. It counts as being armed even when not wielding weapons. Its attacks deal 1d10 points of damage plus its Strength Bonus. The creature may make attacks with its Natural Weapons using its Weapon Skill, though it cannot parry with its natural weapons, nor can it be disarmed—unless, of course, you hack off its limbs! Natural weapons always count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos100000007",
+      "_sourceId": "trt000000000054",
+      "name": "Warp Instability",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>Most warp-entities have a tenuous hold on our reality, often maintained only by horror and bloodshed, and may be disrupted if sufficient harm can be done to their manifested forms. If a creature with this trait takes damage and does not deal damage or Insanity Points on other creatures by the end of its next turn, it must make a Willpower Test. The creature takes 1 damage for failure, plus 1 damage for each degree of failure. If this would deal damage equal to or in excess of the creature's Wounds, it is cast back into the warp.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos100000008",
+      "name": "Claws and Teeth",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+3",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "primitive", "rating": 6 },
+          { "id": "tearing" },
+          { "id": "toxic" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>The Plaguebearer's claws and teeth are coated with virulent infections. Natural weapons count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos100000009",
+      "name": "Plague Sword",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/powersword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+4",
+        "dmgType": "Rending",
+        "penetration": "4",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "balanced" },
+          { "id": "toxic", "rating": 2 }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A thick, rusty cleaver imbued with the pestilent power of Nurgle. The blade carries multiple strains of disease and infection.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Plaguebearer of Nurgle",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

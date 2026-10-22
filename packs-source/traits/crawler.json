@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000009",
+  "name": "Crawler",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>Worms, serpents, and similar creatures crawl and slither rather than walk. The base move for a creature with this trait is half its Agility Bonus, but it does not take penalties for moving over difficult terrain.</p>",
+    "modifiers": []
+  }
+}

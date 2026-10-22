@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000067",
+  "name": "Eater of the Dead",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Mark Of the Xenos",
+    "page": "15",
+    "description": "<p>Kroot are infamous for their practice of devouring the corpses of their foes. If necessary, they will even turn cannibal and eat Kroot corpses.</p><p><strong>Consuming Corpses:</strong> A Kroot who devours a fresh corpse (killed no more than 24 hours previously, organic creature only—no daemons or machines) gains a number of bonus Wounds equal to the unmodified Toughness Bonus that the corpse possessed when it was alive (typically 3). These bonus Wounds may not exceed the Kroot's own Toughness Bonus and remain for a number of hours equal to the Kroot's Toughness Bonus or until they are lost, whichever comes first.</p><p><strong>Bonus Wounds:</strong> Unlike normal Wounds, these bonus Wounds are removed when affected by the Damage of any successful attack, and are always removed first before applying Damage to the Kroot's normal Wounds.</p><p><strong>Enhanced Healing:</strong> A Kroot who consumes a fresh corpse heals at twice the normal rate and adds one additional bonus Wound to any wounds healed through any other means (psychic healing, etc.) for a number of hours equal to his Toughness Bonus.</p><p><strong>Limitation:</strong> A Kroot can only receive bonus Wounds from one consumed corpse at a time. If a Kroot consumes a corpse while benefiting from bonus Wounds from a previous corpse, he loses the previous bonus Wounds and gains bonus Wounds from the new corpse instead.</p>",
+    "modifiers": []
+  }
+}

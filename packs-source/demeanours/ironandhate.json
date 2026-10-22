@@ -1,0 +1,11 @@
+{
+  "name": "Iron and Hate",
+  "type": "demeanour",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "book": "First Founding",
+    "page": "9",
+    "description": "<p>The Battle-Brothers of the Iron Hands appear to many as something of a contradiction, one which grows more extreme as more of their flesh is shorn from their bodies and replaced with cold steel. Those Iron Hands that have undergone many augmetics treatments appear coldly inanimate in their expressions, their voices replaced by monotone vox-casters and their bionic eyes unblinking. Yet, in truth, they see the inside with an anger that grows stronger with age and experience, becoming ever purer as more and more flesh is replaced.</p><p>Iron Hands brethren abhor any trace of weakness, even more so than other Chapters. They are extremely puritanical in their drive to identify and purge weakness, and they are damning when they perceive it in others around them. They are quick to anger, even if their anger is sometimes expressed in coldly flat, mechanical tones. They are blunt and uncaring of any offence they might give in their criticisms of others, even the staunchest of allies. When confronted with allies who themselves are quick to anger, it is not unheard of for bitter arguments to erupt, and even for blows to be struck.In battle, the Iron Hands are coldly resolute, seemingly unmoved by their own losses. They utilise their anger and their hatred of weakness, identifying their enemy’s vulnerabilities and exploiting them ruthlessly. While the Iron Hands seek ultimately to purge and militate against what they perceive as their own weakness, they also seek out the weakness in their foes in order to punish it without mercy.</p><p>Many Iron Hands Battle-Brothers scourge their flesh, inflicting pain and scarring on themselves as a constant reminder of the weakness of the biological. As more of their bodies are augmented, the areas of available flesh are reduced, until those few that are still visible are a mass of scar tissue. Only when even these last few shreds of the Space Marine’s biological inheritance is gone is he truly free of physical pain, for their implants may be sensate, but they can never know hurt.</p>",
+    "chapter": "Iron Hands"
+  }
+}

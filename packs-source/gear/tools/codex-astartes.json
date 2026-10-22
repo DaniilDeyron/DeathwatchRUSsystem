@@ -1,0 +1,15 @@
+{
+  "_id": "codexastartes01",
+  "name": "Codex Astartes",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/codex-astartes.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "174",
+    "wt": 0.5,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>The entirety of the Codex Astartes fills immense librariums, but many Space Marines carry the heart of this sacred text into battle. Of course, interpretations of what passages form the core of the codex vary even more than the forms it has been transcribed into over the millennia since the Second Founding. From hand-copied tomes bound in etched leather to crystal-circuited datacrypts, the collected wisdom of Roboute Guilliman, the Primarch of the Ultramarines—and arguably the most celebrated war tactician the Imperium has ever seen—endures in forms uncounted. It is also the guiding doctrine for how most Chapters operate today. Many BattleBrothers, particularly the descendants of Guilliman, never pass a day without studying from this text.</p>"
+  }
+}

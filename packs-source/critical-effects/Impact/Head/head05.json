@@ -1,0 +1,14 @@
+{
+  "_id": "impact-head0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Head",
+    "description": "The force of the blow sends the target reeling in pain. The target is Stunned for 1 Round.",
+    "effects": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "unreliable",
+  "name": "Unreliable",
+  "type": "weapon-quality",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "147",
+    "key": "unreliable",
+    "value": "",
+    "description": "<p>Unreliable weapons are prone to malfunction. An Unreliable weapon suffers a jam on a roll of 91 or higher, regardless of the firing mode used.</p>"
+  }
+}

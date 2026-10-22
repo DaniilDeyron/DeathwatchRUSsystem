@@ -1,0 +1,25 @@
+{
+  "_id": "melee0000000014",
+  "name": "Chain Axe",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/chain-axe.webp",
+  "system": {
+    "book": "Dark Heresy Core Rulebook",
+    "page": "338",
+    "class": "Melee",
+    "dmg": "1d10+2",
+    "dmgType": "Rending",
+    "penetration": "2",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 15,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }],
+    "description": "<p>A brutal melee weapon favoured by some Imperial forces, the chain axe combines the cutting power of chainblade teeth with the momentum of an axe blade. Less refined than the Astartes chainsword, it is nonetheless devastatingly effective in close combat.</p>",
+    "modifiers": []
+  }
+}

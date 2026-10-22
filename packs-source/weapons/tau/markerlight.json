@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000016",
+  "name": "Markerlight",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-markerlight.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "0",
+    "dmgType": "Energy",
+    "penetration": "0",
+    "range": "150",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "mounted" }],
+    "description": "<p>The Markerlight is a sophisticated targeting system that paints enemy targets with a laser designator. While the Markerlight itself inflicts no damage, it transmits targeting data to other Tau units, dramatically improving their accuracy. Each successful Markerlight hit provides a cumulative +10 bonus to Ballistic Skill Tests made by other Tau units firing at the marked target.</p>",
+    "modifiers": [],
+    "key": "markerlight"
+  }
+}

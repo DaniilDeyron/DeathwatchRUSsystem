@@ -1,0 +1,14 @@
+{
+  "_id": "impact-head0010",
+  "name": "Level 10",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Head",
+    "description": "As above, except that the attack was so powerful that it passes through the target and may hit another target nearby. If the hit was from a melee weapon, the attacker may immediately make another attack (with the same weapon) against any other target they can reach without moving. If the hit was from a ranged weapon they may immediately make another attack (with the same weapon) against any target standing directly behind the original target and still within range of their weapon.",
+    "effects": []
+  }
+}

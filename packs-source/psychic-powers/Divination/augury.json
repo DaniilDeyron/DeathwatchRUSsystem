@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000010",
+  "name": "Augury",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "192",
+    "key": "augury",
+    "range": "Special",
+    "sustained": "No",
+    "action": "Extended (10)",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Divination",
+    "description": "<p>By reading the Emperor's Tarot for a specific individual, the psyker can grant insight into what troubles lay ahead. During the reading both the psyker and the subject must remain in contact and no other actions may be taken by either of them. The psyker must then ask a specific question. It can be as detailed as \"What must my Battle-Brothers overcome if they are to enter the Patriarch's lair?\" or as broad as \"What dangers face the Chapter?\" After that, the psyker reads the Emperor's Tarot for the subject as they both concentrate on the question asked. At the end of this time the psyker interprets the Tarot and garners the results depending on his PR as detailed on Table 6–7: Augury.</p><p>As with all forms of divination, the GM may decide how much or how little information the psyker can garner. The Warp is a capricious thing and seldom gives straight answers, often wrapping truths in riddles and lies.</p><table><caption>Table 6–7: Augury</caption><thead><tr><th style=\"width:75px\">PR</th><th>Results</th></tr></thead><tbody><tr><td>1–3</td><td>The psyker determines the most dangerous opposition that the subject will face.</td></tr><tr><td>4–6</td><td>As above, plus the psyker also determines other negative forces that may be present. The psyker can determine as many forces as his PR.</td></tr><tr><td>7–8</td><td>As all the above, plus the psyker determines the best advantage or tool that the subject can use for the situation.</td></tr><tr><td>9+</td><td>As all the above, plus the psyker may offer a single sentence of advice to the subject concerning the clearest path to their answer.</td></tr></tbody></table>"
+  }
+}

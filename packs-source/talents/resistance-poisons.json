@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000212",
+  "name": "Resistance (Poisons)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "125",
+    "prerequisite": "",
+    "benefit": "+10 to resist Poison effects",
+    "description": "<p>The character's background, experience, training, exposure, or plain stubbornness has developed a resistance within him. <b>The character gains a +10 bonus when making tests to resist the effects of this group.</b> The character's GM may wish to approve certain choices or have them justified by the character's past.</p>",
+    "cost": 500,
+    "compendiumId": "tal00000000212",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "energy-body0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Body",
+    "description": "The intense power of the energy attack cooks the target's organs, burning his lungs and heart with intense heat. The target is Stunned for 2d10 Rounds and reduces his Toughness by half (round down).",
+    "effects": []
+  }
+}

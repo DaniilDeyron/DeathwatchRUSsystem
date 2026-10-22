@@ -1,0 +1,189 @@
+{
+  "_id": "hordchaos0000003",
+  "name": "Nether Swarm",
+  "type": "horde",
+  "img": "systems/deathwatch/icons/enemies/chaos/nether-swarm.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 35 },
+      "bs": { "base": 11 },
+      "str": { "base": 16 },
+      "tg": { "base": 22 },
+      "ag": { "base": 52 },
+      "int": { "base": 11 },
+      "per": { "base": 38 },
+      "wil": { "base": 21 },
+      "fs": { "base": 9 }
+    },
+    "wounds": { "base": 60, "max": 60, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "dodge": { "trained": true, "mastered": true, "expert": true },
+      "stealth": { "trained": true, "mastered": true, "expert": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>There are those who believe that Furies are common daemons formed from the souls of those mortals who would use the power of Chaos for their own ends rather than serve any of the Dark Powers. It is said that these souls of lesser mortals are twisted and corrupted by the power of the warp until they are shaped into hellish figures of death and pain. On rare occasions, a pack of Furies will become trapped in realspace, cut off from the warp and the terrible realm which sustains their existence.</p><p>When caught outside the warp in the strange currents and eddies of the Screaming Vortex, the pack of daemons slowly begins to wither and atrophy, their warp-infused bodies losing their vitality, yet they still live on, tormented by their separation from the warp but unable to simply vanish from existence. The only means by which the swarm of gargoyle-like beings may remain in existence is by feasting on the misery, pain, and torment of mortal souls. In combat these creatures are frenzied, driven mad by their metaphysical hunger and without heed of their own safety. A blur of fang and claw, the swarm of warp-spawn tear their victims to pieces, flaying flesh from bone and gorging themselves on the resultant fear and torment.</p><p><strong>Daemonic Presence:</strong> All enemies within 5 metres of a Nether Swarm suffer a –5 penalty to Willpower Tests.</p><p><strong>Withering Bites:</strong> The needle teeth of the Nether Swarm break, festering in the wounds they inflict. Anyone who suffers one or more Wounds from a Nether Swarm reduces their Toughness by 10 for 1d10 minutes as the teeth shards chew away at his veins.</p><p><strong>Skills:</strong> Awareness (Per), Dodge (Ag) +20, Stealth (Ag) +20.</p><p><strong>Talents:</strong> Heightened Sense (Smell).</p><p><strong>Traits:</strong> Bestial, Daemonic (+1), Flyer (5), From Beyond, Improved Natural Weapons, Size (Puny), Swarm.</p><p><strong>Source:</strong> Black Crusade, p. 351</p>",
+    "gearArmor": 0,
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "hichaos030000001",
+      "_sourceId": "tal00000000128",
+      "name": "Heightened Senses (Smell)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving smell",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Smell) would apply to an Awareness Test to detect a faint odor, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his nose</b>.</p>",
+        "compendiumId": "tal00000000128",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos030000002",
+      "_sourceId": "trt000000000004",
+      "name": "Bestial",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait is animalistic, tending to behave instinctively rather than rationally. No matter how high its Intelligence score is, it is still bestial. A creature with this trait never needs to make a Survival Test whilst in its natural habitat. Unless starving or desperate, a bestial creature must make a Willpower Test when frightened, startled or injured. On a failed test, the creature flees.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos030000003",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (+1)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos030000004",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (5)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos030000005",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos030000006",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos030000007",
+      "_sourceId": "trt000000000057",
+      "name": "Size (Puny)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Puny. Enemies suffer –20 to hit it, and it gains +20 to Concealment. Its base movement is Agility Bonus –2.</p>",
+        "modifiers": [
+          {
+            "_id": "9d9eaca70a26d46c",
+            "name": "Size (Puny)",
+            "modifier": -2,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "782e479890ecc79f",
+            "name": "Size (Puny)",
+            "modifier": 20,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hichaos030000008",
+      "_sourceId": "trt000000000027",
+      "name": "Horde",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>The creatures that make up the horde are capable of swarming over enemies and ripping them apart with a thousand cuts. The horde with this trait always rolls an extra 1d10 for damage caused by the horde in close combat as long as it has a magnitude equal to or greater than 20.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hichaos030000009",
+      "name": "Claws and Bites",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "2d10",
+        "dmgType": "Rending",
+        "penetration": "1d5",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A swarm attack of countless claws and needle-like teeth that tear through armor and flesh. The needle teeth break off and fester in wounds.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Nether Swarm",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

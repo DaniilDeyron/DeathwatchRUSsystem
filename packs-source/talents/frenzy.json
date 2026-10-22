@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000090",
+  "name": "Frenzy",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "",
+    "benefit": "Enter rage for combat bonuses",
+    "description": "<p>The character's temper and passion boil just below the surface of his psyche, mostly held in check by his rational mind, but easily released when needed. <b>If the character spends one full Round fuelling his anger—by flagellation, drugs, or other means—on the next Round he goes into an uncontrolled rage, gaining a +10 bonus to Weapon Skill, Strength, Toughness, and Willpower, but suffering a –20 penalty to Ballistic Skill and Intelligence.</b></p><p>The character must attack the nearest enemy in melee combat if possible. If he is not engaged with the nearest enemy, he must move towards that enemy and engage it if possible. The character will not take obviously suicidal actions such as leaping off a building in order to engage someone on the ground, but he will take any actions that have a reasonable opportunity to engage in melee with the nearest enemy.</p><p>While Frenzied, he is immune to Fear, Pinning, Stunning effects, the effects of Fatigue, and he may not Parry, retreat, or flee. He remains Frenzied for the duration of the combat. Unless the character has a Talent that allows him to do so, he may not use Psychic Techniques whilst in Frenzy. Some beings are either permanently Frenzied or can Frenzy at will.</p>",
+    "compendiumId": "tal00000000090",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

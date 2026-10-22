@@ -1,0 +1,14 @@
+{
+  "_id": "impact-leg0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Leg",
+    "description": "The blow breaks the target's leg leaving him Stunned for 1 Round and halving all movement for 1d5 Rounds. The target takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

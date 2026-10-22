@@ -1,0 +1,426 @@
+/* Resource Display Components */
+
+/* ========================================
+   TACTICAL HUD RESOURCE PANELS
+   ======================================== */
+
+.deathwatch .resource-panel-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Base Resource Panel */
+.deathwatch .resource-panel {
+  position: relative;
+  padding: 8px 12px;
+  background: linear-gradient(135deg,
+    rgba(26, 26, 26, 0.95) 0%,
+    rgba(44, 74, 107, 0.08) 100%
+  );
+  border: 2px solid var(--dw-deathwatch-silver-dark);
+  border-radius: 2px;
+  clip-path: polygon(
+    6px 0, 100% 0, 100% calc(100% - 6px),
+    calc(100% - 6px) 100%, 0 100%, 0 6px
+  );
+  overflow: visible;
+  transition: all 0.3s ease;
+}
+
+.deathwatch .resource-panel::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg,
+    var(--dw-imperial-gold) 0%,
+    transparent 30%,
+    transparent 70%,
+    var(--dw-plasma-glow) 100%
+  );
+  opacity: 0;
+  z-index: -1;
+  border-radius: 2px;
+  clip-path: polygon(
+    6px 0, 100% 0, 100% calc(100% - 6px),
+    calc(100% - 6px) 100%, 0 100%, 0 6px
+  );
+  transition: opacity 0.3s ease;
+}
+
+.deathwatch .resource-panel:hover::before {
+  opacity: 0.4;
+}
+
+/* Corner Accents */
+.deathwatch .resource-panel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid var(--dw-imperial-gold);
+  border-left: 2px solid var(--dw-imperial-gold);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Bottom-right corner accent */
+.deathwatch .resource-panel .corner-accent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid var(--dw-imperial-gold);
+  border-right: 2px solid var(--dw-imperial-gold);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Panel Label */
+.deathwatch .resource-panel-label {
+  display: block;
+  font-family: var(--dw-font-display);
+  font-size: 10px;
+  font-weight: var(--dw-font-weight-bold);
+  letter-spacing: var(--dw-letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--dw-imperial-gold);
+  margin-bottom: 4px;
+  text-shadow: 0 0 8px rgba(212, 165, 116, 0.4);
+}
+
+/* Data Display Row */
+.deathwatch .resource-data-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--dw-font-mono);
+  font-size: var(--dw-font-size-md);
+  font-weight: var(--dw-font-weight-bold);
+}
+
+.deathwatch .resource-data-row input {
+  background: rgba(10, 10, 10, 0.6);
+  border: 1px solid var(--dw-deathwatch-silver-dark);
+  border-radius: 2px;
+  color: var(--dw-hud-cyan);
+  text-align: center;
+  font-family: var(--dw-font-mono);
+  font-size: var(--dw-font-size-md);
+  font-weight: var(--dw-font-weight-bold);
+  padding: 3px 6px;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.6);
+  transition: all 0.2s ease;
+  width: 55px;
+}
+
+.deathwatch .resource-data-row input:hover {
+  border-color: var(--dw-plasma-glow);
+  box-shadow: 0 0 8px rgba(77, 208, 225, 0.3);
+}
+
+.deathwatch .resource-data-row input:focus {
+  outline: none;
+  border-color: var(--dw-imperial-gold);
+  box-shadow: 0 0 12px rgba(212, 165, 116, 0.5);
+  color: var(--dw-imperial-gold-light);
+  text-shadow: 0 0 8px rgba(212, 165, 116, 0.8);
+}
+
+.deathwatch .resource-data-row input[readonly] {
+  background: rgba(10, 10, 10, 0.8);
+  color: var(--dw-deathwatch-silver);
+  text-shadow: none;
+  cursor: default;
+}
+
+.deathwatch .resource-data-row .separator {
+  color: var(--dw-deathwatch-silver);
+  font-size: var(--dw-font-size-md);
+  opacity: 0.6;
+}
+
+/* Status Text */
+.deathwatch .resource-status {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--dw-font-body);
+  font-size: var(--dw-font-size-md);
+  font-weight: var(--dw-font-weight-bold);
+  text-align: center;
+  letter-spacing: var(--dw-letter-spacing-normal);
+  text-transform: uppercase;
+}
+
+.deathwatch .resource-status.positive {
+  color: var(--dw-hud-green);
+  text-shadow: 0 0 6px rgba(57, 255, 20, 0.5);
+}
+
+.deathwatch .resource-status.negative {
+  color: var(--dw-xenos-critical);
+  text-shadow: 0 0 6px rgba(255, 69, 0, 0.6);
+  animation: critical-pulse 1.5s ease-in-out infinite;
+}
+
+.deathwatch .resource-status.neutral {
+  color: var(--dw-deathwatch-silver);
+}
+
+/* ========================================
+   SPECIFIC PANEL VARIANTS
+   ======================================== */
+
+/* XP Panel - Amber accent */
+.deathwatch .resource-panel.xp-panel {
+  border-color: rgba(255, 191, 0, 0.4);
+}
+
+.deathwatch .resource-panel.xp-panel .resource-panel-label {
+  color: var(--dw-hud-amber);
+  text-shadow: 0 0 8px rgba(255, 191, 0, 0.5);
+}
+
+/* Fate Points Panel - Cyan accent */
+.deathwatch .resource-panel.fate-panel {
+  border-color: rgba(77, 208, 225, 0.4);
+}
+
+.deathwatch .resource-panel.fate-panel .resource-panel-label {
+  color: var(--dw-plasma-glow);
+  text-shadow: 0 0 8px rgba(77, 208, 225, 0.5);
+}
+
+/* Renown Panel - Gold accent */
+.deathwatch .resource-panel.renown-panel {
+  border-color: rgba(212, 165, 116, 0.4);
+}
+
+.deathwatch .resource-panel.renown-panel .resource-panel-label {
+  color: var(--dw-imperial-gold);
+  text-shadow: 0 0 8px rgba(212, 165, 116, 0.5);
+}
+
+.deathwatch .resource-panel.renown-panel .resource-data-row input {
+  color: var(--dw-imperial-gold-light);
+  text-shadow: 0 0 6px rgba(212, 165, 116, 0.6);
+  font-size: var(--dw-font-size-lg);
+  width: 65px;
+}
+
+.deathwatch .renown-rank-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 8px;
+  background: rgba(212, 165, 116, 0.2);
+  border: 1px solid var(--dw-imperial-gold-dark);
+  border-radius: 2px;
+  font-family: var(--dw-font-body);
+  font-size: var(--dw-font-size-sm);
+  font-weight: var(--dw-font-weight-bold);
+  letter-spacing: var(--dw-letter-spacing-normal);
+  text-transform: uppercase;
+  color: var(--dw-imperial-gold-light);
+}
+
+/* ========================================
+   SCAN LINE ANIMATION
+   ======================================== */
+
+.deathwatch .resource-panel .scan-line {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent,
+    var(--dw-plasma-glow),
+    transparent
+  );
+  opacity: 0;
+  animation: scan-sweep 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.deathwatch .resource-panel:hover .scan-line {
+  opacity: 0.8;
+}
+
+@keyframes scan-sweep {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(calc(100% + 4px));
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes critical-pulse {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 6px rgba(255, 69, 0, 0.6);
+  }
+  50% {
+    opacity: 0.6;
+    text-shadow: 0 0 12px rgba(255, 69, 0, 0.9);
+  }
+}
+
+/* ========================================
+   DEMEANOURS DROP ZONES
+   ======================================== */
+
+.deathwatch .demeanours-drop-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 300px;
+}
+
+.deathwatch .demeanour-drop-zone-wrapper {
+  position: relative;
+}
+
+.deathwatch .demeanour-drop-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  min-height: 80px;
+  background: rgba(26, 26, 26, 0.4);
+  border: 2px dashed var(--dw-deathwatch-silver-dark);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.deathwatch .demeanour-drop-zone:hover {
+  border-color: var(--dw-imperial-gold);
+  background: rgba(212, 165, 116, 0.08);
+}
+
+.deathwatch .demeanour-drop-zone .drop-zone-label {
+  font-size: var(--dw-font-size-xs);
+  color: var(--dw-deathwatch-silver-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.deathwatch .demeanour-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(44, 74, 107, 0.1));
+  border: 2px solid var(--dw-deathwatch-silver-dark);
+  border-radius: 4px;
+  min-height: 80px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.deathwatch .demeanour-item:hover {
+  border-color: var(--dw-imperial-gold);
+  box-shadow: 0 0 12px rgba(212, 165, 116, 0.3);
+}
+
+.deathwatch .demeanour-item .item-image {
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--dw-deathwatch-silver-dark);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.deathwatch .demeanour-item .demeanour-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.deathwatch .demeanour-item .demeanour-info h4 {
+  font-size: var(--dw-font-size-sm);
+  font-weight: 600;
+  color: var(--dw-deathwatch-silver-light);
+  margin: 0;
+  cursor: pointer;
+}
+
+.deathwatch .demeanour-item .demeanour-info h4:hover {
+  color: var(--dw-imperial-gold);
+}
+
+.deathwatch .demeanour-item .demeanour-type {
+  font-size: var(--dw-font-size-xs);
+  color: var(--dw-deathwatch-silver-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.deathwatch .demeanour-item .item-control {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--dw-imperial-gold);
+  border-radius: 50%;
+  font-size: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.deathwatch .demeanour-item:hover .item-control {
+  opacity: 1;
+}
+
+.deathwatch .demeanour-item .item-control:hover {
+  color: var(--dw-xenos-critical);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 1200px) {
+  .deathwatch .resource-panel-container {
+    min-width: 200px;
+  }
+
+  .deathwatch .resource-panel {
+    padding: 10px 12px;
+  }
+
+  .deathwatch .resource-data-row {
+    font-size: var(--dw-font-size-md);
+  }
+}

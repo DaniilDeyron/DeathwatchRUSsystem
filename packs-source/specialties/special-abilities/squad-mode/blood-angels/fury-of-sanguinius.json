@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000002",
+  "name": "Fury of Sanguinius",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "222",
+    "key": "fury-of-sanguinius",
+    "description": "<p>The Blood Angels possess a fury on the battlefield that can turn them into wild beasts intent only on rending their foes limb from limb. A Battle-Brother of the Blood Angels Chapter may call out to his Primarch Sanguinius to strengthen his arm and fill him with rage against his foes. Until the start of his next Turn, the Battle-Brother and those in Support Range of him add +10 to their Weapon Skill, Strength, and Toughness, including any corresponding increases in Strength Bonus and Toughness Bonus.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Bonuses to Weapon Skill, Strength, and Toughness increase to +20</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Blood Angels",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp",
+    "effect": "Until next Turn, Kill-team in Support Range gains +10 WS, STR, and TG (including Bonus increases)",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Bonuses to Weapon Skill, Strength, and Toughness increase to +20"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 3,
+    "sustained": false,
+    "action": "free"
+  }
+}

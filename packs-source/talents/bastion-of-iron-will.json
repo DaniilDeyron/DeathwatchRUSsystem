@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000025",
+  "name": "Bastion of Iron Will",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "114",
+    "prerequisite": "Psy Rating, Strong-Minded, WP 40",
+    "benefit": "Double Defensive Psy Rating for Opposed Tests",
+    "description": "<p>The character’s sheer willpower and psychic focus have become one and the same over years of practice and training, such that their combined use is second nature. The character doubles his Psy Rating on any Opposed Test involving the Psyniscience Skill or Psychic Powers.</p>",
+    "compendiumId": "tal00000000025",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

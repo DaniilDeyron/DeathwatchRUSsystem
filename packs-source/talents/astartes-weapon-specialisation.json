@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000014",
+  "name": "Astartes Weapon Specialisation",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "Adeptus Astartes, Astartes Weapon Training",
+    "benefit": "",
+    "description": "<p>A Space Marine is a master of the tools of warfare, but through long practice and affinity he may reach a level of mastery with a particular type of weapon so that it becomes a tool of perfect destruction. When this Talent is taken, a type and class of weapons must be specified, such as bolt (pistols) or melee (chain). This Talent may be taken multiple times for different types and classes of weapons. <b>When using the specified type of weapon, the Battle-Brother never suffers a penalty greater than –30 when using the weapon.</b></p>",
+    "cost": 1500,
+    "compendiumId": "tal00000000014",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

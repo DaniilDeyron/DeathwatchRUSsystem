@@ -1,0 +1,26 @@
+{
+  "_id": "melee0000002",
+  "name": "Astartes Servo-Arm (Weapon)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/servo-arm.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Melee",
+    "dmg": "2d10",
+    "dmgType": "Impact",
+    "penetration": "10",
+    "range": "1.5m",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [],
+    "description": "<p>The servo-arm's crushing pincers can be used as a deadly melee weapon. The Techmarine may strike with the arm as his Reaction for the round, or as a Standard Attack during his turn (so long as the servo-arm only makes one attack per round).</p><p>This weapon uses the servo-arm's Strength of 75 with Unnatural Strength (x2), providing a Strength Bonus of 14 (7 × 2). The arm can extend up to 1.5 metres.</p><p><strong>Note:</strong> This weapon requires the Astartes Servo-Arm cybernetic to be equipped.</p>",
+    "modifiers": [],
+    "cyberneticSource": "cyb000000001"
+  }
+}

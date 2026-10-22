@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000007",
+  "name": "Armour of Faith",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "armour-of-faith",
+    "description": "<p>Black Templars are among the most zealous and devoted of the Emperor's chosen, turning aside even the powers of the warp with their faith. A Battle-Brother of the Black Templars Chapter may cloak himself and those around him in an Armour of Faith, usually by chanting prayers to the Emperor or singing battle hymns. While this power is in effect, the Battle-Brother and those in Support Range of him add +10 to all tests made to resist Psychic Powers and add +4 to their Toughness Bonus when reducing Damage from physical attacks from creatures with the Daemonic Trait and from Psychic Powers.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>Bonus to resistance tests increases to +20 and Toughness Bonus increases to +8</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Black Templars",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/black_templars.webp",
+    "effect": "Kill-team in Support Range gains +10 to resist Psychic Powers; +4 TB vs Daemonic and Psychic damage",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "Bonus to resistance tests increases to +20 and Toughness Bonus increases to +8"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "free"
+  }
+}

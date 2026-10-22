@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000266",
+  "name": "Unbowed and Unbroken",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Adeptus Astartes, Fellowship 40",
+    "benefit": "Successful attack or Fellowship Test restores Cohesion lost this or last round",
+    "description": "<p>The Battle-Brother is a source of inspiration to those around him; when all seems lost, he stands defiant and by his deeds raises the warrior spirits of his comrades. <b>If the squad has suffered Cohesion Damage caused by the enemy in the present or previous Round, the Battle-Brother may declare that his next Action is an act to demonstrate that the squad is unbowed and unbroken. His next Action may be one of the following: a ranged attack against the enemy, a melee attack against the enemy, or a Challenging (+0) Fellowship Test that represents a roar of defiance or exhortation to heroism. If the test involved in the Action (the attack roll or Fellowship Test) succeeds, then the Battle-Brother and those within Support Range of him regain all of the Cohesion they lost to Cohesion damage in this or the last round.</b></p>",
+    "cost": 1500,
+    "compendiumId": "tal00000000266",
+    "modifiers": [],
+    "rankRequired": 6
+  }
+}

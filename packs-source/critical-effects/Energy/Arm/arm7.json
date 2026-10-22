@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "With a terrible snapping sound, the heat of the attack boils the marrow in the target's arm, causing it to shatter. The target's arm is broken and until it is repaired the target counts as only having one arm. The target is Stunned for 1 Round and also takes 1d5 levels of Fatigue.",
+    "effects": []
+  }
+}

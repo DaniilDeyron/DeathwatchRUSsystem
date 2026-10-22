@@ -1,0 +1,22 @@
+{
+  "_id": "macro-xxxxx",
+  "name": "Macro Name",
+  "type": "script",
+  "author": "",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "// Macro code here\n",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.0.0",
+    "systemId": "deathwatch",
+    "systemVersion": "0.0.2"
+  }
+}

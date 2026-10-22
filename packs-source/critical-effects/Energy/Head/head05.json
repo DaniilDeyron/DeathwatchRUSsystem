@@ -1,0 +1,14 @@
+{
+  "_id": "energy-head0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "253",
+    "damageType": "Energy",
+    "location": "Head",
+    "description": "A blast of energy envelopes the target's head, burning his face and hair, and causing him to scream like a stuck Grox. In addition to losing his hair, he is blinded for 1d10 Rounds and takes 3 levels of Fatigue.",
+    "effects": []
+  }
+}

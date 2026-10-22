@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000054",
+  "name": "Dual Strike",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "AG 40, Two-Weapon Wielder",
+    "benefit": "One WS strikes target twice",
+    "description": "<p>The character's skill with melee weapons can place two blows together to maximise Damage. <b>When armed with two melee weapons, the character may attack with both simultaneously as a Full Action.</b> Make a single Weapon Skill Test. If the test is successful, the character hits the target with both weapons. As the character is swinging both weapons as a single attack, he may take an Aim Action before attacking to get a +10 or +20 bonus to the WS Test. <b>The character does not suffer from the normal –20 WS penalty for wielding two weapons.</b> If the attack hits, the target's armour gets applied as normal to both hits individually, but Toughness only counts once against the combined Damage rolls of both hits. A single successful Dodge or Parry Test from the target avoids both blows.</p>",
+    "compendiumId": "tal00000000054",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

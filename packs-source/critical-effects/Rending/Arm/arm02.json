@@ -1,0 +1,14 @@
+{
+  "_id": "rending-arm0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Arm",
+    "description": "Deep cuts cause the target to drop whatever was held and inflicts 1 level of Fatigue.",
+    "effects": []
+  }
+}

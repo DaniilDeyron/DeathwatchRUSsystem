@@ -1,0 +1,21 @@
+{
+  "_id": "psy00000000021",
+  "name": "Smite",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "195",
+    "key": "smite",
+    "range": "10m x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Codex",
+    "description": "<p>The Librarian conjures up lethal bolts of lightning that leap from his hands to burn and blast his enemies into ash. Smite must be targeted at a single creature. However, it may affect others nearby depending on its power. The Librarian does not need to make a BS test to hit the target. However, his Focus Power Test is modified as if he was making a ranged attack (using bonuses and penalties for range, lighting, enemy talents, etc.). Smite deals 1d10 Energy Damage x PR with a Penetration equal to his PR. Any creatures within 1 metre x PR of the target will also be affected by Smite.</p>",
+    "damageFormula": "1d10*PR",
+    "penetrationFormula": "PR",
+    "damageType": "Energy"
+  }
+}

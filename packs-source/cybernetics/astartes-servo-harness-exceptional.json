@@ -1,0 +1,39 @@
+{
+  "_id": "cyb000000004",
+  "name": "Astartes Servo-Harness (Exceptional Craftsmanship)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/servo-harness.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "equipped": false,
+    "description": "<p>Like a servo-arm, a full servo-harness integrates with the Techmarine's power armour and is controlled through the same spine interface that makes him one with his armour. Radiating from a boosted fusion backpack capable of powering them all, this cluster of auxiliary limbs aid in battlefield repairs as well as combat.</p><p>At a minimum, a servo-harness consists of two servo-arms, a Combi-tool, a fyceline torch, and a plasma cutter. The torch is identical to an Astartes flamer. The plasma cutter can cut through a metre of adamantine plating up to 20 centimetres thick every minute. It may also be used as though it were an Astartes Plasma Pistol with a Range of 10m and no option to fire on Maximal Mode.</p><p><strong>Machine Spirit:</strong> A character with Talents that make him capable of taking the Multiple Attacks Action may use any weapon (or equivalent) on his servo-harness for any of the attacks he would normally be allowed, subject to all normal limitations including weapon Class. Additionally, the Techmarine may use his Reaction to make a single shot or strike with any one weapon on the harness.</p><p><strong>Requirements:</strong> Servo-Harness Integration Talent is required to use a Servo-Harness.</p><p><strong>Exceptional Craftsmanship:</strong> Enhances the servo-arms to Exceptional (Strength 85, Unnatural x2, providing SB 16). Adds +5 to all Skill, WS, and BS Tests made using the components of the harness.</p><p><strong>Servo-Arms:</strong> The harness uses Strength of 85 with Unnatural Strength (X2), providing a Strength Bonus of 16 (8 × 2) for the two integrated servo-arms.</p>",
+    "modifiers": [
+      {
+        "_id": "mod000000002",
+        "name": "Harness WS Bonus",
+        "modifier": 5,
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "ws",
+        "enabled": true
+      },
+      {
+        "_id": "mod000000003",
+        "name": "Harness BS Bonus",
+        "modifier": 5,
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true
+      }
+    ],
+    "req": 50,
+    "renown": "Respected",
+    "replacesCharacteristic": "str",
+    "replacementValue": 85,
+    "unnaturalMultiplier": 2,
+    "replacementLabel": "Servo-Harness (Exceptional)",
+    "canBeModified": false
+  }
+}

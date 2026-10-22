@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000216",
+  "name": "Rite of Pure Thought",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "125",
+    "prerequisite": "Mechanicus or Techmarine Implants",
+    "benefit": "Immune to Fear, Pinning, and emotional effects",
+    "description": "<p>The character has replaced the creative half of his brain with sacred cranial circuitry. The character can no longer feel emotion, and instead embraces the crystal purity of logic. <b>The character is immune to Fear, Pinning, and any effects that stem from emotional disturbance. The character's GM removes any Mental Disorders that no longer apply, and grant the character appropriate new ones of equal severity.</b> The character's comrades may find the character somewhat cold, though other followers of the Omnissiah will rejoice in the character's newfound freedom.</p>",
+    "compendiumId": "tal00000000216",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

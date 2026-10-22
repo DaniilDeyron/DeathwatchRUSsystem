@@ -1,0 +1,15 @@
+{
+  "_id": "stummer0000001",
+  "name": "Stummer",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/screamer.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "176",
+    "wt": 2,
+    "req": 5,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>The reverse of a screamer, stummers generate sound waves to cancel out ambient sounds and noises made by moving personnel in a small area. A character carrying an active stummer gains a <b>+30 to Silent Move Tests</b>. The device may also be used as a countermeasure against vox-bugs and other surveillance attempts. A stummer typically has enough power for 20 minutes of continuous use before needing to be recharged, a process that takes about 1 hour.</p>"
+  }
+}

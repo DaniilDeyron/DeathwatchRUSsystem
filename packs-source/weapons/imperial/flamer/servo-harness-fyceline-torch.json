@@ -1,0 +1,25 @@
+{
+  "_id": "flam00000000010",
+  "name": "Servo-Harness Fyceline Torch",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/flamer-astartes.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Energy",
+    "penetration": "4",
+    "range": "20",
+    "rof": "S/-/-",
+    "clip": "6",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "flame" }],
+    "description": "<p>The fyceline torch integrated into a servo-harness is identical to an Astartes flamer. This auxiliary limb can lay down a stream of incendiary fuel while the Techmarine's hands remain free for other tasks.</p><p><strong>Note:</strong> This weapon is part of a servo-harness and requires the Astartes Servo-Harness cybernetic to be equipped. The Techmarine may use his Reaction to make a single shot with this weapon.</p>",
+    "modifiers": []
+  }
+}

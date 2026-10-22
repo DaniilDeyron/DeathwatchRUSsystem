@@ -1,0 +1,42 @@
+{
+  "_id": "ammo-missile-krak",
+  "name": "Astartes Krak Missile",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/weapons/missiles.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "150",
+    "capacity": { "value": 1, "max": 1 },
+    "quantity": 1,
+    "req": 5,
+    "renown": "",
+    "description": "<p>Krak grenades and missiles use concentrated explosives to punch holes in armoured targets such as vehicles or bunkers. The powerful detonations do not produce a blast effect however, making them impractical for use against most infantry or moving targets.</p><p><b>Damage:</b> 3d10+10 Explosive, Pen 8</p><p><b>Qualities:</b> Blast (1)</p><p><b>Used with:</b> Missile Launchers (Cyclone, Soundstrike, Armoursbane)</p>",
+    "modifiers": [
+      {
+        "_id": "krak000000000001",
+        "name": "Krak Missile Damage",
+        "modifier": "3d10+10",
+        "type": "equipment",
+        "effectType": "weapon-damage-override",
+        "enabled": true
+      },
+      {
+        "_id": "krak000000000002",
+        "name": "Krak Missile Penetration",
+        "modifier": "8",
+        "type": "equipment",
+        "effectType": "weapon-penetration",
+        "enabled": true
+      },
+      {
+        "_id": "krak000000000003",
+        "name": "Krak Missile Blast",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "weapon-blast",
+        "enabled": true
+      }
+    ],
+    "wt": 2
+  }
+}

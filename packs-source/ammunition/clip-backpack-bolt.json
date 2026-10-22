@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000018",
+  "name": "Astartes Backpack Ammo Supply (SP/Bolt)",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/backpack-supply.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "159",
+    "capacity": { "value": 250, "max": 250 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Many weapons require larger ammunition sources to function during extended battles. A backpack supply fits over the standard backpack power unit on Astartes power armour. For solid projectile and bolt weapons, the supply consists of stacks of regular rounds with a feeder line that links into the weapon. A weapon connected to a backpack supply uses that supply for its ammunition and ignores its normal clip size. Backpack Ammo/Power supplies weigh 40 kg and are automatically issued with any heavy weapon.</p><p><b>Used With</b>: SP and Bolt weapons.</p>"
+  }
+}

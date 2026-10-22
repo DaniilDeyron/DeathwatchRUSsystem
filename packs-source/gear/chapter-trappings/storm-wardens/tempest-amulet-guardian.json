@@ -1,0 +1,18 @@
+{
+  "_id": "ct-stw-003",
+  "name": "Tempest Amulet (Guardian Amulet)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Storm Wardens Chapter Trapping",
+    "description": "<p>The native traditions of Sacris place a strong emphasis on the ability of an individual to affect change in the world through strength of arm and force of will. Tempest Amulets are rooted in mysticism, but also serve as a focus for the Storm Warden's stubborn will. These small leather pouches contain \"tempest stones,\" rocks fused into glass by the fierce lightning storms of Sacris and wrapped in prayer scripts written by the owner.</p><p><strong>Effect:</strong> The enveloped scripts venerate the Storm Warden's lost 1st Company, so that they will send aid to the bearer in times of greatest peril. The amulet counts as a Charm (when the unfolding plot calls for something bad to happen to a random squad member, at the GM's discretion a character with a charm may be exempt).</p>",
+    "modifiers": [],
+    "key": "storm-wardens-tempest-amulet-guardian"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "energy-body0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Body",
+    "description": "The fury of the attack forces the target to the ground, helplessly covering his face and keening in agony. The target is knocked to the ground and must make an Agility Test or catch fire (see Special Damage). The target takes 1d5 levels of Fatigue and must take the Stand Action to regain his feet.",
+    "effects": []
+  }
+}

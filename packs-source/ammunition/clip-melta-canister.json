@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000014",
+  "name": "Melta Canister",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/melta-canister.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 5, "max": 5 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Meltaguns use specially refined chemicals injected into highly pressurised canisters. The size and mounted position varies depending on the model and class of the weapon. In all cases, it provides shots equal to the weapon's full clip value.</p><p><b>Used With</b>: Infernus pistols, meltaguns, and multi-meltas.</p>"
+  }
+}

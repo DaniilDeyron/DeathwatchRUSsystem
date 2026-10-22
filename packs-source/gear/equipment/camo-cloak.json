@@ -1,0 +1,27 @@
+{
+  "_id": "gear00000000013",
+  "name": "Camo-Cloak",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "145",
+    "equipped": false,
+    "wt": 2,
+    "req": 20,
+    "renown": "",
+    "shortDescription": "Equipment",
+    "description": "<p>Favoured by Deathwatch sharpshooters, these hooded cloaks are composed of a mesh backing woven with thousands of ribbons of colour shifting and light-absorbing material.</p><p>A sharpshooter wearing a camo-cloak gains a +20 bonus to all Concealment Tests. When stationary, the wearer counts as being one range bracket farther away when targeted by ranged weapons.</p>",
+    "modifiers": [
+      {
+        "_id": "camocloakmod0001",
+        "name": "Camo-Cloak",
+        "modifier": "20",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      }
+    ]
+  }
+}

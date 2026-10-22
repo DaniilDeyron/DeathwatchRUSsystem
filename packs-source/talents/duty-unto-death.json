@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000055",
+  "name": "Duty Unto Death",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "WIL 45",
+    "benefit": "Ignore injury, Fatigue, and Stunning in combat",
+    "description": "<p>The character's will or faith can sustain him when his flesh fails. <b>He ignores the effects of injury, Fatigue, and Stunning during combat.</b> This Talent does not prevent the Damage, but allows the character to temporarily ignore its effects for the duration of the combat. Death still affects him normally.</p>",
+    "compendiumId": "tal00000000055",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

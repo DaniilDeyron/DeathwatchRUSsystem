@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000007",
+  "name": "Litany of Hate",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "Hatred (any)",
+    "benefit": "Charm Test to extend Hatred bonus to allies",
+    "description": "<p>The character's belief in the righteousness of his hatred is so ingrained in his being that he can inspire the same hate in others. <b>As a Full Action, make a Charm Test to extend the effects of the character's Hatred Talent to nearby allies. Success on the test confers a +10 bonus to WS when fighting hated foes to one ally per point of the character's Fellowship Bonus. The effects last for the duration of the encounter.</b></p>",
+    "compendiumId": "tal00000000007",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

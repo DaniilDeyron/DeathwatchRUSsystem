@@ -1,0 +1,372 @@
+{
+  "_id": "hordork000000001",
+  "name": "Ork Boy Horde",
+  "type": "horde",
+  "img": "systems/deathwatch/icons/enemies/ork/ork-boy_horde.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 40 },
+      "bs": { "base": 20 },
+      "str": { "base": 46 },
+      "tg": { "base": 45 },
+      "ag": { "base": 30 },
+      "int": { "base": 20 },
+      "per": { "base": 25 },
+      "wil": { "base": 25 },
+      "fs": { "base": 20 }
+    },
+    "wounds": { "base": 30, "max": 30, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "dodge": { "trained": true },
+      "intimidate": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>A roaring mob of Ork Boyz, charging forward in a green tide of violence. Each Boy is a hulking brute armed with crude but deadly weapons, and together they form an overwhelming mass of muscle, tusks, and fury.</p><p><strong>Magnitude:</strong> 30</p><p><strong>Armour:</strong> Flak armour (Body 2)</p><p><strong>Gear:</strong> Shiny bitz, really small Squigs</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 366</p>",
+    "gearArmor": 2,
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "hiork01000000001",
+      "_sourceId": "tal00000000022",
+      "name": "Basic Weapon Training (Primitive, SP)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "",
+        "benefit": "Use Primitive and SP Basic weapons without penalty",
+        "description": "<p>The character has received Basic Weapon Training in Primitive weapons, and can use them without penalty. <b>Weapon Skill or Ballistic Skill Tests used with a weapon that a character does not have training for suffer a –20 penalty.</b></p>",
+        "compendiumId": "tal00000000022",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000002",
+      "_sourceId": "tal00000000032",
+      "name": "Bulging Biceps",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "Str 45",
+        "benefit": "Remove Bracing",
+        "description": "<p>Whereas a weaker man would be sent flying when using heavy weapons, the character’s strong physique allows him to remain standing . <b>The character can fire heavy weapons using Semi-Auto Burst or Full Auto Burst without bracing, and he does not suffer the –30 penalty for failing to brace</b>.</p>",
+        "compendiumId": "tal00000000032",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000003",
+      "_sourceId": "tal00000000044",
+      "name": "Crushing Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "115",
+        "prerequisite": "STR 40",
+        "benefit": "+2 melee damage",
+        "description": "<p>The character has the ability to focus his entire body into close combat attacks. <b>The character adds +2 to damage inflicted in melee.</b></p>",
+        "compendiumId": "tal00000000044",
+        "modifiers": [
+          {
+            "_id": "crushingblow0001",
+            "name": "Crushing Blow - Melee Damage",
+            "modifier": 2,
+            "type": "talent",
+            "effectType": "weapon-damage",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hiork01000000004",
+      "_sourceId": "tal00000000091",
+      "name": "Furious Assault",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "WS 35",
+        "benefit": "Extra attack on All Out Attack hit",
+        "description": "<p>The character's speed and martial prowess allow him to land several blows where lesser combatants land one. <b>If the character successfully hits his target using the All Out Attack Action, he may spend his Reaction to make an additional attack using the same bonuses or penalties as the original attack.</b></p>",
+        "compendiumId": "tal00000000091",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000005",
+      "_sourceId": "tal00000000116",
+      "name": "Hardy",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Toughness 40",
+        "benefit": "Recover damage as if Lightly Damaged",
+        "description": "<p>The character's constitution rebounds quickly from shock or injury. <b>When undergoing medical treatment or healing from injures, the character recovers Damage as if Lightly Damaged.</b></p>",
+        "compendiumId": "tal00000000116",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000006",
+      "_sourceId": "tal00000000139",
+      "name": "Iron Jaw",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Toughness 40",
+        "benefit": "Toughness Test to ignore Stunned effects",
+        "description": "<p>The character has taken blows from Orks and given back as good as he got. The character can bounce back from most strikes without ill effects. <b>If ever Stunned, a successful Toughness Test allows the character to ignore the effects.</b></p>",
+        "compendiumId": "tal00000000139",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000007",
+      "_sourceId": "tal00000000162",
+      "name": "Melee Weapon Training (Chain, Primitive)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "123",
+        "prerequisite": "",
+        "benefit": "Use Chain and Primitive Melee weapons without penalty",
+        "description": "<p>The character has trained extensively with hand-to-hand weaponry, becoming proficient in the use of virtually all hand-held close combat arms. <b>When a character attempts to use a weapon he does not have the correct Weapon Training Talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill Test.</b></p>",
+        "compendiumId": "tal00000000162",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000008",
+      "_sourceId": "tal00000000197",
+      "name": "Pistol Weapon Training (Primitive, SP)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "124",
+        "prerequisite": "",
+        "benefit": "Use Primitive and SP Pistol weapons without penalty",
+        "description": "<p>The character has practised with nearly every single-handed ranged weapon within the confines of the Imperium, and no small number without. <b>When a character attempts to use a weapon he does not have the correct Weapon Training Talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill Test.</b></p>",
+        "compendiumId": "tal00000000197",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000009",
+      "_sourceId": "tal00000000249",
+      "name": "Street Fighting",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "",
+        "benefit": "+2 Damage when dealing Critical Damage with unarmed or knife",
+        "description": "<p>The character is an experienced survivor of the kind of murderous fights that occur in the depths of an underhive or stinking alleys of a sink hab. <b>When dealing Critical Damage with an unarmed attack or knife, the character deals an additional +2 points of Damage.</b></p>",
+        "compendiumId": "tal00000000249",
+        "modifiers": [
+          {
+            "_id": "streetfight00001",
+            "name": "Street Fighting - Critical Damage",
+            "modifier": 2,
+            "type": "talent",
+            "effectType": "critical-damage",
+            "valueAffected": "melee",
+            "enabled": true,
+            "weaponRestriction": "unarmed-or-knife"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hiork01000000010",
+      "_sourceId": "tal00000000261",
+      "name": "True Grit",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Toughness 40",
+        "benefit": "Halve Critical Damage (rounding up)",
+        "description": "<p>The character is able to shrug off wounds that would fell lesser men. <b>Whenever the character suffers Critical Damage, halve the result (rounding up).</b></p><p><b>Example:</b> Agamemnon takes a grievous wound from a tyranid warrior. After reduction for Armour and Toughness, the Scything Talon strike still does 8 Damage. Unfortunately, it's been tough going and Agamemnon only has 4 Wounds remaining, which would normally result in 4 points of Critical Damage. However, since he has the True Grit Talent, he only takes 2 points of Critical Damage.</p>",
+        "compendiumId": "tal00000000261",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000011",
+      "_sourceId": "trt000000000007",
+      "name": "Brutal Charge",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait deals an extra 3 points of damage when it charges in the same round. A horde with this trait does an additional 1d10 damage when it charges in the same round.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000012",
+      "_sourceId": "trt000000000062",
+      "name": "Make it Work",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark Of Xenos",
+        "page": "56",
+        "description": "<p>Unreliable Ork weapons are not Unreliable in an Ork’s hands. Ork technology defies the laws of physics and engineering, functioning through a combination of brute force and the latent psychic field generated by the Ork race. Ork weapons and equipment, while crude and unreliable in the hands of other races, work just fine for Orks. An Ork never suffers penalties for using Ork-made equipment.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000013",
+      "_sourceId": "trt000000000063",
+      "name": "Mob Rule",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark of Xenos",
+        "page": "56",
+        "description": "<p>All Orks are latently psychic, an ability that increases in strength the more of them there are in one place. This bolsters their confidence and courage to near-fearless levels when they gather en masse. For every additional Ork within 10m, the Ork’s Willpower gains a <b>+10 bonus to resist the effects of Fear and Pinning</b>. In a <b>Horde, Orks are immune to Fear and Pinning</b>.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000014",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000015",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hiork01000000016",
+      "_sourceId": "trt000000000027",
+      "name": "Overwhelming (Horde)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>The creatures that make up the horde are capable of swarming over enemies and ripping them apart with a thousand cuts. The horde with this trait always rolls an extra 1d10 for damage caused by the horde in close combat as long as it has a magnitude equal to or greater than 20.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000017",
+      "name": "Slugga",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-slugga.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "1d10+9",
+        "dmgType": "Impact",
+        "penetration": "2",
+        "range": "20",
+        "rof": "S/3/-",
+        "clip": "18",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "inaccurate" }],
+        "attachedUpgrades": [],
+        "description": "<p>A crude, loud, slug-firing pistol favoured by Ork Boyz.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000018",
+      "name": "Shoota",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-shoota.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+8",
+        "dmgType": "Impact",
+        "penetration": "2",
+        "range": "60",
+        "rof": "S/3/10",
+        "clip": "",
+        "reload": "Full",
+        "equipped": false,
+        "attachedQualities": [{ "id": "inaccurate" }],
+        "attachedUpgrades": [],
+        "description": "<p>A loud, fully automatic rifle used by Ork Boyz.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hiork01000000019",
+      "name": "Choppa",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-choppa.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+7",
+        "dmgType": "Rending",
+        "penetration": "2",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }, { "id": "unbalanced" }],
+        "attachedUpgrades": [],
+        "description": "<p>A brutal, heavy-bladed melee weapon wielded by Ork Boyz.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ork Boy Horde",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

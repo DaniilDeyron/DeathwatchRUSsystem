@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000268",
+  "name": "Wall of Steel",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Agility 35",
+    "benefit": "Make one additional Parry per Round",
+    "description": "<p>The character's skill with blades is so profound that to try to land a blow on him is like trying to strike an invisible wall of steel, as the character's blade is constantly in the correct place to deflect an attack. <b>The character may make one additional Parry per Round, in effect giving the character a second Reaction that may only be used to Parry. The character may only attempt a single Parry against any one attack.</b></p>",
+    "compendiumId": "tal00000000268",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

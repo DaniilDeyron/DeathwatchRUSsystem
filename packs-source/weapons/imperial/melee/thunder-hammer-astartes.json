@@ -1,0 +1,29 @@
+{
+  "_id": "melee0000000007",
+  "name": "Astartes Thunder Hammer",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/thunder_hammer.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "155",
+    "class": "Melee",
+    "dmg": "2d10+5",
+    "dmgType": "Energy",
+    "penetration": "9",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 30,
+    "req": 18,
+    "renown": "Distinguished",
+    "attachedQualities": [
+      { "id": "power-field" },
+      { "id": "concussive" },
+      { "id": "unwieldy" }
+    ],
+    "description": "<p>The furious energy blast released when these weapons strike creates waves of booming concussive force as loud as thunder, from which their name originates. Enemies that survive the pulverising blow are likely to be incapacitated by the shockwave that follows. Many Battle-Brothers balance the clumsy nature of attempting to parry with a thunder hammer by pairing it with a storm shield; the Storm Wardens are said to be so fond of this combination that some practice a combat style developed specifically around it.</p>",
+    "modifiers": []
+  }
+}

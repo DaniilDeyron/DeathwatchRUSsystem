@@ -1,0 +1,12 @@
+{
+  "name": "Cybernetic Name",
+  "type": "cybernetic",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Description of the cybernetic.</p>",
+    "book": "",
+    "page": "",
+    "equipped": false,
+    "modifiers": []
+  }
+}

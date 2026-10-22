@@ -1,0 +1,75 @@
+/**
+ * Token Action HUD - Skill Selector Styling
+ */
+
+.tah-skill-selector-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.tah-skill-selector .form-header .notes {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 3px solid var(--color-border-dark);
+  font-size: 0.9rem;
+}
+
+.tah-skill-selector .skill-groups {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.tah-skill-selector .skill-group {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border-dark);
+}
+
+.tah-skill-selector .skill-group legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+}
+
+.tah-skill-selector .skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.25rem;
+}
+
+.tah-skill-selector .skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.tah-skill-selector .skill-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tah-skill-selector .skill-label {
+  user-select: none;
+}
+
+.tah-skill-selector .form-footer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border-dark);
+}
+
+.tah-skill-selector .form-footer button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.tah-skill-selector .default-button {
+  margin-right: auto;
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000046",
+  "name": "Thunder's Shell",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/storm-wardens.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "199",
+    "key": "thunders-shell",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Half or Reaction",
+    "opposed": "No",
+    "cost": 1500,
+    "class": "Chapter",
+    "description": "<p>The Librarian covers himself in a fine reactive psychic shield that gets stronger the more force brought against it. While this power is in effect, all attacks against the Librarian have their Penetration reduced by an amount equal to his PR (to a minimum of 0). In addition, attacks that ignore armour completely have this special ability negated by this power, instead inflicting normal damage against whatever armour the Librarian is wearing.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp"
+  }
+}

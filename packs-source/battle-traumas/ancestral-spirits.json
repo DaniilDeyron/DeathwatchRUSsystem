@@ -1,0 +1,24 @@
+{
+  "_id": "bt-000000000003",
+  "name": "Ancestral Spirits",
+  "type": "battle-trauma",
+  "img": "systems/deathwatch/icons/battle-trauma/ancestral-spirits.webp",
+  "system": {
+    "description": "<p>All Space Marine revere their ancestors, tracing the line of heroes and commanders back to their primarch and the founding of their Chapter. Some experience this connection far more vividly than others and can even find themselves having memories of things they didn't do or places they have not visited. This is known as ancestral spirits, the mind of a long-dead Battle-Brother passed down through the blood—a mind that in times of stress can even push its way to the surface.</p><p>The GM secretly chooses a trigger for the Battle-Brother based on an event or encounter related to his ancestral spirit. This could be meeting a member of a specific Chapter, facing a remembered foe in battle, or visiting a certain kind of world. When the trigger event occurs, the Battle-Brother makes a Challenging (+0) Willpower Test or his ancestor surfaces for 1d5 hours. During this time he still has control of himself (this is not, after all, possession) but his personality may change, he will choose actions that might be out of character, and he may muse wistfully about his role in battles centuries past.</p><p>The GM should have the player develop his ancestor's personality independently and encourage him to roleplay it when affected by this Trauma.</p>",
+    "book": "Deathwatch Core Rulebook",
+    "page": "279",
+    "key": "ancestral-spirits",
+    "triggerType": "always",
+    "effectType": "behavior",
+    "modifier": 0,
+    "modifierTarget": "",
+    "cohesionPenalty": 0,
+    "canResist": true,
+    "resistDifficulty": "challenging"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": 0 }
+}

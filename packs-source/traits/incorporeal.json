@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000020",
+  "name": "Incorporeal",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "132",
+    "description": "<p>Incorporeal creatures have no physical presence and thus can't damage non-incorporeal opponents unless it has a suitable special ability or talent. Creatures with the Incorporeal trait can damage other creatures with the Incorporeal trait normally. Certain devices can keep an incorporeal creature at bay, most notably the Gellar Field of a spaceship. Creatures with this trait cannot pass through such a field.</p>",
+    "modifiers": []
+  }
+}

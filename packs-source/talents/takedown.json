@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000253",
+  "name": "Takedown",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "127",
+    "prerequisite": "",
+    "benefit": "Half Action to force Toughness Test or Stun, no penalty on Stun Actions",
+    "description": "<p>As a Half Action, the character may declare that he is attempting a takedown before making his Weapon Skill Test. <b>If the character hits and would have done at least 1 point of Damage, it is ignored, but the character's opponent must make a Toughness Test or be Stunned for 1 Round. In addition, when performing a Stun Action, the character does not suffer a –20 penalty to his Weapon Skill.</b></p>",
+    "compendiumId": "tal00000000253",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

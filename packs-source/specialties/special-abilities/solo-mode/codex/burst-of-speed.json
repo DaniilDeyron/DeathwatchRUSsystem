@@ -1,0 +1,30 @@
+{
+  "_id": "smcd00000000001",
+  "name": "Burst of Speed",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "216",
+    "key": "burst-of-speed",
+    "description": "<p>A Battle-Brother can call on reserves of speed when needed, crossing great distances to close with the foe. Once per game session, a Battle-Brother can perform a Burst of Speed. This ability increases the character's Agility Bonus by 2 with all the usual associated benefits for a number of Rounds equal to his Rank.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Also adds +10 to all Agility tests based on movement</td></tr><tr><td>5</td><td>AG Bonus increase becomes +4</td></tr><tr><td>7</td><td>Ignore Agility Tests when running or charging in difficult terrain</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Increases Agility Bonus by 2 for a number of Rounds equal to Rank (once per session)",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "Also adds +10 to all Agility tests based on movement"
+      },
+      { "rank": 5, "effect": "AG Bonus increase becomes +4" },
+      {
+        "rank": 7,
+        "effect": "Ignore Agility Tests when running or charging in difficult terrain"
+      }
+    ]
+  }
+}

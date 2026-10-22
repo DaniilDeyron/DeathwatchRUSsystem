@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000144",
+  "name": "Light Sleeper",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "Perception 30",
+    "benefit": "Always awake for Awareness Tests and surprise",
+    "description": "<p>The slightest change in conditions or disturbance brings the character from sleep to full awareness, remaining alert even in slumber. <b>The character is always assumed to be awake, even when asleep, for the purposes of Awareness Tests or surprise.</b> Unfortunately, the character's sleep is not deep and can be frequently interrupted, resulting in a less-than-cheery disposition when awake.</p>",
+    "compendiumId": "tal00000000144",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

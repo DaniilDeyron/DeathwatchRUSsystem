@@ -1,0 +1,13 @@
+{
+  "_id": "living-ammunition",
+  "name": "Living Ammunition",
+  "type": "weapon-quality",
+  "img": "icons/svg/biohazard.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "372",
+    "key": "living-ammunition",
+    "value": "",
+    "description": "<p>The ranged weapons of the Tyranids use ammunition that is grown, gestated, or excreted by the creature or weapon. As such, ranged Tyranid weapons do not have a clip value (it is considered to be infinite), and do not need to be reloaded. The weapon also never Jams.</p>"
+  }
+}

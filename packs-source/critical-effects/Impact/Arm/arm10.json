@@ -1,0 +1,14 @@
+{
+  "_id": "impact-arm0010",
+  "name": "Level 10",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "256",
+    "damageType": "Impact",
+    "location": "Arm",
+    "description": "As above, except as the arm is removed it is smashed apart by the force of the attack, and bone, clothing and armour fragments fly about like shrapnel. Anyone within 2 metres of the target suffers 1d5–3 Impact Damage to a random location (see Table 9–8: Hit Locations).",
+    "effects": []
+  }
+}

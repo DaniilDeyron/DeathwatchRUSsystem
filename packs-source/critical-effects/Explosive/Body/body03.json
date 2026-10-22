@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-body0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Body",
+    "description": "The explosion destroys whatever armour protected the body. If the target wore none, the target is blown backwards 1d10 metres, as above but the target takes 2 levels of Fatigue for every metre travelled.",
+    "effects": []
+  }
+}

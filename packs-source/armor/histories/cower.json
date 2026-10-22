@@ -1,0 +1,40 @@
+{
+  "_id": "armorhist0000001",
+  "name": "Cower Not Before the Enemy",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/cower.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>This suit of armour has been obsessively maintained with marks of pride, bears pristine heraldic depictions, and is bedecked with sashes, helmet crests, and Banner Displays. The wearer carries himself tall, often heedless of cover or stealth. The armour seemingly sabotages any attempts at subtlety, and imposes a further –20 to all Silent Move and Concealment Tests (in addition to those imposed on standard power armour), while it whirs, vents, or clanks at precisely the wrong moment. However, it also grants a +10 bonus to Command Tests, due to the overwhelming force of authority and confidence the bearer projects.</p>",
+    "modifiers": [
+      {
+        "_id": "armhistmod0003",
+        "name": "Authority and Confidence",
+        "modifier": "10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "command",
+        "enabled": true
+      },
+      {
+        "_id": "armhistmod0004",
+        "name": "Sabotages Subtlety",
+        "modifier": "-20",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "silent_move",
+        "enabled": true
+      },
+      {
+        "_id": "armhistmod0005",
+        "name": "Sabotages Subtlety",
+        "modifier": "-20",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      }
+    ]
+  }
+}

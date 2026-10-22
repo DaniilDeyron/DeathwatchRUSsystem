@@ -1,0 +1,25 @@
+{
+  "_id": "tau000000006",
+  "name": "Pulse Pistol",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-pulse-pistol.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Pistol",
+    "dmg": "1d10+12",
+    "dmgType": "Energy",
+    "penetration": "4",
+    "range": "30",
+    "rof": "S/2/-",
+    "clip": "16",
+    "reload": "Half",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [],
+    "description": "<p>Tau Pulse Pistol</p>",
+    "modifiers": []
+  }
+}

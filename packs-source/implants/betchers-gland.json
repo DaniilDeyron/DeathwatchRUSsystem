@@ -1,0 +1,13 @@
+{
+  "name": "Betcher's Gland",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Spit acid attack, chew through substances",
+    "description": "<p>The Space Marine may spit acid at his foes. This acts as a ranged weapon with the following profile: (Range: 3m; Damage: 1d5; Pen: 4; Toxic). If the Space Marine gains three or more Degrees of Success on his Ballistic Skill Test, he may also blind the opponent for 1d5 Rounds.</p><p>At the GM's discretion, the Space Marine may also slowly chew his way through nearly any nonliving substance. The rate at which he does so is at the GM's discretion (one example includes chewing through iron bars—this would be roughly at a rate of 4 kg per minute).</p>",
+    "modifiers": []
+  }
+}

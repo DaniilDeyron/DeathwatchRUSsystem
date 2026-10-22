@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000097",
+  "name": "Thought Sending",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "224",
+    "key": "thought-sending",
+    "range": "1 kilometre per Psy Rating radius",
+    "sustained": "No",
+    "action": "Free Action",
+    "opposed": "Yes",
+    "cost": 100,
+    "class": "Telepathy",
+    "description": "<p><strong>Prerequisites:</strong> None</p><p><strong>Focus Power:</strong> Simple (+40) Opposed Willpower Test</p><p><strong>Subtype:</strong> None</p><p>The psyker can send his thoughts into the minds of those around him. This is the most crude and basic of telepathic techniques, known to vast numbers of psykers of many species and allegiance.</p><p>The psyker can broadcast a short message—no more than one sentence per Psy Rating—to a number of individuals (no more than two for each Degree of Success scored on the Focus Power Test), or indiscriminately to every single creature within range. Minds who do not wish to be contacted in this way may resist with a Willpower Test, gaining a +20 to their test if they do not share a language with the psyker, as many of the mind's processes are still linked to the structure of language.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

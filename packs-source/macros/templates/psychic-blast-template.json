@@ -1,0 +1,19 @@
+{
+  "_id": "macropsychicblast",
+  "name": "Psychic Blast Template (20m)",
+  "type": "script",
+  "img": "icons/svg/aura.svg",
+  "flags": {},
+  "sort": 0,
+  "ownership": { "default": 0 },
+  "author": "",
+  "scope": "global",
+  "command": "",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.0.0",
+    "systemId": "deathwatch",
+    "systemVersion": "0.0.2"
+  }
+}

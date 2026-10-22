@@ -1,0 +1,26 @@
+{
+  "_id": "ork0000000000002",
+  "name": "Shoota",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/ork-shoota.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "366",
+    "class": "Basic",
+    "dmg": "1d10+8",
+    "dmgType": "Impact",
+    "penetration": "2",
+    "range": "60",
+    "rof": "S/3/10",
+    "clip": "",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "inaccurate" }, { "id": "unreliable" }],
+    "attachedUpgrades": [],
+    "description": "<p>A loud, fully automatic rifle used by Ork Boyz. Shootas spray bullets in a wide arc, making up for their lack of accuracy with sheer volume of fire.</p>",
+    "modifiers": []
+  }
+}

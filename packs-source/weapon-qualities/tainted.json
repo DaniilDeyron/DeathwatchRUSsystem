@@ -1,0 +1,13 @@
+{
+  "_id": "tainted",
+  "name": "Tainted",
+  "type": "weapon-quality",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "book": "Black Crusade",
+    "page": "213",
+    "key": "tainted",
+    "value": "",
+    "description": "<p>These weapons are infused with the power of Chaos, and manifest the corruption in their bearer. Weapons with this Quality add their wielder's Corruption Point Bonus (the 10s column of their Corruption Point total) to Damage dealt.</p>"
+  }
+}

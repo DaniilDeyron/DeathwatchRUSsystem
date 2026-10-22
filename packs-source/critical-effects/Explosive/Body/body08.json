@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-body0008",
+  "name": "Level 08",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Body",
+    "description": "The target's chest explodes outward, disgorging a river of partially cooked organs onto the ground, killing him instantly.",
+    "effects": []
+  }
+}

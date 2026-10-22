@@ -1,0 +1,9 @@
+<div class="wounds-box {{woundColorClass}}">
+  <h4 class="box-title">{{#if woundsLabel}}{{woundsLabel}}{{else}}Wounds{{/if}}</h4>
+  <div class="wounds-center">{{system.wounds.value}}</div>
+  <input class="wounds-center-input" name="system.wounds.value" type="text" value="{{system.wounds.value}}" data-dtype="Number" title="Current {{#if woundsLabel}}{{woundsLabel}}{{else}}Wounds{{/if}}" />
+  <div class="wounds-modifiers flexrow">
+    <span class="wounds-max" title="{{#if system.wounds.modifiers.length}}Modified Max {{#if woundsLabel}}{{woundsLabel}}{{else}}Wounds{{/if}}&#10;&#10;Base: {{system.wounds.base}}&#10;{{#each system.wounds.modifiers}}{{this.name}}: {{numberFormat this.value decimals=0 sign=true}} ({{this.source}})&#10;{{/each}}Total: {{system.wounds.max}}{{else}}Modified Max {{#if woundsLabel}}{{woundsLabel}}{{else}}Wounds{{/if}}{{/if}}">{{system.wounds.max}}</span>
+    <input class="wounds-base" name="system.wounds.base" type="text" value="{{system.wounds.base}}" data-dtype="Number" placeholder="0" title="Base Max {{#if woundsLabel}}{{woundsLabel}}{{else}}Wounds{{/if}}" />
+  </div>
+</div>

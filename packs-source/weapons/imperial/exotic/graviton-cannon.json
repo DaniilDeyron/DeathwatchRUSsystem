@@ -1,0 +1,25 @@
+{
+  "_id": "exot00000000003",
+  "name": "Deathwatch Graviton Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/graviton-cannon.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "137",
+    "class": "Heavy",
+    "dmg": "Special",
+    "dmgType": "Impact",
+    "penetration": "—",
+    "range": "45",
+    "rof": "S/-/-",
+    "clip": "5",
+    "reload": "3 Full",
+    "equipped": false,
+    "wt": 65,
+    "req": 45,
+    "renown": "Distinguished",
+    "attachedQualities": [{ "id": "blast", "value": "5" }],
+    "description": "<p>Yet another field expedient modification made to an existing weapon by the Techmarines of Watch Station Erioch, the Deathwatch Graviton Cannon is a higher output and decidedly more deadly version of the more common graviton gun. Where the common graviton gun has but one setting that affects the gravity in a sizeable area, the Deathwatch version can also focus its energies into a continuous tight beam of incredibly dense gravity waves.</p><p><strong>Focused Beam Mode:</strong> When fired as a continuous focused beam, the graviton gun can pin one target up to Enormous size. On a successful attack, the target must make an Arduous (–40) Strength Test or be knocked down and pinned which deals 1d10 points of Impact damage. Once pinned the target takes a further 1d10 points of Impact damage that ignores armour every round until the target escapes the beam or is crushed to death. When used in this mode, the graviton gun can maintain the gravity beam for 2d10 rounds until it runs out of energy and needs reloading.</p><p><strong>Broad Setting:</strong> When used on its broad setting, everything caught in its area of effect is subject to extreme gravitational forces for 1d10 rounds and must make a Very Hard (–30) Strength Test or be knocked down and pinned. A being that fails its Strength Test and is thrown into a solid object or surface from a standing position takes 1d10 points of impact damage to their body. This damage may be increased at the GM's discretion depending on the surface the being is thrown into (electrified, covered in spikes, has a sharp corner) or how far the being is thrown or falls.</p><p>Moving or attempting any physical action while pinned by one of these weapons requires an Opposed Strength Test versus Strength 50 (Unnatural (x2)) for the broad setting and Strength 70 (Unnatural (x2)) for the focused beam setting. The Deathwatch graviton blast may also shatter fragile objects, collapse weak floors or structures, jam machinery, damage vehicles, rupture storage tanks, or cause any other sort of mayhem as the GM sees fit.</p>",
+    "modifiers": []
+  }
+}

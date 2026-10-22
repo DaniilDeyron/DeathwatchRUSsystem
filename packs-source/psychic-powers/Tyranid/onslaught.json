@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000063",
+  "name": "Onslaught",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "29",
+    "key": "onslaught",
+    "range": "25 metres x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>The Tyranid creature infuses a nearby brood with burning energy and the pitiless drive of the Hive Mind to devour all in its path. The creature chooses a single Master, Elite or Troop Horde within range, allowing it to either make a Full Move, Standard Attack (Ranged or Melee), or Charge Action as a Free Action once per Round. The warrior or brood continues to benefit from the effects of this power as long as the creature sustains it and they remain in range.</p>"
+  }
+}

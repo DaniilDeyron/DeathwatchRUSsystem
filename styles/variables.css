@@ -1,0 +1,187 @@
+/* CSS Variables */
+:root {
+  /* ========================================
+     DEATHWATCH CHAPTER COLORS
+     ======================================== */
+
+  /* Black & Silver — Deathwatch armor */
+  --dw-deathwatch-black: #0a0a0a;
+  --dw-deathwatch-black-light: #1a1a1a;
+  --dw-deathwatch-silver: #8a9ba8;
+  --dw-deathwatch-silver-light: #b8c5d6;
+  --dw-deathwatch-silver-dark: #5a6570;
+
+  /* Imperial Gold — Aquila, trim, purity seals */
+  --dw-imperial-gold: #d4a574;
+  --dw-imperial-gold-light: #e8c9a0;
+  --dw-imperial-gold-dark: #8b6914;
+  --dw-imperial-gold-darkest: #5a4410;
+
+  /* Chapter Red — Shoulder pad accent */
+  --dw-chapter-red: #8b0000;
+  --dw-chapter-red-light: #b30000;
+  --dw-chapter-red-dark: #5a0000;
+
+  /* ========================================
+     PARCHMENT & PAPER
+     ======================================== */
+
+  --dw-parchment: #f4e7d7;
+  --dw-parchment-dark: #d4c4a8;
+  --dw-parchment-aged: #c4b498;
+  --dw-parchment-shadow: #a49478;
+
+  /* ========================================
+     POWER ARMOR TECH
+     ======================================== */
+
+  /* Ceramite blue — Power field aura */
+  --dw-power-armor-blue: #2c4a6b;
+  --dw-power-armor-blue-light: #3a5d87;
+
+  /* Plasma glow — Weapons, tech */
+  --dw-plasma-glow: #4dd0e1;
+  --dw-plasma-bright: #80deea;
+
+  /* ========================================
+     HUD & TACTICAL DISPLAYS
+     ======================================== */
+
+  /* HUD green — Tactical readouts */
+  --dw-hud-green: #39ff14;
+  --dw-hud-green-dim: #2acc10;
+
+  /* HUD amber — Warning status */
+  --dw-hud-amber: #ffbf00;
+  --dw-hud-amber-bright: #ffd633;
+
+  /* HUD cyan — Information */
+  --dw-hud-cyan: #00ffff;
+
+  /* ========================================
+     THREAT & STATUS INDICATORS
+     ======================================== */
+
+  /* Xenos threat — Enemy detection */
+  --dw-xenos-warning: #ff6b35;
+  --dw-xenos-critical: #ff4500;
+
+  /* Critical damage */
+  --dw-critical-damage: #dc143c;
+  --dw-critical-severe: #8b0000;
+
+  /* Corruption — Chaos, mental state */
+  --dw-corruption-purple: #8b008b;
+  --dw-corruption-pink: #ff1493;
+
+  /* Success indicators */
+  --dw-success-green: #4ecca3;
+  --dw-success-bright: #6effd4;
+
+  /* ========================================
+     FUNCTIONAL COLORS (Updated)
+     ======================================== */
+
+  /* Primary — Use Imperial Gold instead of Bootstrap blue */
+  --dw-color-primary: var(--dw-imperial-gold);
+  --dw-color-primary-hover: var(--dw-imperial-gold-dark);
+  --dw-color-primary-light: var(--dw-imperial-gold-light);
+
+  /* Secondary — Deathwatch silver */
+  --dw-color-secondary: var(--dw-deathwatch-silver);
+  --dw-color-secondary-hover: var(--dw-deathwatch-silver-light);
+  --dw-color-secondary-dark: var(--dw-deathwatch-silver-dark);
+
+  /* Success — HUD green */
+  --dw-color-success: var(--dw-success-green);
+  --dw-color-success-bright: var(--dw-success-bright);
+
+  /* Danger — Critical damage red */
+  --dw-color-danger: var(--dw-critical-damage);
+  --dw-color-danger-dark: var(--dw-critical-severe);
+
+  /* Warning — HUD amber */
+  --dw-color-warning: var(--dw-hud-amber);
+  --dw-color-warning-bright: var(--dw-hud-amber-bright);
+
+  /* ========================================
+     BORDERS (Updated)
+     ======================================== */
+
+  --dw-color-border: var(--dw-deathwatch-silver-dark);
+  --dw-color-border-light: var(--dw-deathwatch-silver);
+  --dw-color-border-dark: var(--dw-imperial-gold-dark);
+  --dw-color-border-groove: var(--dw-deathwatch-silver-dark);
+
+  /* ========================================
+     BACKGROUNDS (Dark Theme Base)
+     ======================================== */
+
+  --dw-color-bg-primary: var(--dw-deathwatch-black);
+  --dw-color-bg-secondary: var(--dw-deathwatch-black-light);
+  --dw-color-bg-tertiary: rgba(138, 155, 168, 0.08);
+  --dw-color-bg-hover: rgba(212, 165, 116, 0.1);
+  --dw-color-bg-gradient-start: #f8f9fa;
+  --dw-color-bg-gradient-end: #e9ecef;
+
+  /* ========================================
+     TEXT (Dark Theme)
+     ======================================== */
+
+  --dw-color-text-primary: var(--dw-deathwatch-silver-light);
+  --dw-color-text-secondary: var(--dw-deathwatch-silver);
+  --dw-color-text-muted: var(--dw-deathwatch-silver-dark);
+  --dw-color-text-accent: var(--dw-imperial-gold);
+  --dw-color-text-bright: #ffffff;
+  --dw-color-text-dark: #212529;
+  --dw-color-text-light: #495057;
+  --dw-color-text-beige: #b5b3a4;
+  
+  /* Spacing */
+  --dw-spacing-xs: 2px;
+  --dw-spacing-sm: 4px;
+  --dw-spacing-md: 8px;
+  --dw-spacing-lg: 10px;
+  --dw-spacing-xl: 15px;
+  --dw-spacing-xxl: 20px;
+  
+  /* Border widths */
+  --dw-border-width: 1px;
+  --dw-border-width-thick: 2px;
+  
+  /* Border radius */
+  --dw-border-radius: 4px;
+  --dw-border-radius-sm: 3px;
+  --dw-border-radius-lg: 8px;
+  
+  /* Shadows */
+  --dw-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --dw-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --dw-shadow-focus: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  
+  /* Font sizes */
+  --dw-font-size-xs: 11px;
+  --dw-font-size-sm: 12px;
+  --dw-font-size-md: 13px;
+  --dw-font-size-lg: 14px;
+  --dw-font-size-xl: 16px;
+  --dw-font-size-xxl: 20px;
+  --dw-font-size-display: 24px;
+
+  /* Font Families — Imperial Gothic Typography */
+  --dw-font-display: 'Cinzel', serif;          /* Headers */
+  --dw-font-body: 'Rajdhani', sans-serif;      /* Body text */
+  --dw-font-mono: 'Share Tech Mono', monospace; /* Stats/numbers */
+
+  /* Font Weights */
+  --dw-font-weight-normal: 400;
+  --dw-font-weight-medium: 500;
+  --dw-font-weight-bold: 700;
+  --dw-font-weight-black: 900;
+
+  /* Letter Spacing */
+  --dw-letter-spacing-tight: 0.3px;
+  --dw-letter-spacing-normal: 0.5px;
+  --dw-letter-spacing-wide: 1.2px;
+  --dw-letter-spacing-wider: 2px;
+}

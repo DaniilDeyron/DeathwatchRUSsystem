@@ -1,0 +1,22 @@
+{
+  "name": "Specialty Name",
+  "type": "specialty",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Specialty description.</p>",
+    "book": "",
+    "page": "",
+    "characteristicCosts": {
+      "ws": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "bs": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "str": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "tg": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "ag": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "int": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "per": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "wil": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 },
+      "fs": { "simple": 0, "intermediate": 0, "trained": 0, "expert": 0 }
+    },
+    "ranks": []
+  }
+}

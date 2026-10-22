@@ -1,0 +1,17 @@
+{
+  "_id": "genophage00001",
+  "name": "Genophage",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/toxin.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "172",
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Drugs",
+    "description": "<p>Lethally effective, every dose of genophage is tailored to attack the weaknesses in the molecular structure of a particular individual. As such, it may never be simply Requisitioned, and must always be custom made. Victims of genophage stand little chance of resisting the quick-acting enzymes that immediately shut down circulatory and respiratory functions. </p><p>Genophage is so deadly that it only needs to make contact with its intended target to be effective. If used in weapon form, this means the attack must deal at least 1 point of Damage after AP, but does not need to overcome TB. If contact is made, the target must pass a <b>Hard (–20) Toughness Test</b>. Failure indicates he takes 1d10+5 impact Damage with no reduction for armour or Toughness. This continues every Round until the victim either passes the Test or dies. If genophage is used upon a creature other than the individual it was made for, it simply has the standard Toxic effect.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

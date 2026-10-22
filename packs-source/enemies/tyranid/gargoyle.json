@@ -1,0 +1,207 @@
+{
+  "_id": "enmytyranid00012",
+  "name": "Gargoyle",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tyranid/gargoyle.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 30 },
+      "bs": { "base": 33 },
+      "str": { "base": 32 },
+      "tg": { "base": 30 },
+      "ag": { "base": 40 },
+      "int": { "base": 10 },
+      "per": { "base": 40 },
+      "wil": { "base": 30 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 9, "max": 9, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "acrobatics": { "trained": true },
+      "awareness": { "trained": true },
+      "climb": { "trained": true },
+      "contortionist": { "trained": true },
+      "dodge": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Not dissimilar in appearance to a Termagant, albeit with the addition of wings, a Gargoyle is individually weak, and relies as much on its speed and ranged weapons as it does tooth and claw. However, in great numbers (as Gargoyles are almost always encountered) they can make as fearsome a foe as any Tyranid. The primary goal of Gargoyles, in their role as part of the Tyranid vanguard, is, it seems, to sow confusion. They achieve this by peppering foes with their fleshborers and then darting away before retaliatory fire can find them, always staying out of arm's reach and using their speed to move from target to target before they can be outmatched.</p><p><strong>Enclosed Spaces:</strong> Gargoyles are feral creatures and sometimes become trapped in places where they cannot fly, and go crazy in an effort to escape. A Gargoyle which becomes trapped in an enclosed space (i.e., where it cannot spread its wings or use its Flyer movement) gains the Frenzy and Furious Assault Talents until it escapes or dies.</p><p><strong>Blinding Venom:</strong> Attacks in melee from a Gargoyle have a chance of blinding its foes. If a blow from a Gargoyle with its Teeth and Claws strikes an opponent's head, they must make an Easy (+20) Toughness Test or become Blinded for 1d5 turns. Enclosed helmets (such as those on a suit of power armour) negate this ability.</p><p><strong>Gargoyle Hordes:</strong> Gargoyles make ideal horde creatures and can use the Horde rules.</p><p><strong>Traits:</strong> Dark Sight, Flyer (20), Natural Armour (3), Natural Weapons (Teeth and Claws), Instinctive Behaviour (Lurk), Tyranid</p><p><strong>Source:</strong> Mark of the Xenos, p. 36</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eityranid1200001",
+      "_sourceId": "tal00000000046",
+      "name": "Death From Above",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "115",
+        "prerequisite": "Adeptus Astartes, Pilot (Personal)",
+        "benefit": "Extra damage on jump pack charge",
+        "description": "<p>A Space Marine descending into battle on trails of fire is a true angel of death come to bring ruin and ending on all who stand in his way. <b>When the Battle-Brother makes a Charge Action using a jump pack, his melee attack deals an extra d10 Damage for every two Degrees of Success, to a maximum bonus of 2d10.</b></p>",
+        "compendiumId": "tal00000000046",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200002",
+      "_sourceId": "tal00000000143",
+      "name": "Leap Up",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Agility 30",
+        "benefit": "Stand up as Free Action",
+        "description": "<p>A combination of athletic ability and speed allow the character to spring to his feet in virtually any circumstance. <b>The character may stand up as a Free Action.</b></p>",
+        "compendiumId": "tal00000000143",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200003",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200004",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (20)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200005",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (3)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "3",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid1200006",
+      "_sourceId": "trt000000000026",
+      "name": "Natural Weapons (Teeth and Claws)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has sharp claws, teeth, spines or some other natural weapon with which it can slice and dice its foes. It counts as being armed even when not wielding weapons. Its attacks deal 1d10 points of damage plus its Strength Bonus. The creature may make attacks with its Natural Weapons using its Weapon Skill, though it cannot parry with its natural weapons, nor can it be disarmed—unless, of course, you hack off its limbs! Natural weapons always count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200007",
+      "_sourceId": "trt000000000021",
+      "name": "Instinctive Behaviour (Lurk)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A Tyranid creature with this trait will be reduced to acting according to their instincts if they are separated from the controlling presence of the Hive Mind. In effect, this means that any encounter in which creatures with this trait are not accompanied by a Tyranid creature with the Synapse Creature trait (see page 135 in this chapter), they will behave in a particular way. The creature's instinctive behaviour is noted in parentheses and has the following effects:</p><p><strong>Feed:</strong> The creature's instinct is to feed on flesh, blood, and bone and its hunger can never be sated. The creature will try to find and attack any living, biological, non-Tyranid creature and eat them. In this state, the creature gains the Fearless and Frenzy talents. The same applies to a Horde with this trait not under the influence of a synapse creature.</p><p><strong>Lurk:</strong> The creature's instincts are to find shelter from attack, to hide and survive. It will try to flee and find shelter in whatever way the situation allows. In a starship, for example, it may scuttle into the ducting system. When confronted, the creature's aim is to try to escape and will only attack if left no avenue for escape or in order to survive. If a Horde with this trait is not under the influence of a synapse creature, it will automatically break (see Breaking a Horde on page 360 of this chapter).</p><p><strong>Stalk:</strong> The creature's instinct is to remain unseen, to find prey, slay it, feed, and then resume its hunt for others. In this state, the creature gains the Stealth (Ag) +10 skill. It will not attack enemies unless it can take them by surprise or outnumbers them. Having made a kill, the creature briefly feeds before fleeing. A horde with this trait automatically breaks (see Breaking a Horde on page 360 of this chapter), with individual creatures scattering to find shadows from which to begin their hunt.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200008",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200009",
+      "name": "Fleshborer",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-fleshborer.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+9",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "20",
+        "rof": "S/-/-",
+        "clip": "—",
+        "reload": "—",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "proven" },
+          { "id": "tearing" },
+          { "id": "living-ammunition" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A Fleshborer is a nest for razor-fanged borer beetles which it ejects towards enemies.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1200010",
+      "name": "Teeth and Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-scything-talons.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+3",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "primitive" }],
+        "attachedUpgrades": [],
+        "description": "<p>Sharp teeth and claws used in close combat. Gargoyle venom can blind opponents struck in the head.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Gargoyle",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

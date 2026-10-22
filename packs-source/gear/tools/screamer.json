@@ -1,0 +1,15 @@
+{
+  "_id": "screamer0000001",
+  "name": "Screamer",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/screamer.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "176",
+    "wt": 1.5,
+    "req": 5,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Screamers are proximity alarms that detect motion or sound—depending on the model—and alert their users to incoming dangers by making a horrendous noise. To use a screamer, you must succeed on a Tech-Use Test. The GM rolls this test in secret so you are not sure of whether or not the device will work properly. Once set, a screamer has a Perception of 75 for the purposes of detecting sound or motion. If it detects an intruder, it sounds its alarm, which can be heard anywhere out to 1 kilometre and may also be set to broadcast over a pre-programmed vox channel. Doors, walls, and other barriers may reduce the alarm’s auditory range.</p>"
+  }
+}

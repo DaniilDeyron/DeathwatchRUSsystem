@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000004",
+  "name": "Bestial",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>A creature with this trait is animalistic, tending to behave instinctively rather than rationally. No matter how high its Intelligence score is, it is still bestial. A creature with this trait never needs to make a Survival Test whilst in its natural habitat. Unless starving or desperate, a bestial creature must make a Willpower Test when frightened, startled or injured. On a failed test, the creature flees.</p>",
+    "modifiers": []
+  }
+}

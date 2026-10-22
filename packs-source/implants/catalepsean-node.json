@@ -1,0 +1,13 @@
+{
+  "name": "Catalepsean Node",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "No penalties when awake for long periods",
+    "description": "<p>A Space Marine suffers no penalties to Perception-based Tests (such as Awareness) when awake for long periods of time.</p>",
+    "modifiers": []
+  }
+}

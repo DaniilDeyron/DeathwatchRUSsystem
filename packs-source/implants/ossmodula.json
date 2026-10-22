@@ -1,0 +1,13 @@
+{
+  "name": "Ossmodula",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Grants Unnatural Toughness (x2)",
+    "description": "<p>This implant, in conjunction with several others, grants the Space Marine the Unnatural Toughness (x2) Trait.</p>",
+    "modifiers": []
+  }
+}

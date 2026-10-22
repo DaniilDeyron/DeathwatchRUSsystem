@@ -1,0 +1,395 @@
+{
+  "_id": "enmychaos0000012",
+  "name": "Great Unclean One",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/great-unclean-one.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 49 },
+      "bs": { "base": 42 },
+      "str": { "base": 56 },
+      "tg": { "base": 77 },
+      "ag": { "base": 21 },
+      "int": { "base": 56 },
+      "per": { "base": 43 },
+      "wil": { "base": 70 },
+      "fs": { "base": 28 }
+    },
+    "wounds": { "base": 232, "max": 232, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true, "mastered": true },
+      "command": { "trained": true },
+      "forbidden_lore": { "trained": true, "mastered": true, "expert": true },
+      "intimidate": { "trained": true, "mastered": true, "expert": true },
+      "logic": { "trained": true },
+      "medicae": { "trained": true },
+      "parry": { "trained": true },
+      "psyniscience": { "trained": true, "mastered": true, "expert": true },
+      "scrutiny": { "trained": true },
+      "survival": { "trained": true }
+    },
+    "psyRating": { "value": 7, "base": 7 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Great Unclean Ones long ago became inured to pain, a result of their abundant infections, plagues, and virulent sores. Their truly massive size and their ability to withstand injury and pain make them dangerous adversaries, as they can withstand astounding amounts of damage before finally falling to the attacks of their foes. These daemon-lords possess a hellish prowess, which seems at odds with their bulk and squat stature. They barrel into their enemies, laughing boisterously, all the while laying about them with colossal rusty cleavers and seven-headed flails.</p><p>The thick cloud of flies which feast at their open sores disrupt the attacks of their enemies and spread the putrid diseases of their host. All the while, the cooing Nurglings form a hideous vanguard for their Papa and in a playful gesture do all they can to help spread their Father's beloved plagues to those nearest him.</p><p>Great Unclean Ones conduct the affairs of Nurgle with tenacity and paternal guidance. They encourage their underlings to revel in Nurgle's decay and pestilence, while jumping on every chance to spread new plagues. When leading the armies of the Father of Plagues, Great Unclean Ones fight with a good-natured joy that suggests they know that their cause will eventually win out. They may even be right, for there is only one true constant in the galaxy: decay.</p><p><strong>Daemonic Presence:</strong> All enemies within 20 metres of a Great Unclean One suffer –10 penalty to Willpower Tests and Toughness Tests (not, however, an enemy's Toughness Characteristic).</p><p><strong>Touched By Nurgle:</strong> The Great Unclean One may use any Nurgle Psychic Power and passes the Focus Power Test automatically with 1d5 Degrees of Success. He counts as having a Psy Rating of 7.</p><p><strong>Amphibious:</strong> The Great Unclean One can move through water and other liquids without penalty.</p><p><strong>Skills:</strong> Awareness (Per) +10, Command (Fel), Forbidden Lore (Daemonology) (Int) +20, Intimidate (S) +20, Logic (Int), Medicae (Int), Parry (WS), Psyniscience (Per) +20, Scrutiny (Per), Survival (Per).</p><p><strong>Talents:</strong> Crippling Strike, Crushing Blow, Disturbing Voice, Hammer Blow, Hardy, Swift Attack, Takedown, Thunder Charge, Unarmed Master.</p><p><strong>Traits:</strong> Daemonic (+5), Dark Sight, Fear (4), From Beyond, Regeneration (5), Size (Immense), Sturdy, Unnatural Strength (+5), Unnatural Toughness (+10), The Stuff of Nightmares.</p><p><strong>Source:</strong> Black Crusade, p. 356</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos120000001",
+      "_sourceId": "tal00000000043",
+      "name": "Crippling Strike",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "115",
+        "prerequisite": "WS 50",
+        "benefit": "+4 Critical Damage",
+        "description": "<p>The character can land his blows precisely where they inflict the most harm, cutting into seams or hammering at weak points. <b>When the character's melee attack causes Critical Damage add +4 Damage.</b></p>",
+        "compendiumId": "tal00000000043",
+        "modifiers": [
+          {
+            "_id": "crippstrike00001",
+            "name": "Crippling Strike - Critical Damage",
+            "modifier": 4,
+            "type": "talent",
+            "effectType": "critical-damage",
+            "valueAffected": "melee",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos120000002",
+      "_sourceId": "tal00000000055",
+      "name": "Crushing Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "Strength 40",
+        "benefit": "Stunned results become normal hits",
+        "description": "<p>The character's will or faith can sustain him when his flesh fails. <b>He ignores the effects of injury, Fatigue, and Stunning during combat.</b> This Talent does not prevent the Damage, but allows the character to temporarily ignore its effects for the duration of the combat. Death still affects him normally.</p>",
+        "compendiumId": "tal00000000055",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000003",
+      "_sourceId": "tal00000000051",
+      "name": "Disturbing Voice",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "",
+        "benefit": "+10 Intimidate/Interrogation, –10 Fellowship",
+        "description": "<p>The character's voice has particularly baleful or menacing qualities, causing others to quail before it. <b>The character gains a +10 bonus to all Intimidate or Interrogation Tests when employing this talent, but suffers a –10 penalty to Fellowship Tests when dealing with others in a non-threatening manner</b>, such as animals, children, or the easily startled.</p>",
+        "compendiumId": "tal00000000051",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000004",
+      "_sourceId": "tal00000000114",
+      "name": "Hammer Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Adeptus Astartes",
+        "benefit": "Add half Strength Bonus to AP and Shocking quality on All Out Attack",
+        "description": "<p>The Battle-Brother strikes a single blow with such focus and force that it breaks armour and pulps flesh as it strikes. <b>When the Battle-Brother makes an All Out Attack manoeuvre to make a single melee attack, he may add half his Strength Bonus to the weapon's Armour Penetration. The attack also counts as having the Shocking quality to represent the concussive force of the blow's impact.</b></p>",
+        "compendiumId": "tal00000000114",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000005",
+      "_sourceId": "tal00000000116",
+      "name": "Hardy",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Toughness 40",
+        "benefit": "Recover damage as if Lightly Damaged",
+        "description": "<p>The character's constitution rebounds quickly from shock or injury. <b>When undergoing medical treatment or healing from injures, the character recovers Damage as if Lightly Damaged.</b></p>",
+        "compendiumId": "tal00000000116",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000006",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "WS 35",
+        "benefit": "Half Action melee attack twice",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000007",
+      "_sourceId": "tal00000000253",
+      "name": "Takedown",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "",
+        "benefit": "Half Action to force Toughness Test or Stun, no penalty on Stun Actions",
+        "description": "<p>As a Half Action, the character may declare that he is attempting a takedown before making his Weapon Skill Test. <b>If the character hits and would have done at least 1 point of Damage, it is ignored, but the character's opponent must make a Toughness Test or be Stunned for 1 Round. In addition, when performing a Stun Action, the character does not suffer a –20 penalty to his Weapon Skill.</b></p>",
+        "compendiumId": "tal00000000253",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000008",
+      "_sourceId": "tal00000000259",
+      "name": "Thunder Charge",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Adeptus Astartes",
+        "benefit": "Unarmed attack with Knock Down on Charge before normal attack",
+        "description": "<p>The Battle-Brother charges into combat using his armoured body as an additional weapon. Driven by his armour and the Battle-Brother's enhanced muscle, the impact of such a charge is like being struck by a thunderbolt. <b>When the Battle-Brother makes a Charge Action, first make an unarmed attack (see page 245 for more details) against every opponent he is charging. This represents slamming into the enemy with the character's armoured bulk. This attack automatically also has the potential to knock the opponent down in the same way as if the Battle-Brother had used the Knock Down Action (see page 241 for more details). Once this attack has been resolved, the Battle-Brother may make his normal Charge Attack as normal. If the Battle-Brother charges a Horde, he may make d5+1 unarmed attacks against the Horde.</b></p>",
+        "compendiumId": "tal00000000259",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000009",
+      "_sourceId": "tal00000000264",
+      "name": "Unarmed Master",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Weapon Skill 45, Agility 40, Unarmed Warrior",
+        "benefit": "Unarmed attacks deal 1d10+SB Impact, no Primitive quality",
+        "description": "<p>The character has developed unequalled mastery of unarmed combat techniques. <b>The character's unarmed combat attacks do 1d10 + Strength Bonus in Impact Damage, and these attacks no longer have the Primitive quality.</b></p>",
+        "compendiumId": "tal00000000264",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000010",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (5)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000011",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000012",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000013",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000014",
+      "_sourceId": "trt000000000031",
+      "name": "Regeneration (5)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>Creatures with this trait heal very quickly. Each round, at the start of its turn, the creature tests Toughness to remove an amount of damage indicated in the parenthesis after the trait. It loses this trait when slain.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000015",
+      "_sourceId": "trt000000000061",
+      "name": "Size (Massive)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Massive. Enemies gain +30 to hit it, and it suffers –30 to Concealment. Its base movement is Agility Bonus +3.</p>",
+        "modifiers": [
+          {
+            "_id": "fb6cf4eab4c7408c",
+            "name": "Size (Massive)",
+            "modifier": 3,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "5ccb70d838bd26e3",
+            "name": "Size (Massive)",
+            "modifier": -30,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos120000016",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000017",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos120000018",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos120000019",
+      "_sourceId": "trt000000000040",
+      "name": "The Stuff of Nightmares",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Some warp entities are so terribly powerful the will perpetuating their bodies in our reality is almost impossible to break or disrupt. Such entities are completely immune to the effects of poisons, diseases, the need to breathe, most environmental hazards, bleeding, stunning, and any critical result other than one that would destroy them outright, unless caused by a psychic power, force weapon, or holy attack.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos120000020",
+      "name": "Giant Plaguesword",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/powersword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "2d10+2",
+        "dmgType": "Energy",
+        "penetration": "4",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "balanced" },
+          { "id": "toxic", "rating": 4 }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A massive, colossal rusty cleaver wielded by the Great Unclean One. The blade is infused with the vilest diseases of Nurgle and carries multiple deadly infections.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Great Unclean One",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 3,
+    "height": 3,
+    "bar1": { "attribute": "wounds" }
+  }
+}

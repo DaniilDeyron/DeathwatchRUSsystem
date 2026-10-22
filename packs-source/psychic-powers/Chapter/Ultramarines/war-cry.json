@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000051",
+  "name": "War Cry",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/ultramarines.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "200",
+    "key": "war-cry",
+    "range": "5 metres x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 750,
+    "class": "Chapter",
+    "description": "<p>With a terrifying cry, the Librarian demoralises and stuns nearby foes, forcing them to cower before his might. This power can affect a number of foes equal to the Librarian's PR. Those affected cannot use Reactions from the end of the Librarian's turn to the start of his next turn.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/ultramarines.webp"
+  }
+}

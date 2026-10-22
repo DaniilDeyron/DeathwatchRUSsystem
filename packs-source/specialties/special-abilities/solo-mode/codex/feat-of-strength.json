@@ -1,0 +1,33 @@
+{
+  "_id": "smcd00000000004",
+  "name": "Feat of Strength",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "216",
+    "key": "feat-of-strength",
+    "description": "<p>Space Marines are genetically gifted with great strength far exceeding that of normal men. In times of need, a Battle-Brother can push this great brawn to its limits to perform truly impressive feats. Once per day of game time, a Battle-Brother may perform a Feat of Strength. This ability effectively increases his Unnatural Strength Trait by one level, so for instance Unnatural Strength ×2 becomes Unnatural Strength ×3. This effect lasts for a number of Rounds equal to his Rank.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Also adds +10 to all Strength Tests and Strength-based Skill Tests</td></tr><tr><td>5</td><td>Duration increases to Rounds equal to twice the character's Rank</td></tr><tr><td>7</td><td>Unnatural Strength Trait increases by two levels instead of one</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Increases Unnatural Strength by one level for Rounds equal to Rank (once per day)",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "Also adds +10 to all Strength Tests and Strength-based Skill Tests"
+      },
+      {
+        "rank": 5,
+        "effect": "Duration increases to Rounds equal to twice Rank"
+      },
+      {
+        "rank": 7,
+        "effect": "Unnatural Strength increases by two levels instead of one"
+      }
+    ]
+  }
+}

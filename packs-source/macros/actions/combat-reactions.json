@@ -1,0 +1,20 @@
+{
+  "_id": "macro-combat-reactions",
+  "name": "Combat Reactions (Advanced)",
+  "type": "script",
+  "img": "icons/svg/lightning.svg",
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": 0 },
+  "author": "",
+  "scope": "global",
+  "command": "",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.0.0",
+    "systemId": "deathwatch",
+    "systemVersion": "0.0.2"
+  }
+}

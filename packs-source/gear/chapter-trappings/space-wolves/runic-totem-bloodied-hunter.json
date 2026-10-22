@@ -1,0 +1,18 @@
+{
+  "_id": "ct-sw-002",
+  "name": "Runic Totem (Bloodied Hunter)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Space Wolves Chapter Trapping",
+    "description": "<p>The Sons of Russ have many traditions that are unique to their Chapter, and at the heart of Fenrisian mysticism stand the Rune Priests. Using their arcane arts they craft rune totems to call upon the powers of Fenris' mythic beasts, and Space Wolves fiercely believe that these talismans can lend the bearer power from the spirit whose name is inscribed upon it.</p><p><strong>Effect:</strong> Add +1 to any damage inflicted by Righteous Fury.</p>",
+    "modifiers": [],
+    "key": "space-wolves-runic-totem-bloodied-hunter"
+  }
+}

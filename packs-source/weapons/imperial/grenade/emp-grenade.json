@@ -1,0 +1,25 @@
+{
+  "_id": "grenade000000002",
+  "name": "EMP Grenade",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/emp-grenade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "150",
+    "class": "Thrown",
+    "dmg": "-",
+    "dmgType": "Explosive",
+    "penetration": "0",
+    "range": "SBx3",
+    "rof": "S/-/-",
+    "clip": "1",
+    "reload": "-",
+    "equipped": false,
+    "wt": 0.5,
+    "req": 30,
+    "renown": "Respected",
+    "attachedQualities": [{ "id": "haywire", "value": "3" }],
+    "description": "<p>A rare example of xenos technology employed in limited capacity by the Deathwatch, the exact form of such a grenade varies with its origin. The function of an EMP grenade is to generate a field of electro-magnetic static that interferes with most technology and generally causes machine spirits to malfunction. There are many appellations for this weapon: EMP, Haywire, Scrambler, and it takes many shapes including those found with the Tau and the Eldar.</p>",
+    "modifiers": []
+  }
+}

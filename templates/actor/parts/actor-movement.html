@@ -1,0 +1,9 @@
+<div class="movement-box" style="overflow: visible;">
+  <h4 class="box-title">Movement</h4>
+  <table style="width: 100%; font-size: 0.8em; margin: 0; padding: 0; background: transparent; border: none;">
+    <tr style="background: transparent; border: none;"><td style="text-align: left; padding: 2px 4px; background: transparent; border: none;">Half:</td><td style="text-align: right; padding: 2px 4px; background: transparent; border: none;">{{#if system.movement}}{{movementValue system.movement.half}}{{else}}0m{{/if}}</td></tr>
+    <tr style="background: transparent; border: none;"><td style="text-align: left; padding: 2px 4px; background: transparent; border: none;">Full:</td><td style="text-align: right; padding: 2px 4px; background: transparent; border: none;">{{#if system.movement}}{{movementValue system.movement.full}}{{else}}0m{{/if}}</td></tr>
+    <tr style="background: transparent; border: none;"><td style="text-align: left; padding: 2px 4px; background: transparent; border: none;">Charge:</td><td style="text-align: right; padding: 2px 4px; background: transparent; border: none;">{{#if system.movement}}{{movementValue system.movement.charge}}{{else}}0m{{/if}}</td></tr>
+    <tr style="background: transparent; border: none;"><td style="text-align: left; padding: 2px 4px; background: transparent; border: none;">Run:</td><td style="text-align: right; padding: 2px 4px; background: transparent; border: none;">{{#if system.movement}}{{movementValue system.movement.run}}{{else}}0m{{/if}}</td></tr>
+  </table>
+</div>

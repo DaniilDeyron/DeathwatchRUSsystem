@@ -1,0 +1,26 @@
+{
+  "_id": "clip00000000021",
+  "name": "Stalker Rounds",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-bolter.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "160",
+    "capacity": { "value": 30, "max": 30 },
+    "quantity": 1,
+    "req": 5,
+    "renown": "",
+    "description": "<p>Stalker rounds were designed for sniping use in Stalker-pattern boltguns, and that is still where they achieve maximum efficacy. However, they may be used in other bolt weapons to reduce their report. A stalker round’s core is replaced with gas propellant and the mass-reactive explosive replaced with solid mercury.</p><p><b>Effects</b>: Awareness Tests to hear shots made with stalker rounds suffer an additional –30 penalty and can only be attempted at half the normal distance. Reduce the weapon’s Damage by 2. When used in a Stalker-pattern Boltgun, this damage penalty does not apply. Additionally in such a weapon, no Tests to detect the shot are possible (however, depending on the situation, the appropriate Opposed Skill Test may be required for the firer himself to remain hidden). </p><p><b>Used With</b>: All bolt weapons.</p>",
+    "modifiers": [
+      {
+        "_id": "74132881eff6fe9b",
+        "name": "Stalker Rounds",
+        "modifier": "-2",
+        "type": "equipment",
+        "effectType": "weapon-damage",
+        "qualityException": "stalker-pattern",
+        "enabled": true
+      }
+    ]
+  }
+}

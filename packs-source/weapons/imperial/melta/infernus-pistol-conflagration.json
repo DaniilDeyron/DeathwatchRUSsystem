@@ -1,0 +1,24 @@
+{
+  "_id": "melt00000000001",
+  "name": "Conflagration Infernus Pistol",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/infernus-pistol-conflagration.webp",
+  "system": {
+    "book": "Rits of Battle",
+    "page": "135",
+    "class": "Pistol",
+    "dmg": "2d10+14",
+    "dmgType": "Energy",
+    "penetration": "14",
+    "range": "10",
+    "rof": "S/-/-",
+    "clip": "2",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 5,
+    "req": 35,
+    "renown": "Distinguished",
+    "description": "<p>These powerful weapons are the pistol-sized siblings of the conflagration meltaguns. Like their larger siblings, these weapons trade increased power usage for higher penetration and damage yield. These weapons are favorite of many Space Marines of the Salamanders Chapter seconded to the Deathwatch.</p>",
+    "modifiers": []
+  }
+}

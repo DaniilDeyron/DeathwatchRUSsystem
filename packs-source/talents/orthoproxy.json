@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000008",
+  "name": "Orthoproxy",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "",
+    "benefit": "+20 to Willpower Tests to resist mind control or interrogation",
+    "description": "<p>A liturgical circuit has been implanted within the character's skull, allowing him to focus on the prayers recited by the proxy unit when the character's mental fortitude is in peril. <b>The character receives a +20 bonus to Willpower Tests made to resist mind control or interrogation.</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000008",
+    "modifiers": [],
+    "rankRequired": 3
+  }
+}

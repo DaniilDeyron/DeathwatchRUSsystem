@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000109",
+  "name": "Vile Revelation",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "220",
+    "key": "vile-revelation",
+    "range": "5 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 300,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> Willpower 45</p><p><strong>Focus Power:</strong> Difficult (–10) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker forces a horrifying vision of forbidden truth into the minds of his enemies. Those who witness these revelations are left stunned and gibbering, their minds unable to process the terrible knowledge they have been granted.</p><p>This power is a Psychic Barrage that inflicts a number of hits equal to the psyker's Psy Rating. Each hit inflicts 1d10 Energy Damage with Penetration 5. All targets that suffer Damage from this attack must pass a Willpower Test or be Stunned for a number of rounds equal to their Degrees of Failure.</p>",
+    "damageFormula": "PRd10",
+    "penetrationFormula": "5",
+    "damageType": "Energy",
+    "attachedQualities": []
+  }
+}

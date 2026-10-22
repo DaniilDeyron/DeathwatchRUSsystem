@@ -1,0 +1,28 @@
+{
+  "_id": "ct-stw-002",
+  "name": "Tempest Amulet (Victory Scripture)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Storm Wardens Chapter Trapping",
+    "description": "<p>The native traditions of Sacris place a strong emphasis on the ability of an individual to affect change in the world through strength of arm and force of will. Tempest Amulets are rooted in mysticism, but also serve as a focus for the Storm Warden's stubborn will. These small leather pouches contain \"tempest stones,\" rocks fused into glass by the fierce lightning storms of Sacris and wrapped in prayer scripts written by the owner.</p><p><strong>Effect:</strong> Gain +2 WS when fighting an enemy in single melee combat.</p><p><em>Note: This is a conditional bonus. Enable the modifier when engaged in single combat, disable it otherwise.</em></p>",
+    "modifiers": [
+      {
+        "_id": "ct-stw-002-mod-01",
+        "name": "Victory Scripture",
+        "modifier": "2",
+        "type": "chapter",
+        "effectType": "skill",
+        "valueAffected": "weapon-skill",
+        "enabled": false
+      }
+    ],
+    "key": "storm-wardens-tempest-amulet-victory"
+  }
+}

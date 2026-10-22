@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000004",
+  "name": "Hatred (Mutants)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "",
+    "benefit": "+10 WS against Mutants in melee",
+    "description": "<p>A group, organisation, or race has wronged the character in the past, fuelling this animosity. <b>When fighting opponents of that group in close combat, the character gains a +10 bonus to all Weapon Skill Tests made against them.</b></p>",
+    "compendiumId": "tal00000000004",
+    "modifiers": [],
+    "rankRequired": 2
+  }
+}

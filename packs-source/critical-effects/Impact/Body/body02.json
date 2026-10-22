@@ -1,0 +1,14 @@
+{
+  "_id": "impact-body0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "256",
+    "damageType": "Impact",
+    "location": "Body",
+    "description": "The impact punches the air from the target's body, inflicting 1 level of Fatigue.",
+    "effects": []
+  }
+}

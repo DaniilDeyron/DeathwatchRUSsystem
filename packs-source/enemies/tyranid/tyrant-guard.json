@@ -1,0 +1,377 @@
+{
+  "_id": "enmytyranid00020",
+  "name": "Tyrant Guard",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tyranid/tyrant-guard.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 55 },
+      "bs": { "base": 30 },
+      "str": { "base": 50 },
+      "tg": { "base": 60 },
+      "ag": { "base": 30 },
+      "int": { "base": 10 },
+      "per": { "base": 35 },
+      "wil": { "base": 40 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 45, "max": 45, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "climb": { "trained": true },
+      "swim": { "trained": true, "mastered": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Tyrant Guard exist for a single purpose alone: the defence of the Hive Tyrant they are charged with protecting. Their armoured hides and thick muscles are almost impervious to small arms and highly resistant to even the heaviest weapons, meaning they can soak up an appalling amount of damage before they are destroyed. Though similar in size to a Tyranid Warrior, a Tyrant Guard has more of the appearance of a hound or boar, loping alongside the Hive Tyrant on four limbs, their massively armoured heads close to the ground and alert for danger to their master.</p><p><strong>Bodyguard:</strong> Tyrant Guard only ever appear when acting as the bodyguard for a Hive Tyrant, usually in groups of 1–3. They will never stray more than a few metres from their master. While within 20 metres of their Hive Tyrant, a Tyrant Guard may use its Reaction to move (up to its normal movement allowance) into combat with a foe before that foe enters melee with the Hive Tyrant, effectively interrupting the enemy's charge or move. Tyrant Guard may alternatively use their Reaction to interpose themselves between the Hive Tyrant and a ranged attack, effectively becoming the new target of the attack.</p><p><strong>Master's Eyes:</strong> Though Tyrant Guard are blind, while within 20 metres of their Hive Tyrant, they can use his Perception and senses as their own, including any Traits or Talents which improve them.</p><p><strong>Rampage:</strong> If a Tyrant Guard's Hive Tyrant is killed, it will go berserk, attacking any non-Tyranid creatures it can reach. While in this state, it gains the Frenzy and Furious Assault talents. Once begun, Rampage lasts until the Tyrant Guard is destroyed.</p><p><strong>Source:</strong> Mark of the Xenos, p. 46</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eityranid2000001",
+      "_sourceId": "tal00000000002",
+      "name": "Fearless",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "118",
+        "prerequisite": "",
+        "benefit": "Immune to Fear and Pinning",
+        "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+        "compendiumId": "tal00000000002",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000002",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000003",
+      "_sourceId": "trt000000000005",
+      "name": "Blind",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Blind creatures automatically fail all tests based on vision and automatically fail all Ballistic Skill Tests. Such creatures take a –30 penalty to Weapon Skill Tests and most other tests that ordinarily involve or are benefited by vision.</p>",
+        "modifiers": [
+          {
+            "_id": "blind-bs-penalty",
+            "name": "Blind (BS)",
+            "modifier": -100,
+            "type": "trait",
+            "effectType": "characteristic",
+            "valueAffected": "bs",
+            "enabled": true
+          },
+          {
+            "_id": "blind-ws-penalty",
+            "name": "Blind (WS)",
+            "modifier": -30,
+            "type": "trait",
+            "effectType": "characteristic",
+            "valueAffected": "ws",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2000004",
+      "_sourceId": "trt000000000013",
+      "name": "Fear 3 (Horrifying)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000005",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (10)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "10",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2000006",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2000007",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2000008",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2000009",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons (Scything Talons)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000010",
+      "_sourceId": "trt000000000021",
+      "name": "Instinctive Behaviour (Feed)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A Tyranid creature with this trait will be reduced to acting according to their instincts if they are separated from the controlling presence of the Hive Mind. In effect, this means that any encounter in which creatures with this trait are not accompanied by a Tyranid creature with the Synapse Creature trait (see page 135 in this chapter), they will behave in a particular way. The creature's instinctive behaviour is noted in parentheses and has the following effects:</p><p><strong>Feed:</strong> The creature's instinct is to feed on flesh, blood, and bone and its hunger can never be sated. The creature will try to find and attack any living, biological, non-Tyranid creature and eat them. In this state, the creature gains the Fearless and Frenzy talents. The same applies to a Horde with this trait not under the influence of a synapse creature.</p><p><strong>Lurk:</strong> The creature's instincts are to find shelter from attack, to hide and survive. It will try to flee and find shelter in whatever way the situation allows. In a starship, for example, it may scuttle into the ducting system. When confronted, the creature's aim is to try to escape and will only attack if left no avenue for escape or in order to survive. If a Horde with this trait is not under the influence of a synapse creature, it will automatically break (see Breaking a Horde on page 360 of this chapter).</p><p><strong>Stalk:</strong> The creature's instinct is to remain unseen, to find prey, slay it, feed, and then resume its hunt for others. In this state, the creature gains the Stealth (Ag) +10 skill. It will not attack enemies unless it can take them by surprise or outnumbers them. Having made a kill, the creature briefly feeds before fleeing. A horde with this trait automatically breaks (see Breaking a Horde on page 360 of this chapter), with individual creatures scattering to find shadows from which to begin their hunt.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000011",
+      "_sourceId": "trt000000000033",
+      "name": "Size (Enormous)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Enormous. Enemies gain +20 to hit it, and it suffers –20 to Concealment. Its base movement is Agility Bonus +2.</p>",
+        "modifiers": [
+          {
+            "_id": "f944ed87cd28be1d",
+            "name": "Size (Enormous)",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "f71f6a2270313730",
+            "name": "Size (Enormous)",
+            "modifier": -20,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2000012",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000013",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000014",
+      "name": "Scything Talons",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-scything-talons.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+4",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>Razor-edged claws used by the Tyrant Guard to defend its master.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000015",
+      "name": "Rending Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-rending-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+2",
+        "dmgType": "Rending",
+        "penetration": "5",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "razor-sharp" }],
+        "attachedUpgrades": [],
+        "description": "<p>Diamond hard growths of bone capable of crushing reinforced ceramite and ripping through the thickest of armour.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000016",
+      "name": "Lashwhip",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-lashwhip.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+5",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": false,
+        "attachedQualities": [{ "id": "flexible" }, { "id": "snare" }],
+        "attachedUpgrades": [],
+        "description": "<p>A whip-like appendage that can strike around cover and entangle enemies. May replace Scything Talons.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2000017",
+      "name": "Bonesword",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-bonesword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+2",
+        "dmgType": "Rending",
+        "penetration": "6",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": false,
+        "attachedQualities": [{ "id": "drain-life" }],
+        "attachedUpgrades": [],
+        "description": "<p>A psychically-charged blade of living bone that drains the life force of those it strikes. May replace Scything Talons.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Tyrant Guard",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 2,
+    "height": 2,
+    "bar1": { "attribute": "wounds" }
+  }
+}

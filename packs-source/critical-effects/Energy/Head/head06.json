@@ -1,0 +1,14 @@
+{
+  "_id": "energy-head0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "253",
+    "damageType": "Energy",
+    "location": "Head",
+    "description": "The attack cooks the target's face, melting his features and damaging his eyes. The target is blinded for the next 1d10 hours and permanently reduces his Fellowship characteristic by 1d10 points. The target also takes 1d5 levels of Fatigue.",
+    "effects": []
+  }
+}

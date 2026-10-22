@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000283",
+  "name": "Kroot Leap",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "Mark Of the Xenos",
+    "page": "15",
+    "prerequisite": "Kroot",
+    "benefit": "Leap over obstacles when charging, knock-down on successful strike",
+    "description": "<p>Kroot are adept at using their long legs to jump, hop, and leap long distances. The Kroot has learned to use this advantage whilst rushing an enemy in close combat.</p><p><strong>When making a Charge action, the Kroot can ignore obstacles between him and his target by making a Running Vertical Jump (see page 207 of the Deathwatch Rulebook). This Talent may only be used if there is room for the Kroot to land next to his target and if there is enough overhead space for the Kroot to leap over the obstacles.</strong> For example, a wall that goes from floor to ceiling may not be leapt over, nor would something taller than the Kroot's vertical jump distance.</p><p><strong>If the Kroot successfully strikes his target whilst using this Talent, the Kroot may make a Knock-Down Action against the target (see page 241 of the Deathwatch Rulebook) as a Free Action.</strong></p>",
+    "compendiumId": "tal00000000283",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

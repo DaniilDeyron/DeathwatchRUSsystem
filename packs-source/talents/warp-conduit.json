@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000270",
+  "name": "Warp Conduit",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Psy Rating, Strong Minded, Willpower 50",
+    "benefit": "When pushing, +1 Psy Rating and -10 on Psychic Phenomenon rolls",
+    "description": "<p>The sheer power of the character's mind allows him to channel vast amounts of warp energy. <b>When pushing, the character may add +1 to his Psy Rating and subtract –10 on any resultant Psychic Phenomenon rolls.</b></p>",
+    "compendiumId": "tal00000000270",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "impact-arm0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "256",
+    "damageType": "Impact",
+    "location": "Arm",
+    "description": "The attack pulverises the target's hand, crushing and breaking 1d5 fingers (for the purposes of this Critical, a thumb counts a finger). The target takes 1 level of Fatigue and must immediately make a Challenging (+0) Toughness Test or lose the use of his hand.",
+    "effects": []
+  }
+}

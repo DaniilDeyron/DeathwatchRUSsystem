@@ -1,0 +1,64 @@
+{
+  "name": "Blood Angels",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/blood_angels.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "41",
+    "description": "<p>The Blood Angels are one of the original Space Marine Legions, renowned for their nobility, artistry, and terrifying ferocity in battle. Founded by their Primarch, Sanguinius, they combine a refined, almost angelic culture with brutal close-combat prowess.</p>",
+    "skillCosts": {
+      "acrobatics": { "costTrain": 200, "costMaster": 600, "costExpert": 600 }
+    },
+    "talentCosts": {
+      "tal00000000013": 500,
+      "tal00000000026": 400,
+      "tal00000000027": 600,
+      "tal00000000088": 500,
+      "tal00000000091": 600,
+      "tal00000000090": 400,
+      "tal00000000119": 500,
+      "tal00000000167": 800,
+      "tal00000000243": 1000,
+      "tal00000000254": 500
+    },
+    "modifiers": [
+      {
+        "_id": "6ac60bb953646392",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "ws",
+        "enabled": true
+      },
+      {
+        "_id": "24fdaa36c963886d",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "ag",
+        "enabled": true
+      }
+    ],
+    "curseName": "Black Rage",
+    "curseDescription": "<p>Deep in the minds of all Blood Angels lurks the memory of their primarch's demise at the hands of Horus and the rage and blood of that battle. Such is the imprint left by Sanguinius that it echoes down his lineage and into the minds of all Battle-Brothers of the Chapter. In battle this memory can, over time, manifest in Blood Angels, turning them savage and blinding them to everything but the brutality of battle and a thirst for killing.</p>",
+    "curseLevel1Name": "Bloodlust",
+    "curseLevel1Description": "<p>The Battle-Brother cannot stand to leave an enemy alive or end a fight without even a single kill. If an enemy surrenders or a fight looks like it will end without a foe's death, the Battle-Brother must make a <strong>Challenging (+0) Willpower Test</strong> to avoid finishing them off or hacking down at least one foe. The GM may increase or decrease the modifier for this test depending on the circumstance and the ramifications of the killing.</p>",
+    "curseLevel1Effect": "custom",
+    "curseLevel1Modifier": 0,
+    "curseLevel1Target": "",
+    "curseLevel2Name": "Close Quarters Killing",
+    "curseLevel2Description": "<p>Those in the grip of the Black Rage favour close melee combat, where the blood of their foes stains their armour red. Unless there is no possible way to close with a foe, the Battle-Brother will always favour melee combat over ranged combat and will charge into the fray, discarding the bolter for the hungry teeth of a chainsword.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Uncontrollable Thirst",
+    "curseLevel3Description": "<p>The Black Rage is also intertwined with another of the Blood Angels flaws: the Red Thirst. In extreme cases, the Red Thirst translates into a literal thirst for blood. Once a battle is over, a Battle-Brother with Uncontrollable Thirst must make a <strong>Hard (–20) Willpower Test</strong> or spend at least a few minutes drinking the blood of his foes (provided of course the blood is not deadly to drink).</p>",
+    "curseLevel3Effect": "custom",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 0
+  }
+}

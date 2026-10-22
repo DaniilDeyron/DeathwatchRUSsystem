@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000016",
+  "name": "Autosanguine",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "",
+    "benefit": "Heal 2 damage/day, always Lightly Damaged",
+    "description": "<p>The ancient and blessed technology of the Mechanicus flows through the character’s blood. These miniscule machines repair minor injuries and speed healing. <b>When applying healing, the character is always considered Lightly Damaged</b>, and heals at an increased rate, removing 2 points of Damage per day.</p>",
+    "compendiumId": "tal00000000016",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

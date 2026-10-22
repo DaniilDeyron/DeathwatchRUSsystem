@@ -1,0 +1,14 @@
+{
+  "_id": "rending-leg0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Leg",
+    "description": "The force of the blow cuts deep into the leg, grinding against bone and tearing ligaments apart. The leg is broken and, until repaired, the target counts as having only one leg. In addition, the level of maiming is such that the target is now suffering from Blood Loss. He also takes 1d10 levels of Fatigue.",
+    "effects": []
+  }
+}

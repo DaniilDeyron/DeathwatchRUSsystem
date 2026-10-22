@@ -1,0 +1,17 @@
+{
+  "_id": "detox0000000001",
+  "name": "De-Tox",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/detox.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "172",
+    "wt": 0,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Drugs",
+    "description": "<p>A more powerful form of the anti-toxins found in Astartes power armour, this drug can negate the effects of most dangerous gases and toxins if administered quickly enough. A dose of de-tox immediately ends the ongoing effects, both positive and negative, of any drugs, toxins, or gases affecting the character (unless the effect states that de-tox is not effective against them) and renders him <b>immune for another 1d10 Rounds</b>. Given that natural Space Marine resilience protects him against many of the common chemicals that pose a threat to other beings, de-tox is manually administered to avoid unintended interruption of injector system effects.</p><p> They may be used on normal humans, but this requires a Routine (+10) Medicae Test when administered to correctly cut the dosage and avoid causing 1d5 levels of Fatigue and 1 Round of Stun in addition to the intended effect.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

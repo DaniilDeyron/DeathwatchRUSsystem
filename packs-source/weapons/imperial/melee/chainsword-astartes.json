@@ -1,0 +1,25 @@
+{
+  "_id": "melee0000000001",
+  "name": "Astartes Chainsword",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/chainsword.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "153",
+    "class": "Melee",
+    "dmg": "1d10+3",
+    "dmgType": "Rending",
+    "penetration": "3",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 10,
+    "req": 5,
+    "renown": "",
+    "attachedQualities": [{ "id": "balanced" }, { "id": "tearing" }],
+    "description": "<p>The Chainsword has served many a Battle-Brother during his time in an Assault Squad. These weapons generally have a flat carapace containing the chain with only the forward curved section open where the spinning chain teeth can bite into flesh and bone.</p>",
+    "modifiers": []
+  }
+}

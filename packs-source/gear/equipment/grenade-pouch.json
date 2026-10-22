@@ -1,0 +1,17 @@
+{
+  "_id": "gear00000000005",
+  "name": "Grenade Pouch",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "equipped": false,
+    "wt": 0.5,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "Equipment",
+    "description": "<p>Carries four standard Krak or Frag grenades.</p><p>Attaches to Astartes Combat Webbing.</p>",
+    "modifiers": []
+  }
+}

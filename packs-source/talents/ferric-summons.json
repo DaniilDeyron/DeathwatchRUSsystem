@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000086",
+  "name": "Ferric Summons",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "Techmarine or Mechanicus Implants, Ferric Lure",
+    "benefit": "Pull heavier metal objects from farther",
+    "description": "<p>The character can call an unsecured metal object to his hand as with Ferric Lure. <b>The character may summon objects of up to 2 kilograms per point of Willpower Bonus, and the object may be up to 40 metres distant.</b> The character must spend a Full Action and succeed on a Willpower Test to enact this rite.</p>",
+    "compendiumId": "tal00000000086",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

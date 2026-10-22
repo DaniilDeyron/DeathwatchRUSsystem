@@ -1,0 +1,33 @@
+{
+  "_id": "clip00000000003",
+  "name": "Kraken Rounds",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-kraken.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "159",
+    "capacity": { "value": 12, "max": 12 },
+    "quantity": 1,
+    "req": 5,
+    "renown": "",
+    "description": "<p>The superior propellants in kraken rounds provide increased range without sacrificing armour penetration, while their ultra-dense adamantine composition and improved explosive charge provide a final burst of force for puncturing the heaviest armours.<p></p><b>Effects</b>: The weapon's Penetration is set to a minimum of 8, and its Range increases by 50%. </p><p><b>Used With</b>: All bolt weapons.</p>",
+    "modifiers": [
+      {
+        "_id": "38c3bb31af5c685f",
+        "name": "Kraken Penetration",
+        "modifier": "8",
+        "type": "equipment",
+        "effectType": "weapon-penetration",
+        "enabled": true
+      },
+      {
+        "_id": "3b7bd270f0c43bdc",
+        "name": "Kraken Range",
+        "modifier": "x1.5",
+        "type": "equipment",
+        "effectType": "weapon-range",
+        "enabled": true
+      }
+    ]
+  }
+}

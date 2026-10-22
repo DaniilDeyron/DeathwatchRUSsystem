@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000101",
+  "name": "Bolt of Change",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "218",
+    "key": "bolt-of-change",
+    "range": "10 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> Willpower 35</p><p><strong>Focus Power:</strong> Difficult (–10) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker reaches into the Warp and hurls the raw stuff of Chaos at his foes, searing their flesh with uncontrolled mutation. This power is greatly feared by those who understand the Warp, for it can turn a man into a twisted abomination in moments.</p><p>This power is a Psychic Bolt that inflicts a number of hits equal to the psyker's Psy Rating. Each hit inflicts 1d10 Energy Damage with Penetration 5. This attack has the Felling (3) Quality.</p>",
+    "damageFormula": "PRd10",
+    "penetrationFormula": "5",
+    "damageType": "Energy",
+    "attachedQualities": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000091",
+  "name": "Mind over Matter",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telekinesis.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "225",
+    "key": "mind-over-matter",
+    "range": "5 metres per Psy Rating",
+    "sustained": "Half Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 100,
+    "class": "Telekinesis",
+    "description": "<p><strong>Prerequisites:</strong> None</p><p><strong>Focus Power:</strong> Willpower Test; Special – See Below</p><p><strong>Subtype:</strong> Attack (if used to throw target), Concentration</p><p>The basic talent of telekinesis is a versatile and immensely useful tool in any psyker's arsenal, a valuable means of exerting his will upon his immediate surroundings. Human psykers, whether sanctioned by the Imperium or lurking in the shadows beneath so-called civilisation, speak of reaching out with hands of spectral presence, or imbuing objects with motion or inertia that should otherwise not exist.</p><p>A psyker with this power may use it in one of three ways: constant motion, rapid push or forceful throw. When using constant motion, the Focus Power Test is Routine (+20), and the psyker may move any object within range and line of sight that weighs no more than 10kg x Psy Rating. Objects moved in this way can only be moved too slowly to be used to attack, and when released the object drifts slowly to the ground.</p><p>When using a rapid push, the Focus Power Test is Ordinary (+10), and Opposed by a Strength Test from a single target within range and line of sight. If the target fails the test, he is thrown backwards Psy Rating metres, plus an additional metre for every Degree of Success on the Focus Power Test.</p><p>When using a forceful throw, the Focus Power Test is Challenging (+0), and allows the psyker to lift an object weighing no more than 5kg x Psy Rating and thrown at an enemy within range, hitting them to deal 1d10 Impact Damage +1 for every 5kg of the object's weight.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "clip00000000020",
+  "name": "Implosion Shells",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-implosion.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "159",
+    "capacity": { "value": 12, "max": 12 },
+    "quantity": 1,
+    "req": 27,
+    "renown": "Respected",
+    "description": "<p>The result of early experiments with alternative krak technology, an implosion shell replaces its explosive core with an infinitesimal amount of antimatter; this creates a violently decompressing vacuum when exposed to matter. Like the standard bolt shell, these rounds activate via their mass-reactive core, meaning they embed partially in their target before the implosion takes effect. The round's force is therefore not directed at cracking open armour, but to collapsing the unfortunate victim's body from the inside out—enough to debilitate even a Space Marine.</p><p><b>Effects</b>: In addition to taking normal damage, a target who takes one or more points of Damage (after Armour and Toughness) from an implosion shell suffers 1d5 points of Agility Damage. <em>GM: Roll 1d5 and add the result to the target's Agility Damage field.</em></p><p><b>Used With</b>: All bolt weapons.</p>",
+    "modifiers": [
+      {
+        "_id": "0e17b0e6a479e88e",
+        "name": "Implosion Agility Damage",
+        "modifier": "1d5",
+        "type": "equipment",
+        "effectType": "characteristic-damage",
+        "valueAffected": "ag",
+        "enabled": true
+      }
+    ]
+  }
+}

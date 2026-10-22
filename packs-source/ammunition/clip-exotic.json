@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000012",
+  "name": "Exotic Ammunition",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/exotic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 6, "max": 6 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>There are many kinds of weapons wielded by the Deathwatch that use unusual types of ammunition, from the special ammunition reloads for digi-weapons, to the finely crafted darts of a needle rifle.</p><p><b>Used With</b>: Needle rifles and any other exotic ranged weapons.</p>"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Progenoids",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Gene-seed organs, must be recovered from fallen",
+    "description": "<p>See page 271 for more information on the benefits of retrieving a Space Marine's progenoids. Removing a Space Marine's progenoids requires a Difficult (–10) Medicae Test. This Test becomes Arduous (–40) if performed without the narthecium (see page 173), and adds 2 Rounds to the time required. Taking out the progenoids takes 1 Round, adding 1 Round for every Degree of Failure on the Medicae Test. Space Marines go to great lengths to recover a fallen Battle-Brother's gene-seed, and the GM may require a Willpower Test to leave the progenoids behind.</p>",
+    "modifiers": []
+  }
+}

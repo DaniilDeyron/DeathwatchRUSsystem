@@ -1,0 +1,51 @@
+<div class="implants-section">
+  <h3 class="section-header">Implants</h3>
+  <ol class="items-list implants-list">
+    <li class="item flexrow items-header">
+      <div class="item-name">Name</div>
+      <div class="item-summary">Summary</div>
+      <div class="item-controls">
+        <a class="item-control item-create" data-action="createItem" title="Create Implant" data-type="implant"><i class="fas fa-plus"></i></a>
+      </div>
+    </li>
+    {{#each implants as |item id|}}
+    <li class="item flexrow" data-item-id="{{item._id}}" draggable="true">
+      <div class="item-name">
+        <div class="item-image" style="background-image: url({{item.img}})"></div>
+        <h4 class="implant-show" data-action="showImplant" data-item-id="{{item._id}}" style="cursor: pointer;">{{item.name}}</h4>
+      </div>
+      <div class="item-summary">{{item.system.summary}}</div>
+      {{> "systems/deathwatch/templates/actor/parts/item-controls.html"}}
+    </li>
+    {{/each}}
+  </ol>
+</div>
+
+<div class="cybernetics-section">
+  <h3 class="section-header">Cybernetics</h3>
+  <ol class="items-list cybernetics-list">
+    <li class="item flexrow items-header">
+      <div class="item-equipped"></div>
+      <div class="item-name">Name</div>
+      <div class="item-controls">
+        <a class="item-control item-create" data-action="createItem" title="Create Cybernetic" data-type="cybernetic"><i class="fas fa-plus"></i></a>
+      </div>
+    </li>
+    {{#each cybernetics as |item id|}}
+    <li class="item flexrow" data-item-id="{{item._id}}" draggable="true">
+      <div class="item-equipped">
+        {{#if item.system.equipped}}
+          <a class="item-control item-equip" data-action="toggleEquip" title="Unequip"><i class="fas fa-check"></i></a>
+        {{else}}
+          <a class="item-control item-equip" data-action="toggleEquip" title="Equip"><i class="far fa-square"></i></a>
+        {{/if}}
+      </div>
+      <div class="item-name">
+        <div class="item-image" style="background-image: url({{item.img}})"></div>
+        <h4>{{item.name}}</h4>
+      </div>
+      {{> "systems/deathwatch/templates/actor/parts/item-controls.html"}}
+    </li>
+    {{/each}}
+  </ol>
+</div>

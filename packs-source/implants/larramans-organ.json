@@ -1,0 +1,13 @@
+{
+  "name": "Larraman's Organ",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Prevents Blood Loss, grants True Grit",
+    "description": "<p>Space Marines do not normally suffer from Blood Loss (see page 260). In addition, the Space Marine gains the True Grit Talent. However, attacks with the Warp Weapon Quality (see page 136) may still inflict Blood Loss as normal.</p>",
+    "modifiers": []
+  }
+}

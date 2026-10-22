@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-arm0001",
+  "name": "Level 01",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Arm",
+    "description": "The attack throws the limb backwards, painfully jerking it away from the body, inflicting 1 level of Fatigue.",
+    "effects": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000111",
+  "name": "Ecstatic Oblivion",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/slaanesh.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "217",
+    "key": "ecstatic-oblivion",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 250,
+    "class": "Slaanesh",
+    "description": "<p><strong>Prerequisites:</strong> Mark of Slaanesh, Toughness 40+, Psy Rating 4</p><p><strong>Focus Power:</strong> Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The Sorcerer summons up every flickering moment of stray emotion he can find within the Immaterium, and draws them into himself, overwhelming his own senses and rendering him oblivious to the sensations of battle around him. Many sorcerers become addicted to the sensations they conjure, burning away their soul with warp-spawned ecstasy.</p><p>While this power remains in effect, the Sorcerer cannot be stunned or rendered unconscious, nor is he affected by fatigue. In addition, he is so addled by sensation that he can push his body far beyond its normal limits, gaining Unnatural Strength and Unnatural Agility at a value equal to half the Sorcerer's Psy Rating. However, he suffers a –20 penalty to all Perception Tests.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

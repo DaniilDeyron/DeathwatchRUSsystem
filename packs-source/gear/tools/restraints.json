@@ -1,0 +1,15 @@
+{
+  "_id": "restraints0000001",
+  "name": "Restraints",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/restraints.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "176",
+    "wt": 4,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Despite their designation, Kill-teams’ Mission objectives are far more varied than simple target elimination. Live capture may be the means to an end or the goal itself. Simple but effective, Deathwatch restraints size to most roughly human-shaped bodies and are strong enough to hold even a thrashing Ork.</p>"
+  }
+}

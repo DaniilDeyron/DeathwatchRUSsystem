@@ -1,0 +1,9 @@
+{{#if showPsyRating}}
+<div class="psy-rating-box">
+  <h4 class="box-title">Psy Rating</h4>
+  <div class="psy-rating-center" title="{{#if system.psyRating.modifiers.length}}Psy Rating&#10;&#10;Base: {{system.psyRating.base}}&#10;{{#each system.psyRating.modifiers}}{{this.name}}: {{numberFormat this.value decimals=0 sign=true}} ({{this.source}})&#10;{{/each}}Total: {{system.psyRating.value}}{{else}}Psy Rating{{/if}}">{{system.psyRating.value}}</div>
+  <div class="psy-rating-modifiers flexrow">
+    <input class="psy-rating-base" name="system.psyRating.base" type="text" value="{{system.psyRating.base}}" data-dtype="Number" placeholder="0" title="Base Psy Rating" />
+  </div>
+</div>
+{{/if}}

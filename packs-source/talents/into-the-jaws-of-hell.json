@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000137",
+  "name": "Into The Jaws of Hell",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "Iron Discipline",
+    "benefit": "Followers immune to Fear and Pinning while visible to character",
+    "description": "<p>The character inspires loyalty and devotion in his followers such that they would follow him into the warp vortices of the Maw or on a boarding action against xenos corsairs. <b>In personal combat, while visible to the character, the followers are immune to Fear and Pinning.</b></p>",
+    "cost": 1500,
+    "compendiumId": "tal00000000137",
+    "modifiers": [],
+    "rankRequired": 8
+  }
+}

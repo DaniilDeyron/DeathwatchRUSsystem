@@ -1,0 +1,18 @@
+{
+  "_id": "ct-bt-004",
+  "name": "Tabard (Chapter Heraldry)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 1,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Black Templars Chapter Trapping",
+    "description": "<p>Tabards may bear personal, Deathwatch, Chapter, or even Squad-specific heraldry. In other cases they are ornamental and without symbols of any kind. Black Templars in the Deathwatch typically wear tabards only from the waist to avoid marring the uniform intent of the Squad colouring, but less conforming individuals have been known to wear the full tabards most commonly seen back in their home Chapter.</p><p><strong>Effect:</strong> Add 1 to the character's effective Rank for determining Black Templar Solo Ability effectiveness, but subtract 1 from Squad Base Cohesion.</p>",
+    "modifiers": [],
+    "key": "black-templars-tabard-chapter-heraldry"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000001",
+  "name": "Bolter Assault",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "229",
+    "key": "bolter-assault",
+    "description": "<p>Space Marines are shock troops and excel at closing rapidly with the enemy, annihilating them in a storm of bolter fire. When the Battle-Brother calls a Bolter Assault, both he and those in Support Range may make an immediate Charge Move and a Standard Attack with a bolter, bolt pistol, or storm bolter (including variants of these weapons). Alternatively, they may use their Standard Attack to throw a grenade.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Kill-team can make Semi-Auto Bursts and Full-Auto Bursts instead of a Standard Attack with bolt weapons</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team in Support Range may Charge Move + Standard Attack with bolt weapons or throw a grenade",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Kill-team can make Semi-Auto Bursts and Full-Auto Bursts instead of a Standard Attack with bolt weapons"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 3,
+    "sustained": false,
+    "action": "free"
+  }
+}

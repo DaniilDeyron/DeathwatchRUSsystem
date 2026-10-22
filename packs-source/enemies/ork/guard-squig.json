@@ -1,0 +1,140 @@
+{
+  "_id": "enmyork000000010",
+  "name": "Guard Squig",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/ork/guard-squig.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 37 },
+      "bs": { "base": 0 },
+      "str": { "base": 38 },
+      "tg": { "base": 25 },
+      "ag": { "base": 35 },
+      "int": { "base": 12 },
+      "per": { "base": 32 },
+      "wil": { "base": 28 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 15, "max": 15, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true, "mastered": true },
+      "tracking": { "trained": true, "mastered": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Ork Kaptins have been breeding a form of Squig known as a Guard Squig, or Squig Hound to some. This creature has all the ferocity of an Attack Squig, but is bred to be utterly loyal to its master and to stay by his side and protect him at all costs. Squig Hounds can be almost affectionate with their keeper and tend to lie at his feet like a contented dog unless danger arises.</p><p><strong>Source:</strong> Rogue Trader: The Koronus Bestiary, p. 82</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eiork10000000001",
+      "_sourceId": "tal00000000091",
+      "name": "Furious Assault",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "WS 35",
+        "benefit": "Extra attack on All Out Attack hit",
+        "description": "<p>The character's speed and martial prowess allow him to land several blows where lesser combatants land one. <b>If the character successfully hits his target using the All Out Attack Action, he may spend his Reaction to make an additional attack using the same bonuses or penalties as the original attack.</b></p>",
+        "compendiumId": "tal00000000091",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork10000000002",
+      "name": "Guardian (Master Only)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Rogue Trader: The Koronus Bestiary",
+        "page": "82",
+        "prerequisite": "",
+        "benefit": "Protect master from attacks",
+        "description": "<p>The Guard Squig is utterly loyal to its master and will protect him at all costs. This talent only applies to the Squig's designated master.</p>",
+        "compendiumId": "",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork10000000003",
+      "_sourceId": "trt000000000004",
+      "name": "Bestial",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait is animalistic, tending to behave instinctively rather than rationally. No matter how high its Intelligence score is, it is still bestial. A creature with this trait never needs to make a Survival Test whilst in its natural habitat. Unless starving or desperate, a bestial creature must make a Willpower Test when frightened, startled or injured. On a failed test, the creature flees.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork10000000004",
+      "_sourceId": "trt000000000026",
+      "name": "Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has sharp claws, teeth, spines or some other natural weapon with which it can slice and dice its foes. It counts as being armed even when not wielding weapons. Its attacks deal 1d10 points of damage plus its Strength Bonus. The creature may make attacks with its Natural Weapons using its Weapon Skill, though it cannot parry with its natural weapons, nor can it be disarmed—unless, of course, you hack off its limbs! Natural weapons always count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork10000000005",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork10000000006",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+6",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A vicious bite from rows of razor-sharp teeth.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Guard Squig",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

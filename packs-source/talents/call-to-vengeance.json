@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000033",
+  "name": "Call to Vengenance",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "114",
+    "prerequisite": "Adeptus Astarted, Fel 40",
+    "benefit": "Full Action to regain Cohesion",
+    "description": "<p>When a Space Marine falls in battle, one of his Battle-Brothers may inspire those who remain to great deeds in revenge for their fallen comrade. When another member of the unit is killed or taken out of action, the Battle-Brother may take a Full Action and spend a Fate Point to call his remaining brothers to revenge the fallen. The character may raise his weapon in defiance and speak an oath of hatred, or recite one of the canticles of vengeance. No matter how it is embodied, his action restores the Battle-Brother and all those in Support Range of him to their starting Cohesion.</p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000033",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

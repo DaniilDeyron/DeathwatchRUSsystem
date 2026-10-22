@@ -1,0 +1,121 @@
+<div class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Battle Trauma Name" /></h1>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="mechanics">Mechanics</a>
+    <a class="item" data-tab="source">Source</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab" data-group="primary" data-tab="description">
+      {{#if editable}}
+      <prose-mirror name="system.description"
+                    value="{{source.description}}"
+                    document-uuid="{{item.uuid}}"
+                    style="height: 100%;">
+      </prose-mirror>
+      {{else}}
+      <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+        <div class="editor-content">{{{enriched.description}}}</div>
+      </div>
+      {{/if}}
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="mechanics">
+      <h3 class="section-header">Battle Trauma Mechanics</h3>
+
+      <div class="form-group">
+        <label>Trigger Type:</label>
+        <select name="system.triggerType">
+          <option value="always" {{#if (eq system.triggerType "always")}}selected{{/if}}>Always Active</option>
+          <option value="combat" {{#if (eq system.triggerType "combat")}}selected{{/if}}>During Combat</option>
+          <option value="righteousFury" {{#if (eq system.triggerType "righteousFury")}}selected{{/if}}>On Righteous Fury</option>
+          <option value="psychicPower" {{#if (eq system.triggerType "psychicPower")}}selected{{/if}}>When Using Psychic Powers</option>
+          <option value="fellowship" {{#if (eq system.triggerType "fellowship")}}selected{{/if}}>During Social Interaction</option>
+          <option value="willpowerTest" {{#if (eq system.triggerType "willpowerTest")}}selected{{/if}}>During Willpower Tests</option>
+        </select>
+        <p class="hint">When does this trauma trigger?</p>
+      </div>
+
+      <div class="form-group">
+        <label>Effect Type:</label>
+        <select name="system.effectType">
+          <option value="modifier" {{#if (eq system.effectType "modifier")}}selected{{/if}}>Stat/Skill Modifier</option>
+          <option value="behavior" {{#if (eq system.effectType "behavior")}}selected{{/if}}>Behavioral Requirement</option>
+          <option value="cohesion" {{#if (eq system.effectType "cohesion")}}selected{{/if}}>Cohesion Penalty</option>
+          <option value="custom" {{#if (eq system.effectType "custom")}}selected{{/if}}>Custom Effect (see description)</option>
+        </select>
+        <p class="hint">What kind of effect does this trauma have?</p>
+      </div>
+
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Modifier Value:</label>
+          <input type="number" name="system.modifier" value="{{system.modifier}}" placeholder="e.g., -10" />
+          <p class="hint">For modifier effect types</p>
+        </div>
+        <div class="flex1">
+          <label>Modifier Target:</label>
+          <input type="text" name="system.modifierTarget" value="{{system.modifierTarget}}" placeholder="e.g., wil, awareness" />
+          <p class="hint">Characteristic or skill to modify</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Cohesion Penalty:</label>
+        <input type="number" name="system.cohesionPenalty" value="{{system.cohesionPenalty}}" min="0" placeholder="0" />
+        <p class="hint">For cohesion effect type</p>
+      </div>
+
+      <hr/>
+
+      <h3 class="section-header">Resistance</h3>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="system.canResist" {{#if system.canResist}}checked{{/if}} />
+          Can Resist with Willpower Test
+        </label>
+        <p class="hint">Can the Battle-Brother resist this trauma's effects?</p>
+      </div>
+
+      <div class="form-group">
+        <label>Resist Difficulty:</label>
+        <select name="system.resistDifficulty">
+          <option value="easy" {{#if (eq system.resistDifficulty "easy")}}selected{{/if}}>Easy (+30)</option>
+          <option value="routine" {{#if (eq system.resistDifficulty "routine")}}selected{{/if}}>Routine (+20)</option>
+          <option value="ordinary" {{#if (eq system.resistDifficulty "ordinary")}}selected{{/if}}>Ordinary (+10)</option>
+          <option value="challenging" {{#if (eq system.resistDifficulty "challenging")}}selected{{/if}}>Challenging (+0)</option>
+          <option value="difficult" {{#if (eq system.resistDifficulty "difficult")}}selected{{/if}}>Difficult (-10)</option>
+          <option value="hard" {{#if (eq system.resistDifficulty "hard")}}selected{{/if}}>Hard (-20)</option>
+          <option value="veryHard" {{#if (eq system.resistDifficulty "veryHard")}}selected{{/if}}>Very Hard (-30)</option>
+        </select>
+        <p class="hint">Difficulty of the Willpower Test to resist</p>
+      </div>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="source">
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Book:</label>
+          <input type="text" name="system.book" value="{{system.book}}" placeholder="e.g., Core Rulebook" />
+        </div>
+        <div class="flex1">
+          <label>Page:</label>
+          <input type="text" name="system.page" value="{{system.page}}" placeholder="e.g., 217" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Item Key (for identification):</label>
+        <input type="text" name="system.key" value="{{system.key}}" placeholder="e.g., battle-rage" />
+        <p class="hint">Unique key for this trauma (used to prevent duplicates)</p>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000147",
+  "name": "Logis Implant",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "",
+    "benefit": "Tech-Use Test as Reaction for +10 WS and BS until end of next turn",
+    "description": "<p>The character's logis processors work with preternatural speed, filtering sensory input and allowing the character to analyse and anticipate the actions of those around him. <b>By using the character's Reaction for the Round, the character may make a Tech-Use Test to make use of this Talent. The character gains a +10 bonus to all Weapon Skill and Ballistic Skill Tests until the end of his next turn. The character must pass a Toughness Test when he uses this Talent or gain a level of Fatigue.</b></p>",
+    "compendiumId": "tal00000000147",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

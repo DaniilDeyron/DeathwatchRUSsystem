@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000138",
+  "name": "Iron Discipline",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "WIL 30, Command",
+    "benefit": "Reroll failed Willpower Tests",
+    "description": "<p>Iron sharpens iron. The character does not coddle his subordinates nor motivate them through kindness. The character’s stalwart example and stern leadership exhorts them with steel instead of spoils. If the character is visible to his followers, either in person or via vox- or pict-caster, they may <b>re-roll failed Willpower Tests made to resist Fear and Pinning</b>. Iron Discipline can affect a number of targets equal to the character’s Willpower Bonus, who must be under the character’s command. Player characters can benefit from Iron Discipline if the character with this Talent is the official group leader.</p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000138",
+    "modifiers": [],
+    "rankRequired": 4
+  }
+}

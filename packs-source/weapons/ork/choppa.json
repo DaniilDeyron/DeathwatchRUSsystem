@@ -1,0 +1,26 @@
+{
+  "_id": "ork0000000000003",
+  "name": "Choppa",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/ork-choppa.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "366",
+    "class": "Melee",
+    "dmg": "1d10+7",
+    "dmgType": "Rending",
+    "penetration": "2",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": true,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }, { "id": "unbalanced" }],
+    "attachedUpgrades": [],
+    "description": "<p>A brutal, heavy-bladed melee weapon wielded by Ork Boyz. Choppas are crude but effective, their jagged edges tearing through flesh and armour alike.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000041",
+  "name": "Counter Attack",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "WS 40",
+    "benefit": "Attack after successful Parry",
+    "description": "<p>The character's lightning ripostes are things of deadly beauty, swift and invisible as the wind. fter successfully Parrying an opponent's attack, the character may immediately make an attack against that opponent using the weapon with which he Parried as a Free Action. This attack suffers a <b>–20 penalty</b>.</p>",
+    "compendiumId": "tal00000000041",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

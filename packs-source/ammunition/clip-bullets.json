@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000010",
+  "name": "Bullets",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/bullets.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 30, "max": 30 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Hard rounds are common for many weapons within the Imperium and vary greatly in calibre and design. Bullets from one kind of firearm cannot be used in another unless they are very similar in make. Autoguns and autopistols can usually interchange rounds, but the calibrated bullets fired in terrible volleys from Astartes assault cannons are unique to that weapon.</p><p><b>Used With</b>: Autopistols, autoguns, and assault cannons.</p>"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "clip0000000006",
+  "name": "Plasma Flask",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-plasma.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 12, "max": 12 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Raw plasma weapon fuel consists of highly dangerous and volatile photonic hydrogen, compressed and precariously contained within reinforced flasks. It was almost surely a plasma flask whose handling rites were rushed that gave birth to the plasma grenade. </p><p>Used with: Plasma pistols, plasma guns, and plasma cannons.</p>"
+  }
+}

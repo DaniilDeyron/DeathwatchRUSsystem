@@ -1,0 +1,31 @@
+{
+  "_id": "smch00000000001",
+  "name": "Righteous Zeal",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "217",
+    "key": "righteous-zeal",
+    "description": "<p>The Black Templars are well known for their fanatical devotion to the Emperor and their burning hatred for psykers, witches, and warp spawn. Once per combat, a Battle-Brother of the Black Templars Chapter may call upon Righteous Zeal as a Free Action at the start of his Turn. While under the effects of the Righteous Zeal, Damage inflicted by the Battle-Brother's melee attacks against creatures with the Daemonic Trait is not reduced by Toughness Bonus. In addition, the Battle-Brother's own Toughness Bonus is increased by +4 when reducing Damage from attacks by creatures with the Daemonic Trait or Damage from Psychic Powers and weapons. Righteous Zeal lasts for a number of Rounds equal to the Battle-Brother's Rank.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>+10 to hit and +2 Damage on melee attacks against creatures with psychic abilities</td></tr><tr><td>5</td><td>Toughness Bonus increase rises to +8</td></tr><tr><td>7</td><td>Warp Weapons Trait no longer has any effect on the Battle-Brother</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Black Templars",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/black_templars.webp",
+    "effect": "Melee vs Daemonic ignores TB; own TB +4 vs Daemonic/Psychic attacks — Free Action, Rounds equal to Rank (once per combat)",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "+10 to hit and +2 Damage on melee attacks against creatures with psychic abilities"
+      },
+      { "rank": 5, "effect": "Toughness Bonus increase rises to +8" },
+      {
+        "rank": 7,
+        "effect": "Warp Weapons Trait no longer has any effect on the Battle-Brother"
+      }
+    ]
+  }
+}

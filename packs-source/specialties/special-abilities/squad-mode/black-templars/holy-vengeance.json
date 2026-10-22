@@ -1,0 +1,27 @@
+{
+  "_id": "sqch00000000001",
+  "name": "Holy Vengeance",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "222",
+    "key": "holy-vengeance",
+    "description": "<p>The holy fury of the Emperor lives in the hearts of all Black Templars, awaiting the time when it will be unleashed upon his foes. Until the start of his next Turn, whenever the Battle-Brother and those in Support Range of him make a successful Standard Attack with a melee weapon (whether or not Damage is inflicted) they may immediately make an additional Standard Attack with that same weapon, against the same foe, as a Free Action. If this blow also hits, then they may make an additional Standard Attack and so on, up to a total number of extra attacks equal to their Agility Bonus.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Summoning Holy Vengeance becomes a Free Action</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Black Templars",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/black_templars.webp",
+    "effect": "Until next Turn, successful melee Standard Attacks grant additional Standard Attacks (up to AG Bonus extra attacks)",
+    "improvements": [
+      { "rank": 4, "effect": "Summoning Holy Vengeance becomes a Free Action" }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": false,
+    "action": "half"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "bt-000000000000",
+  "name": "New Battle Trauma",
+  "type": "battle-trauma",
+  "img": "systems/deathwatch/assets/icons/battle-trauma.svg",
+  "system": {
+    "description": "<p>Description of the battle trauma and its effects.</p>",
+    "book": "Deathwatch Core Rulebook",
+    "page": "279",
+    "key": "new-battle-trauma",
+    "triggerType": "always",
+    "effectType": "behavior",
+    "modifier": 0,
+    "modifierTarget": "",
+    "cohesionPenalty": 0,
+    "canResist": false,
+    "resistDifficulty": "challenging"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_comment": "Battle Trauma Template - Trigger Types: always, combat, righteousFury, psychicPower, fellowship, willpowerTest. Effect Types: modifier, behavior, cohesion, custom. Resist Difficulty: easy, routine, ordinary, challenging, difficult, hard, veryHard."
+}

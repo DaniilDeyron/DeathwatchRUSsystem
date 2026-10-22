@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000256",
+  "name": "Technical Knock",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "127",
+    "prerequisite": "Intelligence 30",
+    "benefit": "Un-jam any gun as Half Action (one weapon per Round)",
+    "description": "<p>Either through the ease of long practice, or the proper ritual to appease a weapon's machine spirit, the character can clear stoppages with a simple knock. <b>The character may un-jam any gun as a Half Action, but may only perform this rite on one weapon per Round. The character must touch the weapon to enact this rite.</b></p>",
+    "compendiumId": "tal00000000256",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000003",
+  "name": "Enhance Healing",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "69",
+    "key": "enhance-healing",
+    "description": "<p>The Apothecary may restore 1d5 additional Wounds with any successful Medicae Test for First Aid (see page 102).</p>",
+    "specialty": "Apothecary",
+    "specialtyImg": "systems/deathwatch/icons/specialty/apothecary.webp"
+  }
+}

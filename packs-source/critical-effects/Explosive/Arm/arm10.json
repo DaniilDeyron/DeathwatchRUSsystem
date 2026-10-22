@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-arm0010",
+  "name": "Level 10",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Arm",
+    "description": "As above, except if the target is carrying any ammunition it explodes dealing 1d10+5 Impact Damage to anyone within 1d10 metres (this is in addition to Damage caused by exploding power weapons noted above). If the target is carrying any grenades or missiles, these too detonate on his person.",
+    "effects": []
+  }
+}

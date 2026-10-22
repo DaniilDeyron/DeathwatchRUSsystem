@@ -1,0 +1,14 @@
+{
+  "_id": "upgrade000000003",
+  "name": "Silencer",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "silencer",
+    "singleShotOnly": false,
+    "description": "<p>Silencers lower the noise from a weapon's discharge, preventing detection of the shot. Awareness Tests to hear shots made with a silenced weapon suffer an additional –20 penalty and can only be attempted at half the normal distance.</p><p><b>Upgrades:</b> Autogun, autopistol, needle sniper rifle.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "magboots000001",
+  "name": "Magboots",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/magboot.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "171",
+    "wt": 5,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "General",
+    "description": "<p>Astartes power armour can be upgraded to contain strong electromagnets built into the boot soles, allowing the wearer to adhere to metallic surfaces such as exterior hull plating. These magnets may be activated or de-activated at the beginning of the wearer's Turn. Magboots reduce Agility Bonus (recalculate Movement accordingly) by half when used, but otherwise allow normal movement in low- or zero- gravity areas provided there is a suitable surface to walk upon. Standalone versions of Magboots can be found outside the Adeptus Astartes</p>"
+  }
+}

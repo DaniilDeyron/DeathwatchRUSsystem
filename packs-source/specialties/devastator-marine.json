@@ -1,0 +1,124 @@
+{
+  "name": "Devastator Marine",
+  "type": "specialty",
+  "img": "systems/deathwatch/icons/specialty/devastatormarine.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "49",
+    "description": "<p>Devastator Marines are heavy weapons specialists who provide devastating fire support. They wield the Chapter's most powerful ranged weapons and excel at destroying enemy armor and fortifications.</p>",
+    "characteristicCosts": {
+      "ws": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "bs": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "str": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "tg": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "ag": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "int": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "per": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "wil": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "fs": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      }
+    },
+    "rankCosts": {
+      "1": {
+        "skills": {},
+        "talents": {
+          "tal00000000036": 500,
+          "tal00000000081": 500,
+          "tal00000000168": 500,
+          "tal00000000246": 500
+        }
+      },
+      "2": {
+        "skills": {},
+        "talents": {
+          "tal00000000037": 600,
+          "tal00000000042": 500,
+          "tal00000000045": 500,
+          "tal00000000049": 500,
+          "tal00000000139": 500
+        }
+      },
+      "3": {
+        "skills": {},
+        "talents": {
+          "tal00000000031": 800,
+          "tal00000000132": 500,
+          "tal00000000244": 1000,
+          "tal00000000255": 500
+        }
+      },
+      "4": {
+        "skills": {},
+        "talents": {
+          "tal00000000154": 500,
+          "tal00000000208": 200,
+          "tal00000000248": 500
+        }
+      },
+      "5": {
+        "skills": {},
+        "talents": {
+          "tal00000000116": 600,
+          "tal00000000239": 600,
+          "tal00000000244": 1000
+        }
+      },
+      "6": {
+        "skills": { "tech_use": { "costTrain": 500 } },
+        "talents": { "tal00000000207": 200, "tal00000000244": 1000 }
+      },
+      "7": {
+        "skills": { "tech_use": { "costMaster": 700 } },
+        "talents": { "tal00000000082": 1000, "tal00000000244": 1000 }
+      },
+      "8": {
+        "skills": { "tech_use": { "costExpert": 800 } },
+        "talents": { "tal00000000244": 800, "tal00000000252": 700 }
+      }
+    }
+  }
+}

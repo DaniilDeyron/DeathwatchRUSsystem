@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000005",
+  "name": "Squad Advance",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "221",
+    "key": "squad-advance",
+    "description": "<p>Kill-teams move with a deadly precision across the battlefield, covering each other as they advance and crossing ground swiftly from cover to cover. While this ability is in effect, the Kill-team may use their Reactions to make a Tactical Advance.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Calling for a Squad Advance becomes a Free Action</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team may use Reactions to make a Tactical Advance",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "Calling for a Squad Advance becomes a Free Action"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 1,
+    "sustained": true,
+    "action": "half"
+  }
+}

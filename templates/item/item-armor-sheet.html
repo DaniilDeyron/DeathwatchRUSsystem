@@ -1,0 +1,156 @@
+{{!-- This template is a fallback for when items don't have more specific templates. --}}
+{{!-- Generally, you'll want to make more specific templates when possible. --}}
+<div class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="modifiers">Modifiers</a>
+        <a class="item" data-tab="source">Source</a>
+  </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{#if editable}}
+            <prose-mirror name="system.description"
+                          value="{{source.description}}"
+                          document-uuid="{{item.uuid}}"
+                          style="height: 100%;">
+            </prose-mirror>
+            {{else}}
+            <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+              <div class="editor-content">{{{enriched.description}}}</div>
+            </div>
+            {{/if}}
+        </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <div class="grid grid-3col">
+                <div class="resource">
+                    <label class="resource-label">Head</label>
+                    <input type="number" name="system.head" value="{{system.head}}" data-dtype="Number" min="0" />
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Body</label>
+                    <input type="number" name="system.body" value="{{system.body}}" data-dtype="Number" min="0" />
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Left Arm</label>
+                    <input type="number" name="system.left_arm" value="{{system.left_arm}}" data-dtype="Number" min="0" />
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Right Arm</label>
+                    <input type="number" name="system.right_arm" value="{{system.right_arm}}" data-dtype="Number" min="0" />
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Left Leg</label>
+                    <input type="number" name="system.left_leg" value="{{system.left_leg}}" data-dtype="Number" min="0" />
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Right Leg</label>
+                    <input type="number" name="system.right_leg" value="{{system.right_leg}}" data-dtype="Number" min="0" />
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Requisition</label>
+                    <input type="number" name="system.req" value="{{system.req}}" data-dtype="Number" min="0" />
+                </div>
+                <div class="resource">
+                    <label class="resource-label">Renown</label>
+                    <input type="text" name="system.renown" value="{{system.renown}}" />
+                </div>
+            </div>
+            
+            <h3>Effects</h3>
+            {{#if system.armorEffects.length}}
+            <table class="armor-effects-table">
+                <thead>
+                    <tr>
+                        <th class="armor-effects-name">Effect</th>
+                        <th class="armor-effects-desc">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each system.armorEffects}}
+                    <tr>
+                        <td class="armor-effects-name">{{this.name}}</td>
+                        <td class="armor-effects-desc">
+                            <ul>
+                                {{#each this.points}}
+                                <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            {{else}}
+            <div class="resource">
+                <label class="resource-label">Special Effects</label>
+                <textarea name="system.effects" rows="3" style="width: 100%;">{{system.effects}}</textarea>
+            </div>
+            {{/if}}
+            <h3>Histories</h3>
+            <div class="histories-list">
+                {{#each system.attachedHistories}}
+                <div class="history-item" style="display: flex; align-items: center; margin-bottom: 5px; padding: 5px; border: 1px solid #999;">
+                    <img src="{{this.img}}" style="width: 30px; height: 30px; margin-right: 10px;" />
+                    <span style="flex: 1;">{{this.name}}</span>
+                    <a class="history-remove" data-action="removeHistory" data-history-id="{{this._id}}" title="Remove History"><i class="fas fa-times"></i></a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        {{!-- Modifiers Tab --}}
+        <div class="tab" data-group="primary" data-tab="modifiers">
+            <h3 class="section-header">Modifiers</h3>
+            <ol class="items-list modifiers-list">
+                <li class="item flexrow items-header">
+                    <div class="item-name">Name</div>
+                    <div class="item-modifier">Modifier</div>
+                    <div class="item-effect-type">Effect Type</div>
+                    <div class="item-controls">
+                        <a class="item-control modifier-create" data-action="createModifier" title="Create Modifier"><i class="fas fa-plus"></i></a>
+                    </div>
+                </li>
+                {{#each system.modifiers as |modifier id|}}
+                <li class="item flexrow modifier" data-modifier-id="{{modifier._id}}">
+                    <div class="item-name">{{modifier.name}}</div>
+                    <div class="item-modifier">{{modifier.modifier}}</div>
+                    <div class="item-effect-type">{{modifier.effectType}}</div>
+                    <div class="item-controls">
+                        <a class="item-control modifier-toggle" data-action="toggleModifier" title="{{#if modifier.enabled}}Disable{{else}}Enable{{/if}}"><i class="fas {{#if modifier.enabled}}fa-check{{else}}fa-times{{/if}}"></i></a>
+                        <a class="item-control modifier-edit" data-action="editModifier" title="Edit Modifier"><i class="fas fa-edit"></i></a>
+                        <a class="item-control modifier-delete" data-action="deleteModifier" title="Delete Modifier"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+    <div class="tab" data-group="primary" data-tab="source">
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Book:</label>
+          <input type="text" name="system.book" value="{{system.book}}" />
+        </div>
+        <div class="flex1">
+          <label>Page:</label>
+          <input type="text" name="system.page" value="{{system.page}}" />
+        </div>
+      </div>
+    </div>
+
+    </section>
+</div>

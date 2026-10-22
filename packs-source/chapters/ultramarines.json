@@ -1,0 +1,92 @@
+{
+  "name": "Ultramarines",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/ultramarines.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "53",
+    "description": "<p>The Ultramarines are the most renowned and disciplined Space Marine Chapter. Descended from their Primarch, Roboute Guilliman, they are the exemplars of the Codex Astartes.</p><p>Hailing from the realm of Ultramar, they are known for their strategic flexibility, strict organization, and balanced approach to warfare—equally capable in ranged combat, close assault, and large-scale battlefield command.</p>",
+    "skillCosts": {
+      "charm": { "costTrain": 400, "costMaster": 400, "costExpert": 400 },
+      "command": { "costTrain": 400, "costMaster": 400, "costExpert": 400 },
+      "performer_dancer": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "performer_musician": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "performer_singer": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "performer_storyteller": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "tactics_air_combat": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      },
+      "tactics_armoured": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      },
+      "tactics_assault_doctrine": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      },
+      "tactics_defensive_doctrine": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      },
+      "tactics_orbital_drop": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      },
+      "tactics_recon_and_stealth": {
+        "costTrain": 400,
+        "costMaster": 400,
+        "costExpert": 400
+      }
+    },
+    "talentCosts": {
+      "tal00000000055": 800,
+      "tal00000000080": 800,
+      "tal00000000092": 800,
+      "tal00000000119": 500,
+      "tal00000000172": 500,
+      "tal00000000254": 500
+    },
+    "modifiers": [],
+    "curseName": "Pride of Ultramar",
+    "curseDescription": "<p>Battle-Brothers of the Ultramarines Chapter know well their place among the Adeptus Astartes and the importance of their Chapter to both the Imperium and the Emperor. They have the pride in knowing that theirs is the pinnacle of the Codex Astartes and the legacy of the loyalist legions which served the Emperor in his darkest days. It is a pride, however, that can sometimes blind them to reality and make them arrogant and uncooperative when the battle would dictate they work with lesser warriors.</p>",
+    "curseLevel1Name": "The Emperor's Finest",
+    "curseLevel1Description": "<p>Ultramarines consider themselves the Emperor's favoured sons and the pride of the Imperium. This can lead members of the Chapter to consider others incapable or unable to complete missions that should by rights fall to the Ultramarines. The Battle-Brother always volunteers his Kill-team for the most dangerous or challenging Missions whenever possible and always ensures his team is where the fighting is the thickest.</p>",
+    "curseLevel1Effect": "custom",
+    "curseLevel1Modifier": 0,
+    "curseLevel1Target": "",
+    "curseLevel2Name": "Sons of the Codex",
+    "curseLevel2Description": "<p>The Battle-Brother has been trained to follow the Codex Astartes to the letter and interpret its teachings flawlessly. Understandably, he is distrustful of those Chapters that do not adhere to the Codex. The Battle-Brother cannot benefit from Squad Mode Actions called by Space Marines of the Space Wolves or Black Templars Chapters, as he will simply not follow their orders.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Leaders not Followers",
+    "curseLevel3Description": "<p>Ultramarines are natural leaders and make excellent battlefield commanders at all levels of command. This pride and training, however, can lead to them scorning or disregarding the leadership of those from other Chapters or Imperial forces. Unless the Battle Brother is currently the Kill-team squad leader (see page 228) or the leader is a fellow Ultramarine, his Kill-team's <strong>Cohesion is reduced by 2</strong>.</p>",
+    "curseLevel3Effect": "cohesionPenalty",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 2
+  }
+}

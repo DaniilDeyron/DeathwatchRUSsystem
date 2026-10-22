@@ -1,0 +1,31 @@
+{
+  "_id": "smch00000000006",
+  "name": "Favoured Son",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "218",
+    "key": "favoured-son",
+    "description": "<p>The Ultramarines consider themselves a pure expression of the Codex Astartes and among the truest of the Emperor's sons. This pride and unshakable personal belief often manifests itself in their leadership abilities and the example they set to other members of the Adeptus Astartes. While in Solo Mode, a Battle-Brother of the Ultramarines Chapter may re-roll any Fellowship Tests when dealing with either Space Marines or members of the Imperial armed forces (i.e. Imperial Guard, Imperial Navy, etc.).</p><p>In addition, their strength of leadership means that the Battle-Brother adds +1 to the Kill-team's Cohesion if he is the squad leader. This bonus to Cohesion remains active even when the Battle-Brother is not in Solo Mode.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Once per combat, automatically pass one Command Skill Test</td></tr><tr><td>5</td><td>Dispositions of all Imperial forces and agents improved by one step</td></tr><tr><td>7</td><td>Cohesion bonus increases to +2 instead of +1</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Ultramarines",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/ultramarines.webp",
+    "effect": "Re-roll Fellowship Tests with Space Marines and Imperial armed forces; +1 Cohesion as squad leader (passive while in Solo Mode)",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "Once per combat, automatically pass one Command Skill Test"
+      },
+      {
+        "rank": 5,
+        "effect": "Dispositions of all Imperial forces and agents improved by one step"
+      },
+      { "rank": 7, "effect": "Cohesion bonus increases to +2 instead of +1" }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "clip00000000015",
+  "name": "Metal Storm Rounds",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-bolter.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "159",
+    "capacity": { "value": 12, "max": 12 },
+    "quantity": 1,
+    "req": 20,
+    "renown": "",
+    "description": "<p>Metal storm rounds are tipped with proximity triggers, causing them to detonate sooner than standard bolt shells and release their payload of explosive frag before fully penetrating the target. When employed in a bolter with a high rate of fire, they can decimate groups of lightly armoured enemies.</p><p><b>Effects</b>: The weapon's Damage and Penetration are each reduced by 2, but it gains the Blast (2) Quality.</p><p><b>Used With</b>: All bolt weapons.</p>",
+    "modifiers": [
+      {
+        "_id": "800494f7b32b1151",
+        "name": "Metal Storm Damage Reduction",
+        "modifier": "-2",
+        "type": "equipment",
+        "effectType": "weapon-damage",
+        "enabled": true
+      },
+      {
+        "_id": "0502a509b432275a",
+        "name": "Metal Storm Penetration Reduction",
+        "modifier": "-2",
+        "type": "equipment",
+        "effectType": "weapon-penetration-modifier",
+        "enabled": true
+      },
+      {
+        "_id": "f50583a28004bf4e",
+        "name": "Metal Storm Blast",
+        "modifier": "2",
+        "type": "equipment",
+        "effectType": "weapon-blast",
+        "enabled": true
+      }
+    ]
+  }
+}

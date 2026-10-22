@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000024",
+  "name": "Grenades",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-grenades.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "capacity": { "value": 3, "max": 3 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>A supply of grenades carried by the Battle-Brother. Each grenade weapon draws from this shared pool when thrown. Adjust the capacity to match the number of grenades carried.</p>"
+  }
+}

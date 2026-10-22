@@ -1,0 +1,20 @@
+{
+  "_id": "armor00000000005",
+  "name": "Flak Armour",
+  "type": "armor",
+  "img": "systems/deathwatch/icons/armor/flak.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "166",
+    "head": 4,
+    "body": 4,
+    "left_arm": 4,
+    "right_arm": 4,
+    "left_leg": 4,
+    "right_leg": 4,
+    "req": 0,
+    "renown": "",
+    "attachedHistories": [],
+    "description": "<p>Relatively lightweight and cheap to produce, flak armour is one of the most common types of armour in the galaxy. It can be found protecting countless human factions and xenos species. It is also standard issue to the millions of Imperial Guard adding their names to the memorial of the fallen on Karlack. Many layers of ablative and impact absorbent material go into making each suit, enough to deflect or negate most low-level attacks such as small arms, shrapnel, and proximity blasts. A great many foes in the Jericho Reach have dreaded weapons powerful enough to completely negate flak armour, but a guardsman who discovers the dark terrors absent from his Primer usually doesn’t live long enough to tell others. As long as the wearer is not on the target spot of the blast, <b>Flak armour counts as AP 5 against weapons with the Blast Quality</b>.</p>"
+  }
+}

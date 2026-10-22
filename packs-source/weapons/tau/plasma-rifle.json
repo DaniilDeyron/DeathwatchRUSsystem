@@ -1,0 +1,25 @@
+{
+  "_id": "tau000000001",
+  "name": "Plasma Rifle",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-plasmarifle.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Basic",
+    "dmg": "2d10+9",
+    "dmgType": "Energy",
+    "penetration": "10",
+    "range": "90",
+    "rof": "S/2/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }],
+    "description": "<p>Tau Plasma Rifle</p>",
+    "modifiers": []
+  }
+}

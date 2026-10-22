@@ -1,0 +1,25 @@
+{
+  "name": "Deathwatch Suspensor",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "deathwatch-suspensor",
+    "singleShotOnly": false,
+    "req": 25,
+    "renown": "",
+    "wt": 0,
+    "description": "<p>The anti-grav plates and studs of suspensors attach to a weapon or equipment, making it easier to use by offsetting some of the weight. Suspensors reduce the weight of a weapon by half, allowing Heavy weapons to be deployed in a wider range of situations.</p><p>When firing a weapon with suspensors, the operator counts as having the Auto-stabilised Trait—meaning he always counts as braced and may fire the weapon on semi- or full-automatic as a Half Action and never suffers penalties for moving and firing.</p><p><strong>Upgrades:</strong> Any Heavy ranged weapon</p>",
+    "modifiers": [
+      {
+        "_id": "e73af67b1857a2a5",
+        "name": "Deathwatch Suspensor",
+        "modifier": "x0.5",
+        "type": "equipment",
+        "effectType": "weapon-weight",
+        "enabled": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000053",
+  "name": "Dual Shot",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "AG 40, Two-Weapon Wielder",
+    "benefit": "One BS hits target twice",
+    "description": "<p>The character's skill with guns is such that he can target two shots on exactly the same point. <b>When armed with two pistols, the character may fire both simultaneously as a Full Action.</b> A single Ballistic Skill Test is made, and if successful, the character hits his target with both shots. As the character is firing both guns as a single attack, he may take an Aim Action before firing to get a +10 or +20 bonus to the BS Test, and a red-dot laser sight mounted on any one of the weapons provides its +10 bonus. <b>The character does not suffer from the normal –20 Ballistic Skill penalty for wielding two weapons.</b> If the attack hits, the target's armour gets applied as normal to both hits individually, but Toughness only counts once against the combined damage rolls of both hits. A single successful Dodge Test from the target avoids both shots.</p>",
+    "compendiumId": "tal00000000053",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

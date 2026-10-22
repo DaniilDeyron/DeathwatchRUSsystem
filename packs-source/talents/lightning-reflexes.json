@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000146",
+  "name": "Lightning Reflexes",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "",
+    "benefit": "Add twice Agility Bonus to Initiative",
+    "description": "<p>The character always expects trouble, even in the most innocuous situations, allowing him to act quickly when needed. <b>Add twice the character's Agility Bonus when rolling for Initiative. If the character has Unnatural Agility, then add one to the multiplier before factoring the bonus into the character's Initiative roll.</b></p>",
+    "compendiumId": "tal00000000146",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

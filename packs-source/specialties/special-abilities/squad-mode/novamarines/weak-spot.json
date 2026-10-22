@@ -1,0 +1,34 @@
+{
+  "_id": "sqch00000000015",
+  "name": "Weak Spot",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Honnour The Chapter",
+    "page": "80",
+    "key": "weak-spot",
+    "description": "<p>Novamarines can use their extensive knowledge of foes to predict weak spots in their armour or venerable places on their hides. This information comes in handy when facing foes for the first time with little or no actual experience in combat against them and only instinct and training to guide the way. The Battle-Brother and members of his squad within Support Range of him increase the bonus for Ganging Up by +10 and decrease the penalty for Called Shots by –10. In addition, Critical Damage inflicted by the Battle-Brother when making a Called Shot is increased by +2 after all other factors. If the Battle-Brother makes a Called Shot while Ganging Up on a foe he will receive both the bonus to his Weapon Skill and a reduction in the Called Shot penalty.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Battle-Brother suffers no penalty when making Called Shots</td></tr><tr><td>7</td><td>Battle-Brother increases the bonus Critical Damage from a Called Shot to +3</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Novamarines",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/novamarines.webp",
+    "effect": "Kill-team in Support Range gains +10 Ganging Up bonus, –10 Called Shot penalty; Battle-Brother gains +2 Critical Damage on Called Shots",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Battle-Brother suffers no penalty when making Called Shots"
+      },
+      {
+        "rank": 7,
+        "effect": "Battle-Brother increases the bonus Critical Damage from a Called Shot to +3"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "half"
+  }
+}

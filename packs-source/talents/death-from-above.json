@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000046",
+  "name": "Death From Above",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "Adeptus Astartes, Pilot (Personal)",
+    "benefit": "Extra damage on jump pack charge",
+    "description": "<p>A Space Marine descending into battle on trails of fire is a true angel of death come to bring ruin and ending on all who stand in his way. <b>When the Battle-Brother makes a Charge Action using a jump pack, his melee attack deals an extra d10 Damage for every two Degrees of Success, to a maximum bonus of 2d10.</b></p>",
+    "compendiumId": "tal00000000046",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

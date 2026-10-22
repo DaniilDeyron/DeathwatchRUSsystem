@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000014",
+  "name": "Strength of Iron",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "First Founding",
+    "page": "12",
+    "key": "strength-of-iron",
+    "description": "<p>The cold fury of the Iron Hands Space Marine Chapter makes them exceptionally good at holding ground, particularly in the face of enemy fire. The Battle-Brother and those in Support Range of him gain a +10 bonus to resist Fear and Cohesion Damage and add +2 to their Toughness Bonus when reducing Damage from ranged attacks.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Bonus to resist Fear and Cohesion Damage increases to +20, and additional Toughness Bonus increases to +4</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Iron Hands",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/iron_hands.webp",
+    "effect": "Kill-team in Support Range gains +10 to resist Fear and Cohesion Damage, +2 TB vs ranged damage",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Bonus to resist Fear and Cohesion Damage increases to +20, and additional Toughness Bonus increases to +4"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": false,
+    "action": "half"
+  }
+}

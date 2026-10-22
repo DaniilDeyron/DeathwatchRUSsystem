@@ -1,0 +1,14 @@
+{
+  "_id": "rending-arm0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Arm",
+    "description": "The shredding attack sends the target screaming in pain. He takes 2 levels of Fatigue and drops whatever was held in that hand.",
+    "effects": []
+  }
+}

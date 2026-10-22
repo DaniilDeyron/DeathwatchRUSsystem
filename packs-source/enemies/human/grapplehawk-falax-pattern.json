@@ -1,0 +1,195 @@
+{
+  "_id": "enmyhuman0000006",
+  "name": "Grapplehawk (Falax-Pattern)",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/human/grapplehawk-falax-pattern.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 40 },
+      "bs": { "base": 0 },
+      "str": { "base": 35 },
+      "tg": { "base": 35 },
+      "ag": { "base": 48 },
+      "int": { "base": 18 },
+      "per": { "base": 40 },
+      "wil": { "base": 30 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 8, "max": 8, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "mastered": true },
+      "dodge": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>One of the more unusual servitor types, the grapplehawk is a large cyber-converted avian creature used to hunt and capture or kill human and animal prey. They are armoured, fitted with enhanced sensory equipment and grav-assisted flight systems. The Thulian Magos are known to favour this kind of construct both as scouts in the field and aggressive sample \"gatherers,\" and also have been known to sell examples to various Rogue Traders and Outlander nobles in return for their cooperation and support.</p><p><strong>Special:</strong> Inbuilt grappling units allow it to lift stunned prey as if it had Unnatural Strength (×2), although its speed will significantly decrease based on its load.</p><p><strong>Gear:</strong> Inbuilt vox and cogitator, Auspex</p><p><strong>Source:</strong> Rogue Trader Core Rulebook, p. 374</p>",
+    "classification": "human"
+  },
+  "items": [
+    {
+      "_id": "eihuman060000001",
+      "_sourceId": "tal00000000002",
+      "name": "Fearless",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "118",
+        "prerequisite": "",
+        "benefit": "Immune to Fear and Pinning",
+        "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+        "compendiumId": "tal00000000002",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman060000002",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "WS 35",
+        "benefit": "Make two melee attacks",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman060000003",
+      "_sourceId": "trt000000000002",
+      "name": "Armour Plating",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature is encased in armour plating, increasing its Armour Points by 2 to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "armour-plating-mod",
+            "name": "Armour Plating",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman060000004",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman060000005",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (20)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman060000006",
+      "_sourceId": "trt000000000022",
+      "name": "Machine (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>A creature with the Machine trait is fashioned from inorganic materials and is generally more rigourous than fleshy folks. Machines do not breathe, are immune to the effects of a vacuum, extremes of cold, any mind-influencing psychic effect, and their Armour Points apply toward fire damage. Machines are also resilient to injury, having 1 to 5 Armour Points for each location. This number is indicated next to the trait.</p>",
+        "modifiers": [
+          {
+            "_id": "machine-armour-mod",
+            "name": "Machine",
+            "modifier": "4",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman060000007",
+      "_sourceId": "trt000000000058",
+      "name": "Size (Scrawny)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Scrawny. Enemies suffer –10 to hit it, and it gains +10 to Concealment. Its base movement is Agility Bonus –1.</p>",
+        "modifiers": [
+          {
+            "_id": "a9d0fcc70f20095c",
+            "name": "Size (Scrawny)",
+            "modifier": -1,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "f0f438d4b5f222ea",
+            "name": "Size (Scrawny)",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman060000008",
+      "name": "Shock-pulse Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+3",
+        "dmgType": "Energy",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "shocking" }],
+        "attachedUpgrades": [],
+        "description": "<p>Electrified cybernetic talons that deliver a powerful electrical shock on contact, capable of stunning and incapacitating prey.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Grapplehawk (Falax-Pattern)",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

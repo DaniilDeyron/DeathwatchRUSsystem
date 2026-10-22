@@ -1,0 +1,59 @@
+{
+  "_id": "clip00000000002",
+  "name": "Hellfire Rounds",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-hellfire.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "159",
+    "capacity": { "value": 12, "max": 12 },
+    "quantity": 1,
+    "req": 25,
+    "renown": "",
+    "description": "<p>Originally designed to combat the Tyranid threat, hellfire rounds have a devastating effect on organic matter. Their cores are replaced with vials of mutagenic acid that eats through any living material with horrific speed.</p><p><b>Effects</b>: The weapon ignores Natural Armour and may inflict Righteous Fury on any damage die results of a 9 or 10. In addition, the weapon gains the Tearing Quality (if it did not already possess it). When used in a Heavy Bolter, it changes the weapon’s ROF to S/–/– and adds the Blast (3) Quality. When used against a Horde, Hellfire Rounds add one additional point of damage to the Horde’s Magnitude per hit.</p><p><b>Used With</b>: All bolt weapons.</p>",
+    "modifiers": [
+      {
+        "_id": "dd8881d7ee566632",
+        "name": "Hellfire Heavy Bolter RoF",
+        "modifier": "S/-/-",
+        "type": "equipment",
+        "effectType": "weapon-rof",
+        "weaponClass": "heavy",
+        "enabled": true
+      },
+      {
+        "_id": "908f84b8b2d2acf1",
+        "name": "Hellfire Righteous Fury",
+        "modifier": "9",
+        "type": "equipment",
+        "effectType": "righteous-fury-threshold",
+        "enabled": true
+      },
+      {
+        "_id": "125a5de309d8e4f7",
+        "name": "Hellfire Blast",
+        "modifier": "3",
+        "type": "equipment",
+        "effectType": "weapon-blast",
+        "weaponClass": "heavy",
+        "enabled": true
+      },
+      {
+        "_id": "70f1fc2ab17dc577",
+        "name": "Hellfire Anti-Horde",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "magnitude-bonus-damage",
+        "enabled": true
+      },
+      {
+        "_id": "2d5f14c41251dd43",
+        "name": "Hellfire Ignores Natural Armour",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "ignores-natural-armour",
+        "enabled": true
+      }
+    ]
+  }
+}

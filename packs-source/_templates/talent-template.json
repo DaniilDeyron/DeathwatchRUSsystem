@@ -1,0 +1,13 @@
+{
+  "name": "Talent Name",
+  "type": "talent",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "prerequisite": "",
+    "benefit": "",
+    "book": "",
+    "page": "",
+    "description": "<p>Full description of the talent and its effects.</p>",
+    "modifiers": []
+  }
+}

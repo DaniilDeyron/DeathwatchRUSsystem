@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000007",
+  "name": "Brutal Charge",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>A creature with this trait deals an extra 3 points of damage when it charges in the same round. A horde with this trait does an additional 1d10 damage when it charges in the same round.</p>",
+    "modifiers": []
+  }
+}

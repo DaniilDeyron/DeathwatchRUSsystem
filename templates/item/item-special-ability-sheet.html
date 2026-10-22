@@ -1,0 +1,195 @@
+<div class="{{cssClass}} special-ability-sheet" autocomplete="off">
+  <!-- Background Image Layer -->
+  <div class="ability-background" style="background-image: url('{{item.img}}');"></div>
+  <div class="ability-overlay"></div>
+
+  <!-- Header Section -->
+  <header class="ability-header">
+      <div class="corner-frame corner-tl"></div>
+      <div class="corner-frame corner-tr"></div>
+      <div class="corner-frame corner-bl"></div>
+      <div class="corner-frame corner-br"></div>
+
+      <div class="header-content">
+  <!-- Left: Item Icon with Mode-Based Glow -->
+  <div class="ability-icon-frame">
+    <img src="{{item.img}}" alt="{{item.name}}" class="ability-icon" />
+    <div class="icon-glow glow-{{glowColor}}"></div>
+  </div>
+
+  <!-- Center: Title Input + Badge Row -->
+  <div class="ability-title-wrapper">
+    <label class="field-label">Ability Designation</label>
+    <input name="name" type="text" value="{{item.name}}" placeholder="Enter ability name" class="ability-name-input" />
+
+    <!-- Badge Row (only shown when values present) -->
+    <div class="badge-row">
+      {{#if system.modeRequirement}}
+        <div class="header-badge badge-mode" data-action="toggleBadgeDropdown" data-field="modeRequirement">
+          {{system.modeRequirement}}
+        </div>
+      {{/if}}
+      {{#if system.abilityCategory}}
+        <div class="header-badge badge-category" data-action="toggleBadgeDropdown" data-field="abilityCategory">
+          {{system.abilityCategory}}
+        </div>
+      {{/if}}
+      {{#if system.abilityType}}
+        <div class="header-badge badge-type" data-action="toggleBadgeDropdown" data-field="abilityType">
+          {{system.abilityType}}
+        </div>
+      {{/if}}
+    </div>
+  </div>
+
+  <!-- Right: Chapter + Specialty Badges -->
+  <div class="badges-container">
+    {{#if system.chapterImg}}
+      <div class="chapter-badge">
+        <img src="{{system.chapterImg}}" alt="Chapter" class="chapter-icon" />
+      </div>
+    {{/if}}
+    {{#if system.specialtyImg}}
+      <div class="specialty-badge">
+        <img src="{{system.specialtyImg}}" alt="Specialty" class="specialty-icon" />
+      </div>
+    {{/if}}
+  </div>
+</div>
+    </header>
+
+    <!-- Tabs Navigation -->
+    <nav class="sheet-tabs tabs ability-tabs" data-group="primary">
+  <a class="item tab-item" data-tab="description">
+    <span class="tab-icon">📜</span>
+    <span class="tab-text">Description</span>
+  </a>
+  <a class="item tab-item" data-tab="attributes">
+    <span class="tab-icon">⚡</span>
+    <span class="tab-text">Attributes</span>
+  </a>
+  <a class="item tab-item" data-tab="requirements">
+    <span class="tab-icon">🎖️</span>
+    <span class="tab-text">Requirements</span>
+  </a>
+  <a class="item tab-item" data-tab="source">
+    <span class="tab-icon">📖</span>
+    <span class="tab-text">Source</span>
+  </a>
+</nav>
+
+    <!-- Tab Content -->
+    <section class="sheet-body ability-body">
+      <div class="tab" data-group="primary" data-tab="description">
+        <div class="tab-content-frame">
+          {{#if editable}}
+          <prose-mirror name="system.description"
+                        value="{{source.description}}"
+                        document-uuid="{{item.uuid}}"
+                        class="ability-editor">
+          </prose-mirror>
+          {{else}}
+          <div class="ability-description-view">
+            <div class="description-content">{{{enriched.description}}}</div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class="tab" data-group="primary" data-tab="attributes">
+  <div class="tab-content-frame">
+    <div class="stats-grid">
+      <!-- Action (Primary) -->
+      <div class="stat-group stat-primary">
+        <label class="stat-label">
+          <span class="label-icon">⚡</span>
+          <span class="label-text">Action</span>
+        </label>
+        <select name="system.action" class="stat-input">
+          <option value="" {{#unless system.action}}selected{{/unless}}>—</option>
+          <option value="free" {{#if (eq system.action "free")}}selected{{/if}}>Free Action</option>
+          <option value="half" {{#if (eq system.action "half")}}selected{{/if}}>Half Action</option>
+          <option value="full" {{#if (eq system.action "full")}}selected{{/if}}>Full Action</option>
+          <option value="reaction" {{#if (eq system.action "reaction")}}selected{{/if}}>Reaction</option>
+        </select>
+      </div>
+
+      <!-- Cohesion Cost (Primary) -->
+      <div class="stat-group stat-primary">
+        <label class="stat-label">
+          <span class="label-icon">💎</span>
+          <span class="label-text">Cohesion Cost</span>
+        </label>
+        <input type="number" name="system.cohesionCost" value="{{system.cohesionCost}}" min="0" data-dtype="Number" class="stat-input stat-input-number" />
+      </div>
+
+      <!-- Sustained (Secondary) -->
+      <div class="stat-group stat-secondary">
+        <label class="stat-label">
+          <span class="label-icon">♾️</span>
+          <span class="label-text">Sustained</span>
+        </label>
+        <input type="checkbox" name="system.sustained" {{#if system.sustained}}checked{{/if}} class="stat-checkbox" />
+      </div>
+
+      <!-- Effect (Highlight - red) -->
+      <div class="stat-group stat-highlight">
+        <label class="stat-label">
+          <span class="label-icon">💬</span>
+          <span class="label-text">Effect (Chat Summary)</span>
+        </label>
+        <input type="text" name="system.effect" value="{{system.effect}}" placeholder="Displayed in chat messages" class="stat-input" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab" data-group="primary" data-tab="requirements">
+  <div class="tab-content-frame">
+    <div class="stats-grid">
+      <!-- Required Rank (Secondary) -->
+      <div class="stat-group stat-secondary">
+        <label class="stat-label">
+          <span class="label-icon">⭐</span>
+          <span class="label-text">Required Rank</span>
+        </label>
+        <input type="number" name="system.requiredRank" value="{{system.requiredRank}}" min="0" max="8" data-dtype="Number" class="stat-input stat-input-number" />
+      </div>
+
+      <!-- Specialty (Secondary) -->
+      <div class="stat-group stat-secondary">
+        <label class="stat-label">
+          <span class="label-icon">🎯</span>
+          <span class="label-text">Specialty</span>
+        </label>
+        <input type="text" name="system.specialty" value="{{system.specialty}}" placeholder="e.g., Apothecary" class="stat-input" />
+      </div>
+
+      <!-- Chapter (Secondary) -->
+      <div class="stat-group stat-secondary">
+        <label class="stat-label">
+          <span class="label-icon">🛡️</span>
+          <span class="label-text">Chapter</span>
+        </label>
+        <input type="text" name="system.chapter" value="{{system.chapter}}" placeholder="Empty = Codex" class="stat-input" />
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="tab" data-group="primary" data-tab="source">
+        <div class="tab-content-frame">
+          <div class="source-grid">
+            <div class="source-field">
+              <label class="source-label">Source Codex</label>
+              <input type="text" name="system.book" value="{{system.book}}" placeholder="e.g., Core Rulebook" class="source-input" />
+            </div>
+            <div class="source-field">
+              <label class="source-label">Page Reference</label>
+              <input type="text" name="system.page" value="{{system.page}}" placeholder="e.g., 194" class="source-input" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>

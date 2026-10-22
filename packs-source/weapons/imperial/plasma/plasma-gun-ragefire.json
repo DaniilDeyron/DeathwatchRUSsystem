@@ -1,0 +1,25 @@
+{
+  "_id": "plas00000000004",
+  "name": "Astartes Plasma Gun (Ragefire)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/plasma-gun-ragefire.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+12",
+    "dmgType": "Energy",
+    "penetration": "8",
+    "range": "100",
+    "rof": "S/2/-",
+    "clip": "24",
+    "reload": "4 Full",
+    "equipped": false,
+    "wt": 27,
+    "req": 20,
+    "renown": "Respected",
+    "attachedQualities": [{ "id": "volatile" }],
+    "description": "<p>The most common model of this uncommon technology, plasma guns are often deployed in situations where raw takedown power is required against highly resilient or armoured enemies</p>",
+    "modifiers": []
+  }
+}

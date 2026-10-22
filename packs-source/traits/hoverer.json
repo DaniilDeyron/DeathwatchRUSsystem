@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000018",
+  "name": "Hoverer",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "132",
+    "description": "<p>Creatures with this trait have a limited capability for flight, flying no higher than 2 metres. As with the Flyer trait, this trait always includes a number to indicate speed. For more details on flying, see Chapter VII: Playing the Game.</p>",
+    "modifiers": []
+  }
+}

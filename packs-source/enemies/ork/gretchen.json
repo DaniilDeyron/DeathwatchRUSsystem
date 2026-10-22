@@ -1,0 +1,169 @@
+{
+  "_id": "enmyork000000005",
+  "name": "Gretchen",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/ork/gretchen.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 18 },
+      "bs": { "base": 34 },
+      "str": { "base": 18 },
+      "tg": { "base": 19 },
+      "ag": { "base": 36 },
+      "int": { "base": 33 },
+      "per": { "base": 37 },
+      "wil": { "base": 22 },
+      "fs": { "base": 24 }
+    },
+    "wounds": { "base": 7, "max": 7, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "concealment": { "trained": true },
+      "dodge": { "trained": true },
+      "search": { "trained": true },
+      "shadowing": { "trained": true },
+      "silent_move": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Amongst the most numerous of all the greenskins are the sub-race called Gretchin or Grots. Weak-willed, weak-limbed, wretched little creatures, Gretchin serve little purpose amongst other Orks than to be bullied, cajoled, and exploited. They serve their Ork masters with as good grace as they can muster, scuttling about and doing what they are told out of fear and awe.</p><p>Gretchin are much smaller than their orkish cousins, standing a little under half their height. In many ways, they are similar to Orks in physiology, if not physique. Their heads are bald and bulging, adorned with wide ears and jaws filled with sharp, pointy teeth rather than huge tusks.</p><p>Gretchin have a keen sense of self-preservation. This can take many forms, from hiding and running, to running and hiding. They have a low cunning and are sneaky to the extreme, often reasoning that if they are going to have to stab an enemy, it might as well be in the back.</p><p>Any encounter with Orks is likely to include Gretchin too, as these put-upon slaves and servants accompany their masters to war. Gretchin do the carrying, fetching, and guarding whilst their masters get on with the real business of war.</p><p><strong>Source:</strong> Dark Heresy: Creatures Anathema, p. 100</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eiork05000000001",
+      "_sourceId": "tal00000000129",
+      "name": "Heightened Senses (Sound)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "PER 30",
+        "benefit": "+10 to Awareness Tests involving sound",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sound) would apply to an Awareness Test to hear distant footsteps, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his ears</b>.</p>",
+        "compendiumId": "tal00000000129",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork05000000002",
+      "_sourceId": "trt000000000063",
+      "name": "Mob Rule",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark of Xenos",
+        "page": "56",
+        "description": "<p>All Orks are latently psychic, an ability that increases in strength the more of them there are in one place. This bolsters their confidence and courage to near-fearless levels when they gather en masse. For every additional Ork within 10m, the Ork’s Willpower gains a <b>+10 bonus to resist the effects of Fear and Pinning</b>. In a <b>Horde, Orks are immune to Fear and Pinning</b>.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork05000000003",
+      "_sourceId": "trt000000000058",
+      "name": "Size (Scrawny)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Scrawny. Enemies suffer –10 to hit it, and it gains +10 to Concealment. Its base movement is Agility Bonus –1.</p>",
+        "modifiers": [
+          {
+            "_id": "a9d0fcc70f20095c",
+            "name": "Size (Scrawny)",
+            "modifier": -1,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "f0f438d4b5f222ea",
+            "name": "Size (Scrawny)",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork05000000004",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork05000000005",
+      "name": "Slugga",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-slugga.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "1d10+9",
+        "dmgType": "Impact",
+        "penetration": "2",
+        "range": "20",
+        "rof": "S/3/-",
+        "clip": "18",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "inaccurate" }],
+        "attachedUpgrades": [],
+        "description": "<p>A crude, loud, slug-firing pistol favoured by Orks.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork05000000006",
+      "name": "Sneaky Boot Knife",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d5+1",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "primitive" }],
+        "attachedUpgrades": [],
+        "description": "<p>A small, concealed knife favoured by Gretchin for sneaky backstabs.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Gretchen",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 0.5,
+    "height": 0.5,
+    "bar1": { "attribute": "wounds" }
+  }
+}

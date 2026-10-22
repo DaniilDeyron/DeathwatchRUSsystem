@@ -1,0 +1,30 @@
+{
+  "_id": "trt000000000060",
+  "name": "Size (Hulking)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "134",
+    "description": "<p>This creature is Hulking. Enemies gain +10 to hit it, and it suffers –10 to Concealment. Its base movement is Agility Bonus +1.</p>",
+    "modifiers": [
+      {
+        "_id": "b70df60aff07990c",
+        "name": "Size (Hulking)",
+        "modifier": 1,
+        "type": "trait",
+        "effectType": "movement",
+        "enabled": true
+      },
+      {
+        "_id": "273c48b2d24be279",
+        "name": "Size (Hulking)",
+        "modifier": -10,
+        "type": "trait",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      }
+    ]
+  }
+}

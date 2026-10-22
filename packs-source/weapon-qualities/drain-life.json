@@ -1,0 +1,13 @@
+{
+  "_id": "drain-life",
+  "name": "Drain Life",
+  "type": "weapon-quality",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "key": "drain-life",
+    "value": "",
+    "description": "<p>When a victim takes any damage from a weapon with this quality, the wielder and victim make an Opposed Willpower Test. For every degree of success, the wielder deals an additional 1d10 points of Damage, ignoring the victim's Armour and Toughness Bonus.</p>"
+  }
+}

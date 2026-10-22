@@ -1,0 +1,24 @@
+{
+  "_id": "laun00000000003",
+  "name": "Cyclone Missile Launcher",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/missile-launcher.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Mounted",
+    "dmg": "Varies",
+    "dmgType": "Explosive",
+    "penetration": "Varies",
+    "range": "300",
+    "rof": "S/2/-",
+    "clip": "12",
+    "reload": "3 Full",
+    "equipped": false,
+    "wt": 95,
+    "req": 25,
+    "renown": "Famed",
+    "description": "<p>Cyclone missile launchers were specially designed for use with Tactical Dreadnought armour. Valuable enough for their ability to launch missiles rapidly from the twin racks, this back-mounted missile system also makes up for some of Terminator armour’s inflexibility by providing more options in combat. Each of the missile racks may be loaded with a different missile type, allowing the user to decide which type to fire each round.</p>",
+    "modifiers": []
+  }
+}

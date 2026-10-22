@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000045",
+  "name": "Mark of Scorn",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/storm-wardens.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "199",
+    "key": "mark-of-scorn",
+    "range": "5 metres x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>The Librarian casts a curse upon one of his foes, marking him for death at the hands of the righteous. This power only works on a single target. The target becomes Marked, and all successful melee attacks against him will gain a bonus to damage equal to the Librarian's PR. In addition, any instances of Righteous Fury (see page 245) from melee attacks against him automatically occur without the need to pass a WS test.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp"
+  }
+}

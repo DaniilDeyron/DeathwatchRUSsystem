@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000011",
+  "name": "Bionic Respiratory System",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/bionic-respiratory-system.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "178",
+    "equipped": false,
+    "description": "<p>Common bionic lungs and implanted respiratory systems mimic the action of human lungs and keep the body supplied with oxygen. Characters with such a system installed gain a +20 bonus to Toughness Tests made to resist airborne toxins and gas weapons.</p>",
+    "modifiers": [],
+    "req": 10,
+    "renown": "",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

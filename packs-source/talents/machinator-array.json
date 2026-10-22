@@ -1,0 +1,53 @@
+{
+  "_id": "tal00000000151",
+  "name": "Machinator Array",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "122",
+    "prerequisite": "Mechanicus Implants",
+    "benefit": "+10 STR and TG, -5 AG and FEL, mount weapons on Servo-Arms",
+    "description": "<p>The character has returned to the crèches of the Mechanicus so the Priesthood of Mars may bring him closer to the most holy of forms by adding an extensive machinator array to the character's existing augmetics. <b>The character's Strength and Toughness Characteristics are increased by +10. Reduce the character's Agility and Fellowship by –5. The character's mass increases to three times that of a normal person, and the character may no longer stay afloat or swim in water or similar liquids. The character may mount a single pistol or close combat weapon on any Servo-Arm or Servo-Harness he possesses. The character must still have the proper Talent to use the mounted weapon.</b></p>",
+    "compendiumId": "tal00000000151",
+    "modifiers": [
+      {
+        "_id": "machinator-str-mod",
+        "name": "Machinator Array (STR)",
+        "modifier": 10,
+        "type": "talent",
+        "effectType": "characteristic",
+        "valueAffected": "str",
+        "enabled": true
+      },
+      {
+        "_id": "machinator-tg-mod",
+        "name": "Machinator Array (TG)",
+        "modifier": 10,
+        "type": "talent",
+        "effectType": "characteristic",
+        "valueAffected": "tg",
+        "enabled": true
+      },
+      {
+        "_id": "machinator-ag-mod",
+        "name": "Machinator Array (AG)",
+        "modifier": -5,
+        "type": "talent",
+        "effectType": "characteristic",
+        "valueAffected": "ag",
+        "enabled": true
+      },
+      {
+        "_id": "machinator-fs-mod",
+        "name": "Machinator Array (FEL)",
+        "modifier": -5,
+        "type": "talent",
+        "effectType": "characteristic",
+        "valueAffected": "fs",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-head0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Head",
+    "description": "The explosion flays the flesh from the target's face and bursts his eardrums with its force. The target is Stunned for 1d10 Rounds and is permanently deafened. The target takes 1d5 levels of Fatigue and can only take Half Actions for 1d5 hours. Finally, the target's Fellowship drops by 1d10 due to hideous scarring.",
+    "effects": []
+  }
+}

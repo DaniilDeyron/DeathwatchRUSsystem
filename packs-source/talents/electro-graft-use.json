@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000057",
+  "name": "Electro Graft Use",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "Techmarine or Mechanicus Implants",
+    "benefit": "+10 to tests when connected to data port",
+    "description": "<p>The character may use his Electro Graft to access data ports and commune with machine spirits. <b>This grants a +10 bonus to Common Lore, Inquiry, or Tech-Use Tests whilst connected to a data port.</b></p>",
+    "compendiumId": "tal00000000057",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

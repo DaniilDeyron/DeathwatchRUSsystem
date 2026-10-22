@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-body0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Body",
+    "description": "Concussion from the explosion knocks the target to the ground and tenderises his innards. The target falls down Stunned for 1 Round and takes 1d10 levels of Fatigue.",
+    "effects": []
+  }
+}

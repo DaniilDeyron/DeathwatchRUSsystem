@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000012",
+  "name": "Lifting the Veil",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "193",
+    "key": "lifting-the-veil",
+    "range": "10 metres radius x PR",
+    "sustained": "No",
+    "action": "Extended (5)",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Divination",
+    "description": "<p>Lifting the Veil is an extension of the art of Psychometry and allows the psyker to look beyond individual psychic traces and relive the past of a place or item. As with Psychometry, the psyker can gain rough impressions from an object or a general area as long as it falls within the power's radius. The level of information gained is dependent on the level of power used, as detailed on Table 6–9: Lifting the Veil.</p><table><caption>Table 6–9: Lifting the Veil</caption><thead><tr><th style=\\\"width:75px\\\">PR</th><th>Results</th></tr></thead><tbody><tr><td>1–3</td><td>The psyker detects the strongest emotion associated with the area or object.</td></tr><tr><td>4–5</td><td>As above, plus the psyker sees the general features of the people who experienced the emotion, and a rough impression of the events that transpired.</td></tr><tr><td>6–7</td><td>As all of the above, plus the psyker gets a clear image of the events from the area that left the strongest psychic impressions.</td></tr><tr><td>8–9</td><td>As all of the above, plus the psyker can identify all participants from that strongest event, including their careers, ranks, and names.</td></tr><tr><td>10+</td><td>As all of the above, plus the psyker determines other events that may have occurred in the area, in order of the relative strength of their psychic impressions, and gets a clear image of each event.</td></tr></tbody></table>"
+  }
+}

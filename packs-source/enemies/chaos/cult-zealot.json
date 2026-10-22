@@ -1,0 +1,118 @@
+{
+  "_id": "enmychaos0000014",
+  "name": "Cult Zealot",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/cult-zealot.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 26 },
+      "bs": { "base": 24 },
+      "str": { "base": 28 },
+      "tg": { "base": 31 },
+      "ag": { "base": 27 },
+      "int": { "base": 22 },
+      "per": { "base": 31 },
+      "wil": { "base": 24 },
+      "fs": { "base": 22 }
+    },
+    "wounds": { "base": 8, "max": 8, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "deceive": { "trained": true },
+      "lore_forbidden_daemonology": { "trained": true },
+      "lore_forbidden_heresy": { "trained": true },
+      "intimidate": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>The lowliest of mortal worshippers of the Chaos gods, but also the most numerous, are the members of the secretive cults throughout the Imperium. Found among nearly every strata of Imperial society, few suspect their true motivations. These wretched cowards embrace the darkness inwardly while performing the duties of their regular life unchanged, refusing to make their twisted faith known for fear of torture and death. When discovered, their true devotion exposed for all to see, these vile souls are driven mad by the prospect of the purge which awaits them, doing whatever it takes to flee if possible or, if not, to silence those who know their secret.</p><p>Coming as they do from nearly any level of Imperial station, cultists bring a variety of arms to bear. When confronted directly, they use whatever they have at their disposal to protect themselves and fulfil the will of their gods. Many cultists possess a fanatical devotion to their patron deity and would rather sacrifice themselves than see their master's plans foiled.</p><p><strong>Skills:</strong> Deceive (Fel), Forbidden Lore (Daemonology) (Int), Forbidden Lore (Heresy) (Int), Intimidate (S).</p><p><strong>Talents:</strong> Double Team.</p><p><strong>Armour:</strong> Flak Vest (Body 3).</p><p><strong>Weapons:</strong> Makeshift Sword (1d10+2 R; Pen 0; Unbalanced), Stub Automatic (Pistol; 30m; 1d10+3 I, Pen 0, S/3/-, Clip 9, Reload Full).</p><p><strong>Gear:</strong> Small Charm, cheap clothes or unwashed robes, 2 clips.</p><p><strong>Source:</strong> Black Crusade, p. 360</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos140000001",
+      "_sourceId": "tal00000000052",
+      "name": "Double Team",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "",
+        "benefit": "+10 WS when outnumbering",
+        "description": "<p>The character has experience of fighting in paired teams that work together to take down their enemies. <b>When ganging up on an opponent, the character gains an additional +10 bonus to Weapon Skill Tests.</b> If both characters who outnumber the enemy have this Talent, both gain an additional +10 bonus, for a total of +20. This bonus is in addition to the normal bonus gained from outnumbering opponents.</p>",
+        "compendiumId": "tal00000000052",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos140000002",
+      "name": "Flak Vest",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 0,
+        "body": 3,
+        "left_arm": 0,
+        "right_arm": 0,
+        "left_leg": 0,
+        "right_leg": 0,
+        "description": "<p>A crude flak vest offering minimal protection to the torso.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eichaos140000003",
+      "name": "Makeshift Sword",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+0",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "unbalanced" }],
+        "attachedUpgrades": [],
+        "description": "<p>A crude, poorly balanced blade fashioned from scrap metal and desperation. Deadly in the hands of a zealot, but awkward to wield.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos140000004",
+      "name": "Stub Automatic",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/autopistol.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "1d10+3",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "30",
+        "rof": "S/3/-",
+        "clip": "9",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A compact solid-projectile sidearm, common among cultists and low-level criminals throughout the Imperium.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cult Zealot",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

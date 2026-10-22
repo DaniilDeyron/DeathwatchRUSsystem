@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000062",
+  "name": "Leech Essence",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "29",
+    "key": "leech-essence",
+    "range": "10 metres x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>Using the raw power of the Hive Mind, the Tyranid creature tears the life-force from a nearby foe, devouring its essence and healing its own wounds. The target (which may be a Horde) suffers 1d5 damage (or Magnitude), plus an additional 1d5 damage for each degree it fails the Opposed Test, not reduced for either armour or Toughness. The Tyranid creature is then immediately healed by an amount equal to the damage inflicted, up to its total number of starting wounds. When working out the effects of Leech Essence, the GM should calculate each 1d5 damage roll separately, because if the target dies (or burns a Fate Point) before all the damage is applied, no further wounds can be drained from their desiccated corpse.</p>"
+  }
+}

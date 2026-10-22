@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000167",
+  "name": "Mental Rage",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "Frenzy",
+    "benefit": "Use Psychic Powers normally while Frenzied",
+    "description": "<p>The character's madness and hate open his mind to the warp, allowing the character to use its power with little conscious thought. <b>While in a Frenzied state, the character may use his Psychic Powers normally.</b></p>",
+    "compendiumId": "tal00000000167",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

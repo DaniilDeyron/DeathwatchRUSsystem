@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000214",
+  "name": "Rite of Awe",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "125",
+    "prerequisite": "Mechanicus or Techmarine Implants",
+    "benefit": "Half Action infrasonic litany causes -10 penalty to all humans within 50m",
+    "description": "<p>The augmetic blessing of the Omnissiah on the character's voice box allows him to recite infrasonic liturgies that trigger awe and fear. <b>All humans, regardless of their ability to hear, within a 50-meter radius feel a sense of dread and take a –10 penalty to their next Skill Test (including Weapon Skill and Ballistic Skill Tests). Player characters may ignore these effects with a successful Willpower Test.</b> Whilst incanting the rite, the character may not talk or communicate with others. The rite requires one-Half Action speaking the litany in Techna-Lingua, and it is considered very bad form to break off the recitation before completion. Humans without auditory implants cannot hear infrasonic sounds, and though still affected do not know the character is speaking.</p>",
+    "compendiumId": "tal00000000214",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

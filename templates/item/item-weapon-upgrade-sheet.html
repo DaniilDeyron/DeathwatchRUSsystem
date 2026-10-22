@@ -1,0 +1,81 @@
+<div class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">Attributes</a>
+      <a class="item" data-tab="source">Source</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab" data-group="primary" data-tab="description">
+      {{#if editable}}
+      <prose-mirror name="system.description"
+                    value="{{source.description}}"
+                    document-uuid="{{item.uuid}}"
+                    style="height: 100%;">
+      </prose-mirror>
+      {{else}}
+      <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+        <div class="editor-content">{{{enriched.description}}}</div>
+      </div>
+      {{/if}}
+    </div>
+
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      <div class="grid grid-2col">
+        <div class="resource">
+          <label class="resource-label">Key</label>
+          <input type="text" name="system.key" value="{{system.key}}" placeholder="e.g., red-dot-laser-sight" />
+        </div>
+        <div class="resource">
+          <label class="resource-label">Single Shot Only</label>
+          <input type="checkbox" name="system.singleShotOnly" {{checked system.singleShotOnly}} />
+        </div>
+      </div>
+      
+      
+      <h3 class="section-header">Modifiers</h3>
+      <ol class="items-list modifiers-list">
+        <li class="item flexrow items-header">
+          <div class="item-name">Name</div>
+          <div class="item-modifier">Modifier</div>
+          <div class="item-effect-type">Effect Type</div>
+          <div class="item-controls">
+            <a class="item-control modifier-create" data-action="createModifier" title="Create Modifier"><i class="fas fa-plus"></i></a>
+          </div>
+        </li>
+        {{#each system.modifiers as |modifier id|}}
+        <li class="item flexrow modifier" data-modifier-id="{{modifier._id}}">
+          <div class="item-name">{{modifier.name}}</div>
+          <div class="item-modifier">{{modifier.modifier}}</div>
+          <div class="item-effect-type">{{modifier.effectType}}</div>
+          <div class="item-controls">
+            <a class="item-control modifier-toggle" data-action="toggleModifier" title="{{#if modifier.enabled}}Disable{{else}}Enable{{/if}}"><i class="fas {{#if modifier.enabled}}fa-check{{else}}fa-times{{/if}}"></i></a>
+            <a class="item-control modifier-edit" data-action="editModifier" title="Edit Modifier"><i class="fas fa-edit"></i></a>
+            <a class="item-control modifier-delete" data-action="deleteModifier" title="Delete Modifier"><i class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+    <div class="tab" data-group="primary" data-tab="source">
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Book:</label>
+          <input type="text" name="system.book" value="{{system.book}}" />
+        </div>
+        <div class="flex1">
+          <label>Page:</label>
+          <input type="text" name="system.page" value="{{system.page}}" />
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>

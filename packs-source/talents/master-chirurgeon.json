@@ -1,0 +1,26 @@
+{
+  "_id": "tal00000000155",
+  "name": "Master Chirurgeon",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "122",
+    "prerequisite": "Medicae +10",
+    "benefit": "+10 Medicae, heal 2 Wounds on Heavily/Critically Damaged, +20 to prevent limb loss",
+    "description": "<p>The character's advanced medical skills enable him to knit flesh with deft same mastery. The character's exceptional education in use of the Narthecium, med-slate, and supplemental drugs give his patients an enormous advantage. <b>The character gains a +10 bonus on all Medicae Tests. If treating a Heavily or Critically Damaged patient, a successful test heals 2 Wounds instead of 1. If the patient is in danger of losing a limb from a Critical Hit (see Chapter VIII: Combat), the character provides the patient with a +20 bonus to the Toughness Test to prevent limb loss.</b></p>",
+    "compendiumId": "tal00000000155",
+    "modifiers": [
+      {
+        "_id": "master-chirurgeon-mod",
+        "name": "Master Chirurgeon",
+        "modifier": 10,
+        "type": "talent",
+        "effectType": "skill",
+        "valueAffected": "medicae",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

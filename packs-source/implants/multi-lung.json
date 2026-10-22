@@ -1,0 +1,13 @@
+{
+  "name": "Multi-lung",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Re-roll drowning/asphyxiation, +30 vs gases, breathe water",
+    "description": "<p>The Space Marine may re-roll any failed Toughness Tests for drowning or asphyxiation (see page 261). In addition, the Space Marine gains a +30 bonus to Toughness Tests made to resist the effects of gases, and may re-roll failed results. The Space Marine may also breathe water through his multi-lung.</p>",
+    "modifiers": []
+  }
+}

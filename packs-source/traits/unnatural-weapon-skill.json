@@ -1,0 +1,22 @@
+{
+  "_id": "trt000000000066",
+  "name": "Unnatural Characteristic (Weapon Skill)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "361",
+    "description": "<p>The creature's Weapon Skill Characteristic is unnatural. Each time this trait is gained, double its Weapon Skill Bonus. For example, a creature with Weapon Skill 41 normally has a 4 WS Bonus. With this trait, its WS Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Weapon Skill, the Bonus multiplier increases by 1. For example, one selection multiplies the WS Bonus by ×2, two selections by ×3, and three selections ×4.</p><p>When taking a Skill Test based upon Weapon Skill with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+    "modifiers": [
+      {
+        "_id": "unnatural-ws-mod01",
+        "name": "Unnatural Weapon Skill",
+        "modifier": "x2",
+        "type": "trait",
+        "effectType": "characteristic-bonus",
+        "valueAffected": "ws",
+        "enabled": true
+      }
+    ]
+  }
+}

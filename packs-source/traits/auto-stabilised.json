@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000003",
+  "name": "Auto-Stabilised",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>The creature always counts as braced when firing heavy weapons and may fire on semi- or full-automatic as a Half Action.</p>",
+    "modifiers": []
+  }
+}

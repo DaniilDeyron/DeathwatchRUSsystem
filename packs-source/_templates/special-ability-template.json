@@ -1,0 +1,13 @@
+{
+  "_id": "sabi00000000000",
+  "name": "Ability Name",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "description": "<p>Full description of the special ability.</p>",
+    "key": "ability-key",
+    "specialty": "Specialty Name",
+    "book": "Deathwatch Core Rulebook",
+    "page": "000"
+  }
+}

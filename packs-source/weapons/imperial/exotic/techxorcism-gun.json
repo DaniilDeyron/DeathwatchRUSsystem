@@ -1,0 +1,25 @@
+{
+  "_id": "exot00000000005",
+  "name": "Techxorcism Gun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/techxorcism-gun.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "138",
+    "class": "Basic",
+    "dmg": "1d10+4",
+    "dmgType": "Energy",
+    "penetration": "4",
+    "range": "80",
+    "rof": "S/3/-",
+    "clip": "30",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 30,
+    "req": 0,
+    "renown": "Respected",
+    "attachedQualities": [{ "id": "storm" }],
+    "description": "<p>Brutally effective against highly technological xenos races like the Tau, these weapons are unique among other Deathwatch weapons in their ability to directly attack machine-spirits. Known colloquially as techxorcism guns, they fire crackling, bright blue bolts of energy that not only damage a machine's body but can harm or even drive out its machine-spirit. These weapons can even stun living creatures if they hit exposed flesh, and all techxorcism weapons have the Shocking quality.</p><p><strong>Special:</strong> Whenever a player causes critical damage to a target with a techxorcism gun, roll on Table 5–4: Haywire Field Effects on page 143 of the Deathwatch Rulebook.</p><p>It is unknown, even among the learned enginseers of the Deathwatch, whether these weapons are archeotech or of xenos origin. Whatever their provenance, they have proven to be a valuable anti-xenos tool, and are requisitioned by or assigned to kill-teams facing known technological threats. Techxorcism weapons affect the machine-spirits of nearly all known xenos races with one exception. Technology fielded by orks can be physically damaged by these weapons, but their machine-spirits seem to be immune to the special properties of the weapons.</p>",
+    "modifiers": []
+  }
+}

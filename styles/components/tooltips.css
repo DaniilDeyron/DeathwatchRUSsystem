@@ -1,0 +1,22 @@
+/* Tooltip Styling */
+/* Foundry VTT handles tooltips natively via data-tooltip attribute */
+/* Just add hover effects for visual feedback */
+
+/* Status effects hover styling */
+.effects-section label[data-tooltip] {
+  cursor: pointer;
+}
+
+.effects-section label[data-tooltip]:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+/* Modifier row hover styling */
+.modifier[data-tooltip] {
+  cursor: pointer;
+}
+
+.modifier[data-tooltip]:hover {
+  background: rgba(0, 0, 0, 0.05);
+}

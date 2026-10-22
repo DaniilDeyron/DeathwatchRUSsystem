@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000014",
+  "name": "Psychometry",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "193",
+    "key": "psychometry",
+    "range": "Touch",
+    "sustained": "No",
+    "action": "Extended (10)",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Divination",
+    "description": "<p>Learning to read the Emperor's Tarot is in part the act of learning to divine the Emperor's word from psychic impressions. Refining this skill allows the psyker to learn more about others from the crude psychic traces they leave behind on objects in the world around them. In this form, the psyker can gain rough impressions from a personal object such as an article of clothing or weapon. The level of information he gains depends on his PR as detailed on Table 6–10: Psychometry.</p><table><caption>Table 6–10: Psychometry</caption><thead><tr><th style=\\\"width:75px\\\">PR</th><th>Results</th></tr></thead><tbody><tr><td>1–3</td><td>The psyker detects the strongest emotion associated with the area or object.</td></tr><tr><td>4–5</td><td>As above, plus the psyker can discern the general features of the person who experienced the emotion.</td></tr><tr><td>6–7</td><td>As all of the above, plus the psyker gets a clear image of the person who experienced the emotion.</td></tr><tr><td>8–9</td><td>As all of the above, plus the psyker can identify the person's occupation (e.g. Career and Rank).</td></tr><tr><td>10+</td><td>As all of the above, plus the psyker can determine the person's name.</td></tr></tbody></table>"
+  }
+}

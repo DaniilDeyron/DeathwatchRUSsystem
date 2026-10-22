@@ -1,0 +1,31 @@
+{
+  "_id": "armorhist0000002",
+  "name": "None shall escape the Emperor's Wrath",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/emperors-wrath.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>Incorporating a rare and prized Persecutor Target Acquisition Spirit, this armour constantly scans for targets, predicting ranges, windage, and elevation, as well as passively noting bio-signs for later targeting recall. It makes nearly imperceptible adjustments to the aim and firing rate of the wearer, sometimes even anticipating the bearer's movements. Many warriors are put off by such contrary behaviour, but all eventually learn to become one with the intentions of their second skin. The obvious advantage gives the wearer a +5 bonus to BS. However, the armour is sluggish to respond to unplanned events, as it seems to dislike the jostling of its precise calculations. The wearer suffers a –10 penalty to Dodge in melee.</p>",
+    "modifiers": [
+      {
+        "_id": "armhistmod0006",
+        "name": "Target Acquisition",
+        "modifier": "5",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true
+      },
+      {
+        "_id": "armhistmod0007",
+        "name": "Sluggish Response",
+        "modifier": "-10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "dodge",
+        "enabled": true
+      }
+    ]
+  }
+}

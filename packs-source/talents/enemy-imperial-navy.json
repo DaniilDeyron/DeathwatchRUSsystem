@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000069",
+  "name": "Enemy (Imperial Navy)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "",
+    "benefit": "–10 Fellowship with specific group",
+    "description": "<p><b>Talent Groups:</b> Adeptus Arbites, Adeptus Astra Telepathica, Adeptus Astartes, Adeptus Mechanicus, Adepta Sororitas, Adeptus Titanicus, Administratum, Astropaths, Chartist Captains, Ecclesiarchy, Imperial Guard, Imperial Navy, Inquisition, Navigators, Officio Assassinorum, PDF, Planetary Governors, Rogue Trader, Schola Progenium, Scholastica Psykana</p><p>The opposite of Good Reputation, the character is particularly despised by a specific social group or organisation. <b>The character suffers an additional –10 penalty to Fellowship Tests when dealing with this group.</b> This Talent is cumulative with the Rival talent, for a total –20 penalty.</p><p>The GM and player may agree to award This talent when appropriate to the adventure or campaign. This Talent can be removed with an Elite Advance, and the approval of the GM, if the character has redeemed himself with the group in question.</p>",
+    "compendiumId": "tal00000000069",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

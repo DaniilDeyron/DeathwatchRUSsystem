@@ -1,0 +1,13 @@
+{
+  "_id": "inaccurate",
+  "name": "Inaccurate",
+  "type": "weapon-quality",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "144",
+    "key": "inaccurate",
+    "value": "",
+    "description": "<p>Inaccurate weapons are difficult to aim. No bonus is gained from the use of the Aim Action with an Inaccurate weapon.</p>"
+  }
+}

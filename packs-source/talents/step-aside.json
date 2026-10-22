@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000247",
+  "name": "Step Aside",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "127",
+    "prerequisite": "Agility 40, Dodge",
+    "benefit": "Make one additional Dodge per Round",
+    "description": "<p>The character can sway his body out of the path of an attack, causing it to pass through thin air. <b>The character may make an additional Dodge once per Round. In effect, this gives the character a second Reaction that may only be used to Dodge, allowing two Dodges in a Turn. However, the character may still only attempt a single Dodge against one attack.</b></p>",
+    "compendiumId": "tal00000000247",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

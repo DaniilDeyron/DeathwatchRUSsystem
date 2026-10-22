@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000272",
+  "name": "Weapon-Tech",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Techmarine",
+    "benefit": "Once per combat, add INT Bonus to Damage and Penetration for one Round",
+    "description": "<p>It is in the nature of a Techmarine to become concerned with learning the blessed and secret intricacies of weaponry. Once per combat, the Techmarine can enhance his weapon or seek out the weak points in an opponent's armour, increasing the Techmarine's deadliness. <b>The effects of this mean that for one Round per combat encounter, a weapon personally wielded by the Techmarine from the Melta, Plasma, Power, or Exotic category increases its Damage and Penetration by an amount equal to the character's Intelligence Bonus.</b></p>",
+    "compendiumId": "tal00000000272",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

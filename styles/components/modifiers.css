@@ -1,0 +1,65 @@
+/* Modifiers List Styles */
+.deathwatch .modifiers-list .modifier-name {
+  flex: 2;
+}
+
+.deathwatch .modifiers-list .modifier-mod {
+  flex: 0 0 100px;
+  text-align: center;
+  border-left: var(--dw-border-width) solid var(--dw-color-border);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .modifiers-list .modifier-type {
+  flex: 0 0 100px;
+  text-align: center;
+  border-left: var(--dw-border-width) solid var(--dw-color-border);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .modifiers-list .modifier-effect-type {
+  flex: 0 0 100px;
+  text-align: center;
+  border-left: var(--dw-border-width) solid var(--dw-color-border);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .modifiers-list .modifier-value-affected {
+  flex: 0 0 120px;
+  text-align: center;
+  border-left: var(--dw-border-width) solid var(--dw-color-border);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .modifiers-list .item-controls {
+  flex: 0 0 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deathwatch .modifiers-list .modifier {
+  padding: var(--dw-spacing-sm) var(--dw-spacing-md);
+}
+
+.deathwatch .modifiers-list .modifier:hover {
+  background: var(--dw-color-bg-hover);
+}
+
+.deathwatch .modifiers-list .modifier-toggle {
+  cursor: pointer;
+}
+
+/* Hide modifiers in collapsed chat messages */
+.chat-message:not(.expanded) .dice-modifiers {
+  display: none;
+}
+
+/* Show modifiers when chat message is expanded */
+.chat-message.expanded .dice-modifiers {
+  display: block;
+}
+
+/* Modifier breakdown styling - hidden by default, shown in tooltip */
+.modifier-breakdown {
+  display: none;
+}

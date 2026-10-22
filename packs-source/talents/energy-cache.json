@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000078",
+  "name": "Energy Cache",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "117",
+    "prerequisite": "Techmarine or Mechanicus Implants",
+    "benefit": "No Fatigue from Luminen abilities",
+    "description": "<p>The character has learned to focus the power stored within his Potentia Coil with greater efficiency. <b>The character no longer gains Fatigue from using Luminen Charge, Luminen Shock, and Luminen Blast.</b></p>",
+    "compendiumId": "tal00000000078",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

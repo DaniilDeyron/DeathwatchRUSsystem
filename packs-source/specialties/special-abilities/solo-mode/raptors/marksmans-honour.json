@@ -1,0 +1,30 @@
+{
+  "_id": "smch00000000009",
+  "name": "Marksman's Honour",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Honour The Chapter",
+    "page": "86",
+    "key": "marksmans-honour",
+    "description": "<p>Raptors have a reputation as skilled marksmen, part of the doctrines they have learnt from the Raven Guard along with their own Chapter's tactical training. A Raptors Battle-Brother with the right weapon and with time and patience can hit targets at the extreme ranges of his weapon with unerring accuracy, while veterans of the Chapter can even hit targets considered almost impossible to hit by normal standards. When firing single shots from a ranged weapon at Long and Extreme ranges, the Battle-Brother reduces the range penalty by 10.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Battle-Brother has mastered sniping targets at range and gains a +20 to his Ballistic Skill Tests when making single shots at Long and Extreme range</td></tr><tr><td>6</td><td>Battle-Brother has become a veteran sniper and extends the range of any bolt weapon he uses by 20m; this increases the weapon's short, long and extreme ranges accordingly</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Raptors",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/raptors.webp",
+    "effect": "When firing single shots at Long and Extreme ranges, reduce range penalty by 10",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Gains +20 to Ballistic Skill Tests when making single shots at Long and Extreme range"
+      },
+      {
+        "rank": 6,
+        "effect": "Extends the range of any bolt weapon by 20m (increases short, long, and extreme ranges)"
+      }
+    ]
+  }
+}

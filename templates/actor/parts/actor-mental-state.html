@@ -1,0 +1,225 @@
+{{!-- Mental State Tab - Insanity & Corruption System --}}
+<div class="mental-state-container">
+
+  {{!-- Corruption & Insanity Tracking (Side by Side) --}}
+  <div class="mental-state-tracking">
+
+    {{!-- Corruption Panel --}}
+    <div class="corruption-panel mental-state-panel">
+      <h3 class="panel-title">Corruption</h3>
+
+      <div class="value-display">
+        <span class="value-number">{{system.corruption}}</span>
+        <span class="value-separator">/</span>
+        <span class="value-max">100 CP</span>
+      </div>
+
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar corruption-bar">
+          <div class="progress-fill" style="width: {{corruptionPercent}}%; background-color: {{#if (gte system.corruption 90)}}#8B0000{{else if (gte system.corruption 70)}}#CC0000{{else if (gte system.corruption 50)}}#FFA500{{else}}#FF6B6B{{/if}};"></div>
+        </div>
+      </div>
+
+      <div class="status-text corruption-status">
+        {{#if (gte system.corruption 100)}}
+        ☠ FALLEN - Character Removed
+        {{else if (gte system.corruption 90)}}
+        ⚠ Critical - Purity at Risk ({{subtract 100 system.corruption}} to threshold)
+        {{else if (gte system.corruption 70)}}
+        Significant Corruption
+        {{else if (gte system.corruption 50)}}
+        Minor Taint Detected
+        {{else}}
+        Purity Maintained
+        {{/if}}
+      </div>
+
+      <div class="panel-actions">
+        <button type="button" class="panel-btn view-history-btn" data-action="viewCorruptionHistory" title="View Corruption History">
+          <i class="fas fa-history"></i> History
+        </button>
+        <button type="button" class="panel-btn gm-adjust-btn" data-action="adjustCorruption" title="Adjust Corruption">
+          <i class="fas fa-edit"></i> Adjust
+        </button>
+      </div>
+    </div>
+
+    {{!-- Insanity Panel --}}
+    <div class="insanity-panel mental-state-panel">
+      <h3 class="panel-title">Insanity</h3>
+
+      <div class="value-display">
+        <span class="value-number">{{system.insanity}}</span>
+        <span class="value-separator">/</span>
+        <span class="value-max">100 IP</span>
+      </div>
+
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar insanity-bar">
+          <div class="progress-fill" style="width: {{insanityPercent}}%; background-color: {{#if (eq system.insanityTrackLevel 3)}}#4B0082{{else if (eq system.insanityTrackLevel 2)}}#6A0DAD{{else if (eq system.insanityTrackLevel 1)}}#9370DB{{else}}#B19CD9{{/if}};"></div>
+        </div>
+      </div>
+
+      <div class="status-text insanity-status">
+        {{#if (gte system.insanity 100)}}
+        ☠ INSANE - Character Removed
+        {{else if (gte system.insanity 91)}}
+        Level 3 - Critical State
+        {{else if (gte system.insanity 61)}}
+        Level 2 - Significant Trauma
+        {{else if (gte system.insanity 31)}}
+        Level 1 - Minor Stress
+        {{else}}
+        Mind Stable
+        {{/if}}
+      </div>
+
+      <div class="secondary-info">
+        <div class="info-row">
+          <span class="info-label">Track Level:</span>
+          <span class="info-value level-{{system.insanityTrackLevel}}">{{system.insanityTrackLevel}}</span>
+        </div>
+        {{#if (gt system.insanityTrackLevel 0)}}
+        <div class="info-row">
+          <span class="info-label">Trauma Modifier:</span>
+          <span class="info-value trauma-mod">{{traumaModifier}}</span>
+        </div>
+        {{/if}}
+        {{#if system.activeCurse}}
+        <div class="info-row">
+          <span class="info-label">Curse Level:</span>
+          <span class="info-value curse-level">{{system.activeCurse.level}}</span>
+        </div>
+        {{/if}}
+      </div>
+
+      <div class="panel-actions">
+        <button type="button" class="panel-btn view-history-btn" data-action="viewInsanityHistory" title="View Insanity History">
+          <i class="fas fa-history"></i> History
+        </button>
+        {{#if (gt system.insanity 0)}}
+        <button type="button" class="panel-btn purchase-btn" data-action="purchaseInsanityReduction" title="Spend XP to reduce Insanity (100 XP per point)">
+          <i class="fas fa-coins"></i> Purchase
+        </button>
+        {{/if}}
+        <button type="button" class="panel-btn gm-adjust-btn" data-action="adjustInsanity" title="Adjust Insanity">
+          <i class="fas fa-edit"></i> Adjust
+        </button>
+        {{#if isGM}}
+        <button type="button" class="panel-btn manual-test-btn" data-action="manualInsanityTest" title="Trigger Insanity Test">
+          <i class="fas fa-dice-d20"></i> Test
+        </button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+
+  {{!-- Battle Traumas Section --}}
+  <div class="battle-traumas-section section-card">
+    <h3 class="section-header">
+      <i class="fas fa-brain"></i> Battle Traumas
+      {{#if battleTraumas.length}}
+      <span class="count-badge">({{battleTraumas.length}})</span>
+      {{/if}}
+    </h3>
+
+    {{#if battleTraumas.length}}
+    <div class="trauma-list">
+      {{#each battleTraumas as |trauma|}}
+      <div class="trauma-item" data-item-id="{{trauma._id}}">
+        <div class="trauma-header">
+          <div class="trauma-name-section">
+            <div class="trauma-image" style="background-image: url({{trauma.img}})"></div>
+            <h4 class="trauma-name clickable" data-action="showTrauma" data-item-id="{{trauma._id}}">
+              {{trauma.name}}
+            </h4>
+          </div>
+          <div class="trauma-actions">
+            <button type="button" class="trauma-btn" data-action="editItem" data-item-id="{{trauma._id}}" title="View Details">
+              <i class="fas fa-eye"></i> View
+            </button>
+            {{#if ../isGM}}
+            <button type="button" class="trauma-btn delete-btn" data-action="deleteItem" data-item-id="{{trauma._id}}" title="Remove">
+              <i class="fas fa-trash"></i>
+            </button>
+            {{/if}}
+          </div>
+        </div>
+        <div class="trauma-trigger">
+          Trigger:
+          {{#if (eq trauma.system.triggerType "always")}}Always Active
+          {{else if (eq trauma.system.triggerType "combat")}}During Combat
+          {{else if (eq trauma.system.triggerType "righteousFury")}}On Righteous Fury
+          {{else if (eq trauma.system.triggerType "psychicPower")}}Using Psychic Powers
+          {{else if (eq trauma.system.triggerType "fellowship")}}Social Interaction
+          {{else if (eq trauma.system.triggerType "willpowerTest")}}Willpower Tests
+          {{/if}}
+          {{#if trauma.system.canResist}}
+          <span class="resist-info">(Can resist: {{trauma.system.resistDifficulty}} WP)</span>
+          {{/if}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    {{else}}
+    <div class="empty-state">
+      <p>No Battle Traumas</p>
+      <p class="emperor-protects">(The Emperor Protects)</p>
+    </div>
+    {{/if}}
+  </div>
+
+  {{!-- Primarch's Curse Section --}}
+  <div class="primarchs-curse-section section-card">
+    <h3 class="section-header">
+      <i class="fas fa-skull"></i> Primarch's Curse
+    </h3>
+
+    {{#if system.activeCurse}}
+    <div class="curse-active">
+      <div class="curse-title-row">
+        <span class="curse-name">{{system.activeCurse.name}}</span>
+        <span class="curse-level-badge">Level {{system.activeCurse.level}}/3</span>
+      </div>
+
+      {{!-- Level Progress Indicator --}}
+      <div class="curse-level-progress">
+        <div class="level-node {{#if (gte system.activeCurse.level 1)}}active{{/if}}">1</div>
+        <div class="level-connector {{#if (gte system.activeCurse.level 2)}}active{{/if}}"></div>
+        <div class="level-node {{#if (gte system.activeCurse.level 2)}}active{{/if}}">2</div>
+        <div class="level-connector {{#if (gte system.activeCurse.level 3)}}active{{/if}}"></div>
+        <div class="level-node {{#if (gte system.activeCurse.level 3)}}active{{/if}}">3</div>
+      </div>
+
+      <div class="curse-current-level">
+        <div class="curse-level-name">{{system.activeCurse.levelName}}</div>
+        <div class="curse-description">{{{system.activeCurse.description}}}</div>
+        <div class="curse-effect">
+          <strong>Effect:</strong>
+          {{#if (eq system.activeCurse.effectType "modifier")}}
+          {{system.activeCurse.modifier}} to {{system.activeCurse.target}}
+          {{else if (eq system.activeCurse.effectType "cohesionPenalty")}}
+          -{{system.activeCurse.cohesionPenalty}} Cohesion
+          {{else if (eq system.activeCurse.effectType "fellowshipPenalty")}}
+          {{system.activeCurse.modifier}} Fellowship vs target
+          {{else if (eq system.activeCurse.effectType "behavioralRequirement")}}
+          Behavioral requirement (see description)
+          {{else}}
+          See description
+          {{/if}}
+        </div>
+      </div>
+
+      <button type="button" class="panel-btn view-curse-btn" data-action="viewCurse" title="View Full Curse Details">
+        <i class="fas fa-book"></i> View Full Curse
+      </button>
+    </div>
+    {{else}}
+    <div class="curse-dormant">
+      <p>Primarch's Curse dormant</p>
+      <p class="dormant-reason">(Insanity &lt; 31)</p>
+    </div>
+    {{/if}}
+  </div>
+
+</div>

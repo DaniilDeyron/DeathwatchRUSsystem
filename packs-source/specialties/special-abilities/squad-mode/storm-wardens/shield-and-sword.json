@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000011",
+  "name": "Shield and Sword",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "shield-and-sword",
+    "description": "<p>Many Battle-Brothers of the Storm Wardens Chapter favour storm shields and power swords and train to fight side by side with these heavy weapons. The Storm Wardens have adapted this tactic to other forms of melee combat. While this ability is in effect, the Battle-Brother and those in Support Range of him can Parry attacks directed against those by their side (allies within 2 metres). In addition, any time a Battle-Brother benefiting from this ability is struck in melee, he may use his Reaction to make a Standard Attack with a melee weapon back at the creature that attacked him.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>All those affected gain a +20 bonus to Parry Tests</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Storm Wardens",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp",
+    "effect": "Kill-team may Parry for allies within 2m; when struck in melee, may Reaction attack back",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "All those affected gain a +20 bonus to Parry Tests"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "free"
+  }
+}

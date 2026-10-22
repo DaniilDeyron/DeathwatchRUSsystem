@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000038",
+  "name": "Combat Master",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "",
+    "prerequisite": "WS 30",
+    "benefit": "Opponents gain no bonuses for outnumbering",
+    "description": "<p>The character's weapon seems to be everywhere at once, keeping many more opponents at bay in close combat than would seem possible. <b>Opponents fighting the character in hand-to-hand combat gain no bonuses for outnumbering him.</b></p>",
+    "compendiumId": "tal00000000038",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

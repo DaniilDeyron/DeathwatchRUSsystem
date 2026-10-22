@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000028",
+  "name": "Binary Chatter",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "114",
+    "prerequisite": "",
+    "benefit": "+10 Bonus to Servitor control",
+    "description": "<p>The character has optimised his use of Techna-Lingua for controlling servitors. The character receives a <b>+10 bonus to any attempt to instruct, program, or communicate with servitors</b>.</p>",
+    "compendiumId": "tal00000000028",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000090",
+  "name": "Precognitive Strike",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "228",
+    "key": "precognitive-strike",
+    "range": "Self",
+    "sustained": "No",
+    "action": "Free Action",
+    "opposed": "No",
+    "cost": 300,
+    "class": "Divination",
+    "description": "<p><strong>Alternate Names:</strong> Khaine's Ruthless Blade, Templar's Foresight</p><p><strong>Prerequisites:</strong> Precognition, Precognitive Dodge</p><p><strong>Focus Power:</strong> Difficult (-10) Psyniscience Test</p><p>To discern one's own future is sometimes deemed easier than discerning the futures of others—to look for the echoes of one's own soul, rather than those of unfamiliar foes. However, the psyker has learned to do just that, seeing the way his foes fight and discerning moments of weakness, discerning opportunities to strike. Eldar Warlocks often turn this technique to their advantage, striking with uncanny accuracy.</p><p>The psyker gains a bonus on the first Weapon Skill or Ballistic Skill Test during this turn, equal to +5 x his Psy Rating.</p>"
+  }
+}

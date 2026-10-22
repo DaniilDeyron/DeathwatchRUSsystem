@@ -1,0 +1,17 @@
+{
+  "_id": "wupg00000000003",
+  "name": "Vox-Operated",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "key": "vox-operated",
+    "singleShotOnly": false,
+    "req": 5,
+    "renown": "Distinguished",
+    "wt": 0.5,
+    "description": "<p>This upgrade integrates vox receivers into the weapon's trigger mechanisms, allowing the user to operate it by voice command. Users can operate the shot selector and switch firing modes by speaking the appropriate command. Each receiver is keyed to a specific voice pattern for security. If equipped with a fire selector, ammunition clips may also be selected by voice.</p><p><strong>Upgrades:</strong> Any Pistol, Basic, Grenade, or Heavy weapon.</p><p><strong>Note:</strong> Voice operation is a narrative feature that must be roleplayed during combat.</p>",
+    "modifiers": []
+  }
+}

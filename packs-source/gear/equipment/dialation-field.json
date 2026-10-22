@@ -1,0 +1,15 @@
+{
+  "_id": "dilation00001",
+  "name": "Dilation Field",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/dilation-field.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "172",
+    "wt": 1,
+    "req": 45,
+    "renown": "Famed",
+    "shortDescription": "General",
+    "description": "<p>Remnants of largely abandoned experiments with inverting stasis field technology, a few of these devices linger in the armouries of Jericho Reach. These small, unembellished boxes are similar in size to a force field projector, but rather than surrounding the user with a protective field, within their sphere of effect time seems to pass at a different rate. While this enables a Battle-Brother to react with unprecedented swiftness to the events around him, the sudden shift in his perceptions can be disorienting.</p><p>A dilation field grants the owner the Unnatural Agility and Unnatural Speed Traits. Activating the field is a Ready Action with all effects (including any change to the character’s place in the Initiative Order) beginning at the start of the next Round. Dilation fields consume huge amounts of power, and once activated remain on for only 1d10 Rounds before requiring 1 hour to recharge. Furthermore, the character is at –10 WS and BS on the first Turn the field goes into effect, and the first Turn after the field’s effects end, as he adjusts his timing.</p><p>The interactions between dilation fields and force fields can have disastrous consequences, and only one type of field should be activated at a time on a character.</p>"
+  }
+}

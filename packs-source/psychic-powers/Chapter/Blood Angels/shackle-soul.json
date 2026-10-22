@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000028",
+  "name": "Shackle Soul",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/blood-angel.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "196",
+    "key": "shackle-soul",
+    "range": "10 metres x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "Yes",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>Reaching into the soul of his foe, the Librarian binds it in powerful bands of psychic energy. This power affects a single creature chosen by the Librarian. The Blood Angel may choose to prevent those affected by the power from doing one of the following things on its next turn: moving, making a ranged attack, making a melee attack or using a Psychic Power. If this power is sustained then the Librarian must win an Opposed Willpower Test each turn to affect the target, though he may choose a different action to prohibit from Round to Round. If the target ever wins the Opposed Test then the power immediately ends.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp"
+  }
+}

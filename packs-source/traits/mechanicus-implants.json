@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000023",
+  "name": "Mechanicus Implants",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "133",
+    "description": "<p>The character is a servant of the Machine-God, an initiate into the mysteries of the Priesthood of Mars and as such is a vessel for implants from the Cult of the Mechanicus.</p>",
+    "modifiers": []
+  }
+}

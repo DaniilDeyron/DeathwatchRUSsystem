@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000085",
+  "name": "Field of Pestilence",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/nurgle.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "216",
+    "key": "field-of-pestilence",
+    "range": "5 metres x Psy Rating radius",
+    "sustained": "Free Action",
+    "action": "Full Action",
+    "opposed": "No",
+    "cost": 300,
+    "class": "Nurgle",
+    "description": "<p><strong>Prerequisites:</strong> Aligned Nurgle</p><p><strong>Focus Power:</strong> Hard (-20) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p><strong>Alternate Names:</strong> Pestilent Earth, The Plaguefather's Quagmire</p><p>While touching the ground beneath his feet, the Sorcerer conjures forth a wave of pestilence and decay, turning hardened soil into a morass of greenish-grey sludge. Many sorcerers invoke litanies of infertility or speak prayers of desecration, while others trace abhorrent runes in the dirt or pour jars of diseased blood onto the ground. Many sorcerers believe that this power was granted to mortals by one of the most renowned of Nurgle's daemons.</p><p>While this power remains in effect, the ground around the Sorcerer, which moves as he does (centred on him at all times), becomes swamp-like. Any creature—with the exception of the Sorcerer himself—within the power's radius must pass a Challenging (+0) Agility Test or fall whenever attempting to move faster than a normal Half Action movement rate.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

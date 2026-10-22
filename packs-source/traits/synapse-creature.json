@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000039",
+  "name": "Synapse Creature (Tyranid)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "135",
+    "description": "<p>A Tyranid creature with this trait is a node from which the controlling and unifying presence of the Hive Mind guides the actions of other Tyranids. The presence of a synapse creature in an encounter grants the Fearless talent to all other Tyranid creatures and also suppresses the effects of the Instinctive Behaviour Trait in those creatures that possess it (see page 132 in this chapter for more details). If an exact range for this effect is needed, it can be considered equal to the creature's Willpower Bonus x10 metres.</p>",
+    "modifiers": []
+  }
+}

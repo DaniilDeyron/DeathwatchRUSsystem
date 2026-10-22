@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000016",
+  "name": "Shells",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/shells.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 18, "max": 18 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Shells contain dozens of tiny balls and are designed to scatter over a wide area when fired, making them ideal for close-in work where accuracy is less important.</p><p><b>Used With</b>: Shotguns.</p>"
+  }
+}

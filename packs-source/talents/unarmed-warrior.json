@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000265",
+  "name": "Unarmed Warrior",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Weapon Skill 35, Agility 35",
+    "benefit": "Unarmed attacks deal 1d10-3+SB, not count as Unarmed against armed foes",
+    "description": "<p>Due to extensive training in unarmed combat, the character's unarmed combat attacks do 1d10–3 + Strength Bonus in Damage instead of 1d5–3. <b>Because of the character's advanced training against both armed and unarmed foes, he does not count as Unarmed, as defined on page 245, when making attacks against armed opponents. The character's unarmed attacks still count as having the Primitive quality.</b></p>",
+    "compendiumId": "tal00000000265",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

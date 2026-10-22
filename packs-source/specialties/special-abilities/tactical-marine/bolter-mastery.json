@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000008",
+  "name": "Bolter Mastery",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "85",
+    "key": "bolter-mastery",
+    "description": "<p>The Tactical Marine gains a +10 bonus to all Ballistic Skill Tests and +2 to Damage when firing a Bolt weapon. This ability only functions in Solo Mode.</p>",
+    "specialty": "Tactical Marine",
+    "specialtyImg": "systems/deathwatch/icons/specialty/tacticalmarine.webp"
+  }
+}

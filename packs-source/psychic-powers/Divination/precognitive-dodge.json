@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000071",
+  "name": "Precognitive Dodge",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "227",
+    "key": "precognitive-dodge",
+    "range": "Self",
+    "sustained": "No",
+    "action": "Reaction",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Divination",
+    "description": "<p><strong>Alternate Names:</strong> Whispers of Fate, Prophet's Escape</p><p><strong>Prerequisites:</strong> Precognition</p><p><strong>Focus Power:</strong> Difficult (-10) Perception Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker's awareness of the warp grants him the means to elude his opponents' attacks without needing to rely on mortal reflexes. It takes a skilled psyker to reflexively observe the warp in this way, and such a difficult technique is often performed only by the most potent of diviners, such as Eldar Farseers.</p><p>In any situation where the psyker would be called upon to make an Evasion Test, he may instead attempt to use this power. If the power is successful, the psyker avoids the attack exactly as if he had passed an Evasion Test.</p>"
+  }
+}

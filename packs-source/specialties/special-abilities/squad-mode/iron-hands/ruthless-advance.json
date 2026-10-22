@@ -1,0 +1,27 @@
+{
+  "_id": "sqch00000000013",
+  "name": "Ruthless Advance",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "First Founding",
+    "page": "12",
+    "key": "ruthless-advance",
+    "description": "<p>The Iron Hands are renowned for their implacable methods of war, able to capture and hold ground in the face of superior numbers or inhospitable terrain. The Battle-Brother and those within Support Range may spend their Reactions to make a Full Move. This movement must be made towards the nearest enemy. The Space Marines using this ability are immune to pinning until the beginning of their next Turn.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Activating this ability becomes a Free Action</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Iron Hands",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/iron_hands.webp",
+    "effect": "Kill-team in Support Range may spend Reactions to make Full Move towards nearest enemy; immune to pinning until next Turn",
+    "improvements": [
+      { "rank": 4, "effect": "Activating this ability becomes a Free Action" }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": false,
+    "action": "half"
+  }
+}

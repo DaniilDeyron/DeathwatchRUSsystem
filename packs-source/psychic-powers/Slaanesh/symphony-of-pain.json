@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000115",
+  "name": "Symphony of Pain",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/slaanesh.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "218",
+    "key": "symphony-of-pain",
+    "range": "5 metres x Psy Rating radius",
+    "sustained": "Half Action",
+    "action": "Full Action",
+    "opposed": "No",
+    "cost": 300,
+    "class": "Slaanesh",
+    "description": "<p><strong>Prerequisites:</strong> Mark of Slaanesh, Toughness 40+, Psy Rating 4</p><p><strong>Focus Power:</strong> Hard (–20) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The Sorcerer casts his arms wide, as if conducting a great orchestra of cavorting daemons that howl and dance around his echo within the Immaterium. Their siren call warps the minds of those nearby, causing blinding sheets of pain.</p><p>This power emanates from the Sorcerer in all directions, out to the listed radius. All creatures within that range—excepting those Devoted to Slaanesh—while the power remains in effect, are stunned for one turn and gain a number of levels of Fatigue equal to the Sorcerer's Psy Rating if they roll a double on any Test they make for any Action they attempt.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

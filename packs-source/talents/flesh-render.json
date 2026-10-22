@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000088",
+  "name": "Flesh Render",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Extra die for Tearing weapon damage",
+    "description": "<p>The Battle-Brother has a taste for the massive damage that can be inflicted with chain weapons and other melee weapons that rip apart the flesh of their enemies. <b>When inflicting Damage with a melee weapon that has the Tearing quality, the character rolls a single additional die for Damage and picks the highest roll.</b> For weapons that inflict several dice worth of Damage, only a single additional die is rolled.</p>",
+    "compendiumId": "tal00000000088",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

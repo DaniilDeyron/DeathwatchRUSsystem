@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000082",
+  "name": "Eye of Vengeance",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "117",
+    "prerequisite": "Astartes Weapons Training, BS 50",
+    "benefit": "Ignore armor and auto-confirm RF on 10",
+    "description": "<p>The Battle-Brother can focus his intent on where it is likely to do most Damage to his enemy and then strike the target down with a single shot. <b>The Battle-Brother may declare that he is using this Talent before he makes a single ranged attack.</b> If the attack hits, it ignores an additional point of armour per Degree of Success. If a 10 is rolled for Damage, it automatically triggers Righteous Fury without the need for another Ballistic Skill Test (see Righteous Fury on page 245 in Chapter VIII: Combat).</p><p>This Talent may not be used in conjunction with Blast weapons, Semi or Full-Auto Bursts, or Flame weapons. It may, however, be used in conjunction with accurate weapons and in conjunction with making Called Shots and taking Aim Actions.</p>",
+    "compendiumId": "tal00000000082",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

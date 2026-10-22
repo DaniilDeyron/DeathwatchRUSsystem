@@ -1,0 +1,25 @@
+{
+  "_id": "laun00000000004",
+  "name": "Astartes Armoursbane Missile-Launcher",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/armoursbane-missile-launcher.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "137",
+    "class": "Heavy",
+    "dmg": "Special",
+    "dmgType": "Explosive",
+    "penetration": "Special",
+    "range": "200",
+    "rof": "S/-/-",
+    "clip": "1",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 12,
+    "req": 15,
+    "renown": "",
+    "attachedQualities": [],
+    "description": "<p>The armoursbane missile launcher (unique to the Jericho Reach Deathwatch) is a squat, wide-barrelled launcher half as tall as a Space Marine. That's where the similarities end however, for whereas the anti-aircraft missile launcher is built to take down airborne targets, the armoursbane specialises in dealing with heavily-armoured ground units. This launcher is typically loaded with hunter-kill krak missiles, and is fitted with an array of augurs and special cogitators to guide its missiles smoothly to their targets. Armoursbane launchers give a Kill-team extra protection against armoured vehicles and large xenos beasts over and above that of a standard Soundstrike missile launcher.</p><p>The special augur array mounted on the armoursbane combines the benefits of a preysense sight and a red-dot laser sight. These powerful augurs, along with the special ground following cogitators, grants a <strong>+20 bonus to Ballistic Skill Tests when attacking ground-based targets</strong>. The armoursbane launcher can be used against flying enemies in an emergency, but isn't well suited for it and loses the +20 bonus to Ballistic Skill tests when doing so.</p><p><em>Note: Damage and Penetration depend on the missile loaded (typically Krak or Frag missiles).</em></p>",
+    "modifiers": []
+  }
+}

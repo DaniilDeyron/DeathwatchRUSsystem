@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000007",
+  "name": "Dig In",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "223",
+    "key": "dig-in",
+    "description": "<p>Against fearsome weapons like plasma cannons and meltaguns, even Space Marines will use cover to their advantage. A Battle-Brother may order his squad to Dig In, seeking out the most defensible firing positions. While this ability is in effect, the Battle-Brother and those in Support Range of him can double the Armour Points provided by any cover they are currently using. This bonus to cover only applies to each individual Battle-Brother so long as they remain stationary.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>Kill-team may move freely; doubled cover AP applies to all cover used for the duration</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team in Support Range doubles cover AP while stationary",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "Kill-team may move freely; doubled cover AP applies to all cover used for the duration"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 3,
+    "sustained": true,
+    "action": "full"
+  }
+}

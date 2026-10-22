@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000026",
+  "name": "Battle Rage",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "114",
+    "prerequisite": "Frenzy",
+    "benefit": "Parry while frenzied",
+    "description": "<p>Long experience and indomitable will have allowed the character to master the beast within him, directing its rage while keeping a clear head. The character may Parry while Frenzied.</p>",
+    "compendiumId": "tal00000000026",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

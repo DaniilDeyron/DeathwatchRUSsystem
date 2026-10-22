@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000264",
+  "name": "Unarmed Master",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "128",
+    "prerequisite": "Weapon Skill 45, Agility 40, Unarmed Warrior",
+    "benefit": "Unarmed attacks deal 1d10+SB Impact, no Primitive quality",
+    "description": "<p>The character has developed unequalled mastery of unarmed combat techniques. <b>The character's unarmed combat attacks do 1d10 + Strength Bonus in Impact Damage, and these attacks no longer have the Primitive quality.</b></p>",
+    "cost": 0,
+    "compendiumId": "tal00000000264",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

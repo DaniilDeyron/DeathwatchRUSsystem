@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000029",
+  "name": "Blademaster",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "114",
+    "prerequisite": "WS 30, Melee Weapon Training (any) ",
+    "benefit": "Re-roll missed attack",
+    "description": "<p>The character’s mastery of bladed weapons and martial disciplines has no peer. When attacking with any bladed weapon, including chainswords and power swords, the character may re-roll one missed attack per Round.</p>",
+    "compendiumId": "tal00000000029",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

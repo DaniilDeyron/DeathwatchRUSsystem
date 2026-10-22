@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000006",
+  "name": "Immovable Warrior",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "77",
+    "key": "immovable-warrior",
+    "description": "<p>When the Devastator Marine is wielding a Heavy weapon and behind cover, he gains the Sturdy Trait and a +10 bonus to all Ballistic Skill Tests. This ability only functions in Solo Mode.</p>",
+    "specialty": "Devastator Marine",
+    "specialtyImg": "systems/deathwatch/icons/specialty/devastatormarine.webp"
+  }
+}

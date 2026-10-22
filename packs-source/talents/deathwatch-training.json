@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000047",
+  "name": "Deathwatch Training",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "Adeptus Astartes, member of the Deathwatch",
+    "benefit": "Auto-confirm Righteous Fury vs aliens",
+    "description": "<p>All Deathwatch Space Marines automatically confirm any Righteous Fury results (see page 245) against alien enemies without needing to re-roll the Ballistic Skill Test or Weapon Skill Test.</p>",
+    "cost": "0",
+    "compendiumId": "tal00000000047",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

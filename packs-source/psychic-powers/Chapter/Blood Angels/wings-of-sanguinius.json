@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000029",
+  "name": "Wings of Sanguinius",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/blood-angel.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "196",
+    "key": "wings-of-sanguinius",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 2000,
+    "class": "Chapter",
+    "description": "<p>The Librarian sprouts a pair of blood red wings of psychic energy from his back that can bear him aloft. “While this power is in effect, the Librarian gains the Flyer Trait (see page 132) with a Movement equal to his PR + 5. This power may be Sustained with a Free Action.””</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp"
+  }
+}

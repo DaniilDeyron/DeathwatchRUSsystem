@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000273",
+  "name": "Whirlwind of Death",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Double Magnitude damage against Hordes in melee",
+    "description": "<p>When facing massed opponents in combat, the Battle-Brother becomes a whirlwind of death, moving, hacking, gutting, and beheading with ceaseless fury. <b>When attacking an enemy with the Horde trait in close combat, the Battle-Brother doubles any Damage dealt to the Horde's Magnitude. For example, if the Battle-Brother's attacks would reduce the Horde's Magnitude by 3, this amount is doubled to 6.</b></p>",
+    "compendiumId": "tal00000000273",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

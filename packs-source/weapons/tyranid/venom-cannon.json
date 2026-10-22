@@ -1,0 +1,30 @@
+{
+  "_id": "tyranid000000006",
+  "name": "Venom Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-venom-cannon.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Heavy",
+    "dmg": "2d10+10",
+    "dmgType": "Impact",
+    "penetration": "6",
+    "range": "100",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [
+      { "id": "blast", "value": "5" },
+      { "id": "proven" },
+      { "id": "toxic" },
+      { "id": "living-ammunition" }
+    ],
+    "description": "<p>The Venom Cannon uses an electrostatic charge to shoot highly corrosive crystals coated with a metallic, venomous residue. On impact, the crystals shatter, creating a deadly cloud of fragments.</p>",
+    "modifiers": []
+  }
+}

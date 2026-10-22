@@ -1,0 +1,14 @@
+{
+  "_id": "impact-leg0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Leg",
+    "description": "Several of the tiny bones in the target's foot snap like twigs with cracking noises. The target must make an immediate Toughness Test or permanently lose the use of his foot. On a success, halve all movement until medical attention is received. The target takes 2 levels of Fatigue.",
+    "effects": []
+  }
+}

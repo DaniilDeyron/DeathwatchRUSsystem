@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000001",
+  "name": "Astartes Servo-Arm",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/servo-arm.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "equipped": false,
+    "description": "<p>Techmarine servo-arms are powerful manipulators tipped with crushing pincers, useful for field repairs and punishing enemies. Ports for these detachable appendages are installed at the shoulder, and the Battle-Brother's armour must also be upgraded with more powerful gyro-stabilisers to use one effectively. So supported, a servo-arm can lift one side of a Rhino APC to repair a broken tread link.</p><p>A servo-arm can extend up to 1.5 metres. A Techmarine uses the arm's Strength value of 75 with Unnatural Strength (X2) rather than his own (this value cannot be increased or decreased through devices or abilities that affect the Techmarine's strength).</p><p>The limb's gripping mandibles allow the Techmarine to lift heavy objects or anchor himself to a suitable point as a Free Action.</p><p>Astartes servo-arms are more than just repair tools, and make deadly weapons. The Techmarine may strike with the arm as his Reaction for the round, or as a Standard Attack during his turn (so long as the servo-arm only makes one attack per round). This attack uses the Techmarine's Weapon Skill, and deals 2d10+14 Impact Damage with Pen 10.</p>",
+    "modifiers": [],
+    "req": 30,
+    "renown": "",
+    "replacesCharacteristic": "str",
+    "replacementValue": 75,
+    "unnaturalMultiplier": 2,
+    "replacementLabel": "Servo-Arm",
+    "canBeModified": false
+  }
+}

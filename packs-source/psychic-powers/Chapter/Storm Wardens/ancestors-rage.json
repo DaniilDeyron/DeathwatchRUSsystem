@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000041",
+  "name": "Ancestors' Rage",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/storm-wardens.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "199",
+    "key": "ancestors-rage",
+    "range": "1 metre x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>Calling upon the talents of dead heroes, the Librarian instils within himself or another exceptional skill at arms. While this power is in effect, the Librarian or a target of his choosing gains a number of Exotic Melee Weapons Talents of his choice equal to his PR, and increases his WS by +5 x PR (to a maximum of 95).</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp"
+  }
+}

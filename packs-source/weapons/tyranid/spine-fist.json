@@ -1,0 +1,29 @@
+{
+  "_id": "tyranid000000013",
+  "name": "Spine Fist",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-spinefist.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "28",
+    "class": "Pistol",
+    "dmg": "1d10",
+    "dmgType": "Rending",
+    "penetration": "4",
+    "range": "25",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [
+      { "id": "twin-linked" },
+      { "id": "living-ammunition" }
+    ],
+    "description": "<p>Carried in pairs, these weapon beasts attach to a Tyranid creature's arms and can fire a sustained volley of razor sharp darts. The speed at which the Spine Fist can fire, and thus its rate of fire and its deadliness, is related directly to the creature using it. It has tubes attached to the creatures airways allowing a stronger creature to expel more force into the weapon and fire more darts.</p><p>A Tyranid creature can fire only single shots from its Spine Fists unless it has the Swift Attack or Lightning Attack Talents. Creatures with the Swift Attack Talent can fire them with a semi-auto rate of fire of 2, and a creature with the Lightning Attack Talent can fire them with a full-auto rate of fire of 4. Creatures may of course choose to fire them at a lower rate of fire.</p><p>A Spine Fist draws directly from the strength of its user and adds their Strength Bonus to the damage it deals.</p>",
+    "modifiers": [],
+    "doublesStrengthBonus": false
+  }
+}

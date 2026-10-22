@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000011",
+  "name": "Charge Pack",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/charge-pack.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 60, "max": 60 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>Charge packs are powerful batteries used almost exclusively by las weapons. The size of a charge pack depends on the class of the weapon. In all cases it provides shots equal to the weapon's full clip value.</p><p><b>Used With</b>: Laspistols, lasguns, lascannons.</p>"
+  }
+}

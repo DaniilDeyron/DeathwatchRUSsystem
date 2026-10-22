@@ -1,0 +1,13 @@
+{
+  "_id": "recharge",
+  "name": "Recharge",
+  "type": "weapon-quality",
+  "img": "icons/svg/clockwork.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "recharge",
+    "value": "",
+    "description": "<p>Because of the volatile nature of the weapon's ammunition or due to the way it fires, the weapon needs time between shots to Recharge. The weapon must spend the Round after firing building up a charge and cannot be fired—in effect you can only fire the weapon every other round.</p>"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "plas00000000002",
+  "name": "Astartes Plasma Gun (Barrage)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/plasma-gun-barrage.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "135",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Energy",
+    "penetration": "10",
+    "range": "120",
+    "rof": "S/3/5",
+    "clip": "30",
+    "reload": "4 Full",
+    "equipped": false,
+    "wt": 30,
+    "req": 28,
+    "renown": "Disinguished",
+    "attachedQualities": [{ "id": "volatile" }, { "id": "overheats" }],
+    "description": "<p>These are rare and venerated weapons are jealously guarded byt the Techmarines of the Jericho Reach Deathwatch, and issued only to the mose honoured Space Marines. Barrage plasma guns are highly tuned, rapid-fire weapons that can lay down incredible volumes of devastating plasma energy.  While their ability to fire in semi-automatic and automatic modes make them both versatile and deadly, they use an immense amount of energy and are more prone to overheating than a typical plasma weapon. Deathwatch Space Marines see this as a small price to pay for the ability to spray volleys of plasma energy into charging bands of xenos.</p>",
+    "modifiers": []
+  }
+}

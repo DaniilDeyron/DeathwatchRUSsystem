@@ -1,0 +1,26 @@
+{
+  "_id": "sqcd00000000003",
+  "name": "Fire Support",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "221",
+    "key": "fire-support",
+    "description": "<p>All combat squads train in concentrating their fire and working as a team to achieve fire superiority over their foes. While this ability is in effect, the Kill-team does not suffer the normal –20 to hit when using the Suppressing Fire and Overwatch actions.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Calling for Fire Support becomes a Free Action</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team ignores –20 penalty for Suppressing Fire and Overwatch",
+    "improvements": [
+      { "rank": 3, "effect": "Calling for Fire Support becomes a Free Action" }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 1,
+    "sustained": true,
+    "action": "half"
+  }
+}

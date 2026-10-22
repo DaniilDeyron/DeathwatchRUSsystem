@@ -1,0 +1,148 @@
+{
+  "_id": "armor00000000003",
+  "name": "Terminator Armour",
+  "type": "armor",
+  "img": "systems/deathwatch/icons/armor/terminator.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "164",
+    "head": 14,
+    "body": 14,
+    "left_arm": 14,
+    "right_arm": 14,
+    "left_leg": 14,
+    "right_leg": 14,
+    "req": 100,
+    "renown": "Famed",
+    "attachedHistories": [],
+    "description": "<p>Tactical Dreadnought Armour, commonly known as Terminator Armour, is the most powerful personal armor available to the Adeptus Astartes. These massive suits are relics from the Dark Age of Technology, combining thick ceramite plates with an exoskeleton that allows the wearer to move despite the immense weight. Each suit is a priceless artifact, maintained and revered by the Chapter.</p><p>Terminator Armour provides unparalleled protection and is equipped with a teleport homer, allowing for precision deep strikes into the heart of battle. Only the most veteran warriors of the 1st Company are honored to wear these legendary suits.</p>",
+    "modifiers": [
+      {
+        "_id": "c1f9f59c5c38f35b",
+        "name": "Enhanced Strength",
+        "modifier": "30",
+        "type": "equipment",
+        "effectType": "characteristic-post-multiplier",
+        "valueAffected": "str",
+        "enabled": true
+      },
+      {
+        "_id": "f7b76d5703cd73a7",
+        "name": "Terminator Armor",
+        "modifier": "run",
+        "type": "equipment",
+        "effectType": "movement-restriction",
+        "enabled": true
+      },
+      {
+        "_id": "ca662e8236656748",
+        "name": "Poor Agility",
+        "modifier": "-20",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "ag",
+        "enabled": true
+      },
+      {
+        "_id": "829d0cefbd46bed5",
+        "name": "Giant Among Men",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "movement",
+        "enabled": true
+      },
+      {
+        "_id": "7939cce2771abe99",
+        "name": "Hulking Size",
+        "modifier": "-10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      }
+    ],
+    "armorEffects": [
+      {
+        "name": "Auto-senses",
+        "points": [
+          "Built in Auspex",
+          "Dark Sight trait",
+          "Heightened Senses: +10 to Sight and Sound-based Awareness tests",
+          "Stacks with Lyman's Ear and Occulobe for +20 total",
+          "Immunity to photon flash and stun grenades",
+          "Called Shot becomes a Half Action"
+        ]
+      },
+      {
+        "name": "Bio-monitor & Injectors",
+        "points": [
+          "+10 to tests resisting Toxic and poison effects",
+          "6 pain suppressor doses (each ignores Critical Effects for 1d10 rounds)",
+          "Stun effects last maximum 1 round"
+        ]
+      },
+      {
+        "name": "Osmotic Gill Life Sustainer",
+        "points": [
+          "Environmentally sealed with helmet",
+          "Maintains oxygen supply while powered"
+        ]
+      },
+      {
+        "name": "Vox Link",
+        "points": [
+          "Standard vox and data transmission",
+          "Squad bio-monitor feed"
+        ]
+      },
+      {
+        "name": "Magnetized Boot Soles",
+        "points": ["Activate for Magboots equivalent"]
+      },
+      {
+        "name": "Nutrient Recycling",
+        "points": [
+          "Sustains wearer for extended periods",
+          "After 2 weeks without food, Toughness Test or 1 Fatigue",
+          "Difficulty increases every 2 weeks without food"
+        ]
+      },
+      {
+        "name": "Recoil Suppression",
+        "points": [
+          "Fire Basic weapons one-handed",
+          "Non-Pistol ranged weapons still cannot be used in Close Combat"
+        ]
+      },
+      {
+        "name": "Giant Among Men",
+        "points": [
+          "Hulking size",
+          "Black Carapace negates enemy attack bonus from size",
+          "Penalties to Concealment and Silent Move for heavy armour"
+        ]
+      },
+      {
+        "name": "Poor Manual Dexterity",
+        "points": [
+          "-10 to delicate tasks without Astartes-designed equipment",
+          "Cannot wield non-Astartes ranged weapons",
+          "20 min to don/remove (min 5 min with assistance)"
+        ]
+      },
+      {
+        "name": "Compatible Weapons",
+        "points": [
+          "Any combi-weapon",
+          "Power Weapons",
+          "Force Weapons",
+          "Storm Bolter",
+          "Storm Sheild",
+          "Heavy Flamer",
+          "Assault Cannon",
+          "Cyclone Missle Launcher"
+        ]
+      }
+    ]
+  }
+}

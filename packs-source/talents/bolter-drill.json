@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000031",
+  "name": "Bolter Drill",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "114",
+    "prerequisite": "Adeptus Astartes Weapon Training",
+    "benefit": "Extra shot for bolt weapons",
+    "description": "<p>The skill of an Adeptus Astartes with bolters of all types can be honed by training and combat, allowing Space Marines to unleash devastating volleys of disciplined fire that cut down their enemies like the sweep of a scythe. When firing any class of Bolt weapon on Full or Semi-Auto, the Battle-Brother may opt to increase the weapon’s rate of fire by +1 (this bonus applies to any and all bolt weapons wielded by the Space Marine, meaning that if he is firing more than one bolt weapon at a time, the bonus will apply to all such weapons). This Talent only applies to personal weaponry and <b>does not impact vehicle-mounted weapons of any kind.</b></p>",
+    "cost": 1500,
+    "compendiumId": "tal00000000031",
+    "modifiers": [],
+    "rankRequired": 7
+  }
+}

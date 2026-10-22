@@ -1,0 +1,14 @@
+{
+  "_id": "rending-head0010",
+  "name": "Level 10",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Head",
+    "description": "As above, except the target's neck spews blood in a torrent, drenching all those nearby and forcing them to make a Challenging (+0) Agility Test. Anyone who fails the Test, suffers a –10 penalty to his Weapon Skill and Ballistic Skill Tests for 1 Round as gore fills his eyes or fouls his visor.",
+    "effects": []
+  }
+}

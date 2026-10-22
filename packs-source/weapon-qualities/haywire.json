@@ -1,0 +1,13 @@
+{
+  "_id": "haywire",
+  "name": "Haywire",
+  "type": "weapon-quality",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "haywire",
+    "value": "1",
+    "description": "<p>The weapon generates an electro-magnetic field that troubles the machine spirits of most technology. Everything within the field's radius, indicated by the number in parenthesis, is affected. Roll on Table 5–4: Haywire Field Effects (with any modifiers from the weapon) to determine the strength of the effect. As the field slowly dissipates, the strength lessens one step in severity each round until it becomes Insignificant.</p><h3>Table 5–4: Haywire Field Effects</h3><table><tr><th style='width: 120px;'>Roll</th><th>Field Strength</th></tr><tr><td>20 or less</td><td><b>Insignificant:</b> There is no noticeable effect on nearby technology.</td></tr><tr><td>21-40</td><td><b>Minor Disruption:</b> All actions utilising technology, including firing Ranged weapons without the Primitive Quality, Tech-Use Tests, and any physical actions attempted while wearing power armour or employing cybernetics, suffer a –10 penalty. The Base Movement of anyone in power armour is reduced by 1.</td></tr><tr><td>41-60</td><td><b>Major Disruption:</b> All actions utilising technology, including firing Ranged weapons without the Primitive Quality, Tech-Use Tests, and any physical actions attempted while wearing power armour or employing cybernetics, suffer a –20 penalty. The Base Movement of anyone in power armour is reduced by 3. Melee weapons with technological components function as a Primitive weapon of the analogous type.</td></tr><tr><td>61-80</td><td><b>Dead Zone:</b> Technology within the affected area completely ceases to function. Power armour becomes Unpowered as per Table 5–13: Power Unit Critical Effects. Characters with cybernetic replacements to any internal organ(s) suffer one level of Fatigue each round they remain in the Dead Zone. Melee weapons with technological components function as a Primitive weapon of the analogous type.</td></tr><tr><td>81-100</td><td><b>Prolonged Dead Zone:</b> As Dead Zone.</td></tr></table>"
+  }
+}

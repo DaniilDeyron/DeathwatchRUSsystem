@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000140",
+  "name": "Jaded",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "Willpower 30",
+    "benefit": "Immune to mundane Insanity Points and Fear Tests",
+    "description": "<p>The character's wide travels have shown him both wonders and horrors beyond the ken of most. The galaxy has thrown its worst at the character, and he has yet to flinch. <b>Mundane events, from death's horrific visage to xenos abominations, do not cause Insanity Points, nor Fear Tests. Terrors of the warp still affects the character normally.</b></p>",
+    "compendiumId": "tal00000000140",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

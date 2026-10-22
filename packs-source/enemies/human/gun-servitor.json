@@ -1,0 +1,166 @@
+{
+  "_id": "enmyhuman0000004",
+  "name": "Gun Servitor",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/human/gun-servitor.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 15 },
+      "bs": { "base": 30 },
+      "str": { "base": 50 },
+      "tg": { "base": 40 },
+      "ag": { "base": 15 },
+      "int": { "base": 10 },
+      "per": { "base": 20 },
+      "wil": { "base": 30 },
+      "fs": { "base": 5 }
+    },
+    "wounds": { "base": 10, "max": 10, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {},
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Gun servitors are military-grade units equipped with enhanced sensors, programmed with targeting cants and fitted with heavy weaponry. These heavily armed cyborgs provide devastating suppressing fire, their twin-linked autoguns capable of shredding enemy infantry formations. The combination of enhanced sensors and programmed firing solutions makes them surprisingly effective gunners despite their limited intelligence.</p><p><strong>Source:</strong> Dark Heresy Core Rulebook, p. 340</p>",
+    "classification": "human"
+  },
+  "items": [
+    {
+      "_id": "eihuman040000001",
+      "_sourceId": "tal00000000127",
+      "name": "Heightened Senses (Sight)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "",
+        "prerequisite": "PER 30",
+        "benefit": "+10 to Awareness Tests involving sight",
+        "description": "<p>Either genetics or augmetics have made one of the character’s senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sight) would apply to an Awareness Test to see a distant flock of shale crows, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his eyes</b>.</p>",
+        "compendiumId": "tal00000000127",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman040000002",
+      "_sourceId": "trt000000000002",
+      "name": "Armour Plating",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature is encased in armour plating, increasing its Armour Points by 2 to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "armour-plating-mod",
+            "name": "Armour Plating",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman040000003",
+      "_sourceId": "trt000000000003",
+      "name": "Auto-stabilised",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature always counts as braced when firing heavy weapons and may fire on semi- or full-automatic as a Half Action.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman040000004",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman040000005",
+      "_sourceId": "trt000000000022",
+      "name": "Machine (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>A creature with the Machine trait is fashioned from inorganic materials and is generally more rigourous than fleshy folks. Machines do not breathe, are immune to the effects of a vacuum, extremes of cold, any mind-influencing psychic effect, and their Armour Points apply toward fire damage. Machines are also resilient to injury, having 1 to 5 Armour Points for each location. This number is indicated next to the trait.</p>",
+        "modifiers": [
+          {
+            "_id": "machine-armour-mod",
+            "name": "Machine",
+            "modifier": "4",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman040000006",
+      "name": "Fist",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+5",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "primitive" }],
+        "attachedUpgrades": [],
+        "description": "<p>A heavy servo-enhanced fist used for basic melee attacks.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman040000007",
+      "name": "Twin Autoguns",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/autogun.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+4",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "90",
+        "rof": "-/4/20",
+        "clip": "30",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A pair of twin-linked autoguns mounted on the servitor's chassis, providing devastating suppressing fire. The linked weapons provide improved reliability and rate of fire.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Gun Servitor",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

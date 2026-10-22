@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000042",
+  "name": "Call to Arms",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/storm-wardens.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "199",
+    "key": "call-to-arms",
+    "range": "10 metre radius x PR",
+    "sustained": "Yes",
+    "action": "Extended (2)",
+    "opposed": "No",
+    "cost": 1500,
+    "class": "Chapter",
+    "description": "<p>Plunging his will into the Immaterium, the Librarian calls forth ancestral spirits to fight on his side, and summons up a number of ancestral warriors equal to his PR to fight for him. These warriors use the Imperial Guardsman profile on page 376 and are armed and armoured as detailed there. They will not stray beyond the range of the power nor can they be used for anything but combat. When they are killed, both they and their gear will vanish into smoke.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp"
+  }
+}

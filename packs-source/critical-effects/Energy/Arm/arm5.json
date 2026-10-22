@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "The arm suffers superficial burns inflicting no small amount of pain on the target. The target's WS and BS are halved (round down) for 1 Round and the target takes 1d5 levels of Fatigue.",
+    "effects": []
+  }
+}

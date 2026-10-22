@@ -1,0 +1,29 @@
+{
+  "_id": "exot00000000006",
+  "name": "Mk.IX Ultra-Pattern Sharpshooter's Rifle",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/mk9-ultra-rifle.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "138",
+    "class": "Basic",
+    "dmg": "1d10+4",
+    "dmgType": "Rending",
+    "penetration": "2",
+    "range": "250",
+    "rof": "S/-/-",
+    "clip": "5",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 4,
+    "req": 25,
+    "renown": "",
+    "attachedQualities": [
+      { "id": "accurate" },
+      { "id": "felling", "value": "1" },
+      { "id": "toxic" }
+    ],
+    "description": "<p>Just over two metres in length and weighing close to fifty kilograms, the massive Mk.IX Ultra is as intimidating as it is effective. The Mk. IX is a heavy needle sniper rifle used by the Deathwatch for long-range anti-personnel and anti-materiel work. With its long barrel and powerful scope, the Mk. IX allows a Deathwatch sharpshooter to engage targets with incredible accuracy at very long ranges.</p><p><strong>Tailor Made:</strong> Each Mk. IX is tailored to fit the Battle-Brother to which it has been assigned. The weapon includes a security system programmed with the owner's genetic code that prevents unauthorized use.</p><p><strong>30x Scope:</strong> This powerful telescopic sight allows the sharpshooter to engage enemies at extremely long range.</p><p><strong>Suppressor:</strong> This combination silencer and flash concealer reduces both muzzle flash and the signature report. Any Awareness Tests to locate the sharpshooter via sight or sound suffer an additional –20 penalty and can only be attempted at half the normal distance.</p><p><strong>Highly Accurate:</strong> With its long barrel, integral recoil compensators, and under-barrel bipod, the Mk. IX is an incredibly accurate and well-balanced weapon.</p><p><strong>Astartes Weapon:</strong> While this sniper rifle is in the Exotic Category, for Space Marines it counts as a Solid Projectile Weapon.</p>",
+    "modifiers": []
+  }
+}

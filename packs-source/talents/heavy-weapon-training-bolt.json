@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000120",
+  "name": "Heavy Weapon Training (Bolt)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "",
+    "benefit": "Can use Heavy Bolt weapons without penalty",
+    "description": "<p>The character can employ some of the most devastating weapons of the battlefield. <b>The character can use weapons of the groups for which he has selected this Talent, choosing one new group each time the character obtains it. When a character attempts to use a weapon he does not have the correct Weapon Training Talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill Test.</b></p>",
+    "compendiumId": "tal00000000120",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

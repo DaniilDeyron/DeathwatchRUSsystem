@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000015",
+  "name": "Kroot Hunting Rifle",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/kroot-rifle.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Basic",
+    "dmg": "1d10+5",
+    "dmgType": "Energy",
+    "penetration": "3",
+    "range": "150",
+    "rof": "S/-/-",
+    "clip": "8",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "accurate" }],
+    "description": "<p>A precision variant of the standard Kroot Rifle, the Hunting Rifle is favored by Kroot Shapers and experienced hunters. Its improved sights and stabilization make it ideal for picking off targets at range.</p>",
+    "modifiers": [],
+    "key": "kroot-hunting-rifle"
+  }
+}

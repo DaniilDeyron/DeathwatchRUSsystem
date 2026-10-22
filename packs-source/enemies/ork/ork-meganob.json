@@ -1,0 +1,411 @@
+{
+  "_id": "enmyork000000002",
+  "name": "Ork Meganob",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/ork/meganob.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 45 },
+      "bs": { "base": 20 },
+      "str": { "base": 49 },
+      "tg": { "base": 49 },
+      "ag": { "base": 33 },
+      "int": { "base": 23 },
+      "per": { "base": 28 },
+      "wil": { "base": 28 },
+      "fs": { "base": 20 }
+    },
+    "wounds": { "base": 35, "max": 35, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "command": { "trained": true, "mastered": true },
+      "dodge": { "trained": true },
+      "intimidate": { "trained": true, "mastered": true, "expert": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Ork culture is a seething morass of violence where the strong constantly assert their position over upstart, ambitious young orks. Only the largest, toughest, and most aggressive Orks rise to leadership amongst the greenskins. This makeshift 'nobility' results in a class of ork known as 'Nobz' in their guttural language. Nobz lead by example, fighting where the fighting is thickest and 'encouraging' any recalcitrant Orks or Grots with cuffs and blows to get them into the battle.</p><p>In many warbands, Nobz gain a favoured status for collecting loot or special wargear from the Meks, such as mega-armour. Such mega-armoured Nobz (known as Meganobz) often form an elite bodyguard for an Ork Warboss and accompany him into the heart of any fight with savage enthusiasm.</p><p><strong>Gear:</strong> 5d10 Ork Teeth ('teef'), lots of shiny bitz, small pet hair Squig.</p><p><strong>Traits:</strong> Auto-stabilised, Brutal Charge, Fear (1), Make It Work, Might Makes Right, Mob Rule, Size (Hulking), Sturdy, Unnatural Strength (x2), Unnatural Toughness (x2)</p><p><strong>Source:</strong> Mark of the Xenos, p. 57</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eiork02000000001",
+      "_sourceId": "tal00000000032",
+      "name": "Bulging Biceps",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "Strength 45",
+        "benefit": "Remove bracing requirement for Heavy weapons",
+        "description": "<p>Whereas a weaker man would be sent flying when using heavy weapons, the character’s strong physique allows him to remain standing . <b>The character can fire heavy weapons using Semi-Auto Burst or Full Auto Burst without bracing, and he does not suffer the –30 penalty for failing to brace</b>.</p>",
+        "compendiumId": "tal00000000032",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000002",
+      "_sourceId": "tal00000000055",
+      "name": "Crushing Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "Strength 40",
+        "benefit": "+2 melee damage",
+        "description": "<p>The character's will or faith can sustain him when his flesh fails. <b>He ignores the effects of injury, Fatigue, and Stunning during combat.</b> This Talent does not prevent the Damage, but allows the character to temporarily ignore its effects for the duration of the combat. Death still affects him normally.</p>",
+        "compendiumId": "tal00000000055",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000003",
+      "_sourceId": "tal00000000091",
+      "name": "Furious Assault",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Spend Reaction for extra melee attack after All Out Attack",
+        "description": "<p>The character's speed and martial prowess allow him to land several blows where lesser combatants land one. <b>If the character successfully hits his target using the All Out Attack Action, he may spend his Reaction to make an additional attack using the same bonuses or penalties as the original attack.</b></p>",
+        "compendiumId": "tal00000000091",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000004",
+      "_sourceId": "tal00000000116",
+      "name": "Hardy",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Toughness 40",
+        "benefit": "Recover damage as if Lightly Damaged",
+        "description": "<p>The character's constitution rebounds quickly from shock or injury. <b>When undergoing medical treatment or healing from injures, the character recovers Damage as if Lightly Damaged.</b></p>",
+        "compendiumId": "tal00000000116",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000005",
+      "_sourceId": "tal00000000139",
+      "name": "Iron Jaw",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Toughness 40",
+        "benefit": "Test Toughness to overcome Stunning",
+        "description": "<p>The character has taken blows from Orks and given back as good as he got. The character can bounce back from most strikes without ill effects. <b>If ever Stunned, a successful Toughness Test allows the character to ignore the effects.</b></p>",
+        "compendiumId": "tal00000000139",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000006",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000007",
+      "_sourceId": "tal00000000249",
+      "name": "Street Fighting",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 30",
+        "benefit": "+2 Critical Damage in melee",
+        "description": "<p>The character is an experienced survivor of the kind of murderous fights that occur in the depths of an underhive or stinking alleys of a sink hab. <b>When dealing Critical Damage with an unarmed attack or knife, the character deals an additional +2 points of Damage.</b></p>",
+        "compendiumId": "tal00000000249",
+        "modifiers": [
+          {
+            "_id": "streetfight00001",
+            "name": "Street Fighting - Critical Damage",
+            "modifier": 2,
+            "type": "talent",
+            "effectType": "critical-damage",
+            "valueAffected": "melee",
+            "enabled": true,
+            "weaponRestriction": "unarmed-or-knife"
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork02000000008",
+      "_sourceId": "tal00000000261",
+      "name": "True Grit",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Toughness 40",
+        "benefit": "Halve Critical Damage taken (round up)",
+        "description": "<p>The character is able to shrug off wounds that would fell lesser men. <b>Whenever the character suffers Critical Damage, halve the result (rounding up).</b></p><p><b>Example:</b> Agamemnon takes a grievous wound from a tyranid warrior. After reduction for Armour and Toughness, the Scything Talon strike still does 8 Damage. Unfortunately, it's been tough going and Agamemnon only has 4 Wounds remaining, which would normally result in 4 points of Critical Damage. However, since he has the True Grit Talent, he only takes 2 points of Critical Damage.</p>",
+        "compendiumId": "tal00000000261",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000009",
+      "_sourceId": "trt000000000003",
+      "name": "Auto-stabilised",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature always counts as braced when firing heavy weapons and may fire on semi- or full-automatic as a Half Action.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000010",
+      "_sourceId": "trt000000000007",
+      "name": "Brutal Charge",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait deals an extra 3 points of damage when it charges in the same round. A horde with this trait does an additional 1d10 damage when it charges in the same round.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000011",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (1)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000012",
+      "_sourceId": "trt000000000062",
+      "name": "Make It Work",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark Of Xenos",
+        "page": "56",
+        "description": "<p>Unreliable Ork weapons are not Unreliable in an Ork’s hands. Ork technology defies the laws of physics and engineering, functioning through a combination of brute force and the latent psychic field generated by the Ork race. Ork weapons and equipment, while crude and unreliable in the hands of other races, work just fine for Orks. An Ork never suffers penalties for using Ork-made equipment.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000013",
+      "_sourceId": "trt000000000064",
+      "name": "Might Makes Right",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "56",
+        "description": "<p>Amongst Orks, Intimidate can be substituted for Command Tests.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000014",
+      "_sourceId": "trt000000000063",
+      "name": "Mob Rule",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark of Xenos",
+        "page": "56",
+        "description": "<p>All Orks are latently psychic, an ability that increases in strength the more of them there are in one place. This bolsters their confidence and courage to near-fearless levels when they gather en masse. For every additional Ork within 10m, the Ork’s Willpower gains a <b>+10 bonus to resist the effects of Fear and Pinning</b>. In a <b>Horde, Orks are immune to Fear and Pinning</b>.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000015",
+      "_sourceId": "trt000000000060",
+      "name": "Size (Hulking)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Hulking. Enemies gain +10 to hit it, and it suffers –10 to Concealment. Its base movement is Agility Bonus +1.</p>",
+        "modifiers": [
+          {
+            "_id": "b70df60aff07990c",
+            "name": "Size (Hulking)",
+            "modifier": 1,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "273c48b2d24be279",
+            "name": "Size (Hulking)",
+            "modifier": -10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork02000000016",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000017",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork02000000018",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork02000000019",
+      "name": "Mega-armour",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/ork-gear.webp",
+      "system": {
+        "head": 6,
+        "body": 14,
+        "left_arm": 10,
+        "right_arm": 10,
+        "left_leg": 10,
+        "right_leg": 10,
+        "description": "<p>Massive suits of armour plate cobbled together by Ork Meks, mega-armour turns an already formidable Nob into a walking tank.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eiork02000000020",
+      "name": "Twin-linked Shoota",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-shoota.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+8",
+        "dmgType": "Impact",
+        "penetration": "2",
+        "range": "60",
+        "rof": "S/3/10",
+        "clip": "",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "inaccurate" },
+          { "id": "twin-linked" },
+          { "id": "unreliable" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A pair of crude Ork firearms bolted together, spraying a hail of inaccurate but devastating fire.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork02000000021",
+      "name": "Power Claw",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-choppa.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+10",
+        "dmgType": "Rending",
+        "penetration": "8",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "unbalanced" }],
+        "attachedUpgrades": [],
+        "description": "<p>A massive hydraulic claw crackling with barely-contained energy, capable of tearing through even Space Marine armour.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ork Meganob",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "melee0000000009",
+  "name": "Astartes Combat Knife",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "156",
+    "class": "Melee",
+    "dmg": "1d10",
+    "dmgType": "Rending",
+    "penetration": "2",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 3,
+    "req": 2,
+    "renown": "",
+    "attachedQualities": [],
+    "description": "<p>When a Battle-Brother's last grenade has been thrown, when his bolt rounds are spent and the enemy tide continues to swell, he can always turn to his combat knife. Every Space Marine is issued one of these blades as soon as he recovers from receiving his implants, and he carries it up until his final moment of battle. This large knife—easily the size of a normal human's sword—holds a mono-molecular edge that never dulls, even through centuries of service. In some Chapters combat knives are passed down through the generations, with the deeds of their owners etched upon them. In others, the forging of metal into blade is simultaneous with the forging of a recruit into Space Marine, and his combat knife is laid to rest when he is.</p>",
+    "modifiers": []
+  }
+}

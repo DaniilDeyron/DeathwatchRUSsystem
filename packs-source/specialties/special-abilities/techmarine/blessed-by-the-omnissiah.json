@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000011",
+  "name": "Blessed by the Omnissiah",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "89",
+    "key": "blessed-by-the-omnissiah",
+    "description": "<p>The Techmarine begins the game with the Mechanicus Implants Trait and the Electro-Graft Use and Mechadendrite Use (Servo-Arm) Talents.</p>",
+    "specialty": "Techmarine",
+    "specialtyImg": "systems/deathwatch/icons/specialty/techmarine.webp"
+  }
+}

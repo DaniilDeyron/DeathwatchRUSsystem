@@ -1,0 +1,30 @@
+{
+  "_id": "tyranid000000014",
+  "name": "Strangleweb",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-strangleweb.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "29",
+    "class": "Basic",
+    "dmg": "1d10",
+    "dmgType": "Impact",
+    "penetration": "0",
+    "range": "30",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [
+      { "id": "deadly-snare" },
+      { "id": "devastating", "value": "1" },
+      { "id": "living-ammunition" },
+      { "id": "flame" }
+    ],
+    "description": "<p>A composite creature, like all Tyranid weapons, the Strangleweb fires a spray of sticky mucus at its target, enveloping them in strands of glistening web. Almost immediately the web begins to harden and those covered become enmeshed in a cocoon of constricting fibers which begins to crush them. Those that survive the crushing are left to the mercy of the swarm.</p><p>Strangle Webs are usually carried by Termagants (see Deathwatch page 371) and these creatures may replace their Fleshborer with a Strangleweb should the GM choose. This weapon uses the Flame Quality rules (see page 142 in the Deathwatch Rulebook) but does not set anyone on fire.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "_id": "armor00000000002",
+  "name": "Artificer Armour",
+  "type": "armor",
+  "img": "systems/deathwatch/icons/armor/artificer.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "163",
+    "head": 10,
+    "body": 12,
+    "left_arm": 10,
+    "right_arm": 10,
+    "left_leg": 10,
+    "right_leg": 10,
+    "req": 60,
+    "renown": "Hero",
+    "attachedHistories": [],
+    "description": "<p>Artificer Armour is a masterwork of the Adeptus Mechanicus, individually crafted by skilled Techmarines and Artificers. Each suit is unique, incorporating advanced materials and arcane technologies that provide superior protection compared to standard Power Armour. These suits are often adorned with intricate designs, purity seals, and personal heraldry.</p><p>Artificer Armour is highly prized and typically reserved for veteran warriors, officers, and heroes of the Chapter who have earned such a prestigious honor through countless battles.</p>",
+    "modifiers": [
+      {
+        "_id": "8a9a28be7dfc0e5b",
+        "name": "Enhanced Strength",
+        "modifier": "20",
+        "type": "equipment",
+        "effectType": "characteristic-post-multiplier",
+        "valueAffected": "str",
+        "enabled": true
+      },
+      {
+        "_id": "2146b73106e00db4",
+        "name": "Giant Among Men",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "movement",
+        "enabled": true
+      },
+      {
+        "_id": "633673e117942e47",
+        "name": "Hulking Size",
+        "modifier": "-10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      }
+    ],
+    "armorEffects": [
+      {
+        "name": "Auto-senses",
+        "points": [
+          "Dark Sight trait",
+          "Heightened Senses: +10 to Sight and Sound-based Awareness tests",
+          "Stacks with Lyman's Ear and Occulobe for +20 total",
+          "Immunity to photon flash and stun grenades",
+          "Called Shot becomes a Half Action"
+        ]
+      },
+      {
+        "name": "Bio-monitor & Injectors",
+        "points": [
+          "+10 to tests resisting Toxic and poison effects",
+          "6 pain suppressor doses (each ignores Critical Effects for 1d10 rounds)",
+          "Stun effects last maximum 1 round"
+        ]
+      },
+      {
+        "name": "Osmotic Gill Life Sustainer",
+        "points": [
+          "Environmentally sealed with helmet",
+          "Maintains oxygen supply while powered"
+        ]
+      },
+      {
+        "name": "Vox Link",
+        "points": [
+          "Standard vox and data transmission",
+          "Squad bio-monitor feed"
+        ]
+      },
+      {
+        "name": "Magnetized Boot Soles",
+        "points": ["Activate for Magboots equivalent"]
+      },
+      {
+        "name": "Nutrient Recycling",
+        "points": [
+          "Sustains wearer for extended periods",
+          "After 2 weeks without food, Toughness Test or 1 Fatigue",
+          "Difficulty increases every 2 weeks without food"
+        ]
+      },
+      {
+        "name": "Recoil Suppression",
+        "points": [
+          "Fire Basic weapons one-handed",
+          "Non-Pistol ranged weapons still cannot be used in Close Combat"
+        ]
+      },
+      {
+        "name": "Giant Among Men",
+        "points": [
+          "Hulking size",
+          "Black Carapace negates enemy attack bonus from size",
+          "Penalties to Concealment and Silent Move for heavy armour"
+        ]
+      },
+      {
+        "name": "Poor Manual Dexterity",
+        "points": [
+          "-10 to delicate tasks without Astartes-designed equipment",
+          "Cannot wield non-Astartes ranged weapons",
+          "20 min to don/remove (min 5 min with assistance)"
+        ]
+      }
+    ]
+  }
+}

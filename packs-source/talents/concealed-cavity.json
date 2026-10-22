@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000040",
+  "name": "Concealed Cavity",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "",
+    "benefit": "Conceal small item in body cavity",
+    "description": "<p>The character's flesh or augmetics conceals a small compartment. This might be a pouch hidden under a flap of flesh or a chamber fitted into a cybernetic enhancement. The character may conceal one small item, no larger than a closed fist, within this cavity. Discovering this compartment requires success on a <b>Difficult (–10) Search Test</b>. If using a medicae scanner or auspex, the Difficulty is reduced to <b>Ordinary (+10)</b>.</p>",
+    "compendiumId": "tal00000000040",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

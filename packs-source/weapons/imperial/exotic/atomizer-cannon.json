@@ -1,0 +1,30 @@
+{
+  "_id": "exot00000000002",
+  "name": "Atomizer Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/atomizer-cannon.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "137",
+    "class": "Heavy",
+    "dmg": "2d10+14",
+    "dmgType": "Energy",
+    "penetration": "8",
+    "range": "50",
+    "rof": "S/-/-",
+    "clip": "25",
+    "reload": "3 Full",
+    "equipped": false,
+    "wt": 80,
+    "req": 50,
+    "renown": "Famed",
+    "attachedQualities": [
+      { "id": "blast", "value": "5" },
+      { "id": "devastating", "value": "4" },
+      { "id": "volatile" },
+      { "id": "toxic" }
+    ],
+    "description": "<p>The atomizer cannon is a relic from the Dark Age of Technology. One of the more horrific weapons of war fielded by the Deathwatch Space Marines of the Jericho Reach, they resemble bulky multi-meltas with a heavily shielded back-mounted power unit. The weapon fires a blast of heavily irradiated particles that effectively melts living creatures, blowing their individual cells apart and boiling them alive from the inside. Atomizer cannons have been known to set fire to metals and ceramite momentarily before utterly disintegrating them. Only a handful of these frightening weapons exist among the Deathwatch, and their use against humans is heavily proscribed. Many chapters refuse to use them at all, claiming the technology used is deeply heretical and objecting on moral grounds.</p><p>Along with their more obvious effects, atomizer cannons also irradiate everything in their blast area - this is reflected in the Toxic Special Quality as listed in the weapon's profile.</p>",
+    "modifiers": []
+  }
+}

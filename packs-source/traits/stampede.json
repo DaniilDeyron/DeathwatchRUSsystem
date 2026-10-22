@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000036",
+  "name": "Stampede",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "135",
+    "description": "<p>Whenever a creature with this trait fails a Willpower Test, it automatically stampedes, charging in a straight line forwards for as far as possible, overrunning anything in its path until the source of danger is escaped or crushed under hoof, taking damage equal to the creature's Natural Weapon damage (or 1d5+SB I if it doesn't have one). One stampeding creature automatically causes all other creatures with this Trait within sight to stampede. The stampede lasts until the source of danger is no longer visible or for 1d10 minutes, whichever occurs last.</p>",
+    "modifiers": []
+  }
+}

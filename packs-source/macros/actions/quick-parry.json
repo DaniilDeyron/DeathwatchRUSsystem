@@ -1,0 +1,20 @@
+{
+  "_id": "macro-quick-parry",
+  "name": "Quick Parry",
+  "type": "script",
+  "img": "icons/svg/sword.svg",
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": 0 },
+  "author": "",
+  "scope": "global",
+  "command": "",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.0.0",
+    "systemId": "deathwatch",
+    "systemVersion": "0.0.2"
+  }
+}

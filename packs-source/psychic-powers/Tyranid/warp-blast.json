@@ -1,0 +1,21 @@
+{
+  "_id": "psy00000000067",
+  "name": "Warp Blast",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "30",
+    "key": "warp-blast",
+    "range": "50m x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>By sending out a burning bolt of warp energy, the Zoanthrope blasts an area with power. The Zoanthrope must choose a single creature within range as the target, though others nearby may be affected. The Zoanthrope does not need to hit with the Warp Blast, though its Focus Power Test is modified as if it were making a ranged attack at the target, taking into account such things as range and concealment. Warp Blast inflicts 1d10 Energy Damage x PR, with a Penetration of 2 x PR. Creatures within 1m x PR of the target are also affected and suffer damage as well.</p>",
+    "damageFormula": "1d10*PR",
+    "penetrationFormula": "2*PR",
+    "damageType": "Energy"
+  }
+}

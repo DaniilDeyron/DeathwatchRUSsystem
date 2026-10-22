@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000087",
+  "name": "Rain of Foulness",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/nurgle.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "216",
+    "key": "rain-of-foulness",
+    "range": "20m x Psy Rating",
+    "sustained": "Half Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 300,
+    "class": "Nurgle",
+    "description": "<p><strong>Prerequisites:</strong> Aligned Nurgle</p><p><strong>Focus Power:</strong> Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p><strong>Alternate Names:</strong> Torrent of Decay, the Grandfather's Gift</p><p>At the Sorcerer's command, the skies fill with brooding, discoloured clouds that split open and pour filth and rotten blood down upon the Sorcerer's foes. Few can do little more than flee from this downpour of vileness. The most devout of Nurgle's sorcerers speak of this power as being a gift from Grandfather Nurgle, bestowed upon the world from the Plague Lord's domain.</p><p>This power is a Psychic Blast with a radius of 1+ the Degrees of Success on the Focus Power Test. Anyone caught within the area of effect suffers 1d10+7 I Damage with a Pen equal to Psy Rating and the Toxic (3) Quality, and must take a Pinning Test.</p>",
+    "damageFormula": "1d10+7",
+    "penetrationFormula": "PR",
+    "damageType": "Impact",
+    "attachedQualities": [{ "id": "toxic", "value": "3" }]
+  }
+}

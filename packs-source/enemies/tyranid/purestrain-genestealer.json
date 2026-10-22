@@ -1,0 +1,378 @@
+{
+  "_id": "enmytyranid00009",
+  "name": "Purestrain Genestealer",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tyranid/genestealer.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 65 },
+      "bs": { "base": 0 },
+      "str": { "base": 45 },
+      "tg": { "base": 40 },
+      "ag": { "base": 40 },
+      "int": { "base": 35 },
+      "per": { "base": 60 },
+      "wil": { "base": 45 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 20, "max": 20, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true, "mastered": true },
+      "climb": { "trained": true, "mastered": true },
+      "dodge": { "trained": true, "mastered": true },
+      "swim": { "trained": true, "mastered": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Genestealers are terrifying close combat horrors with the individual strength and speed to tear apart even an armoured Space Marine if they can get close enough to land a telling blow. They stand almost six feet in height, even hunched over as they are on hind legs, their four arms ending in claws, talons or other bio-weapons capable of cutting through ceramite and plasteel with equal ease. Cunning and independent, Genestealers are also one of the few Tyranid creatures which can exist away from the nurturing and controlling influence of the Hive Mind, using their own innate intelligence and brood telepathy to form tight-knit groups.</p><p>Purestrain Genestealers are Genestealers which have been spawned not through the process of infecting hosts but rather by the hive ships themselves in great bio-factories and birthing vats. Not polluted or altered by \"inferior\" genetic material, they are markedly stronger and faster than a normal Genestealer and possess a wider variety of adaptive biomorphs.</p><p><strong>Traits:</strong> Dark Sight, Fear 2 (Frightening), Improved Natural Weapons (Rending Claws), Multiple Arms, Natural Armour (4), Unnatural Agility, Unnatural Speed, Unnatural Strength, Unnatural Toughness, Tyranid</p><p><strong>Source:</strong> Mark of the Xenos, p. 39</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eityranid0900001",
+      "_sourceId": "tal00000000011",
+      "name": "Ambidextrous",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "Agility 30",
+        "benefit": "No penalty for using off-hand",
+        "description": "<p>This Talent does not represent true ambidexterity so much as sufficient training with both hands to make the distinction moot. The character may use either hand equally well for any task, and does not suffer the <b>–20 penalty for actions using his off hand</b>.</p><p>Special: When combined with a Two-Weapon Wielder Talent, the penalty for making attacks with both weapons in the same turn drops to –10.</p>",
+        "compendiumId": "tal00000000011",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900002",
+      "_sourceId": "tal00000000002",
+      "name": "Fearless",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "118",
+        "prerequisite": "",
+        "benefit": "Immune to Fear and Pinning",
+        "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+        "compendiumId": "tal00000000002",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900003",
+      "_sourceId": "tal00000000115",
+      "name": "Hard Target",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Agility 40",
+        "benefit": "Enemies suffer -20 BS when shooting at you during Charge or Run",
+        "description": "<p>Light on his feet, the character dodges and weaves as he moves, skills learned from long years in the line of fire. <b>When the character performs a Charge or Run Action, opponents suffer a –20 penalty to Ballistic Skill Tests made to hit the character with a ranged weapon. This penalty continues until the start of the character's next turn.</b></p>",
+        "compendiumId": "tal00000000115",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900004",
+      "_sourceId": "tal00000000143",
+      "name": "Leap Up",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Agility 30",
+        "benefit": "Stand up as Free Action",
+        "description": "<p>A combination of athletic ability and speed allow the character to spring to his feet in virtually any circumstance. <b>The character may stand up as a Free Action.</b></p>",
+        "compendiumId": "tal00000000143",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900005",
+      "_sourceId": "tal00000000145",
+      "name": "Lightning Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Swift Attack",
+        "benefit": "Make three melee attacks as Full Action",
+        "description": "<p>The character's speed with weapons is legendary, allowing him to launch flurries of attacks in melee. <b>As a Full Action, the character may make three melee attacks on his turn. The effects of this Talent replace those of Swift Attack rather than adding to them. The use of Lightning Attack may not be combined with Dual Strike.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Lightning Attack with only one of the weapons, and a single attack with the other. If the character has the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, they gain the advantage of Lightning Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000145",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900006",
+      "_sourceId": "tal00000000146",
+      "name": "Lightning Reflexes",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "",
+        "benefit": "Add twice Agility Bonus to Initiative",
+        "description": "<p>The character always expects trouble, even in the most innocuous situations, allowing him to act quickly when needed. <b>Add twice the character's Agility Bonus when rolling for Initiative. If the character has Unnatural Agility, then add one to the multiplier before factoring the bonus into the character's Initiative roll.</b></p>",
+        "compendiumId": "tal00000000146",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900007",
+      "_sourceId": "tal00000000247",
+      "name": "Step Aside",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Agility 40, Dodge",
+        "benefit": "Make one additional Dodge per Round",
+        "description": "<p>The character can sway his body out of the path of an attack, causing it to pass through thin air. <b>The character may make an additional Dodge once per Round. In effect, this gives the character a second Reaction that may only be used to Dodge, allowing two Dodges in a Turn. However, the character may still only attempt a single Dodge against one attack.</b></p>",
+        "compendiumId": "tal00000000247",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900008",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900009",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900010",
+      "_sourceId": "trt000000000013",
+      "name": "Fear 2 (Frightening)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900011",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons (Rending Claws)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900012",
+      "_sourceId": "trt000000000024",
+      "name": "Multiple Arms",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has more than one pair of arms. It increases its Toughness Characteristic by +10 and gains a +10 bonus on Strength Tests involving movement such as Climb and Swim. Finally, the creature may use the Multiple Attack action to gain two attacks on its turn. If the creature also has the Swift or Lightning Attack Talent, this trait increases the number of attacks they make with a multiple attack action by +1.</p>",
+        "modifiers": [
+          {
+            "_id": "29dcf414f9344eb5",
+            "name": "Multiple Arms",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "characteristic",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0900013",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "4",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0900014",
+      "_sourceId": "trt000000000045",
+      "name": "Unnatural Agility",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Agility Characteristic is unnatural. Each time this trait is gained, double its Agility Bonus. For example, a creature with Agility 41 normally has a 4 Agility Bonus. With this trait, its Agility Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Agility, the Bonus multiplier increases by 1. For example, one selection multiplies the Agility Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Agility with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "231cf0a6fc0768dd",
+            "name": "Unnatural Agility",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "ag",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0900015",
+      "_sourceId": "trt000000000050",
+      "name": "Unnatural Speed",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature moves with incredible speed. For the purposes of determining movement, the creature doubles its Agility Bonus (after modifying AB from other traits and factors, specifically size).</p>",
+        "modifiers": [
+          {
+            "_id": "e2b28bb6ce2fa7ae",
+            "name": "Unnatural Speed",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "movement-multiplier",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0900016",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0900017",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid0900018",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid0900019",
+      "name": "Rending Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-rending-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+4",
+        "dmgType": "Rending",
+        "penetration": "5",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "razor-sharp" }],
+        "attachedUpgrades": [],
+        "description": "<p>Diamond hard growths of bone capable of crushing reinforced ceramite and ripping through the thickest of armour.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Purestrain Genestealer",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

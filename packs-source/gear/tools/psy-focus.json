@@ -1,0 +1,27 @@
+{
+  "_id": "psyfocus000001",
+  "name": "Psy Focus",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/acquila.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "equipped": false,
+    "wt": 0,
+    "req": 15,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Psykers and Librarians often use these items to help them focus their powers. A psy-focus could be a book of meditations, a blessed icon, or a carved witch stave from the Battle-Brother’s homeworld. When a psyker with a Psy-focus makes an <b>Invocation Skill Test (see Chapter III: Skills, page 99) he gains a +10 bonus</b>.</p>",
+    "modifiers": [
+      {
+        "_id": "psyfocusmod0000001",
+        "name": "Invocation Bonus",
+        "modifier": "10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "invocation",
+        "enabled": true
+      }
+    ]
+  }
+}

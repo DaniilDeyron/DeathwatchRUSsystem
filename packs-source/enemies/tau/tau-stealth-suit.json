@@ -1,0 +1,195 @@
+{
+  "_id": "enmytau000000002",
+  "name": "Tau Stealth Suit",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tau/tau-stealth-suit.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 30 },
+      "bs": { "base": 42 },
+      "str": { "base": 42 },
+      "tg": { "base": 47 },
+      "ag": { "base": 38 },
+      "int": { "base": 30 },
+      "per": { "base": 40 },
+      "wil": { "base": 40 },
+      "fs": { "base": 40 }
+    },
+    "wounds": { "base": 30, "max": 30, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "acrobatics": { "trained": true, "mastered": true },
+      "awareness": { "trained": true, "mastered": true, "expert": true },
+      "concealment": { "trained": true, "mastered": true, "expert": true },
+      "dodge": { "trained": true, "mastered": true },
+      "speak_language_tau": { "trained": true },
+      "speak_language_kroot": { "trained": true },
+      "tracking": { "trained": true, "mastered": true },
+      "shadowing": { "trained": true, "mastered": true, "expert": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Stealth suits are a highly specialised form of Tau Battlesuit, designed for reconnaissance, infiltration and ambushing missions. They are significantly smaller than the 'Crisis' battlesuits, and carry less weaponry. What the Stealth Suits lack in firepower, however, they make up for in the ability to move almost unseen by the enemy until the very last instant. Stealth Suits operate in two modes. The default, passive mode utilises a range of technologies to dampen the suit's electromagnetic signature, so that enemy scanners are far less likely to detect it. This mode is called 'passive' because its use cannot be detected, as rather than attempting to interfere with enemy systems, it simply masks the suit itself. In active mode, however, the suit's Stealth Field Generator comes online. The suit's matte black finish ripples and blurs, resolving itself into a nigh-perfect representation of what lies behind, making it all but transparent. In addition, when operating in active mode, the Stealth Suit's systems actively interfere with and jam enemy sensor devices. In so doing, the jamming itself will give away the fact that the Stealth Suits are present, but will make their detection nearly impossible.</p><p><strong>Skills:</strong> Acrobatics +10 (Ag), Awareness +20 (Per), Common Lore (Tau Empire) (Int), Concealment +20 (Ag), Dodge +10 (Ag), Speak Language (Tau, Kroot) (Int), Tracking +10 (Int), Shadowing +20 (Ag).</p><p><strong>Gear:</strong> Stealth Suit, incorporating stealth field generator, burst cannon, micro-bead, scanner.</p><p><strong>Stealth Field Generator:</strong> The Stealth Suit's Stealth Field Generator is always in one of two modes—Active or Passive. The mode may be changed as Free Action from one turn to the next. In Passive Mode, all Tests of any sort to detect the Stealth Suit and any Ballistic Skill Tests to hit the Stealth Suit suffer a –10 penalty (senses other than sight are unaffected). In Active Mode, any sort of Test to detect the Stealth Suit and all Weapon Skill or Ballistic Skill Tests suffer a –30 penalty (this penalty applies to all senses, including those augmented by auto-senses, scopes, and similar devices). Anyone attempting to locate a Stealth Suit may attempt an Awareness Test (keeping in mind the above penalties). Passing this test by one or more degrees of success will alert the character that his sensors are being interfered with by the Stealth Suit's systems. If the test is passed by one or more Degrees of Success, the searcher will be aware of the Stealth Suit's interference with his sensors, but otherwise he will not detect its effects.</p><p><strong>Traits:</strong> Auto-stabilised, Dark Sight, Flyer (12), Unnatural Strength (x2)</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 365</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eitau02000000001",
+      "_sourceId": "tal00000000115",
+      "name": "Hard Target",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Agility 40",
+        "benefit": "Enemies suffer -20 BS when shooting at you during Charge or Run",
+        "description": "<p>Light on his feet, the character dodges and weaves as he moves, skills learned from long years in the line of fire. <b>When the character performs a Charge or Run Action, opponents suffer a –20 penalty to Ballistic Skill Tests made to hit the character with a ranged weapon. This penalty continues until the start of the character's next turn.</b></p>",
+        "compendiumId": "tal00000000115",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau02000000002",
+      "_sourceId": "tal00000000207",
+      "name": "Rapid Reaction",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "124",
+        "prerequisite": "Agility 40",
+        "benefit": "Agility Test to act normally when surprised or ambushed",
+        "description": "<p>The character has honed his reactions to a razor's edge, allowing them to act while most stand dumbfounded. <b>When surprised or ambushed, a successful Agility Test allows the character to act normally.</b></p>",
+        "compendiumId": "tal00000000207",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau02000000003",
+      "_sourceId": "tal00000000245",
+      "name": "Sprint",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "126",
+        "prerequisite": "",
+        "benefit": "Full Move +AG Bonus metres, Run doubles movement for one Round",
+        "description": "<p>The character can move at great speeds. <b>When taking a Full Move Action, the character can move an extra number of metres equal to his Agility Bonus. When taking the Run Action, the character may double his movement for one Round. The character gains one level of Fatigue if he uses this Talent two Turns in a row.</b></p>",
+        "compendiumId": "tal00000000245",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau02000000004",
+      "_sourceId": "trt000000000003",
+      "name": "Auto-stabilised",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature always counts as braced when firing heavy weapons and may fire on semi- or full-automatic as a Half Action.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau02000000005",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau02000000006",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (12)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eitau02000000007",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eitau02000000008",
+      "name": "XV15 Stealth Suit",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 8,
+        "body": 8,
+        "left_arm": 7,
+        "right_arm": 7,
+        "left_leg": 7,
+        "right_leg": 7,
+        "description": "<p>The XV15 Stealth Suit is a highly specialized form of Tau Battlesuit designed for reconnaissance, infiltration, and ambushing missions. Its matte black finish and stealth field generator make it nearly invisible to enemy detection systems.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eitau02000000009",
+      "name": "Burst Cannon",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tau-burst-cannon.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+12",
+        "dmgType": "Energy",
+        "penetration": "4",
+        "range": "60",
+        "rof": "-/-/10",
+        "clip": "—",
+        "reload": "—",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A rapid-fire Tau weapon system that unleashes a devastating hail of energy bolts.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Tau Stealth Suit",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

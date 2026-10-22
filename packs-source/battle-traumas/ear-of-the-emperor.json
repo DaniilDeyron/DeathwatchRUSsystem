@@ -1,0 +1,24 @@
+{
+  "_id": "bt-000000000002",
+  "name": "Ear of the Emperor",
+  "type": "battle-trauma",
+  "img": "systems/deathwatch/icons/battle-trauma/ear-of-the-emperor.webp",
+  "system": {
+    "description": "<p>All Battle-Brothers pray to the Emperor to guide their hand in battle and help them to do their righteous duty. Some, however, hear his voice and even converse with him through their dreams and mediations. For the most part this has no effect on the Battle-Brother's daily existence, and even his fellow brothers will see little unusual in his constant prayer and religious muttering. Sometimes the Emperor can demand unusual service from the Battle-Brother, which may be at odds with the goals of his Kill-team.</p><p>At the start of a Mission, the GM rolls a dice. If the result is odd, then the Emperor has chosen the PC for a special Objective which the GM tells him about in secret. This should be a Tertiary Objective (see page 230) and can be literally anything, even something that is completely at odds with the Mission's primary goal.</p>",
+    "book": "Deathwatch Core Rulebook",
+    "page": "279",
+    "key": "ear-of-the-emperor",
+    "triggerType": "always",
+    "effectType": "custom",
+    "modifier": 0,
+    "modifierTarget": "",
+    "cohesionPenalty": 0,
+    "canResist": false,
+    "resistDifficulty": "challenging"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": 0 }
+}

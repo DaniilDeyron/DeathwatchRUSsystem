@@ -1,0 +1,29 @@
+{
+  "_id": "melee0000000004",
+  "name": "Astartes Lightning Claw",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/lightning-claw.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "154",
+    "class": "Melee",
+    "dmg": "1d10+6",
+    "dmgType": "Energy",
+    "penetration": "8",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 30,
+    "req": 30,
+    "renown": "Distinguished",
+    "attachedQualities": [
+      { "id": "power-field" },
+      { "id": "proven", "value": "4" }
+    ],
+    "description": "<p>Simply wearing lightning claws is a statement about the wielder's expertise in battle. Constantly honed melee prowess and a willingness to sacrifice easy access to ranged weaponry is necessary to utilise these weapons to their full effect. For these reasons, lightning claws are usually seen in the hands of senior assault specialists.</p><p>A lightning claw is a heavy gauntlet that replaces the normal glove on Astartes power armour. Its extra bulk contains the mechanisms that power four individual power blades, which extend like crackling talons from the back of the hand. While the lethal design of these weapons is enough to ensure they can shear through armour nearly as easily as flesh, when used as a pair by an accomplished close combatant, they become pure instruments of death.</p><p>Lightning claws do an additional point of Damage per degree of success on the Attack roll. When a character is equipped with a pair of lightning claws, they instead do 2 additional points of Damage per degree of success. The blades on lightning claws may be sheathed or unsheathed as a Ready action, but their bulk makes it impossible to effectively use ranged weapons of any class other than Thrown in the applicable hand(s) even when the blades are retracted. In addition, the poor manual dexterity penalty increases to –20. When Requisitioning a pair of lightning claws for one character, the Requisition needed for the second claw is halved.</p>",
+    "modifiers": [],
+    "provenRating": 4
+  }
+}

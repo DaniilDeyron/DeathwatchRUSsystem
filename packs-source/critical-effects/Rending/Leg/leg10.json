@@ -1,0 +1,14 @@
+{
+  "_id": "rending-leg0010",
+  "name": "Level 10",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Leg",
+    "description": "As above, except that the tide of blood is so intense that, for the remainder of the battle, anyone making a Run or Charge Action within six metres of the target this Turn must make a Challenging (+0) Agility Test or fall over.",
+    "effects": []
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "_id": "enmychaos0000008",
+  "name": "Blue Horror",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/blue-horror.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 23 },
+      "bs": { "base": 35 },
+      "str": { "base": 20 },
+      "tg": { "base": 33 },
+      "ag": { "base": 30 },
+      "int": { "base": 30 },
+      "per": { "base": 30 },
+      "wil": { "base": 32 },
+      "fs": { "base": 10 }
+    },
+    "wounds": { "base": 9, "max": 9, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "dodge": { "trained": true },
+      "psyniscience": { "trained": true },
+      "speak_language": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Blue Horrors are the result of a Pink Horror being slain in combat. When a Pink Horror is cleaved with a well-placed blow, it reveals a truly unique and bizarre defence—the Daemon simply splits into two halves, which reshape themselves into smaller, blue-hued copies of the original.</p><p>These two new Daemons change personalities as well as colours, becoming petty and morose, constantly whining and squabbling amongst each other about whose fault it was that they ended up Blue Horrors instead of Pink. However, they are just as dangerous as in their original form, continuing to hurl arcane missiles at their foes with the same deadly accuracy.</p><p><strong>Daemonic Presence:</strong> All enemies within 10 metres of a Blue Horror suffer a –10 penalty to Willpower Tests.</p><p><strong>Blessing of Tzeentch:</strong> Pink and Blue Horrors are blessed by their patron. This has the same effect as a Force Field with a Strength of 20 that does not overload.</p><p><strong>Skills:</strong> Awareness (Per), Dodge (Ag), Psyniscience (Per), Speak Language (Any one).</p><p><strong>Talents:</strong> None.</p><p><strong>Traits:</strong> Daemonic (3), Fear (2), From Beyond, Improved Natural Weapons, Multiple Arms, Strange Physiology, Warp Instability.</p><p><strong>Source:</strong> Black Crusade, p. 354</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos080000001",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (3)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos080000002",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos080000003",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos080000004",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos080000005",
+      "_sourceId": "trt000000000024",
+      "name": "Multiple Arms",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has more than one pair of arms. It increases its Toughness Characteristic by +10 and gains a +10 bonus on Strength Tests involving movement such as Climb and Swim. Finally, the creature may use the Multiple Attack action to gain two attacks on its turn. If the creature also has the Swift or Lightning Attack Talent, this trait increases the number of attacks they make with a multiple attack action by +1.</p>",
+        "modifiers": [
+          {
+            "_id": "29dcf414f9344eb5",
+            "name": "Multiple Arms",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "characteristic",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos080000006",
+      "_sourceId": "trt000000000037",
+      "name": "Strange Physiology",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>A creature with this trait has an unusual, alien, or altogether bizarre anatomy. All hits count as Body hits and death results when damage equals or exceeds the creature's Wounds.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos080000007",
+      "_sourceId": "trt000000000054",
+      "name": "Warp Instability",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>Most warp-entities have a tenuous hold on our reality, often maintained only by horror and bloodshed, and may be disrupted if sufficient harm can be done to their manifested forms. If a creature with this trait takes damage and does not deal damage or Insanity Points on other creatures by the end of its next turn, it must make a Willpower Test. The creature takes 1 damage for failure, plus 1 damage for each degree of failure. If this would deal damage equal to or in excess of the creature's Wounds, it is cast back into the warp.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos080000008",
+      "name": "Warpfire",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/bolter.webp",
+      "system": {
+        "class": "Ranged",
+        "dmg": "1d10+10",
+        "dmgType": "Energy",
+        "penetration": "6",
+        "range": "30m",
+        "rof": "S/3/–",
+        "clip": "–",
+        "reload": "–",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>The Blue Horror hurls a barrage of arcane missiles of ever-changing hues. This ranged weapon deals Energy damage.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos080000009",
+      "name": "Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/chainsword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+1",
+        "dmgType": "Rending",
+        "penetration": "2",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>The Blue Horror's wicked claws. Though they are nearly useless at fighting in melee, they can still inflict damage.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Blue Horror",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

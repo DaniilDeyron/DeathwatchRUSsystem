@@ -1,0 +1,347 @@
+{
+  "_id": "enmyork000000011",
+  "name": "Runtherd",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/ork/runtherd.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 37 },
+      "bs": { "base": 19 },
+      "str": { "base": 46 },
+      "tg": { "base": 44 },
+      "ag": { "base": 30 },
+      "int": { "base": 24 },
+      "per": { "base": 32 },
+      "wil": { "base": 26 },
+      "fs": { "base": 21 }
+    },
+    "wounds": { "base": 15, "max": 15, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "intimidate": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Ork Runtherds specialise in corralling and training Grots, primarily to drive them forward into enemy fire. Needless to say, many Gretchin would rather avoid this, so the Runtherd applies encouragement involving weapons fire and application of their Grot Prods or grabba-sticks. Some Runtherds, realising that the Grots are more willing should they actually have a chance of surviving, outfit their herdz with ramshackle, blunderbuss-style weapons. In reality, this rarely helps them, but for a Grot in combat it is better than nothing. Despite what would appear as an odious chore at best, Runtherds are proud of their occupation and know they contribute greatly to the wellbeing of their tribe or ship. Maintaining a well-trained population of Gretchin is a respectable position for an Ork, and Runtherds do their best to keep the little Grots properly in line.</p><p><strong>Armour:</strong> Flak armour (Body 2)</p><p><strong>Source:</strong> Rogue Trader: The Koronus Bestiary, p. 81</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eiork11000000001",
+      "_sourceId": "tal00000000032",
+      "name": "Bulging Biceps",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "Str 45",
+        "benefit": "Remove Bracing",
+        "description": "<p>Whereas a weaker man would be sent flying when using heavy weapons, the character’s strong physique allows him to remain standing . <b>The character can fire heavy weapons using Semi-Auto Burst or Full Auto Burst without bracing, and he does not suffer the –30 penalty for failing to brace</b>.</p>",
+        "compendiumId": "tal00000000032",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000002",
+      "_sourceId": "tal00000000044",
+      "name": "Crushing Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "115",
+        "prerequisite": "STR 40",
+        "benefit": "+2 melee damage",
+        "description": "<p>The character has the ability to focus his entire body into close combat attacks. <b>The character adds +2 to damage inflicted in melee.</b></p>",
+        "compendiumId": "tal00000000044",
+        "modifiers": [
+          {
+            "_id": "crushingblow0001",
+            "name": "Crushing Blow - Melee Damage",
+            "modifier": 2,
+            "type": "talent",
+            "effectType": "weapon-damage",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork11000000003",
+      "_sourceId": "tal00000000091",
+      "name": "Furious Assault",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "WS 35",
+        "benefit": "Extra attack on All Out Attack hit",
+        "description": "<p>The character's speed and martial prowess allow him to land several blows where lesser combatants land one. <b>If the character successfully hits his target using the All Out Attack Action, he may spend his Reaction to make an additional attack using the same bonuses or penalties as the original attack.</b></p>",
+        "compendiumId": "tal00000000091",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000004",
+      "name": "Grot Wrangler",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Rogue Trader: The Koronus Bestiary",
+        "page": "81",
+        "prerequisite": "",
+        "benefit": "Command (Fel) and Wrangling (Int) at +20 when directing Gretchin and Snotlings",
+        "description": "<p>Runtherds are very good at getting Gretchin and Snotlings to perform their assigned tasks, no matter how dangerous or downright suicidal they might be. He has the <b>Command (Fel) and Wrangling (Int) Skills, both with a +20 bonus</b>, when used to direct these lesser orkoid beings.</p>",
+        "compendiumId": "",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000005",
+      "_sourceId": "tal00000000116",
+      "name": "Hardy",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Toughness 40",
+        "benefit": "Recover damage as if Lightly Damaged",
+        "description": "<p>The character's constitution rebounds quickly from shock or injury. <b>When undergoing medical treatment or healing from injures, the character recovers Damage as if Lightly Damaged.</b></p>",
+        "compendiumId": "tal00000000116",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000006",
+      "_sourceId": "tal00000000139",
+      "name": "Iron Jaw",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Toughness 40",
+        "benefit": "Toughness Test to ignore Stunned effects",
+        "description": "<p>The character has taken blows from Orks and given back as good as he got. The character can bounce back from most strikes without ill effects. <b>If ever Stunned, a successful Toughness Test allows the character to ignore the effects.</b></p>",
+        "compendiumId": "tal00000000139",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000007",
+      "_sourceId": "tal00000000261",
+      "name": "True Grit",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Toughness 40",
+        "benefit": "Halve Critical Damage (rounding up)",
+        "description": "<p>The character is able to shrug off wounds that would fell lesser men. <b>Whenever the character suffers Critical Damage, halve the result (rounding up).</b></p><p><b>Example:</b> Agamemnon takes a grievous wound from a tyranid warrior. After reduction for Armour and Toughness, the Scything Talon strike still does 8 Damage. Unfortunately, it's been tough going and Agamemnon only has 4 Wounds remaining, which would normally result in 4 points of Critical Damage. However, since he has the True Grit Talent, he only takes 2 points of Critical Damage.</p>",
+        "compendiumId": "tal00000000261",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000008",
+      "_sourceId": "trt000000000007",
+      "name": "Brutal Charge",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait deals an extra 3 points of damage when it charges in the same round. A horde with this trait does an additional 1d10 damage when it charges in the same round.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000009",
+      "_sourceId": "trt000000000062",
+      "name": "Make it Work",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark Of Xenos",
+        "page": "56",
+        "description": "<p>Unreliable Ork weapons are not Unreliable in an Ork’s hands. Ork technology defies the laws of physics and engineering, functioning through a combination of brute force and the latent psychic field generated by the Ork race. Ork weapons and equipment, while crude and unreliable in the hands of other races, work just fine for Orks. An Ork never suffers penalties for using Ork-made equipment.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000010",
+      "_sourceId": "trt000000000063",
+      "name": "Mob Rule",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark of Xenos",
+        "page": "56",
+        "description": "<p>All Orks are latently psychic, an ability that increases in strength the more of them there are in one place. This bolsters their confidence and courage to near-fearless levels when they gather en masse. For every additional Ork within 10m, the Ork’s Willpower gains a <b>+10 bonus to resist the effects of Fear and Pinning</b>. In a <b>Horde, Orks are immune to Fear and Pinning</b>.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000011",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000012",
+      "_sourceId": "trt000000000060",
+      "name": "Size (Hulking)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Hulking. Enemies gain +10 to hit it, and it suffers –10 to Concealment. Its base movement is Agility Bonus +1.</p>",
+        "modifiers": [
+          {
+            "_id": "b70df60aff07990c",
+            "name": "Size (Hulking)",
+            "modifier": 1,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "273c48b2d24be279",
+            "name": "Size (Hulking)",
+            "modifier": -10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork11000000013",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eiork11000000014",
+      "name": "Flak Armour (Body)",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/armor/flak.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "166",
+        "head": 0,
+        "body": 2,
+        "left_arm": 0,
+        "right_arm": 0,
+        "left_leg": 0,
+        "right_leg": 0,
+        "attachedHistories": [],
+        "description": "<p>Battered and worn flak armour cobbled together from scraps, covering only the torso.</p>",
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eiork11000000015",
+      "name": "Slugga",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-slugga.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "1d10+4",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "20",
+        "rof": "S/3/-",
+        "clip": "18",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "inaccurate" }, { "id": "unreliable" }],
+        "attachedUpgrades": [],
+        "description": "<p>A crude, loud, slug-firing pistol.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000016",
+      "name": "Choppa",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/ork-choppa.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+7",
+        "dmgType": "Rending",
+        "penetration": "2",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "unbalanced" }],
+        "attachedUpgrades": [],
+        "description": "<p>A brutal, heavy-bladed melee weapon.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eiork11000000017",
+      "name": "Grot Prod",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d5+8",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "shocking" }],
+        "attachedUpgrades": [],
+        "description": "<p>An electrified prod used by Runtherds to keep Gretchin and Snotlings in line. Equally effective against enemies.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Runtherd",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

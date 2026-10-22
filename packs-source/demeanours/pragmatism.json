@@ -1,0 +1,11 @@
+{
+  "name": "Pragmatism",
+  "type": "demeanour",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "book": "Honour the Chapter",
+    "page": "84",
+    "description": "<p>At various times during its history, the Raptors have almost faced extinction but has neither the less continued to function, rebuild and once more face their enemies. It is part of the Raptor mentality that the Chapter will endure no matter the cost and that the eventual destruction and rebuilding of all Chapters in the Adeptus Astartes is inevitable. As one Battle-Brother dies, another takes his place to continue the endless struggle where the gene-seed lives on but the warrior does not. Death is the only constant in the universe and regardless of victory or defeat the only reward a Battle-Brother can look forward to.</p><p>Quite apart from casting a dark cloud over the Battle-Brothers of the Raptors Chapter, it fills them with stoic pragmatism to face everything that the universe can throw at them, to fulfil their duty until they eventually die and another takes their place. The galaxy and its many horrors hold no surprises for them and they know that somewhere out there among the inky black is the piece of ground where they will fall, having served their Emperor and held back the night at least for a brief time.</p><p>Other Chapters can find these attitudes at odds with a strong devotion to the Emperor and the righteous plight of mankind, though the Raptors see the two as intertwined, and their Chapter has always done its duty and remains unquestionably loyal to the Imperium. For a Raptors Battle-Brother facing death is only a matter of time, and they carry the knowledge with them every day, alongside their duty to their brothers and their oath to the God-Emperor.</p>",
+    "chapter": "Raptors"
+  }
+}

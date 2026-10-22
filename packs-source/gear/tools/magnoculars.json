@@ -1,0 +1,15 @@
+{
+  "_id": "magnoculars0001",
+  "name": "Magnoculars",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/magnoculars.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "wt": 0.5,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>These are powerful vision aids that magnify distant objects. More advanced, high-quality magnoculars can also give range read-outs, detect heat sources, calculate target location positioning, and take pict-captures of a view for later analysis</p>"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000056",
+  "name": "The Golden Son",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/imperial-fists.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "50",
+    "key": "the-golden-son",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 2000,
+    "class": "Chapter",
+    "description": "<p>The Librarian is transformed into a radiant figure suffused with the power and nobility of his Primarch. Friends witness a glorious sight not seen since Rogal Dorn himself walked amongst Men, while enemies see the fiery harbinger of their doom. While this power is in effect, the Librarian gains the Fear (3) Trait against any enemies in sight, while friendly Space Marines within 20 metres of the Librarian instantly regain 1d5 lost Cohesion if they have suffered any Cohesion damage. If the squad currently has its full normal amount of Cohesion, the squad gains 1 bonus point of Cohesion instead.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/imperial-fists.webp"
+  }
+}

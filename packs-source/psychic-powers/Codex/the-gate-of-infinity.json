@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000017",
+  "name": "The Gate of Infinity",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "194",
+    "key": "the-gate-of-infinity",
+    "range": "Self",
+    "sustained": "No",
+    "action": "Extended (3)",
+    "opposed": "No",
+    "cost": 2000,
+    "class": "Codex",
+    "description": "<p>Rending the veil between worlds, the Librarian creates a rift through which he and his allies might pass. The Librarian chooses an exit point for the rift at any point within 10 kilometres x PR. The size of the rift depends on the power used to create it, and it will have a width and height of 2 metres x PR. The rift will remain open for 1 Round x PR or until the Librarian himself passes through it, at which time it will instantly close. While it remains open, creatures may pass through the gate freely provided they can fit.</p><p>This power is incredibly taxing and requires at least 12 hours recovery before it may be used again.</p>"
+  }
+}

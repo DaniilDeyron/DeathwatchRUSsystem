@@ -1,0 +1,31 @@
+{
+  "_id": "armorhist0000005",
+  "name": "A Fury like lightning",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/fury.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>The reactions of the Angels of Death are far beyond what any normal human could achieve. While Astartes power armour manages not to hinder a Battle-Brother's natural speed, this suit goes to great lengths to enhance and optimise it. The armour's hyper articulated joint mechanisms allow for more dextrous weight manipulation, and muscle-response auto-readers translate even minute movements into powered assistance. These systems grant the bearer a +5 bonus to Agility, and +1 to Initiative rolls.</p>",
+    "modifiers": [
+      {
+        "_id": "armhistmod0008",
+        "name": "Enhanced Agility",
+        "modifier": "5",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "ag",
+        "enabled": true
+      },
+      {
+        "_id": "armhistmod0011",
+        "name": "Initiative Bonus",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "initiative",
+        "valueAffected": "",
+        "enabled": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000073",
+  "name": "Doombolt",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/unaligned.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "213",
+    "key": "doombolt",
+    "range": "20 metres x Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Unaligned",
+    "description": "<p>Known by a variety of names, the Doombolt is a common destructive power utilised by a great many Chaos magos to strike down their foes. Formed from the coalesced spite and loathing of the Sorcerer, they are corrosive bolts of dark energy, raining down like black hail upon the enemy. As the Sorcerer conjures these bitter projectiles with clenched fists, he fills the air with the stench of brimstone and the booming roar of daemons for the brief moment of the power's manifestation.</p><p>Doombolt is a Psychic Barrage that deals 1d10+ Psy Rating Energy Damage with a Pen of 8.</p>",
+    "damageFormula": "1d10+PR",
+    "penetrationFormula": "8",
+    "damageType": "Energy",
+    "attachedQualities": []
+  }
+}

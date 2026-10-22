@@ -1,0 +1,13 @@
+{
+  "name": "Biscopea",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Grants Unnatural Strength (x2)",
+    "description": "<p>This implant, in conjunction with several others, grants the Space Marine the Unnatural Strength (x2) Trait.</p>",
+    "modifiers": []
+  }
+}

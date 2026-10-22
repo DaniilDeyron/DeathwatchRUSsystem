@@ -1,0 +1,28 @@
+{
+  "_id": "ct-ba-002",
+  "name": "Golden Icons (Icon of Inspiration)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Blood Angels Chapter Trapping",
+    "description": "<p>Blood Angels frequently hang sacred gilded icons on their armour or from their belts. The exact form of these items varies, but they are considered a display of devotion as well as serving as a focus for spiritual meditation.</p><p><strong>Effect:</strong> Add +3 to Command Tests.</p>",
+    "modifiers": [
+      {
+        "_id": "ct-ba-002-mod-01",
+        "name": "Icon of Inspiration",
+        "modifier": "3",
+        "type": "chapter",
+        "effectType": "skill",
+        "valueAffected": "command",
+        "enabled": true
+      }
+    ],
+    "key": "blood-angels-golden-icons-inspiration"
+  }
+}

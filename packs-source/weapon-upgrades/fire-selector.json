@@ -1,0 +1,16 @@
+{
+  "name": "Fire Selector",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "fire-selector",
+    "singleShotOnly": false,
+    "req": 10,
+    "renown": "",
+    "wt": 0.5,
+    "description": "<p>A staple tool of the Deathwatch, a shot selector allows for speed and ease of switching between magazines of different ammunition, maximising tactical flexibility when deployed under uncertain parameters. A weapon with a fire selector can have up to three different clips added. At the start of the shooter's Turn, he can use his fire selector to choose which clip he wishes to draw ammo from.</p><p><strong>Upgrades:</strong> Bolt or Solid Projectile Pistols, and Bolt or Solid Projectile Basic weapons</p>",
+    "modifiers": []
+  }
+}

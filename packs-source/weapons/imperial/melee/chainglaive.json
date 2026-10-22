@@ -1,0 +1,26 @@
+{
+  "_id": "melee0000000016",
+  "name": "Chainglaive",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/chainsword.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "361",
+    "class": "Melee",
+    "dmg": "1d10+5",
+    "dmgType": "Rending",
+    "penetration": "5",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 12,
+    "req": 6,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }],
+    "description": "<p>A chainglaive is a two-handed chain weapon with an extended reach, combining the cutting power of a chainblade with the leverage of a polearm. This fearsome weapon is favored by Chaos champions and fallen warriors who have turned their martial prowess to the service of the Dark Gods.</p>",
+    "modifiers": [],
+    "key": "chainglaive"
+  }
+}

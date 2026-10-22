@@ -1,0 +1,14 @@
+{
+  "_id": "rending-arm0010",
+  "name": "Level 10",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Arm",
+    "description": "As above. However, as the arm falls to the ground its fingers spasm uncontrollably, pumping the trigger of any held weapon. If the target was carrying a ranged weapon there is a 5% chance that a single randomly determined target within 2d10 metres will be hit by these shots, in which case resolve a single hit from the target's weapon as normal.",
+    "effects": []
+  }
+}

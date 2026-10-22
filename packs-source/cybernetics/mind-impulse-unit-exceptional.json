@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000016",
+  "name": "Mind Impulse Unit (MIU, Exceptional Craftsmanship)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/cybernetics.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "178",
+    "equipped": false,
+    "description": "<p>These devices, also known as sense-links, allow the owner to directly interface with a machine or technological device. MIUs see widespread use among Techmarines.</p><p>Exceptional models include advanced spinal/cortex connectors, wrist connector probes, and possibly mechadendrite connectors for enhanced machine communion.</p><p><strong>Game Effects:</strong> Grants a +10 bonus to communicate with machine spirits. When interfaced with MIU systems, grants a +10 bonus to Tech-Use, Pilot, Drive, Logic, Inquiry, and Ballistic Skill Tests.</p><p><em>Note: Bonuses only apply when directly interfaced with MIU-capable devices/systems. Machine spirit communication bonus applies during communion rituals and interactions with machine spirits.</em></p>",
+    "modifiers": [],
+    "req": 15,
+    "renown": "Respected",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "CHANGEME0000001",
+  "img": "systems/deathwatch/icons/weapons/default.webp",
+  "name": "Weapon Name",
+  "system": {
+    "animationKey": "",
+    "damage": "",
+    "damageType": "",
+    "description": "",
+    "weaponType": ""
+  },
+  "type": "weapon"
+}

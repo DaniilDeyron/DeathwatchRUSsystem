@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000010",
+  "name": "Soak Fire",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "223",
+    "key": "soak-fire",
+    "description": "<p>While a good formation covers all angles of attack, it also shields the squad from directed fire. This is especially true of Space Marines, who use their bulk and armour to shrug off hails of bullets, bolts, and beams. A Battle-Brother may use the Soak Fire ability whenever another member of his squad currently within his Support Range is hit by a Semi or Full Auto fire attack and would be eligible to make a Dodge Test to avoid the attack. These hits are then divided evenly between the original target, the Battle-Brother, and those supporting him, provided they would normally be eligible targets for the attack. Regardless of the number of Battle-Brothers soaking fire, the original target always takes at least one hit. Note that Battle-Brothers soaking fire cannot Dodge attacks allocated to them.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>May also soak single-attack ranged weapons (e.g., lascannon, sniper), dividing Damage evenly between those involved</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Reaction: divide Semi/Full Auto hits evenly among Kill-team in Support Range (original target keeps at least 1 hit; soakers cannot Dodge)",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "May also soak single-attack ranged weapons, dividing Damage evenly between those involved"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": false,
+    "action": "reaction"
+  }
+}

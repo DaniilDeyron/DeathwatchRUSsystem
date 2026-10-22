@@ -1,0 +1,558 @@
+{
+  "_id": "enmychaos0000001",
+  "name": "Daemon Prince",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/daemon-prince.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 75 },
+      "bs": { "base": 60 },
+      "str": { "base": 66 },
+      "tg": { "base": 45 },
+      "ag": { "base": 48 },
+      "int": { "base": 48 },
+      "per": { "base": 48 },
+      "wil": { "base": 75 },
+      "fs": { "base": 30 }
+    },
+    "wounds": { "base": 80, "max": 80, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true, "mastered": true },
+      "climb": { "trained": true },
+      "command": { "trained": true, "mastered": true, "expert": true },
+      "dodge": { "trained": true, "mastered": true },
+      "forbidden_lore": { "trained": true, "mastered": true, "expert": true },
+      "intimidate": { "trained": true, "mastered": true, "expert": true },
+      "literacy": { "trained": true },
+      "scrutiny": { "trained": true, "mastered": true, "expert": true },
+      "speak_language": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Daemon Princes are incredibly powerful entities of the warp, vast and nightmarish beings whose essence is the immortal hell-stuff of the Warp embodied, concentrated, and given form. No two are truly alike, although many maintain a roughly humanoid shape when incarnate in the material realm, their exact forms fashioned from congealed horror and marked with the signs and stigmata of whichever great power they themselves serve.</p><p>Perhaps the most terrible thing about these walking blasphemies is, if the malefic texts of forbidden Daemonology are to be believed, that once they were mortals. Daemon Princes arose from mortal beings (humans, Traitorous Space Marines, and sometimes even alien creatures) who gave themselves over to the worship of Chaos in life and became its dread champions. These champions of Chaos prospered, slaughtered, and found favour with the fickle Chaos Gods who then transfigured them, refashioning their tainted souls into daemonhood. The prize granted for their service and innumerable black deeds—an eternity of darkness in the Warp.</p><p><strong>Aura of Despair and Death:</strong> The Daemon Prince is surrounded by an unholy aura which saps the will from their enemies. The aura has a range of 75 metres. All opponents of the Daemon Prince within this area suffer a –10 penalty to their Willpower. In addition, the first time any member of a Kill-team finds himself within the Aura of Despair and Death, he must take a Challenging (+0) Willpower Test, taking the –10 penalty imposed by the aura into account. If he fails, the squad takes 1 point of cohesion damage. This means that the potential cohesion damage from the Aura of Despair and Death is equal to the number of Battle-Brothers making up the squad. The Aura of Despair and Death is a mind-affecting fear-based effect, so any Talents, Traits, Equipment or other rules which offer resistance to Warp-based attacks or psychic powers will apply.</p><p><strong>Slaves to Darkness:</strong> Those lesser beings who serve a Daemon Prince in war are enslaved by fear and bound by terrible oaths to do the Prince's bidding. They would slay themselves at his command and fear him more than the weapons of the enemy. Any Horde that accompanies the Daemon Prince regains 1d5 Magnitude at the start of their turn as the places of the dead are taken by fresh fanatics.</p><p><strong>Skills:</strong> Awareness (Per) +10, Climb (S), Command (Fel) +20, Dodge (Ag) +10, Forbidden Lore (Daemons, Psykers, Warp) (Int) +20, Intimidate (S) +20, Literacy (Int), Scrutiny (Per) +20, Speak Language (Low Gothic, Unholy Tongue) (Int).</p><p><strong>Talents:</strong> Ambidextrous, Astartes Weapon Training, Combat Master, Crippling Strike, Crushing Blow, Hammer Blow, Hatred (Loyalist Space Marines), Heightened Senses (All), Killing Strike, Preternatural Speed, Swift Attack, Thunder Charge, Two Weapon Wielder (Melee).</p><p><strong>Traits:</strong> Brutal Charge, Daemonic, Fear 4 (Terrifying), Dark Sight, From Beyond, Size (Enormous), Unnatural Strength (x3), Unnatural Toughness (x2), The Stuff of Nightmares, Touched by the Fates (3).</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 362</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos010000001",
+      "_sourceId": "tal00000000011",
+      "name": "Ambidextrous",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "Agility 30",
+        "benefit": "No penalty for using off-hand",
+        "description": "<p>This Talent does not represent true ambidexterity so much as sufficient training with both hands to make the distinction moot. The character may use either hand equally well for any task, and does not suffer the <b>–20 penalty for actions using his off hand</b>.</p><p>Special: When combined with a Two-Weapon Wielder Talent, the penalty for making attacks with both weapons in the same turn drops to –10.</p>",
+        "compendiumId": "tal00000000011",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000002",
+      "_sourceId": "tal00000000015",
+      "name": "Astartes Weapon Training",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "",
+        "benefit": "Proficient with all Astartes weapons",
+        "description": "<p>Battle-Brothers of the Adeptus Astartes spend years becoming proficient with all manner of weapons. By the time that a Battle-Brother has entered service in a squad, he will have not only trained with both heavy and melee weapons, but used those weapons on countless battlefields. The Battle-Brother is proficient with bolt, chain, melta, plasma, power, flame, primitive (ranged and melee), las weapons, launchers, solid projectile, and thrown weapons of all Classes. In essence, the only weapons that the Battle-Brother is not proficient with are exotic weapons; for these, he must acquire individual proficiencies as normal.</p>",
+        "compendiumId": "tal00000000015",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000003",
+      "_sourceId": "tal00000000038",
+      "name": "Combat Master",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "Weapon Skill 30",
+        "benefit": "No penalty for being outnumbered",
+        "description": "<p>The character's weapon seems to be everywhere at once, keeping many more opponents at bay in close combat than would seem possible. <b>Opponents fighting the character in hand-to-hand combat gain no bonuses for outnumbering him.</b></p>",
+        "compendiumId": "tal00000000038",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000004",
+      "_sourceId": "tal00000000043",
+      "name": "Crippling Strike",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "115",
+        "prerequisite": "Weapon Skill 40",
+        "benefit": "Called Shots penalize enemy actions",
+        "description": "<p>The character can land his blows precisely where they inflict the most harm, cutting into seams or hammering at weak points. <b>When the character's melee attack causes Critical Damage add +4 Damage.</b></p>",
+        "compendiumId": "tal00000000043",
+        "modifiers": [
+          {
+            "_id": "crippstrike00001",
+            "name": "Crippling Strike - Critical Damage",
+            "modifier": 4,
+            "type": "talent",
+            "effectType": "critical-damage",
+            "valueAffected": "melee",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos010000005",
+      "_sourceId": "tal00000000055",
+      "name": "Crushing Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "Strength 40",
+        "benefit": "+2 melee damage",
+        "description": "<p>The character's will or faith can sustain him when his flesh fails. <b>He ignores the effects of injury, Fatigue, and Stunning during combat.</b> This Talent does not prevent the Damage, but allows the character to temporarily ignore its effects for the duration of the combat. Death still affects him normally.</p>",
+        "compendiumId": "tal00000000055",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000006",
+      "_sourceId": "tal00000000114",
+      "name": "Hammer Blow",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Strength 50",
+        "benefit": "+4 melee damage with All Out Attack",
+        "description": "<p>The Battle-Brother strikes a single blow with such focus and force that it breaks armour and pulps flesh as it strikes. <b>When the Battle-Brother makes an All Out Attack manoeuvre to make a single melee attack, he may add half his Strength Bonus to the weapon's Armour Penetration. The attack also counts as having the Shocking quality to represent the concussive force of the blow's impact.</b></p>",
+        "compendiumId": "tal00000000114",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000007",
+      "name": "Hatred (Loyalist Space Marines)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "",
+        "benefit": "+10 WS against Loyalist Space Marines in melee",
+        "description": "<p>The Daemon Prince's hatred of the Emperor's warriors is absolute. <b>When fighting Loyalist Space Marines in close combat, the Daemon Prince gains a +10 bonus to all Weapon Skill Tests made against them.</b></p>",
+        "compendiumId": "",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000008",
+      "_sourceId": "tal00000000127",
+      "name": "Heightened Senses (Sight)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving sight",
+        "description": "<p>Either genetics or augmetics have made one of the character’s senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sight) would apply to an Awareness Test to see a distant flock of shale crows, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his eyes</b>.</p>",
+        "compendiumId": "tal00000000127",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000009",
+      "_sourceId": "tal00000000128",
+      "name": "Heightened Senses (Smell)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving smell",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Smell) would apply to an Awareness Test to detect a faint odor, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his nose</b>.</p>",
+        "compendiumId": "tal00000000128",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000010",
+      "_sourceId": "tal00000000129",
+      "name": "Heightened Senses (Sound)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving sound",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sound) would apply to an Awareness Test to hear distant footsteps, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his ears</b>.</p>",
+        "compendiumId": "tal00000000129",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000011",
+      "_sourceId": "tal00000000130",
+      "name": "Heightened Senses (Taste)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving taste",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Taste) would apply to an Awareness Test to detect poison in food, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his tongue</b>.</p>",
+        "compendiumId": "tal00000000130",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000012",
+      "_sourceId": "tal00000000131",
+      "name": "Heightened Senses (Touch)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving touch",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Touch) would apply to an Awareness Test to feel vibrations or textures, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his hands</b>.</p>",
+        "compendiumId": "tal00000000131",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000013",
+      "_sourceId": "tal00000000141",
+      "name": "Killing Strike",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Weapon Skill 50",
+        "benefit": "Righteous Fury on 9 or 10",
+        "description": "<p>Space Marines are amongst the deadliest warriors in the galaxy, and they have learned how best to place their blows for maximum effect. <b>When taking the All-Out Attack action, a Space Marine may spend a Fate Point (before rolling the dice) to make his melee attacks for that round impossible to parry or dodge.</b></p>",
+        "compendiumId": "tal00000000141",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000014",
+      "_sourceId": "tal00000000202",
+      "name": "Preternatural Speed",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "124",
+        "prerequisite": "Agility 40",
+        "benefit": "Double movement rates",
+        "description": "<p>The character is a swift moving bringer of death, a living, bloody scythe before whom foes die like corn before the reaper. <b>The character may use Swift Attack and Lighting Attack as a Half Action rather than a Full Action. In addition, the character may use the Swift Attack and Lightning Attack Talents during a Charge.</b></p>",
+        "compendiumId": "tal00000000202",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000015",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000016",
+      "_sourceId": "tal00000000259",
+      "name": "Thunder Charge",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Strength 50",
+        "benefit": "Extra melee damage when charging",
+        "description": "<p>The Battle-Brother charges into combat using his armoured body as an additional weapon. Driven by his armour and the Battle-Brother's enhanced muscle, the impact of such a charge is like being struck by a thunderbolt. <b>When the Battle-Brother makes a Charge Action, first make an unarmed attack (see page 245 for more details) against every opponent he is charging. This represents slamming into the enemy with the character's armoured bulk. This attack automatically also has the potential to knock the opponent down in the same way as if the Battle-Brother had used the Knock Down Action (see page 241 for more details). Once this attack has been resolved, the Battle-Brother may make his normal Charge Attack as normal. If the Battle-Brother charges a Horde, he may make d5+1 unarmed attacks against the Horde.</b></p>",
+        "compendiumId": "tal00000000259",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000017",
+      "_sourceId": "tal00000000263",
+      "name": "Two Weapon Wielder (Melee)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Ambidextrous",
+        "benefit": "Reduced penalties for dual wielding melee weapons",
+        "description": "<p>Years of training allow the character to use a weapon in each hand when needed. <b>When armed with two weapons of the same type, the character may spend a Full Action to attack with both. Both tests made to attack with the weapons suffer a –20 penalty (see Chapter VIII: Combat for more details on fighting with two weapons). The character must possess Two-Weapon Wielder (Melee) and Two-Weapon Wielder (Ballistic) if he wishes to use a gun and hand weapon with this Talent.</b></p>",
+        "compendiumId": "tal00000000263",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000018",
+      "_sourceId": "trt000000000007",
+      "name": "Brutal Charge",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait deals an extra 3 points of damage when it charges in the same round. A horde with this trait does an additional 1d10 damage when it charges in the same round.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000019",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000020",
+      "_sourceId": "trt000000000013",
+      "name": "Fear 4 (Terrifying)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000021",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000022",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000023",
+      "_sourceId": "trt000000000033",
+      "name": "Size (Enormous)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Enormous. Enemies gain +20 to hit it, and it suffers –20 to Concealment. Its base movement is Agility Bonus +2.</p>",
+        "modifiers": [
+          {
+            "_id": "f944ed87cd28be1d",
+            "name": "Size (Enormous)",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "f71f6a2270313730",
+            "name": "Size (Enormous)",
+            "modifier": -20,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos010000024",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos010000025",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos010000026",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos010000027",
+      "_sourceId": "trt000000000040",
+      "name": "The Stuff of Nightmares",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Some warp entities are so terribly powerful the will perpetuating their bodies in our reality is almost impossible to break or disrupt. Such entities are completely immune to the effects of poisons, diseases, the need to breathe, most environmental hazards, bleeding, stunning, and any critical result other than one that would destroy them outright, unless caused by a psychic power, force weapon, or holy attack.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000028",
+      "_sourceId": "trt000000000041",
+      "name": "Touched by the Fates (3)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>The NPC has a number of Fate Points shown in parentheses after the trait. He may use these Fate Points in exactly the same way as Player Characters and may even 'burn' a Fate Point to survive death and destruction at the GM's discretion. The rules for Righteous Fury also apply to this NPC.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos010000029",
+      "name": "Armour of Chaos",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 12,
+        "body": 12,
+        "left_arm": 12,
+        "right_arm": 12,
+        "left_leg": 12,
+        "right_leg": 12,
+        "description": "<p>The Daemon Prince's flesh has been twisted and warped by Chaos into a form that provides unnatural protection. This armor covers all locations equally.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eichaos010000030",
+      "name": "Chaos-forged Sword",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/powersword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "2d10+7",
+        "dmgType": "Rending",
+        "penetration": "6",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "felling" }, { "id": "unwieldy" }],
+        "attachedUpgrades": [],
+        "description": "<p>A massive blade forged in the fires of the Warp, this weapon can cleave through the finest armor. The Daemon Prince can choose to deal Rending, Energy, or Impact damage with each attack (change the damage type as needed).</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Daemon Prince",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 2,
+    "height": 2,
+    "bar1": { "attribute": "wounds" }
+  }
+}

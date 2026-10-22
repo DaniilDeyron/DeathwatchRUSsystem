@@ -1,0 +1,511 @@
+/* Items Lists */
+.deathwatch .items-header {
+  height: 28px;
+  margin: var(--dw-spacing-xs) 0;
+  padding: 0;
+  align-items: center;
+  background: var(--dw-color-bg-tertiary);
+  border: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+  font-weight: bold;
+}
+
+.deathwatch .items-header > * {
+  font-size: var(--dw-font-size-lg);
+  text-align: center;
+}
+
+.deathwatch .items-header .item-name {
+  font-weight: bold;
+  padding-left: 5px;
+  text-align: left;
+  display: flex;
+}
+
+/* Section headers */
+.deathwatch .section-header {
+  margin: 15px 0 10px 0;
+  padding: 8px 12px;
+  position: relative;
+  overflow: hidden;
+
+  /* Subtle background glow */
+  background:
+    linear-gradient(90deg,
+      transparent 0%,
+      rgba(212, 165, 116, 0.12) 20%,
+      rgba(212, 165, 116, 0.12) 80%,
+      transparent 100%
+    );
+
+  /* Imperial gold border */
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    transparent 5%,
+    var(--dw-imperial-gold-darkest),
+    var(--dw-imperial-gold),
+    var(--dw-imperial-gold-darkest),
+    transparent 95%
+  ) 1;
+
+  /* Typography */
+  font-family: var(--dw-font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dw-imperial-gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 8px rgba(212, 165, 116, 0.5),
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Animated scan line */
+.deathwatch .section-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -25%;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 165, 116, 0.4),
+    rgba(212, 165, 116, 0.6),
+    rgba(212, 165, 116, 0.4),
+    transparent
+  );
+  animation: section-scan 5s infinite;
+  animation-delay: calc(var(--scan-delay, 0) * 1s);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes section-scan {
+  0% {
+    left: -25%;
+  }
+  20% {
+    left: 125%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+/* Stagger scan animations */
+.section-header:nth-of-type(1) { --scan-delay: 0; }
+.section-header:nth-of-type(2) { --scan-delay: 1; }
+.section-header:nth-of-type(3) { --scan-delay: 2; }
+.section-header:nth-of-type(4) { --scan-delay: 3; }
+
+/* Collapsible gear sections */
+.deathwatch .section-toggle {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.deathwatch .section-toggle:hover {
+  color: #3a2210;
+}
+
+.deathwatch .section-chevron {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.deathwatch .gear-section.collapsed .section-chevron {
+  transform: rotate(-90deg);
+}
+
+.deathwatch .section-summary {
+  font-size: 11px;
+  font-weight: normal;
+  color: var(--dw-color-text-muted);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: auto;
+  display: none;
+}
+
+.deathwatch .gear-section.collapsed .section-summary {
+  display: inline;
+}
+
+.deathwatch .gear-section.collapsed .section-content {
+  display: none;
+}
+
+.deathwatch .items-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  color: var(--dw-color-text-secondary);
+}
+
+.deathwatch .items-list .item-name {
+  flex: 2;
+  margin: 0;
+  overflow: hidden;
+  font-size: var(--dw-font-size-md);
+  text-align: left;
+  align-items: center;
+  display: flex;
+}
+
+.deathwatch .items-list .item-name h3,
+.deathwatch .items-list .item-name h4 {
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.deathwatch .items-list .item-controls {
+  display: flex;
+  flex: 0 0 100px;
+  justify-content: flex-end;
+}
+
+.deathwatch .items-list .item-controls a {
+  font-size: var(--dw-font-size-sm);
+  text-align: center;
+  margin: 0 6px;
+}
+
+.deathwatch .items-list .item {
+  align-items: center;
+  padding: 0 var(--dw-spacing-xs);
+  border-bottom: var(--dw-border-width) solid var(--dw-color-border);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover background slide-in */
+.deathwatch .items-list .item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 165, 116, 0.08),
+    rgba(212, 165, 116, 0.12)
+  );
+  transition: left 0.3s ease;
+  z-index: 0;
+}
+
+.deathwatch .items-list .item:hover::before {
+  left: 0;
+}
+
+.deathwatch .items-list .item:hover {
+  border-left: 2px solid var(--dw-imperial-gold);
+  padding-left: calc(var(--dw-spacing-xs) - 2px); /* Compensate for border */
+}
+
+/* Ensure item content above background */
+.deathwatch .items-list .item > * {
+  position: relative;
+  z-index: 1;
+}
+
+.deathwatch .items-list .item:last-child {
+  border-bottom: none;
+}
+
+.deathwatch .items-list .item .item-name {
+  color: var(--dw-color-text-primary);
+}
+
+/* Item name glow on hover */
+.deathwatch .items-list .item:hover .item-name {
+  color: var(--dw-imperial-gold-light);
+  text-shadow: 0 0 4px rgba(212, 165, 116, 0.4);
+}
+
+.deathwatch .items-list .item .item-name .item-image {
+  flex: 0 0 30px;
+  height: 30px;
+  background-size: 30px;
+  border: none;
+  margin-right: 5px;
+}
+
+.deathwatch .items-list .item .item-name .item-image img {
+  display: block;
+}
+
+.deathwatch .items-list .item-prop {
+  text-align: center;
+  border-left: var(--dw-border-width) solid var(--dw-color-border);
+  border-right: var(--dw-border-width) solid var(--dw-color-border);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .items-list .items-header > * {
+  font-size: var(--dw-font-size-sm);
+  text-align: center;
+}
+
+.deathwatch .items-list .items-header .item-name {
+  padding-left: 5px;
+  text-align: left;
+}
+
+.deathwatch .item-formula {
+  flex: 0 0 200px;
+  padding: 0 8px;
+}
+
+.deathwatch .effects .item .effect-source,
+.deathwatch .effects .item .effect-duration,
+.deathwatch .effects .item .effect-controls {
+  text-align: center;
+  border-left: var(--dw-border-width) solid var(--dw-color-border);
+  border-right: var(--dw-border-width) solid var(--dw-color-border);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .effects .item .effect-controls {
+  border: none;
+}
+
+/* Gear inventory columns */
+.deathwatch .items-list .item-equipped,
+.deathwatch .items-header .item-equipped {
+  flex: 0 0 24px;
+  text-align: center;
+}
+
+.deathwatch .items-list .item-equipped input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.deathwatch .items-list .item-name,
+.deathwatch .items-header .item-name {
+  flex: 3;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.deathwatch .items-list .item-description,
+.deathwatch .items-header .item-description {
+  flex: 2;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.deathwatch .items-list .item-damage,
+.deathwatch .items-header .item-damage {
+  flex: 0 0 80px;
+  text-align: center;
+}
+
+.deathwatch .items-list .item-pen,
+.deathwatch .items-header .item-pen {
+  flex: 0 0 40px;
+  text-align: center;
+}
+
+.deathwatch .items-list .item-type,
+.deathwatch .items-header .item-type {
+  flex: 0 0 60px;
+  text-align: center;
+}
+
+.deathwatch .items-list .item-ammo,
+.deathwatch .items-header .item-ammo {
+  flex: 0 0 180px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.deathwatch .ammo-inline {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  overflow: hidden;
+}
+
+.deathwatch .ammo-inline img {
+  flex: 0 0 18px;
+  border: none;
+}
+
+.deathwatch .ammo-inline .ammo-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.deathwatch .ammo-inline .ammo-count {
+  flex: 0 0 auto;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.deathwatch .ammo-inline a {
+  flex: 0 0 auto;
+  font-size: 10px;
+  margin: 0 1px;
+}
+
+.deathwatch .items-list .item-armor,
+.deathwatch .items-header .item-armor {
+  flex: 0 0 60px;
+  text-align: center;
+}
+
+.deathwatch .items-list .item-stat,
+.deathwatch .items-header .item-stat {
+  flex: 0 0 150px;
+  text-align: center;
+  border-left: var(--dw-border-width) solid var(--dw-color-border);
+}
+
+.deathwatch .items-list .item-controls,
+.deathwatch .items-header .item-controls {
+  flex: 0 0 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Implants table specific widths */
+.deathwatch .implants-list .item-name,
+.deathwatch .implants-list .items-header .item-name {
+  flex: 0 0 200px;
+}
+
+.deathwatch .implants-list .item-summary,
+.deathwatch .implants-list .items-header .item-summary {
+  flex: 3;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.deathwatch .item-image.rollable {
+  cursor: pointer;
+}
+
+.deathwatch .item-image.rollable:hover {
+  box-shadow: 0 0 8px red;
+}
+
+/* Disabled damage button for flame weapons */
+.deathwatch .weapon-damage-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #666;
+  pointer-events: none;
+}
+
+.deathwatch .weapon-damage-btn.disabled:hover {
+  background-color: #666;
+  opacity: 0.5;
+}
+
+/* Armor Effects Table */
+.armor-effects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--dw-spacing-sm);
+  font-size: var(--dw-font-size-sm);
+}
+
+/* Mode ability dimming */
+.deathwatch .special-ability-row.mode-inactive {
+  opacity: 0.5;
+}
+
+/* Squad Mode badges */
+.deathwatch .squad-badges {
+  margin-left: 4px;
+}
+
+.deathwatch .squad-badges .badge {
+  font-size: 0.8em;
+  color: #666;
+  font-weight: bold;
+}
+
+.deathwatch .squad-badges .cost-badge {
+  color: var(--dw-power-armor-blue-light);
+}
+
+.deathwatch .squad-badges .sustained-badge {
+  color: #ff9800;
+}
+
+.armor-effects-table thead tr {
+  background: var(--dw-color-bg-tertiary);
+  border: var(--dw-border-width-thick) groove var(--dw-color-border-dark);
+}
+
+.armor-effects-table th {
+  font-weight: bold;
+  padding: var(--dw-spacing-sm) var(--dw-spacing-md);
+  text-align: left;
+}
+
+.armor-effects-table td {
+  padding: var(--dw-spacing-xs) var(--dw-spacing-md);
+  border-bottom: var(--dw-border-width) solid var(--dw-color-border);
+  vertical-align: top;
+}
+
+.armor-effects-table tbody tr:nth-child(even) {
+  background: var(--dw-color-bg-secondary);
+}
+
+.armor-effects-name {
+  width: 180px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.armor-effects-desc ul {
+  margin: 0;
+  padding-left: 16px;
+  list-style: disc;
+}
+
+.armor-effects-desc ul li {
+  margin: 1px 0;
+  line-height: 1.4;
+}
+
+/* Talent rank availability */
+.deathwatch .talent-unavailable {
+  opacity: 0.6;
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deathwatch .rank-gate {
+  color: #d9534f;
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.deathwatch .rank-gate i {
+  font-size: 10px;
+}

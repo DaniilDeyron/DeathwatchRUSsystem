@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000238",
+  "name": "Servo-Harness Integration",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "125",
+    "prerequisite": "Techmarine Implants, Mechadendrite Use (Servo-arm)",
+    "benefit": "Can use Servo-harness and its weapons",
+    "description": "<p>The Techmarine has had his implanted systems integrated with a many-armed servo harness, allowing him to use its pincer-arms and weapon arrays as if they were extra limbs of his body. <b>The Techmarine may be fitted with and use a Servo-harness (see page 177 in Chapter V: Armoury) and may use weapons fitted to the harness in which he is proficient.</b></p>",
+    "compendiumId": "tal00000000238",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

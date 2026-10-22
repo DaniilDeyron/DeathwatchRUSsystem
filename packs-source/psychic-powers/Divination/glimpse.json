@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000072",
+  "name": "Glimpse",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "360",
+    "key": "glimpse",
+    "range": "Special",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Divination",
+    "description": "<p><strong>Placeholder:</strong> This psychic power has not yet been fully implemented. See Black Crusade page 360 for full details.</p>"
+  }
+}

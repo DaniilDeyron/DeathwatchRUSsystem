@@ -1,0 +1,17 @@
+{
+  "_id": "admantinemantle001",
+  "name": "Admantine Mantle",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/adamantine_mantle.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "168",
+    "equipped": false,
+    "wt": 8,
+    "req": 50,
+    "renown": "Hero",
+    "shortDescription": "Relic",
+    "description": "<p>These intricately worked cloaks take their name from the most common variation: small adamantine scales worked into a protective yet flexible defensive covering. Similar, personalised designs exist, all using unbreakable materials to form an impressive cloak. Each one is the labour of decades by master artificers, who temper each individual scale and thread for maximum resilience. Their work is then blessed by Chaplains before finally being laid upon the shoulders of its first bearer. The mantle protects him not just through its physical strength, but also by making his movements more difficult to predict as the opaque cloak whirls about him in combat.</p><p>An adamantine mantle <b>negates 2 points of Armour Penetration from any incoming attack</b>. The wearer gains a <b>+10 to his Opposed Weapon Skill Test to Feint</b>, and if he <b>takes the Defensive Stance Action, foes suffer an additional –10 on Weapon Skill Tests to attack him</b>.</p>",
+    "modifiers": []
+  }
+}

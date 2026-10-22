@@ -1,0 +1,14 @@
+{
+  "_id": "impact-head0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Head",
+    "description": "The attack causes the target to see stars. The target takes 1 level of Fatigue and suffers a –10 penalty to Weapon Skill and Ballistic Skill Tests for 1 Round.",
+    "effects": []
+  }
+}

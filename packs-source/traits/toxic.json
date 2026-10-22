@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000042",
+  "name": "Toxic",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "135",
+    "description": "<p>A creature with this trait is poisonous. The toxins might be delivered through the creature's attacks, in which case a target hit by its natural weapons must make a Toughness Test. The toxins might instead be delivered by contact with the creature's skin or by inhaling its stench, in which case a Toughness Test must be made upon coming into contact or proximity. A failed Toughness Test indicates the victim has been poisoned. A typical poison deals 1d10 points of damage, ignoring Armour Points. Variations, if present, are included in the creature's description.</p>",
+    "modifiers": []
+  }
+}

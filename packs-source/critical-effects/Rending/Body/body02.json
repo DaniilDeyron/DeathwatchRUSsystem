@@ -1,0 +1,14 @@
+{
+  "_id": "rending-body0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Body",
+    "description": "The attack damages the target's armour, reducing its Armour Points by 1. In addition, the target takes 1 level of Fatigue. If not armoured, the target is also Stunned for 1 Round.",
+    "effects": []
+  }
+}

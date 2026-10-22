@@ -1,0 +1,13 @@
+{
+  "_id": "devastating",
+  "name": "Devastating",
+  "type": "weapon-quality",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "142",
+    "key": "devastating",
+    "value": "1",
+    "description": "<p>Either because of an unnatural psychological property or pure destructive power, a Devastating weapon shakes the confidence of a Squad struck by it. If the weapon hits, it does one additional point of Cohesion Damage regardless of Damage to Wounds, in addition to secondary effects on Cohesion from the hit's Damage and other results. If the target is a Horde, it reduces its magnitude by a number equal to the number in parenthesis every time it is hit by this weapon.</p>"
+  }
+}

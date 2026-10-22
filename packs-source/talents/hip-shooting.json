@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000132",
+  "name": "Hip Shooting",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "Ballistic Skill 40, Agility 40",
+    "benefit": "Move Full Move and make single ranged attack as Full Action",
+    "description": "<p>The character's prowess with ranged weapons is such that he can still fire accurately without his eye behind the weapon's sights. <b>As a Full Action, the character may both move up to his Full Move rate and make a single attack with a ranged weapon. This attack can only be a single shot—no automatic fire.</b></p>",
+    "compendiumId": "tal00000000132",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

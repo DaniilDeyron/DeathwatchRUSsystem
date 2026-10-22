@@ -1,0 +1,14 @@
+{
+  "_id": "energy-body0009",
+  "name": "Level 09",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Body",
+    "description": "The target is completely encased in fire, melting his skin and popping his eyes like superheated eggs. He falls to the ground a blackened corpse.",
+    "effects": []
+  }
+}

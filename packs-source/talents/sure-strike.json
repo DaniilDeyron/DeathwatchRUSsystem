@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000251",
+  "name": "Sure Strike",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "127",
+    "prerequisite": "Weapon Skill 30",
+    "benefit": "Reverse hit location dice for melee attacks",
+    "description": "<p>The character has a degree of control over where his melee attacks land. <b>When determining hit location for a melee attack, the character may use the dice as rolled, or he may reverse them, choosing the preferred location. For example, if Cassus rolls a 37 to hit a Chaos Heretic, this would ordinarily strike the Right Leg. However, since he has the Sure Strike talent, he could choose to hit the Body (37).</b></p>",
+    "compendiumId": "tal00000000251",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

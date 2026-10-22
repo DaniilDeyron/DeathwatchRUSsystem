@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000008",
+  "name": "Feel No Pain",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "feel-no-pain",
+    "description": "<p>Blood Angels often fight on regardless of the damage dealt to them. Until the start of his next Turn, the Battle-Brother and those in Support Range of him use their training and the fiery will of the Blood Angel to ignore their wounds and focus on the attack, halving all Damage (round up) after reduction for Armour Points and Toughness Bonus. While using this ability, however, such is the Battle-Brothers' rage that they may not use their Reactions to Parry or Dodge and must use an Action with the Attack subtype.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>Restrictions on using Reactions to Parry or Dodge can be ignored</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Blood Angels",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp",
+    "effect": "Until next Turn, halve all Damage after AP and TB (round up); cannot Parry/Dodge and must Attack",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "Restrictions on using Reactions to Parry or Dodge can be ignored"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 3,
+    "sustained": false,
+    "action": "free"
+  }
+}

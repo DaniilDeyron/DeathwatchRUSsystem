@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000092",
+  "name": "Force Bolt",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telekinesis.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "225",
+    "key": "force-bolt",
+    "range": "10 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Telekinesis",
+    "description": "<p><strong>Prerequisites:</strong> Mind over Matter</p><p><strong>Focus Power:</strong> Ordinary (+10) Willpower Test</p><p><strong>Subtype:</strong> Attack</p><p>The psyker gathers up his will, coalescing it into a fist-sized bolt. The Eldar, when inclined to tell of their lore at all, speak of the arrows of the hunter-god Kurnous that strike invisibly and silently, while the psykers of the Imperium, when not teaching of bland and clinical elekinesis, speak of destructive thoughts and righteous fury given physical form.</p><p>This power is a Psychic Bolt that deals 1d10+2 Impact Damage, +2 per point of Psy Rating, with a Pen of 0. If the psyker hits after scoring at least four Degrees of Success the target is also thrown 1d5 metres away and knocked prone (certain especially large targets such as battle tanks, Greater Daemons, and Titans are immune to this at the GM's discretion).</p>",
+    "damageFormula": "1d10+(PR*2)+2",
+    "penetrationFormula": "0",
+    "damageType": "Impact",
+    "attachedQualities": []
+  }
+}

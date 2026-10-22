@@ -1,0 +1,14 @@
+{
+  "_id": "rending-leg0001",
+  "name": "Level 01",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Leg",
+    "description": "The attack knocks the limb backwards, painfully jerking it away from the body. The target takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

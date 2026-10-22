@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000052",
+  "name": "Double Team",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "",
+    "benefit": "+10 WS when outnumbering",
+    "description": "<p>The character has experience of fighting in paired teams that work together to take down their enemies. <b>When ganging up on an opponent, the character gains an additional +10 bonus to Weapon Skill Tests.</b> If both characters who outnumber the enemy have this Talent, both gain an additional +10 bonus, for a total of +20. This bonus is in addition to the normal bonus gained from outnumbering opponents.</p>",
+    "cost": 500,
+    "compendiumId": "tal00000000052",
+    "modifiers": [],
+    "rankRequired": 5
+  }
+}

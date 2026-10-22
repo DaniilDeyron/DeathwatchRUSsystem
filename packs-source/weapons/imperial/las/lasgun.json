@@ -1,0 +1,25 @@
+{
+  "_id": "lase00000000002",
+  "name": "Lasgun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/lasgun.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+3",
+    "dmgType": "Energy",
+    "penetration": "0",
+    "range": "100",
+    "rof": "S/3/-",
+    "clip": "60",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 4,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "reliable" }],
+    "description": "<p>Produced in a multitude of different styles and patterns, the lasgun can be found on almost every world of the Imperium, where its robust design and dependability make it a favoured weapon of both the Emperor’s faithful and many of their foes.</p>",
+    "modifiers": []
+  }
+}

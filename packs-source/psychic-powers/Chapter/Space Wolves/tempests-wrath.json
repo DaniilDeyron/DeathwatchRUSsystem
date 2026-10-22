@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000039",
+  "name": "Tempest's Wrath",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/space-wolves.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "198",
+    "key": "tempests-wrath",
+    "range": "150 metre radius x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>In a fearsome display of power, the Rune Priest calls upon the spirits of wind, storm, and snow, tearing the air with gales and tempests. While this power is in effect, any creature with the Hoverer or Flyer trait must pass a Strength Test at a penalty of –5 x PR to move through the air. Even those that pass the test have their Movement reduced by half. Flying vehicles are also affected, and their pilots suffer a penalty of –5 x PR on all Skill tests they must make to operate their craft. Flying vehicles also have their speed reduced by half.</p><p>Finally, ranged attacks inside, into or out of the radius of effect have their shots fouled by the winds. Thrown and Primitive ranged weapons suffer a penalty of –5 x PR to hit, while all other ranged weapons suffer a penalty of –2 x PR to hit. This power may only be used on the surface of a planet with atmosphere, and even then, the power only functions when outside of a building or other confined space. The effect of this power does not move with the Rune Priest and remains centred on the point where the Rune Priest originally used the power; however, the Rune Priest does not need to remain within the radius of Tempest’s Wrath in order to sustain it. Only one Tempest’s Wrath power can be sustained by a Rune Priest.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp"
+  }
+}

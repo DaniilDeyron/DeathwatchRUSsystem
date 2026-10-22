@@ -1,0 +1,50 @@
+{
+  "_id": "ammo-missile-frag",
+  "name": "Astartes Frag Missile",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/weapons/missiles.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "150",
+    "capacity": { "value": 1, "max": 1 },
+    "quantity": 1,
+    "req": 5,
+    "renown": "",
+    "description": "<p>The Adeptus Astartes fill their large fragmentation (or frag) grenades and missiles with powerful explosives and aerodynamic metallic shards. The high velocity shrapnel created when they detonate is deadly against common infantry.</p><p><b>Damage:</b> 2d10 Explosive, Pen 4</p><p><b>Qualities:</b> Blast (5), Devastating (1)</p><p><b>Used with:</b> Missile Launchers (Cyclone, Soundstrike, Armoursbane)</p>",
+    "modifiers": [
+      {
+        "_id": "frag000000000001",
+        "name": "Frag Missile Damage",
+        "modifier": "2d10",
+        "type": "equipment",
+        "effectType": "weapon-damage-override",
+        "enabled": true
+      },
+      {
+        "_id": "frag000000000002",
+        "name": "Frag Missile Penetration",
+        "modifier": "4",
+        "type": "equipment",
+        "effectType": "weapon-penetration",
+        "enabled": true
+      },
+      {
+        "_id": "frag000000000003",
+        "name": "Frag Missile Blast",
+        "modifier": "5",
+        "type": "equipment",
+        "effectType": "weapon-blast",
+        "enabled": true
+      },
+      {
+        "_id": "frag000000000004",
+        "name": "Frag Missile Devastating",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "weapon-devastating",
+        "enabled": true
+      }
+    ],
+    "wt": 2
+  }
+}

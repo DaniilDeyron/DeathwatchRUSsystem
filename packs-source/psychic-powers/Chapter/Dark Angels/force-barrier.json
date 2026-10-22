@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000030",
+  "name": "Force Barrier",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/dark-angels.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "197",
+    "key": "force-barrier",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 1500,
+    "class": "Chapter",
+    "description": "<p>Wrapping himself in a blanket of power, the Librarian creates a potent but static psychic shell over himself. While this power is in effect, and as long as the Librarian does not move or Dodge, he gains AP equal to 3 x PR to all locations. In addition, if this power is manifested with a PR of 5 or more, all ranged attacks count as having a Penetration of 0.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp"
+  }
+}

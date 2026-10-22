@@ -1,0 +1,13 @@
+{
+  "_id": "crippling",
+  "name": "Crippling",
+  "type": "weapon-quality",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "book": "Black Crusade",
+    "page": "213",
+    "key": "crippling",
+    "value": "",
+    "description": "<p>Particularly cruel or deadly weapons sometimes include things like living barbs or shards that remain in their victims' wounds causing them immense pain and even slowly killing them. When a target suffers at least one wound from this weapon they count as being 'crippled' for the remainder of the encounter or until healed of all Damage.</p><p>If a crippled character takes more than a Half Action on their turn, they suffer Rending Damage equal to the number in parenthesis (X). This Damage is not reduced by armour or Toughness.</p>"
+  }
+}

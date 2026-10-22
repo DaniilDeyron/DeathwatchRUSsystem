@@ -1,0 +1,15 @@
+{
+  "_id": "meltabomb000001",
+  "name": "Melta Bomb",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/melta-bomb.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "wt": 12,
+    "req": 25,
+    "renown": "",
+    "shortDescription": "Explosive",
+    "description": "<p>Melta bombs affix to their target with mag-adhesives designed to quickly adhere to metallic surfaces. They detonate with a powerful shaped charge of intense heat akin to a meltagun beam, and are ideal for destroying dangerous alien relics, vehicle hulls, and other heavily armoured targets. Melta bombs are typically unwieldy and not designed to be thrown, only placed in contact with their target material to ensure the charge explodes to maximum effect. When a melta bomb explodes it deals <b>6d10 E Damage to anything within 2 metres with a Penetration of 12</b>. Anything surviving must pass an Agility Test or catch on fire.</p>"
+  }
+}

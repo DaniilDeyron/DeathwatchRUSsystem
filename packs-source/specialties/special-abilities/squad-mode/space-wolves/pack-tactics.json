@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000010",
+  "name": "Pack Tactics",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "pack-tactics",
+    "description": "<p>Space Wolves are skilled at baiting an opponent or distracting an enemy at a critical time so that another Space Wolf can attack unhindered. When a Space Marine attacks a single target, another Space Marine within support range may voluntarily give up an unused reaction to distract the target. If he does so, the first Space Marine's melee or ranged attacks against that target may not be parried or dodged this turn.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Melee attack rolls against the target gain a +10 bonus</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Space Wolves",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp",
+    "effect": "Ally in Support Range sacrifices a Reaction to prevent target from Parrying or Dodging attacker's attacks this turn",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "Melee attack rolls against the target gain a +10 bonus"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": false,
+    "action": "free"
+  }
+}

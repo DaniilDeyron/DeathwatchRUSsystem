@@ -1,0 +1,24 @@
+{
+  "_id": "bt-000000000001",
+  "name": "Battle Rage",
+  "type": "battle-trauma",
+  "img": "systems/deathwatch/icons/battle-trauma/battle-rage.webp",
+  "system": {
+    "description": "<p>The Battle-Brother singles out particular enemies for the Emperor's fury and becomes fixated on killing them. This most often occurs when facing powerful foes such as enemy commanders or war machines. The Battle-Brother is driven to destroy them without regard for lesser foes or anything less than vital Mission Objectives.</p><p>Whenever the Battle-Brother scores Righteous Fury (see page 245) on a foe, he becomes fixated on its destruction and must kill it. The Space Marine must then direct his attacks against this target to the exclusion of all else until it is slain. When Battle Rage is triggered, the Battle-Brother may make a Challenging (+0) Willpower Test to avoid its effects. The GM may also allow a similar Willpower Test if the Battle-Brother or his Kill-team are clearly in danger from a more powerful source.</p>",
+    "book": "Deathwatch Core Rulebook",
+    "page": "279",
+    "key": "battle-rage",
+    "triggerType": "righteousFury",
+    "effectType": "behavior",
+    "modifier": 0,
+    "modifierTarget": "",
+    "cohesionPenalty": 0,
+    "canResist": true,
+    "resistDifficulty": "challenging"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": 0 }
+}

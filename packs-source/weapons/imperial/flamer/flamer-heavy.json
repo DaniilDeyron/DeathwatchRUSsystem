@@ -1,0 +1,25 @@
+{
+  "_id": "flam00000000003",
+  "name": "Astartes Heavy Flamer",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/flamer-heavy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Heavy",
+    "dmg": "1d10+12",
+    "dmgType": "Energy",
+    "penetration": "6",
+    "range": "30",
+    "rof": "S/-/-",
+    "clip": "10",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 65,
+    "req": 15,
+    "renown": "",
+    "attachedQualities": [{ "id": "flame" }],
+    "description": "<p>While the size and weight of heavy flamers makes them an unpopular choice among many Imperial forces, these are hardly deterrents to a Space Marine in power armour. Terminator squads and many vehicles make frequent use of the large saturation area of heavy flamers. The twin nozzles produce huge gouts of fire, enough to purge the densest terrain of xenos.</p>",
+    "modifiers": []
+  }
+}

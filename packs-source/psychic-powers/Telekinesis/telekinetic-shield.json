@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000095",
+  "name": "Telekinetic Shield",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telekinesis.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "226",
+    "key": "telekinetic-shield",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Telekinesis",
+    "description": "<p><strong>Prerequisites:</strong> Mind over Matter, Willpower 45+</p><p><strong>Focus Power:</strong> Ordinary (+10) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker constructs a barrier of denial and defiance that deflects the attacks of his enemies as if it were a solid object. Ancient, long-buried lore from the time of the Heresy calls these manifestations Kineshields, and explains that great psykers of the past could once protect squads, or even armies, of warriors beneath great and impervious barriers of this sort.</p><p>While this power remains in effect, the psyker is considered to have all locations protected by cover with an AP value equal to his PR. This cover is not ignored by weapons with the Warp Weapon Quality.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

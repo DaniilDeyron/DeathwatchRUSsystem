@@ -1,0 +1,27 @@
+{
+  "_id": "narthecium00001",
+  "name": "Narthecium",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/narthecium.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "equipped": false,
+    "wt": 5,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Consumeable",
+    "description": "<p>The tool of an Apothecary’s trade, a narthecium contains implements specially designed for Space Marine physiology and for performing first aid without having to remove the patient’s power armour. It also comprises various counterseptics, skin patches, transfusions and other compounds engineered for the Space Marines’ physiology, and several stasis tubes for storing recovered gene-seed.</p><p>A narthecium grants a <b>+20 Bonus to Medicae Tests</b> made on a Space Marine patient. It also raises the Threshold at which the patient is considered Lightly Damaged to 3 times his Toughness Bonus, and doubles the amount of damage healed by first aid. A narthecium also holds ten doses of any one drug. The drug must be acquired separately.</p>",
+    "modifiers": [
+      {
+        "_id": "nartheciummod0000001",
+        "name": "Medicae Bonus",
+        "modifier": "20",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "medicae",
+        "enabled": true
+      }
+    ]
+  }
+}

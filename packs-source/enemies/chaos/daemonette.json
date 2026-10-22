@@ -1,0 +1,240 @@
+{
+  "_id": "enmychaos0000006",
+  "name": "Daemonette of Slaanesh",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/daemonette.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 37 },
+      "bs": { "base": 22 },
+      "str": { "base": 38 },
+      "tg": { "base": 44 },
+      "ag": { "base": 51 },
+      "int": { "base": 13 },
+      "per": { "base": 14 },
+      "wil": { "base": 28 },
+      "fs": { "base": 8 }
+    },
+    "wounds": { "base": 18, "max": 18, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "acrobatics": { "trained": true },
+      "athletics": { "trained": true },
+      "awareness": { "trained": true },
+      "dodge": { "trained": true },
+      "parry": { "trained": true },
+      "psyniscience": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Desire is universal. Desire is the single thing which drives every soul in the Galaxy—desire for position, for favour, for power, for glory, for physical gratification, for slaughter. The Lord of Dark Delights knows this and his power is bolstered by each and every greedy soul. Slaanesh is made stronger by each gluttonous excess, by each narcissistic perfection, by every pleasure experienced at the expense of one's soul.</p><p>To this end, the Prince of Pleasure created the Daemonettes, beings of pure desire and temptation. Daemonettes are twisted mockeries of both male and female forms, combined into a hermaphroditic whole which is both alluring and revolting. Their large, opaline eyes burn with malicious lust and their cruel, fanged mouths water at the thought of another corrupted soul. Despite their obviously daemonic visage, mortals cannot help but be drawn to Daemonettes, whose unearthly features always appear irresistibly attractive to the viewer. Clouded by the heady musk which these beguiling daemons exude, mortals find themselves enthralled and driven mad by desire and passion.</p><p>The daemonic nature of these creatures becomes unmistakable when provoked, as their faces twist into terrifying snarls and cackling grins, their arms form wicked claws and their enticing voices become shrieks of sadistic glee. Dancing from foe to foe, packs of Daemonettes scythe through the battlefield, their enemies defenceless as stalks of wheat, entranced by their seductive movements and intoxicating musk.</p><p><strong>Soporific Musk:</strong> The tantalising allure of the Daemonette entrances and beguiles victims. Dodge and Parry Tests made against attacks made by a Daemonette suffer a –10 penalty.</p><p><strong>Daemonic Presence:</strong> All enemies within 10 metres of a Daemonette suffer –10 penalty to Willpower Tests.</p><p><strong>Skills:</strong> Acrobatics (Ag), Athletics (S), Awareness (Per), Dodge (Ag), Parry (WS), Psyniscience (Per).</p><p><strong>Talents:</strong> Heightened Senses (All), Swift Attack.</p><p><strong>Traits:</strong> Daemonic (4), Dark Sight, Fear 2, From Beyond, Natural Weapon (Pincer Claw), Warp Instability.</p><p><strong>Source:</strong> Black Crusade, p. 353</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos060000001",
+      "_sourceId": "tal00000000127",
+      "name": "Heightened Senses (Sight)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving sight",
+        "description": "<p>Either genetics or augmetics have made one of the character’s senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sight) would apply to an Awareness Test to see a distant flock of shale crows, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his eyes</b>.</p>",
+        "compendiumId": "tal00000000127",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000002",
+      "_sourceId": "tal00000000128",
+      "name": "Heightened Senses (Smell)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving smell",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Smell) would apply to an Awareness Test to detect a faint odor, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his nose</b>.</p>",
+        "compendiumId": "tal00000000128",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000003",
+      "_sourceId": "tal00000000129",
+      "name": "Heightened Senses (Sound)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving sound",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sound) would apply to an Awareness Test to hear distant footsteps, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his ears</b>.</p>",
+        "compendiumId": "tal00000000129",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000004",
+      "_sourceId": "tal00000000130",
+      "name": "Heightened Senses (Taste)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving taste",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Taste) would apply to an Awareness Test to detect poison in food, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his tongue</b>.</p>",
+        "compendiumId": "tal00000000130",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000005",
+      "_sourceId": "tal00000000131",
+      "name": "Heightened Senses (Touch)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving touch",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Touch) would apply to an Awareness Test to feel vibrations or textures, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his hands</b>.</p>",
+        "compendiumId": "tal00000000131",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000006",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000007",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000008",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000009",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000010",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000011",
+      "_sourceId": "trt000000000026",
+      "name": "Natural Weapons (Pincer Claw)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has sharp claws, teeth, spines or some other natural weapon with which it can slice and dice its foes. It counts as being armed even when not wielding weapons. Its attacks deal 1d10 points of damage plus its Strength Bonus. The creature may make attacks with its Natural Weapons using its Weapon Skill, though it cannot parry with its natural weapons, nor can it be disarmed—unless, of course, you hack off its limbs! Natural weapons always count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000012",
+      "_sourceId": "trt000000000054",
+      "name": "Warp Instability",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>Most warp-entities have a tenuous hold on our reality, often maintained only by horror and bloodshed, and may be disrupted if sufficient harm can be done to their manifested forms. If a creature with this trait takes damage and does not deal damage or Insanity Points on other creatures by the end of its next turn, it must make a Willpower Test. The creature takes 1 damage for failure, plus 1 damage for each degree of failure. If this would deal damage equal to or in excess of the creature's Wounds, it is cast back into the warp.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos060000013",
+      "name": "Pincer Claw",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/chainsword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "razor-sharp" }, { "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>The Daemonette's wicked claws can slice through armor with ease. When rolling to attack with this weapon, if the attack roll results in two or more Degrees of Success, double the weapon's Penetration (Razor Sharp quality). The weapon's tearing quality allows rerolling damage dice.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Daemonette of Slaanesh",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

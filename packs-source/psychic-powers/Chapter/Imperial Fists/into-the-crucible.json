@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000057",
+  "name": "Into the Crucible",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/imperial-fists.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "50",
+    "key": "into-the-crucible",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 1500,
+    "class": "Chapter",
+    "description": "<p>The Librarian calls upon the spirits of all those Imperial Fists who gave their lives at their Primarch's side during the battle of the Iron Cage. The blows of his enemies are turned aside or healed by the incarnate force of his ancestors. While this power is in effect, the Librarian gains the Regeneration (3) Trait, as described on page 134 of the Deathwatch Rulebook.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/imperial-fists.webp"
+  }
+}

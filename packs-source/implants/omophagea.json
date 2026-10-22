@@ -1,0 +1,13 @@
+{
+  "name": "Omophagea",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Gain information and skills by devouring enemies",
+    "description": "<p>By devouring a portion of an enemy, a Space Marine can gain access to certain information (such as the whereabouts of a cult's hidden lair, access codes, and so forth). The information he can access is at the GM's discretion, keeping in mind what may have been known by the enemy in the first place.</p><p>In addition, a Space Marine can temporarily gain access to a Skill or Skill Group (such as Pilot, Lore, Ciphers, and so forth) that he did not already possess. The Skills he may gain are at the GM's discretion, depending on the Skills originally possessed by the enemy. The Space Marine may access this acquired Skill or Skill Group as an untrained Basic Skill for a number of hours equal to his Intelligence Bonus. After this time, the information begins to fade and the Skill is no longer useable by the Space Marine (until he devours another portion of an enemy, of course).</p>",
+    "modifiers": []
+  }
+}

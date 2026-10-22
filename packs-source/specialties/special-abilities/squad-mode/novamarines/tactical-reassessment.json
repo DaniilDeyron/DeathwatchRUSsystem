@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000016",
+  "name": "Tactical Reassessment",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Honnour The Chapter",
+    "page": "80",
+    "key": "tactical-reassessment",
+    "description": "<p>Part of having an adaptable combat doctrine is the ability to change tactics at a moment's notice in the face of the enemy. If an attack has failed, the Battle-Brother may quickly change his stance or make a swift retreat or advance to place himself in a better position. When used as part of a squad, this ability allows the Kill-team to test an enemy's defences and own attack strength by repositioning themselves or withdrawing as needed. The Battle-Brother and squad members within Support Range of him may spend their Reaction immediately after their turn (before another PC or NPC has acted) to reverse a move action he has just taken. The Battle-Brother immediately returns to the position he was at the start of his turn before he took any actions, just as if he had moved there normally. This ability has no effect if the Battle-Brother did not move voluntarily during his turn (such as if he was moved by a foe or an environmental effect) or if he can no longer return to his former position (it is now occupied by a foe or no longer exists having collapsed or drifted off into space, etc.). In the latter case, he will move back as close to his original position as possible along the route he took during his turn.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>Battle-Brother has more control over his movement and when using this ability may return to any point within 5m of his original position</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Novamarines",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/novamarines.webp",
+    "effect": "Kill-team in Support Range may spend Reaction after their turn to reverse movement and return to start position",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "Battle-Brother may return to any point within 5m of original position when using this ability"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "half"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000058",
+  "name": "Wave of Penance",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/imperial-fists.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "51",
+    "key": "wave-of-penance",
+    "range": "10 x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 1500,
+    "class": "Chapter",
+    "description": "<p>The Librarian reaches into the ether and draws forth all of the pain suffered by his ancestors in the self-imposed atonement of the pain-glove and a hundred other such rituals. In an instant, ten thousand years of penance is unleashed upon his foes, every iota of pain ever felt by the Chapter turned back upon its foes in an unstoppable blast wave. Every enemy within range of the Imperial Fists Librarian suffers 1d10 x PR Explosive damage. Enemies may make a Dodge Test against the effects of this power (note that this power is an area effect attack, see pages 238–239 in the Deathwatch Rulebook).</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/imperial-fists.webp",
+    "damageFormula": "1d10*PR",
+    "penetrationFormula": "0",
+    "damageType": "Explosive"
+  }
+}

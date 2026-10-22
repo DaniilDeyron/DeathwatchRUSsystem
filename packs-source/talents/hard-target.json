@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000115",
+  "name": "Hard Target",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "Agility 40",
+    "benefit": "Enemies suffer -20 BS when shooting at you during Charge or Run",
+    "description": "<p>Light on his feet, the character dodges and weaves as he moves, skills learned from long years in the line of fire. <b>When the character performs a Charge or Run Action, opponents suffer a –20 penalty to Ballistic Skill Tests made to hit the character with a ranged weapon. This penalty continues until the start of the character's next turn.</b></p>",
+    "compendiumId": "tal00000000115",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

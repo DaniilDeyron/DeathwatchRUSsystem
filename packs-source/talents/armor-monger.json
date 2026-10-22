@@ -1,0 +1,25 @@
+{
+  "_id": "tal00000000012",
+  "name": "Armor-Monger",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "Techmarine",
+    "benefit": "Increase the efficacy of physical armour",
+    "description": "<p>The finest armours and most powerful shields are all products of the followers of the machine god, based on the fabled and ancient designs of man’s glorious past. With years of training, a Techmarine can learn to enhance these protections, or use them in their optimum fashion. The Techmarine increases the Armour Points of any armour he wears by 2 on all locations itwould normally cover as long as he has at least an hour each day to bless and prepare the armour. This bonus applies only to armour worn by the Techmarine.</p>",
+    "compendiumId": "tal00000000012",
+    "modifiers": [
+      {
+        "_id": "armor-monger-mod",
+        "name": "Armor-Monger",
+        "modifier": 2,
+        "type": "talent",
+        "effectType": "armor",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "cyb000000006",
+  "name": "Auger Array (Exceptional Craftsmanship)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/auger-array.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "equipped": false,
+    "description": "<p>These implanted devices duplicate the effects of sensor systems that go beyond the human horizons of perception. The auger array functions as a full auspex with enhanced capabilities.</p><p><strong>Usage:</strong> Requires concentration and a Half Action to use. Grants a +20 bonus to Awareness Tests and allows Tech-Use Tests to spot things not normally detectable to human senses alone (invisible gases, nearby bio-signs, ambient radiation). Standard range is 50m, though walls more than 50cm thick and certain shielding materials can block the scanner.</p><p><strong>Exceptional Craftsmanship:</strong> Allows re-rolls on Perception-based Tests when using the auger array's functions. This includes Awareness Tests and Tech-Use Tests made to detect things with the array.</p>",
+    "modifiers": [
+      {
+        "_id": "mod000000005",
+        "name": "Auger Array Awareness Bonus",
+        "modifier": 20,
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "awareness",
+        "enabled": true
+      }
+    ],
+    "req": 15,
+    "renown": "Respected",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000107",
+  "name": "Protean Form",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tzeentch.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "220",
+    "key": "protean-form",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Tzeentch",
+    "description": "<p><strong>Prerequisites:</strong> None</p><p><strong>Focus Power:</strong> Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker's body becomes fluid and mutable, shifting and changing to suit his needs. His muscles swell with unnatural strength one moment, only to recede as his mind expands with forbidden knowledge the next. This constant state of flux comes at a price, however, as the psyker's flesh becomes increasingly corrupted by Chaos.</p><p>While this power remains in effect, the psyker may rearrange his characteristics, swapping the values of any two characteristics. The psyker may change which characteristics are swapped as a Free Action. However, the psyker suffers 1 point of Corruption for every round this power remains in effect.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

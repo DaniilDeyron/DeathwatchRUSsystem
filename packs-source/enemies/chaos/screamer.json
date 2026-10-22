@@ -1,0 +1,143 @@
+{
+  "_id": "enmychaos0000011",
+  "name": "Screamer of Tzeentch",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/screamer.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 30 },
+      "bs": { "base": 2 },
+      "str": { "base": 45 },
+      "tg": { "base": 45 },
+      "ag": { "base": 50 },
+      "int": { "base": 15 },
+      "per": { "base": 43 },
+      "wil": { "base": 40 },
+      "fs": { "base": 3 }
+    },
+    "wounds": { "base": 15, "max": 15, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true, "mastered": true, "expert": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>These sky-sharks, or Screamers, sail through the warp in immense schools, seeking out warp-translated starships, on which they feed. Screamers look like nothing so much as long-bodied manta rays with viciously barbed tails, fanged maws, and comet tails of scintillating light. The jaws of these daemonic creatures are strong enough to cut through even the thickest areas of a starship's hull, though it is their instinctual cunning that makes them truly dangerous.</p><p>Occasionally, these beasts will be brought into real space by devotees of their master and creator, Tzeentch, to serve on the battlefield or to act as twisted and dangerous hunting beasts. In combat, Screamers earn their moniker by projecting powerful screeches, stunning their foes and sewing panic amongst enemy forces. They capitalise on these moments of disruption to swoop down into enemy ranks en masse, free from retaliation.</p><p>Some devotees of Tzeentch bind these swift beasts to serve them as infernal mounts. Warping their graceful form, the magician stretches the creature's warp-spawned flesh onto a frame of wicked blades and burning steel. These daemonic constructs are known as Discs of Tzeentch and provide their riders with incredible speed and manoeuvrability.</p><p><strong>Daemonic Presence:</strong> All enemies within 10 metres of a Screamer suffer –10 penalty to Willpower Tests.</p><p><strong>Stunning Screech:</strong> Screamers can project powerful screeches that stun foes and cause panic amongst enemy forces, allowing them to swoop down into enemy ranks without retaliation.</p><p><strong>Skills:</strong> Awareness (Per) +20.</p><p><strong>Traits:</strong> Daemonic (4), Fear (2), Flyer (8), From Beyond, Deadly Natural Weapons (Warp Maw), Warp Instability.</p><p><strong>Source:</strong> Black Crusade, p. 356</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos110000001",
+      "_sourceId": "trt000000000010",
+      "name": "Daemonic (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>Daemonic creatures are creatures of the Warp, but can manifest in realspace either through sheer strength of will, hunger, or occult rituals. Creatures with this trait multiply their Toughness Bonus against all damage by the number indicated in parentheses after the trait in the same manner as an Unnatural Characteristic (see page 136). The effects of this trait stack with the effects of the Unnatural Characteristic trait. The effects of this trait are ignored for damage inflicted by force weapons, psychic powers, holy attacks, or other creatures with this trait. Daemonic creatures are also immune to poison and disease.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos110000002",
+      "_sourceId": "trt000000000013",
+      "name": "Fear (2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos110000003",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (8)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos110000004",
+      "_sourceId": "trt000000000017",
+      "name": "From Beyond",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>The mind of a creature with this trait is beyond the petty frailties and precarious sanity of a mortal mind. It is immune to Fear, Pinning, Insanity Points, and psychic powers used to cloud, control, or delude its mind.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos110000005",
+      "_sourceId": "trt000000000019",
+      "name": "Deadly Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos110000006",
+      "_sourceId": "trt000000000054",
+      "name": "Warp Instability",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>Most warp-entities have a tenuous hold on our reality, often maintained only by horror and bloodshed, and may be disrupted if sufficient harm can be done to their manifested forms. If a creature with this trait takes damage and does not deal damage or Insanity Points on other creatures by the end of its next turn, it must make a Willpower Test. The creature takes 1 damage for failure, plus 1 damage for each degree of failure. If this would deal damage equal to or in excess of the creature's Wounds, it is cast back into the warp.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos110000007",
+      "name": "Warp Maw",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+1",
+        "dmgType": "Energy",
+        "penetration": "12",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "felling", "rating": 3 },
+          { "id": "razor-sharp" },
+          { "id": "tearing" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>The Screamer's fanged maw is infused with warp energy, capable of biting through starship hulls and the thickest armor. Its razor-sharp teeth and supernatural properties make it a devastating weapon.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Screamer of Tzeentch",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

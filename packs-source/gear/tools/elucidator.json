@@ -1,0 +1,15 @@
+{
+  "_id": "elucidator00001",
+  "name": "Elucidator",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/data-slate.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "wt": 1,
+    "req": 25,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>The Jericho Reach is rife with planets out of contact with the Imperium for thousands of years, pockets of humanity lost during the Age of Shadow or even before. During that time, their language may have diverged radically from Low Gothic. An elucidator is a hand-held device that can analyse speech or text, and translate it into a standard language and dialect (and vice versa). It is most useful in dealing with cultures whose languages have a basis in Low Gothic, requiring no Test to perform this function. However, a character with the <b>Logic Skill</b> may make a Difficult (–20) Test</b> to use an elucidator to decipher basic meanings from truly alien languages. (The GM may adjust this modifier depending on the language’s similarity to ones the character does know.) An elucidator’s output can display on its screen, project from its vox, or transmit through a vox channel.</p>"
+  }
+}

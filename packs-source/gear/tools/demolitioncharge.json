@@ -1,0 +1,15 @@
+{
+  "_id": "democharge00001",
+  "name": "Demolition Charge",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/demolition-charge.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "wt": 1,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>A demolition charge is a simple explosive device, commonly used for blowing open doors, breaching bulkheads, and destroying infrastructure. The listed weight for a demolition charge represents 1 kg of explosives, though it is possible to rig charges together, thus increasing their destructive potential. When a demolition charge explodes, anyone (or anything) caught within its blast radius takes 3d10 Explosive Damage plus an additional 2 points of Damage for every kilogram used. The blast radius of the charge is 3 metres for each kilogram used. For setting and defusing explosives see the <b>Demolition Skill in Chapter III: Skills, pages 97-98</b>.</p>"
+  }
+}

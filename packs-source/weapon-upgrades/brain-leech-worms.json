@@ -1,0 +1,26 @@
+{
+  "_id": "wupg00000000001",
+  "name": "Brain Leech Worms",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "372",
+    "key": "brain-leech-worms",
+    "singleShotOnly": false,
+    "req": 0,
+    "renown": "",
+    "wt": 0,
+    "description": "<p>A Devourer may be host to these more voracious and deadly variety of creatures. A Devourer with Brain Leech Worms does 2d10+6 R damage, and if it inflicts any damage on a squad of Battle-Brothers, the squad suffers one additional point of Cohesion damage.</p><p><strong>Upgrades:</strong> Tyranid Devourer only.</p><p><strong>Note:</strong> The Cohesion damage effect must be applied manually by the GM.</p>",
+    "modifiers": [
+      {
+        "_id": "254dddfc4b3d5051",
+        "name": "Brain Leech Worms",
+        "modifier": "2d10+6",
+        "type": "equipment",
+        "effectType": "weapon-damage-override",
+        "enabled": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000010",
+  "name": "Air of Authority",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "Fel 30",
+    "benefit": "Affect more targets with test",
+    "description": "<p>The character was born to command, either motivating or terrifying those under his charge. On a successful Command Test, the character may affect a number of targets equal to <b>1d10 plus his Fellowship Bonus</b>. Furthermore the character’s voice commands such respect that even those not in his retinue pay heed. The character may make a Command Test on those not under his authority with a –10 penalty. This Talent has no effect on hostile targets, and only affects NPCs.</p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000010",
+    "modifiers": [],
+    "rankRequired": 2
+  }
+}

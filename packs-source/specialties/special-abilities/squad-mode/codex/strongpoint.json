@@ -1,0 +1,24 @@
+{
+  "_id": "sqcd00000000011",
+  "name": "Strongpoint",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "strongpoint",
+    "description": "<p>Sometimes a Space Marine squad needs to hold a position at all costs, setting up fields of overlapping fire and holding the enemy back with a hail of bolt shells. A Battle-Brother can establish a Strongpoint, nominating either himself or a member of his Kill-team within Support Range as the Centre of the Strongpoint. The Centre must remain stationary for the ability to remain in effect. The Centre may then Call Targets either as a Free Action in his turn or as a Reaction. Battle-Brothers in Support Range of the Centre (including the Centre himself) then gain a +20 to Ballistic Skill and Weapon Skill Tests against a Called Target, may re-roll Damage against it, and may use their Reactions to make Standard Attacks against it. A target remains marked in this way until either the Centre moves (ending the Strongpoint) or the Centre marks a new target.</p>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Nominate a Centre (stationary); Centre Calls Targets as Free Action/Reaction — Kill-team gains +20 BS/WS, re-roll Damage, and Reaction attacks vs Called Target",
+    "improvements": [],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 3,
+    "sustained": true,
+    "action": "full"
+  }
+}

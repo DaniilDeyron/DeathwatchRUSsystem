@@ -1,0 +1,217 @@
+<div class="{{cssClass}} flexcol" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="curse">Primarch's Curse</a>
+    <a class="item" data-tab="source">Source</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab" data-group="primary" data-tab="description">
+      {{#if editable}}
+      <prose-mirror name="system.description"
+                    value="{{source.description}}"
+                    document-uuid="{{item.uuid}}"
+                    style="height: 100%;">
+      </prose-mirror>
+      {{else}}
+      <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+        <div class="editor-content">{{{enriched.description}}}</div>
+      </div>
+      {{/if}}
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="curse">
+      <div class="form-group">
+        <label>Curse Name:</label>
+        <input type="text" name="system.curseName" value="{{system.curseName}}" placeholder="e.g., The Red Thirst"/>
+      </div>
+
+      <div class="form-group">
+        <label>Curse Overview:</label>
+        {{#if editable}}
+        <prose-mirror name="system.curseDescription"
+                      value="{{source.curseDescription}}"
+                      document-uuid="{{item.uuid}}"
+                      style="height: 100%;">
+        </prose-mirror>
+        {{else}}
+        <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+          <div class="editor-content">{{{enriched.curseDescription}}}</div>
+        </div>
+        {{/if}}
+      </div>
+
+      <hr/>
+
+      <!-- Level 1: 31-60 Insanity Points -->
+      <h3>Level 1 (31-60 Insanity Points)</h3>
+
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" name="system.curseLevel1Name" value="{{system.curseLevel1Name}}" placeholder="Level 1 manifestation name"/>
+      </div>
+
+      <div class="form-group">
+        <label>Description:</label>
+        {{#if editable}}
+        <prose-mirror name="system.curseLevel1Description"
+                      value="{{source.curseLevel1Description}}"
+                      document-uuid="{{item.uuid}}"
+                      style="height: 100%;">
+        </prose-mirror>
+        {{else}}
+        <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+          <div class="editor-content">{{{enriched.curseLevel1Description}}}</div>
+        </div>
+        {{/if}}
+      </div>
+
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Effect Type:</label>
+          <select name="system.curseLevel1Effect">
+            <option value="none" {{#if (eq system.curseLevel1Effect "none")}}selected{{/if}}>No Mechanical Effect</option>
+            <option value="modifier" {{#if (eq system.curseLevel1Effect "modifier")}}selected{{/if}}>Stat/Skill Modifier</option>
+            <option value="fellowshipPenalty" {{#if (eq system.curseLevel1Effect "fellowshipPenalty")}}selected{{/if}}>Fellowship Penalty vs Target</option>
+            <option value="cohesionPenalty" {{#if (eq system.curseLevel1Effect "cohesionPenalty")}}selected{{/if}}>Cohesion Penalty</option>
+            <option value="custom" {{#if (eq system.curseLevel1Effect "custom")}}selected{{/if}}>Custom Effect (see description)</option>
+          </select>
+        </div>
+        <div class="flex1">
+          <label>Modifier:</label>
+          <input type="number" name="system.curseLevel1Modifier" value="{{system.curseLevel1Modifier}}" placeholder="0"/>
+        </div>
+        <div class="flex1">
+          <label>Target (stat/skill):</label>
+          <input type="text" name="system.curseLevel1Target" value="{{system.curseLevel1Target}}" placeholder="e.g., wil"/>
+        </div>
+      </div>
+
+      <hr/>
+
+      <!-- Level 2: 61-90 Insanity Points -->
+      <h3>Level 2 (61-90 Insanity Points)</h3>
+
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" name="system.curseLevel2Name" value="{{system.curseLevel2Name}}" placeholder="Level 2 manifestation name"/>
+      </div>
+
+      <div class="form-group">
+        <label>Description:</label>
+        {{#if editable}}
+        <prose-mirror name="system.curseLevel2Description"
+                      value="{{source.curseLevel2Description}}"
+                      document-uuid="{{item.uuid}}"
+                      style="height: 100%;">
+        </prose-mirror>
+        {{else}}
+        <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+          <div class="editor-content">{{{enriched.curseLevel2Description}}}</div>
+        </div>
+        {{/if}}
+      </div>
+
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Effect Type:</label>
+          <select name="system.curseLevel2Effect">
+            <option value="none" {{#if (eq system.curseLevel2Effect "none")}}selected{{/if}}>No Mechanical Effect</option>
+            <option value="modifier" {{#if (eq system.curseLevel2Effect "modifier")}}selected{{/if}}>Stat/Skill Modifier</option>
+            <option value="fellowshipPenalty" {{#if (eq system.curseLevel2Effect "fellowshipPenalty")}}selected{{/if}}>Fellowship Penalty vs Target</option>
+            <option value="cohesionPenalty" {{#if (eq system.curseLevel2Effect "cohesionPenalty")}}selected{{/if}}>Cohesion Penalty</option>
+            <option value="custom" {{#if (eq system.curseLevel2Effect "custom")}}selected{{/if}}>Custom Effect (see description)</option>
+          </select>
+        </div>
+        <div class="flex1">
+          <label>Modifier:</label>
+          <input type="number" name="system.curseLevel2Modifier" value="{{system.curseLevel2Modifier}}" placeholder="0"/>
+        </div>
+        <div class="flex1">
+          <label>Target (stat/skill):</label>
+          <input type="text" name="system.curseLevel2Target" value="{{system.curseLevel2Target}}" placeholder="e.g., wil"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Cohesion Penalty:</label>
+        <input type="number" name="system.curseLevel2CohesionPenalty" value="{{system.curseLevel2CohesionPenalty}}" placeholder="0" min="0"/>
+      </div>
+
+      <hr/>
+
+      <!-- Level 3: 91-99 Insanity Points -->
+      <h3>Level 3 (91-99 Insanity Points)</h3>
+
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" name="system.curseLevel3Name" value="{{system.curseLevel3Name}}" placeholder="Level 3 manifestation name"/>
+      </div>
+
+      <div class="form-group">
+        <label>Description:</label>
+        {{#if editable}}
+        <prose-mirror name="system.curseLevel3Description"
+                      value="{{source.curseLevel3Description}}"
+                      document-uuid="{{item.uuid}}"
+                      style="height: 100%;">
+        </prose-mirror>
+        {{else}}
+        <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+          <div class="editor-content">{{{enriched.curseLevel3Description}}}</div>
+        </div>
+        {{/if}}
+      </div>
+
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Effect Type:</label>
+          <select name="system.curseLevel3Effect">
+            <option value="none" {{#if (eq system.curseLevel3Effect "none")}}selected{{/if}}>No Mechanical Effect</option>
+            <option value="modifier" {{#if (eq system.curseLevel3Effect "modifier")}}selected{{/if}}>Stat/Skill Modifier</option>
+            <option value="behavioralRequirement" {{#if (eq system.curseLevel3Effect "behavioralRequirement")}}selected{{/if}}>Behavioral Requirement</option>
+            <option value="cohesionPenalty" {{#if (eq system.curseLevel3Effect "cohesionPenalty")}}selected{{/if}}>Cohesion Penalty</option>
+            <option value="custom" {{#if (eq system.curseLevel3Effect "custom")}}selected{{/if}}>Custom Effect (see description)</option>
+          </select>
+        </div>
+        <div class="flex1">
+          <label>Modifier:</label>
+          <input type="number" name="system.curseLevel3Modifier" value="{{system.curseLevel3Modifier}}" placeholder="0"/>
+        </div>
+        <div class="flex1">
+          <label>Target (stat/skill):</label>
+          <input type="text" name="system.curseLevel3Target" value="{{system.curseLevel3Target}}" placeholder="e.g., wil"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Cohesion Penalty:</label>
+        <input type="number" name="system.curseLevel3CohesionPenalty" value="{{system.curseLevel3CohesionPenalty}}" placeholder="0" min="0"/>
+      </div>
+
+      <div class="form-group">
+        <p><em>Note: At 100+ Insanity Points, the character is removed from play.</em></p>
+      </div>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="source">
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Book:</label>
+          <input type="text" name="system.book" value="{{system.book}}" />
+        </div>
+        <div class="flex1">
+          <label>Page:</label>
+          <input type="text" name="system.page" value="{{system.page}}" />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

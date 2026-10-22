@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000112",
+  "name": "Gun Blessing",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "Techmarine",
+    "benefit": "Un-jam weapons within 10m radius",
+    "description": "<p>Utilising his sacred ability to subtly affect ferrous materials, the character may un-jam a number of weapons equal to his Intelligence Bonus, so long as they are within a 10-meter radius. <b>A successful Intelligence Test indicates the character has appeased the spirits of the weapons.</b> This blessing requires a Full Action.</p>",
+    "compendiumId": "tal00000000112",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

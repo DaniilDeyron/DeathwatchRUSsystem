@@ -1,0 +1,25 @@
+{
+  "_id": "soli00000000004",
+  "name": "Astartes Shotgun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/shotgun.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Impact",
+    "penetration": "4",
+    "range": "30",
+    "rof": "S/2/-",
+    "clip": "18",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 5,
+    "req": 10,
+    "renown": "",
+    "attachedQualities": [{ "id": "reliable" }, { "id": "scatter" }],
+    "description": "<p>Astartes combat shotgun.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000148",
+  "name": "Luminen Blast",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "Techmarine or Mechanicus Implants",
+    "benefit": "Half Action BS Test to deal 1d10+WP Bonus Energy damage with Shocking",
+    "description": "<p>The Omnissiah has blessed the character with augmetic conduits that parallel the bones of his arms. By reciting the proper litany, the character can channel the energy stored in his Potentia Coil down these channels and direct it at enemies. <b>Success on a Ballistic Skill Test allows the character to direct this energy against a single target within 10 metres. The target takes 1d10 plus the character's Willpower Bonus of Energy Damage with the Shocking Quality. The character must pass a Toughness Test when he uses this ability or gain a level of Fatigue.</b></p><p><b>Talent Use:</b> Half Action Attack</p>",
+    "compendiumId": "tal00000000148",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

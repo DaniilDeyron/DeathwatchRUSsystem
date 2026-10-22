@@ -1,0 +1,22 @@
+{
+  "_id": "trt000000000024",
+  "name": "Multiple Arms",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "133",
+    "description": "<p>This creature has more than one pair of arms. It increases its Toughness Characteristic by +10 and gains a +10 bonus on Strength Tests involving movement such as Climb and Swim. Finally, the creature may use the Multiple Attack action to gain two attacks on its turn. If the creature also has the Swift or Lightning Attack Talent, this trait increases the number of attacks they make with a multiple attack action by +1.</p>",
+    "modifiers": [
+      {
+        "_id": "29dcf414f9344eb5",
+        "name": "Multiple Arms",
+        "modifier": 10,
+        "type": "trait",
+        "effectType": "characteristic",
+        "valueAffected": "tg",
+        "enabled": true
+      }
+    ]
+  }
+}

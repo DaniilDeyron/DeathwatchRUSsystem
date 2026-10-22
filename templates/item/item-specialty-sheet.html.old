@@ -1,0 +1,119 @@
+<div class="{{cssClass}} flexcol" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Specialty Name"/></h1>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item active" data-tab="description">Description</a>
+    <a class="item" data-tab="characteristics">Characteristic Costs</a>
+    <a class="item" data-tab="ranks">Rank Advances</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab active" data-group="primary" data-tab="description">
+      <div class="form-group">
+        {{#if editable}}
+        <prose-mirror name="system.description"
+                      value="{{source.description}}"
+                      document-uuid="{{item.uuid}}"
+                      style="height: 100%;">
+        </prose-mirror>
+        {{else}}
+        <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+          <div class="editor-content">{{{enriched.description}}}</div>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="characteristics">
+      <h3 class="section-header">Characteristic Advance Costs</h3>
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="text-align: left; padding: 4px 8px; border-bottom: 2px solid #999;">Characteristic</th>
+            <th style="text-align: center; padding: 4px 8px; border-bottom: 2px solid #999;">Simple</th>
+            <th style="text-align: center; padding: 4px 8px; border-bottom: 2px solid #999;">Intermediate</th>
+            <th style="text-align: center; padding: 4px 8px; border-bottom: 2px solid #999;">Trained</th>
+            <th style="text-align: center; padding: 4px 8px; border-bottom: 2px solid #999;">Expert</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each system.characteristicCosts as |costs key|}}
+          <tr>
+            <td style="padding: 4px 8px; border-bottom: 1px solid #ccc;">{{lookup ../characteristics key}}</td>
+            <td style="text-align: center; padding: 4px 8px; border-bottom: 1px solid #ccc;">
+              <input type="number" name="system.characteristicCosts.{{key}}.simple" value="{{costs.simple}}" data-dtype="Number" style="width: 80px; text-align: center;"/>
+            </td>
+            <td style="text-align: center; padding: 4px 8px; border-bottom: 1px solid #ccc;">
+              <input type="number" name="system.characteristicCosts.{{key}}.intermediate" value="{{costs.intermediate}}" data-dtype="Number" style="width: 80px; text-align: center;"/>
+            </td>
+            <td style="text-align: center; padding: 4px 8px; border-bottom: 1px solid #ccc;">
+              <input type="number" name="system.characteristicCosts.{{key}}.trained" value="{{costs.trained}}" data-dtype="Number" style="width: 80px; text-align: center;"/>
+            </td>
+            <td style="text-align: center; padding: 4px 8px; border-bottom: 1px solid #ccc;">
+              <input type="number" name="system.characteristicCosts.{{key}}.expert" value="{{costs.expert}}" data-dtype="Number" style="width: 80px; text-align: center;"/>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="ranks">
+      <h3 class="section-header">Rank-Based Advance Costs</h3>
+      <p style="margin-bottom: 15px; font-size: 0.9em; color: #666;">Cost overrides for skills and talents at each rank. Edit the specialty JSON file to modify.</p>
+      
+      {{#each system.rankCosts as |rankData rankNum|}}
+      <div style="margin-bottom: 25px;">
+        <h4 style="margin-bottom: 8px; color: #333;">Rank {{rankNum}} Advances</h4>
+        {{#if (or (hasKeys rankData.skills) (hasKeys rankData.talents))}}
+          <table style="width: 100%; border-collapse: collapse; border: 1px solid #999;">
+            <thead>
+              <tr style="background: #4a4a4a; color: #fff;">
+                <th style="text-align: left; padding: 4px 8px; border: 1px solid #999;">Advance</th>
+                <th style="text-align: center; padding: 4px 8px; border: 1px solid #999; width: 100px;">Cost</th>
+                <th style="text-align: center; padding: 4px 8px; border: 1px solid #999; width: 100px;">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each rankData.skills as |costs skillKey|}}
+              <tr>
+                <td style="padding: 4px 8px; border: 1px solid #ccc;">
+                  {{lookup ../../skillNames skillKey}}
+                  {{#if costs.costMaster}} +10{{else}}{{#if costs.costExpert}} +20{{/if}}{{/if}}
+                </td>
+                <td style="text-align: center; padding: 4px 8px; border: 1px solid #ccc;">
+                  {{#if costs.costTrain}}{{costs.costTrain}}{{/if}}
+                  {{#if costs.costMaster}}{{costs.costMaster}}{{/if}}
+                  {{#if costs.costExpert}}{{costs.costExpert}}{{/if}}
+                </td>
+                <td style="text-align: center; padding: 4px 8px; border: 1px solid #ccc;">Skill</td>
+              </tr>
+              {{/each}}
+              {{#each rankData.talents as |cost talentId|}}
+              <tr>
+                <td style="padding: 4px 8px; border: 1px solid #ccc;">
+                  {{#if (lookup ../../talentNames talentId)}}
+                    {{lookup ../../talentNames talentId}}
+                  {{else}}
+                    {{talentId}}
+                  {{/if}}
+                </td>
+                <td style="text-align: center; padding: 4px 8px; border: 1px solid #ccc;">{{cost}}</td>
+                <td style="text-align: center; padding: 4px 8px; border: 1px solid #ccc;">Talent</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        {{else}}
+          <p style="color: #999; font-style: italic; margin-left: 10px;">No advances defined for this rank.</p>
+        {{/if}}
+      </div>
+      {{/each}}
+    </div>
+  </section>
+</div>

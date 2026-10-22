@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000020",
+  "name": "Vespid Neutron Blaster",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/vespid-neutron-blaster.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Basic",
+    "dmg": "1d10+12",
+    "dmgType": "Energy",
+    "penetration": "8",
+    "range": "30",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "toxic" }],
+    "description": "<p>The Neutron Blaster is a unique energy weapon wielded by Vespid Stingwings, xenos auxiliaries of the Tau Empire. This weapon fires concentrated neutron beams that disrupt molecular bonds, causing catastrophic tissue damage. The radiation effects make it particularly lethal to organic targets.</p>",
+    "modifiers": [],
+    "key": "vespid-neutron-blaster"
+  }
+}

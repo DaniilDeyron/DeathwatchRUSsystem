@@ -1,0 +1,27 @@
+{
+  "_id": "muiltikey000001",
+  "name": "Multikey",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/multikey.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "equipped": false,
+    "wt": 0,
+    "req": 15,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>As it can open most standard Imperial locks, a multikey is reason for suspicion in the hands of a common citizen. For organisations like the Deathwatch they are indispensable, as it is considerably faster and quieter to infiltrate the enemy’s fortifications than to blast through them. A character with a multikey gains a <b>+30 bonus to any Security Test</b> when trying to open locks.</p>",
+    "modifiers": [
+      {
+        "_id": "multikeymod0000001",
+        "name": "Security Bonus",
+        "modifier": "30",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "security",
+        "enabled": true
+      }
+    ]
+  }
+}

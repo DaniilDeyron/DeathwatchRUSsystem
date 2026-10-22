@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000049",
+  "name": "Unnatural Senses",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "136",
+    "description": "<p>The creature can perceive its surroundings using senses other than sight or hearing, using special organs, fine hairs, or some other disturbing trait to make itself aware of what's around it. This trait always includes a range, usually 15 metres.</p>",
+    "modifiers": []
+  }
+}

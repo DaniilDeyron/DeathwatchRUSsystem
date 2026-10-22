@@ -1,0 +1,208 @@
+{
+  "_id": "enmychaos0000017",
+  "name": "Fallen Demagogue",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/fallen-demagogue.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 32 },
+      "bs": { "base": 41 },
+      "str": { "base": 40 },
+      "tg": { "base": 40 },
+      "ag": { "base": 36 },
+      "int": { "base": 45 },
+      "per": { "base": 33 },
+      "wil": { "base": 47 },
+      "fs": { "base": 58 }
+    },
+    "wounds": { "base": 35, "max": 35, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "commerce": { "mastered": true },
+      "charm": { "expert": true },
+      "command": { "expert": true },
+      "common_lore": { "trained": true },
+      "dodge": { "trained": true },
+      "intimidate": { "mastered": true },
+      "interrogation": { "mastered": true },
+      "parry": { "trained": true }
+    },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Among the teeming masses of the Imperium, it is the rare man who walks a lighted path. Ignorance is a virtue and knowledge only breeds doubt. For citizens of the Imperium, the words of a powerful orator are worth far more than enlightenment and whole crusades have begun on the passionate words of a blazing zealot. That the populace of the Imperium is so easily swayed by such speeches is both a blessing and a curse, for such zealotry can easily be turned against mankind. When a great persuader of men falls from his standing within the Imperium to the worship of the dark powers, he becomes a powerful force for his new masters, fomenting rebellion and sedition throughout entire systems. When bolstered by the powers of Chaos, these agitators become forces of change, infecting the minds of their listeners with visions of glorious anarchy and destruction. Demagogues command the fanatical loyalty of dozens, if not thousands, of devotees, each of whom would rush headlong into the flame should he merely suggest it. This level of control can be far more dangerous than even the most powerful weaponry or sorcery, and few of the great rebellions and heresies throughout Imperial history have come to pass without the igniting spark of such instigators. However, only the most cunning agitators can provoke the masses from behind the scenes, inspiring chaos and rebellion in their followers while remaining hidden from the burning gaze of the Inquisition.</p><p><strong>Skills:</strong> Awareness (Per), Commerce (Fel) +10, Charm +20, Command (Fel) +20, Common Lore (Daemonology, The Warp) (Int), Dodge (Ag), Intimidate (S) +10, Interrogation (WP) +10, Parry (WS).</p><p><strong>Talents:</strong> Air of Authority, Demagogue, Inspire Wrath, Hatred (Any).</p><p><strong>Traits:</strong> Unnatural Fellowship (+3), Fear (1).</p><p><strong>Gear:</strong> 1d10×1000 Thrones, heretical tracts, countless followers, 3 clips for pistol.</p><p><strong>Special Abilities:</strong></p><p><em>My Dear Child:</em> The Fallen Demagogue commands followers with unswerving loyalty, their obedience assured unto death. The Fallen Demagogue may gently rebuke those under his command with but a word, causing 1 Wound to each (roll once for all those affected, Hordes suffer 1d5 Magnitude damage instead). Those so rebuked are immune to Fear (3) and lower, and Pinning.</p><p><em>Defend Me!:</em> Whenever the Fallen Demagogue is targeted by a ranged attack, he may make a Challenging (+0) Fellowship Test. On a success, one ally within 3 metres moves up to 3 metres to intercept the attack and becomes the target instead.</p><p><em>Minions:</em> The Fallen Demagogue is always accompanied by 1d10+10 Mutant Devotees or equivalent Troops, as well as a Magnitude 50 Horde of Cult Zealots. The GM may provide more competent minions as the situation warrants.</p><p><strong>Source:</strong> Black Crusade, p. 361</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos170000001",
+      "_sourceId": "tal00000000010",
+      "name": "Air of Authority",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "Fel 30",
+        "benefit": "Affect more targets with test",
+        "description": "<p>The character was born to command, either motivating or terrifying those under his charge. On a successful Command Test, the character may affect a number of targets equal to <b>1d10 plus his Fellowship Bonus</b>. Furthermore the character’s voice commands such respect that even those not in his retinue pay heed. The character may make a Command Test on those not under his authority with a –10 penalty. This Talent has no effect on hostile targets, and only affects NPCs.</p>",
+        "compendiumId": "tal00000000010",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos170000002",
+      "_sourceId": "tal00000000006",
+      "name": "Inspire Wrath",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Fellowship 30",
+        "benefit": "+20 to Interaction Tests inspiring hatred, doubles affected individuals",
+        "description": "<p>The character knows just the turn of phrase that incites individuals or groups to rage against others. <b>The character's rhetoric grants him +20 to Interaction Tests when inspiring hatred or anger, and this Talent doubles the number of individuals affected. This Talent can be combined with Master Orator to further increase the number of listeners affected.</b></p>",
+        "compendiumId": "tal00000000006",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos170000003",
+      "name": "Demagogue",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "361",
+        "prerequisite": "",
+        "benefit": "Exceptional oratory and persuasion abilities",
+        "description": "<p><strong>Note:</strong> This talent is from Black Crusade and may have specific rules not yet implemented in the Deathwatch system. Refer to Black Crusade p. 361 for full details.</p><p>The character possesses exceptional abilities as an orator and demagogue, capable of swaying crowds and inspiring fanatical devotion in followers.</p>",
+        "compendiumId": "",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos170000004",
+      "name": "Hatred (Any)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Black Crusade",
+        "page": "361",
+        "prerequisite": "",
+        "benefit": "+10 WS against any enemy in melee",
+        "description": "<p><strong>Note:</strong> This is a broader version from Black Crusade. The character has cultivated such deep animosity that it can be directed at any foe.</p><p>When fighting any opponent in close combat, the character gains a +10 bonus to all Weapon Skill Tests made against them.</p>",
+        "compendiumId": "",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos170000005",
+      "name": "Unnatural Characteristic (Fellowship)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Fellowship Characteristic is unnatural. Each time this trait is gained, double its Fellowship Bonus. For example, a creature with Fellowship 41 normally has a 4 Fellowship Bonus. With this trait, its Fellowship Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Fellowship, the Bonus multiplier increases by 1. For example, one selection multiplies the Fellowship Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Fellowship with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "2b601911d8915330",
+            "name": "Unnatural Fellowship",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "fs",
+            "enabled": true
+          }
+        ],
+        "_sourceId": "Compendium.deathwatch.traits.trt000000000046"
+      }
+    },
+    {
+      "_id": "eichaos170000006",
+      "name": "Fear (1)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>This creature inspires fear. When first encountering the creature, characters must pass a Willpower test or suffer the effects of Fear.</p>",
+        "modifiers": [],
+        "_sourceId": "Compendium.deathwatch.traits.trt000000000013"
+      }
+    },
+    {
+      "_id": "eichaos170000007",
+      "name": "Xenos Mesh",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 4,
+        "body": 4,
+        "left_arm": 4,
+        "right_arm": 4,
+        "left_leg": 4,
+        "right_leg": 4,
+        "description": "<p>Advanced xenos mesh armor providing 4 armor points to all locations.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eichaos170000008",
+      "name": "Xenos Altered Pistol",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/plasma-pistol.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "1d10+5",
+        "dmgType": "Energy",
+        "penetration": "4",
+        "range": "30",
+        "rof": "S/3/-",
+        "clip": "20",
+        "reload": "2Full",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>An alien pistol of unknown origin, modified with dark technology to deliver devastating energy bolts.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos170000009",
+      "name": "Barbed Neural Whip",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/whip.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+5",
+        "dmgType": "Rending",
+        "penetration": "4",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [
+          { "id": "flexible" },
+          { "id": "shocking" },
+          { "id": "tearing" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A cruel weapon combining physical barbs with neural disruptors, causing excruciating pain with each strike.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Fallen Demagogue",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

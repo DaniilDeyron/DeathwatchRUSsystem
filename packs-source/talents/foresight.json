@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000089",
+  "name": "Foresight",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "INT 30",
+    "benefit": "+10 to Intelligence Test after study",
+    "description": "<p>Logic and analysis do for the character what Tarot and the bones claim to do for the superstitious masses. By careful consideration of all the possible consequences, and examination of all evidence and information, the character can identify the best path for success. <b>By spending 10 minutes studying or analysing a problem, the character gains a +10 bonus to his next Intelligence Test.</b></p>",
+    "compendiumId": "tal00000000089",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

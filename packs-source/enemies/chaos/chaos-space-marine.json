@@ -1,0 +1,464 @@
+{
+  "_id": "enmychaos0000002",
+  "name": "Chaos Space Marine",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/chaos-space-marine.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 50 },
+      "bs": { "base": 50 },
+      "str": { "base": 65 },
+      "tg": { "base": 45 },
+      "ag": { "base": 40 },
+      "int": { "base": 35 },
+      "per": { "base": 40 },
+      "wil": { "base": 43 },
+      "fs": { "base": 17 }
+    },
+    "wounds": { "base": 29, "max": 29, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "climb": { "trained": true },
+      "command": { "trained": true, "mastered": true },
+      "dodge": { "trained": true, "mastered": true },
+      "forbidden_lore": { "trained": true },
+      "intimidate": { "trained": true, "mastered": true, "expert": true },
+      "literacy": { "trained": true },
+      "scrutiny": { "trained": true },
+      "speak_language": { "trained": true },
+      "survival": { "trained": true },
+      "swim": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Chaos Space Marines are twisted reflections of their Loyalist Imperial counterparts, steeped in centuries of blood and malice, their souls are stained irretrievably by countless foul deeds. In many cases, their bodies are tainted by the mutating touch of the Warp. They are superhuman killers, ruthless and supremely skilled in battle, armed and equipped with powerful weapons and technology taken with them into exile and looted from a score of conquests.</p><p>Savage and cruel, many are formed into corsair warbands, travelling between the dark stars from warzone to warzone. Endlessly at battle with each other and anyone they cross paths with, Chaos Space Marines most of all seek to hurt and destroy the Imperium they have turned their backs on and which they bitterly despise. They are capable of executing atrocities that would make even the most hardened human renegade baulk in their scope and horror. Most are given over body and soul to the worship of the Dark Gods, and further gain their fickle gifts and favour in return for service and human sacrifice. If Chaos Space Marines have a weakness, it is the selfish bitterness and spite in their dark hearts.</p><p><strong>Skills:</strong> Awareness (Per), Climb (S), Command (Fel) +10, Dodge (Ag) +10, Forbidden Lore (Daemons, Warp) (Int), Intimidate (S) +20, Literacy (Int), Scrutiny (Per), Speak Language (Low Gothic, Unholy Tongue) (Int), Survival (Int), Swim (S).</p><p><strong>Talents:</strong> Astartes Weapon Training, Bolter Drill, Die Hard, Fearless, Hatred (Loyalist Space Marines), Heightened Senses (Sight, Sound, Smell), Jaded, Killing Strike, Quick Draw, Rapid Reload, Swift Attack, True Grit.</p><p><strong>Traits:</strong> Dark Sight, Size (Hulking), Unnatural Strength (x2), Unnatural Toughness (x2).</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 363</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos020000001",
+      "_sourceId": "tal00000000015",
+      "name": "Astartes Weapon Training",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "",
+        "benefit": "Proficient with all Astartes weapons",
+        "description": "<p>Battle-Brothers of the Adeptus Astartes spend years becoming proficient with all manner of weapons. By the time that a Battle-Brother has entered service in a squad, he will have not only trained with both heavy and melee weapons, but used those weapons on countless battlefields. The Battle-Brother is proficient with bolt, chain, melta, plasma, power, flame, primitive (ranged and melee), las weapons, launchers, solid projectile, and thrown weapons of all Classes. In essence, the only weapons that the Battle-Brother is not proficient with are exotic weapons; for these, he must acquire individual proficiencies as normal.</p>",
+        "compendiumId": "tal00000000015",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000002",
+      "_sourceId": "tal00000000031",
+      "name": "Bolter Drill",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "114",
+        "prerequisite": "Ballistic Skill 40, Astartes Weapon Training",
+        "benefit": "+10 to hit with bolter weapons in Semi-Auto and Full Auto",
+        "description": "<p>The skill of an Adeptus Astartes with bolters of all types can be honed by training and combat, allowing Space Marines to unleash devastating volleys of disciplined fire that cut down their enemies like the sweep of a scythe. When firing any class of Bolt weapon on Full or Semi-Auto, the Battle-Brother may opt to increase the weapon’s rate of fire by +1 (this bonus applies to any and all bolt weapons wielded by the Space Marine, meaning that if he is firing more than one bolt weapon at a time, the bonus will apply to all such weapons). This Talent only applies to personal weaponry and <b>does not impact vehicle-mounted weapons of any kind.</b></p>",
+        "compendiumId": "tal00000000031",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000003",
+      "_sourceId": "tal00000000049",
+      "name": "Die Hard",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "116",
+        "prerequisite": "Willpower 40",
+        "benefit": "Ignore Stunned condition effects",
+        "description": "<p>Through either willpower or sheer stubbornness, the character refuses to cross into shadow. <b>When the character suffers from blood loss, he may roll twice to avoid death.</b></p>",
+        "compendiumId": "tal00000000049",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000004",
+      "_sourceId": "tal00000000002",
+      "name": "Fearless",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "118",
+        "prerequisite": "Willpower 30",
+        "benefit": "Immune to Fear and Pinning",
+        "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+        "compendiumId": "tal00000000002",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000005",
+      "name": "Hatred (Loyalist Space Marines)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "",
+        "benefit": "+10 WS against Loyalist Space Marines in melee",
+        "description": "<p>The Chaos Space Marine's hatred of the Emperor's warriors is absolute. <b>When fighting Loyalist Space Marines in close combat, the Chaos Space Marine gains a +10 bonus to all Weapon Skill Tests made against them.</b></p>",
+        "compendiumId": "",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000006",
+      "_sourceId": "tal00000000127",
+      "name": "Heightened Senses (Sight)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving sight",
+        "description": "<p>Either genetics or augmetics have made one of the character’s senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sight) would apply to an Awareness Test to see a distant flock of shale crows, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his eyes</b>.</p>",
+        "compendiumId": "tal00000000127",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000007",
+      "_sourceId": "tal00000000129",
+      "name": "Heightened Senses (Sound)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving sound",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sound) would apply to an Awareness Test to hear distant footsteps, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his ears</b>.</p>",
+        "compendiumId": "tal00000000129",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000008",
+      "_sourceId": "tal00000000128",
+      "name": "Heightened Senses (Smell)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Perception 30",
+        "benefit": "+10 to Perception Tests involving smell",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Smell) would apply to an Awareness Test to detect a faint odor, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his nose</b>.</p>",
+        "compendiumId": "tal00000000128",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000009",
+      "_sourceId": "tal00000000140",
+      "name": "Jaded",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Willpower 30",
+        "benefit": "Immune to mundane fear",
+        "description": "<p>The character's wide travels have shown him both wonders and horrors beyond the ken of most. The galaxy has thrown its worst at the character, and he has yet to flinch. <b>Mundane events, from death's horrific visage to xenos abominations, do not cause Insanity Points, nor Fear Tests. Terrors of the warp still affects the character normally.</b></p>",
+        "compendiumId": "tal00000000140",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000010",
+      "_sourceId": "tal00000000141",
+      "name": "Killing Strike",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Weapon Skill 50",
+        "benefit": "Righteous Fury on 9 or 10",
+        "description": "<p>Space Marines are amongst the deadliest warriors in the galaxy, and they have learned how best to place their blows for maximum effect. <b>When taking the All-Out Attack action, a Space Marine may spend a Fate Point (before rolling the dice) to make his melee attacks for that round impossible to parry or dodge.</b></p>",
+        "compendiumId": "tal00000000141",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000011",
+      "_sourceId": "tal00000000206",
+      "name": "Quick Draw",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "124",
+        "prerequisite": "Agility 30",
+        "benefit": "Ready weapon as Free Action",
+        "description": "<p>The character has practiced so frequently with his weapons that they practically leap into his hands in response to a simple thought. <b>The character can Ready as a Free Action when armed with a pistol or basic ranged weapon, or a melee weapon that can be wielded in one hand.</b></p>",
+        "compendiumId": "tal00000000206",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000012",
+      "_sourceId": "tal00000000208",
+      "name": "Rapid Reload",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "125",
+        "prerequisite": "",
+        "benefit": "Reduce reload time by one step",
+        "description": "<p>The firing ranges and weapon drill chambers are the character’s constant abode, and hours of reloading countless magazines or power cells means that he can replace them without looking and without thinking. The character <b>halves all reload times, rounding down</b>. Thus, Half Action reload become a Free Action, a Full Action reload becomes a Half Action and so on.</p>",
+        "compendiumId": "tal00000000208",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000013",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000014",
+      "_sourceId": "tal00000000261",
+      "name": "True Grit",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Toughness 40",
+        "benefit": "Halve Critical Damage taken (round up)",
+        "description": "<p>The character is able to shrug off wounds that would fell lesser men. <b>Whenever the character suffers Critical Damage, halve the result (rounding up).</b></p><p><b>Example:</b> Agamemnon takes a grievous wound from a tyranid warrior. After reduction for Armour and Toughness, the Scything Talon strike still does 8 Damage. Unfortunately, it's been tough going and Agamemnon only has 4 Wounds remaining, which would normally result in 4 points of Critical Damage. However, since he has the True Grit Talent, he only takes 2 points of Critical Damage.</p>",
+        "compendiumId": "tal00000000261",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000015",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000016",
+      "_sourceId": "trt000000000060",
+      "name": "Size (Hulking)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Hulking. Enemies gain +10 to hit it, and it suffers –10 to Concealment. Its base movement is Agility Bonus +1.</p>",
+        "modifiers": [
+          {
+            "_id": "b70df60aff07990c",
+            "name": "Size (Hulking)",
+            "modifier": 1,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "273c48b2d24be279",
+            "name": "Size (Hulking)",
+            "modifier": -10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos020000017",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos020000018",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eichaos020000019",
+      "name": "Astartes Power Armour",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 8,
+        "body": 10,
+        "left_arm": 8,
+        "right_arm": 8,
+        "left_leg": 8,
+        "right_leg": 8,
+        "description": "<p>Corrupted Space Marine power armour, offering excellent protection across all locations.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eichaos020000020",
+      "name": "Astartes Bolt Pistol",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/bolt-pistol.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "2d10+5",
+        "dmgType": "Explosive",
+        "penetration": "5",
+        "range": "30",
+        "rof": "S/3/-",
+        "clip": "12",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A corrupted bolt pistol taken into exile or looted from fallen Imperial forces.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000021",
+      "name": "Astartes Bolter",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/bolter.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "2d10+5",
+        "dmgType": "Explosive",
+        "penetration": "5",
+        "range": "100",
+        "rof": "S/2/4",
+        "clip": "28",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A corrupted boltgun taken into exile or looted from fallen Imperial forces.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000022",
+      "name": "Astartes Combat Blade",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+2",
+        "dmgType": "Rending",
+        "penetration": "2",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A simple combat blade, deadly in the hands of a Chaos Space Marine.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos020000023",
+      "name": "Astartes Chainsword",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/chainsword.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+2",
+        "dmgType": "Rending",
+        "penetration": "4",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "balanced" }, { "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A roaring chainsword, balanced and deadly in melee combat.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Chaos Space Marine",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

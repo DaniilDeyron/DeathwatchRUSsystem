@@ -1,0 +1,14 @@
+{
+  "_id": "rending-body0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Body",
+    "description": "The mighty attack takes a sizeable chunk out of the target and knocks him to the ground as he clutches the oozing wound, shrieking in pain. The target is Prone and takes 1d10 levels of Fatigue.",
+    "effects": []
+  }
+}

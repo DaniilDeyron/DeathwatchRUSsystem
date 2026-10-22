@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000047",
+  "name": "Fury of the Ancients",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/ultramarines.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "200",
+    "key": "fury-of-the-ancients",
+    "range": "10 metres x PR",
+    "sustained": "No",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>Calling upon the legends of his Chapter, the Librarian summons forth a ravening beast of ghostly flame and psychic energy. The flaming apparition then charges forward from the Librarian in a straight line, moving up to the extent of the power's range before vanishing in a burst of energy. Those touched by the beast will suffer 1d5 x PR points of Energy damage and must make a Pinning Test (see page 248) with a penalty of –5 x PR.</p>",
+    "damageFormula": "1d5*PR",
+    "penetrationFormula": "0",
+    "damageType": "Energy",
+    "chapterImg": "systems/deathwatch/icons/chapters/ultramarines.webp"
+  }
+}

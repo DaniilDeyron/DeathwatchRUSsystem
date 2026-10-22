@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000157",
+  "name": "Master Orator",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "Fellowship 30",
+    "benefit": "Fellowship Tests affect 10 times normal number of targets",
+    "description": "<p>The character has learned the techniques required to influence large audiences. <b>The character's Fellowship Tests and Fellowship-based Skill Tests affect 10 times the normal number of targets.</b></p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000157",
+    "modifiers": [],
+    "rankRequired": 8
+  }
+}

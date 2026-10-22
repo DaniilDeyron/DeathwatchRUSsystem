@@ -1,0 +1,17 @@
+{
+  "_id": "injector0000001",
+  "name": "Injector",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/injector.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 0,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "Consumeable",
+    "description": "<p>Injectors carried by the Adeptus Astartes are usually hyposprays that require helmets to be removed so that skin contact can be made. An injector can hold a single dose of any drug (or toxin), which a character may administer as a Full Action. An injector may be used on an unwilling target through standard melee combat rules as though it were a weapon, but the injector itself deals no Damage and cannot penetrate armour.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000135",
+  "name": "Independent Targeting",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "Ballistic Skill 40",
+    "benefit": "Fire two weapons at targets more than 10 metres apart",
+    "description": "<p>The character has developed his peripheral vision and situational awareness to a point where he can fire in two directions within a split second. <b>When firing two weapons as part of a single Action, the targets need not be fewer than 10 metres apart.</b></p>",
+    "compendiumId": "tal00000000135",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

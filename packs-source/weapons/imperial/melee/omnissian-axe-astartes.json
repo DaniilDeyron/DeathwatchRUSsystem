@@ -1,0 +1,25 @@
+{
+  "_id": "melee0000000008",
+  "name": "Omnissian Axe (Astartes-Pattern)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/omnissian_axe.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "155",
+    "class": "Melee",
+    "dmg": "1d10+11",
+    "dmgType": "Energy",
+    "penetration": "6",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 30,
+    "req": 14,
+    "renown": "Distinguished",
+    "attachedQualities": [{ "id": "power-field" }, { "id": "unbalanced" }],
+    "description": "<p>Often carried by Techmarines to show their devotion to the Omnissiah, this weapon has a long staff-like body tipped with half of the circular Adeptus Mechanicus skull and cog icon. The symbol forms a blade and is sheathed in a power field. Arcs of energy illuminate the ridged blade and light the skull's eyes with a hungry glow, leaving little doubt that—even while covered with inscribed circuitry designs indicating its sacred nature—this religious icon is also a deadly weapon in a Space Marine's powerful hands. The Omnissian axe also functions as a combi-tool.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000018",
+  "name": "Seeker Missile",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-missile.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "3d10+10",
+    "dmgType": "Explosive",
+    "penetration": "8",
+    "range": "500",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "mounted" }],
+    "description": "<p>Seeker Missiles are long-range guided munitions that can be mounted on Tau vehicles and battlesuits. These weapons are typically used in conjunction with Markerlight systems, allowing them to strike targets with devastating precision at extreme ranges. The missiles are one-shot weapons, with spent launchers requiring resupply.</p>",
+    "modifiers": [],
+    "key": "seeker-missile"
+  }
+}

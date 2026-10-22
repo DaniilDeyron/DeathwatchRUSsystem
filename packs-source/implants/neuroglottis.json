@@ -1,0 +1,13 @@
+{
+  "name": "Neuroglottis",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Detect poisons by taste/smell, gain Tracking skill",
+    "description": "<p>The Space Marine may detect any poison or toxins by taste with a successful Challenging (+0) Awareness Test. He may also detect poisons or toxins by smell with a successful Hard (–20) Awareness Test. The Space Marine gains the Tracking Skill as a basic trained Skill, and may (at the GM's discretion) gain a +10 bonus to any Tracking Tests against an opponent he has tasted.</p>",
+    "modifiers": []
+  }
+}

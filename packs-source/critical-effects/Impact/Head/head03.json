@@ -1,0 +1,14 @@
+{
+  "_id": "impact-head0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Head",
+    "description": "The target's nose explodes in a torrent of blood, blinding him for 1 Round and dealing 2 levels of Fatigue.",
+    "effects": []
+  }
+}

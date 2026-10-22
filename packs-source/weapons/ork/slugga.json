@@ -1,0 +1,26 @@
+{
+  "_id": "ork0000000000001",
+  "name": "Slugga",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/ork-slugga.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "366",
+    "class": "Pistol",
+    "dmg": "1d10+9",
+    "dmgType": "Impact",
+    "penetration": "2",
+    "range": "20",
+    "rof": "S/3/-",
+    "clip": "18",
+    "reload": "Full",
+    "equipped": true,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "inaccurate" }, { "id": "unreliable" }],
+    "attachedUpgrades": [],
+    "description": "<p>A crude, loud, slug-firing pistol favoured by Ork Boyz. Sluggas are inaccurate and unreliable, but pack a considerable punch at close range.</p>",
+    "modifiers": []
+  }
+}

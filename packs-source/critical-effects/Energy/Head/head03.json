@@ -1,0 +1,14 @@
+{
+  "_id": "energy-head0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "253",
+    "damageType": "Energy",
+    "location": "Head",
+    "description": "The attack cooks off the target's ear, leaving him Stunned for 1 Round and inflicting 1 level of Fatigue.",
+    "effects": []
+  }
+}

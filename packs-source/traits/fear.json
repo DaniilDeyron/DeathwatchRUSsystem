@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000013",
+  "name": "Fear (Variable)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "131",
+    "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+    "modifiers": []
+  }
+}

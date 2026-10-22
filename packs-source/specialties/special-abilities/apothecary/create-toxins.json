@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000002",
+  "name": "Create Toxins",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "69",
+    "key": "create-toxins",
+    "description": "<p>Once per day, the Apothecary can create a virulent poison that he can hand out to the members of his Kill-team to help destroy a particular enemy. The Apothecary needs a tissue sample of a particular enemy, his narthecium, and one hour to create the toxins. Once the toxin is applied, the Kill-team's attacks in the next combat all have the Toxic quality against the enemy type (Tyranid, Tau, etc.) for a number of rounds equal to the Apothecary's Intelligence Bonus. Creatures with the Daemonic Trait are not affected by this ability. In order to benefit from this ability, the Space Marines in the Kill-team must be in Squad Mode. Toxins created by the Apothecary using this special ability are able to bypass immunities to the Toxic Quality possessed by some creatures such as Tyranids. This exception only works when the toxin is used against the particular enemy that the Apothecary had selected when creating toxins. Creatures with the Undying Trait and the Machine Trait are immune to toxins created by this ability.</p>",
+    "specialty": "Apothecary",
+    "specialtyImg": "systems/deathwatch/icons/specialty/apothecary.webp"
+  }
+}

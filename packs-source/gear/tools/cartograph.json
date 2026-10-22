@@ -1,0 +1,27 @@
+{
+  "_id": "cartograph00001",
+  "name": "Cartograph",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/data-slate.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "174",
+    "equipped": false,
+    "wt": 0.5,
+    "req": 5,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>This specialised data-slate accepts geographical and navigational information on a planet, either from existing data-banks or gathered by a ship’s Augur Arrays in orbit. Its geo-locator tracks the user’s planetary coordinates, enabling it to provide distance and bearing to any known location. This provides a <b>+10 to all Navigation (Surface) Tests</b>. It is alo capable of storing detailed maps and schematics, which can be useful for objective approach planning. Many cartographs are also equipped with a small holo-projector that displays three-dimensional maps of its contents</p>",
+    "modifiers": [
+      {
+        "_id": "cartographmod0000001",
+        "name": "Navigation Bonus",
+        "modifier": "10",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "navigation_surface",
+        "enabled": true
+      }
+    ]
+  }
+}

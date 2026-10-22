@@ -1,0 +1,35 @@
+{
+  "_id": "tal00000000133",
+  "name": "Hunter of Aliens",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "120",
+    "prerequisite": "",
+    "benefit": "+10 WS and +2 melee damage against aliens",
+    "description": "<p>Aliens are a foul and constant threat to the Imperium, and the character has taken a vow to rid the galaxy of their foul presence. Though he knows such a task is greater than his actions alone, the character hopes the vile xenos blood he spills goes some way to winning the Emperor's war against this most terrible of foes. <b>The character gains +10 to his Weapon Skill and +2 to melee weapon Damage when combating aliens.</b></p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000133",
+    "modifiers": [
+      {
+        "_id": "hunteralien00001",
+        "name": "Hunter of Aliens - WS Bonus",
+        "modifier": 10,
+        "type": "talent",
+        "effectType": "characteristic",
+        "valueAffected": "ws",
+        "enabled": true
+      },
+      {
+        "_id": "hunteralien00002",
+        "name": "Hunter of Aliens - Melee Damage",
+        "modifier": 2,
+        "type": "talent",
+        "effectType": "weapon-damage",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

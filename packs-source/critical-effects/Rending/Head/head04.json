@@ -1,0 +1,14 @@
+{
+  "_id": "rending-head0004",
+  "name": "Level 04",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Head",
+    "description": "The attack scoops out one of the target's eyes, inflicting 1d5 levels of Fatigue and leaving the target Stunned for 1 Round.",
+    "effects": []
+  }
+}

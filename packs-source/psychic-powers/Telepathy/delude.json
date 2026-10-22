@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000098",
+  "name": "Delude",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "223",
+    "key": "delude",
+    "range": "1 metre per Psy Rating",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "Yes",
+    "cost": 100,
+    "class": "Telepathy",
+    "description": "<p><strong>Prerequisites:</strong> Thought Sending</p><p><strong>Focus Power:</strong> Challenging (+0) Opposed Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker clouds the target's perceptions, tricking him into feeling that the psyker is someone to be trusted implicitly, reacting positively to interactions with him. The deceptive potential of psykers is a constant fear for the authorities of the Imperium and for good reason, as renegade witches throughout the history of mankind have used their powers to subvert and defy authority figures.</p><p>The psyker must nominate a single target within range and line of sight, who may resist with a Willpower Test. While this power remains in effect, the psyker gains a +5 x Psy Rating bonus to all Interaction Skill Tests against that target. Note that this power is not \"mind control\" as such and the psyker cannot force others to act against their better judgement or harm themselves, nor does it obscure acts of overt hostility by the psyker.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

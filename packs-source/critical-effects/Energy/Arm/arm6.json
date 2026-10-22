@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "The attack wreathes the arm in flame, scorching clothing and armour, and temporarily fusing together the target's fingers. The target halves WS and BS for 1d10 Rounds, takes 1d5 levels of Fatigue, and must successfully Test Toughness or lose the use of the hand permanently.",
+    "effects": []
+  }
+}

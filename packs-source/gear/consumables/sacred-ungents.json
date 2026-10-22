@@ -1,0 +1,17 @@
+{
+  "_id": "sacredungents001",
+  "name": "Sacred Ungents",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/sacred_ungents.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 0,
+    "req": 20,
+    "renown": "",
+    "shortDescription": "Consumeable",
+    "description": "<p>Sacred unguents blessed by the Omnissiah are much sought after for their mystical properties when applied to machines. If applied to a weapon (a Full Action) it becomes immune to Jamming (see <b>Chapter VIII: Combat, page 249</b>) for a number of shots equal to its clip size. If the weapon is Jammed and the unguent is then applied, it immediately unjams, but there is no further effect.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

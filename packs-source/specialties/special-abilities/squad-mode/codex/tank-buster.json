@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000006",
+  "name": "Tank Buster",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "221",
+    "key": "tank-buster",
+    "description": "<p>As small elite infantry squads, Kill-teams are well versed in the methods of dealing with large, hardened threats like armour and bunkers. When attacking such enemies, the squad will typically use some members to draw fire while the others dispatch it with heavy weapons or demo-packs. The Battle-Brother may nominate a member of the Kill-team armed with either a heavy weapon or an explosive (this could be himself) to initiate a Tank Buster manoeuvre as part of an Attack Action against an armoured vehicle or fortification. For every member of the Kill-team in Support Range, the nominated Battle-Brother may add either +5 to his Ballistic Skill to attack or move 2 metres closer to his target (if he is trying to plant a charge or grenade).</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Nominated Battle-Brother may add +10 BS or move 5 metres closer per Kill-team member in Support Range</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Nominate a heavy weapon/explosive user: +5 BS or +2m movement per Kill-team member in Support Range vs vehicles/fortifications",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Bonus increases to +10 BS or +5m movement per Kill-team member in Support Range"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 1,
+    "sustained": false,
+    "action": "free"
+  }
+}

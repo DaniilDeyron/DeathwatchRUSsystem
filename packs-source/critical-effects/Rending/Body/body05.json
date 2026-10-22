@@ -1,0 +1,14 @@
+{
+  "_id": "rending-body0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Body",
+    "description": "The blow opens up a long wound in the target's torso, causing him to double over in terrible pain. The target takes 1d5 levels of Fatigue.",
+    "effects": []
+  }
+}

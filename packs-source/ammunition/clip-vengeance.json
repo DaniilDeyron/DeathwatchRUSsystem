@@ -1,0 +1,41 @@
+{
+  "_id": "clip00000000023",
+  "name": "Vengeance Rounds",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-bolter.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "160",
+    "capacity": { "value": 30, "max": 30 },
+    "quantity": 1,
+    "req": 30,
+    "renown": "",
+    "description": "<p>Vengeance rounds were originally created to combat the Adeptus Astartes' most bitter foe: Chaos Space Marines. Designed to breach power armour of Space Marine calibre, the core of each round contains a spark of unstable matter that creates a micro-fission explosion upon detonation. Each delicately engineered bolt is supremely effective at thwarting armour and eradicating even the most resilient target, but the technology needed to imbue a bolt shell with such power carries great risks.</p><p><b>Effects</b>: The weapon gains the Felling (1) Quality, and its Penetration increases to 9. Vengeance rounds detonate prematurely on an attack roll of 91–100. When this happens, the firer suffers explosive damage equal to the weapon's damage with a Penetration of 5 to an arm location (the arm holding the weapon if it was fired one-handed, or a random arm if fired with two hands). This automatically causes the weapon to Jam, and happens too quickly to avoid the damage by dropping the weapon.</p><p><b>Used With</b>: All bolt weapons.</p>",
+    "modifiers": [
+      {
+        "_id": "85bce0107abbe78a",
+        "name": "Vengeance Penetration",
+        "modifier": "9",
+        "type": "equipment",
+        "effectType": "weapon-penetration",
+        "enabled": true
+      },
+      {
+        "_id": "156d89340009c9db",
+        "name": "Vengeance Felling",
+        "modifier": "1",
+        "type": "equipment",
+        "effectType": "weapon-felling",
+        "enabled": true
+      },
+      {
+        "_id": "14c02748a1951a38",
+        "name": "Vengeance Detonation",
+        "modifier": "91",
+        "type": "equipment",
+        "effectType": "premature-detonation",
+        "enabled": true
+      }
+    ]
+  }
+}

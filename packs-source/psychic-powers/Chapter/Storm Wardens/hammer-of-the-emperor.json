@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000044",
+  "name": "Hammer of the Emperor",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/storm-wardens.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "199",
+    "key": "hammer-of-the-emperor",
+    "range": "1 kilometre x PR",
+    "sustained": "No",
+    "action": "Extended (5)",
+    "opposed": "No",
+    "cost": 2000,
+    "class": "Chapter",
+    "description": "<p>With the power of an orbital barrage, the Librarian calls down a mighty hammer of psychic energy with the power to lay waste to entire towns. The Librarian chooses a point within range of the power and one that he has a line of sight to and calls down  the Hammer. The Hammer has a radius of 100 metres x PR. Anything within the area of effect is subjected to a moderate earthquake, inflicting 3d10 x PR damage on all structures, possibly causing them to collapse. Creatures within the area must make a Hard (–20) Agility Test to remain standing. This power cannot be used Fettered, and does not work indoors. This power is extraordinary taxing and inflicts 1d5 levels of Fatigue on the Librarian. In addition, the Librarian may not attempt to use the power again for at least 24 hours.</p><p>At the GM's discretion, falling buildings and raining debris may inflict 3d10 I damage on those in the area of effect who fail a Challenging (+0) Agility Test.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000274",
+  "name": "Wisdom of The Ancients",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Adeptus Astartes, Intelligence 40",
+    "benefit": "Spend Fate Point to ask GM a question about immediate situation",
+    "description": "<p>The Battle-Brother has survived many wars, seen much, and been favoured with the experience of his chapter's most ancient warriors. Within their mind and soul, they hold the well of knowledge that stretches back far before they were raised to become one of the Adeptus Astartes. <b>The Battle-Brother may spend a Fate Point during a combat to get insight on a situation. This is represented by the player asking the GM a question about the immediate situation the Battle-Brothers faces, which the GM should answer as helpfully as possible. For example when trapped in a genestealer-infested space hulk, the question might be, \"What is the most likely route to the main reactor?\"</b></p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000274",
+    "modifiers": [],
+    "rankRequired": 6
+  }
+}

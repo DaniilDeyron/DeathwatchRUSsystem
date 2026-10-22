@@ -1,0 +1,99 @@
+{
+  "_id": "rolltable00000002",
+  "name": "Scatter",
+  "description": "Roll to determine scatter direction for grenades and other area effects.",
+  "img": "systems/deathwatch/icons/tables/table.webp",
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": false,
+  "results": [
+    {
+      "_id": "scatter0000000001",
+      "type": "text",
+      "name": "",
+      "description": "Upper Left",
+      "img": "systems/deathwatch/icons/tables/upleft.webp",
+      "weight": 1,
+      "range": [1, 1],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "scatter0000000002",
+      "type": "text",
+      "name": "",
+      "description": "Up",
+      "img": "systems/deathwatch/icons/tables/up.webp",
+      "weight": 1,
+      "range": [2, 2],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "scatter0000000003",
+      "type": "text",
+      "name": "",
+      "description": "Upper Right",
+      "img": "systems/deathwatch/icons/tables/upright.webp",
+      "weight": 1,
+      "range": [3, 3],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "scatter0000000004",
+      "type": "text",
+      "name": "",
+      "description": "Left",
+      "img": "systems/deathwatch/icons/tables/left.webp",
+      "weight": 1,
+      "range": [4, 4],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "scatter0000000005",
+      "type": "text",
+      "name": "",
+      "description": "Right",
+      "img": "systems/deathwatch/icons/tables/right.webp",
+      "weight": 1,
+      "range": [5, 5],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "scatter0000000006",
+      "type": "text",
+      "name": "",
+      "description": "Lower Left",
+      "img": "systems/deathwatch/icons/tables/downleft.webp",
+      "weight": 2,
+      "range": [6, 7],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "scatter0000000007",
+      "type": "text",
+      "name": "",
+      "description": "Down",
+      "img": "systems/deathwatch/icons/tables/down.webp",
+      "weight": 1,
+      "range": [8, 8],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "scatter0000000008",
+      "type": "text",
+      "name": "",
+      "description": "Lower Right",
+      "img": "systems/deathwatch/icons/tables/downright.webp",
+      "weight": 2,
+      "range": [9, 10],
+      "drawn": false,
+      "flags": {}
+    }
+  ]
+}

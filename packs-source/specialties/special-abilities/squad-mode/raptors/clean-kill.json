@@ -1,0 +1,34 @@
+{
+  "_id": "sqch00000000017",
+  "name": "Clean Kill",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Honour The Chapter",
+    "page": "86",
+    "key": "clean-kill",
+    "description": "<p>In pairs or as a squad, Raptors can become even more proficient marksmen than normal, hitting targets at long ranges again and again with unrivalled accuracy. This is a favoured tactic of Raptor fire teams to lay down precision sniping on a target while their brothers move in to flank and destroy a position, the deadly shots so accurate that the targets dare not lift their heads from the dirt. The Battle-Brother and members of his squad within Support Range can re-roll Ballistic Skill Tests when firing single shots (i.e. not semi or full auto fire) with ranged weapons at Long and Extreme ranges. Additionally, a member of the squad may act as a 'spotter' for another member, helping him to find targets and judge distances. Any member of the squad may \"spot\" for another as a Full Action, negating any penalties to his Ballistic Skill Test against a single target provided he only takes a single shot (i.e. does not use semi or full auto fire).</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Battle-Brother gains the benefits of re-rolls at Long and Extreme ranges with semi auto fire (may still only make single shots when benefiting from a spotter)</td></tr><tr><td>6</td><td>Battle-Brother gains the benefits of re-rolls at Long and Extreme ranges with full auto fire (may still only make single shots when benefiting from a spotter)</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Raptors",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/raptors.webp",
+    "effect": "Kill-team in Support Range can re-roll BS Tests when firing single shots at Long and Extreme ranges; squad member can spot (Full Action) to negate all BS penalties vs single target",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Battle-Brother gains the benefits of re-rolls at Long and Extreme ranges with semi auto fire (may still only make single shots when benefiting from a spotter)"
+      },
+      {
+        "rank": 6,
+        "effect": "Battle-Brother gains the benefits of re-rolls at Long and Extreme ranges with full auto fire (may still only make single shots when benefiting from a spotter)"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "half"
+  }
+}

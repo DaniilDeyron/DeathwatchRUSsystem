@@ -1,0 +1,40 @@
+{
+  "_id": "trt000000000068",
+  "name": "Fieldcraft",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Mark Of the Xenos",
+    "page": "15",
+    "description": "<p>The Kroot are master hunters and trackers, able to move silently through any terrain and track prey over great distances. They are expert ambush predators, capable of remaining motionless for hours and striking with devastating speed when the moment is right.</p><p><strong>Kroot gain a +10 bonus to all Concealment, Shadowing, and Silent Move Tests. In addition, Kroot treat forests, jungles, and similar environments as open terrain.</strong></p>",
+    "modifiers": [
+      {
+        "_id": "fieldcraft-concealment",
+        "name": "Fieldcraft",
+        "modifier": 10,
+        "type": "trait",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      },
+      {
+        "_id": "fieldcraft-shadowing",
+        "name": "Fieldcraft",
+        "modifier": 10,
+        "type": "trait",
+        "effectType": "skill",
+        "valueAffected": "shadowing",
+        "enabled": true
+      },
+      {
+        "_id": "fieldcraft-silent-move",
+        "name": "Fieldcraft",
+        "modifier": 10,
+        "type": "trait",
+        "effectType": "skill",
+        "valueAffected": "silent_move",
+        "enabled": true
+      }
+    ]
+  }
+}

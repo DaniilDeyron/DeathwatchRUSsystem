@@ -1,0 +1,13 @@
+{
+  "_id": "tearing",
+  "name": "Tearing",
+  "type": "weapon-quality",
+  "img": "icons/svg/blood.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "tearing",
+    "value": "",
+    "description": "<p>Tearing weapons are vicious devices, exploding while lodged inside their victim or using multitudes of fast-moving jagged teeth to rip into flesh and bone. These weapons roll one extra die for Damage, and the lowest result is discarded.</p>"
+  }
+}

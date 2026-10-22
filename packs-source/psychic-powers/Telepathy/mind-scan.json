@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000008",
+  "name": "Mind Scan",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "191",
+    "key": "mind-scan",
+    "range": "200 metres x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Telepathy",
+    "description": "<p>The psyker extends his mind to contact and identify other sentient minds within range, even if they are out of sight, enabling him to garner impressions and information about the consciousnesses. The level of information gathered depends on PR as detailed on Table 6-5: Mind Scan. Untouchables and other psychically inert creatures are invisible to Mind Scan. Individuals with psychic resistance or similar protections may also be hidden (the GM may make secret Opposed Willpower tests against the psyker to see if they remain hidden from him).</p><table><thead><tr><th style=\"width:75px\">PR</th><th>Results</th></tr></thead><tbody><tr><td>1-2</td><td>The psyker gains a crude impression of the number of conscious minds within range of the power, and their general position in relation to him.</td></tr><tr><td>3-4</td><td>As above, plus the psyker knows the number, general location, and relative \"strength\" of conscious minds within range of the power, and can determine if these minds have any psychic ability.</td></tr><tr><td>5-7</td><td>As all the above, plus the psyker may attempt to initiate telepathic communication with any of the minds he has discerned.</td></tr><tr><td>8+</td><td>As all the above, plus the psyker may attempt to carry out a Mind Probe on one of the minds he has contacted.</td></tr></tbody></table>"
+  }
+}

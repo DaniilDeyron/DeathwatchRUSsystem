@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0009",
+  "name": "Level 09",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "Fire consumes the target's arm, burning the flesh to a crisp right down to the bone. The target must make an immediate Toughness Test or die from shock. If he survives, however, the target takes 1d10 levels of Fatigue and is Stunned for 1 Round. The target now only has one arm.",
+    "effects": []
+  }
+}

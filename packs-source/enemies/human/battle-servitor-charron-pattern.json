@@ -1,0 +1,405 @@
+{
+  "_id": "enmyhuman0000005",
+  "name": "Battle Servitor (Charron-Pattern)",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/human/battle-servitor-charron-pattern.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 30 },
+      "bs": { "base": 30 },
+      "str": { "base": 40 },
+      "tg": { "base": 40 },
+      "ag": { "base": 20 },
+      "int": { "base": 20 },
+      "per": { "base": 30 },
+      "wil": { "base": 40 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 15, "max": 15, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": { "awareness": { "trained": true } },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>The Charron Pattern is a light battle servitor, humanoid in shape, found often in the service of the Imperial Navy and numerous other star vessels as shock troops and defenders in boarding actions. Those found in the Koronus Expanse are often very old, their inorganic components having been recycled through numerous bodies and recovered from the fallen of the battlefield. As a result they have a reputation for their machine spirits being unreliable in combat and not knowing friend from foe on occasion. This makes some captains reluctant to employ them save in the direst need.</p><p><strong>Source:</strong> Rogue Trader Core Rulebook, p. 374</p>",
+    "classification": "human"
+  },
+  "items": [
+    {
+      "_id": "eihuman050000001",
+      "_sourceId": "tal00000000263",
+      "name": "Two-Weapon Wielder (Melee)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "Ag 35",
+        "benefit": "Attack with two melee weapons",
+        "description": "<p>Years of training allow the character to use a weapon in each hand when needed. <b>When armed with two weapons of the same type, the character may spend a Full Action to attack with both. Both tests made to attack with the weapons suffer a –20 penalty (see Chapter VIII: Combat for more details on fighting with two weapons). The character must possess Two-Weapon Wielder (Melee) and Two-Weapon Wielder (Ballistic) if he wishes to use a gun and hand weapon with this Talent.</b></p>",
+        "compendiumId": "tal00000000263",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000002",
+      "_sourceId": "tal00000000262",
+      "name": "Two-Weapon Wielder (Ballistic)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "128",
+        "prerequisite": "BS 35",
+        "benefit": "Attack with two ranged weapons",
+        "description": "<p>Years of training allow the character to use a weapon in each hand when needed. <b>When armed with two weapons of the same type, the character may spend a Full Action to attack with both. Both tests made to attack with the weapons suffer a –20 penalty (see Chapter VIII: Combat for more details on fighting with two weapons). The character must possess Two-Weapon Wielder (Melee) and Two-Weapon Wielder (Ballistic) if he wishes to use a gun and hand weapon with this Talent.</b></p>",
+        "compendiumId": "tal00000000262",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000003",
+      "_sourceId": "trt000000000002",
+      "name": "Armour Plating",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature is encased in armour plating, increasing its Armour Points by 2 to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "armour-plating-mod",
+            "name": "Armour Plating",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman050000004",
+      "_sourceId": "trt000000000003",
+      "name": "Auto-stabilised",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>The creature always counts as braced when firing heavy weapons and may fire on semi- or full-automatic as a Half Action.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000005",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000006",
+      "_sourceId": "trt000000000016",
+      "name": "Flyer (2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A creature with this trait has the natural ability to fly, whether with broad leathery wings, strange warp energies, or inflatable gas sacs. This trait always includes a number to indicate at what speeds it moves when it flies. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000007",
+      "_sourceId": "trt000000000022",
+      "name": "Machine (4)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>A creature with the Machine trait is fashioned from inorganic materials and is generally more rigourous than fleshy folks. Machines do not breathe, are immune to the effects of a vacuum, extremes of cold, any mind-influencing psychic effect, and their Armour Points apply toward fire damage. Machines are also resilient to injury, having 1 to 5 Armour Points for each location. This number is indicated next to the trait.</p>",
+        "modifiers": [
+          {
+            "_id": "machine-armour-mod",
+            "name": "Machine",
+            "modifier": "4",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman050000008",
+      "_sourceId": "trt000000000038",
+      "name": "Sturdy",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>Sturdy creatures are hard to move and thus gain a +20 bonus to tests made to resist grappling and uses of the Takedown Talent.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000009",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman050000010",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness (x2)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eihuman050000011",
+      "name": "Servo-fist",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d5+8",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": false,
+        "attachedQualities": [{ "id": "primitive" }],
+        "attachedUpgrades": [],
+        "description": "<p>A servo-augmented fist for close combat.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000012",
+      "name": "Chain Axe",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/chain-axe.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+12",
+        "dmgType": "Rending",
+        "penetration": "2",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": false,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A brutal melee weapon combining chainblade teeth with the momentum of an axe blade.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000013",
+      "name": "Shock Glove",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/shock-glove.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+8",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": false,
+        "attachedQualities": [{ "id": "shocking" }],
+        "attachedUpgrades": [],
+        "description": "<p>A powered glove that delivers a devastating electrical shock on contact.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000014",
+      "name": "Flamer",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/flamer.webp",
+      "system": {
+        "class": "Heavy",
+        "dmg": "1d10+4",
+        "dmgType": "Energy",
+        "penetration": "2",
+        "range": "20",
+        "rof": "S/-/-",
+        "clip": "12",
+        "reload": "3 Full",
+        "equipped": false,
+        "attachedQualities": [{ "id": "flame" }],
+        "attachedUpgrades": [],
+        "description": "<p>A standard Imperial flamer projecting gouts of burning promethium.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000015",
+      "name": "Autogun",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/autogun.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+3",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "90",
+        "rof": "S/3/10",
+        "clip": "30",
+        "reload": "2 Full",
+        "equipped": false,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A reliable automatic weapon with full-auto capability.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000016",
+      "name": "Hellgun",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/hellgun.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+4",
+        "dmgType": "Energy",
+        "penetration": "7",
+        "range": "110",
+        "rof": "S/3/-",
+        "clip": "40",
+        "reload": "2 Full",
+        "equipped": false,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A more powerful variant of the lasgun, used by elite Imperial troops.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000017",
+      "name": "Heavy Bolter",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/bolter-heavy.webp",
+      "system": {
+        "class": "Heavy",
+        "dmg": "2d10+2",
+        "dmgType": "Explosive",
+        "penetration": "5",
+        "range": "120",
+        "rof": "-/-/10",
+        "clip": "60",
+        "reload": "Full",
+        "equipped": false,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>A standard Imperial heavy bolter capable of devastating firepower.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000018",
+      "name": "Plasma Cannon",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/plasma-cannon.webp",
+      "system": {
+        "class": "Heavy",
+        "dmg": "2d10+10",
+        "dmgType": "Energy",
+        "penetration": "8",
+        "range": "120",
+        "rof": "S/-/-",
+        "clip": "16",
+        "reload": "5 Full",
+        "equipped": false,
+        "attachedQualities": [
+          { "id": "blast", "value": "1" },
+          { "id": "overheat" },
+          { "id": "unreliable" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A portable plasma weapon that fires miniature suns of superheated matter.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eihuman050000019",
+      "name": "Multi-Melta",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/melta.webp",
+      "system": {
+        "class": "Heavy",
+        "dmg": "4d10+5",
+        "dmgType": "Energy",
+        "penetration": "13",
+        "range": "90",
+        "rof": "S/-/-",
+        "clip": "10",
+        "reload": "2 Full",
+        "equipped": false,
+        "attachedQualities": [{ "id": "blast", "value": "1" }],
+        "attachedUpgrades": [],
+        "description": "<p>A devastating anti-armor weapon firing superheated blasts of thermal energy.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Battle Servitor (Charron-Pattern)",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

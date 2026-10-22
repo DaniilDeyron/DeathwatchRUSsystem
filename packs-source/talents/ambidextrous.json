@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000011",
+  "name": "Ambidextrous",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "Ag 30",
+    "benefit": "Use either hand equally well",
+    "description": "<p>This Talent does not represent true ambidexterity so much as sufficient training with both hands to make the distinction moot. The character may use either hand equally well for any task, and does not suffer the <b>–20 penalty for actions using his off hand</b>.</p><p>Special: When combined with a Two-Weapon Wielder Talent, the penalty for making attacks with both weapons in the same turn drops to –10.</p>",
+    "cost": 0,
+    "compendiumId": "tal00000000011",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

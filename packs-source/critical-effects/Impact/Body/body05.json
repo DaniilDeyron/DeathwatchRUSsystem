@@ -1,0 +1,14 @@
+{
+  "_id": "impact-body0005",
+  "name": "Level 05",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "256",
+    "damageType": "Impact",
+    "location": "Body",
+    "description": "A solid blow to the chest winds the target and he momentary doubles over in pain, clutching himself and crying in agony. The target takes 1d5 levels of Fatigue and is Stunned for 2 Rounds.",
+    "effects": []
+  }
+}

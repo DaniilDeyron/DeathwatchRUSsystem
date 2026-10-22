@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000009",
+  "name": "Short-Range Telepathy",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "191",
+    "key": "short-range-telepathy",
+    "range": "50 metres x PR",
+    "sustained": "Yes",
+    "action": "Free",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Telepathy",
+    "description": "<p>The psyker can send his thoughts into the minds of those around him, touching a number of targets equal to his PR. The targets can be a select group, either individuals the psyker can see or minds he is familiar with within the power's range. Alternatively, the psyker can choose to make a generalised broadcast to every mind within range indiscriminately. An affected mind's processes are still affected by the structure of language, and if telepathy is attempted without a shared language, the power suffers a -20 penalty. Targets who do not wish to be open to such a communication can resist with an Opposed Willpower test. Sustaining this power is a Free Action.</p>"
+  }
+}

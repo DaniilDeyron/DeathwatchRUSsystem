@@ -1,0 +1,14 @@
+{
+  "_id": "impact-arm0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "256",
+    "damageType": "Impact",
+    "location": "Arm",
+    "description": "The strike leaves a deep bruise. The target takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

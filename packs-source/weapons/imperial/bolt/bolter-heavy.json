@@ -1,0 +1,25 @@
+{
+  "_id": "bolt00000000002",
+  "name": "Astartes Heavy Bolter",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/bolter-heavy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Heavy",
+    "dmg": "1d10+12",
+    "dmgType": "Explosive",
+    "penetration": "6",
+    "range": "150",
+    "rof": "-/-/6",
+    "clip": "60",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 68,
+    "req": 20,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }],
+    "description": "<p>Heavy bolter variants have been widely adopted for Imperial forces beyond the Space Marines, although none can compare to the punishment doled out by the original design. These weapons are potent in a wide variety of roles, capable of turning entire infantry platoons into a carpet of gore as well as assailing vehicles in a hail of large, armour-penetrating explosions. Heavy bolters fire rounds of a much larger calibre than the standard bolt, contain more propellant and are capable of achieving longer ranges</p>",
+    "modifiers": []
+  }
+}

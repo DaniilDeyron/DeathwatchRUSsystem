@@ -1,0 +1,21 @@
+{
+  "_id": "psy00000000065",
+  "name": "Psychic Scream",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "370",
+    "key": "psychic-scream",
+    "range": "20 metre Radius",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>As a Half Action, the Tyranid psyker may let forth a terrible silent scream that echoes in the mind as a crippling shriek. All sentient, living creatures (not soulless machines or daemons) within 20 metres suffer a hit that deals 1d10+8 Impact Damage to their head with the Shocking quality (see Weapon Special Qualities on page 142 in Chapter V: Armoury). The victim suffers a -30 penalty to his Toughness Test to resist Stunning. If the Toughness Test is failed, the victim is stunned for 1d5 rounds.</p>",
+    "damageFormula": "1d10+8",
+    "penetrationFormula": "0",
+    "damageType": "Impact"
+  }
+}

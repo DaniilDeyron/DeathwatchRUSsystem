@@ -1,0 +1,188 @@
+{
+  "_id": "enmychaos0000003",
+  "name": "Renegade Militia",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/chaos/renegade-militia.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 35 },
+      "bs": { "base": 35 },
+      "str": { "base": 35 },
+      "tg": { "base": 35 },
+      "ag": { "base": 30 },
+      "int": { "base": 20 },
+      "per": { "base": 30 },
+      "wil": { "base": 35 },
+      "fs": { "base": 20 }
+    },
+    "wounds": { "base": 10, "max": 10, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "climb": { "trained": true },
+      "speak_language": { "trained": true },
+      "swim": { "trained": true },
+      "survival": { "trained": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>The servants of Chaos have an unending need for soldiers and trained fighters for their ceaseless war against the universe. Such soldiers may be former Imperial Guardsmen or members of the planetary defence forces of once-loyal worlds turned Traitor or led astray. Others may be regiments raised and drilled on outcast worlds by renegade warlords. Although their origins, ornamentation, and wargear may vary widely, they all serve the cause of the Ruinous Powers.</p><p>The resources that their Masters can bring to bear and the foibles and preoccupations of the fickle Dark Gods they serve range from famine to plenty, but all have in common discipline and ruthlessness. These factors are enforced with the lash and the threat of torments the likes of which make the ministrations of the Imperial Commissariat seem tender by comparison. All mercy and Humanity is smashed out of them, and replaced with sadistic malice and unflinching obedience to their Masters.</p><p><strong>Skills:</strong> Awareness (Per), Climb (S), Speak Language (Low Gothic, Unholy Tongue) (Int), Swim (S), Survival (Int).</p><p><strong>Talents:</strong> Basic Weapon Training (Las, SP), Melee Weapon Training (Primitive), Pistol Training (SP).</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 364</p>",
+    "classification": "chaos"
+  },
+  "items": [
+    {
+      "_id": "eichaos030000001",
+      "_sourceId": "tal00000000018",
+      "name": "Basic Weapon Training (Las)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "",
+        "benefit": "Use Las basic weapons",
+        "description": "<p>The character has received Basic Weapon Training in Las weapons, and can use them without penalty. <b>Weapon Skill or Ballistic Skill Tests used with a weapon that a character does not have training for suffer a –20 penalty.</b></p>",
+        "compendiumId": "tal00000000018",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos030000002",
+      "_sourceId": "tal00000000023",
+      "name": "Basic Weapon Training (SP)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "113",
+        "prerequisite": "",
+        "benefit": "Use solid projectile basic weapons",
+        "description": "<p>The character has received Basic Weapon Training in Solid Projectile weapons, and can use them without penalty. <b>Weapon Skill or Ballistic Skill Tests used with a weapon that a character does not have training for suffer a –20 penalty.</b></p>",
+        "compendiumId": "tal00000000023",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos030000003",
+      "_sourceId": "tal00000000164",
+      "name": "Melee Weapon Training (Primitive)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "123",
+        "prerequisite": "",
+        "benefit": "Use primitive melee weapons",
+        "description": "<p>The character has trained extensively with hand-to-hand weaponry, becoming proficient in the use of virtually all hand-held close combat arms. <b>When a character attempts to use a weapon he does not have the correct Weapon Training Talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill Test.</b></p>",
+        "compendiumId": "tal00000000164",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos030000004",
+      "_sourceId": "tal00000000198",
+      "name": "Pistol Weapon Training (SP)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "124",
+        "prerequisite": "",
+        "benefit": "Use solid projectile pistols",
+        "description": "<p>The character has practised with nearly every single-handed ranged weapon within the confines of the Imperium, and no small number without. <b>When a character attempts to use a weapon he does not have the correct Weapon Training Talent for, he suffers a –20 penalty to any relevant Weapon Skill or Ballistic Skill Test.</b></p>",
+        "compendiumId": "tal00000000198",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos030000005",
+      "name": "Flak Armour",
+      "type": "armor",
+      "img": "systems/deathwatch/icons/generic/armor.webp",
+      "system": {
+        "head": 4,
+        "body": 4,
+        "left_arm": 4,
+        "right_arm": 4,
+        "left_leg": 4,
+        "right_leg": 4,
+        "description": "<p>Standard issue flak armour, offering basic protection across all locations.</p>",
+        "modifiers": [],
+        "equipped": true
+      }
+    },
+    {
+      "_id": "eichaos030000006",
+      "name": "Combat Knife",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d5+3",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [{ "id": "primitive" }],
+        "attachedUpgrades": [],
+        "description": "<p>A simple combat knife, crude but effective.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos030000007",
+      "name": "Autogun",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/autogun.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+3",
+        "dmgType": "Impact",
+        "penetration": "0",
+        "range": "90",
+        "rof": "S/3/10",
+        "clip": "30",
+        "reload": "Full",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>A common solid-projectile weapon, favored for its reliability and ease of manufacture.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eichaos030000008",
+      "name": "Lasgun",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/lasgun.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+3",
+        "dmgType": "Energy",
+        "penetration": "0",
+        "range": "100",
+        "rof": "S/3/-",
+        "clip": "60",
+        "reload": "Full",
+        "equipped": false,
+        "attachedQualities": [{ "id": "reliable" }],
+        "attachedUpgrades": [],
+        "description": "<p>A standard Imperial lasgun, looted or taken into exile. Simple and reliable.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Renegade Militia",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

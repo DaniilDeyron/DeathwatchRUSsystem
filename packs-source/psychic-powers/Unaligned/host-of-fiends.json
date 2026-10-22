@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000078",
+  "name": "Host of Fiends",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/unaligned.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "214",
+    "key": "host-of-fiends",
+    "range": "5 metres per Psy Rating radius",
+    "sustained": "Free Action",
+    "action": "Full Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Unaligned",
+    "description": "<p><strong>Prerequisites:</strong> Psy Rating 3</p><p><strong>Focus Power:</strong> Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The veil between reality and the warp is made thin and porous, allowing even the least of daemons to scratch and claw at the edge of the universe, their distant shrieks and howls and the nightmarish images they produce tormenting all mortals within their reach. Those who call such forces into being revel in the blasphemy they inflict and the suffering that comes from their presence.</p><p>All of the Sorcerer's enemies within range of this power suffer a -2 x PR penalty to all Willpower Tests. In addition, every time a creature affected by this power fails a Willpower Test, they gain 1d5 Corruption Points for every Degree of Failure.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

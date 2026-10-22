@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000150",
+  "name": "Luminen Shock",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "122",
+    "prerequisite": "Techmarine or Mechanicus Implants",
+    "benefit": "Half Action WS Test or Grapple to deal 1d10+3 Energy damage with Shocking",
+    "description": "<p>The power of the character's Potentia Coil flows through a network of inductors within his flesh. This allows the character to channel this energy into his blows. <b>In close combat, a successful Weapon Skill Test or Grapple delivers the shock. The Luminen Shock inflicts 1d10+3 points of Energy Damage with the Shocking Quality. The character must pass a Toughness Test when he uses this ability or gain a level of Fatigue.</b></p><p><b>Talent Use:</b> Half Action Attack</p>",
+    "compendiumId": "tal00000000150",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

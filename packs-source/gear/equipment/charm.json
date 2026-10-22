@@ -1,0 +1,15 @@
+{
+  "_id": "charm0000000001",
+  "name": "Charm",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/charm.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "171",
+    "wt": 0,
+    "req": 6,
+    "renown": "",
+    "shortDescription": "General",
+    "description": "<p>A charm is a keepsake, holy relic, or good luck token that is intended to draw the benevolent eye of the Emperor, a Primarch, or other patron to the bearer. They take myriad forms including such things as fragments of blessed bolter casings, water from holy seas, and pelts of sacred animals.</p><p>Charm choices vary with Chapter and with the individual. Charms have no tangible benefits. However, when the unfolding plot calls for something bad to happen to a random squad member, at the GM's discretion a character with a charm may be exempt. If all characters carry charms, then it is up to the GM to choose which charms are the most potent.</p>"
+  }
+}

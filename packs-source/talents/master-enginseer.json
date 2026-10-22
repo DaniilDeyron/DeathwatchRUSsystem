@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000156",
+  "name": "Master Enginseer",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "Tech Use +20, Mechanicus or Techmarine Implants",
+    "benefit": "Spend Fate Point for automatic success on Tech Use for enhancement, repair, or upgrade",
+    "description": "<p>The character's knowledge of engines and their machine spirits surpasses all but the most venerable servants of the Machine-God. The character can almost feel the plasma pulsing through a reactor's conduits as if it were his own veins. <b>The character may spend a Fate Point for automatic success on a Tech Use Test for enhancement, repair, or upgrade of a machine's system, taking the minimum amount of time possible on the task.</b></p>",
+    "compendiumId": "tal00000000156",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

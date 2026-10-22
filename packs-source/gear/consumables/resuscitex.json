@@ -1,0 +1,17 @@
+{
+  "_id": "resuscitex001",
+  "name": "Resuscitex",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/resuscitex.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 0,
+    "req": 5,
+    "renown": "",
+    "shortDescription": "Consumeable",
+    "description": "<p>This stimm is intended to revive an unconscious comrade. It immediately wakes an unconscious character. If the character has taken Fatigue levels in excess of his Toughness Bonus, itreverts the level of Fatigue to a number equal to his TB. It has no effect on conscious characters suffering Fatigue levels equal to or less than their TB.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000143",
+  "name": "Leap Up",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "Agility 30",
+    "benefit": "Stand up as Free Action",
+    "description": "<p>A combination of athletic ability and speed allow the character to spring to his feet in virtually any circumstance. <b>The character may stand up as a Free Action.</b></p>",
+    "compendiumId": "tal00000000143",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

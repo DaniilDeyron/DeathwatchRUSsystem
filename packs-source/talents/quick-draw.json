@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000206",
+  "name": "Quick Draw",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "",
+    "benefit": "Ready pistol, basic weapon, or one-handed melee weapon as Free Action",
+    "description": "<p>The character has practiced so frequently with his weapons that they practically leap into his hands in response to a simple thought. <b>The character can Ready as a Free Action when armed with a pistol or basic ranged weapon, or a melee weapon that can be wielded in one hand.</b></p>",
+    "cost": 0,
+    "compendiumId": "tal00000000206",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

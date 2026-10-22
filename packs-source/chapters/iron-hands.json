@@ -1,0 +1,63 @@
+{
+  "name": "Iron Hands",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/iron_hands.webp",
+  "system": {
+    "book": "First Founding",
+    "page": "7",
+    "description": "<p>The Iron Hands are a stoic and pragmatic Chapter, descended from their Primarch Ferrus Manus. They believe the flesh is weak and embrace cybernetic augmentation.</p><p>Known for their affinity with technology and mechanized warfare, they maintain close ties with the Adeptus Mechanicus and favor armored assaults and overwhelming firepower.</p>",
+    "skillCosts": {
+      "lore_forbidden_adeptus_mechanicus": {
+        "costTrain": 300,
+        "costMaster": 400,
+        "costExpert": 500
+      },
+      "tech_use": { "costTrain": 300, "costMaster": 400, "costExpert": 500 }
+    },
+    "talentCosts": {
+      "tal00000000119": 200,
+      "tal00000000176": 500,
+      "tal00000000096": 500,
+      "tal00000000257": 500
+    },
+    "modifiers": [
+      {
+        "_id": "905e44006b08f157",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true
+      },
+      {
+        "_id": "9f3babaa455038b6",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "tg",
+        "enabled": true
+      }
+    ],
+    "curseName": "Steel over Flesh",
+    "curseDescription": "<p>It is said that the bitter rage of the Iron Hands was born in the fires of betrayal upon Istvaan V. The most horrific loss in that battle was the loss of Ferrus Manus, the Iron Hands Primarch. He disappeared during the massacre, and his body was never found or recovered. Rather than fall into despair, the Iron Hands took refuge in their hate, and they have used that hatred to eliminate any perceived weakness so that they may remain strong. By removing the dangerous failings of the flesh, the Iron Hands believe that they are eradicating any threats to the eventual dominance of Humanity over the galaxy.</p>",
+    "curseLevel1Name": "A Disdain for Flesh",
+    "curseLevel1Description": "<p>The Battle-Brother perceives his own flesh as a hindrance. Scarring or punishing the biological portions of his body is the only way to soothe his anger. The Battle-Brother suffers a <strong>–20 penalty to all Interaction Skill Tests</strong> (this penalty does not apply when dealing with the Adeptus Mechanicus or other Iron Hands). This penalty is reduced to –10 if the Battle Brother has three or more cybernetic implants, and the penalty is removed completely if the Battle-Brother has five or more cybernetic implants (The Flesh Is Weak Talent counts its level towards these requirements).</p>",
+    "curseLevel1Effect": "custom",
+    "curseLevel1Modifier": -20,
+    "curseLevel1Target": "interaction",
+    "curseLevel2Name": "Cold Fury",
+    "curseLevel2Description": "<p>The ruthlessness of the Iron Hands manifests more strongly in the Battle-Brother, making him prone to aggression. The Battle-Brother must take a <strong>Challenging (+0) Willpower Test</strong> when confronted by an enemy or by something he considers \"weak;\" failure means that the Battle-Brother's fury is released in some way, most likely causing a feud, confrontation, or (if he fails by three degrees or more) escalating into open violence.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Zero Tolerance",
+    "curseLevel3Description": "<p>All Iron Hands abhor weakness, but the Battle-Brother has taken this attitude to an extreme. The Battle-Brother will seek to remove any perceived source of weakness, to the point of refusing to fight alongside allied forces such as the Imperial Guard—in extreme cases, even entering into open conflict with an allied force. In addition, if any member of the Kill-team fails a Challenging (+0) or easier Skill or Characteristic Test, the Iron Hands Battle-Brother may not benefit from any Squad Mode abilities from the rest of the Kill-team until the end of the mission. If the Iron Hands Battle-Brother is the Leader, the Kill-team reduces its <strong>Cohesion by 1d5</strong>.</p>",
+    "curseLevel3Effect": "custom",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 0
+  }
+}

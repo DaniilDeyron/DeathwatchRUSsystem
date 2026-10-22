@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000009",
+  "name": "Regroup",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "223",
+    "key": "regroup",
+    "description": "<p>A Kill-team stands united and is always stronger supporting each other against their foes. As a Full Action, the Battle-Brother may order a Regroup to allow himself and those in Support Range of him to move up to twice their Agility Bonus in any direction, just as if they had made a Full Move Action. In addition, Regroup move does not trigger enemy Overwatch or Suppression Fire.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Battle-Brothers may also reload any weapons they are currently carrying (Half Action or Free Action reloads only)</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team in Support Range may move up to 2× AG Bonus metres without triggering Overwatch or Suppression Fire",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Battle-Brothers may also reload any weapons they are currently carrying (Half Action or Free Action reloads only)"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": false,
+    "action": "full"
+  }
+}

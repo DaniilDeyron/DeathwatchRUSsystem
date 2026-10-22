@@ -1,0 +1,17 @@
+{
+  "_id": "deadlock0000001",
+  "name": "Deadlock",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/toxin.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "172",
+    "wt": 0,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Drugs",
+    "description": "<p>This paralytic chemical causes the target's muscles to seize, immobilising him for easy elimination or capture without rendering him unconscious. This toxin is most commonly found in the form of needler rounds. If the victim fails a <b>Difficult (–10) Toughness Test</b>, he suffers 1d10 temporary Strength Damage, plus a further 1d10 per degree of Failure. If he reaches &quot;0&quot; Strength, he is completely paralysed and unable to act. This paralysis and Strength Damage wears off in 2d5 minutes, minus the victim's Toughness Bonus (minimum 1 minute).</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

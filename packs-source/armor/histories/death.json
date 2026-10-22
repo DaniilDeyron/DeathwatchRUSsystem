@@ -1,0 +1,12 @@
+{
+  "_id": "armorhist0000009",
+  "name": "Bring Death from Afar",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/death.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>Borne into service amidst great sieges, this armour has become accustomed to the arduous duty of brandishing heavy weapons. Whether it is the continuous impacts that come with keeping a heavy bolter steadily firing on target, or the raw power required to withstand the ferocious effect of firing a plasma cannon, this armour never fails under stress. While wearing this armour, the wearer never suffers any penalties for moving and firing with a pistol- or basic-class weapon on semi- or fully automatic fire (see pages 239 and 242). Additionally, the wearer may count any heavy weapon he wields as a basic weapon for the purposes of moving and firing on semi- or fully-automatic fire.</p>",
+    "modifiers": []
+  }
+}

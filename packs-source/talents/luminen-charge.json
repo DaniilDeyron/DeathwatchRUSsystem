@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000149",
+  "name": "Luminen Charge",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "122",
+    "prerequisite": "Techmarine or Mechanicus Implants",
+    "benefit": "Toughness Test to recharge or power machinery",
+    "description": "<p>The character has mastered the union between his holy mechanical elements and his mortal flesh, allowing the former to power the latter. <b>With a successful Toughness Test, the character may recharge or power machinery with his internal coils. This requires one minute of meditation and ritual incantation.</b> The difficulty of the Toughness Test varies depending on the nature of the powered system:</p><table><thead><tr><th>Difficulty</th><th>Example</th></tr></thead><tbody><tr><td>Ordinary (+10)</td><td>Simple Power Cell, Illuminator</td></tr><tr><td>Challenging (+0)</td><td>Weapon Charge Pack, Data Slate, Bridge Terminal</td></tr><tr><td>Difficult (–10)</td><td>Hotshot Charge Pack, Shuttle Electronics, Servo-Skull</td></tr><tr><td>Hard (–20)</td><td>Lascannon Charge Pack, Servitor, Bridge Hololith</td></tr><tr><td>Very Hard (–30)</td><td>Ship's Cogitator Core, Reactor Machine Spirit, Xenos Tech</td></tr></tbody></table><p>The character must pass a Toughness Test when he uses this ability or gain a level of Fatigue. No matter the power bestowed upon the character by the Omnissiah, some systems are either too large or too alien for this Talent—the GM is the final judge.</p>",
+    "compendiumId": "tal00000000149",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

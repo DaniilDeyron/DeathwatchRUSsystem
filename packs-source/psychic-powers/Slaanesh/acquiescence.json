@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000110",
+  "name": "Acquiescence",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/slaanesh.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "217",
+    "key": "acquiescence",
+    "range": "20 metres x Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "Yes",
+    "cost": 300,
+    "class": "Slaanesh",
+    "description": "<p><strong>Prerequisites:</strong> Devoted to Slaanesh, WP 50+, Psy Rating 4</p><p><strong>Focus Power:</strong> Challenging (+0) Opposed Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The Sorcerer conjures a spark of delusion, overwhelming the target's mind with contradictory thoughts and feelings that drive him to distraction, incapable of performing any action amidst the psychic fog. Slaanesh sorcerers sometimes describe the power as a silvery fog that overwhelms all sensation, conjured with entrancing words whispered under the breath.</p><p>The Sorcerer nominates a single enemy within range, who resists the power with a Willpower Test. Every Degree of Success on the Sorcerer's Focus Power Test causes the victim to be Stunned for 1 turn. Losing the Test by five or more Degrees causes the victim to be rendered unconscious instead.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

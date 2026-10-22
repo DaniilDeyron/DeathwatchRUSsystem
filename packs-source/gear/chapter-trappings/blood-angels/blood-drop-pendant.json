@@ -1,0 +1,18 @@
+{
+  "_id": "ct-ba-001",
+  "name": "Blood Drop Pendant",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Blood Angels Chapter Trapping",
+    "description": "<p>These ornaments are representations of the Blood Angels' Chapter symbol and the blood of Sanguinius that runs through their collective veins. Some are literally filled with the Battle-Brother's own precious blood, while others are jewelled or crystalline representations. They are most often, but not always, worn around the neck.</p><p><strong>Effect:</strong> Whenever the character spends a Fate Point to gain a bonus on a Test, he may add +13 instead of the usual +10.</p>",
+    "modifiers": [],
+    "key": "blood-angels-blood-drop-pendant"
+  }
+}

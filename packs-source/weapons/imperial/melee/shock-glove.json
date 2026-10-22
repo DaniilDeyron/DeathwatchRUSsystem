@@ -1,0 +1,25 @@
+{
+  "_id": "melee0000000015",
+  "name": "Shock Glove",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/shock-glove.webp",
+  "system": {
+    "book": "Rogue Trader Core Rulebook",
+    "page": "374",
+    "class": "Melee",
+    "dmg": "1d10",
+    "dmgType": "Impact",
+    "penetration": "0",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 2,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "shocking" }],
+    "description": "<p>A powered glove that delivers a devastating electrical shock on contact, often used to incapacitate targets without killing them. The electrical discharge can disrupt enemy nervous systems and overload poorly shielded electronics.</p>",
+    "modifiers": []
+  }
+}

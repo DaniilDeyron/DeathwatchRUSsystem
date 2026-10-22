@@ -1,0 +1,17 @@
+{
+  "_id": "repaircement001",
+  "name": "Repair Cement",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/repair-cement.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 1,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Consumeable",
+    "description": "<p>Repair Cement is a spray-gel composed of dual tubes of polyplas allomers that bond instantly with each other to seal power armour damage. It is typically used for quick field repair of breaches until the armour can be attended properly by a follower of the Omnissiah. A Space Marine learns how to use repair cement as soon as he is issued power armour; its application takes one Round but requires no Test.</p>",
+    "quantity": 1,
+    "stackable": true
+  }
+}

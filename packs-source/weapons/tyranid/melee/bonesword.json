@@ -1,0 +1,25 @@
+{
+  "_id": "tyranid000000008",
+  "name": "Bonesword",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-bonesword.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Melee",
+    "dmg": "1d10",
+    "dmgType": "Rending",
+    "penetration": "6",
+    "range": "",
+    "rof": "",
+    "clip": "",
+    "reload": "",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "drain-life" }],
+    "description": "<p>Boneswords are living blades of chitin that possess a rudimentary sentience slaved to the will of the wielder that infuses the blade with crackling psychic energy and drains the life-force of its victims.</p>",
+    "modifiers": []
+  }
+}

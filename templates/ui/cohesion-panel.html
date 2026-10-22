@@ -1,0 +1,51 @@
+<div class="cohesion-panel-inner">
+  <div class="cohesion-header">
+    <span class="cohesion-label">⚔ Cohesion</span>
+    <span class="cohesion-value" title="{{breakdown}}">
+      <span class="cohesion-current">{{value}}</span>
+      <span class="cohesion-separator">/</span>
+      <span class="cohesion-max">{{max}}</span>
+    </span>
+  </div>
+  <div class="cohesion-leader">Leader: {{leaderName}}</div>
+  <div class="cohesion-controls">
+    {{#if isGM}}
+    <button type="button" data-action="recover" title="Recover 1 Cohesion"><i class="fas fa-plus"></i></button>
+    <button type="button" data-action="lose" title="Lose 1 Cohesion"><i class="fas fa-minus"></i></button>
+    <button type="button" data-action="recalculate" title="Recalculate"><i class="fas fa-sync"></i></button>
+    <button type="button" data-action="edit" title="Edit"><i class="fas fa-edit"></i></button>
+    <button type="button" data-action="setLeader" title="Set Leader"><i class="fas fa-crown"></i></button>
+    {{/if}}
+    <button type="button" data-action="challenge" title="Cohesion Challenge"><i class="fas fa-dice"></i></button>
+  </div>
+  {{#if characters.length}}
+  <div class="cohesion-characters">
+    {{#each characters}}
+    <div class="cohesion-character-row">
+      <span class="mode-indicator {{this.mode}}" title="{{this.mode}}"></span>
+      <span class="character-name">{{this.name}}</span>
+      {{#if this.canToggle}}
+      <button type="button" data-action="toggleMode" data-actor-id="{{this.id}}" title="Toggle Mode">
+        <i class="fas fa-exchange-alt"></i>
+      </button>
+      {{/if}}
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+  {{#if activeAbilities.length}}
+  <div class="cohesion-active-abilities">
+    <div class="active-abilities-header">Active Abilities</div>
+    {{#each activeAbilities}}
+    <div class="active-ability-row">
+      <span class="active-ability-icon">🔷</span>
+      <span class="active-ability-name">{{this.abilityName}}</span>
+      <span class="active-ability-initiator">({{this.initiatorName}})</span>
+      {{#if this.canDeactivate}}
+      <button type="button" data-action="deactivateAbility" data-index="{{@index}}" title="Deactivate"><i class="fas fa-times"></i></button>
+      {{/if}}
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>

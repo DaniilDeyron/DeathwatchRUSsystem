@@ -1,0 +1,20 @@
+{
+  "_id": "smcd00000000002",
+  "name": "Emperor's Grace",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "216",
+    "key": "emperors-grace",
+    "description": "<p>A Battle-Brother is touched by the divine will of the Emperor, a piece of the Master of Mankind passed down to him through his Primarch and the teachings of his Chapter. Once per game session, a Battle-Brother can call on the Emperor's Grace to recover spent Fate Points. For a number of Rounds equal to his Rank, whenever the Battle-Brother spends a Fate Point, he should roll 1d10. If he scores equal or less than his Rank, the Fate Point is immediately recovered. This ability cannot restore Fate Points that have been burnt.</p>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 7,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "For Rounds equal to Rank, when spending a Fate Point roll 1d10 — recover it on a result ≤ Rank (once per session)",
+    "improvements": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "backbanner00001",
+  "name": "Back Banner",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/backbanner.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "171",
+    "wt": 5,
+    "req": 15,
+    "renown": "",
+    "shortDescription": "General",
+    "description": "<p>A Battle-Brother is asked to leave his home Chapter allegiances and the majority of its heraldry behind when he joins the Deathwatch. However, that does not mean his squad is without honour, inspiration, or heroes, for devoting oneself to the grisly war against the alien is its own great reward. Back banners fly on ornate poles wrought with the Deathwatch symbol and icons of Imperial faith, mounted on a backpack power unit or rising from between the shoulder blades. These elaborate banners often tower as tall again as the Battle-Brother's height itself, heralding the valour of the Emperor's avenging angels to brother and foe alike.</p><p>When the Kill-team's leader spends a Fate Point to restore a point of Cohesion (see page 212), he restores one bonus point of lost Cohesion if he is wearing a back banner.</p>"
+  }
+}

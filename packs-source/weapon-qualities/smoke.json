@@ -1,0 +1,13 @@
+{
+  "_id": "smoke",
+  "name": "Smoke",
+  "type": "weapon-quality",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "smoke",
+    "value": "",
+    "description": "<p>These weapons throw up dense clouds of smoke to create cover. When a hit is scored from a weapon with the Smoke Quality, it creates a smokescreen 3d10 metres in diameter from the point of impact. This screen lasts for 2d10 Rounds, or less in adverse weather conditions (see page 249).</p>"
+  }
+}

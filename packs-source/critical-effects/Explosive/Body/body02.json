@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-body0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Body",
+    "description": "The target is blown backwards 1d10 metres, taking 1 level of Fatigue per metre travelled. If he strikes a solid object, he takes 1d5 additional levels of Fatigue.",
+    "effects": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "bolt00000000008",
+  "name": "Astartes Bolt Pistol",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/bolt-pistol.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Pistol",
+    "dmg": "1d10+9",
+    "dmgType": "Explosive",
+    "penetration": "4",
+    "range": "30",
+    "rof": "S/2/-",
+    "clip": "14",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 5.5,
+    "req": 5,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }],
+    "description": "<p>As destructive as its full-size counterpart, a bolt pistol’s primary drawbacks are its smaller clip and slower rate of fire. However, they are ideal for Devastator units needing to take down an enemy at close quarters and for Assault specialists needing a vehicle for the Deathwatch’s many special bolt types.</p>",
+    "modifiers": []
+  }
+}

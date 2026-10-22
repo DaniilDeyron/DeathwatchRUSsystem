@@ -1,0 +1,17 @@
+{
+  "_id": "wupg00000000002",
+  "name": "Tripod",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "key": "tripod",
+    "singleShotOnly": false,
+    "req": 3,
+    "renown": "",
+    "wt": 5,
+    "description": "<p>A three-legged stand that provides a stable platform for bracing a heavy weapon on any relatively flat surface. The tripod requires remaining in a stationary position and fixes the weapon in a 180-degree arc of fire, limiting its usefulness outside of objective defense or ambush scenarios.</p><p><strong>Upgrades:</strong> Any Heavy Weapon.</p><p><strong>Note:</strong> The tactical limitations (stationary position, 180-degree arc) must be enforced by the GM during play.</p>",
+    "modifiers": []
+  }
+}

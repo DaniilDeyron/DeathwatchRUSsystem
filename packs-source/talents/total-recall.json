@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000260",
+  "name": "Total Recall",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "128",
+    "prerequisite": "Intelligence 30",
+    "benefit": "Perfect memory, automatically recall trivial facts",
+    "description": "<p>Mental conditioning or augmentation enables the character to record and recall great amounts of information, effectively granting him a perfect memory. <b>The character can automatically remember trivial facts or pieces of information he might feasibly have picked up in the past. When dealing with more detailed, complex, or obscure facts, such as the exact layout of a defence network, the GM may require a successful Intelligence Test to recall the information.</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000260",
+    "modifiers": [],
+    "rankRequired": 2
+  }
+}

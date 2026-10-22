@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000250",
+  "name": "Strong Minded",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "127",
+    "prerequisite": "Willpower 30, Resistance (Psychic Powers)",
+    "benefit": "Re-roll failed Willpower Tests to resist mind-affecting Psychic Powers",
+    "description": "<p>The character's conditioned mind acts as a fortress against psychic attacks. <b>The character may re-roll failed Willpower Tests to resist any Psychic Powers that affect his mind. Psychic Powers that have a physical effect, such as Telekinesis, are unaffected by this Talent.</b></p>",
+    "cost": 1500,
+    "compendiumId": "tal00000000250",
+    "modifiers": [],
+    "rankRequired": 7
+  }
+}

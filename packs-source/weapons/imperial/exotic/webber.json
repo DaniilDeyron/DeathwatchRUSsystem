@@ -1,0 +1,25 @@
+{
+  "_id": "exot00000000001",
+  "name": "Astartes Webber",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/webber.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "137",
+    "class": "Basic",
+    "dmg": "—",
+    "dmgType": "Impact",
+    "penetration": "0",
+    "range": "80",
+    "rof": "S/-/-",
+    "clip": "5",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 8,
+    "req": 10,
+    "renown": "Distinguished",
+    "attachedQualities": [{ "id": "blast", "value": "5" }, { "id": "snare" }],
+    "description": "<p>When a Battle-Brother finds it necessary to take a target alive, or sometimes just incapacitate persistent but innocent civilians, the webber offers a quick and effective means of incapacitating a fleeing assassin or a small crowd of citizens. The weapon fires masses of filaments, which expand to form a sticky, near-unbreakable net. The filaments constrict as the target struggles, only further entrapping him as he attempts to escape.</p><p>In addition to the normal effects of a Snare weapon, each time the ensnared character fails a Strength or Agility Test to escape, he imposes a cumulative -10 penalty on future tests. Should this exceed -30, the victim is hopelessly trapped with no further escape attempts possible. The webbing breaks down on its own and flakes away after 1d5 hours.</p>",
+    "modifiers": []
+  }
+}

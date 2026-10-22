@@ -1,0 +1,14 @@
+{
+  "_id": "energy-body0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Body",
+    "description": "The attack cooks the flesh on the chest and abdomen, inflicting 2 levels of Fatigue and leaving the target Stunned for 1 Round.",
+    "effects": []
+  }
+}

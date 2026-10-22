@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0004",
+  "name": "Level 04",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "The shock of the attack makes the target vomit. He is Stunned for 1 Round and takes 3 levels of Fatigue. The arm is useless for 1d10 Rounds.",
+    "effects": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "gear00000000009",
+  "name": "Drop Pouch",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "equipped": false,
+    "wt": 0.5,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "Equipment",
+    "description": "<p>Attached to the combat webbing belt like the sidearm holster, the drop pouch is useful for spent magazines or samples and has a draw-string opening (soft) or a magnetic lock (hard).</p><p>Attaches to Astartes Combat Webbing.</p>",
+    "modifiers": []
+  }
+}

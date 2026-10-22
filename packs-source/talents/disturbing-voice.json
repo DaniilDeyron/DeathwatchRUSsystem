@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000051",
+  "name": "Disturbing Voice",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "116",
+    "prerequisite": "",
+    "benefit": "+10 Intimidate/Interrogation, –10 Fellowship",
+    "description": "<p>The character's voice has particularly baleful or menacing qualities, causing others to quail before it. <b>The character gains a +10 bonus to all Intimidate or Interrogation Tests when employing this talent, but suffers a –10 penalty to Fellowship Tests when dealing with others in a non-threatening manner</b>, such as animals, children, or the easily startled.</p>",
+    "compendiumId": "tal00000000051",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

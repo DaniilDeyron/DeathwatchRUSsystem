@@ -1,0 +1,13 @@
+{
+  "_id": "power-field",
+  "name": "Power Field",
+  "type": "weapon-quality",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "power-field",
+    "value": "",
+    "description": "<p>A field of power wreathes weapons with this Quality, increasing their Damage and Penetration. Such modifiers are already included in the weapon's profile. When the wielder successfully uses this weapon to Parry an attack made with a weapon that lacks this Quality, he has a 75% chance of destroying his attacker's weapon. Weapons with the Warp Weapon Trait and Natural Weapons are immune to this effect.</p>"
+  }
+}

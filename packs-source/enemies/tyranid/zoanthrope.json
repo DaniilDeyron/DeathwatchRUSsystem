@@ -1,0 +1,499 @@
+{
+  "_id": "enmytyranid00022",
+  "name": "Zoanthrope",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tyranid/zoanthrope.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 30 },
+      "bs": { "base": 45 },
+      "str": { "base": 45 },
+      "tg": { "base": 45 },
+      "ag": { "base": 10 },
+      "int": { "base": 35 },
+      "per": { "base": 45 },
+      "wil": { "base": 60 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 32, "max": 32, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true },
+      "psyniscience": { "trained": true, "mastered": true }
+    },
+    "psyRating": { "value": 6, "base": 6 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Zoanthropes are amongst the strangest and most bizarre of all Tyranid creatures. Their feeble atrophied bodies hang limp and seemingly lifeless beneath their massive craniums, far too large for their weak limbs to support. Only their immense psychic power allows them to move at all, drifting across the battlefield on a cushion of psychic energy. This vast store of energy and their ability to focus it makes them terrible foes, for a Zoanthrope is capable of conjuring up earth-shattering bolts of warp energy with the strength to smash apart even the most heavily armoured troops or vehicles.</p><p>The swarm uses Zoanthropes as psychic cannons, blasting apart strong points and tanks with equal ease or raining warp fire down upon the heads of massed foes, slaying dozens of warriors in a single, blinding flash of power. Despite their power, Zoanthropes sometimes seem to be victims of their own massive energy reserves - after hurling numerous bolts or sustaining their shield for an extended period, their craniums have been observed to burst and bleed out, sending them crashing limply to the ground.</p><p><strong>Warp Field:</strong> Zoanthropes are protected from harm by a powerful psychic warp bubble. This functions as a <b>Force Field</b> (see page 166 in the Deathwatch Rulebook) and counts as having a <b>protection rating of 65</b> and <b>overloads on a roll of 01-05</b>. If a Zoanthrope's Warp Field overloads, the creature can spend a Full Action to restore it, the effects coming back into effect at the start of its next turn.</p><p><strong>Tyranid Psyker:</strong> Zoanthropes are Tyranid Psykers with <b>Psy Rating 6</b> and follow the rules for Tyranid Psychic Powers. They have access to all the standard Tyranid psychic powers plus Warp Blast and Warp Lance (see embedded powers).</p><p><strong>Source:</strong> Mark of the Xenos, p. 46</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eityranid2200001",
+      "_sourceId": "tal00000000002",
+      "name": "Fearless",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "118",
+        "prerequisite": "",
+        "benefit": "Immune to Fear and Pinning",
+        "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+        "compendiumId": "tal00000000002",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200002",
+      "_sourceId": "tal00000000271",
+      "name": "Warp Sense",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "129",
+        "prerequisite": "Psy Rating, Psyniscience Skill, Perception 30",
+        "benefit": "Use Psyniscience Skill as Half Action instead of Full Action",
+        "description": "<p>The character's senses have evolved to perceive the warp in parallel with the physical world, though it requires some concentration to do so. <b>After gaining this Talent, using the Psyniscience Skill requires a Half Action instead of a Full Action.</b></p>",
+        "compendiumId": "tal00000000271",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200003",
+      "_sourceId": "tal00000000134",
+      "name": "Improved Warp Sense",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "Warp Sense",
+        "benefit": "Use Psyniscience Skill as Free Action",
+        "description": "<p>The character can now see the warp and physical universe side by side, no longer taking any concentration on his part. <b>After gaining this Talent, the character may use the Psyniscience Skill as a Free Action.</b></p>",
+        "compendiumId": "tal00000000134",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200004",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200005",
+      "_sourceId": "trt000000000013",
+      "name": "Fear 3 (Horrifying)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200006",
+      "_sourceId": "trt000000000018",
+      "name": "Hoverer (6)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>Creatures with this trait have a limited capability for flight, flying no higher than 2 metres. As with the Flyer trait, this trait always includes a number to indicate speed. For more details on flying, see Chapter VII: Playing the Game.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200007",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (6)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "6",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2200008",
+      "_sourceId": "trt000000000032",
+      "name": "Shadow in the Warp",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>The Tyranid creature floods the warp around them with the all enveloping cloud of interference which is the signature of the Hive Mind. Any non-Tyranid psyker that attempts to use a psychic power within a range equal to the creature's Willpower in metres suffer a –20 penalty to their tests to use psychic powers (see pages 185 in Chapter VI: Psychic Powers).</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200009",
+      "_sourceId": "trt000000000033",
+      "name": "Size (Enormous)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Enormous. Enemies gain +20 to hit it, and it suffers –20 to Concealment. Its base movement is Agility Bonus +2.</p>",
+        "modifiers": [
+          {
+            "_id": "f944ed87cd28be1d",
+            "name": "Size (Enormous)",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "f71f6a2270313730",
+            "name": "Size (Enormous)",
+            "modifier": -20,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2200010",
+      "_sourceId": "trt000000000039",
+      "name": "Synapse Creature",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "135",
+        "description": "<p>A Tyranid creature with this trait is a node from which the controlling and unifying presence of the Hive Mind guides the actions of other Tyranids. The presence of a synapse creature in an encounter grants the Fearless talent to all other Tyranid creatures and also suppresses the effects of the Instinctive Behaviour Trait in those creatures that possess it (see page 132 in this chapter for more details). If an exact range for this effect is needed, it can be considered equal to the creature's Willpower Bonus x10 metres.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200011",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200012",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2200013",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid2200014",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200015",
+      "name": "Teeth and Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10-4",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>Feeble teeth and claws from the Zoanthrope's atrophied body. Despite Unnatural Strength, the creature's physical weakness means these attacks are very weak.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid2200016",
+      "_sourceId": "psy00000000067",
+      "name": "Warp Blast",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "30",
+        "key": "warp-blast",
+        "range": "50m x PR",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>By sending out a burning bolt of warp energy, the Zoanthrope blasts an area with power. The Zoanthrope must choose a single creature within range as the target, though others nearby may be affected. The Zoanthrope does not need to hit with the Warp Blast, though its Focus Power Test is modified as if it were making a ranged attack at the target, taking into account such things as range and concealment. Warp Blast inflicts 1d10 Energy Damage x PR, with a Penetration of 2 x PR. Creatures within 1m x PR of the target are also affected and suffer damage as well.</p>",
+        "damageFormula": "1d10*PR",
+        "penetrationFormula": "2*PR",
+        "damageType": "Energy"
+      }
+    },
+    {
+      "_id": "eityranid2200017",
+      "_sourceId": "psy00000000068",
+      "name": "Warp Lance",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "30",
+        "key": "warp-lance",
+        "range": "30m x PR",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>More focused than a Warp Blast, the Warp Lance is primarily used against heavily armoured targets and vehicles. Taking the form of a single concentrated beam of energy, it can strike a single target within range. The Zoanthrope does not need to hit with the Warp Lance, though its Focus Power Test is modified as if it were making a ranged attack at the target, taking into account such things as range and concealment. Warp Lance inflicts 2d10 Energy Damage x PR, with a Penetration of 5 x PR.</p>",
+        "damageFormula": "2d10*PR",
+        "penetrationFormula": "5*PR",
+        "damageType": "Energy"
+      }
+    },
+    {
+      "_id": "eityranid2200018",
+      "_sourceId": "psy00000000060",
+      "name": "Catalyst",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "370",
+        "key": "catalyst",
+        "range": "75 metres",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>The Tyranid psyker may send out a signal from the Hive Mind that infuses lesser Tyranid creatures with an unnatural vitality. This power may be used on a single Tyranid Horde within range: until the beginning of the psyker's next turn, the Horde gains 10+1d10 Magnitude.</p>"
+      }
+    },
+    {
+      "_id": "eityranid2200019",
+      "_sourceId": "psy00000000061",
+      "name": "Dominion",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "29",
+        "key": "dominion",
+        "range": "Special",
+        "sustained": "Yes",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>The Tyranid creature reaches into the depths of the Hive Mind and strengthens its links to the indomitable alien will, projecting a blanket of control and purpose through its synapse to all Tyranid bio-forms nearby. While this power is in effect, the Tyranid creature's Synapse range (see Deathwatch page 135) is doubled. In addition, the hardened resolve of the Hive Mind gives both the creature and all other creatures with the Tyranid Trait affected by the power +10 to all Willpower tests for its duration.</p>"
+      }
+    },
+    {
+      "_id": "eityranid2200020",
+      "_sourceId": "psy00000000059",
+      "name": "Hypnotic Gaze",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "29",
+        "key": "hypnotic-gaze",
+        "range": "10 metres",
+        "sustained": "Yes",
+        "action": "Half",
+        "opposed": "Yes",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>The Broodlord can use its powerful gaze to snare the mind of a nearby warrior, holding it immobile and helpless as long as its stare remains unbroken. The Broodlord can affect a single enemy with this power, provided it can make eye contact with its intended target. If the target succumbs to the power, it is then held immobile (counts as being Helpless) until it can break free by winning an Opposed Willpower Test at the start of any of its turns, or the Broodlord's gaze is somehow broken.</p>"
+      }
+    },
+    {
+      "_id": "eityranid2200021",
+      "_sourceId": "psy00000000062",
+      "name": "Leech Essence",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "29",
+        "key": "leech-essence",
+        "range": "10 metres x PR",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "Yes",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>Using the raw power of the Hive Mind, the Tyranid creature tears the life-force from a nearby foe, devouring its essence and healing its own wounds. The target (which may be a Horde) suffers 1d5 damage (or Magnitude), plus an additional 1d5 damage for each degree it fails the Opposed Test, not reduced for either armour or Toughness. The Tyranid creature is then immediately healed by an amount equal to the damage inflicted, up to its total number of starting wounds. When working out the effects of Leech Essence, the GM should calculate each 1d5 damage roll separately, because if the target dies (or burns a Fate Point) before all the damage is applied, no further wounds can be drained from their desiccated corpse.</p>"
+      }
+    },
+    {
+      "_id": "eityranid2200022",
+      "_sourceId": "psy00000000063",
+      "name": "Onslaught",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "29",
+        "key": "onslaught",
+        "range": "25 metres x PR",
+        "sustained": "Yes",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>The Tyranid creature infuses a nearby brood with burning energy and the pitiless drive of the Hive Mind to devour all in its path. The creature chooses a single Master, Elite or Troop Horde within range, allowing it to either make a Full Move, Standard Attack (Ranged or Melee), or Charge Action as a Free Action once per Round. The warrior or brood continues to benefit from the effects of this power as long as the creature sustains it and they remain in range.</p>"
+      }
+    },
+    {
+      "_id": "eityranid2200023",
+      "_sourceId": "psy00000000064",
+      "name": "Paroxysm",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "30",
+        "key": "paroxysm",
+        "range": "25 metres x PR",
+        "sustained": "Yes",
+        "action": "Half",
+        "opposed": "Yes",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>Summoning the power of the Hive Mind, the creature assails its foes with crippling pain, tearing at their nerve endings and filling their minds with agony that makes it difficult for them to stand let alone fight. The Tyranid creature chooses a number of foes within range equal to its Psy Rating (or a single Horde of any Magnitude). Those that fail their Opposed Test reduce both their Weapon Skill and Ballistic Skill to 10 while they remain affected by the power. The pain is also quite distracting when trying to concentrate and therefore targets under the effects of Paroxysm suffer a -10 to all Intelligence, Perception, Willpower and Fellowship Characteristic and Skill Tests.</p>"
+      }
+    },
+    {
+      "_id": "eityranid2200024",
+      "_sourceId": "psy00000000066",
+      "name": "The Horror",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Mark of the Xenos",
+        "page": "30",
+        "key": "the-horror",
+        "range": "75 metres",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>The Tyranid psyker may unleash a wave of horror that gnaws at the resolve of its enemies. This power may be used to target a Kill-team within 75 metres. Each member of the Kill-team within the range of this power must take a Willpower Test with a -30 modifier. The Kill-team takes one point of cohesion damage per member that fails this test. All other non-Tyranid (and non-Space Marine) NPCs within range of the Hive Tyrant must pass a fear-based Willpower Test with a -30 modifier or flee in panic.</p>"
+      }
+    },
+    {
+      "_id": "eityranid2200025",
+      "_sourceId": "psy00000000065",
+      "name": "Psychic Scream",
+      "type": "psychic-power",
+      "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "370",
+        "key": "psychic-scream",
+        "range": "20 metre Radius",
+        "sustained": "No",
+        "action": "Half",
+        "opposed": "No",
+        "cost": 0,
+        "class": "Tyranid",
+        "description": "<p>As a Half Action, the Tyranid psyker may let forth a terrible silent scream that echoes in the mind as a crippling shriek. All sentient, living creatures (not soulless machines or daemons) within 20 metres suffer a hit that deals 1d10+8 Impact Damage to their head with the Shocking quality (see Weapon Special Qualities on page 142 in Chapter V: Armoury). The victim suffers a -30 penalty to his Toughness Test to resist Stunning. If the Toughness Test is failed, the victim is stunned for 1d5 rounds.</p>",
+        "damageFormula": "1d10+8",
+        "penetrationFormula": "0",
+        "damageType": "Impact"
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Zoanthrope",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 2,
+    "height": 2,
+    "bar1": { "attribute": "wounds" }
+  }
+}

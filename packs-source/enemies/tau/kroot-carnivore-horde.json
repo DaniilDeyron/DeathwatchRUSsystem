@@ -1,0 +1,346 @@
+{
+  "_id": "hordtau000000003",
+  "name": "Kroot Carnivore Horde",
+  "type": "horde",
+  "img": "systems/deathwatch/icons/enemies/tau/kroot-carnivore-horde.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 42 },
+      "bs": { "base": 33 },
+      "str": { "base": 45 },
+      "tg": { "base": 40 },
+      "ag": { "base": 45 },
+      "int": { "base": 25 },
+      "per": { "base": 44 },
+      "wil": { "base": 30 },
+      "fs": { "base": 18 }
+    },
+    "wounds": { "base": 300, "max": 300, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "acrobatics": { "trained": true },
+      "awareness": { "trained": true, "mastered": true },
+      "barter": { "trained": true },
+      "climb": { "trained": true, "mastered": true },
+      "concealment": { "trained": true, "mastered": true, "expert": true },
+      "dodge": { "trained": true, "mastered": true },
+      "silent_move": { "trained": true, "mastered": true, "expert": true },
+      "speak_language_low_gothic": { "trained": true },
+      "speak_language_kroot": { "trained": true },
+      "speak_language_tau": { "trained": true },
+      "tracking": { "trained": true, "mastered": true },
+      "survival": { "trained": true, "mastered": true, "expert": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>The Kroot are a species of almost limitless variety, having travelled countless evolutionary paths. While the form most associated with the species is referred to by the Imperium as the Kroot Carnivore, it is postulated that almost every single animal life form on their home world of Pech is related, albeit distantly, to the genus. Evolution in the Kroot has become a matter of rapid adaptation. The Kroot evolve so quickly that they are in danger of overtaking their own development and becoming so specialised that they are led down dead-end evolutionary paths.</p><p>When gathered in large hunting packs, Kroot Carnivores become even more deadly, using their numbers to overwhelm prey with coordinated strikes. Their natural agility and fieldcraft make them exceptional ambush predators, capable of surrounding and isolating targets before closing in for the kill.</p><p><strong>Skills:</strong> Acrobatics (Ag), Awareness (Per) +10, Barter (Fel), Climb (S) +10, Concealment (Ag) +20, Dodge (Ag) +10, Silent Move (Ag) +20, Speak Language (Low Gothic, Kroot, Tau) (Int), Tracking (Int) +10, Survival (Int) +20.</p><p><strong>Traits:</strong> Eater of the Dead, Fieldcraft, Kroot Physiology, Natural Weapon (Beak), Overwhelming, Unnatural Perception (×2), Unnatural Strength (×2)</p><p><strong>Source:</strong> Mark Of the Xenos, p. 15</p>",
+    "magnitude": { "base": 30, "max": 30, "value": 30 },
+    "gearArmor": 2,
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "hitau03000000001",
+      "_sourceId": "tal00000000091",
+      "name": "Furious Assault",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "119",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Spend Reaction for +10 WS on Charge",
+        "description": "<p>The character's speed and martial prowess allow him to land several blows where lesser combatants land one. <b>If the character successfully hits his target using the All Out Attack Action, he may spend his Reaction to make an additional attack using the same bonuses or penalties as the original attack.</b></p>",
+        "compendiumId": "tal00000000091",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000002",
+      "_sourceId": "tal00000000284",
+      "name": "Hyperactive Nymune Organ",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Mark Of the Xenos",
+        "page": "15",
+        "prerequisite": "Kroot",
+        "benefit": "+1 Reaction, enhanced movement, risk of Fatigue",
+        "description": "<p>The Kroot's nymune organs are hyperactive, storing great amounts of energy. The Kroot's metabolism is sped up, improving his raw muscle speed, reflexes, and reaction time.</p><p><b>The Kroot gains one additional Reaction per round. When taking a Full Move Action, the Kroot may move an extra number of metres equal to his unmodified Agility Bonus. When taking the Run Action, he may double his movement for one Round.</b></p><p>He gains one level of Fatigue if he uses this Talent in two consecutive Turns unless he passes a Challenging (+0) Toughness Test.</p>",
+        "compendiumId": "tal00000000284",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000003",
+      "_sourceId": "tal00000000283",
+      "name": "Kroot Leap",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Mark Of the Xenos",
+        "page": "15",
+        "prerequisite": "Kroot",
+        "benefit": "Leap horizontally or vertically equal to Agility Bonus in metres",
+        "description": "<p>Kroot are adept at using their long legs to jump, hop, and leap long distances. The Kroot has learned to use this advantage whilst rushing an enemy in close combat.</p><p><strong>When making a Charge action, the Kroot can ignore obstacles between him and his target by making a Running Vertical Jump (see page 207 of the Deathwatch Rulebook). This Talent may only be used if there is room for the Kroot to land next to his target and if there is enough overhead space for the Kroot to leap over the obstacles.</strong> For example, a wall that goes from floor to ceiling may not be leapt over, nor would something taller than the Kroot's vertical jump distance.</p><p><strong>If the Kroot successfully strikes his target whilst using this Talent, the Kroot may make a Knock-Down Action against the target (see page 241 of the Deathwatch Rulebook) as a Free Action.</strong></p>",
+        "compendiumId": "tal00000000283",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000004",
+      "_sourceId": "tal00000000143",
+      "name": "Leap Up",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Agility 30",
+        "benefit": "Stand up as Free Action",
+        "description": "<p>A combination of athletic ability and speed allow the character to spring to his feet in virtually any circumstance. <b>The character may stand up as a Free Action.</b></p>",
+        "compendiumId": "tal00000000143",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000005",
+      "_sourceId": "tal00000000146",
+      "name": "Lightning Reflexes",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Agility 30",
+        "benefit": "+1 Initiative",
+        "description": "<p>The character always expects trouble, even in the most innocuous situations, allowing him to act quickly when needed. <b>Add twice the character's Agility Bonus when rolling for Initiative. If the character has Unnatural Agility, then add one to the multiplier before factoring the bonus into the character's Initiative roll.</b></p>",
+        "compendiumId": "tal00000000146",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000006",
+      "_sourceId": "tal00000000210",
+      "name": "Resistance (Fear)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "125",
+        "prerequisite": "",
+        "benefit": "+10 to resist Fear effects",
+        "description": "<p>The character's background, experience, training, exposure, or plain stubbornness has developed a resistance within him. <b>The character gains a +10 bonus when making tests to resist the effects of this group.</b> The character's GM may wish to approve certain choices or have them justified by the character's past.</p>",
+        "compendiumId": "tal00000000210",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000007",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 30",
+        "benefit": "Make additional melee attacks",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000008",
+      "_sourceId": "trt000000000067",
+      "name": "Eater of the Dead",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark Of the Xenos",
+        "page": "15",
+        "description": "<p>Kroot are infamous for their practice of devouring the corpses of their foes. If necessary, they will even turn cannibal and eat Kroot corpses.</p><p><strong>Consuming Corpses:</strong> A Kroot who devours a fresh corpse (killed no more than 24 hours previously, organic creature only—no daemons or machines) gains a number of bonus Wounds equal to the unmodified Toughness Bonus that the corpse possessed when it was alive (typically 3). These bonus Wounds may not exceed the Kroot's own Toughness Bonus and remain for a number of hours equal to the Kroot's Toughness Bonus or until they are lost, whichever comes first.</p><p><strong>Bonus Wounds:</strong> Unlike normal Wounds, these bonus Wounds are removed when affected by the Damage of any successful attack, and are always removed first before applying Damage to the Kroot's normal Wounds.</p><p><strong>Enhanced Healing:</strong> A Kroot who consumes a fresh corpse heals at twice the normal rate and adds one additional bonus Wound to any wounds healed through any other means (psychic healing, etc.) for a number of hours equal to his Toughness Bonus.</p><p><strong>Limitation:</strong> A Kroot can only receive bonus Wounds from one consumed corpse at a time. If a Kroot consumes a corpse while benefiting from bonus Wounds from a previous corpse, he loses the previous bonus Wounds and gains bonus Wounds from the new corpse instead.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000009",
+      "_sourceId": "trt000000000068",
+      "name": "Fieldcraft",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark Of the Xenos",
+        "page": "15",
+        "description": "<p>The Kroot are master hunters and trackers, able to move silently through any terrain and track prey over great distances. They are expert ambush predators, capable of remaining motionless for hours and striking with devastating speed when the moment is right.</p><p><strong>Kroot gain a +10 bonus to all Concealment, Shadowing, and Silent Move Tests. In addition, Kroot treat forests, jungles, and similar environments as open terrain.</strong></p>",
+        "modifiers": [
+          {
+            "_id": "fieldcraft-concealment",
+            "name": "Fieldcraft",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          },
+          {
+            "_id": "fieldcraft-shadowing",
+            "name": "Fieldcraft",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "shadowing",
+            "enabled": true
+          },
+          {
+            "_id": "fieldcraft-silent-move",
+            "name": "Fieldcraft",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "silent_move",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hitau03000000010",
+      "_sourceId": "trt000000000069",
+      "name": "Kroot Physiology",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Mark Of the Xenos",
+        "page": "15",
+        "description": "<p>The Kroot possess a unique physiology adapted for their carnivorous lifestyle and rapid evolutionary adaptation. Their powerful legs allow them to make prodigious leaps, their beaks can tear through flesh and bone, and their digestive system can extract genetic material from consumed prey. They are extremely agile and possess keen senses, making them formidable hunters.</p><p><strong>Armor Restriction:</strong> Kroot are most comfortable wearing light armour or piecemeal protection scavenged from the battlefield. <strong>When a Kroot wears armour that provides more than 3 APs, he loses the benefits of the Unnatural Perception and Fieldcraft Traits.</strong></p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000011",
+      "_sourceId": "trt000000000026",
+      "name": "Natural Weapons (Beak)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has sharp claws, teeth, spines or some other natural weapon with which it can slice and dice its foes. It counts as being armed even when not wielding weapons. Its attacks deal 1d10 points of damage plus its Strength Bonus. The creature may make attacks with its Natural Weapons using its Weapon Skill, though it cannot parry with its natural weapons, nor can it be disarmed—unless, of course, you hack off its limbs! Natural weapons always count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000012",
+      "_sourceId": "trt000000000027",
+      "name": "Overwhelming",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>The creatures that make up the horde are capable of swarming over enemies and ripping them apart with a thousand cuts. The horde with this trait always rolls an extra 1d10 for damage caused by the horde in close combat as long as it has a magnitude equal to or greater than 20.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000013",
+      "_sourceId": "trt000000000048",
+      "name": "Unnatural Perception",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Perception Characteristic is unnatural. Each time this trait is gained, double its Perception Bonus. For example, a creature with Perception 41 normally has a 4 Perception Bonus. With this trait, its Perception Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Perception, the Bonus multiplier increases by 1. For example, one selection multiplies the Perception Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Perception with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "ee1193d07425b7a6",
+            "name": "Unnatural Perception",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "per",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hitau03000000014",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "hitau03000000015",
+      "name": "Kroot Beak",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/generic/generic-melee.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d5",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "—",
+        "rof": "—",
+        "clip": "—",
+        "reload": "—",
+        "equipped": true,
+        "attachedQualities": [{ "id": "primitive" }, { "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>The Kroot's powerful beak can tear through flesh and bone with devastating efficiency. When attacking as a horde, the coordinated strikes of hundreds of beaks shred enemies with horrifying efficiency.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "hitau03000000016",
+      "name": "Kroot Rifle",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/kroot-rifle.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+5",
+        "dmgType": "Energy",
+        "penetration": "1",
+        "range": "110",
+        "rof": "S/2/-",
+        "clip": "6",
+        "reload": "2Full",
+        "equipped": true,
+        "attachedQualities": [{ "id": "tearing" }],
+        "attachedUpgrades": [],
+        "description": "<p>The standard ranged weapon of the Kroot warriors. The Kroot Rifle fires energy bolts and features an integrated bladed stock that can be used in melee combat (1d10 R, Pen 2, Balanced). When fired by a horde, the concentrated volley of fire is devastating.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Kroot Carnivore Horde",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 1,
+    "height": 1,
+    "bar1": { "attribute": "wounds" }
+  }
+}

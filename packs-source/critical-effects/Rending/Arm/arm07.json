@@ -1,0 +1,14 @@
+{
+  "_id": "rending-arm0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Arm",
+    "description": "The attack rips apart skin, muscle, bone and sinew with ease, turning the target's arm into a dangling ruin and inflicting 1d5 levels of Fatigue. The arm is broken and, until repaired, the target counts as having only one arm. In addition, numerous veins have been severed and the target is now suffering from Blood Loss.",
+    "effects": []
+  }
+}

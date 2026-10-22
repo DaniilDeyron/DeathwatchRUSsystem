@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000159",
+  "name": "Mechadendrite Use (Utility)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "Mechanicus or Techmarine Implants",
+    "benefit": "Use Utility mechadendrites",
+    "description": "<p>Though there are many different types of Mechadendrite, this Talent divides them into two broad categories:</p><p><b>Utility:</b> Including such varied types as Machine Spirit Interface, Manipulator, Medicae, Utility, Optical, and countless others, these Mechadendrites generally require less hardy mountings, but all interface with the Cyber Mantle in a similar manner.</p>",
+    "compendiumId": "tal00000000159",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

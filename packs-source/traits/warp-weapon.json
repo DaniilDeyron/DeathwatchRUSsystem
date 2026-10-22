@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000055",
+  "name": "Warp Weapon",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "136",
+    "description": "<p>Creatures with this trait have weapons that are partially insubstantial, able to ignore such mundane things as armour or cover. Natural weapons and attacks made by a creature with this trait ignore physical armour unless it is created from psychoactive materials or carries the holy quality. Force fields still work against these attacks normally.</p>",
+    "modifiers": []
+  }
+}

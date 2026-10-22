@@ -1,0 +1,24 @@
+{
+  "_id": "melt00000000006",
+  "name": "Astartes Meltagun (Vulkan)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/melta-vulkan.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "2d10+14",
+    "dmgType": "Energy",
+    "penetration": "12",
+    "range": "20",
+    "rof": "S/-/-",
+    "clip": "6",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 14,
+    "req": 20,
+    "renown": "Respected",
+    "description": "<p>Meltaguns are the most common form of melta weapon and are found in many Imperial forces. They are less prone to catastrophic failure than plasma guns and work best at shorter ranges. An ideal weapon for cutting through bulkheads or armour, the Deathwatch has no end of uses for it. The Vulkan-pattern uses a built-in fuel canister, but versions with a backpack attachment are also common.</p>",
+    "modifiers": []
+  }
+}

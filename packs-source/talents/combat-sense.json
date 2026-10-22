@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000039",
+  "name": "Combat Sense",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "PER 40",
+    "benefit": "Use Perception Bonus for Initiative",
+    "description": "<p>The character has the ability to consciously recognise the proddings of his subconscious as it reacts to his preternaturally sharp senses, giving the character an edge that mere speed cannot match. <b>The character may use his Perception Bonus in place of his Agility Bonus when rolling Initiative.</b></p>",
+    "compendiumId": "tal00000000039",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

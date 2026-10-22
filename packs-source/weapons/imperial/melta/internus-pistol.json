@@ -1,0 +1,24 @@
+{
+  "_id": "melt00000000004",
+  "name": "Astartes Infernus Pistol",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/infernus-pistol.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Pistol",
+    "dmg": "2d10+12",
+    "dmgType": "Energy",
+    "penetration": "12",
+    "range": "10",
+    "rof": "S/-/-",
+    "clip": "4",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 5,
+    "req": 35,
+    "renown": "Famed",
+    "description": "<p>The Infernus pistol represents specialised and ancient technology, almost impossible for even the Adeptus Astartes to recreate. Mere handfuls exist in any sector, and they are found only in the hands of Battle-Brothers who have proven themselves worthy of such a profoundly rare weapon. This is a favoured weapon of the Blood Angels Chapter.</p>",
+    "modifiers": []
+  }
+}

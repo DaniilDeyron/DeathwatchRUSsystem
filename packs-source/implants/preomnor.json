@@ -1,0 +1,13 @@
+{
+  "name": "Preomnor",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "+20 bonus vs ingested poisons",
+    "description": "<p>The Space Marine gains a +20 bonus to any Toughness Test against ingested poisons.</p>",
+    "modifiers": []
+  }
+}

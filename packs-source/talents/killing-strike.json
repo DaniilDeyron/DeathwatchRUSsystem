@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000141",
+  "name": "Killing Strike",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Spend Fate Point on All-Out Attack to make melee attacks impossible to parry or dodge",
+    "description": "<p>Space Marines are amongst the deadliest warriors in the galaxy, and they have learned how best to place their blows for maximum effect. <b>When taking the All-Out Attack action, a Space Marine may spend a Fate Point (before rolling the dice) to make his melee attacks for that round impossible to parry or dodge.</b></p>",
+    "cost": 0,
+    "compendiumId": "tal00000000141",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

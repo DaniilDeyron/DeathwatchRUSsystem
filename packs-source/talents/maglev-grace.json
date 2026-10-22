@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000152",
+  "name": "Maglev Grace",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "122",
+    "prerequisite": "Mechanicus Implants",
+    "benefit": "Hover 20-30cm for 1d10+TG Bonus minutes, reduce falling damage to 1d10+3",
+    "description": "<p>The character is implanted with anti-grav coils throughout his lower body, allowing him to hover just off the ground. <b>Using a Half Action, the character may hover 20–30 centimetres off the ground for a number of minutes equal to 1d10 plus the character's Toughness Bonus. The character must employ a Half Action each Round to maintaining the rite, and may use the other actions to move normally. The character may activate this rite to slow his rate of descent when falling, reducing all falling Damage to 1d10+3 Impact. Each use of Maglev Grace exhausts the power stored in the character's Potentia Coil, and so this Talent cannot be reused until the Coil has been recharged (usually 1d5 hours).</b></p>",
+    "compendiumId": "tal00000000152",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

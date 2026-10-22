@@ -1,0 +1,13 @@
+{
+  "name": "Lyman's Ear",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Grants Heightened Senses (Hearing)",
+    "description": "<p>This implant grants the Space Marine the Heightened Senses (Hearing) Talent.</p>",
+    "modifiers": []
+  }
+}

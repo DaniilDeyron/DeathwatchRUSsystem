@@ -1,0 +1,18 @@
+{
+  "_id": "ct-nm-001",
+  "name": "Laurels of Ultramar",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Honor the Chapter",
+    "page": "81",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Novamarines Chapter Trapping",
+    "description": "<p>Part of the close ties between the Novamarines and the Ultramarines includes a desire by the Chapter's Battle-Brothers to pay homage to the tomb of their Primarch on Ultramar. Many Battle-Brothers make this pilgrimage at least once during their lives and use it to strengthen their resolve as well as their connections with the Ultramarines Chapter. A Battle-Brother who completes this pilgrimage will receive the Laurels of Ultramar, which he may wear with honour.</p><p>A Battle-Brother may choose to have his character gain the Laurels of Ultramar during character creation (or gain them later by undertaking a pilgrimage at the GM's discretion).</p><p><strong>Effect:</strong> If a Novamarine Battle-Brother with the Laurels of Ultramar is squad leader, then he counts any Ultramarines in his squad as if they were Novamarines (and vice-versa) for the purposes of Skill, Talents, and Squad Mode abilities.</p>",
+    "modifiers": [],
+    "key": "novamarines-laurels-of-ultramar"
+  }
+}

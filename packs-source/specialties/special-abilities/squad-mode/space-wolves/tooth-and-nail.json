@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000004",
+  "name": "Tooth and Nail",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "222",
+    "key": "tooth-and-nail",
+    "description": "<p>The animalistic nature and fighting style of the Space Wolves often gives them an edge in close combat where they may unleash their inner beast against their enemies. While this ability is in effect, the Battle-Brother and those in Support Range of him may re-roll all Opposed Tests in grapples, add an additional +10 to any bonuses for outnumbering foes in hand-to-hand, and add +10 to Dodge and Parry rolls against melee attacks.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Bonus to outnumbering and Dodge rolls increases to +20</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Space Wolves",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/space_wolves.webp",
+    "effect": "Re-roll grapple Opposed Tests; +10 outnumbering bonus; +10 Dodge and Parry vs melee attacks",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Bonus to outnumbering and Dodge rolls increases to +20"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "free"
+  }
+}

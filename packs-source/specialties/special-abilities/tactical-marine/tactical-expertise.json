@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000009",
+  "name": "Tactical Expertise",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "85",
+    "key": "tactical-expertise",
+    "description": "<p>When initiating a Squad Mode ability, the Tactical Marine may share the benefits of his Chapter's Squad Mode abilities with the members of his Kill-team as if they were part of his Chapter. This requires a successful Hard (-20) Command Test. At Rank 3, the Command Test becomes Challenging (+0). At Rank 7, the Command Test becomes Routine (+20).    This Command Test is rolled once when the Tactical Marine initiates the Squad Mode ability for the first time during the mission (for Sustained Squad Mode abilities) or during the combat encounter (for nonsustained Squad Mode abilities). If the Command Test is successful the Tactical Marine may then share the benefits of his Chapter’s Squad Mode ability freely for the full duration of the Squad Mode ability.”</p>",
+    "specialty": "Tactical Marine",
+    "specialtyImg": "systems/deathwatch/icons/specialty/tacticalmarine.webp"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "energy-leg0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "253",
+    "damageType": "Energy",
+    "location": "Leg",
+    "description": "The energy attack fries the leg, leaving it a mess of blackened flesh. The leg is broken and until repaired, the target counts as having lost the leg. The target must take a Toughness Test or become Stunned for 1 Round. In addition the target gains 1d5 levels of Fatigue. The target now only has one leg.",
+    "effects": []
+  }
+}

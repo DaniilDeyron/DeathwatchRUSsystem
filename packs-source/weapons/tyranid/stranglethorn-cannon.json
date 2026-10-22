@@ -1,0 +1,30 @@
+{
+  "_id": "tyranid000000002",
+  "name": "Stranglethorn Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-stranglethorn-cannon.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Heavy",
+    "dmg": "2d10+10",
+    "dmgType": "Impact",
+    "penetration": "3",
+    "range": "80",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [
+      { "id": "blast", "value": "10" },
+      { "id": "power-fist" },
+      { "id": "devastating", "value": "2" },
+      { "id": "living-ammunition" }
+    ],
+    "description": "<p>The Stranglethorn Cannon is a more potent species of Barbed Strangler that shoots seed pods that spawn deadlier and more aggressive tendrils.</p>",
+    "modifiers": []
+  }
+}

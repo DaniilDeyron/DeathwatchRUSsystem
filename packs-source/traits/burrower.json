@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000008",
+  "name": "Burrower",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>A creature with this trait can move through solid objects by burrowing through them. This trait always includes a number to indicate speed. Such creatures can burrow through soil, rock, sand, and so on, though some (expressed in the creature's entry) can burrow through metal. When a creature burrows, it leaves behind a tunnel. Creatures of one size smaller than the creature that created the tunnel can enter these areas without impediment. There is a 50% chance each round that the tunnel collapses behind the creature.</p>",
+    "modifiers": []
+  }
+}

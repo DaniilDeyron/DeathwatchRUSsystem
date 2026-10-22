@@ -1,0 +1,27 @@
+{
+  "_id": "gear00000000003",
+  "name": "Medicae Pouch",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "equipped": false,
+    "wt": 1,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "Equipment",
+    "description": "<p>Contains cataplasm patches, contraseptics, synthetic skin applicators, single-use injectors containing detox, pain suppressant, morpha, resuscitex, a few bandages and a tourniquet.</p><p>Grants +20 to any Medicae Tests.</p><p>Attaches to Astartes Combat Webbing.</p>",
+    "modifiers": [
+      {
+        "_id": "medicaepouchmod1",
+        "name": "Medicae Pouch",
+        "modifier": "20",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "medicae",
+        "enabled": true
+      }
+    ]
+  }
+}

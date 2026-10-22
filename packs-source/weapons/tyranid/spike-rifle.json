@@ -1,0 +1,25 @@
+{
+  "_id": "tyranid000000012",
+  "name": "Spike Rifle",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-spike-rifle.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "28",
+    "class": "Basic",
+    "dmg": "1d10+4",
+    "dmgType": "Rending",
+    "penetration": "0",
+    "range": "80",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "living-ammunition" }],
+    "description": "<p>Essentially a long tube of muscle, the spike rifle fires a short harpoon-like bone into its targets over a considerable distance. Razor sharp and fired with great force, the spike is able to punch through light armour and even right through unarmoured targets. Once embedded in flesh it becomes very difficult to remove as it has tiny barbs which dig into the victim, holding it in place.</p><p>Spike Rifles are usually carried by Termagants (see Deathwatch page 371) and these creatures may replace their Fleshborer with a Spike Rifle should the GM choose.</p>",
+    "modifiers": []
+  }
+}

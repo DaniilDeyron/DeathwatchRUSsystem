@@ -1,0 +1,13 @@
+{
+  "_id": "twin-linked",
+  "name": "Twin-Linked",
+  "type": "weapon-quality",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "twin-linked",
+    "value": "",
+    "description": "<p>A Twin-linked weapon represents two identical weapons connected together and linked to fire at the same time, often through one pull of the trigger or push of a button. Twin-linked weapons are built this way in order to increase the chances of scoring a hit through the crude expedience of blasting more shots at the target. A weapon with the Twin-linked Quality gains a +20 bonus to hit when fired and uses twice as much ammunition. In addition, the weapon may score one additional hit if the attack roll succeeds by two or more degrees of success. Lastly, the weapon's reload time is doubled.</p>"
+  }
+}

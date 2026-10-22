@@ -1,0 +1,31 @@
+{
+  "_id": "tyranid000000007",
+  "name": "Heavy Venom Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tyranid-venom-cannon.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Heavy",
+    "dmg": "4d10+10",
+    "dmgType": "Impact",
+    "penetration": "6",
+    "range": "100",
+    "rof": "S/-/-",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [
+      { "id": "blast", "value": "5" },
+      { "id": "proven" },
+      { "id": "reliable", "value": "3" },
+      { "id": "toxic" },
+      { "id": "living-ammunition" }
+    ],
+    "description": "<p>Some larger species of Tyranid use an even larger and more potent species of the Venom Cannon, referred to by Imperial Forces as a Heavy Venom Cannon. It uses an electrostatic charge to shoot highly corrosive crystals coated with a metallic, venomous residue. On impact, the crystals shatter, creating a deadly cloud of fragments.</p>",
+    "modifiers": []
+  }
+}

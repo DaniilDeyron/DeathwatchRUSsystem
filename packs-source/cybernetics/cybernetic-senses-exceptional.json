@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000014",
+  "name": "Cybernetic Senses (Exceptional Craftsmanship)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/cybernetics.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "178",
+    "equipped": false,
+    "description": "<p>Sight, hearing, touch, and taste may all need to be duplicated artificially when nerves or organs are damaged. Followers of the Machine God sometimes add more esoteric senses.</p><p><strong>Exceptional Craftsmanship:</strong> Grants the Heightened Senses Talent for that particular sense, and a +20 bonus to Tests made to resist attacks on the sense itself, such as deafening noises or blinding flashes.</p><p><strong>Cybernetic Eyes:</strong> Basic and advanced cybernetic eyes may also incorporate magnifying lenses (duplicating the effect of a telescopic sight for any ranged weapon used), a full photo-visor, and/or a system duplicating the Dark Sight Trait.</p><p><strong>Cybernetic Hearing:</strong> Basic or advanced cybernetic hearing may also include an internal micro-bead system.</p><p><em>Note: Specify which sense is replaced and which optional features are included when equipping this cybernetic.</em></p>",
+    "modifiers": [],
+    "req": 15,
+    "renown": "Respected",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

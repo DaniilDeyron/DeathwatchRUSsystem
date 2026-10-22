@@ -1,0 +1,13 @@
+{
+  "_id": "sanctified",
+  "name": "Sanctified",
+  "type": "weapon-quality",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "sanctified",
+    "value": "",
+    "description": "<p>Damage inflicted by a Sanctified weapon counts as Holy Damage, which has certain effects on some Daemonic and warp creatures. All weapons with this special Quality must be either Exceptionally or Master-Crafted.</p>"
+  }
+}

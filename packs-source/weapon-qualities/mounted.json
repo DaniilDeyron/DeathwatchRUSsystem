@@ -1,0 +1,12 @@
+{
+  "_id": "mounted",
+  "name": "Mounted",
+  "type": "weapon-quality",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "mounted",
+    "description": "<p>This weapon is vehicle or suit-mounted and cannot be used separately. Mounted weapons are typically connected to the vehicle's or suit's power supply, granting them unlimited ammunition. Such weapons cannot be removed or transferred to another platform without extensive technical work.</p>"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "voxcaster0000001",
+  "name": "Vox Caster",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/vox-caster.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "176",
+    "wt": 0.5,
+    "req": 10,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Short-range voxes (like those in power armour) lack the range to coordinate across an entire planet or reach spacecraft in orbit. A vox-caster can be used to send signals over great distances, up to and including ships in orbit from a planet’s surface. Using a vox-caster to receive or transmit signals through interference or other unusual conditions requires a successful Tech-Use Test with a Difficulty commensurate to the adversity of the conditions.</p>"
+  }
+}

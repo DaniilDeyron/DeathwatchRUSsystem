@@ -1,0 +1,110 @@
+<div class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <div class="sheet-header">
+    <div class="header-fields" style="width: 100%;">
+      <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+        <h1 class="charname" style="flex: 1; margin: 0;"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+        <select name="system.classification" style="width: 90px; font-size: 0.85em;" title="Enemy Classification">
+          <option value="human" {{#if (eq system.classification "human")}}selected{{/if}}>Human</option>
+          <option value="xenos" {{#if (eq system.classification "xenos")}}selected{{/if}}>Xenos</option>
+          <option value="chaos" {{#if (eq system.classification "chaos")}}selected{{/if}}>Chaos</option>
+        </select>
+      </div>
+      <div style="display: flex; gap: 10px; align-items: flex-start;">
+        <div style="flex: 0 0 100px; text-align: center;">
+          <img class="profile-img" src="{{actor.img}}" data-action="editImage" data-edit="img" title="{{actor.name}}" style="width: 100px; height: 100px; object-fit: cover; border-radius: 3px; border: 1px solid #999; cursor: pointer;" />
+          <div style="font-size: 0.7em; color: #666; margin-top: 2px;">Profile</div>
+        </div>
+        <div style="flex: 0 0 125px; text-align: center;">
+          {{> "systems/deathwatch/templates/actor/parts/actor-wounds.html"}}
+        </div>
+        <div style="flex: 0 0 125px; text-align: center;">
+          {{> "systems/deathwatch/templates/actor/parts/actor-fatigue.html"}}
+        </div>
+        <div style="flex: 1;"></div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="characteristics">Attributes</a>
+    <a class="item" data-tab="abilities">Abilities</a>
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="items">Gear</a>
+    <a class="item" data-tab="augmentations">Augmentations</a>
+    {{#if showPsyRating}}
+    <a class="item" data-tab="spells">Psychic Powers</a>
+    {{/if}}
+    <a class="item" data-tab="effects">Effects</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Attributes Tab --}}
+    <div class="tab characteristics" data-group="primary" data-tab="characteristics">
+      <div style="display: flex; gap: 20px; align-items: flex-start; height: 100%;">
+        <div>
+          <div style="display: grid; grid-template-columns: auto auto auto; column-gap: 5px; row-gap: 20px; align-content: start;">
+            {{> "systems/deathwatch/templates/actor/parts/actor-characteristics.html"}}
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: 20px; margin-bottom: 20px;">
+            {{> "systems/deathwatch/templates/actor/parts/actor-movement.html"}}
+            {{> "systems/deathwatch/templates/actor/parts/actor-psy-rating.html"}}
+          </div>
+        </div>
+        <div style="flex: 1; overflow-y: auto; max-height: calc(100vh - 435px); border: 1px solid #999; border-radius: 3px; padding: 0;">
+          {{> "systems/deathwatch/templates/actor/parts/actor-skills.html"}}
+        </div>
+      </div>
+    </div>
+
+    {{!-- Abilities Tab --}}
+    <div class="tab abilities" data-group="primary" data-tab="abilities">
+      {{> "systems/deathwatch/templates/actor/parts/actor-talents.html"}}
+      {{> "systems/deathwatch/templates/actor/parts/actor-traits.html"}}
+    </div>
+
+    {{!-- Description Tab --}}
+    <div class="tab biography" data-group="primary" data-tab="description">
+      <div class="biography-section">
+        <h3 class="section-header">Description</h3>
+        {{> "systems/deathwatch/templates/actor/parts/actor-biography-fields.html"}}
+        {{#if editable}}
+        <prose-mirror name="system.description"
+                      value="{{source.description}}"
+                      document-uuid="{{actor.uuid}}"
+                      style="min-height: 300px;">
+        </prose-mirror>
+        {{else}}
+        <div class="editor" style="min-height: 300px; border: 1px solid #ccc; border-radius: 3px; padding: 8px;">
+          <div class="editor-content">{{{enriched.description}}}</div>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+
+    {{!-- Gear Tab --}}
+    <div class="tab items" data-group="primary" data-tab="items">
+      {{> "systems/deathwatch/templates/actor/parts/actor-items.html"}}
+    </div>
+
+    {{!-- Augmentations Tab --}}
+    <div class="tab augmentations" data-group="primary" data-tab="augmentations">
+      {{> "systems/deathwatch/templates/actor/parts/actor-augmentations.html"}}
+    </div>
+
+    {{!-- Psychic Powers Tab --}}
+    <div class="tab spells" data-group="primary" data-tab="spells">
+      {{> "systems/deathwatch/templates/actor/parts/actor-psychic-powers.html"}}
+    </div>
+
+    {{!-- Effects Tab --}}
+    <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+      {{> "systems/deathwatch/templates/actor/parts/actor-effects.html"}}
+    </div>
+
+  </section>
+</div>

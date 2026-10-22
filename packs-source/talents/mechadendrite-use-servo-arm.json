@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000158",
+  "name": "Mechadendrite Use (Servo-Arm)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "Mechanicus or Techmarine Implants",
+    "benefit": "Use Servo-Arm mechadendrites",
+    "description": "<p>Though there are many different types of Mechadendrite, this Talent divides them into two broad categories:</p><p><b>Servo-Arm:</b> Servo-arms are powerful mechanical arms fitted with piston-driven claws that are equally effective as weapons as they are at repairing machines.</p>",
+    "compendiumId": "tal00000000158",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

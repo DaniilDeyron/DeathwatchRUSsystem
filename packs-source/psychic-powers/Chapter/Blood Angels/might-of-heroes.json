@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000027",
+  "name": "Might of Heroes",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/blood-angel.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "196",
+    "key": "might-of-heroes",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>Focusing his will, the Blood Angels Librarian enhances his strength and summons up a deep well of rage. While this power is in effect, the Blood Angels Librarian adds +5 x PR to his Strength (to a maximum of 95), with any corresponding increase to his Strength Bonus.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp"
+  }
+}

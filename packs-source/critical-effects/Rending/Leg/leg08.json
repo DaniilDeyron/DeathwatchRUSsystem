@@ -1,0 +1,14 @@
+{
+  "_id": "rending-leg0008",
+  "name": "Level 08",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "259",
+    "damageType": "Rending",
+    "location": "Leg",
+    "description": "In a single bloody hack the leg is lopped off the target, spurting its vital fluids across the ground. The target must immediately make a Toughness Test or die from shock. On a success, the target is Stunned for 1d10 Rounds, takes 1d10 Fatigue and suffers Blood Loss. He now has only one leg.",
+    "effects": []
+  }
+}

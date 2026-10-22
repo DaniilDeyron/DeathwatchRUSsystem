@@ -1,0 +1,13 @@
+{
+  "name": "Black Carapace",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Power armor control, negates Hulking hit bonus",
+    "description": "<p>This implant gives the Space Marine exceptional control over his power armour. Although a Space Marine in power armour has the Size (Hulking) Trait, his enemies gain no bonus to hit him thanks to the Black Carapace.</p>",
+    "modifiers": []
+  }
+}

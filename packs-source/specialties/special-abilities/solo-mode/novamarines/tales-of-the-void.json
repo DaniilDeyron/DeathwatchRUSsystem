@@ -1,0 +1,26 @@
+{
+  "_id": "smch00000000008",
+  "name": "Tales of the Void",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Honnour The Chapter",
+    "page": "80",
+    "key": "tales-of-the-void",
+    "description": "<p>Novamarines are extensively travelled and the collective knowledge and experiences of the Chapter covers a huge portion of the galaxy. This knowledge is often passed down to new recruits though tales and advice from more veteran members of the Chapter which the Battle-Brother can then call upon as needed. The Battle-Brother can use this knowledge to make a Lore: Common, Scholastic, or Forbidden Skill Test as if he has a specific Skill and associated speciality. If he possesses the Skill and speciality he wants to test against, he gains a +10 bonus to his test instead. A Battle-Brother may use this ability a number of times equal to his Rank each game session.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>6</td><td>Battle-Brother's knowledge becomes even more extensive and he gains an additional degree of success if he passes any Lore: Common, Scholastic, or Forbidden Skill Test</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Novamarines",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/novamarines.webp",
+    "effect": "Make Lore (Common/Scholastic/Forbidden) test as if trained, or +10 if already trained — Rank uses per session",
+    "improvements": [
+      {
+        "rank": 6,
+        "effect": "Gain an additional degree of success if you pass any Lore: Common, Scholastic, or Forbidden Skill Test"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000160",
+  "name": "Mechadendrite Use (Weapon)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "Mechanicus or Techmarine Implants",
+    "benefit": "Use Weapon mechadendrites",
+    "description": "<p>Though there are many different types of Mechadendrite, this Talent divides them into two broad categories:</p><p><b>Weapon:</b> Mechadendrites of this type end in either ranged or close combat weapons, and have the supplemental support and strength necessary for combat. Servo-Arms and the Servo-Harness may also count as this type.</p>",
+    "compendiumId": "tal00000000160",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

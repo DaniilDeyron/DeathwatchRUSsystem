@@ -1,0 +1,25 @@
+{
+  "_id": "upgrade000000002",
+  "name": "Motion Predictor",
+  "type": "weapon-upgrade",
+  "img": "systems/deathwatch/icons/generic/weapon-upgrade.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "157",
+    "key": "motion-predictor",
+    "singleShotOnly": false,
+    "description": "<p>A complex target-tracking cogitator in this device activates once the user has sighted the desired target. The Predictor then tracks the target, and when the trigger is pulled chases the target with all the rounds in a clip in one long burst. A Motion Predictor adds a +10 bonus to Ballistic Skill Tests but only functions when the weapon is fired on semi-automatic or fully automatic mode.</p><p><b>Upgrades:</b> Any non-Primitive ranged weapon capable of semi-auto or full auto fire. The target acquisition component of a Motion Predictor must be installed as a sight, and a gun may only have one sight.</p>",
+    "modifiers": [
+      {
+        "_id": "db52508da870e73e",
+        "name": "Motion Predictor",
+        "modifier": "10",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true,
+        "requiresAutoFire": true
+      }
+    ]
+  }
+}

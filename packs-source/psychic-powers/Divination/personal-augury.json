@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000089",
+  "name": "Personal Augury",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "227",
+    "key": "personal-augury",
+    "range": "1 metre",
+    "sustained": "No",
+    "action": "Special",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Divination",
+    "description": "<p><strong>Alternate Names:</strong> Tarot Reading, Casting the Runes</p><p><strong>Prerequisites:</strong> Precognition</p><p><strong>Focus Power:</strong> Challenging (+0) Psyniscience Test</p><p><strong>Subtype:</strong> Concentration</p><p>The psyker's gaze is cast upon the infinite tides of the warp, to seek out the future of a single, specific individual. While supposedly something of a staple of soothsayers and other petty seers, it takes real skill to gain more than the vaguest impressions. The Emperor's Tarot is a common method within the Imperium, while Eldar Farseers typically employ tiny, psychically conductive runes to divine the future, but untold billions of different methods exist within the myriad civilisations across the galaxy.</p><p>To begin with, the power's target must specify a circumstance that he wishes to have divined. This may be as detailed as \"What forces defend the Mechanicus Basilica on Belacane?\" or as vague as \"How can I attain glory and power in the name of the Dark Gods?\" The more precise the question, the more specific the reading may be. Once the question is established, the psyker and the target spend the next thirty minutes using assorted psychic foci—drawing Tarot cards, sifting through the entrails of exotic beasts, casting runes, gazing deep into fire or toxin-saturated water, or any of countless other methods. At the end of this time, the psyker makes his Focus Power Test to discern the weave of the target's future. Each Degree of Success reveals more information, as explained on Table 6–5: Personal Augury Results.</p><table><caption>Table 6–5: Personal Augury Results</caption><thead><tr><th>Degrees of Success</th><th>Result</th></tr></thead><tbody><tr><td>1</td><td><strong>Doom:</strong> The psyker receives a symbolic warning of the greatest peril or obstacle faced by the target in question. This is a vague hint about what is to come.</td></tr><tr><td>2</td><td><strong>Malign Influences:</strong> The psyker gains intuition of the target's doom, and a further two negative influences that the target will face.</td></tr><tr><td>3</td><td><strong>Benign Factors:</strong> The psyker gains an additional impression of the greatest advantage or weapon the target has in their possession.</td></tr><tr><td>4+</td><td><strong>Fate:</strong> The psyker is aware of all the previous effects, and may also offer a single sentence of cryptic advice to the target.</td></tr></tbody></table>"
+  }
+}

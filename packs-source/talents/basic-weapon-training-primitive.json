@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000022",
+  "name": "Basic Weapon Training (Primitive)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "113",
+    "prerequisite": "",
+    "benefit": "Use Primitive weapons without penalty.",
+    "description": "<p>The character has received Basic Weapon Training in Primitive weapons, and can use them without penalty. <b>Weapon Skill or Ballistic Skill Tests used with a weapon that a character does not have training for suffer a –20 penalty.</b></p>",
+    "compendiumId": "tal00000000022",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

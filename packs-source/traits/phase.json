@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000028",
+  "name": "Phase",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "134",
+    "description": "<p>A creature with this trait can transform its body into an insubstantial state, passing ghost-like through solid objects or barriers of any sort. This trait functions exactly like the Incorporeal trait, except the creature may become solid or insubstantial by spending a Half Action.</p><p>Phase carries additional limitations. A creature in a phased state cannot cross psychically charged barriers, holy wards, or energy fields designed to flux space or manipulate the warp such as a Gellar Field or a Void Shield.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000094",
+  "name": "Good Reputation (Adeptus Astartes)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "FS 50, Peer (Adeptus Astartes)",
+    "benefit": "+10 Fellowship with specific group",
+    "description": "<p>The character is well respected within a social group or organisation. <b>The character gains an additional +10 bonus to Fellowship Tests when dealing with this group.</b> This Talent is cumulative with Peer, for a total of a +20 bonus. This bonus also applies to Influence Tests when dealing with this particular group. The GM and player may agree to award this Talent when appropriate to the adventure or campaign.</p>",
+    "cost": 500,
+    "compendiumId": "tal00000000094",
+    "modifiers": [],
+    "rankRequired": 8
+  }
+}

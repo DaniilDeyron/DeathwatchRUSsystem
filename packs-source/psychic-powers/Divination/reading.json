@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000015",
+  "name": "Reading",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/divination.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "193",
+    "key": "reading",
+    "range": "5 metres x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Divination",
+    "description": "<p>Diviners can read a person's aura, the unconscious projection of his being in to the Warp. This is a very pale shadow, unnoticed by most beings, but a diviner can study this aura to learn about the person. When the psyker activates divination, he can attempt to read the aura of any person he can see. The level of information he gains depends on the PR at which he manifests the power as detailed on Table 6–11: Reading.</p><p>A psyker can only maintain this power on one target. If he wishes to divine the well-being of a different person, he must activate the power again.</p><table><caption>Table 6–11: Reading</caption><thead><tr><th style=\\\"width:75px\\\">PR</th><th>Results</th></tr></thead><tbody><tr><td>1–3</td><td>The psyker gains superficial impressions about the target person. This includes the three strongest emotions that the subject is currently experiencing, his race, whether or not he has any psychic powers, and a rough idea of his state of mental and physical well being. Lastly, the psyker determines whether the target is an Untouchable.</td></tr><tr><td>4–5</td><td>As above, plus the psyker gets a deeper insight into all of the target's feelings, and gains +10 to all Fellowship Tests he makes against the target while Reading is active. The psyker also gets a better idea about the target's physical state, including his current Wounds and Fatigue levels. Finally, if the target has psychic abilities, the psyker can sense his power and find out his Psy Rating.</td></tr><tr><td>6–7</td><td>As all of the above, plus the psyker determines how many Insanity points the target has, as well as which addictions or madness he might be suffering from. If the target has psychic abilities, the psyker determines which discipline(s) he possesses.</td></tr><tr><td>8+</td><td>As all of the above, plus the psyker determines how many Corruption points the target has. Also, the psyker can determine if the aura is genuine, or has been produced by some other means.</td></tr></tbody></table>"
+  }
+}

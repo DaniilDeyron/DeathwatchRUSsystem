@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000081",
+  "name": "Choir of Poxes",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/nurgle.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "215",
+    "key": "choir-of-poxes",
+    "range": "30 metres",
+    "sustained": "No",
+    "action": "Full Action",
+    "opposed": "Yes",
+    "cost": 100,
+    "class": "Nurgle",
+    "description": "<p><strong>Prerequisites:</strong> Aligned Nurgle</p><p><strong>Focus Power:</strong> Difficult Opposed (-10) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p><strong>Alternate Names:</strong> Litany of Pestilence, Delirious Chant</p><p>As enacted by Nurgle's daemonic legions, the Sorcerer's throat rattles with the names of every disease he has ever suffered from, and every disease that Nurgle has ever gifted mortals with. Those caught within earshot of this pestilential incantation find themselves wracked with spasms of pain and delirium, as the Sorcerer speaks the true names of different diseases, invoking plagues both ancient and yet to occur.</p><p>Creatures caught within range of this power may oppose the Focus Power Test with a Toughness Test, suffering an additional -10 penalty if they have the Heightened Senses (Hearing) Talent. Any creature that fails to resist this power takes 1d10 + Psy Rating Damage and is stunned until the start of its next turn.</p>",
+    "damageFormula": "1d10+PR",
+    "penetrationFormula": "0",
+    "damageType": "Energy",
+    "attachedQualities": []
+  }
+}

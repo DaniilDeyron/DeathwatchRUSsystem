@@ -1,0 +1,28 @@
+{
+  "_id": "ct-sw-001",
+  "name": "Wolf Pelt",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 1,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Space Wolves Chapter Trapping",
+    "description": "<p>Fenrisian wolves are renowned across the galaxy for their viciousness. They are respected creatures, and greatly entwined with Space Wolf beliefs. Unarmed hunting rituals exist on Fenris to prove a warrior's prowess. Should a Battle-Brother succeed on such a hunt, he typically displays the pelt of the animal thereafter.</p><p><strong>Effect:</strong> Add +2 to Intimidate Tests.</p>",
+    "modifiers": [
+      {
+        "_id": "ct-sw-001-mod-01",
+        "name": "Wolf Pelt",
+        "modifier": "2",
+        "type": "chapter",
+        "effectType": "skill",
+        "valueAffected": "intimidate",
+        "enabled": true
+      }
+    ],
+    "key": "space-wolves-wolf-pelt"
+  }
+}

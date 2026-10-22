@@ -1,0 +1,14 @@
+{
+  "_id": "impact-leg0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Leg",
+    "description": "With a nasty crunch, the leg is broken and the target is knocked down mewling in pain. The target falls to the ground with a broken leg and, until it is repaired, he counts as only having one leg. The target takes 2 levels of Fatigue.",
+    "effects": []
+  }
+}

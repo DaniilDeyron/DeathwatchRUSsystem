@@ -1,0 +1,26 @@
+{
+  "_id": "tal00000000171",
+  "name": "Paranoia",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "123",
+    "prerequisite": "",
+    "benefit": "+2 Initiative, GM may secretly test Perception to notice hidden threats",
+    "description": "<p>The character knows that danger lurks behind every corner and knows the galaxy will hit him as soon as he lets his guard down. <b>The character gains a +2 bonus on Initiative rolls, and the GM may secretly test using the character's Perception to notice hidden threats.</b> The price of this eternal vigilance is a twitchy disposition and the inability to relax.</p>",
+    "cost": 500,
+    "compendiumId": "tal00000000171",
+    "modifiers": [
+      {
+        "_id": "paranoia-init-mod",
+        "name": "Paranoia",
+        "modifier": 2,
+        "type": "talent",
+        "effectType": "initiative",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 6
+  }
+}

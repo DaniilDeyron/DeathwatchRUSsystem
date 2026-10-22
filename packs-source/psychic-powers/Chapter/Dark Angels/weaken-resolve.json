@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000035",
+  "name": "Weaken Resolve",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/dark-angels.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "197",
+    "key": "weaken-resolve",
+    "range": "5 metres x PR",
+    "sustained": "Yes",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>The Dark Angels Librarian forces his way into the minds of his foes, robbing them of their will to fight and eroding whatever resistance they possess. This power can affect a number of foes equal to the Librarian's PR. Those affected have their Willpower characteristic temporarily reduced by –5 x PR (to a minimum of 1). This has corresponding effects on their Willpower Bonus. If this power is sustained, targets are allowed a new Opposed Willpower Test (using their reduced Willpower) to end its effects on them at the start of each of their turns.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp"
+  }
+}

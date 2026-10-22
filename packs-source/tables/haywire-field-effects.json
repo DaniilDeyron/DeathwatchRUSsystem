@@ -1,0 +1,121 @@
+{
+  "_id": "rolltable00000001",
+  "name": "Haywire Field Effects",
+  "description": "",
+  "displayRoll": true,
+  "formula": "1d100",
+  "img": "icons/svg/lightning.svg",
+  "replacement": true,
+  "results": [
+    {
+      "_id": "result0000000001",
+      "name": "",
+      "type": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "coreVersion": "13.351",
+        "createdTime": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "lastModifiedBy": null,
+        "modifiedTime": null,
+        "systemId": null,
+        "systemVersion": null
+      },
+      "description": "<b>Insignificant:</b> There is no noticeable effect on nearby technology.",
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/item-bag.svg",
+      "range": [1, 20],
+      "weight": 1
+    },
+    {
+      "_id": "result0000000002",
+      "name": "",
+      "type": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "coreVersion": "13.351",
+        "createdTime": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "lastModifiedBy": null,
+        "modifiedTime": null,
+        "systemId": null,
+        "systemVersion": null
+      },
+      "description": "<b>Minor Disruption:</b> All actions utilising technology, including firing Ranged weapons without the Primitive Quality, Tech-Use Tests, and any physical actions attempted while wearing power armour or employing cybernetics, suffer a –10 penalty. The Base Movement of anyone in power armour is reduced by 1.",
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/item-bag.svg",
+      "range": [21, 40],
+      "weight": 1
+    },
+    {
+      "_id": "result0000000003",
+      "name": "",
+      "type": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "coreVersion": "13.351",
+        "createdTime": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "lastModifiedBy": null,
+        "modifiedTime": null,
+        "systemId": null,
+        "systemVersion": null
+      },
+      "description": "<b>Major Disruption:</b> All actions utilising technology, including firing Ranged weapons without the Primitive Quality, Tech-Use Tests, and any physical actions attempted while wearing power armour or employing cybernetics, suffer a –20 penalty. The Base Movement of anyone in power armour is reduced by 3. Melee weapons with technological components function as a Primitive weapon of the analogous type.",
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/item-bag.svg",
+      "range": [41, 60],
+      "weight": 1
+    },
+    {
+      "_id": "result0000000004",
+      "name": "",
+      "type": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "coreVersion": "13.351",
+        "createdTime": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "lastModifiedBy": null,
+        "modifiedTime": null,
+        "systemId": null,
+        "systemVersion": null
+      },
+      "description": "<b>Dead Zone:</b> Technology within the affected area completely ceases to function. Power armour becomes Unpowered as per Table 5–13: Power Unit Critical Effects. Characters with cybernetic replacements to any internal organ(s) suffer one level of Fatigue each round they remain in the Dead Zone. Melee weapons with technological components function as a Primitive weapon of the analogous type.",
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/item-bag.svg",
+      "range": [61, 80],
+      "weight": 1
+    },
+    {
+      "_id": "result0000000005",
+      "name": "",
+      "type": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "coreVersion": "13.351",
+        "createdTime": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "lastModifiedBy": null,
+        "modifiedTime": null,
+        "systemId": null,
+        "systemVersion": null
+      },
+      "description": "<b>Prolonged Dead Zone:</b> As Dead Zone.",
+      "drawn": false,
+      "flags": {},
+      "img": "icons/svg/item-bag.svg",
+      "range": [81, 100],
+      "weight": 1
+    }
+  ]
+}

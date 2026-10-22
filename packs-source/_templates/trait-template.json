@@ -1,0 +1,11 @@
+{
+  "name": "Trait Name",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/traits/traits.webp",
+  "system": {
+    "description": "<p>Full description of the trait.</p>",
+    "book": "Core Rulebook",
+    "page": "000",
+    "modifiers": []
+  }
+}

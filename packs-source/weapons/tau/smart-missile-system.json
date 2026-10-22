@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000019",
+  "name": "Smart Missile System",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-missile.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "1d10+12",
+    "dmgType": "Explosive",
+    "penetration": "4",
+    "range": "90",
+    "rof": "S/-/4",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "arm-weapon-mounting" }],
+    "description": "<p>The Smart Missile System is an advanced guided missile launcher designed for Tau battlesuits. The missiles use sophisticated targeting AI to track and intercept enemy targets, even those behind cover. The system can engage multiple targets simultaneously with devastating volleys.</p>",
+    "modifiers": [],
+    "key": "smart-missile-system"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "energy-body0002",
+  "name": "Level 02",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Body",
+    "description": "The blast punches the air from the target's body, inflicting 1 level of Fatigue upon him.",
+    "effects": []
+  }
+}

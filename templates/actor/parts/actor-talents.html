@@ -1,0 +1,31 @@
+<div class="talents-section">
+  <h3 class="section-header">Talents</h3>
+  <ol class="items-list talents-list">
+    <li class="item flexrow items-header">
+      <div class="item-name">Name</div>
+      <div class="item-benefit">Benefit</div>
+      <div class="item-prerequisite">Prerequisite</div>
+      <div class="item-controls">
+        <a class="item-control item-create" data-action="createItem" title="Create Talent" data-type="talent"><i class="fas fa-plus"></i></a>
+      </div>
+    </li>
+    {{#each talents as |item id|}}
+    <li class="item flexrow{{#if (and (eq ../actor.type "character") (eq item.system.effectiveCost -1))}} talent-unavailable{{/if}}" data-item-id="{{item._id}}" draggable="true">
+      <div class="item-name">
+        <div class="item-image" style="background-image: url({{item.img}})"></div>
+        <h4 class="talent-show" data-action="showTalent" data-item-id="{{item._id}}" style="cursor: pointer;">{{item.name}}</h4>
+        {{#if (eq ../actor.type "character")}}
+        {{#if (eq item.system.effectiveCost -1)}}
+        <span class="rank-gate" title="Available at Rank {{item.system.effectiveRankRequired}}">
+          <i class="fas fa-lock"></i> Rank {{item.system.effectiveRankRequired}}
+        </span>
+        {{/if}}
+        {{/if}}
+      </div>
+      <div class="item-benefit">{{item.system.benefit}}</div>
+      <div class="item-prerequisite">{{item.system.prerequisite}}</div>
+      {{> "systems/deathwatch/templates/actor/parts/item-controls.html"}}
+    </li>
+    {{/each}}
+  </ol>
+</div>

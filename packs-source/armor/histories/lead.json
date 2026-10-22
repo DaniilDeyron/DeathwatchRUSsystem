@@ -1,0 +1,12 @@
+{
+  "_id": "armorhist0000008",
+  "name": "Lead from the front",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/lead.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>All men need leaders, and all leaders need to be seen and heard to be effective. It is common for the leaders of the Adeptus Astartes to lead from the front, and such warriors have had the honour of bearing this armour into battle over the centuries. Its vox amplifiers ring like booming thunder, and its brilliant heraldry seems to blaze on the battlefield. Truly a sight to behold, there have been statues erected on a hundred worlds of the brave souls who wore this relic into battle and saw the day through to victory. Add +1 Cohesion to your Squad's total (this bonus may stack with other armour with the same history).</p>",
+    "modifiers": []
+  }
+}

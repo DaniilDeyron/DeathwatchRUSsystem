@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000060",
+  "name": "Catalyst",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "370",
+    "key": "catalyst",
+    "range": "75 metres",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>The Tyranid psyker may send out a signal from the Hive Mind that infuses lesser Tyranid creatures with an unnatural vitality. This power may be used on a single Tyranid Horde within range: until the beginning of the psyker's next turn, the Horde gains 10+1d10 Magnitude.</p>"
+  }
+}

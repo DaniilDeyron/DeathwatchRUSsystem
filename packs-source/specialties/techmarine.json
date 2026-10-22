@@ -1,0 +1,167 @@
+{
+  "name": "Techmarine",
+  "type": "specialty",
+  "img": "systems/deathwatch/icons/specialty/techmarine.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "52",
+    "description": "<p>Techmarines are trained by the Adeptus Mechanicus to maintain and repair the Chapter's wargear and vehicles. They serve as the bridge between the Chapter and the Machine Cult.</p>",
+    "characteristicCosts": {
+      "ws": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "bs": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "str": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "tg": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "ag": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "int": {
+        "simple": 200,
+        "intermediate": 500,
+        "trained": 1000,
+        "expert": 1500
+      },
+      "per": {
+        "simple": 500,
+        "intermediate": 1000,
+        "trained": 1500,
+        "expert": 2000
+      },
+      "wil": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      },
+      "fs": {
+        "simple": 750,
+        "intermediate": 1500,
+        "trained": 2000,
+        "expert": 5000
+      }
+    },
+    "talentCosts": { "tal00000000057": 0, "tal00000000158": 0 },
+    "rankCosts": {
+      "1": {
+        "skills": {
+          "lore_forbidden_adeptus_mechanicus": { "costTrain": 400 },
+          "security": { "costTrain": 400 },
+          "tech_use": { "costTrain": 0 },
+          "speak_language_techna_lingua": { "costTrain": 0 }
+        },
+        "talents": {
+          "tal00000000016": 500,
+          "tal00000000084": 500,
+          "tal00000000256": 500,
+          "tal00000000257": 800
+        }
+      },
+      "2": {
+        "skills": {
+          "lore_forbidden_adeptus_mechanicus": { "costMaster": 400 },
+          "lore_forbidden_archeotech": { "costTrain": 400 },
+          "speak_language_techna_lingua": { "costMaster": 200 }
+        },
+        "talents": {
+          "tal00000000085": 500,
+          "tal00000000147": 500,
+          "tal00000000149": 500,
+          "tal00000000169": 500,
+          "tal00000000214": 1000
+        }
+      },
+      "3": {
+        "skills": {
+          "lore_forbidden_adeptus_mechanicus": { "costExpert": 400 },
+          "lore_forbidden_archeotech": { "costMaster": 400 },
+          "security": { "costMaster": 400 },
+          "speak_language_techna_lingua": { "costExpert": 200 },
+          "tech_use": { "costMaster": 400 }
+        },
+        "talents": {
+          "tal00000000136": 1000,
+          "tal00000000257": 800,
+          "tal00000000272": 600
+        }
+      },
+      "4": {
+        "skills": { "lore_forbidden_archeotech": { "costExpert": 400 } },
+        "talents": {
+          "tal00000000028": 500,
+          "tal00000000051": 400,
+          "tal00000000150": 800,
+          "tal00000000215": 1000,
+          "tal00000000238": 1000,
+          "tal00000000242": 1200
+        }
+      },
+      "5": {
+        "skills": {
+          "security": { "costExpert": 400 },
+          "tech_use": { "costExpert": 400 }
+        },
+        "talents": {
+          "tal00000000112": 800,
+          "tal00000000156": 1000,
+          "tal00000000203": 1000,
+          "tal00000000257": 1000
+        }
+      },
+      "6": {
+        "skills": {},
+        "talents": {
+          "tal00000000012": 500,
+          "tal00000000086": 1200,
+          "tal00000000148": 1000,
+          "tal00000000151": 1200,
+          "tal00000000244": 1000
+        }
+      },
+      "7": {
+        "skills": {},
+        "talents": {
+          "tal00000000040": 500,
+          "tal00000000056": 1000,
+          "tal00000000078": 1500,
+          "tal00000000244": 1000,
+          "tal00000000257": 1000
+        }
+      },
+      "8": {
+        "skills": {},
+        "talents": {
+          "tal00000000079": 1000,
+          "tal00000000216": 1000,
+          "tal00000000244": 1000,
+          "tal00000000257": 1000
+        }
+      }
+    },
+    "skillCosts": {
+      "speak_language_techna_lingua": { "costTrain": 0 },
+      "tech_use": { "costTrain": 0 }
+    }
+  }
+}

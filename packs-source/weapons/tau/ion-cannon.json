@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000009",
+  "name": "Ion Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-ion-cannon.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "3d10+10",
+    "dmgType": "Energy",
+    "penetration": "9",
+    "range": "200",
+    "rof": "S/-/3",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "mounted" }],
+    "description": "<p>The Ion Cannon is a sophisticated energy weapon system that fires bursts of superheated ionized particles. Mounted on Tau battlesuits and vehicles, it provides devastating firepower against both infantry and armored targets.</p>",
+    "modifiers": [],
+    "key": "ion-cannon"
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "_id": "enmytyranid00014",
+  "name": "Ravener",
+  "type": "enemy",
+  "img": "systems/deathwatch/icons/enemies/tyranid/ravener.webp",
+  "system": {
+    "characteristics": {
+      "ws": { "base": 60 },
+      "bs": { "base": 0 },
+      "str": { "base": 45 },
+      "tg": { "base": 40 },
+      "ag": { "base": 50 },
+      "int": { "base": 17 },
+      "per": { "base": 50 },
+      "wil": { "base": 35 },
+      "fs": { "base": 0 }
+    },
+    "wounds": { "base": 40, "max": 40, "value": 0 },
+    "fatigue": { "value": 0, "max": 0 },
+    "skills": {
+      "awareness": { "trained": true, "mastered": true, "expert": true },
+      "climb": { "trained": true, "mastered": true, "expert": true },
+      "concealment": { "trained": true },
+      "silent_move": { "trained": true },
+      "swim": { "trained": true, "mastered": true },
+      "tracking": { "trained": true, "mastered": true, "expert": true }
+    },
+    "psyRating": { "value": 0, "base": 0 },
+    "modifiers": [],
+    "conditions": {},
+    "description": "<p>Raveners are horrific predators that burrow through the earth with frightening speed and precision. They are twisted, serpentine creatures whose armoured bodies are several times the size of a grown man's, and yet they move with a lightning-like speed that can see their victims slashed apart into bloody chunks, having never seen their assailant. Vulnerable only to massed firepower and heavy weapons, the Ravener's prey stands little chance if caught alone or off guard, as they often exploit their ability to burrow through almost any substance to surprise their victims, sensing their way by vibrations as faint as a beating heart, through many metres of intervening material.</p><p><strong>Extraordinary Senses:</strong> Raveners can see in many spectrums of light and also sense changes in the air around them or slight tremors in the ground. Raveners may therefore make Awareness Tests to detect enemies even if they would not normally be able to do so due to intervening terrain or other conditions. In addition, Raveners' senses are so good that they never suffer more than -30 to Perception Tests regardless of modifiers.</p><p><strong>Surprise Strike:</strong> Raveners can appear from almost anywhere without warning, usually from under the feet of their prey, bursting up and taking entire squads by surprise. If a Ravener attacks by emerging from the ground or wall, it automatically gains Surprise (see page 235 in the Deathwatch Rulebook) over its enemies.</p><p><strong>Traits:</strong> Dark Sight, Fear 3 (Horrifying), Burrower, Instinctive Behaviour (Feed), Natural Armour (6), Multiple Arms, Unnatural Strength (x2), Unnatural Toughness (x2), Improved Natural Weapons (Scything Talons), Size (Enormous), Tyranid, Unnatural Senses (30m)</p><p><strong>Source:</strong> Mark of the Xenos, p. 41</p>",
+    "classification": "xenos"
+  },
+  "items": [
+    {
+      "_id": "eityranid1400001",
+      "_sourceId": "tal00000000002",
+      "name": "Fearless",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "118",
+        "prerequisite": "",
+        "benefit": "Immune to Fear and Pinning",
+        "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+        "compendiumId": "tal00000000002",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400002",
+      "_sourceId": "tal00000000127",
+      "name": "Heightened Senses (Sight)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "PER 30",
+        "benefit": "+10 to Awareness Tests involving sight",
+        "description": "<p>Either genetics or augmetics have made one of the character’s senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sight) would apply to an Awareness Test to see a distant flock of shale crows, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his eyes</b>.</p>",
+        "compendiumId": "tal00000000127",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400023",
+      "_sourceId": "tal00000000129",
+      "name": "Heightened Senses (Sound)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "PER 30",
+        "benefit": "+10 to Awareness Tests involving sound",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sound) would apply to an Awareness Test to hear distant footsteps, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his ears</b>.</p>",
+        "compendiumId": "tal00000000129",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400024",
+      "_sourceId": "tal00000000128",
+      "name": "Heightened Senses (Smell)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "PER 30",
+        "benefit": "+10 to Awareness Tests involving smell",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Smell) would apply to an Awareness Test to detect a faint odor, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his nose</b>.</p>",
+        "compendiumId": "tal00000000128",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400025",
+      "_sourceId": "tal00000000130",
+      "name": "Heightened Senses (Taste)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "PER 30",
+        "benefit": "+10 to Awareness Tests involving taste",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Taste) would apply to an Awareness Test to detect poison in food, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his tongue</b>.</p>",
+        "compendiumId": "tal00000000130",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400026",
+      "_sourceId": "tal00000000131",
+      "name": "Heightened Senses (Touch)",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "Deathwatch Core Rulebook",
+        "page": "120",
+        "prerequisite": "PER 30",
+        "benefit": "+10 to Awareness Tests involving touch",
+        "description": "<p>Either genetics or augmetics have made one of the character's senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Touch) would apply to an Awareness Test to feel vibrations or textures, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his hands</b>.</p>",
+        "compendiumId": "tal00000000131",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400003",
+      "_sourceId": "tal00000000245",
+      "name": "Sprint",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "126",
+        "prerequisite": "",
+        "benefit": "Move triple speed when running",
+        "description": "<p>The character can move at great speeds. <b>When taking a Full Move Action, the character can move an extra number of metres equal to his Agility Bonus. When taking the Run Action, the character may double his movement for one Round. The character gains one level of Fatigue if he uses this Talent two Turns in a row.</b></p>",
+        "compendiumId": "tal00000000245",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400004",
+      "_sourceId": "tal00000000252",
+      "name": "Swift Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "127",
+        "prerequisite": "Weapon Skill 35",
+        "benefit": "Make two melee attacks as Full Action",
+        "description": "<p>The character's speed and martial ability allows him to land flurries of blows. <b>As a Full Action, the character may make two melee attacks.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Swift Attack with only one of the weapons, and a single attack with the other. If the character had the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, the character gets the advantage of Swift Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000252",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400005",
+      "_sourceId": "tal00000000145",
+      "name": "Lightning Attack",
+      "type": "talent",
+      "img": "systems/deathwatch/icons/talents/generic.webp",
+      "system": {
+        "book": "DeathWatch Core Rulebook",
+        "page": "121",
+        "prerequisite": "Swift Attack",
+        "benefit": "Make three melee attacks as Full Action",
+        "description": "<p>The character's speed with weapons is legendary, allowing him to launch flurries of attacks in melee. <b>As a Full Action, the character may make three melee attacks on his turn. The effects of this Talent replace those of Swift Attack rather than adding to them. The use of Lightning Attack may not be combined with Dual Strike.</b> If the character has the Two-Weapon Wielder Talent and is wielding two melee weapons, the character gains the advantage of Lightning Attack with only one of the weapons, and a single attack with the other. If the character has the Two-Weapon Wielder Talent and is wielding a melee weapon in one hand and a gun in the other, they gain the advantage of Lightning Attack with the melee weapon and a single attack with the gun.</p>",
+        "compendiumId": "tal00000000145",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400006",
+      "_sourceId": "trt000000000011",
+      "name": "Dark Sight",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait sees normally even in areas of total darkness, and never takes a penalty for fighting in areas of dim or no lighting.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400007",
+      "_sourceId": "trt000000000013",
+      "name": "Fear 3 (Horrifying)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "131",
+        "description": "<p>A creature with this trait has an unnerving appearance. The fear of it always has an associated rating (1–4) to reflect just how awful the creature is to behold. See page 277 for the effects of Fear on Space Marines.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400008",
+      "_sourceId": "trt000000000008",
+      "name": "Burrower",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "130",
+        "description": "<p>A creature with this trait can move through solid objects by burrowing through them. This trait always includes a number to indicate speed. Such creatures can burrow through soil, rock, sand, and so on, though some (expressed in the creature's entry) can burrow through metal. When a creature burrows, it leaves behind a tunnel. Creatures of one size smaller than the creature that created the tunnel can enter these areas without impediment. There is a 50% chance each round that the tunnel collapses behind the creature.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400009",
+      "_sourceId": "trt000000000021",
+      "name": "Instinctive Behaviour (Feed)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>A Tyranid creature with this trait will be reduced to acting according to their instincts if they are separated from the controlling presence of the Hive Mind. In effect, this means that any encounter in which creatures with this trait are not accompanied by a Tyranid creature with the Synapse Creature trait (see page 135 in this chapter), they will behave in a particular way. The creature's instinctive behaviour is noted in parentheses and has the following effects:</p><p><strong>Feed:</strong> The creature's instinct is to feed on flesh, blood, and bone and its hunger can never be sated. The creature will try to find and attack any living, biological, non-Tyranid creature and eat them. In this state, the creature gains the Fearless and Frenzy talents. The same applies to a Horde with this trait not under the influence of a synapse creature.</p><p><strong>Lurk:</strong> The creature's instincts are to find shelter from attack, to hide and survive. It will try to flee and find shelter in whatever way the situation allows. In a starship, for example, it may scuttle into the ducting system. When confronted, the creature's aim is to try to escape and will only attack if left no avenue for escape or in order to survive. If a Horde with this trait is not under the influence of a synapse creature, it will automatically break (see Breaking a Horde on page 360 of this chapter).</p><p><strong>Stalk:</strong> The creature's instinct is to remain unseen, to find prey, slay it, feed, and then resume its hunt for others. In this state, the creature gains the Stealth (Ag) +10 skill. It will not attack enemies unless it can take them by surprise or outnumbers them. Having made a kill, the creature briefly feeds before fleeing. A horde with this trait automatically breaks (see Breaking a Horde on page 360 of this chapter), with individual creatures scattering to find shadows from which to begin their hunt.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400010",
+      "_sourceId": "trt000000000025",
+      "name": "Natural Armour (6)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has a naturally tough hide or an exoskeleton, affording it some protection against attacks. This trait always includes a numeric value to indicate how many Armour Points the creature gains to all locations.</p>",
+        "modifiers": [
+          {
+            "_id": "natural-armour-mod",
+            "name": "Natural Armour",
+            "modifier": "6",
+            "type": "trait",
+            "effectType": "armor",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid1400011",
+      "_sourceId": "trt000000000024",
+      "name": "Multiple Arms",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "133",
+        "description": "<p>This creature has more than one pair of arms. It increases its Toughness Characteristic by +10 and gains a +10 bonus on Strength Tests involving movement such as Climb and Swim. Finally, the creature may use the Multiple Attack action to gain two attacks on its turn. If the creature also has the Swift or Lightning Attack Talent, this trait increases the number of attacks they make with a multiple attack action by +1.</p>",
+        "modifiers": [
+          {
+            "_id": "29dcf414f9344eb5",
+            "name": "Multiple Arms",
+            "modifier": 10,
+            "type": "trait",
+            "effectType": "characteristic",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid1400012",
+      "_sourceId": "trt000000000051",
+      "name": "Unnatural Strength",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Strength Characteristic is unnatural. Each time this trait is gained, double its Strength Bonus. For example, a creature with Strength 41 normally has a 4 Strength Bonus. With this trait, its Strength Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Strength, the Bonus multiplier increases by 1. For example, one selection multiplies the Strength Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics (i.e., if a Space Marine with Unnatural Strength (x2) uses a Powerfist, which doubles the user's Strength Bonus), simply improves the existing multiplier by 1. For a Space Marine using a Powerfist, he would triple his Strength Bonus rather than doubling it and then doubling it again.</p><p>When taking a Skill Test based upon Strength with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "e2a1c8bc5e470bd0",
+            "name": "Unnatural Strength",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "str",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid1400013",
+      "_sourceId": "trt000000000052",
+      "name": "Unnatural Toughness",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature's Toughness Characteristic is unnatural. Each time this trait is gained, double its Toughness Bonus. For example, a creature with Toughness 41 normally has a 4 Toughness Bonus. With this trait, its Toughness Bonus increases to 8.</p><p>The trait may be gained multiple times. Each time you apply this trait to Toughness, the Bonus multiplier increases by 1. For example, one selection multiplies the Toughness Bonus by ×2, two selections by ×3, and three selections ×4. Note this trait does not modify the creature's movement.</p><p>During Opposed Characteristic Tests, on a success, the bonus multiplier is added to the degree of success. Any additional multipliers for Unnatural Characteristics simply improve the existing multiplier by 1.</p><p>When taking a Skill Test based upon Toughness with the Unnatural trait, the base Difficulty of the Test is staged downwards one level for degree of multiplier past normal (to a maximum of +30).</p><p>During Opposed Characteristic Tests, where success is achieved, the Unnatural multiplier is added to the degrees of success. In the case of a tie, the participant without the Unnatural Characteristic trait loses the Opposed Test.</p>",
+        "modifiers": [
+          {
+            "_id": "265336d1e56cc6ce",
+            "name": "Unnatural Toughness",
+            "modifier": "x2",
+            "type": "trait",
+            "effectType": "characteristic-bonus",
+            "valueAffected": "tg",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid1400014",
+      "_sourceId": "trt000000000019",
+      "name": "Improved Natural Weapons (Scything Talons)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "132",
+        "description": "<p>This creature's attacks are powerful enough to crush plasteel or punch through armour. The creature gains all the benefits of the Natural Weapons Trait, except that its attacks do not count as Primitive.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400015",
+      "_sourceId": "trt000000000033",
+      "name": "Size (Enormous)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "134",
+        "description": "<p>This creature is Enormous. Enemies gain +20 to hit it, and it suffers –20 to Concealment. Its base movement is Agility Bonus +2.</p>",
+        "modifiers": [
+          {
+            "_id": "f944ed87cd28be1d",
+            "name": "Size (Enormous)",
+            "modifier": 2,
+            "type": "trait",
+            "effectType": "movement",
+            "enabled": true
+          },
+          {
+            "_id": "f71f6a2270313730",
+            "name": "Size (Enormous)",
+            "modifier": -20,
+            "type": "trait",
+            "effectType": "skill",
+            "valueAffected": "concealment",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "_id": "eityranid1400016",
+      "_sourceId": "trt000000000043",
+      "name": "Tyranid",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature is a species of Tyranid; the all consuming alien race ruled by the will of the Hive Mind that links and controls all Tyranids. Tyranids are immune to all of the effects of the following: pinning, mind-affecting Psychic Powers, warp-based powers that affect the mind, cold, heat, diseases, and poisons, including the effects of weapons with the Toxic Quality.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400017",
+      "_sourceId": "trt000000000049",
+      "name": "Unnatural Senses (30m)",
+      "type": "trait",
+      "img": "systems/deathwatch/icons/generic/traits.webp",
+      "system": {
+        "book": "Core Rulebook",
+        "page": "136",
+        "description": "<p>The creature can perceive its surroundings using senses other than sight or hearing, using special organs, fine hairs, or some other disturbing trait to make itself aware of what's around it. This trait always includes a range, usually 15 metres.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400018",
+      "name": "Scything Talons",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-scything-talons.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10+2",
+        "dmgType": "Rending",
+        "penetration": "3",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>Razor-edged claws of fused chitin and serrated bone.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400019",
+      "name": "Rending Claws",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-rending-claws.webp",
+      "system": {
+        "class": "Melee",
+        "dmg": "1d10",
+        "dmgType": "Rending",
+        "penetration": "5",
+        "range": "",
+        "rof": "",
+        "clip": "",
+        "reload": "",
+        "equipped": true,
+        "attachedQualities": [],
+        "attachedUpgrades": [],
+        "description": "<p>Diamond hard growths of bone capable of crushing reinforced ceramite.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400020",
+      "name": "Devourer",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-devourer.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+9",
+        "dmgType": "Rending",
+        "penetration": "0",
+        "range": "30",
+        "rof": "-/-/6",
+        "clip": "—",
+        "reload": "—",
+        "equipped": false,
+        "attachedQualities": [
+          { "id": "proven" },
+          { "id": "storm" },
+          { "id": "tearing" },
+          { "id": "living-ammunition" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A conical lump of flesh that showers its target with a mass of worm-like parasites.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400021",
+      "name": "Deathspitter",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-deathspitter.webp",
+      "system": {
+        "class": "Basic",
+        "dmg": "1d10+12",
+        "dmgType": "Energy",
+        "penetration": "4",
+        "range": "40",
+        "rof": "S/3/-",
+        "clip": "—",
+        "reload": "—",
+        "equipped": false,
+        "attachedQualities": [
+          { "id": "proven" },
+          { "id": "tearing" },
+          { "id": "living-ammunition" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>A complex weapon symbiote that shoots maggot-like organisms at targets with a spasm of agonised muscle.</p>",
+        "modifiers": []
+      }
+    },
+    {
+      "_id": "eityranid1400022",
+      "name": "Spine Fists",
+      "type": "weapon",
+      "img": "systems/deathwatch/icons/weapons/tyranid-spinefist.webp",
+      "system": {
+        "class": "Pistol",
+        "dmg": "1d10",
+        "dmgType": "Rending",
+        "penetration": "4",
+        "range": "25",
+        "rof": "S/2/4",
+        "clip": "—",
+        "reload": "—",
+        "equipped": false,
+        "attachedQualities": [
+          { "id": "twin-linked" },
+          { "id": "living-ammunition" }
+        ],
+        "attachedUpgrades": [],
+        "description": "<p>Carried in pairs, these weapon beasts fire a sustained volley of razor sharp darts. RoF upgraded to S/2/4 due to Lightning Attack talent. Adds Strength Bonus to damage.</p>",
+        "modifiers": []
+      }
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ravener",
+    "displayName": 30,
+    "actorLink": false,
+    "disposition": -1,
+    "width": 2,
+    "height": 2,
+    "bar1": { "attribute": "wounds" }
+  }
+}

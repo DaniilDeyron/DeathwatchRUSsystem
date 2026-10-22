@@ -1,0 +1,26 @@
+{
+  "_id": "tal00000000276",
+  "name": "Psy Rating 4",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Psy Rating 3",
+    "benefit": "Psy Rating 4",
+    "description": "<p>The character increases their Psy Rating to 4. See Chapter VI: Psychic Powers for detailed rules on the game mechanics of this ability.</p>",
+    "cost": -1,
+    "compendiumId": "tal00000000276",
+    "modifiers": [
+      {
+        "_id": "b2b6904cbd3000ff",
+        "name": "Psy Rating 4",
+        "modifier": "1",
+        "type": "talent",
+        "effectType": "psy-rating",
+        "enabled": true
+      }
+    ],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000100",
+  "name": "Psychic Scream",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "224",
+    "key": "psychic-scream",
+    "range": "5 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 300,
+    "class": "Telepathy",
+    "description": "<p><strong>Prerequisites:</strong> Thought Sending</p><p><strong>Focus Power:</strong> Hard (–20) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker's mind unleashes a wave of psychic force that resonates in the target's mind, inflicting great pain that can injure or incapacitate an enemy. The Eldar tell of the wail of the banshee that calls souls from their body, a cry that is felt rather than heard, while many psykers both sanctioned and renegade know of telepathic attacks that can wrack a mind with agony and wound the soul.</p><p>This power is a Psychic Bolt which deals 1d10 Explosive Damage, +2 for every point of Psy Rating, with the Shocking and Warp Weapon Qualities. The target suffers a penalty to his Toughness Test to resist the effects of the Shocking quality equal to –5 x the psyker's Psy Rating. Additionally, if successfully used, this power will always hit the target's head—as the power affects the target's mind directly—rather than a random location.</p>",
+    "damageFormula": "1d10+(PR*2)",
+    "penetrationFormula": "0",
+    "damageType": "Explosive",
+    "attachedQualities": [{ "id": "shocking" }, { "id": "warp-weapon" }]
+  }
+}

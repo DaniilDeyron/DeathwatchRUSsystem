@@ -1,0 +1,103 @@
+{
+  "name": "Novamarines",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/novamarines.webp",
+  "system": {
+    "book": "Honnour The Chapter",
+    "page": "74",
+    "description": "<p>The Novamarines are a Second Founding successor of the Ultramarines, known for their strict adherence to the Codex Astartes and their methodical approach to warfare.</p><p>They are renowned for their discipline, tactical acumen, and unwavering loyalty to the Imperium, often serving alongside other Imperial forces with distinction.</p>",
+    "skillCosts": {
+      "lore_common_adeptus_arbites": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_adeptus_astartes": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_adeptus_mechanicus": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_administratum": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_deathwatch": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_ecclesiarchy": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_imperial_creed": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_imperial_guard": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_imperial_navy": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_imperium": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_jericho_reach": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_tech": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_common_war": {
+        "costTrain": 100,
+        "costMaster": 100,
+        "costExpert": 100
+      },
+      "lore_forbidden_xenos": {
+        "costTrain": 0,
+        "costMaster": 100,
+        "costExpert": 100
+      }
+    },
+    "talentCosts": { "tal00000000136": 600, "tal00000000254": 600 },
+    "modifiers": [],
+    "curseName": "Revile the Xenos",
+    "curseDescription": "<p>While all Space Marines have hatred of the enemies of mankind, especially those which lurk among the stars preying on the worlds of the Imperium, the Novamarines have fostered a deep repulsion for xenos beyond even that of most of their kind. This is fostered from a thousand battlefields across thousands of light years of space and a history which has seen the Chapter clash with the greatest and vilest of the galaxy's aliens time and again. At first, this hatred is indistinguishable from that of a normal member of the Adeptus Astartes, forming only the staunch disdain required to face them in combat and turn away their insidious advances against the domain of the God-Emperor. In time it grows, encompassing all forms of alien life, even those of little interest or threat to the Imperium, until eventually they cannot bear to see the xenos live, even at the cost of prudent tactics and the strained measures of battlefield diplomacy.</p>",
+    "curseLevel1Name": "Favoured Targets",
+    "curseLevel1Description": "<p>The Novamarine goes out of his way to target the xenos, ensuring he never misses a chance to strike a blow against the dark cloud of alien aggression closing in on the Imperium. Given a choice, he will always favour taking on alien enemies or making strikes against objectives which will do the most harm to the xenos, even if there is more glory in an alternative cause of action. If there is a choice, the Battle Brother must favour the xenos target, though if this would directly place his Kill-team in danger or threaten to cause his mission to fail he may make a <strong>Challenging (+0) Willpower Test</strong> to ignore the hated alien and take a different course.</p>",
+    "curseLevel1Effect": "custom",
+    "curseLevel1Modifier": 0,
+    "curseLevel1Target": "",
+    "curseLevel2Name": "Almost Human",
+    "curseLevel2Description": "<p>There are countless kinds of xenos in the galaxy and not all are as obvious as the great hordes of Orks, the enigmatic Eldar, ravening Tyranids, or the insidious Tau. Some come in forms which are not too distant from humanity, or from cultures which are benign and of little or no threat. The Battle-Brother is not fooled by such pale representations of the xenos form, and sees the alien everywhere, even influencing human worlds where mutation can easily disguise alien corruption. The Battle-Brother extends his hatred of xenos to anyone or anything which shows even the slightest hint of xenos taint, whether from contact with aliens or alien blood. In his eyes, these tainted humans and benign aliens are no better than true xenos and should be dealt with as such.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Foes Eternal",
+    "curseLevel3Description": "<p>No alien can ever be an ally of the Battle-Brother, and under no circumstances will the xenos ever stop being the most hated of his foes. Even in situations where a temporary alliance with alien forces (such as to fight a greater foe) would be prudent, the Battle Brother will not stomach it, considering his own kind as traitors should they follow it through. In situations where there is diplomacy between xenos and the Imperium, such as a ceasefire or exchange of prisoners, the Battle-Brother will refuse to take part, discontent with any kind of truce against a foe which only deserves death. In situations where the Battle-Brother is forced to deal peacefully with xenos (such as orders from his commanders or the will of his Kill-team), he must make a <strong>Very Hard (-30) Willpower Test</strong> to do so for a single encounter, even then remaining hostile, though restraining his violence.</p>",
+    "curseLevel3Effect": "custom",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "power-fist",
+  "name": "Power Fist",
+  "type": "weapon-quality",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "153",
+    "key": "power-fist",
+    "value": "",
+    "description": "<p>This weapon doubles the wielder's Strength Bonus when calculating melee damage. Note: A Space Marine already doubles his Strength Bonus from his Unnatural Strength Trait. Therefore, a Power Fist increases the multiplier by one, tripling the Space Marine's Strength Bonus.</p>"
+  }
+}

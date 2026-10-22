@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000084",
+  "name": "Nurgle's Rot",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/nurgle.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "216",
+    "key": "nurgles-rot",
+    "range": "5 metres x Psy Rating radius",
+    "sustained": "Half Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 400,
+    "class": "Nurgle",
+    "description": "<p><strong>Prerequisites:</strong> Corruption 30+, Aligned Nurgle</p><p><strong>Focus Power:</strong> Challenging (+0) Corruption Test</p><p><strong>Subtype:</strong> Attack, Concentration, Corruption</p><p><strong>Alternate Names:</strong> The Destroyer Hive, Heart of Contagion, Pandemic's Herald</p><p>The grandest and most infamous of Nurgle's contagions, Nurgle's Rot is known by many names and has appeared on countless worlds, leaving entire populations desolated by this terrible daemonic pathogen. Nurgle's devoted sorcerers take on all manner of diseases, serving as host to the creations of the Lord of Plagues. From this seething mass of decay and entropy, these devotees of pestilence summon forth the psychic echo of this paragon of plagues, inflicting it upon those nearby.</p><p>The infectious gift of Nurgle is cast outward to embrace all who stray too near to the Sorcerer. Creatures within range of the Sorcerer while this power remains in effect suffer 1d10 + Psy Rating Damage, with the Tainted and Toxic (4) qualities. The damage ignores Armour unless it is environmentally sealed. Those Devoted to Nurgle are unaffected by this power.</p><p><strong>Psychic Phenomena:</strong> While this power remains in effect, the air within the power's range is filled with a thick, acrid fog and swarms of massive bloated flies. Any creature within range that is not devoted to Nurgle suffers a -5 penalty to Weapon Skill, Ballistic Skill, Intelligence, Perception and Fellowship Tests as the foul vapour and buzzing flies hinder their concentration and drive them to distraction. This is in addition to any normal Psychic Phenomena.</p>",
+    "damageFormula": "1d10+PR",
+    "penetrationFormula": "0",
+    "damageType": "Energy",
+    "attachedQualities": [{ "id": "tainted" }, { "id": "toxic", "value": "4" }]
+  }
+}

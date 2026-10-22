@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000084",
+  "name": "Feedback Screech",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "Techmarine or Mechanicus Implants",
+    "benefit": "Emit noise blast affecting 30m radius",
+    "description": "<p>The character can scramble his vox synthesizers, causing a hideous blast of noise that shocks and distracts others. <b>All unprotected creatures within a 30-meter radius who have the ability to hear must make a Willpower Test or lose a Half Action on their next turn</b> as they involuntarily react to the cacophonous shriek.</p>",
+    "compendiumId": "tal00000000084",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

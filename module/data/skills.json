@@ -1,0 +1,1999 @@
+{
+  "awareness": {
+    "isBasic": true,
+    "characteristic": "per",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 300,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "carouse": {
+    "isBasic": true,
+    "characteristic": "tg",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "charm": {
+    "isBasic": true,
+    "characteristic": "fs",
+    "descriptor": "Interaction",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 6
+      }
+    }
+  },
+  "climb": {
+    "isBasic": true,
+    "characteristic": "str",
+    "descriptor": "Movement",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "command": {
+    "isBasic": true,
+    "characteristic": "fs",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 300,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 500,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 6
+      }
+    }
+  },
+  "concealment": {
+    "isBasic": true,
+    "characteristic": "ag",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 5
+      }
+    }
+  },
+  "contortionist": {
+    "isBasic": true,
+    "characteristic": "ag",
+    "descriptor": "Movement",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 3
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "deceive": {
+    "isBasic": true,
+    "characteristic": "fs",
+    "descriptor": "Interaction",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 6
+      }
+    }
+  },
+  "dodge": {
+    "isBasic": true,
+    "characteristic": "ag",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 500,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 600,
+        "rank": 8
+      }
+    }
+  },
+  "evaluate": {
+    "isBasic": true,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 3
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 7
+      }
+    }
+  },
+  "gamble": {
+    "isBasic": true,
+    "characteristic": "per",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 6
+      }
+    }
+  },
+  "inquiry": {
+    "isBasic": true,
+    "characteristic": "fs",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 6
+      }
+    }
+  },
+  "intimidate": {
+    "isBasic": true,
+    "characteristic": "str",
+    "descriptor": "Interaction",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 5
+      }
+    }
+  },
+  "logic": {
+    "isBasic": true,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 6
+      }
+    }
+  },
+  "scrutiny": {
+    "isBasic": true,
+    "characteristic": "per",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 6
+      }
+    }
+  },
+  "search": {
+    "isBasic": true,
+    "characteristic": "per",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 5
+      }
+    }
+  },
+  "silent_move": {
+    "isBasic": true,
+    "characteristic": "ag",
+    "descriptor": "Movement",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 5
+      }
+    }
+  },
+  "swim": {
+    "isBasic": true,
+    "characteristic": "str",
+    "descriptor": "Movement",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "acrobatics": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Movement",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": null,
+        "rank": 2
+      },
+      "expert": {
+        "cost": null,
+        "rank": 3
+      }
+    }
+  },
+  "chem_use": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting, Investigation",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "cipher_xenos_markings": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "cipher_deathwatch": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "cipher_chapter_runes": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "cipher_imperial_codes": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "cipher_mercenary_cant": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "cipher_inquisition": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "cipher_underworld": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "demolitions": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "drive_ground": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Operator",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "drive_hover_skimmer": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Operator",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "drive_walker": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Operator",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "interrogation": {
+    "isBasic": false,
+    "characteristic": "wil",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "invocation": {
+    "isBasic": false,
+    "characteristic": "wil",
+    "descriptor": "",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lip_reading": {
+    "isBasic": false,
+    "characteristic": "per",
+    "descriptor": "",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "literacy": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "lore_common_adeptus_arbites": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_common_adeptus_astartes": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 5
+      }
+    }
+  },
+  "lore_common_adeptus_mechanicus": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_common_administratum": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_common_deathwatch": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "lore_common_ecclesiarchy": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 3
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 5
+      }
+    }
+  },
+  "lore_common_imperial_creed": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_common_imperial_guard": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 4
+      }
+    }
+  },
+  "lore_common_imperial_navy": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 4
+      }
+    }
+  },
+  "lore_common_imperium": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 5
+      }
+    }
+  },
+  "lore_common_jericho_reach": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "lore_common_tech": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 3
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 4
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 5
+      }
+    }
+  },
+  "lore_common_war": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 3
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 5
+      }
+    }
+  },
+  "lore_forbidden_adeptus_astartes": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 3
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 7
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 8
+      }
+    }
+  },
+  "lore_forbidden_adeptus_mechanicus": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_forbidden_archeotech": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_forbidden_black_library": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 4
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 6
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 8
+      }
+    }
+  },
+  "lore_forbidden_daemonology": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_forbidden_heresy": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_forbidden_inquisition": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 4
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 6
+      }
+    }
+  },
+  "lore_forbidden_mutants": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_forbidden_psykers": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": null,
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_forbidden_traitor_legions": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 4
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 6
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 7
+      }
+    }
+  },
+  "lore_forbidden_warp": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 4
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 6
+      }
+    }
+  },
+  "lore_forbidden_xenos": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 6
+      }
+    }
+  },
+  "lore_scholastic_archaic": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_astromancy": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_beasts": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_bureaucracy": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_chymistry": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_codex_astartes": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_cryptology": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_heraldry": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_imperial_creed": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_judgement": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_legend": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_numerology": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_occult": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_philosophy": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "lore_scholastic_tactica_imperialis": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Investigation",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "medicae": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 8
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "navigation_surface": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 6
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 7
+      }
+    }
+  },
+  "navigation_stellar": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 5
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "performer_dancer": {
+    "isBasic": false,
+    "characteristic": "fs",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "performer_musician": {
+    "isBasic": false,
+    "characteristic": "fs",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "performer_singer": {
+    "isBasic": false,
+    "characteristic": "fs",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "performer_storyteller": {
+    "isBasic": false,
+    "characteristic": "fs",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "pilot_personal": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Operator",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "pilot_flyer": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Operator",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "pilot_space_craft": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Operator",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "psyniscience": {
+    "isBasic": false,
+    "characteristic": "per",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": -1,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": -1,
+        "rank": 2
+      },
+      "expert": {
+        "cost": -1,
+        "rank": 3
+      }
+    }
+  },
+  "security": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 3
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 7
+      }
+    }
+  },
+  "shadowing": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 4
+      },
+      "mastered": null,
+      "expert": null
+    }
+  },
+  "slight_of_hand": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 400,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_eldar": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_high_gothic": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_kroot": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_low_gothic": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_ork": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_techna_lingua": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_tau": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "speak_language_unholy_tounge": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 3
+      }
+    }
+  },
+  "survival": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 300,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 4
+      }
+    }
+  },
+  "tactics_air_combat": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "tactics_armoured": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "tactics_assault_doctrine": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "tactics_defensive_doctrine": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "tactics_orbital_drop": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "tactics_recon_and_stealth": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 800,
+        "rank": 3
+      }
+    }
+  },
+  "tech_use": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 800,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 800,
+        "rank": 2
+      },
+      "expert": null
+    }
+  },
+  "tracking": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 0,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 7
+      }
+    }
+  },
+  "trade_archaeologist": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_armorer": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_astrographer": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_chymist": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_cryptographer": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_explorer": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_linguist": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_remembrancer": {
+    "isBasic": false,
+    "characteristic": "ag",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_shipwright": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_soothsayer": {
+    "isBasic": false,
+    "characteristic": "fs",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_technomat": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "trade_trader": {
+    "isBasic": false,
+    "characteristic": "fs",
+    "descriptor": "Crafting",
+    "training": {
+      "trained": {
+        "cost": 600,
+        "rank": 1
+      },
+      "mastered": {
+        "cost": 400,
+        "rank": 2
+      },
+      "expert": {
+        "cost": 400,
+        "rank": 3
+      }
+    }
+  },
+  "wrangling": {
+    "isBasic": false,
+    "characteristic": "int",
+    "descriptor": "",
+    "training": {
+      "trained": {
+        "cost": 200,
+        "rank": 2
+      },
+      "mastered": {
+        "cost": 200,
+        "rank": 5
+      },
+      "expert": {
+        "cost": 200,
+        "rank": 7
+      }
+    }
+  }
+}

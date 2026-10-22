@@ -1,0 +1,15 @@
+{
+  "_id": "reductor0000001",
+  "name": "Reductor",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/narthecium.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "wt": 4,
+    "req": 8,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>Retrieval and storage of a fallen Battle-Brother’s gene-seed is so critical that Apothecaries carry a special tool for this operation. While a reductor is not required for Progenoid removal, it significantly reduces the time. This surgical implement fastens under the wrist. It includes a monomolecular saw for penetrating power armour and Ossmodula-enhanced rib cages, and a diamantine-tipped extractor drill.</p><p>A reductor reduces the time to remove the Progenoid glands to 1 Round per gland (2 for a full recovery). Although generally regarded as disrespectful to the machine’s sombre purpose, it can also be used as a melee weapon that does 1d10+2 R with a Penetration of 10. If used as a weapon, a reductor does not add the Battle-Brother’s SB to Damage; its design emphasises control and precision, but does not provide adequate leverage to take advantage of the wielder’s strength.</p>"
+  }
+}

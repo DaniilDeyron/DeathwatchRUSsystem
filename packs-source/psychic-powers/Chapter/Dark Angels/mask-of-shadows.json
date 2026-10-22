@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000032",
+  "name": "Mask of Shadows",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/dark-angels.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "197",
+    "key": "mask-of-shadows",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Half or Reaction",
+    "opposed": "No",
+    "cost": 1000,
+    "class": "Chapter",
+    "description": "<p>Covering his thoughts in darkness, the Librarian hides his mind from sight, confounding the efforts of enemy psykers or fearsome foes to psychically engage him. While this power is in effect, the Librarian is immune to the effects of all Telepathy powers unless created by a psyker with a Willpower greater than his own. In addition, the psyker suffers no ill effects to Cohesion or Willpower as a result of Fear.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp"
+  }
+}

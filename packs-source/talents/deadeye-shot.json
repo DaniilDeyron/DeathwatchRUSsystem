@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000045",
+  "name": "Deadeye Shot",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "BS 30",
+    "benefit": "Called shots at –10 instead of –20",
+    "description": "<p>The character's rock-steady hand and hawk-like eyesight make him a dreaded marksman. No target, however precise, can escape his crosshairs. <b>When making a called shot, the character suffers a –10 penalty instead of –20.</b></p>",
+    "compendiumId": "tal00000000045",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

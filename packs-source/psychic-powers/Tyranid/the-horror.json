@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000066",
+  "name": "The Horror",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "30",
+    "key": "the-horror",
+    "range": "75 metres",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>The Tyranid psyker may unleash a wave of horror that gnaws at the resolve of its enemies. This power may be used to target a Kill-team within 75 metres. Each member of the Kill-team within the range of this power must take a Willpower Test with a -30 modifier. The Kill-team takes one point of cohesion damage per member that fails this test. All other non-Tyranid (and non-Space Marine) NPCs within range of the Hive Tyrant must pass a fear-based Willpower Test with a -30 modifier or flee in panic.</p>"
+  }
+}

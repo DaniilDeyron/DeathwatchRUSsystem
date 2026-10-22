@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "The attack burns the target's arm leaving him Stunned for 1 Round and inflicts 2 levels of Fatigue. The arm is useless for 1d5 Rounds.",
+    "effects": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "ct-um-004",
+  "name": "Heraldry Scroll",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Ultramarines Chapter Trapping",
+    "description": "<p>Scrolls worked into a Battle-Brother's armour, either as metalwork or a placard are popular in many chapters, and the Ultramarines are no exception. This crest may display a motto or title, but most commonly it bears the Ultramarine's name so that his enemies know who brings their deaths, and tales of his deeds may travel.</p><p><strong>Effect:</strong> Add +10 Kill Markers to any Assault Mission where the scroll was displayed in at least one battle.</p>",
+    "modifiers": [],
+    "key": "ultramarines-heraldry-scroll"
+  }
+}

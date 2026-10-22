@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000203",
+  "name": "Prosanguine",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Autosanguine",
+    "benefit": "Tech-Use Test and 10 minutes meditation to remove 1d5 Damage",
+    "description": "<p>Through the application of his will, the character may speed the function of his Autosanguinators. <b>By spending 10 minutes in meditation and ritual incantation, the character may make a Tech-Use Test, and if successful, remove 1d5 points of Damage. If the character rolls a 96–100, he overstrains his implants, losing the ability to use them for one week. During that week, the character may use neither the Autosanguine nor Prosanguine Talents.</b> Using Prosanguine requires 10 minutes of meditation and ritual incantation.</p>",
+    "compendiumId": "tal00000000203",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

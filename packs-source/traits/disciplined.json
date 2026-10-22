@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000012",
+  "name": "Disciplined (Horde)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>The horde is made up of hardened and well-disciplined troops who do not break and flee even after having sustained terrible casualties. The horde with this trait does not suffer the –10 penalty to Willpower tests to resist breaking if it is below 50% of its starting magnitude. Also, it does not automatically break (see page 360) if it is below 25% of its starting Magnitude.</p>",
+    "modifiers": []
+  }
+}

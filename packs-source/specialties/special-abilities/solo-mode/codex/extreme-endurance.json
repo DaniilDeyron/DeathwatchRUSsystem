@@ -1,0 +1,22 @@
+{
+  "_id": "smcd00000000003",
+  "name": "Extreme Endurance",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "216",
+    "key": "extreme-endurance",
+    "description": "<p>Battle-Brothers are born tough. Even before being gifted with their Chapter's gene-seed, they are selected for their endurance and physical stamina, a trait that only strengthens over time. Once per game session, a Battle-Brother may use his Extreme Endurance to fortify his constitution, granting him a re-roll on all Toughness Tests for a number of hours equal to his Rank.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>7</td><td>May add +20 to the result of the re-roll</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 5,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Re-roll all Toughness Tests for a number of hours equal to Rank (once per session)",
+    "improvements": [
+      { "rank": 7, "effect": "May add +20 to the result of the re-roll" }
+    ]
+  }
+}

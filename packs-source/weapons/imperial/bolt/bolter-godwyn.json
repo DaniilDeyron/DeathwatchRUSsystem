@@ -1,0 +1,25 @@
+{
+  "_id": "bolt00000000001",
+  "name": "Astartes Bolter (Godwyn)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/bolter-godwyn.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Explosive",
+    "penetration": "5",
+    "range": "100",
+    "rof": "S/3/-",
+    "clip": "28",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 18,
+    "req": 5,
+    "renown": "",
+    "attachedQualities": [{ "id": "tearing" }],
+    "description": "<p>The bolter, or boltgun, is the backbone of every Space Marine arsenal. Bolters vary in age and pattern across the Space Marine Chapters, though nearly all Astartes bolt weapons accept the same ammunition. The Deathwatch-pattern bolter incorporates a shot selector, while Battle-Brothers who bring weapons from their home Chapter add attachments for the same functionality.</p>",
+    "modifiers": []
+  }
+}

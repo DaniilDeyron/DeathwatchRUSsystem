@@ -1,0 +1,28 @@
+{
+  "_id": "ct-bt-001",
+  "name": "Devotion Chain",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Black Templars Chapter Trapping",
+    "description": "<p>The Black Templars frequently wrap sections of their armour with chains, or bind their weapons to themselves to symbolize that they are unendingly bound to war against the Emperor's enemies. These constant reminders of a Black Templar's vows steel his resolve.</p><p><strong>Effect:</strong> Add +3 to any Willpower Test to resist Fear effects and Cohesion Damage.</p>",
+    "modifiers": [
+      {
+        "_id": "ct-bt-001-mod-01",
+        "name": "Devotion Chain - Fear Resistance",
+        "modifier": "3",
+        "type": "chapter",
+        "effectType": "skill",
+        "valueAffected": "willpower",
+        "enabled": true
+      }
+    ],
+    "key": "black-templars-devotion-chain"
+  }
+}

@@ -1,0 +1,198 @@
+/* Skills Tab Styles */
+.deathwatch .skills-section {
+  padding: var(--dw-spacing-lg);
+}
+
+.deathwatch .skills-header-row {
+  display: flex;
+  align-items: center;
+  padding: var(--dw-spacing-md);
+  background: rgba(0, 0, 0, 0.1);
+  border: var(--dw-border-width) solid var(--dw-color-border);
+  border-radius: var(--dw-border-radius-sm);
+  font-weight: bold;
+  font-size: var(--dw-font-size-sm);
+  color: #333;
+  margin-bottom: var(--dw-spacing-lg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.deathwatch .skills-header-row > div {
+  text-align: center;
+}
+
+.deathwatch .skill-name-header {
+  flex: 2;
+  text-align: left !important;
+}
+
+.deathwatch .skill-descriptor-header {
+  flex: 1;
+}
+
+.deathwatch .skill-descriptor {
+  flex: 1;
+  text-align: center;
+  font-size: var(--dw-font-size-xs);
+  color: var(--dw-color-text-muted);
+}
+
+.deathwatch .skill-trained-header { flex: 0 0 20px; }
+.deathwatch .skill-mastered-header { flex: 0 0 20px; }
+.deathwatch .skill-expert-header { flex: 0 0 20px; }
+.deathwatch .skill-modifier-header { flex: 0 0 60px; }
+.deathwatch .skill-total-header { flex: 0 0 50px; }
+
+.deathwatch .skills-header {
+  margin: var(--dw-spacing-xl) 0 var(--dw-spacing-lg) 0;
+  padding: 5px var(--dw-spacing-lg);
+  background: var(--dw-color-bg-tertiary);
+  border: var(--dw-border-width) solid var(--dw-color-border);
+  border-radius: var(--dw-border-radius-sm);
+}
+
+.deathwatch .skills-header h3 {
+  margin: 0;
+  font-size: var(--dw-font-size-lg);
+  font-weight: bold;
+  color: var(--dw-color-text-secondary);
+}
+
+.deathwatch .skills-list {
+  border: var(--dw-border-width) solid var(--dw-color-border);
+  border-radius: var(--dw-border-radius-sm);
+}
+
+.deathwatch .skill-item {
+  display: flex;
+  align-items: center;
+  padding: 2px var(--dw-spacing-md);
+  border-bottom: var(--dw-border-width) solid var(--dw-color-border-light);
+  font-size: var(--dw-font-size-sm);
+}
+
+.deathwatch .skill-item:last-child {
+  border-bottom: none;
+}
+
+.deathwatch .skill-item:hover {
+  background: var(--dw-color-bg-hover);
+}
+
+.deathwatch .skill-name {
+  flex: 2;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--dw-color-text-primary);
+}
+
+.deathwatch .skill-name:hover {
+  color: var(--dw-color-primary);
+}
+
+.deathwatch .skill-characteristic {
+  flex: 1;
+  font-size: var(--dw-font-size-xs);
+  color: var(--dw-color-text-muted);
+  text-align: center;
+}
+
+.deathwatch .skill-trained { flex: 0 0 20px; text-align: center; }
+.deathwatch .skill-mastered { flex: 0 0 20px; text-align: center; }
+.deathwatch .skill-expert { flex: 0 0 20px; text-align: center; }
+
+/* Service stud styling for skill advancement checkboxes */
+.deathwatch .skill-trained input[type="checkbox"],
+.deathwatch .skill-mastered input[type="checkbox"],
+.deathwatch .skill-expert input[type="checkbox"] {
+  /* Remove native checkbox appearance */
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+
+  /* Service stud styling */
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: pointer;
+  border-radius: 50% !important;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3), rgba(138, 155, 168, 0.4)) !important;
+  border: 1px solid rgba(90, 101, 112, 0.8) !important;
+  box-shadow:
+    inset 1px 1px 1px rgba(255, 255, 255, 0.2),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.5),
+    0 1px 2px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.2s ease;
+  outline: none !important;
+
+  /* Ensure no checkmark appears */
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.deathwatch .skill-trained input[type="checkbox"]:checked,
+.deathwatch .skill-mastered input[type="checkbox"]:checked,
+.deathwatch .skill-expert input[type="checkbox"]:checked {
+  background: radial-gradient(circle at 30% 30%, var(--dw-imperial-gold-light), var(--dw-imperial-gold)) !important;
+  box-shadow:
+    inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.5),
+    0 0 4px rgba(212, 165, 116, 0.4),
+    0 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+.deathwatch .skill-trained input[type="checkbox"]:hover,
+.deathwatch .skill-mastered input[type="checkbox"]:hover,
+.deathwatch .skill-expert input[type="checkbox"]:hover {
+  transform: scale(1.2);
+}
+
+/* Disabled state for service studs */
+.deathwatch .skill-trained input[type="checkbox"]:disabled,
+.deathwatch .skill-mastered input[type="checkbox"]:disabled,
+.deathwatch .skill-expert input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.deathwatch .skill-trained input[type="checkbox"]:disabled:hover,
+.deathwatch .skill-mastered input[type="checkbox"]:disabled:hover,
+.deathwatch .skill-expert input[type="checkbox"]:disabled:hover {
+  transform: none;
+}
+
+/* Remove any pseudo-elements that might show checkmarks */
+.deathwatch .skill-trained input[type="checkbox"]::before,
+.deathwatch .skill-mastered input[type="checkbox"]::before,
+.deathwatch .skill-expert input[type="checkbox"]::before,
+.deathwatch .skill-trained input[type="checkbox"]::after,
+.deathwatch .skill-mastered input[type="checkbox"]::after,
+.deathwatch .skill-expert input[type="checkbox"]::after {
+  display: none !important;
+  content: none !important;
+}
+
+.deathwatch .skill-modifier {
+  flex: 0 0 60px;
+  text-align: center;
+}
+
+.deathwatch .skill-modifier input {
+  width: 50px;
+  padding: var(--dw-spacing-xs) var(--dw-spacing-sm);
+  border: var(--dw-border-width) solid #ccc;
+  border-radius: var(--dw-spacing-xs);
+  text-align: center;
+  font-size: var(--dw-font-size-xs);
+}
+
+.deathwatch .skill-total {
+  flex: 0 0 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}

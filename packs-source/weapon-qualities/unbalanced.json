@@ -1,0 +1,13 @@
+{
+  "_id": "unbalanced",
+  "name": "Unbalanced",
+  "type": "weapon-quality",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "unbalanced",
+    "value": "",
+    "description": "<p>Heavy and difficult to ready after an attack, Unbalanced weapons impose a –10 penalty when used to Parry.</p>"
+  }
+}

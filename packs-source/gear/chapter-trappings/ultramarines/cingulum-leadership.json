@@ -1,0 +1,28 @@
+{
+  "_id": "ct-um-003",
+  "name": "Cingulum (Marks of Leadership)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 1,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Ultramarines Chapter Trapping",
+    "description": "<p>The cingulum is a belt formed from several studded straps of leather or a similar strong and flexible material, which serves as a place for the hanging of victorex and other accolades of valour. Such belts are common decorations amongst the Ultramarines and their successor chapters. The appearance of a cingulum also varies with the type of small, detailed plates that have been used to stud it and the choices of what terminal decorations hang upon it.</p><p><strong>Effect:</strong> Add +3 to any tests made to regain Cohesion or prevent Cohesion Damage.</p>",
+    "modifiers": [
+      {
+        "_id": "ct-um-003-mod-01",
+        "name": "Marks of Leadership",
+        "modifier": "3",
+        "type": "chapter",
+        "effectType": "skill",
+        "valueAffected": "willpower",
+        "enabled": true
+      }
+    ],
+    "key": "ultramarines-cingulum-leadership"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "smcd00000000006",
+  "name": "Renewed Vigour",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "216",
+    "key": "renewed-vigour",
+    "description": "<p>A Space Marine's physiology and his training give him an incredible tolerance to pain, injury, and wounds. Once per game session, a Battle-Brother may call upon his Renewed Vigour. This is a Free Action that can be done at the start of any of his Turns. For a number of Rounds equal to his Rank, he can ignore the effects of a single critical hit, such as Stunning, levels of Fatigue, or unconsciousness. Note, however, this does not allow the use of limbs that have been completely blown off or critical hits that result in death. Also, any new critical hit effects suffered during the Renewed Vigour affect the Battle-Brother as normal.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>Also restores Wounds equal to Rank</td></tr><tr><td>7</td><td>Ignore all current critical hit effects for the duration</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 3,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Ignore effects of a single critical hit for Rounds equal to Rank — Free Action (once per session)",
+    "improvements": [
+      { "rank": 5, "effect": "Also restores Wounds equal to Rank" },
+      {
+        "rank": 7,
+        "effect": "Ignore all current critical hit effects for the duration"
+      }
+    ]
+  }
+}

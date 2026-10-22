@@ -1,0 +1,13 @@
+{
+  "name": "Oolitic Kidney",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Re-roll failed tests vs poisons and toxins",
+    "description": "<p>This implant gives the Space Marine the ability to re-roll any failed Toughness Test to resist poisons and toxins, including attacks with the Toxic Quality.</p>",
+    "modifiers": []
+  }
+}

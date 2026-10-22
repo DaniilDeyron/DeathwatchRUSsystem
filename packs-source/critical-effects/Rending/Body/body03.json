@@ -1,0 +1,14 @@
+{
+  "_id": "rending-body0003",
+  "name": "Level 03",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Body",
+    "description": "The attack rips a large patch of skin from the target's torso, leaving him gasping in pain. The target is Stunned for 1 Round and takes 2 levels of Fatigue.",
+    "effects": []
+  }
+}

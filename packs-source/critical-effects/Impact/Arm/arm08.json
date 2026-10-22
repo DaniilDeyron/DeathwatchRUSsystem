@@ -1,0 +1,14 @@
+{
+  "_id": "impact-arm0008",
+  "name": "Level 08",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "256",
+    "damageType": "Impact",
+    "location": "Arm",
+    "description": "The force of the attack takes the arm off just below the shoulder, showering blood and gore across the ground. The target must immediately make a Challenging (+0) Toughness Test or die from shock. If he passes the Test, he is still Stunned for 1d10 rounds, takes 1d5 levels of Fatigue and is suffers from Blood Loss. He now only has one arm.",
+    "effects": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "bt-000000000004",
+  "name": "Righteous Contempt",
+  "type": "battle-trauma",
+  "img": "systems/deathwatch/icons/battle-trauma/righteous-contempt.webp",
+  "system": {
+    "description": "<p>While Space Marines begin their life as men, the implantation of their Chapter's gene-seed shapes their flesh and mind into something far greater and in the end no longer entirely human. All Battle-Brothers accept this superiority as part of reaching their pinnacle as a warrior and serving the Emperor, but for some it can make them scornful or dismissive of \"lesser\" beings.</p><p>The Battle-Brother has no time for those not of the Adeptus Astartes and has, to a degree, lost touch with his humanity. When dealing with humans (i.e. those not of the Adeptus Astartes) the character's Fellowship is lowered by –20. In addition, he never willingly seeks the help of humans, who he views as weak and untrustworthy.</p>",
+    "book": "Deathwatch Core Rulebook",
+    "page": "279",
+    "key": "righteous-contempt",
+    "triggerType": "fellowship",
+    "effectType": "modifier",
+    "modifier": -20,
+    "modifierTarget": "fel",
+    "cohesionPenalty": 0,
+    "canResist": false,
+    "resistDifficulty": "challenging"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": 0 }
+}

@@ -1,0 +1,57 @@
+<div class="tah-skill-selector-form">
+  <div class="form-header">
+    <p class="notes">
+      Select which skills appear in your Token Action HUD. Only selected skills will be shown to avoid cluttering the interface.
+    </p>
+  </div>
+
+  <div class="skill-groups">
+    <!-- Basic Skills -->
+    <fieldset class="skill-group">
+      <legend>Basic Skills</legend>
+      <div class="skill-list">
+        {{#each basicSkills}}
+        <label class="skill-item">
+          <input
+            type="checkbox"
+            data-action="toggleSkill"
+            data-skill="{{this.key}}"
+            {{#if this.checked}}checked{{/if}}
+          />
+          <span class="skill-label">{{this.label}}</span>
+        </label>
+        {{/each}}
+      </div>
+    </fieldset>
+
+    <!-- Advanced Skills -->
+    <fieldset class="skill-group">
+      <legend>Advanced Skills</legend>
+      <div class="skill-list">
+        {{#each advancedSkills}}
+        <label class="skill-item">
+          <input
+            type="checkbox"
+            data-action="toggleSkill"
+            data-skill="{{this.key}}"
+            {{#if this.checked}}checked{{/if}}
+          />
+          <span class="skill-label">{{this.label}}</span>
+        </label>
+        {{/each}}
+      </div>
+    </fieldset>
+  </div>
+
+  <footer class="form-footer">
+    <button type="button" data-action="selectDefaults" class="default-button">
+      <i class="fas fa-undo"></i> Use Defaults
+    </button>
+    <button type="button" data-action="reset" class="reset-button">
+      <i class="fas fa-times"></i> Clear All
+    </button>
+    <button type="button" data-action="save" class="save-button">
+      <i class="fas fa-check"></i> Save & Close
+    </button>
+  </footer>
+</div>

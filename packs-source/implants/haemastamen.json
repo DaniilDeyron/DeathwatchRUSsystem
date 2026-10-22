@@ -1,0 +1,13 @@
+{
+  "name": "Haemastamen",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Contributes to Unnatural Strength and Toughness",
+    "description": "<p>This organ has no in-game effect besides contributing to the Space Marine's Unnatural Strength and Toughness Traits.</p>",
+    "modifiers": []
+  }
+}

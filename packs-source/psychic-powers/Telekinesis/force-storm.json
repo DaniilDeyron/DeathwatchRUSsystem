@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000093",
+  "name": "Force Storm",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telekinesis.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "225",
+    "key": "force-storm",
+    "range": "10 metres per Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 350,
+    "class": "Telekinesis",
+    "description": "<p><strong>Prerequisites:</strong> Force Bolt, Mind over Matter</p><p><strong>Focus Power:</strong> Difficult (–10) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>The psyker's will is extended out into a great flurry of bolts of invisible force, akin to a storm of fire from an automatic weapon. The scholars of the Imperium maintain chain-bound grimoires of witch-lore that speak of barrages of ghostly force, or onslaughts of telekinetic brutality, while Eldar Warlocks sing songs of Lileath, the Maiden, whose ire manifested as punishing blasts that shine like moonlight.</p><p>This power is a Psychic Storm that deals 1d10 Impact Damage +3 per point of Psy Rating, with a Pen of 0.</p>",
+    "damageFormula": "1d10+(PR*3)",
+    "penetrationFormula": "0",
+    "damageType": "Impact",
+    "attachedQualities": []
+  }
+}

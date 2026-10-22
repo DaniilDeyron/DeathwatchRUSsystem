@@ -1,0 +1,14 @@
+{
+  "_id": "rending-body0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "258",
+    "damageType": "Rending",
+    "location": "Body",
+    "description": "The attack cuts open the target's abdomen. The target can either choose to use one arm to hold his guts in (until a medic can bind them in place with a successful Medicae Test), or fight on regardless and risk a 20% chance each turn that his middle splits open, spilling his intestines all over the ground, causing an additional 2d10 Damage. In either case, the target takes 1d5 levels of Fatigue and is now suffering Blood Loss.",
+    "effects": []
+  }
+}

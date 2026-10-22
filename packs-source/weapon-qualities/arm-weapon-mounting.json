@@ -1,0 +1,12 @@
+{
+  "_id": "arm-weapon-mounting",
+  "name": "Arm Weapon Mounting",
+  "type": "weapon-quality",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "142",
+    "key": "arm-weapon-mounting",
+    "description": "<p>This weapon is designed to be mounted on a Tau Battlesuit's arm hardpoint. Such weapons are integrated into the suit's power supply and targeting systems, providing unlimited ammunition and enhanced fire control. Arm-mounted weapons benefit from the suit's stabilisation systems and may be fired in conjunction with other battlesuit weapons.</p>"
+  }
+}

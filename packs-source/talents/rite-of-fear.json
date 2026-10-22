@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000215",
+  "name": "Rite of Fear",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "125",
+    "prerequisite": "Mechanicus or Techmarine Implants",
+    "benefit": "Half Action infrasonic dirge grants Fear Rating 1 to all humans within 50m",
+    "description": "<p>The character's infrasonic dirges cause terror in the weak. <b>All humans, regardless of their ability to hear, within a 50-meter radius treat the character as if he had a Fear Rating of 1. While incanting the dirge, the character may not communicate in any other way. The rite requires one-Half Action chanting in Techna-Lingua, and most would not consider halting the incantations prior to their completion.</b> Humans without auditory augmentation cannot hear infrasonic sounds, and though still affected do not know the character is speaking.</p>",
+    "compendiumId": "tal00000000215",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

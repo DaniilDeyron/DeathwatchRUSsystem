@@ -1,0 +1,30 @@
+{
+  "_id": "trt000000000057",
+  "name": "Size (Puny)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "134",
+    "description": "<p>This creature is Puny. Enemies suffer –20 to hit it, and it gains +20 to Concealment. Its base movement is Agility Bonus –2.</p>",
+    "modifiers": [
+      {
+        "_id": "9d9eaca70a26d46c",
+        "name": "Size (Puny)",
+        "modifier": -2,
+        "type": "trait",
+        "effectType": "movement",
+        "enabled": true
+      },
+      {
+        "_id": "782e479890ecc79f",
+        "name": "Size (Puny)",
+        "modifier": 20,
+        "type": "trait",
+        "effectType": "skill",
+        "valueAffected": "concealment",
+        "enabled": true
+      }
+    ]
+  }
+}

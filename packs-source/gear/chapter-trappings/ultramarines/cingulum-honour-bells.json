@@ -1,0 +1,28 @@
+{
+  "_id": "ct-um-002",
+  "name": "Cingulum (Honour Bells)",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "170",
+    "equipped": false,
+    "wt": 1,
+    "req": 0,
+    "renown": "",
+    "shortDescription": "Ultramarines Chapter Trapping",
+    "description": "<p>The cingulum is a belt formed from several studded straps of leather or a similar strong and flexible material, which serves as a place for the hanging of victorex and other accolades of valour. Such belts are common decorations amongst the Ultramarines and their successor chapters. The appearance of a cingulum also varies with the type of small, detailed plates that have been used to stud it and the choices of what terminal decorations hang upon it.</p><p><strong>Effect:</strong> The clinking scales and bells hung at the end of each strap herald the bearer's approach. Gain +3 WS on your first Attack roll in a combat.</p><p><em>Note: This is a conditional bonus. Enable the modifier for your first attack in combat, then disable it.</em></p>",
+    "modifiers": [
+      {
+        "_id": "ct-um-002-mod-01",
+        "name": "Honour Bells",
+        "modifier": "3",
+        "type": "chapter",
+        "effectType": "skill",
+        "valueAffected": "weapon-skill",
+        "enabled": false
+      }
+    ],
+    "key": "ultramarines-cingulum-honour-bells"
+  }
+}

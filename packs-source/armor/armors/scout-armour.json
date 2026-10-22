@@ -1,0 +1,35 @@
+{
+  "_id": "armor00000000004",
+  "name": "Scout Armour",
+  "type": "armor",
+  "img": "systems/deathwatch/icons/armor/scout.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "163",
+    "head": 0,
+    "body": 6,
+    "left_arm": 6,
+    "right_arm": 6,
+    "left_leg": 0,
+    "right_leg": 0,
+    "req": 0,
+    "renown": "",
+    "attachedHistories": [],
+    "description": "<p>In most Codex Chapters, Neophyte Space Marines serve in the 10th Company as Scouts as their first assignment. Scouts are placed under the instruction of an experienced sergeant, who both takes command of the squad and teaches the Scouts what it means to be a Space Marine. During this time, Scouts wear lighter, less-encumbering armour than the power armour worn by the Initiate Battle-Brothers of the Chapter. This armour is a version of carapace armour that offers protection while at the same time is extremely well-suited for stealth and skirmishing.</P><p>Astartes Scout Armour provides a <b>+10 bonus to Concealment Skill Tests</b> and does not inflict a penalty to Silent Move and Concealment Skill Tests based on AP (see page 160).</p>",
+    "modifiers": [],
+    "armorEffects": [
+      {
+        "name": "Bio-monitor & Injectors",
+        "points": [
+          "+10 to tests resisting Toxic and poison effects",
+          "6 pain suppressor doses (each ignores Critical Effects for 1d10 rounds)",
+          "Stun effects last maximum 1 round"
+        ]
+      },
+      {
+        "name": "Magnetized Boot Soles",
+        "points": ["Activate for Magboots equivalent"]
+      }
+    ]
+  }
+}

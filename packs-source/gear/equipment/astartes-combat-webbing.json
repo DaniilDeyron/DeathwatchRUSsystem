@@ -1,0 +1,17 @@
+{
+  "_id": "gear00000000001",
+  "name": "Astartes Combat Webbing",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/generic/gear.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "144",
+    "equipped": false,
+    "wt": 2,
+    "req": 3,
+    "renown": "",
+    "shortDescription": "Equipment",
+    "description": "<p>Astartes combat webbing consists of a sturdy web belt and detachable load-bearing suspenders. The belt and suspenders are five centimeters wide and adjustable to fit nearly every body size, as well as over standard Astartes Scout armour. The webbing is designed to carry hard and soft-sided pouches for equipment and ammunition that a scout needs readily at hand.</p><p>These pouches connect to the belt and suspenders with semi-permanent clips that can be undone with any flat-bladed tool. Various pouches are available separately.</p>",
+    "modifiers": []
+  }
+}

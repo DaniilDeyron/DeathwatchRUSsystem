@@ -1,0 +1,13 @@
+{
+  "_id": "defensive",
+  "name": "Defensive",
+  "type": "weapon-quality",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "defensive",
+    "value": "",
+    "description": "<p>Defensive weapons are designed to parry and deflect incoming attacks. While wielding a Defensive weapon, the user suffers a -10 penalty to Weapon Skill tests when attacking, but gains bonuses to parrying.</p>"
+  }
+}

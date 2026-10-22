@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000271",
+  "name": "Warp Sense",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "129",
+    "prerequisite": "Psy Rating, Psyniscience Skill, Perception 30",
+    "benefit": "Use Psyniscience Skill as Half Action instead of Full Action",
+    "description": "<p>The character's senses have evolved to perceive the warp in parallel with the physical world, though it requires some concentration to do so. <b>After gaining this Talent, using the Psyniscience Skill requires a Half Action instead of a Full Action.</b></p>",
+    "compendiumId": "tal00000000271",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

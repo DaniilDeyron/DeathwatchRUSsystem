@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-head0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Head",
+    "description": "Both head and body are blown into a mangled mess, instantly killing the target. In addition, if the target is carrying any ammunition it explodes dealing 1d10+5 Impact Damage to any creatures within 1d5 metres. If the target was carrying grenades or missiles, these too explode on the target's person.",
+    "effects": []
+  }
+}

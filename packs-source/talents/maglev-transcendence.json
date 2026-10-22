@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000153",
+  "name": "Maglev Transcendence",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "122",
+    "prerequisite": "Mechanicus Implants, Maglev Grace",
+    "benefit": "Hover 20-30cm for 2d10+TG Bonus minutes at running speed, no falling damage",
+    "description": "<p>The character has proven his devotion to the Machine God by lacing anti-grav coils through every portion of his body. <b>Using a Half Action, the character may hover 20–30 centimetres off the ground for a number of minutes equal to 2d10 plus the character's Toughness Bonus. The character must employ a Half Action each Round to concentrate on maintaining this rite, but any Move Action allows the character to move up to his running speed. The character can slow his rate of descent when falling so long as this rite is active when the character reaches the ground, taking no falling Damage. Each time the character enacts this rite, it drains 50% of the power stored in his Potentia Coil.</b></p>",
+    "compendiumId": "tal00000000153",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

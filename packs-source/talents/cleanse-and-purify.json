@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000036",
+  "name": "Cleanse and Purify",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "115",
+    "prerequisite": "Basic Weapons (Flame)",
+    "benefit": "Increases the effect of your flamer attacks",
+    "description": "<p>The character can control the flowering flow of promethium like no other, manipulating flame like an old accomplice. The targets of the character’s flamer attacks take a <b>–20 penalty to their Agility tests</b> to escape its effects, and when used against an enemy with the Horde trait, the number of <b>hits on the Horde is increased by +1d5</b>.</p>",
+    "compendiumId": "tal00000000036",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "psy00000000080",
+  "name": "Wind of Chaos",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/unaligned.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "214",
+    "key": "wind-of-chaos",
+    "range": "5 metres x Psy Rating",
+    "sustained": "No",
+    "action": "Half Action",
+    "opposed": "Yes",
+    "cost": 300,
+    "class": "Unaligned",
+    "description": "<p><strong>Prerequisites:</strong> Corruption 30+</p><p><strong>Focus Power:</strong> Opposed Challenging (+0) Corruption Test</p><p><strong>Subtype:</strong> Attack, Concentration, Corruption</p><p>Reaching deep into the corruption within his soul, the Sorcerer unleashes a wave of energy that leaves devastation in its wake. Depending upon the devotions of the Sorcerer, the nature of this outpouring of corrupt power varies—those devoted to Nurgle produce a stream of bilious filth, while a rain of hypnotic luminescence or glittering golden light characterises the powers of a Slaanesh Sorcerer. Every Sorcerer's Wind of Chaos is subtly different, coloured by their own prejudices and insanity.</p><p>The Sorcerer produces a torrent of foul energy in a 30-degree cone out to the power's range, similar to a weapon with the Spray quality. Creatures caught within the spray may oppose the Focus Power Test with an Agility Test. Any creature that does not successfully avoid the power's effects suffers 2d10 + Psy Rating Energy Damage with the Felling (2), Tainted, and Warp Weapon Qualities, plus a single additional Quality determined by the Sorcerer's alignment:</p><ul><li><strong>Tzeentch:</strong> Flame quality</li><li><strong>Slaanesh:</strong> Shocking quality</li><li><strong>Nurgle:</strong> Toxic quality</li><li><strong>Unaligned:</strong> Tearing quality</li></ul><p><strong>Psychic Phenomena:</strong> The psychic residue of the power's effects lingers on every surface for a few moments longer. Until the start of the Sorcerer's next turn, every creature within 3d10 metres of the Sorcerer suffers a -10 penalty on all Willpower Tests due to the disconcerting and disruptive aftereffects of the Wind of Chaos. This is in addition to any normal Psychic Phenomena that might be manifested.</p>",
+    "damageFormula": "2d10+PR",
+    "penetrationFormula": "0",
+    "damageType": "Energy",
+    "attachedQualities": [
+      { "id": "felling", "value": "2" },
+      { "id": "tainted" },
+      { "id": "warp-weapon" },
+      { "id": "tearing" }
+    ]
+  }
+}

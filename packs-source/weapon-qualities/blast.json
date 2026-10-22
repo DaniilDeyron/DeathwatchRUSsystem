@@ -1,0 +1,13 @@
+{
+  "_id": "blast",
+  "name": "Blast",
+  "type": "weapon-quality",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "142",
+    "key": "blast",
+    "value": "5",
+    "description": "<p>Many missiles, grenades, and some guns create an explosion when they hit. When working out the effects of a Blast weapon, anyone within the weapon's blast radius in metres (the number in parenthesis) is also hit.</p><p>Roll Hit Location and Damage individually for each person affected by the blast.</p>"
+  }
+}

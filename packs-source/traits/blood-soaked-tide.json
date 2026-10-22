@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000006",
+  "name": "Blood Soaked Tide (Horde)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "130",
+    "description": "<p>The horde with this trait is teetering on the brink of madness. These bloodthirsty madmen thrive on the slaughter of battle. When the horde fails a Willpower test to avoid being broken, or would have broken automatically (see Breaking a Horde on page 360 in this chapter), it is not broken, but instead gains the Fearless and Frenzy Talents.</p>",
+    "modifiers": []
+  }
+}

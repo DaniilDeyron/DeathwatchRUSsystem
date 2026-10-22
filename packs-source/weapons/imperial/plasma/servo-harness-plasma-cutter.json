@@ -1,0 +1,25 @@
+{
+  "_id": "plas00000000006",
+  "name": "Servo-Harness Plasma Cutter",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/plasma-pistol.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "class": "Pistol",
+    "dmg": "1d10+10",
+    "dmgType": "Energy",
+    "penetration": "8",
+    "range": "10",
+    "rof": "S/-/-",
+    "clip": "12",
+    "reload": "3 Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "volatile" }],
+    "description": "<p>The plasma cutter can cut through a metre of adamantine plating up to 20 centimetres thick every minute (thinner material can be cut through faster). It may also be used as though it were an Astartes Plasma Pistol with a Range of 10m and no option to fire on Maximal Mode.</p><p><strong>Note:</strong> This weapon is part of a servo-harness and requires the Astartes Servo-Harness cybernetic to be equipped. The Techmarine may use his Reaction to make a single shot with this weapon.</p>",
+    "modifiers": []
+  }
+}

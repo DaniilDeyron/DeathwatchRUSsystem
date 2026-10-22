@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000099",
+  "name": "Mind Link",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "224",
+    "key": "mind-link",
+    "range": "1 kilometre per Psy Rating",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Telepathy",
+    "description": "<p><strong>Prerequisites:</strong> Thought Sending</p><p><strong>Focus Power:</strong> Ordinary (+10) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>A natural development of the simplest telepathic techniques, the psyker forms a lingering mental bond between himself and several others, allowing them to share thoughts over considerable distances. Chaos cultists regard such communication as the speech of the daemonic, a truer, purer way of conveying information, and secret organisations of all kinds value the swift and silent communion that telepathy allows.</p><p>While this power remains in effect, a number of willing creatures equal to the psyker's Willpower Bonus are mentally linked, allowing them to communicate instantly and silently. This power requires line of sight between the psyker and all the other participants at the moment the power is used, but once the power is in effect, line of sight is no longer necessary.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

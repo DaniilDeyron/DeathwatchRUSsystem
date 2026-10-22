@@ -1,0 +1,52 @@
+<div class="{{cssClass}} flexcol" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="80" width="80"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Characteristic Advance"/></h1>
+      <div class="form-group">
+        <label>Characteristic:</label>
+        <select name="system.characteristic">
+          <option value="">Select Characteristic</option>
+          <option value="ws" {{#if (eq system.characteristic "ws")}}selected{{/if}}>Weapon Skill</option>
+          <option value="bs" {{#if (eq system.characteristic "bs")}}selected{{/if}}>Ballistic Skill</option>
+          <option value="str" {{#if (eq system.characteristic "str")}}selected{{/if}}>Strength</option>
+          <option value="tg" {{#if (eq system.characteristic "tg")}}selected{{/if}}>Toughness</option>
+          <option value="ag" {{#if (eq system.characteristic "ag")}}selected{{/if}}>Agility</option>
+          <option value="int" {{#if (eq system.characteristic "int")}}selected{{/if}}>Intelligence</option>
+          <option value="per" {{#if (eq system.characteristic "per")}}selected{{/if}}>Perception</option>
+          <option value="wil" {{#if (eq system.characteristic "wil")}}selected{{/if}}>Willpower</option>
+          <option value="fs" {{#if (eq system.characteristic "fs")}}selected{{/if}}>Fellowship</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Level:</label>
+        <select name="system.level">
+          <option value="simple" {{#if (eq system.level "simple")}}selected{{/if}}>Simple</option>
+          <option value="intermediate" {{#if (eq system.level "intermediate")}}selected{{/if}}>Intermediate</option>
+          <option value="trained" {{#if (eq system.level "trained")}}selected{{/if}}>Trained</option>
+          <option value="expert" {{#if (eq system.level "expert")}}selected{{/if}}>Expert</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>XP Cost:</label>
+        <input type="number" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+      </div>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="form-group">
+      {{#if editable}}
+      <prose-mirror name="system.description"
+                    value="{{source.description}}"
+                    document-uuid="{{item.uuid}}"
+                    style="height: 100%;">
+      </prose-mirror>
+      {{else}}
+      <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+        <div class="editor-content">{{{enriched.description}}}</div>
+      </div>
+      {{/if}}
+    </div>
+  </section>
+</div>

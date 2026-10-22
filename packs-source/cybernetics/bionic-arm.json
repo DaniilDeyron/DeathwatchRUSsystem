@@ -1,0 +1,22 @@
+{
+  "name": "Bionic Arm",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/bionic-arm.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "equipped": false,
+    "description": "<p>A cybernetic replacement arm with enhanced strength capabilities.</p>",
+    "modifiers": [
+      {
+        "_id": "1b05ad847a7b4197",
+        "name": "Strength Enhancement",
+        "modifier": 10,
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "str",
+        "enabled": true
+      }
+    ]
+  }
+}

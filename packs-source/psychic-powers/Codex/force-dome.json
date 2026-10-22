@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000016",
+  "name": "Force Dome",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "194",
+    "key": "force-dome",
+    "range": "5m x PR radius",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 1500,
+    "class": "Codex",
+    "description": "<p>Summoning up a shimmering field of force, the Librarian fashions a shell around himself and nearby allies. The shell is a sphere extending up to the radius around, above, and below the Librarian and protecting him and any within it. The shell provides 2 AP x PR against all kinds of ranged attacks or hazardous environmental effects (this additional protection stacks with any worn Armour), even trapping air and water within it. However, it does not stop melee attacks or creatures (friend or foe) that may pass through it without restriction.</p>"
+  }
+}

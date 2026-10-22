@@ -1,0 +1,31 @@
+{
+  "_id": "armorhist0000003",
+  "name": "Thine arm be the scourge of the impure",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/arm.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>The spirit of this armour has been honed by its long years of service into a truly potent adversary. It has been upgraded with numerous enhancements for the sole purpose of bringing ruination to the enemies of Man in glorious close combat. Wearers claim that it knows how and when they are going to strike, and come to trust it as innately as any other brother in arms. Such a suit grants the wearer +5 WS. However, its long range targeting systems are difficult and temperamental. When wearing the suit's helmet, BS tests suffer a –5 penalty.</p>",
+    "modifiers": [
+      {
+        "_id": "armhistmod0001",
+        "name": "Close Combat Enhancement",
+        "modifier": "5",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "ws",
+        "enabled": true
+      },
+      {
+        "_id": "armhistmod0002",
+        "name": "Temperamental Targeting",
+        "modifier": "-5",
+        "type": "equipment",
+        "effectType": "characteristic",
+        "valueAffected": "bs",
+        "enabled": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000154",
+  "name": "Marksman",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "122",
+    "prerequisite": "Ballistic Skill 35",
+    "benefit": "No penalties for long or extended range",
+    "description": "<p>The character's steady hand and eagle eye allows him to keep crosshairs steady on any target, regardless of range. <b>Distance is no protection against the character's marksmanship, and he suffers no penalties for Ballistic Skill Tests at long or extended range.</b></p>",
+    "compendiumId": "tal00000000154",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

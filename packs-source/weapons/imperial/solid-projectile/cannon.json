@@ -1,0 +1,28 @@
+{
+  "_id": "soli00000000003",
+  "name": "Astartes Assault Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/assault-cannon.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Mounted",
+    "dmg": "2d10+12",
+    "dmgType": "Impact",
+    "penetration": "6",
+    "range": "150",
+    "rof": "-/-/10",
+    "clip": "200",
+    "reload": "3 Full",
+    "equipped": false,
+    "wt": 80,
+    "req": 30,
+    "renown": "Famed",
+    "attachedQualities": [
+      { "id": "devastating", "value": "1" },
+      { "id": "tearing" }
+    ],
+    "description": "<p>An assault cannon is a massive, brutal weapon with a ring of rotating barrels that spray explosive shells at terrifying speed and velocity. This weapon’s incredible firepower can shred troops or vehicles even more efficiently than a heavy bolter, although its size and weight somewhat preclude manportability. The Adeptus Astartes circumvent that limitation by commonly employing them on Terminators.</p>",
+    "modifiers": []
+  }
+}

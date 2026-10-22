@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000142",
+  "name": "Last Man Standing",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "121",
+    "prerequisite": "Nerves of Steel",
+    "benefit": "Immune to Pinning from pistols and Basic Weapons, +1 AP from cover",
+    "description": "<p>The character has developed a sixth sense about hails of gunfire, allowing him to sense gaps and pauses in the lethal rain. <b>The character is immune to Pinning by pistols and Basic Weapons, and he adds +1 AP to the value of any cover protecting him from ranged attacks.</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000142",
+    "modifiers": [],
+    "rankRequired": 6
+  }
+}

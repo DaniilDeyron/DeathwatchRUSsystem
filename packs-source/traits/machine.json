@@ -1,0 +1,21 @@
+{
+  "_id": "trt000000000022",
+  "name": "Machine",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "133",
+    "description": "<p>A creature with the Machine trait is fashioned from inorganic materials and is generally more rigourous than fleshy folks. Machines do not breathe, are immune to the effects of a vacuum, extremes of cold, any mind-influencing psychic effect, and their Armour Points apply toward fire damage. Machines are also resilient to injury, having 1 to 5 Armour Points for each location. This number is indicated next to the trait.</p>",
+    "modifiers": [
+      {
+        "_id": "machine-armour-mod",
+        "name": "Machine",
+        "modifier": "0",
+        "type": "trait",
+        "effectType": "armor",
+        "enabled": true
+      }
+    ]
+  }
+}

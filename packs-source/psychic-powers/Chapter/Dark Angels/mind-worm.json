@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000033",
+  "name": "Mind Worm",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/dark-angels.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "197",
+    "key": "mind-worm",
+    "range": "10 metres x PR",
+    "sustained": "Yes",
+    "action": "Full",
+    "opposed": "Yes",
+    "cost": 1500,
+    "class": "Chapter",
+    "description": "<p>Driving deep into the target's mind, the Librarian implants the seed of doubt and remorse, crippling the creature with indecision and guilt. This power works against a single target. Those affected by the power suffer a –5 x PR to WS, BS, S, Ag, Int, and Fel (all to a minimum of 05). If this power is sustained then the target may make a new Opposed Willpower Test at the start of each of its turns to end the effects.</p><p>This power also confers a +30 bonus to the psyker's Interrogation skill.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp"
+  }
+}

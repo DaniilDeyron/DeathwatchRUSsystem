@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000207",
+  "name": "Rapid Reaction",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Agility 40",
+    "benefit": "Agility Test to act normally when surprised or ambushed",
+    "description": "<p>The character has honed his reactions to a razor's edge, allowing them to act while most stand dumbfounded. <b>When surprised or ambushed, a successful Agility Test allows the character to act normally.</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000207",
+    "modifiers": [],
+    "rankRequired": 3
+  }
+}

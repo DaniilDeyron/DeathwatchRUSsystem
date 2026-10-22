@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000080",
+  "name": "Exemplar of Honour",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Spend Fate Point to regain Cohesion",
+    "description": "<p>The Battle-Brother exemplifies all that is finest in an Adeptus Astartes to the extent that his presence can rally his brothers and inspire them to fight together against overwhelming odds. <b>The Battle-Brother may spend a Fate Point as a Free Action to regain Cohesion equal to his Fellowship Bonus.</b> He may do this once per Round.</p>",
+    "compendiumId": "tal00000000080",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

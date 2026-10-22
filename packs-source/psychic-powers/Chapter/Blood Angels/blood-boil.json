@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000023",
+  "name": "Blood Boil",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/blood-angel.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "196",
+    "key": "blood-boil",
+    "range": "10 metre x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "Yes",
+    "cost": 1500,
+    "class": "Chapter",
+    "description": "<p>With a blast of psychic power, the Librarian superheats the target's blood, flash-boiling it and causing it to burst from their eyes, mouth, and ears. This power can only be used against a single target. The target of a Blood Boil will suffer 1d10 Energy damage plus 2 extra points of damage x PR (to a maximum of 1d10+20) which is not reduced by armour or Toughness. If the target is killed by this attack then he explodes in a crimson shower, spattering those nearby with scalding blood. All creatures within 5 metres of an exploding target take 2d10 Energy damage to their least armoured location.</p><p>Manifesting Blood Boil is taxing for a Librarian, and inflicts 1 level of fatigue upon him, whether or not the target resists.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp"
+  }
+}

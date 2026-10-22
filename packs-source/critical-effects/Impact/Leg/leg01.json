@@ -1,0 +1,14 @@
+{
+  "_id": "impact-leg0001",
+  "name": "Level 01",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "257",
+    "damageType": "Impact",
+    "location": "Leg",
+    "description": "A light blow to the leg leaves the target gasping for air. The target takes 1 level of Fatigue.",
+    "effects": []
+  }
+}

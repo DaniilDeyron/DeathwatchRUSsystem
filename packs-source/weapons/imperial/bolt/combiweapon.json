@@ -1,0 +1,25 @@
+{
+  "_id": "bolt00000000005",
+  "name": "Astartes Combi-Weapon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/combi-weapon.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Explosive",
+    "penetration": "5",
+    "range": "100",
+    "rof": "S/4/-",
+    "clip": "28",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 25,
+    "req": 15,
+    "renown": "Respected",
+    "attachedQualities": [{ "id": "tearing" }],
+    "description": "<p>Combi-weapons are actually two different weapons that have been combined into one firearm. The idea is to provide the user with the versatility of two different types of guns, without requiring him to switch between them (not to mention carry them both) on the battlefield. Astartes combi-weapons typically use a boltgun as the primary weapon with a one-shot secondary weapon slung under the barrel.</p><p>The most popular variations found in the Deathwatch are the combi-flamer, combi-meltagun, and combi-plasma gun. The profile entry for each of these weapons details the primary boltgun. The secondary weapon on each firearm has a profile identical to a Flamer, Meltagun, and Plasma Gun respectively, except its Clip is reduced to 1. The wielder may fire either the primary or secondary weapon on his Turn; both weapons cannot fire at the same time.</p>",
+    "modifiers": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "flam00000000004",
+  "name": "Balefire Gun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/balefire-gun.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "135",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Energy",
+    "penetration": "4",
+    "range": "20",
+    "rof": "S/-/-",
+    "clip": "6",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 7,
+    "req": 16,
+    "renown": "Respected",
+    "attachedQualities": [{ "id": "flame" }, { "id": "toxic" }],
+    "description": "<p>Brutally effective against Orks and other xenos with natural regeneration, this flamer uses highly refined promethium fuel mixed with a number of radioactive compounds to both burn and irradiate foes. Only rarely deployed due to the collateral environmental damage it causes, balefire guns are used solely by the Deathwatch to cleanse particularly resilient xenos. They are particularly effective in controlling and eradicating Ork infestations.</p>",
+    "modifiers": []
+  }
+}

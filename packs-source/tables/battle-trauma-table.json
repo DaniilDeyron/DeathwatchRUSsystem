@@ -1,0 +1,66 @@
+{
+  "_id": "bt-table00000001",
+  "name": "Battle Trauma Table",
+  "description": "<p>Table for determining Battle Traumas when a character fails an Insanity Test.</p><p>Roll 1d10 to determine which Battle Trauma is gained. If the character already has that trauma, reroll.</p><p>Source: Deathwatch Core Rulebook p. 217</p>",
+  "img": "systems/deathwatch/icons/tables/table.webp",
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "bt-result-00001",
+      "type": "document",
+      "name": "",
+      "description": "Compendium.deathwatch.battle-traumas.bt-000000000001",
+      "img": "systems/deathwatch/assets/icons/battle-trauma.svg",
+      "weight": 1,
+      "range": [1, 2],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "bt-result-00002",
+      "type": "document",
+      "name": "",
+      "description": "Compendium.deathwatch.battle-traumas.bt-000000000002",
+      "img": "systems/deathwatch/assets/icons/battle-trauma.svg",
+      "weight": 1,
+      "range": [3, 4],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "bt-result-00003",
+      "type": "document",
+      "name": "",
+      "description": "Compendium.deathwatch.battle-traumas.bt-000000000003",
+      "img": "systems/deathwatch/assets/icons/battle-trauma.svg",
+      "weight": 1,
+      "range": [5, 6],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "bt-result-00004",
+      "type": "document",
+      "name": "",
+      "description": "Compendium.deathwatch.battle-traumas.bt-000000000004",
+      "img": "systems/deathwatch/assets/icons/battle-trauma.svg",
+      "weight": 1,
+      "range": [7, 8],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "bt-result-00005",
+      "type": "document",
+      "name": "",
+      "description": "Compendium.deathwatch.battle-traumas.bt-000000000005",
+      "img": "systems/deathwatch/assets/icons/battle-trauma.svg",
+      "weight": 1,
+      "range": [9, 10],
+      "drawn": false,
+      "flags": {}
+    }
+  ]
+}

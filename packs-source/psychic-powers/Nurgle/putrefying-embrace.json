@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000086",
+  "name": "Putrefying Embrace",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/nurgle.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "216",
+    "key": "putrefying-embrace",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 200,
+    "class": "Nurgle",
+    "description": "<p><strong>Prerequisites:</strong> Mark of Nurgle</p><p><strong>Focus Power:</strong> Very Hard (-30) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p><strong>Alternate Names:</strong> Epidemic Touch, Hand of Filth</p><p>The Sorcerer reaches out with arms dripping in foulness, to corrupt anything he touches. A single touch spreads stinking pus and other vile fluids, defiling anything they are left upon.</p><p>The sorcerer's unarmed melee attacks deal 1d10+Psy Rating I Damage and gain the Toxic (3) Quality, and he counts as having the Deadly Natural Weapons Trait. The Sorcerer's Strength Bonus is not added to the Damage.</p>",
+    "damageFormula": "1d10+PR",
+    "penetrationFormula": "0",
+    "damageType": "Impact",
+    "attachedQualities": [{ "id": "toxic", "value": "3" }]
+  }
+}

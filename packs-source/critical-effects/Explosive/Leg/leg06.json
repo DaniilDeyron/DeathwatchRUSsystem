@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-leg0006",
+  "name": "Level 06",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "255",
+    "damageType": "Explosive",
+    "location": "Leg",
+    "description": "The concussive force of the blast shatters the target's leg bones and splits apart his flesh, inflicting 1d10 levels of Fatigue. The leg is broken and, until repaired, the target counts as having only one leg. In addition, the horrendous nature of the wound means that he now suffers from Blood Loss.",
+    "effects": []
+  }
+}

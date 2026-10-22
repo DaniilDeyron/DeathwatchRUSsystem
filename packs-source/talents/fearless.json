@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000002",
+  "name": "Fearless",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "118",
+    "prerequisite": "",
+    "benefit": "Immune to Fear and Pinning",
+    "description": "<p>Through hard experience with horrifying situations, fear no longer commands the character's actions. <b>The character is immune to the effects of Fear and Pinning</b>, but disengaging from combat or backing down from a fight requires a successful Willpower Test.</p>",
+    "cost": 1000,
+    "compendiumId": "tal00000000002",
+    "modifiers": [],
+    "rankRequired": 7
+  }
+}

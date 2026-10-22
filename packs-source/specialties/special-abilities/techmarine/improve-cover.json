@@ -1,0 +1,14 @@
+{
+  "_id": "sabi00000000010",
+  "name": "Improve Cover",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "89",
+    "key": "improve-cover",
+    "description": "<p>The Techmarine can add a number of Armour Points equal to his unmodified Intelligence Bonus to any cover (see page 246). Improving cover requires one Full Action.</p>",
+    "specialty": "Techmarine",
+    "specialtyImg": "systems/deathwatch/icons/specialty/techmarine.webp"
+  }
+}

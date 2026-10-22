@@ -1,0 +1,12 @@
+{
+  "_id": "overheats",
+  "name": "Overheats",
+  "type": "weapon-quality",
+  "img": "icons/svg/fire.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "overheats",
+    "description": "<p>A weapon with this Quality overheats on an attack roll of 91 or higher.</p>"
+  }
+}

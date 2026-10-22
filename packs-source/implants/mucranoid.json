@@ -1,0 +1,13 @@
+{
+  "name": "Mucranoid",
+  "type": "implant",
+  "img": "systems/deathwatch/icons/implants/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "36",
+    "equipped": true,
+    "summary": "Re-roll failed tests vs temperature extremes",
+    "description": "<p>The Space Marine may re-roll any failed Toughness Tests caused by temperature extremes, such as desert heat or the cold of outer space.</p>",
+    "modifiers": []
+  }
+}

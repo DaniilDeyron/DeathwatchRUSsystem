@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000012",
+  "name": "Bionic Respiratory System (Exceptional Craftsmanship)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/bionic-respiratory-system.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "178",
+    "equipped": false,
+    "description": "<p>Common bionic lungs and implanted respiratory systems mimic the action of human lungs and keep the body supplied with oxygen. Characters with such a system installed gain a +20 bonus to Toughness Tests made to resist airborne toxins and gas weapons.</p><p><strong>Exceptional Craftsmanship:</strong> Counts as a full life support system. If for any reason the user's power armour loses integrity or his own respiratory system fails, his bionic lungs keep his blood oxygenated, allowing him to survive in vacuum, toxic atmospheres, or underwater indefinitely. If desired, Exceptional bionic lungs may be designed to go undetected by scans.</p>",
+    "modifiers": [],
+    "req": 10,
+    "renown": "Respected",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

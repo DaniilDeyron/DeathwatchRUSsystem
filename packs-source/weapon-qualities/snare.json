@@ -1,0 +1,13 @@
+{
+  "_id": "snare",
+  "name": "Snare",
+  "type": "weapon-quality",
+  "img": "icons/svg/net.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "snare",
+    "value": "",
+    "description": "<p>Weapons with this Quality are designed to entangle enemies. On a successful hit, the target must make an Agility Test or be immobilised. An immobilised target can attempt to burst the bonds (a Strength Test) or wriggle free (an Agility Test) on his Turn. The target is considered helpless until he escapes.</p>"
+  }
+}

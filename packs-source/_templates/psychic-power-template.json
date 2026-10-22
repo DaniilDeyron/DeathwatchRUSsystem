@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000001",
+  "name": "Psychic Power Name",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/generic.webp",
+  "system": {
+    "action": "Full",
+    "opposed": "No",
+    "range": "30m",
+    "sustained": "No",
+    "cost": 0,
+    "class": "",
+    "key": "psychic-power-key",
+    "description": "<p>Power description here.</p>",
+    "book": "Deathwatch Core Rulebook",
+    "page": "194"
+  }
+}

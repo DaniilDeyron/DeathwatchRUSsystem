@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000004",
+  "name": "Furious Charge",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "221",
+    "key": "furious-charge",
+    "description": "<p>Often the only way to break a foe is to charge into their midst and hack them down. Using this ability, the Battle-Brother and those in Support Range of him may make an immediate Charge Move and a Standard Attack with a melee weapon. In addition, such is the fury of such an attack that all Battle-Brothers involved may re-roll Damage for their attacks.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>5</td><td>Kill-team can make Multiple Attacks instead of a Standard Attack with melee weapons</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Kill-team in Support Range may Charge Move + Standard Attack with melee weapons; may re-roll Damage",
+    "improvements": [
+      {
+        "rank": 5,
+        "effect": "Kill-team can make Multiple Attacks instead of a Standard Attack with melee weapons"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 3,
+    "sustained": false,
+    "action": "free"
+  }
+}

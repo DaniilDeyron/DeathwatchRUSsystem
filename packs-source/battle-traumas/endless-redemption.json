@@ -1,0 +1,24 @@
+{
+  "_id": "bt-000000000005",
+  "name": "Endless Redemption",
+  "type": "battle-trauma",
+  "img": "systems/deathwatch/icons/battle-trauma/endless-redemption.webp",
+  "system": {
+    "description": "<p>Some Battle-Brothers feel the weight of the Imperium on their shoulders and consider themselves solely responsible for the preservation and protection of the Emperor's domain. This is where the lines of duty and fanaticism can become blurred, and the reality of battle becomes mired in the individual's personal zeal. This is known as the endless redemption, a sin of duty carried by the Battle-Brother that can never be repaid regardless of the amount of glory or blood laid at its feet.</p><p>The Battle-Brother is driven by duty and must not fail at all costs. When undertaking a Mission, he must attempt to complete (or push his Kill-team to complete) all Objectives regardless of cost and danger. In extreme circumstances the GM may allow the character a Challenging (+0) Willpower Test to resist this duty and retreat if attempting an Objective would mean almost certain death.</p>",
+    "book": "Deathwatch Core Rulebook",
+    "page": "279",
+    "key": "endless-redemption",
+    "triggerType": "always",
+    "effectType": "behavior",
+    "modifier": 0,
+    "modifierTarget": "",
+    "cohesionPenalty": 0,
+    "canResist": true,
+    "resistDifficulty": "challenging"
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": 0 }
+}

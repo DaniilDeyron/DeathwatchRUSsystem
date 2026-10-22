@@ -1,0 +1,615 @@
+/* Mental State Tab Styling */
+
+.mental-state-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Corruption & Insanity Side-by-Side Panels */
+.mental-state-tracking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.mental-state-panel {
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.corruption-panel {
+  border-color: #8B0000;
+}
+
+.insanity-panel {
+  border-color: #4B0082;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 1em;
+  color: #d4a574;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Value Display */
+.value-display {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px 0;
+}
+
+.value-number {
+  font-size: 1.3em;
+  color: #d4a574;
+}
+
+.value-separator {
+  color: #888;
+  margin: 0 5px;
+}
+
+.value-max {
+  font-size: 0.7em;
+  color: #aaa;
+}
+
+/* Progress Bars */
+.progress-bar-wrapper {
+  margin: 8px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #444;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Status Text */
+.status-text {
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corruption-status {
+  color: #ff6b6b;
+}
+
+.insanity-status {
+  color: #9370DB;
+}
+
+/* Secondary Info (Insanity Panel Only) */
+.secondary-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+}
+
+.info-label {
+  color: #aaa;
+}
+
+.info-value {
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+.info-value.level-0 { color: #B19CD9; }
+.info-value.level-1 { color: #9370DB; }
+.info-value.level-2 { color: #6A0DAD; }
+.info-value.level-3 { color: #4B0082; }
+
+.info-value.trauma-mod {
+  color: #ff6b6b;
+}
+
+.info-value.curse-level {
+  color: #FFD700;
+}
+
+/* Panel Actions */
+.panel-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.panel-btn {
+  flex: 1;
+  padding: 6px 10px;
+  background: rgba(100, 100, 150, 0.3);
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.panel-btn:hover {
+  background: rgba(100, 100, 150, 0.5);
+  border-color: #888;
+  transform: translateY(-1px);
+}
+
+.panel-btn i {
+  font-size: 0.9em;
+}
+
+.view-history-btn {
+  background: rgba(80, 80, 120, 0.3);
+}
+
+.gm-adjust-btn {
+  background: rgba(100, 100, 150, 0.3);
+}
+
+.manual-test-btn {
+  background: rgba(150, 100, 100, 0.3);
+}
+
+.purchase-btn {
+  background: rgba(100, 150, 100, 0.3);
+  border-color: #4ecca3;
+}
+
+.purchase-btn:hover {
+  background: rgba(100, 150, 100, 0.5);
+  border-color: #4ecca3;
+}
+
+/* Section Cards */
+.section-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #666;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.section-header {
+  margin: 0 0 15px 0;
+  color: #d4a574;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #555;
+}
+
+.section-header i {
+  font-size: 1.1em;
+}
+
+.count-badge {
+  font-size: 0.85em;
+  color: #aaa;
+  font-weight: normal;
+  margin-left: auto;
+}
+
+/* Battle Traumas */
+.trauma-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trauma-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 15px;
+  transition: all 0.2s ease;
+}
+
+.trauma-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #777;
+}
+
+.trauma-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.trauma-name-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.trauma-image {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  border: 1px solid #666;
+  flex-shrink: 0;
+}
+
+.trauma-name {
+  margin: 0;
+  font-size: 1.1em;
+  color: #d4a574;
+  font-weight: bold;
+}
+
+.trauma-name.clickable {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.trauma-name.clickable:hover {
+  color: #e5b68a;
+}
+
+.trauma-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.trauma-btn {
+  padding: 6px 12px;
+  background: rgba(100, 100, 150, 0.3);
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.trauma-btn:hover {
+  background: rgba(100, 100, 150, 0.5);
+  border-color: #888;
+}
+
+.trauma-btn.edit-btn:hover {
+  background: rgba(100, 120, 150, 0.5);
+}
+
+.trauma-btn.delete-btn:hover {
+  background: rgba(150, 80, 80, 0.5);
+}
+
+.trauma-trigger {
+  font-size: 0.9em;
+  color: #ccc;
+  padding-left: 52px;
+}
+
+.resist-info {
+  color: #aaa;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+}
+
+.empty-state p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.emperor-protects {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Primarch's Curse */
+.curse-active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.curse-dormant {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+}
+
+.curse-dormant p {
+  margin: 5px 0;
+}
+
+.dormant-reason {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.curse-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.curse-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.curse-level-badge {
+  background: rgba(255, 215, 0, 0.2);
+  border: 1px solid #FFD700;
+  color: #FFD700;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* Curse Level Progress Indicator */
+.curse-level-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 15px 0;
+}
+
+.level-node {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #666;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.level-node.active {
+  border-color: #FFD700;
+  background: rgba(255, 215, 0, 0.3);
+  color: #FFD700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.level-connector {
+  width: 60px;
+  height: 3px;
+  background: #555;
+  transition: all 0.3s ease;
+}
+
+.level-connector.active {
+  background: #FFD700;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Curse Current Level Display */
+.curse-current-level {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.curse-level-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #d4a574;
+  margin-bottom: 10px;
+}
+
+.curse-description {
+  font-size: 0.95em;
+  color: #ccc;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.curse-effect {
+  font-size: 0.9em;
+  color: #e0e0e0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-left: 3px solid #FFD700;
+  border-radius: 3px;
+}
+
+.curse-effect strong {
+  color: #d4a574;
+}
+
+.view-curse-btn {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: #FFD700;
+  color: #FFD700;
+  width: auto;
+  margin: 0 auto;
+}
+
+.view-curse-btn:hover {
+  background: rgba(255, 215, 0, 0.3);
+  border-color: #FFD700;
+}
+
+/* History Dialog Styling */
+.history-dialog {
+  padding: 10px;
+}
+
+.history-table-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.history-table thead {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.history-table th {
+  padding: 10px;
+  text-align: left;
+  color: #d4a574;
+  font-weight: bold;
+  border-bottom: 2px solid #666;
+}
+
+.history-table td {
+  padding: 8px 10px;
+  color: #ccc;
+  border-bottom: 1px solid #444;
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.history-table .points-cell {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.history-table .points-negative {
+  color: #4ecca3;
+}
+
+.history-table .test-success {
+  color: #4ecca3;
+}
+
+.history-table .test-failure {
+  color: #ff6b6b;
+}
+
+.history-summary {
+  text-align: center;
+  font-size: 1.1em;
+  color: #e0e0e0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.history-summary strong {
+  color: #d4a574;
+}
+
+.history-table .delete-cell {
+  text-align: center;
+}
+
+.history-table .delete-history-btn {
+  padding: 4px 8px;
+  background: rgba(150, 80, 80, 0.3);
+  border: 1px solid #666;
+  border-radius: 3px;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+
+.history-table .delete-history-btn:hover {
+  background: rgba(150, 80, 80, 0.6);
+  border-color: #888;
+  color: #ff8888;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .mental-state-tracking {
+    grid-template-columns: 1fr;
+  }
+
+  .value-display {
+    font-size: 1.5em;
+  }
+
+  .trauma-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .trauma-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

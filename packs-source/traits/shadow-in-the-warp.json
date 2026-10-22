@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000032",
+  "name": "Shadow in the Warp (Tyranid)",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "134",
+    "description": "<p>The Tyranid creature floods the warp around them with the all enveloping cloud of interference which is the signature of the Hive Mind. Any non-Tyranid psyker that attempts to use a psychic power within a range equal to the creature's Willpower in metres suffer a –20 penalty to their tests to use psychic powers (see pages 185 in Chapter VI: Psychic Powers).</p>",
+    "modifiers": []
+  }
+}

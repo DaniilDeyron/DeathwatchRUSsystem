@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000079",
+  "name": "Warptime",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/unaligned.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "214",
+    "key": "warptime",
+    "range": "Self",
+    "sustained": "Free Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 400,
+    "class": "Unaligned",
+    "description": "<p><strong>Prerequisites:</strong> Psy Rating 4</p><p><strong>Focus Power:</strong> Difficult (-10) Willpower Test</p><p><strong>Subtype:</strong> Concentration</p><p>The timeless nature of the warp grants the cunning Sorcerer the means to defy the normal limits of time, hastening his movements and reflexes such that his enemies appear to be moving in slow motion. Many liken it to the terrifying speed of Khorne's hunting hound, a figure that holds particular horror for psykers.</p><p>The Sorcerer gains the Unnatural Weapon Skill, Unnatural Ballistic Skill and Unnatural Agility traits, all at values equal to his Psy Rating.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

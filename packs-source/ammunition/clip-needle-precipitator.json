@@ -1,0 +1,15 @@
+{
+  "_id": "clip00000000022",
+  "name": "Needle Precipitator",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/needle-precipitator.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "158",
+    "capacity": { "value": 6, "max": 6 },
+    "quantity": 1,
+    "req": 0,
+    "renown": "",
+    "description": "<p>These devices can be issued with weapons that use needle rounds, and are often built directly into the holster or carrying case for the weapon. A precipitator crystallises liquid or powdered chemicals into the rounds fired by needle weapons. One dose of a drug or toxin yields one shot of ammunition. See Drugs and Consumables on page 172 for toxin options. Unless otherwise stated, any toxin may be precipitated into needle rounds.</p><p><b>Used With</b>: Needle rifles.</p>"
+  }
+}

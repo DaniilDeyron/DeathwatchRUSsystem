@@ -1,0 +1,8 @@
+<div class="fatigue-box {{#if system.fatigue.unconscious}}unconscious{{/if}}">
+  <h4 class="box-title">Fatigue</h4>
+  <div class="fatigue-center">{{system.fatigue.value}}</div>
+  <input class="fatigue-center-input" name="system.fatigue.value" type="text" value="{{system.fatigue.value}}" data-dtype="Number" title="Current Fatigue" />
+  <div class="fatigue-modifiers flexrow">
+    <span class="fatigue-max" title="Max Fatigue = Toughness Bonus&#10;{{#if system.fatigue.unconscious}}UNCONSCIOUS (Fatigue > TB){{else if (gt system.fatigue.value 0)}}-10 penalty to all tests{{/if}}">{{system.fatigue.max}}</span>
+  </div>
+</div>

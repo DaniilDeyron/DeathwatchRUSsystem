@@ -1,0 +1,16 @@
+{
+  "_id": "psychichood0001",
+  "name": "Psychic Hood",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/psychic-hood.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "171",
+    "equipped": false,
+    "wt": 15,
+    "req": 25,
+    "renown": "Distinguished",
+    "shortDescription": "General",
+    "description": "<p>The arcane devices known as psychic hoods are lined with psi-enhancing crystals that amplify the wearer's psychic powers. Some would say more importantly, they render the wearer capable of nullifying the effects that other psykers have on the warp nearby. A character equipped with a psychic hood may spend his Reaction to attempt to nullify a psychic technique being used by another psyker within a number of metres equal to the character's Willpower. This attempt should be declared before the enemy psyker makes his Focus Power roll. The psychic hood's wearer first makes a <strong>Focus Power (Willpower) Test</strong>. Every degree of success imposes a –10 penalty on the enemy's Focus Power Test. Alternatively, the wearer may attempt to nullify the effects of a Psychic Technique on himself only, regardless of Range. To do this, the character takes a <strong>Focus Power (Willpower) Test</strong>. If he succeeds, he is unaffected by the Psychic Technique, but any other targets or areas are affected normally. A nullification Test may trigger psychic phenomena based on Psychic Strength as normal. Additionally, the psychic hood grants the wearer a +5 bonus to all Focus Power Tests, including nullification attempts</p>"
+  }
+}

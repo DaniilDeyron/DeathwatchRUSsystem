@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000285",
+  "name": "Touched by the Fates",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "Mark Of the Xenos",
+    "page": "15",
+    "prerequisite": "",
+    "benefit": "Possesses Fate Points for narrative use",
+    "description": "<p>This character has been touched by fate and possesses Fate Points that can be used to alter destiny. <strong>The Kroot Shaper possesses 2 Fate Points.</strong></p><p>Fate Points allow a character to re-roll a failed Test, avoid death, or perform other remarkable feats as determined by the GM. Once spent, Fate Points are typically not replenished for NPCs, though exceptional circumstances or GM discretion may allow it.</p><p><em>Note: This talent is primarily narrative for NPCs and represents the character's exceptional destiny and resilience.</em></p>",
+    "compendiumId": "tal00000000285",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,16 @@
+{{#each system.characteristics as |characteristic key|}}
+<div class="characteristic" data-characteristic="{{key}}">
+  <h4 class="characteristic-name box-title rollable" data-action="rollCharacteristic" data-roll-type="characteristic" data-roll="d100" data-characteristic="{{key}}" data-label="{{characteristic.label}}" data-tooltip="{{#if characteristic.modifiers.length}}<strong>Modifiers:</strong><br>{{#each characteristic.modifiers}}{{this.name}}: {{numberFormat this.value decimals=0 sign=true}}<br>{{/each}}{{/if}}">{{characteristic.label}}</h4>
+  <div class="characteristic-modifiers flexrow">
+    <span class="characteristic-mod rollable" data-action="rollCharacteristic" data-roll-type="characteristic" data-roll="d100" data-characteristic="{{key}}" data-label="{{characteristic.label}}" title="{{#if characteristic.bonusModifiers.length}}Characteristic Bonus&#10;&#10;Base: {{numberFormat characteristic.baseMod decimals=0 sign=true}}&#10;{{#each characteristic.bonusModifiers}}{{this.name}}: {{#if this.display}}{{this.display}}{{else}}{{numberFormat this.value decimals=0 sign=true}}{{/if}} ({{this.source}})&#10;{{/each}}Total: {{numberFormat characteristic.mod decimals=0 sign=true}}{{/if}}">{{numberFormat characteristic.mod decimals=0 sign=true}}</span>
+    <div class="characteristic-center">{{characteristic.value}}</div>
+    <input class="characteristic-base" name="system.characteristics.{{key}}.base" type="text" value="{{characteristic.base}}" data-dtype="Number" placeholder="10"/>
+  </div>
+  <div class="characteristic-advances">
+    <input type="checkbox" name="system.characteristics.{{key}}.advances.simple" {{checked characteristic.advances.simple}} title="Simple (+5)" />
+    <input type="checkbox" name="system.characteristics.{{key}}.advances.intermediate" {{checked characteristic.advances.intermediate}} title="Intermediate (+5)" />
+    <input type="checkbox" name="system.characteristics.{{key}}.advances.trained" {{checked characteristic.advances.trained}} title="Trained (+5)" />
+    <input type="checkbox" name="system.characteristics.{{key}}.advances.expert" {{checked characteristic.advances.expert}} title="Expert (+5)" />
+  </div>
+</div>
+{{/each}}

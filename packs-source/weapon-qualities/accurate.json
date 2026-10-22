@@ -1,0 +1,13 @@
+{
+  "_id": "accurate",
+  "name": "Accurate",
+  "type": "weapon-quality",
+  "img": "icons/svg/target.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "142",
+    "key": "accurate",
+    "value": "",
+    "description": "<p>Some weapons are designed with precision in mind and respond superbly in skilled hands. They grant an additional bonus of +10 to the firer’s Ballistic Skill when used with an Aim Action in addition to the bonus Aiming grants. When firing a single shot from a single Accurate Basic Weapon, if such an attack also uses the Aim action, it gains an extra 1d10 of damage for every two degrees of success to a maximum of two extra d10.</p>"
+  }
+}

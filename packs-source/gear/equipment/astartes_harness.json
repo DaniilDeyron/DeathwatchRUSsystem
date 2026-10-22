@@ -1,0 +1,27 @@
+{
+  "_id": "astartesharness1",
+  "name": "Astartes Harness",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/harness.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "171",
+    "equipped": false,
+    "wt": 8,
+    "req": 4,
+    "renown": "",
+    "shortDescription": "General",
+    "description": "<p>Offering more safety than a grapnel but less noise and bulk than a jump pack, this Battle-Brother-sized harness can be used to aid in safely descending from terrain or buildings. The simple harness fits over a character's power amour. A hook-shaped magnetic clip can then be anchored to a wide variety of surfaces as the coiled safety line slowly unspools. The Battle-Brother gains a +30 bonus to Climb Tests, and will not fall if he fails.</p>",
+    "modifiers": [
+      {
+        "_id": "harnessmod0000001",
+        "name": "Climb Bonus",
+        "modifier": "30",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "climb",
+        "enabled": true
+      }
+    ]
+  }
+}

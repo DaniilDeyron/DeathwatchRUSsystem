@@ -1,0 +1,14 @@
+{
+  "_id": "explosive-arm0007",
+  "name": "Level 07",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "254",
+    "damageType": "Explosive",
+    "location": "Arm",
+    "description": "In a violent hail of flesh, the arm is blown apart. The target must immediately make a Challenging (+0) Toughness Test or die from shock. On a success, the target is Stunned for 1d10 rounds, takes 1d10 levels of Fatigue, and suffers Blood Loss. He now only has one arm.",
+    "effects": []
+  }
+}

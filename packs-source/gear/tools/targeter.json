@@ -1,0 +1,15 @@
+{
+  "_id": "targeter0000001",
+  "name": "Targeter",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/targeter.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 4,
+    "req": 25,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>The Space Marine version of a Targeter encompasses several sights connected to a guidance cogitator array that improves overall accuracy. Rather than being hard-wired to a specific weapon, the array fixes at the shoulder or backpack unit and links into the power armour’s general targeting systems, providing its benefits to all ranged weapons the user wields regardless of their Class.</p><p>A Targeter <b>combines the effects of a Red-Dot Laser Sight and Telescopic Sight</b>. In addition, its sophisticated target-lock system makes evading a shot from a weapon guided by it extremely difficult. <b>Attempts to Dodge ranged attacks from a character equipped with a Targeter suffer a –10 penalty.</b></p>"
+  }
+}

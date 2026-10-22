@@ -1,0 +1,28 @@
+{
+  "_id": "smch00000000002",
+  "name": "Blood Frenzy",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "217",
+    "key": "blood-frenzy",
+    "description": "<p>Blood Angels possess a savagery in combat that has its roots deep in the history of their Chapter. It is, however, a trait that can serve them well in close quarters combat where strength and speed are vital. Once per combat, a Battle-Brother of the Blood Angels Chapter may summon up a Blood Frenzy. While under the effects of this ability, the Battle-Brother may re-roll Damage dice with melee weapons. In the case of melee weapons that inflict multiple dice of Damage, all dice or none must be re-rolled. In addition, such is the brutality of his attacks that he scores Righteous Fury on a dice result of 9 or 10 rather than just 10. This ability lasts a number of rounds equal to the Battle-Brother's Rank, divided by 2 (rounding up).</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Melee weapon Penetration increased by +2</td></tr><tr><td>5</td><td>Additional melee weapon Penetration rises to +4</td></tr><tr><td>7</td><td>Righteous Fury triggers on 8, 9, or 10</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Blood Angels",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/blood_angels.webp",
+    "effect": "Re-roll melee Damage dice (all or none); Righteous Fury on 9+ — Rounds equal to ceil(Rank ÷ 2) (once per combat)",
+    "improvements": [
+      { "rank": 3, "effect": "Melee weapon Penetration increased by +2" },
+      {
+        "rank": 5,
+        "effect": "Additional melee weapon Penetration rises to +4"
+      },
+      { "rank": 7, "effect": "Righteous Fury triggers on 8, 9, or 10" }
+    ]
+  }
+}

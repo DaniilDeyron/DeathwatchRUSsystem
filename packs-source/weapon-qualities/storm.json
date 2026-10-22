@@ -1,0 +1,13 @@
+{
+  "_id": "storm",
+  "name": "Storm",
+  "type": "weapon-quality",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "storm",
+    "value": "",
+    "description": "<p>A weapon with the Storm Quality unleashes shots at rapid speed, often through use of a double-barrelled design. This Quality doubles the number of hits inflicted on the target and the amount of ammunition expended. For example, when firing a weapon with the Storm Quality in fully automatic mode, each degree of success yields two additional hits (to a maximum of twice the weapon's Full Automatic rate of fire).</p>"
+  }
+}

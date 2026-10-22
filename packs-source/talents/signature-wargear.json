@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000242",
+  "name": "Signature Wargear",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "126",
+    "prerequisite": "",
+    "benefit": "One item (Req 20 or less) permanently in possession without Requisition",
+    "description": "<p>A tool of war has served the Battle-Brother in countless victories, and is always at his side. <b>Select one item from the Armoury (excluding unusual ammunition) with a Requisition cost of 20 or less. This Requisition limit may include Upgrades and/or Craftsmanship modifiers in its calculation. (For example, a Master-Crafted Flamer.) This item is permanently in the Battle-Brother's possession without the need to Requisition it, effectively becoming standard issue for him. He must meet any Renown requirement for the item. A Battle-Brother may purchase this Talent multiple times in accordance with his Career Advances. Each time, note the item it applies to such as Signature Wargear (Master-Crafted Flamer).</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000242",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000005",
+  "name": "Lightning Strike",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "222",
+    "key": "lightning-strike",
+    "description": "<p>The Storm Wardens know well the doctrine of strike first, strike fast and practise this both in personal duels and their squad tactics. A Battle-Brother of the Storm Wardens Chapter may order a Lightning Strike at the start of any combat where neither side is Surprised. The Battle-Brother and those in Support Range of him immediately gain a Surprise Round just as if they had Surprised their foes.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Also roll two dice and choose the highest when determining Initiative for the following combat</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Storm Wardens",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/wtorm_wardens.webp",
+    "effect": "At combat start (no Surprise): Kill-team in Support Range gains a Surprise Round",
+    "improvements": [
+      {
+        "rank": 3,
+        "effect": "Also roll two dice and choose the highest when determining Initiative for the following combat"
+      }
+    ],
+    "abilityType": "attack-pattern",
+    "cohesionCost": 2,
+    "sustained": false,
+    "action": "reaction"
+  }
+}

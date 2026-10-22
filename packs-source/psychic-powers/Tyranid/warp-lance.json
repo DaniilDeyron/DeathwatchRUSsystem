@@ -1,0 +1,21 @@
+{
+  "_id": "psy00000000068",
+  "name": "Warp Lance",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/tyranid.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "30",
+    "key": "warp-lance",
+    "range": "30m x PR",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 0,
+    "class": "Tyranid",
+    "description": "<p>More focused than a Warp Blast, the Warp Lance is primarily used against heavily armoured targets and vehicles. Taking the form of a single concentrated beam of energy, it can strike a single target within range. The Zoanthrope does not need to hit with the Warp Lance, though its Focus Power Test is modified as if it were making a ranged attack at the target, taking into account such things as range and concealment. Warp Lance inflicts 2d10 Energy Damage x PR, with a Penetration of 5 x PR.</p>",
+    "damageFormula": "2d10*PR",
+    "penetrationFormula": "5*PR",
+    "damageType": "Energy"
+  }
+}

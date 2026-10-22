@@ -1,0 +1,16 @@
+{
+  "_id": "clip00000000025",
+  "name": "Witch Bolts",
+  "type": "ammunition",
+  "img": "systems/deathwatch/icons/ammo/ammo-bolter.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "160",
+    "capacity": { "value": 30, "max": 30 },
+    "quantity": 1,
+    "req": 12,
+    "renown": "Distinguished",
+    "description": "<p>Based on a Black Templars design, these bolts release a small core of neuro-inhibitors laced with warp-reductive compounds that disrupt a creature’s connection to the warp.</p><p><b>Effects</b>: In addition to taking normal Damage from the weapon, any creature with a Psy Rating who takes Damage from a witch bolt reduces its Psy Rating by 1 for 1d10 Rounds each time. During this time, the creature may not Push its Psychic Strength. Additionally, creatures with Warp Instability must immediately make a Willpower Test to check for disruption as described in the Trait.</p><p><b>Used With</b>: All bolt weapons.</p>",
+    "modifiers": []
+  }
+}

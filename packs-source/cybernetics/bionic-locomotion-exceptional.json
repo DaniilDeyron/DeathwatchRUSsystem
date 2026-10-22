@@ -1,0 +1,30 @@
+{
+  "_id": "cyb000000010",
+  "name": "Bionic Locomotion (Exceptional Craftsmanship)",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/bionic-locomotion.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "178",
+    "equipped": false,
+    "description": "<p>Common locomotion bionics (legs, etc.) must be fully integrated into the spine and nervous system to function properly. Exceptional versions of these systems provide enhanced mobility and performance.</p><p><strong>Exceptional Craftsmanship:</strong> Grants the Sprint Talent, allowing the character to move at triple their normal movement rate as a Full Action once per encounter. In addition, adds a +20 bonus to Tests made to jump or leap.</p>",
+    "modifiers": [
+      {
+        "_id": "mod000000008",
+        "name": "Bionic Locomotion Jump/Leap Bonus",
+        "modifier": 20,
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "athletics",
+        "enabled": true
+      }
+    ],
+    "req": 15,
+    "renown": "Respected",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

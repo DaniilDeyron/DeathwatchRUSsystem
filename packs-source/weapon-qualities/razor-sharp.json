@@ -1,0 +1,13 @@
+{
+  "_id": "razor-sharp",
+  "name": "Razor Sharp",
+  "type": "weapon-quality",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "143",
+    "key": "razor-sharp",
+    "value": "",
+    "description": "<p>The shearing edge of this weapon can glide through the most advanced armour as though it were primitive tin. When rolling to attack with this weapon, if the attack roll results in two or more Degrees of Success, double the weapon's Penetration.</p>"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000127",
+  "name": "Heightened Senses (Sight)",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "prerequisite": "PER 30",
+    "benefit": "+10 to Awareness Tests involving sight",
+    "description": "<p>Either genetics or augmetics have made one of the character’s senses are superior to others. When the character gains this Talent, select one of the five senses. The character gains a <b>+10 bonus to any tests specifically involving this sense</b>. Thus, Heightened Senses (Sight) would apply to an Awareness Test to see a distant flock of shale crows, but <b>not to a Ballistic Skill Test or a Weapon Skill Test simply because the character is using his eyes</b>.</p>",
+    "cost": 0,
+    "compendiumId": "tal00000000127",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "smch00000000003",
+  "name": "Stoic Defence",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "217",
+    "key": "stoic-defence",
+    "description": "<p>Dark Angels are stubborn in attack and intractable in defence, holding their ground against even the most furious of assaults. Once per combat a Battle-Brother of the Dark Angels Chapter may enact a Stoic Defence. The Space Marine gains 6 Temporary Wounds and his maximum Movement Rate is reduced to 1/2 his Agility Bonus, rounding up (most Space Marines with this ability hold their chosen position and do not advance or retreat!). Unlike normal Wounds, these bonus Wounds are removed when affected by the Damage of any successful attack, and are always removed first before applying Damage to the Battle-Brother's normal Wounds. These bonus Wounds will also be lost if the Battle-Brother leaves his chosen location either by his own choice or involuntarily.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>3</td><td>Temporary Wounds increase to 12</td></tr><tr><td>5</td><td>May move up to Agility Bonus metres per round without losing the effect</td></tr><tr><td>7</td><td>Temporary Wounds increase to 18</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "solo",
+    "requiredRank": 1,
+    "chapter": "Dark Angels",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp",
+    "effect": "Gain 6 Temporary Wounds; movement reduced to half AG Bonus — lost if you leave position (once per combat)",
+    "improvements": [
+      { "rank": 3, "effect": "Temporary Wounds increase to 12" },
+      {
+        "rank": 5,
+        "effect": "May move up to Agility Bonus metres per round without losing the effect"
+      },
+      { "rank": 7, "effect": "Temporary Wounds increase to 18" }
+    ]
+  }
+}

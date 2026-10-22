@@ -1,0 +1,25 @@
+{
+  "_id": "bolt00000000004",
+  "name": "Astartes Storm Bolter",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/bolter-storm.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "145",
+    "class": "Basic",
+    "dmg": "1d10+9",
+    "dmgType": "Explosive",
+    "penetration": "5",
+    "range": "100",
+    "rof": "S/4/-",
+    "clip": "60",
+    "reload": "2 Full",
+    "equipped": false,
+    "wt": 26,
+    "req": 20,
+    "renown": "Respected",
+    "attachedQualities": [{ "id": "tearing" }, { "id": "storm" }],
+    "description": "<p>Storm bolters originated and still reside almost exclusively in the Adeptus Astartes. These weapons resemble two bolters with a single casing and a single trigger. They can lay down a barrage of fire rivalling heavy weapons, but with better portability. A storm bolter uses twin clips to feed its dual firing mechanisms.</p>",
+    "modifiers": []
+  }
+}

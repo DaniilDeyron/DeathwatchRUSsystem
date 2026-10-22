@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000003",
+  "name": "Astartes Servo-Harness",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/servo-harness.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "177",
+    "equipped": false,
+    "description": "<p>Like a servo-arm, a full servo-harness integrates with the Techmarine's power armour and is controlled through the same spine interface that makes him one with his armour. Radiating from a boosted fusion backpack capable of powering them all, this cluster of auxiliary limbs aid in battlefield repairs as well as combat.</p><p>At a minimum, a servo-harness consists of two servo-arms, a Combi-tool, a fyceline torch, and a plasma cutter. The torch is identical to an Astartes flamer. The plasma cutter can cut through a metre of adamantine plating up to 20 centimetres thick every minute. It may also be used as though it were an Astartes Plasma Pistol with a Range of 10m and no option to fire on Maximal Mode.</p><p><strong>Machine Spirit:</strong> A character with Talents that make him capable of taking the Multiple Attacks Action may use any weapon (or equivalent) on his servo-harness for any of the attacks he would normally be allowed, subject to all normal limitations including weapon Class. Additionally, the Techmarine may use his Reaction to make a single shot or strike with any one weapon on the harness.</p><p><strong>Requirements:</strong> Servo-Harness Integration Talent is required to use a Servo-Harness.</p><p><strong>Servo-Arms:</strong> The harness uses Strength of 75 with Unnatural Strength (X2), providing a Strength Bonus of 14 (7 × 2) for the two integrated servo-arms.</p>",
+    "modifiers": [],
+    "req": 50,
+    "renown": "Famed",
+    "replacesCharacteristic": "str",
+    "replacementValue": 75,
+    "unnaturalMultiplier": 2,
+    "replacementLabel": "Servo-Harness",
+    "canBeModified": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000012",
+  "name": "Kroot Gun",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/kroot-rifle.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Heavy",
+    "dmg": "3d10+8",
+    "dmgType": "Impact",
+    "penetration": "6",
+    "range": "150",
+    "rof": "S/2/-",
+    "clip": "10",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [],
+    "description": "<p>The Kroot Gun is a heavy weapon used by Kroot auxiliaries, firing high-velocity solid projectiles. It provides the Kroot with effective firepower against armored targets.</p>",
+    "modifiers": [],
+    "key": "kroot-gun"
+  }
+}

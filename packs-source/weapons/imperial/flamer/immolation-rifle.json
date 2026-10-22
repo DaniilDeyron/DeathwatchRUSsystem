@@ -1,0 +1,25 @@
+{
+  "_id": "flam00000000005",
+  "name": "Immolation Rifle",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/immolation-rifle.webp",
+  "system": {
+    "book": "Rites of Battle",
+    "page": "135",
+    "class": "Basic",
+    "dmg": "1d10+12",
+    "dmgType": "Energy",
+    "penetration": "2",
+    "range": "25",
+    "rof": "S/-/-",
+    "clip": "5",
+    "reload": "Full",
+    "equipped": false,
+    "wt": 5,
+    "req": 15,
+    "renown": "",
+    "attachedQualities": [{ "id": "flame" }],
+    "description": "<p>Not a flame weapon in the strictest sense, the Immolation Rifle is an ancient, exceedingly rare, and barely understood weapon possessed by Watch Fortress Erioch in limited numbers. It is a brutal anti-personnel weapon that fires a seething, short-range beam of intense heat. When used on lightly armoured or un-armoured targets, the beam sears and blisters exposed flesh. This causes a target intense pain and, with enough damage, these weapons can cook enemies alive. While they are incredibly lethal when used against organic foes, the beams cause no damage to inorganic objects like machinery, bulkheads, and weapons. This makes them extremely useful in boarding actions for use against massed crew, as well as in any situation where collateral damage needs to be minimised. While these weapons have the Flame Special Quality, they are unable to set things on fire.</p>",
+    "modifiers": []
+  }
+}

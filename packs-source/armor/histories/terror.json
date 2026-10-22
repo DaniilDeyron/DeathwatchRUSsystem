@@ -1,0 +1,12 @@
+{
+  "_id": "armorhist0000007",
+  "name": "Terror be thy friend",
+  "type": "armor-history",
+  "img": "systems/deathwatch/icons/armor/histories/terror.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "162",
+    "description": "<p>Though all suits of power armour are intimidating to say the least, this suit seems to project an air of menace and violence. Its power core periodically emits grumbles that are often confused with the growling of a wild beast. In combat, this turns into a ferocious howl and is truly a paralysing thing to face. Numerous attempts have been made to quiet this phenomena, but Tech-Priests have thus far been unable to appease the temperamental machine. Many bearers enhance this effect by adding terrifying reliquary inlays and scriptures of damnation, causing their impact on the weak souls of their enemies to increase considerably. The wearer gains the Fear (1) Trait against any foe engaged in melee with him (or increases his Fear Rating by 1 if he already possesses one).</p>",
+    "modifiers": []
+  }
+}

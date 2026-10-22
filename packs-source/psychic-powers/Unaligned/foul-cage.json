@@ -1,0 +1,26 @@
+{
+  "_id": "psy00000000075",
+  "name": "Foul Cage",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/unaligned.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "213",
+    "key": "foul-cage",
+    "range": "25 metres x Psy Rating",
+    "sustained": "Half Action",
+    "action": "Full Action",
+    "opposed": "Yes",
+    "cost": 300,
+    "class": "Unaligned",
+    "description": "<p><strong>Prerequisites:</strong> Psy Rating 4</p><p><strong>Focus Power:</strong> Opposed Challenging (+0) Willpower Test</p><p><strong>Subtype:</strong> Attack, Concentration</p><p>Great long bonds of warp-spawned ropes, chains, and lengths of barbed sinew erupt from the ground and wind themselves around any creatures within reach. These bonds ensnare and constrict as if alive, and sprout barbs and thorns which dig deep into the flesh of those so ensnared.</p><p>Foul Cage is a Psychic Blast with a radius equal to the power's Psy Rating, that deals 1d10+3 Rending Damage with the Crippling (1d10), Snare (2) and Tearing qualities.</p>",
+    "damageFormula": "1d10+3",
+    "penetrationFormula": "0",
+    "damageType": "Rending",
+    "attachedQualities": [
+      { "id": "crippling", "value": "1d10" },
+      { "id": "snare", "value": "2" },
+      { "id": "tearing" }
+    ]
+  }
+}

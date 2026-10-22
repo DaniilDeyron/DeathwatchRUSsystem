@@ -1,0 +1,25 @@
+{
+  "_id": "tau000000003",
+  "name": "Burst Cannon",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/tau-burst-cannon.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "",
+    "class": "Basic",
+    "dmg": "1d10+12",
+    "dmgType": "Energy",
+    "penetration": "4",
+    "range": "60",
+    "rof": "-/-/10",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [],
+    "description": "<p>Tau Burst Cannon</p>",
+    "modifiers": []
+  }
+}

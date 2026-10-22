@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000113",
+  "name": "Gunslinger",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "119",
+    "prerequisite": "BS 40, Two-Weapon Wielder",
+    "benefit": "Reduce Two-Weapon Fighting penalty by –10",
+    "description": "<p>The character has trained with pistols for so long that they are like extensions of his own body, barely requiring conscious thought to aim and fire. <b>When armed with two pistols, the character reduces the penalty for Two-Weapon Fighting by –10.</b> If the character also possesses the Ambidextrous Talent, the penalty is reduced to 0.</p>",
+    "compendiumId": "tal00000000113",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "sqch00000000012",
+  "name": "Rally Cry",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "rally-cry",
+    "description": "<p>Ultramarines are natural leaders and the embodiment of the Codex Astartes. In battle their purity and natural authority is a powerful force, able to rally their fellow Battle-Brothers and reinforce their will to fight. When a Battle-Brother uses this ability, it instantly restores a number of Cohesion equal to his Fellowship Bonus. The reverence the Ultramarines hold for their Primarch and the strength of will required to make a Rally Cry is such that a Battle-Brother may only use this ability once per game session.</p>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Ultramarines",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/ultramarines.webp",
+    "effect": "Instantly restores Cohesion equal to Fellowship Bonus (once per session)",
+    "improvements": [],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 0,
+    "sustained": false,
+    "action": "free"
+  }
+}

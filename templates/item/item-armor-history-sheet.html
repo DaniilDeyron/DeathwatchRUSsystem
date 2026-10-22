@@ -1,0 +1,85 @@
+<div class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="modifiers">Modifiers</a>
+        <a class="item" data-tab="source">Source</a>
+  </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{#if editable}}
+            <prose-mirror name="system.description"
+                          value="{{source.description}}"
+                          document-uuid="{{item.uuid}}"
+                          style="height: 100%;">
+            </prose-mirror>
+            {{else}}
+            <div class="editor" style="height: 100%; padding: 8px; overflow-y: auto;">
+              <div class="editor-content">{{{enriched.description}}}</div>
+            </div>
+            {{/if}}
+        </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            
+        </div>
+
+        {{!-- Modifiers Tab --}}
+        <div class="tab modifiers" data-group="primary" data-tab="modifiers">
+            <div class="modifiers-list" style="overflow-x: auto;">
+                <div class="items-header flexrow" style="min-width: 550px;">
+                    <div class="modifier-name">Name</div>
+                    <div class="modifier-mod">Modifier</div>
+                    <div class="modifier-type">Type</div>
+                    <div class="modifier-effect-type">Effect Type</div>
+                    <div class="modifier-value-affected">Value Affected</div>
+                    <div class="item-controls">
+                        <a class="item-control modifier-create" data-action="createModifier" title="Create Modifier"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                <ol class="items-list" style="min-width: 550px;">
+                    {{#each system.modifiers as |modifier id|}}
+                    <li class="item modifier flexrow" data-modifier-id="{{modifier._id}}">
+                        <div class="modifier-name">{{modifier.name}}</div>
+                        <div class="modifier-mod">{{modifier.modifier}}</div>
+                        <div class="modifier-type">{{modifier.type}}</div>
+                        <div class="modifier-effect-type">{{modifier.effectType}}</div>
+                        <div class="modifier-value-affected">{{modifier.valueAffected}}</div>
+                        <div class="item-controls">
+                            <a class="item-control modifier-toggle" data-action="toggleModifier" title="{{#if modifier.enabled}}Disable{{else}}Enable{{/if}}"><i class="fas {{#if modifier.enabled}}fa-check{{else}}fa-times{{/if}}"></i></a>
+                            <a class="item-control modifier-edit" data-action="editModifier" title="Edit Modifier"><i class="fas fa-edit"></i></a>
+                            <a class="item-control modifier-delete" data-action="deleteModifier" title="Delete Modifier"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+    <div class="tab" data-group="primary" data-tab="source">
+      <div class="form-group flexrow">
+        <div class="flex1">
+          <label>Book:</label>
+          <input type="text" name="system.book" value="{{system.book}}" />
+        </div>
+        <div class="flex1">
+          <label>Page:</label>
+          <input type="text" name="system.page" value="{{system.page}}" />
+        </div>
+      </div>
+    </div>
+
+    </section>
+</div>

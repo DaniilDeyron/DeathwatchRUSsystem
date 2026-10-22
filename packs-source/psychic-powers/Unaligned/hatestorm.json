@@ -1,0 +1,22 @@
+{
+  "_id": "psy00000000077",
+  "name": "Hatestorm",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/unaligned.webp",
+  "system": {
+    "book": "Black Crusade",
+    "page": "214",
+    "key": "hatestorm",
+    "range": "5 metres x Psy Rating radius",
+    "sustained": "Half Action",
+    "action": "Half Action",
+    "opposed": "No",
+    "cost": 400,
+    "class": "Unaligned",
+    "description": "<p><strong>Prerequisites:</strong> Psy Rating 4, Frenzy, Hatred (Any One)</p><p><strong>Focus Power:</strong> Difficult (-10) Willpower Test</p><p><strong>Subtype:</strong> Attack</p><p>The Sorcerer calls upon the dark gods to gift him with a portion of their own hatred, and becomes the crackling focus of an aura of dark energy. Anyone caught within this explosion of unholy power finds himself with a psychotic hatred of all living things, hurling themselves at their foes at the first opportunity. The hellish psychic echoes of the warp are easy for a Sorcerer to find, though a challenge to control, often proving overwhelming for the unsuspecting.</p><p>While this power remains in effect, the Sorcerer, and all creatures within the power's radius immediately enter a Frenzied state, as if they had the Frenzy Talent. They will remain in this state for as long as they remain within the power's radius. The Sorcerer may continue to manifest psychic powers even while Frenzied.</p>",
+    "damageFormula": "",
+    "penetrationFormula": "",
+    "damageType": "",
+    "attachedQualities": []
+  }
+}

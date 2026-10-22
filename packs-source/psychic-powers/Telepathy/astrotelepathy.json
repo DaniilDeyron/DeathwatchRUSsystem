@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000002",
+  "name": "Astrotelepathy",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/telepathy.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "190",
+    "key": "astrotelepathy",
+    "range": "See Below",
+    "sustained": "No",
+    "action": "Full",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Telepathy",
+    "description": "<p>Librarians can use their gifts to send psychic messages and communications across the vastness of the void in the same manner as an Astropath. It is however a task which is undertaken sparingly, as like much of the rest of the Imperium's forces Space Marines make extensive use of Astropaths, reserving their gifted Battle-Brothers for more vital tasks.</p><p>Any Librarian can use Astrotelepathy, provided he has enough time and skill - sending a message across the stars though is a far cry from communicating with someone on the same world or even a vessel in orbit. To send a message the Librarian must have at least one power from the Telepathy Discipline. It requires one full round to activate for every 10 words or one image it contains and uses Willpower for its Focus Power Test. The range is based on the Librarian's Psy Rating (see below).</p><p>Typically only other Astropaths or Librarians will be able to receive the message and unless the Librarian has a specific recipient in mind the GM may have a chance of it reaching the wrong ears...</p><table><thead><tr><th style=\"width:75px\">Psy Rating</th><th>Result</th></tr></thead><tbody><tr><td>1-3</td><td>The message can reach out to a recipient in the same system.</td></tr><tr><td>4-6</td><td>The message can reach out to a recipient in the same sub-sector.</td></tr><tr><td>7-9</td><td>The message can reach out to a recipient in the same sector.</td></tr><tr><td>10+</td><td>The message can reach out to a recipient in an adjacent sector.</td></tr></tbody></table>"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "energy-arm0001",
+  "name": "Level 01",
+  "type": "critical-effect",
+  "img": "systems/deathwatch/icons/tables/critical-damage.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "252",
+    "damageType": "Energy",
+    "location": "Arm",
+    "description": "A blast to the arm leaves it all numb and tingly. Tests made involving the arm are at –30 for 1 Round.",
+    "effects": []
+  }
+}

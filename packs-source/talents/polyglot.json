@@ -1,0 +1,17 @@
+{
+  "_id": "tal00000000200",
+  "name": "Polyglot",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Intelligence 40, Fellowship 30",
+    "benefit": "Treat all languages as Basic Skills with -10 penalty",
+    "description": "<p>The character has an innate ability to derive meaning from unknown languages, and make himself understood using this intuitive grasp. <b>The character treats all languages as Basic Skills. This is not the same as true knowledge of the language, and tests using this Talent suffer a –10 penalty due to the simplistic nature of translation.</b></p>",
+    "cost": 500,
+    "compendiumId": "tal00000000200",
+    "modifiers": [],
+    "rankRequired": 2
+  }
+}

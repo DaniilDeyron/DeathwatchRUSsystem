@@ -1,0 +1,59 @@
+{
+  "name": "Storm Wardens",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/wtorm_wardens.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "50",
+    "description": "<p>The Storm Wardens are a mysterious Chapter with a closely guarded secret in their past. They are known for their fierce independence and warrior traditions.</p><p>Hailing from the world of Sacris, they maintain a culture of honor and secrecy, excelling in both ranged and melee combat with a particular affinity for storm-themed tactics.</p>",
+    "skillCosts": {
+      "gamble": { "costTrain": 200, "costMaster": 200, "costExpert": 200 },
+      "tracking": { "costTrain": 400, "costMaster": 400, "costExpert": 400 }
+    },
+    "talentCosts": {
+      "tal00000000055": 800,
+      "tal00000000114": 500,
+      "tal00000000246": 800,
+      "tal00000000254": 500,
+      "tal00000000259": 1000
+    },
+    "modifiers": [
+      {
+        "_id": "15d760dc5ad70312",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "str",
+        "enabled": true
+      },
+      {
+        "_id": "0191d1f8b3d0a133",
+        "name": "Chapter Wounds",
+        "modifier": 2,
+        "type": "chapter",
+        "effectType": "wounds",
+        "enabled": true
+      }
+    ],
+    "curseName": "Thirst for Glory",
+    "curseDescription": "<p>The martial traditions of the Storm Wardens have been passed down for centuries and form as much a part of their existence as their flesh, blood, or bone. These traditions come with a rigorous adherence to honour and burning hunger for glory that can lead a Storm Warden to make reckless decisions to uphold the name of his Chapter and earn himself renown among his peers.</p>",
+    "curseLevel1Name": "No Challenge Unanswered",
+    "curseLevel1Description": "<p>The Storm Warden's pride does not let him refuse a challenge or the chance for glory. Whenever an enemy challenges or taunts the Battle-Brother, he must make a <strong>Challenging (+0) Willpower Test</strong> or engage it in combat, favouring melee attacks unless this would clearly not be possible.</p>",
+    "curseLevel1Effect": "custom",
+    "curseLevel1Modifier": 0,
+    "curseLevel1Target": "",
+    "curseLevel2Name": "A Fair Fight",
+    "curseLevel2Description": "<p>Overwhelmed with a need to act honourably and satisfy his peers within the Chapter, the Battle-Brother uses only weapons of equal measure when answering a challenge. This means that if the foe is armed with only a sword, he too will only use a sword or the next nearest equivalent. In extreme cases, if the foe is armed with weapons far inferior to that of the Storm Warden, he will cast aside bolter and chainsword and settle the matter with his fists.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Honour and Blood",
+    "curseLevel3Description": "<p>Storm Wardens seldom back down once a challenge has been accepted, and once blood has been shed it can end only one way. If the Battle-Brother suffers a Wound after accepting a challenge, he must make a <strong>Hard (–20) Willpower Test</strong> to disengage or stop fighting his foe until it is dead (unless compelled by Psychic Powers or similar means).</p>",
+    "curseLevel3Effect": "behavioralRequirement",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 0
+  }
+}

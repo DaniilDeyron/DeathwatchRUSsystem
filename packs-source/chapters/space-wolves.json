@@ -1,0 +1,84 @@
+{
+  "name": "Space Wolves",
+  "type": "chapter",
+  "img": "systems/deathwatch/icons/chapters/space_wolves.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "47",
+    "description": "<p>The Space Wolves are a ferocious and fiercely independent Space Marine Chapter. Descended from their Primarch, Leman Russ, they originate from the brutal ice world of Fenris.</p><p>n combat, the Space Wolves specialize in aggressive assaults and close-quarters fighting, favoring axes, blades, and bolters. Their gene-seed, shaped by the Canis Helix, grants heightened senses and savage resilience, but carries the risk of bestial mutation.</p>",
+    "skillCosts": {
+      "carouse": { "costTrain": 200, "costMaster": 200, "costExpert": 200 },
+      "performer_dancer": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "performer_musician": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "performer_singer": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "performer_storyteller": {
+        "costTrain": 200,
+        "costMaster": 200,
+        "costExpert": 200
+      },
+      "tracking": { "costTrain": 200, "costMaster": 200, "costExpert": 200 },
+      "wrangling": { "costTrain": 100, "costMaster": 100, "costExpert": 100 }
+    },
+    "talentCosts": {
+      "tal00000000041": 0,
+      "tal00000000128": 0,
+      "tal00000000088": 500,
+      "tal00000000116": 400,
+      "tal00000000117": 500,
+      "tal00000000130": 500,
+      "tal00000000254": 500,
+      "tal00000000274": 1500
+    },
+    "modifiers": [
+      {
+        "_id": "2bd7d1e0f10c07e6",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "per",
+        "enabled": true
+      },
+      {
+        "_id": "daa9a1080e34ba59",
+        "name": "Chapter Bonus",
+        "modifier": 5,
+        "type": "chapter",
+        "effectType": "characteristic",
+        "valueAffected": "fs",
+        "enabled": true
+      }
+    ],
+    "curseName": "Curse of the Wulfen",
+    "curseDescription": "<p>There is a savagery and animal fury that lurks in the hearts of all Space Wolves making them powerful warriors and deadly combatants. This bestial nature can lead them astray and overpower their natural reason and sense of order, as they are ruled by their animal instincts and react not as the man but as the warrior wolf.</p>",
+    "curseLevel1Name": "Shadow of the Wolf",
+    "curseLevel1Description": "<p>The wolf lurks close to the surface in the Battle-Brother and he feels its call in his blood. This can be unsettling for others, especially those not of the Adeptus Astartes. The Battle-Brother's Fellowship is reduced by <strong>–10 when dealing with Space Marines who are not part of his Kill-team, and –20 when dealing with everyone else</strong>.</p>",
+    "curseLevel1Effect": "modifier",
+    "curseLevel1Modifier": -10,
+    "curseLevel1Target": "fel",
+    "curseLevel2Name": "Prey's Scent",
+    "curseLevel2Description": "<p>The keen senses of a Space Wolf can be as much a curse as a boon. Sometimes they can overpower the Battle-Brother, temporarily robbing him of his senses. The first time a foe is bloodied by the Space Wolf in battle (i.e. as soon as he inflicts at least 1 Wound on an enemy) he must make an <strong>Easy (+20) Perception Test</strong>. If he passes the test, he may only take a Half Action on his next Turn as his nostrils are flooded with the spore of his prey.</p>",
+    "curseLevel2Effect": "custom",
+    "curseLevel2Modifier": 0,
+    "curseLevel2Target": "",
+    "curseLevel2CohesionPenalty": 0,
+    "curseLevel3Name": "Fight or Fight",
+    "curseLevel3Description": "<p>The Battle-Brother finds it hard to back down from fights in the face of naked aggression. Whenever the Space Wolf would be required to give ground or make a tactical retreat from foe (i.e. disengaging from combat), he must make a <strong>Hard (–20) Willpower Test</strong> to do so.</p>",
+    "curseLevel3Effect": "custom",
+    "curseLevel3Modifier": 0,
+    "curseLevel3Target": "",
+    "curseLevel3CohesionPenalty": 0
+  }
+}

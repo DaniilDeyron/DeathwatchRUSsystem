@@ -1,0 +1,18 @@
+{
+  "_id": "psy00000000018",
+  "name": "Iron Arm",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/codex.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "194",
+    "key": "iron-arm",
+    "range": "Self",
+    "sustained": "Yes",
+    "action": "Half or Reaction",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Codex",
+    "description": "<p>The Librarian sheathes his arm in an impenetrable field of energy with the power to ward off powerful melee attacks. While this power is in effect, the Librarian gains one additional Reaction each round that may only be used to parry, with a bonus on the Weapon Skill Test to parry equal to 3 x PR. Note that this power prevents the Librarian from using his arm for any other purpose, such as wielding a weapon, climbing, and so on.</p>"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "cyb000000009",
+  "name": "Bionic Locomotion",
+  "type": "cybernetic",
+  "img": "systems/deathwatch/icons/cybernetics/bionic-locomotion.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "178",
+    "equipped": false,
+    "description": "<p>Common locomotion bionics (legs, etc.) must be fully integrated into the spine and nervous system to function properly. Basic models accomplish this while retaining complete motor function.</p><p>These cybernetic replacements restore full mobility and allow the character to move normally.</p>",
+    "modifiers": [],
+    "req": 15,
+    "renown": "",
+    "replacesCharacteristic": "",
+    "replacementValue": 0,
+    "unnaturalMultiplier": 1,
+    "replacementLabel": "",
+    "canBeModified": true
+  }
+}

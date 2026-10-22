@@ -1,0 +1,15 @@
+{
+  "_id": "signum000000001",
+  "name": "Signum",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/signum.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "173",
+    "wt": 5,
+    "req": 35,
+    "renown": "Distinguished",
+    "shortDescription": "Tool",
+    "description": "<p>A signum is a sensorium and transmitter array that can be mounted on a Battle-Brother’s armour. It broadcasts enhanced tactical readings to all members of a Squad, allowing them to benefit from the targeting data. While a character equipped with a signum is in Squad Mode, all characters in <b>Squad Mode receive a +5 bonus to Ballistic Skill Tests</b>. If the equipped character spends a Full Action and succeeds on a Tech-Use Test, this bonus increases to +10 until the end of the next Round. The effects of multiple signums are not cumulative, but see the signum link below</p>"
+  }
+}

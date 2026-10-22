@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000065",
+  "name": "WAAAGH!",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Mark of the Xenos",
+    "page": "56",
+    "description": "<p>When the Ork charges, he may make any additional attacks granted from other Talents (such as Swift Attack or Lightning Attack), rather than one. In addition, whenever this Ork charges into combat, all other Orks (or Ork Hordes) within 20 metres who charge that Turn may make one additional attack.</p>",
+    "modifiers": []
+  }
+}

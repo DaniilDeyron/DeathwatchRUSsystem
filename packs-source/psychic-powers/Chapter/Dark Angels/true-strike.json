@@ -1,0 +1,19 @@
+{
+  "_id": "psy00000000034",
+  "name": "True Strike",
+  "type": "psychic-power",
+  "img": "systems/deathwatch/icons/psychic-powers/dark-angels.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "197",
+    "key": "true-strike",
+    "range": "Self",
+    "sustained": "No",
+    "action": "Half",
+    "opposed": "No",
+    "cost": 500,
+    "class": "Chapter",
+    "description": "<p>Deadly against those with the psychic gift, the effects of a True Strike can smash an enemy psyker's mind to pieces. If the Librarian performs a melee attack against a psyker (an individual with a Psy Rating of at least 1) within 1 Round x PR of activating the power, a successful attack will inflict an additional 2 points of damage x PR which cannot be reduced by armour or Toughness. In addition, an individual suffering damage from this power must make a Hard (–20) Willpower Test or lose access to his Psychic Powers for 1 Round.</p><p>This power has no additional effects on individuals without a Psy Rating of at least 1.</p>",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp"
+  }
+}

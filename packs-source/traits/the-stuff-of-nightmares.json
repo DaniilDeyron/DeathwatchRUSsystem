@@ -1,0 +1,12 @@
+{
+  "_id": "trt000000000040",
+  "name": "The Stuff of Nightmares",
+  "type": "trait",
+  "img": "systems/deathwatch/icons/generic/traits.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "135",
+    "description": "<p>Some warp entities are so terribly powerful the will perpetuating their bodies in our reality is almost impossible to break or disrupt. Such entities are completely immune to the effects of poisons, diseases, the need to breathe, most environmental hazards, bleeding, stunning, and any critical result other than one that would destroy them outright, unless caused by a psychic power, force weapon, or holy attack.</p>",
+    "modifiers": []
+  }
+}

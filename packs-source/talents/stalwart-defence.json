@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000246",
+  "name": "Stalwart Defence",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "126",
+    "prerequisite": "Adeptus Astartes",
+    "benefit": "Spend Fate Point for Parry all strikes, -2 Damage, no outnumber penalties",
+    "description": "<p>The Battle-Brother stands immovable and indomitable, as if he were made of rock and iron against which foes break like water against a cliff. <b>The Battle-Brother may spend a Fate Point as a Full Action to adopt a Stalwart Defence. While adopting this condition, the Battle-Brother may not move and may not Dodge. He may make a Parry reaction against all successful strikes against him, and all Damage he suffers is reduced by –2. Furthermore, the character's enemies gain no benefits for outnumbering the Battle-Brother in close combat. These effects last until the Battle-Brother chooses to end his Stalwart Defence or until he is rendered incapable of fighting.</b></p>",
+    "compendiumId": "tal00000000246",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

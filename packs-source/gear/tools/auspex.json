@@ -1,0 +1,27 @@
+{
+  "_id": "auspex0000000001",
+  "name": "Auspex",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/auspex.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "174",
+    "equipped": false,
+    "wt": 0.5,
+    "req": 12,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>These devices are used to detect energy emissions, motion, and biological life signs. A character using an auspex gains a +20 bonus to Awareness Tests and may make a Tech-Use Test to spot things not normally detectable to human senses alone, such as invisible gases, nerby bio-signs, or ambient radiation. THe standard range for an auspex is 50m, though walls more than 50cm thick and certain shielding materials can block the scanner.</p>",
+    "modifiers": [
+      {
+        "_id": "auspexmod0000001",
+        "name": "Auspex Awareness Bonus",
+        "modifier": "20",
+        "type": "equipment",
+        "effectType": "skill",
+        "valueAffected": "awareness",
+        "enabled": true
+      }
+    ]
+  }
+}

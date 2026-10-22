@@ -1,0 +1,26 @@
+{
+  "_id": "tau000000014",
+  "name": "Kroot Rifle (Melee)",
+  "type": "weapon",
+  "img": "systems/deathwatch/icons/weapons/kroot-rifle.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "367",
+    "class": "Melee",
+    "dmg": "1d10",
+    "dmgType": "Rending",
+    "penetration": "0",
+    "range": "—",
+    "rof": "—",
+    "clip": "—",
+    "reload": "—",
+    "equipped": false,
+    "wt": 0,
+    "req": 0,
+    "renown": "",
+    "attachedQualities": [{ "id": "balanced" }],
+    "description": "<p>The Kroot Rifle's integrated bladed stock makes it an effective melee weapon. The balanced design allows Kroot warriors to seamlessly transition between ranged and close combat.</p>",
+    "modifiers": [],
+    "key": "kroot-rifle-melee"
+  }
+}

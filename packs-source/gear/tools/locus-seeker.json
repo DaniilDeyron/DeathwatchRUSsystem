@@ -1,0 +1,15 @@
+{
+  "_id": "locusseeker00001",
+  "name": "Locus Seeker",
+  "type": "gear",
+  "img": "systems/deathwatch/icons/gear/locus-seeker.webp",
+  "system": {
+    "book": "Core Rulebook",
+    "page": "175",
+    "wt": 0,
+    "req": 30,
+    "renown": "",
+    "shortDescription": "Tool",
+    "description": "<p>A locus seeker is actually a pair of devices. The smaller component, the locus caller, is a dull metal sphere only millimetres in diameter. The larger component is a small, translucent globe with a needle of identical metal suspended mysteriously inside. The needle, called the locus seeker, is usually carved in the shape of a grasping talon and reaches unerringly towards the caller, with no observed limits on its distance. Occasionally these globes have been unearthed with missing callers, and unlucky men have been sent to search for decades or even lifetimes to locate the other piece, so valuable is a completed locus seeker.Although difficult to come by, these devices can be invaluable for tracking suspicious ships, cargo, or individuals over not just planets, but sectors. Plotting a course towards the caller using the globe requires the appropriate Navigation Test with a Difficulty based on how much distance lies between the two. Hiding a locus caller on a person or object requires a Concealment Test, with the degrees of success noted for later Opposed Search Tests by any potential detectors. One may also embed a caller in an object through a Routine (+10) Test on the appropriate Skill (Tech-Use for a data-slate, Trade (Armourer) for a weapon, and so on).</p>"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_id": "sqch00000000009",
+  "name": "Immovable Defence",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "224",
+    "key": "immovable-defence",
+    "description": "<p>Stubbornness is a valued trait among the Dark Angels, especially in battle where they seldom give ground to their foes even in the face of overwhelming odds. While this ability is in effect, the Battle-Brother and those in Support Range of him gain a +10 to all Ballistic Skill Tests, a +10 to all Dodge Tests, and an additional +4 Armour Points to all locations as long as they remain stationary.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Bonus to Ballistic Skill Tests and Dodge Tests increases to +20</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "Dark Angels",
+    "abilityCategory": "chapter",
+    "chapterImg": "systems/deathwatch/icons/chapters/dark_angels.webp",
+    "effect": "Kill-team in Support Range gains +10 BS, +10 Dodge, and +4 AP to all locations while stationary",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Bonus to Ballistic Skill Tests and Dodge Tests increases to +20"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 2,
+    "sustained": true,
+    "action": "full"
+  }
+}

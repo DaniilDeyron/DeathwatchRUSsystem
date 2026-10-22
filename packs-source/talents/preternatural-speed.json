@@ -1,0 +1,16 @@
+{
+  "_id": "tal00000000202",
+  "name": "Preternatural Speed",
+  "type": "talent",
+  "img": "systems/deathwatch/icons/talents/generic.webp",
+  "system": {
+    "book": "DeathWatch Core Rulebook",
+    "page": "124",
+    "prerequisite": "Weapon Skill 40, Agility 50",
+    "benefit": "Swift Attack and Lightning Attack as Half Action, can use during Charge",
+    "description": "<p>The character is a swift moving bringer of death, a living, bloody scythe before whom foes die like corn before the reaper. <b>The character may use Swift Attack and Lighting Attack as a Half Action rather than a Full Action. In addition, the character may use the Swift Attack and Lightning Attack Talents during a Charge.</b></p>",
+    "compendiumId": "tal00000000202",
+    "modifiers": [],
+    "rankRequired": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_id": "sqcd00000000008",
+  "name": "Go to Ground",
+  "type": "special-ability",
+  "img": "systems/deathwatch/icons/generic/special-ability.webp",
+  "system": {
+    "book": "Deathwatch Core Rulebook",
+    "page": "223",
+    "key": "go-to-ground",
+    "description": "<p>When subjected to heavy, accurate, and effective fire, a well-trained squad knows to take cover. As a Reaction, the Battle-Brother may issue a Go to Ground order when he or another member of his Kill-team within his Support Range has been hit by a ranged attack. Both the Battle-Brother and those in Support Range of him may immediately make a free move up to their Agility Bonus in metres to find cover. Note that the effects of the hit are worked out before any Battle-Brothers may move. In the case of hits from semi or full auto weapons, only the first hit is worked out before the Battle-Brothers move and the remaining hits after they have gone to ground.</p><table><tr><th>Rank</th><th>Improvement</th></tr><tr><td>4</td><td>Free move to cover may be up to twice the Battle-Brother's Agility Bonus</td></tr></table>",
+    "modifiers": [],
+    "specialty": "",
+    "modeRequirement": "squad",
+    "requiredRank": 0,
+    "chapter": "",
+    "abilityCategory": "codex",
+    "effect": "Reaction when hit by ranged attack: Kill-team in Support Range may free move up to AG Bonus metres to cover",
+    "improvements": [
+      {
+        "rank": 4,
+        "effect": "Free move to cover may be up to twice the Battle-Brother's Agility Bonus"
+      }
+    ],
+    "abilityType": "defensive-stance",
+    "cohesionCost": 1,
+    "sustained": false,
+    "action": "reaction"
+  }
+}
