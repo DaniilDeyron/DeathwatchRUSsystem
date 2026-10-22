@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(sys.argv[1]).resolve()
 RU = ROOT / "lang" / "ru.json"
 USER_FIELDS = {"name","description","text","label","title","hint","caption","summary","flavour","flavor","notes","descriptor","effect","content","tooltip","placeholder","message"}
-PROTECTED = re.compile(r'(<[^>]*>|{{!--.*?--}}|{{.*?}}|\$\{.*?\}|&(?:#\d+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);)', re.S)
+PROTECTED = re.compile(r'(<!--.*?-->|<[^>]*>|{{!--.*?--}}|{{.*?}}|\$\{.*?\}|&(?:#\d+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);)', re.S)
 SCRIPT_STYLE = re.compile(r'(<(?:script|style)\b[^>]*>.*?</(?:script|style)\s*>)', re.I|re.S)
 HTML_COMMENTS = re.compile(r'<!--.*?-->', re.S)
 ATTR = re.compile(r'(?P<prefix>\b(?:title|placeholder|aria-label|alt|data-tooltip|data-label|aria-description)\s*=\s*)(?P<q>["\'])(?P<value>.*?)(?P=q)', re.I|re.S)
@@ -135,6 +135,9 @@ class MT:
         return lead+self.cache.get(core,core)+trail
     def rich(self,s):
         if not isinstance(s,str): return s
+        def attr_sub(m):
+            return m.group("prefix")+m.group("q")+self.rich(m.group("value"))+m.group("q")
+        s=ATTR.sub(attr_sub,s)
         return "".join(p if not p or PROTECTED.fullmatch(p) else self.simple(p) for p in PROTECTED.split(s))
 
 translator=MT(); phrases=set()
