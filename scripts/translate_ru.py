@@ -15,6 +15,9 @@ JS_DQ = re.compile(r'(\b(?:'+JS_KEYS+r')\s*:\s*)"((?:\\.|[^"\\])*)"', re.S)
 JS_SQ = re.compile(r"(\b(?:"+JS_KEYS+r")\s*:\s*)'((?:\\.|[^'\\])*)'", re.S)
 JS_ASSIGN = re.compile(r'(\b(?:innerHTML|textContent|innerText|placeholder|ariaLabel|title|tooltip)\s*=\s*)"((?:\\.|[^"\\])*)"', re.S)
 JS_NOTIFY = re.compile(r'((?:ui\.notifications|Notifications)\.(?:info|warn|error|success)\s*\(\s*)"((?:\\.|[^"\\])*)"')
+TICK = chr(96)
+JS_TICK_PROP = re.compile(r'(\\b(?:content|template|html|message|description|label|title)\\s*:\\s*)' + TICK + r'(.*?)' + TICK, re.S)
+JS_TICK_ASSIGN = re.compile(r'(\\b(?:innerHTML|textContent|innerText)\\s*=\\s*)' + TICK + r'(.*?)' + TICK, re.S)
 CONFIG_OBJ = re.compile(r'(DWConfig\.[A-Za-z0-9_]+\s*=\s*\{.*?^\s*\};)', re.S|re.M)
 CONFIG_DQ = re.compile(r'(:\s*)"((?:\\.|[^"\\])*)"')
 CONFIG_SQ = re.compile(r"(:\s*)'((?:\\.|[^'\\])*)'")
@@ -171,6 +174,18 @@ for p in js_files:
         for m in rx.finditer(raw):
             val=m.group(2)
             if chr(36)+"{" not in val and "{{" not in val: add(val,phrases)
+    for rx in (JS_TICK_PROP, JS_TICK_ASSIGN):
+        for m in rx.finditer(raw):
+            add(m.group(2), phrases)
+
+folder_labels = set()
+pack_source = ROOT / "packs-source"
+if pack_source.exists():
+    for folder in pack_source.rglob("*"):
+        if folder.is_dir() and not folder.name.startswith("_"):
+            label = " ".join(word[:1].upper() + word[1:] for word in folder.name.split("-"))
+            folder_labels.add(label)
+            add(label, phrases)
 
 print(f"[SCAN] {len(phrases)} unique English phrases found.")
 translator.prepare(phrases)
@@ -218,6 +233,8 @@ def js_sub(p, raw):
     raw=JS_SQ.sub(sq,raw)
     raw=JS_ASSIGN.sub(dq,raw)
     raw=JS_NOTIFY.sub(dq,raw)
+    raw=JS_TICK_PROP.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
+    raw=JS_TICK_ASSIGN.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
     return raw.replace("systems/deathwatch/","systems/deathwatch-ru/")
 
 for p in js_files:
@@ -250,7 +267,9 @@ compiler=ROOT.parent/"builds"/"scripts"/"compilePacks.mjs"
 if compiler.exists():
     src=compiler.read_text(encoding="utf-8")
     old="const folderName = item.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');"
-    folder_obj=json.dumps(FOLDERS,ensure_ascii=False)
+    folder_translation = {label: FOLDERS.get(label, translator.cache.get(label, label)) for label in folder_labels}
+    folder_translation.update(FOLDERS)
+    folder_obj=json.dumps(folder_translation,ensure_ascii=False)
     new="const folderNameEn = item.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');\n            const folderName = ("+folder_obj+")[folderNameEn] || folderNameEn;"
     src=src.replace(old,new).replace("systemId: 'deathwatch'","systemId: 'deathwatch-ru'")
     compiler.write_text(src,encoding="utf-8")
