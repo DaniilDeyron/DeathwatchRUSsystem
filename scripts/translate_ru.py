@@ -79,7 +79,8 @@ if RU.exists():
     try: existing = json.loads(RU.read_text(encoding="utf-8"))
     except Exception: pass
 MANUAL.update({"Deathwatch Core Rulebook":"Основная книга правил Deathwatch","Core Rulebook":"Основная книга правил","Profile":"Профиль","Health":"Здоровье","Fatigue":"Усталость","Wounds":"Раны"})
-GLOSSARY = {**existing, **MANUAL}
+GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
+GLOSSARY.update(MANUAL)
 
 if "--validate" in sys.argv:
     print("Localization script syntax and regular-expression patterns are valid.")
