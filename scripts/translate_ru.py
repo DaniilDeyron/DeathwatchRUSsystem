@@ -205,9 +205,14 @@ for p in js_files:
         for m in rx.finditer(raw):
             val=m.group(2)
             if chr(36)+"{" not in val and "{{" not in val: add(val,phrases)
-    for rx in (JS_TICK_PROP, JS_TICK_ASSIGN):
+    for rx in (JS_TICK_PROP, JS_TICK_ASSIGN, JS_TICK_VAR, JS_TEXT_VAR_DQ, JS_TEXT_VAR_SQ, JS_TEXT_CALL_DQ, JS_TEXT_CALL_SQ):
         for m in rx.finditer(raw):
             add(m.group(2), phrases)
+    for m in ALL_TICK.finditer(raw):
+        add(m.group(1), phrases)
+    for rx in (JS_HTML_DQ, JS_HTML_SQ):
+        for m in rx.finditer(raw):
+            add(m.group("value"), phrases)
 
 folder_labels = set()
 pack_source = ROOT / "packs-source"
@@ -250,6 +255,17 @@ def translate_html(raw):
 for p in html_files:
     text = p.read_text(encoding="utf-8")
     text = text.replace("{{system.dmgType}}", "{{localize system.dmgType}}")
+    text = text.replace("{{item.system.class}}", "{{localize item.system.class}}")
+    if p.name == "item-weapon-sheet.html":
+        old_class = '<input type="text" name="system.class" value="{{system.class}}" />'
+        localized_class = """<select name="system.class">
+            <option value="Basic" {{#if (eq system.class "Basic")}}selected{{/if}}>Основное оружие</option>
+            <option value="Heavy" {{#if (eq system.class "Heavy")}}selected{{/if}}>Тяжёлое оружие</option>
+            <option value="Pistol" {{#if (eq system.class "Pistol")}}selected{{/if}}>Пистолетное оружие</option>
+            <option value="Melee" {{#if (eq system.class "Melee")}}selected{{/if}}>Ближний бой</option>
+            <option value="Thrown" {{#if (eq system.class "Thrown")}}selected{{/if}}>Метательное оружие</option>
+        </select>"""
+        text = text.replace(old_class, localized_class)
     p.write_text(translate_html(text),encoding="utf-8")
 
 def config_sub(m):
@@ -279,6 +295,16 @@ def js_sub(p, raw):
     raw=JS_TICK_PROP.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
     raw=JS_TICK_ASSIGN.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
     raw=JS_TICK_VAR.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
+    raw=JS_TEXT_VAR_DQ.sub(dq,raw)
+    raw=JS_TEXT_VAR_SQ.sub(sq,raw)
+    raw=JS_TEXT_CALL_DQ.sub(dq,raw)
+    raw=JS_TEXT_CALL_SQ.sub(sq,raw)
+    raw=JS_HTML_DQ.sub(lambda m:m.group("q")+translator.rich(m.group("value"))+m.group("q"),raw)
+    raw=JS_HTML_SQ.sub(lambda m:m.group("q")+translator.rich(m.group("value"))+m.group("q"),raw)
+    raw=ALL_TICK.sub(lambda m:TICK+translator.rich(m.group(1))+TICK,raw)
+    # Display enums in chat strings through localization; raw game values stay canonical.
+    for enum in ("dmgType","damageType","critLocation","location"):
+        raw=raw.replace("$" + "{" + enum + "}", "$" + "{game.i18n.localize(" + enum + ")}")
     return raw.replace("systems/deathwatch/","systems/deathwatch-ru/")
 
 for p in js_files:
