@@ -75,9 +75,7 @@ jobs:
           set -euo pipefail
           mkdir -p dist/deathwatch-ru
           rsync -a --exclude='/packs-source/' --exclude='/scripts/' --exclude='/README_RU.md' --exclude='*.test.mjs' upstream/src/ dist/deathwatch-ru/
-          cd dist
-          zip -qr ../deathwatch-ru.zip deathwatch-ru
-          cd ..
+          (cd dist/deathwatch-ru && zip -qr ../../deathwatch-ru.zip .)
           ls -lh deathwatch-ru.zip
 
       - name: Determine release tag
