@@ -117,6 +117,9 @@ def plain_parts(s):
 
 def add(s, store):
     store.update(plain_parts(s))
+    # Text in attributes of embedded HTML (for example title and placeholder) is user-facing too.
+    for match in ATTR.finditer(s):
+        store.update(plain_parts(match.group("value")))
 
 class MT:
     def __init__(self): self.cache = dict(GLOSSARY); self.count = 0; self.fail = 0
