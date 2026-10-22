@@ -22,6 +22,7 @@ JS_SETATTR_SQ = re.compile(r"((?:\.setAttribute\s*\(\s*)[\"'](?:title|placeholde
 TICK = chr(96)
 JS_TICK_PROP = re.compile(r'(\b(?:content|template|html|message|description|label|title)\s*:\s*)' + TICK + r'(.*?)' + TICK, re.S)
 JS_TICK_ASSIGN = re.compile(r'(\b(?:innerHTML|textContent|innerText)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
+JS_TICK_VAR = re.compile(r'(\b(?:const|let|var)\s+(?:content|message|html|flavor|description|label|title|summary|notification|dialogContent|tooltip|chatContent|chatHtml)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
 CONFIG_OBJ = re.compile(r'(DWConfig\.[A-Za-z0-9_]+\s*=\s*\{.*?^\s*\};)', re.S|re.M)
 CONFIG_DQ = re.compile(r'(:\s*)"((?:\\.|[^"\\])*)"')
 CONFIG_SQ = re.compile(r"(:\s*)'((?:\\.|[^'\\])*)'")
@@ -260,6 +261,7 @@ def js_sub(p, raw):
     raw=JS_SETATTR_SQ.sub(sq,raw)
     raw=JS_TICK_PROP.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
     raw=JS_TICK_ASSIGN.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
+    raw=JS_TICK_VAR.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
     return raw.replace("systems/deathwatch/","systems/deathwatch-ru/")
 
 for p in js_files:
