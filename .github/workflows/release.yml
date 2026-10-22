@@ -64,6 +64,7 @@ jobs:
           fs.writeFileSync(entryPath, entry);
           NODE
 
+          python upstream/src/scripts/translate_ru.py upstream/src
           cd upstream
           npm install
           npm run build:packs
@@ -73,7 +74,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist/deathwatch-ru
-          rsync -a --exclude='/packs-source/' --exclude='*.test.mjs' upstream/src/ dist/deathwatch-ru/
+          rsync -a --exclude='/packs-source/' --exclude='/scripts/' --exclude='/README_RU.md' --exclude='*.test.mjs' upstream/src/ dist/deathwatch-ru/
           cd dist
           zip -qr ../deathwatch-ru.zip deathwatch-ru
           cd ..
@@ -100,7 +101,7 @@ jobs:
           name: Deathwatch RU ${{ steps.tag.outputs.tag_name }}
           body: |
             Автоматически собранная версия системы Deathwatch RU для Foundry VTT.
-            Включает скомпилированные компендиумы. Перевод контента пока частичный.
+            Включает скомпилированные компендиумы и автоматически переведённый на русский интерфейс и контент. Машинный перевод требует проверки терминологии.
           files: deathwatch-ru.zip
           generate_release_notes: true
           make_latest: true
