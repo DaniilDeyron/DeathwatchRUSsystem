@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(sys.argv[1]).resolve()
 RU = ROOT / "lang" / "ru.json"
-USER_FIELDS = {"name","description","text","label","title","hint","caption","summary","flavour","flavor","notes","descriptor","effect","content","tooltip","placeholder","message"}
+USER_FIELDS = {"name","description","shortdescription","text","label","title","hint","caption","summary","flavour","flavor","notes","descriptor","effect","content","tooltip","placeholder","message","book","detail","details","specialrules","prerequisites","requirementstext","rulesummary","resulttext"}
 PROTECTED = re.compile(r'(<!--.*?-->|<[^>]*>|{{!--.*?--}}|{{.*?}}|\$\{.*?\}|&(?:#\d+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);)', re.S)
 SCRIPT_STYLE = re.compile(r'(<(?:script|style)\b[^>]*>.*?</(?:script|style)\s*>)', re.I|re.S)
 HTML_COMMENTS = re.compile(r'<!--.*?-->', re.S)
@@ -78,6 +78,7 @@ existing = {}
 if RU.exists():
     try: existing = json.loads(RU.read_text(encoding="utf-8"))
     except Exception: pass
+MANUAL.update({"Deathwatch Core Rulebook":"Основная книга правил Deathwatch","Core Rulebook":"Основная книга правил","Profile":"Профиль","Health":"Здоровье","Fatigue":"Усталость","Wounds":"Раны"})
 GLOSSARY = {**existing, **MANUAL}
 
 if "--validate" in sys.argv:
@@ -228,7 +229,9 @@ def translate_html(raw):
     return "".join(x if not x or SCRIPT_STYLE.fullmatch(x) else region_sub(x) for x in SCRIPT_STYLE.split(raw))
 
 for p in html_files:
-    p.write_text(translate_html(p.read_text(encoding="utf-8")),encoding="utf-8")
+    text = p.read_text(encoding="utf-8")
+    text = text.replace("{{system.dmgType}}", "{{localize system.dmgType}}")
+    p.write_text(translate_html(text),encoding="utf-8")
 
 def config_sub(m):
     block=m.group(1)
