@@ -10,7 +10,7 @@
   },
   "authors": [
     {
-      "name": "Aleslammer"
+      "name": "DaniilDeyron (локализация), Aleslammer (оригинальная система)"
     }
   ],
   "esmodules": [
@@ -194,17 +194,17 @@
   "media": [
     {
       "type": "cover",
-      "url": "https://raw.githubusercontent.com/Aleslammer/deathwatch_foundryvtt/main/src/icons/Deathwatch.png",
+      "url": "https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/icons/Deathwatch.png",
       "caption": "Deathwatch"
     },
     {
       "type": "icon",
-      "url": "https://raw.githubusercontent.com/Aleslammer/deathwatch_foundryvtt/main/src/icons/Deathwatch.png",
+      "url": "https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/icons/Deathwatch.png",
       "caption": "Deathwatch"
     },
     {
       "type": "setup",
-      "url": "https://raw.githubusercontent.com/Aleslammer/deathwatch_foundryvtt/main/src/icons/Deathwatch.png",
+      "url": "https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/icons/Deathwatch.png",
       "caption": "Deathwatch"
     }
   ],
@@ -215,7 +215,7 @@
       "path": "lang/ru.json"
     }
   ],
-  "url": "https://github.com/REPLACE_WITH_YOUR_USERNAME/deathwatch-ru",
-  "manifest": "https://raw.githubusercontent.com/REPLACE_WITH_YOUR_USERNAME/deathwatch-ru/main/system.json",
-  "download": "https://github.com/REPLACE_WITH_YOUR_USERNAME/deathwatch-ru/archive/refs/heads/main.zip"
+  "url": "https://github.com/DaniilDeyron/DeathwatchRUSsystem",
+  "manifest": "https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/system.json",
+  "download": "https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases/latest/download/deathwatch-ru.zip"
 }
