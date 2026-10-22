@@ -54,133 +54,133 @@
       "label": "Боеприпасы",
       "path": "packs/ammunition",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "gear",
       "label": "Снаряжение",
       "path": "packs/gear",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "weapons",
       "label": "Оружие",
       "path": "packs/weapons",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "armor",
       "label": "Броня",
       "path": "packs/armor",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "tables",
       "label": "Таблицы",
       "path": "packs/tables",
       "type": "RollTable",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "critical-effects",
       "label": "Критические эффекты",
       "path": "packs/critical-effects",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "demeanours",
       "label": "Черты характера",
       "path": "packs/demeanours",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "talents",
       "label": "Таланты",
       "path": "packs/talents",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "traits",
       "label": "Особенности",
       "path": "packs/traits",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "chapters",
       "label": "Орденские главы",
       "path": "packs/chapters",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "specialties",
       "label": "Специализации",
       "path": "packs/specialties",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "implants",
       "label": "Импланты",
       "path": "packs/implants",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "cybernetics",
       "label": "Кибернетика",
       "path": "packs/cybernetics",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "weapon-qualities",
       "label": "Качества оружия",
       "path": "packs/weapon-qualities",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "weapon-upgrades",
       "label": "Улучшения оружия",
       "path": "packs/weapon-upgrades",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "psychic-powers",
       "label": "Психические силы",
       "path": "packs/psychic-powers",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "battle-traumas",
       "label": "Боевые травмы",
       "path": "packs/battle-traumas",
       "type": "Item",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "enemies",
       "label": "Противники",
       "path": "packs/enemies",
       "type": "Actor",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     },
     {
       "name": "macros",
       "label": "Макросы",
       "path": "packs/macros",
       "type": "Macro",
-      "system": "deathwatch"
+      "system": "deathwatch-ru"
     }
   ],
   "initiative": "1d10 + @agBonus + @initiativeBonus",
