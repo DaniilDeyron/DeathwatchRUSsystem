@@ -224,8 +224,8 @@ for p in html_files:
 
 def config_sub(m):
     block=m.group(1)
-    for rx in (CONFIG_DQ,CONFIG_SQ):
-        block=rx.sub(lambda x:x.group(1)+x.group(2)+translator.simple(x.group(2))+x.group(3),block)
+    block=CONFIG_DQ.sub(lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
+    block=CONFIG_SQ.sub(lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
     return block
 
 def js_sub(p, raw):
