@@ -1,0 +1,106 @@
+name: Build and publish Deathwatch RU
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Release tag to create (example: v0.0.2-ru.1)"
+        required: true
+        default: "v0.0.2-ru.1"
+        type: string
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout translation repository
+        uses: actions/checkout@v4
+        with:
+          path: self
+
+      - name: Checkout upstream build scripts
+        uses: actions/checkout@v4
+        with:
+          repository: cec-software/deathwatch_foundryvtt
+          ref: main
+          path: upstream
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: upstream/package-lock.json
+
+      - name: Prepare source tree and build compendiums
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf upstream/src
+          mkdir -p upstream/src
+          rsync -a --exclude='.git/' --exclude='.github/' --exclude='README_RU.md' self/ upstream/src/
+
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const manifestPath = 'upstream/src/system.json';
+          const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+          manifest.id = 'deathwatch-ru';
+          manifest.title = 'Warhammer 40,000: Deathwatch — Русская версия';
+          manifest.url = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem';
+          manifest.manifest = 'https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/system.json';
+          manifest.download = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases/latest/download/deathwatch-ru.zip';
+          for (const pack of manifest.packs ?? []) pack.system = 'deathwatch-ru';
+          fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
+
+          const entryPath = 'upstream/src/module/deathwatch.mjs';
+          let entry = fs.readFileSync(entryPath, 'utf8');
+          entry = entry.replaceAll('registerSheet("deathwatch",', 'registerSheet("deathwatch-ru",');
+          fs.writeFileSync(entryPath, entry);
+          NODE
+
+          cd upstream
+          npm install
+          npm run build:packs
+
+      - name: Package installable system
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/deathwatch-ru
+          rsync -a --exclude='/packs-source/' --exclude='*.test.mjs' upstream/src/ dist/deathwatch-ru/
+          cd dist
+          zip -qr ../deathwatch-ru.zip deathwatch-ru
+          cd ..
+          ls -lh deathwatch-ru.zip
+
+      - name: Determine release tag
+        id: tag
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_TAG: ${{ inputs.release_tag }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            echo "tag_name=$INPUT_TAG" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag_name=$REF_NAME" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish ZIP to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag_name }}
+          name: Deathwatch RU ${{ steps.tag.outputs.tag_name }}
+          body: |
+            Автоматически собранная версия системы Deathwatch RU для Foundry VTT.
+            Включает скомпилированные компендиумы. Перевод контента пока частичный.
+          files: deathwatch-ru.zip
+          generate_release_notes: true
+          make_latest: true
