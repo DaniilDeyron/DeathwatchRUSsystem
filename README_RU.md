@@ -20,7 +20,7 @@ Workflow **Build and publish Deathwatch RU** запускает автомати
 2. Выберите **Build and publish Deathwatch RU**.
 3. Нажмите **Run workflow**, оставив ветку `main`.
 4. В поле тега укажите, например, `v0.0.2-ru.1`.
-5. Нажмите **Run workflow** и дождитесь зелёной галочки.
+5. Нажмите **Run workflow** и дождитесь зелёной галочки. Для сопровождающего автоматический запуск также доступен коммитом с префиксом `[build-ru]`.
 6. Проверьте, что в [Releases](https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases) прикреплён файл `deathwatch-ru.zip`.
 
 Сборка компилирует исходные `packs-source` в готовые компендиумы Foundry; исходные данные не включаются в установочный ZIP. Архив создаётся с `system.json` в корне, как ожидает установщик.
