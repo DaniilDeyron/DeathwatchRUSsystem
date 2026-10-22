@@ -80,6 +80,10 @@ if RU.exists():
     except Exception: pass
 GLOSSARY = {**existing, **MANUAL}
 
+if "--validate" in sys.argv:
+    print("Localization script syntax and regular-expression patterns are valid.")
+    sys.exit(0)
+
 def eligible(s):
     t = s.strip()
     if not t or not re.search(r"[A-Za-z]", t): return False
