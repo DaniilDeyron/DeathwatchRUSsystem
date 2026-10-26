@@ -164,7 +164,19 @@ MANUAL.update({
     "reaction":"Реакция","free":"Свободное действие","half":"Половина действия","full":"Полное действие",
     "Half or Reaction":"Половина действия или реакция","2 Full":"2 полных действия","3 Full":"3 полных действия",
     "4 Full":"4 полных действия","5 Full":"5 полных действий","2Full":"2 полных действия",
-    "Extended (2)":"Длительное (2)","Extended (3)":"Длительное (3)","Extended (5)":"Длительное (5)","Extended (10)":"Длительное (10)"
+    "Extended (2)":"Длительное (2)","Extended (3)":"Длительное (3)","Extended (5)":"Длительное (5)","Extended (10)":"Длительное (10)",
+    "All":"Все","Black Templars":"Чёрные Храмовники","Blood Angels":"Кровавые Ангелы",
+    "Dark Angels":"Тёмные Ангелы","Iron Hands":"Железные Руки","Novamarines":"Новомаринцы",
+    "Raptors":"Рапторы","Space Wolves":"Космические Волки","Storm Wardens":"Стражи Бури",
+    "Ultramarines":"Ультрамарины","Apothecary":"Апотекарий","Assault Marine":"Штурмовик",
+    "Devastator Marine":"Девастатор","Librarian":"Библиарий","Tactical Marine":"Тактический десантник",
+    "Techmarine":"Технодесантник","Chaplain":"Капеллан","Specialty Name":"Название специализации",
+    "The Red Thirst":"Красная жажда","Black Rage":"Чёрная ярость",
+    "Attack":"Атака","Attack Pattern":"План атаки","Defensive Stance":"Оборонительная стойка",
+    "Solo Mode":"Индивидуальный режим","Squad Mode":"Режим отряда",
+    "Characteristics":"Характеристики","Inventory":"Инвентарь","Combat":"Бой","Skills":"Навыки",
+    "Ranged Weapons":"Стрелковое оружие","Melee Weapons":"Оружие ближнего боя","Grenades":"Гранаты",
+    "Recalculate":"Пересчитать","Edit Cohesion":"Изменить сплочённость","Confirm":"Подтвердить","Roll":"Бросок"
 })
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
