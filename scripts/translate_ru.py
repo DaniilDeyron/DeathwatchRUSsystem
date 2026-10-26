@@ -20,6 +20,8 @@ JS_NOTIFY_SQ = re.compile(r"((?:ui\.notifications|Notifications)\.(?:info|warn|e
 JS_SETATTR_DQ = re.compile(r'((?:\.setAttribute\s*\(\s*)["\'](?:title|placeholder|aria-label|alt|data-tooltip)["\']\s*,\s*)"((?:\\.|[^"\\])*)"', re.I)
 JS_SETATTR_SQ = re.compile(r"((?:\.setAttribute\s*\(\s*)[\"'](?:title|placeholder|aria-label|alt|data-tooltip)[\"']\s*,\s*)'((?:\\.|[^'\\])*)'", re.I)
 JS_ENUM_VALUE_RE = re.compile(r'\b(effectType|valueAffected|damageType|dmgType|location|resistDifficulty|modeRequirement|abilityCategory|abilityType)\s*:\s*["\']([^"\']+)["\']')
+JS_VALIDATION_DQ = re.compile(r'"((?:\\.|[^"\\])*)"')
+JS_VALIDATION_SQ = re.compile(r"'((?:\\.|[^'\\])*)'")
 TICK = chr(96)
 ALL_TICK = re.compile(TICK + r'(.*?)' + TICK, re.S)
 JS_HTML_DQ = re.compile(r'(?P<q>")(?P<value>(?:\\.|[^"\\])*?<[/!]?[A-Za-z][^>]*>(?:\\.|[^"\\])*)(?P=q)', re.S)
@@ -199,7 +201,7 @@ GLOSSARY.update(MANUAL)
 
 DISPLAY_VALUE_KEYS = {"range","reload","renown","dmgtype","damagetype","location","class","action","sustained","opposed","specialty","chapter","effecttype","valueaffected","type","resistdifficulty","moderequirement","abilitycategory","abilitytype","curselevel1target","curselevel2target","curselevel3target"}
 TECHNICAL_KEYS = {
-    "_id","id","_sourceid","sourceid","type","img","src","path","folder","folderid",
+    "_id","id","_sourceid","sourceid","_comment","command","macro","type","img","src","path","folder","folderid",
     "uuid","slug","key","systemid","compendiumid","formula","roll","expression","range",
     "reload","rof","availability","class","damagetype","dmgtype","location","action",
     "sustained","opposed","renown","specialty","chapter","valueaffected","effecttype",
@@ -357,6 +359,11 @@ for p in js_files:
     for m in JS_ENUM_VALUE_RE.finditer(raw):
         display_values.add(m.group(2).strip())
         add(m.group(2), phrases)
+    for line in raw.splitlines():
+        if "Validation." in line:
+            for rx in (JS_VALIDATION_DQ, JS_VALIDATION_SQ):
+                for m in rx.finditer(line):
+                    add(m.group(1), phrases)
     for m in ALL_TICK.finditer(raw):
         add(m.group(1), phrases)
     for rx in (JS_HTML_DQ, JS_HTML_SQ):
@@ -568,6 +575,13 @@ def js_sub(p, raw):
     raw=JS_TEXT_CALL_SQ.sub(sq,raw)
     raw=JS_HTML_DQ.sub(lambda m:m.group("q")+translator.rich(m.group("value"))+m.group("q"),raw)
     raw=JS_HTML_SQ.sub(lambda m:m.group("q")+translator.rich(m.group("value"))+m.group("q"),raw)
+    validation_lines=[]
+    for line in raw.splitlines(keepends=True):
+        if "Validation." in line:
+            line=JS_VALIDATION_DQ.sub(lambda m:'"'+translator.rich(m.group(1))+'"',line)
+            line=JS_VALIDATION_SQ.sub(lambda m:"'"+translator.rich(m.group(1))+"'",line)
+        validation_lines.append(line)
+    raw="".join(validation_lines)
     raw=ALL_TICK.sub(lambda m:TICK+translator.rich(m.group(1))+TICK,raw)
     # Display enums in chat strings through localization; raw game values stay canonical.
     for enum in ("dmgType","damageType","critLocation","location"):
