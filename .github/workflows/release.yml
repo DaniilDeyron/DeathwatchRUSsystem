@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: "Release tag to create (example: v0.0.2-ru.9)"
+        description: "Release tag to create (example: v0.0.2-ru.10)"
         required: true
-        default: "v0.0.2-ru.9"
+        default: "v0.0.2-ru.10"
         type: string
   push:
     branches: [main]
@@ -15,12 +15,37 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   build-and-release:
     if: github.event_name != 'push' || github.ref_type == 'tag' || startsWith(github.event.head_commit.message, '[build-ru]')
+    concurrency:
+      group: deathwatch-ru-build-publish
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
+      - name: Cancel stale Deathwatch RU builds
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            for (const status of ["queued", "in_progress"]) {
+              const runs = await github.paginate(github.rest.actions.listWorkflowRunsForRepo, {
+                owner, repo, status, per_page: 100
+              });
+              for (const run of runs) {
+                if (run.id === context.runId) continue;
+                if (run.name !== "Build and publish Deathwatch RU") continue;
+                core.info(`Canceling stale run ${run.id} (${run.status})`);
+                try {
+                  await github.rest.actions.cancelWorkflowRun({ owner, repo, run_id: run.id });
+                } catch (error) {
+                  core.warning(`Could not cancel run ${run.id}: ${error.message}`);
+                }
+              }
+            }
+
       - name: Checkout translation repository
         uses: actions/checkout@v4
         with:
@@ -62,7 +87,7 @@ jobs:
           const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
           manifest.id = 'deathwatch-ru';
           manifest.title = 'Warhammer 40,000: Deathwatch — Русская версия';
-          manifest.version = '0.0.2-ru.9';
+          manifest.version = '0.0.2-ru.10';
           manifest.url = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem';
           manifest.manifest = 'https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/system.json';
           manifest.download = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases/latest/download/deathwatch-ru.zip';
@@ -100,7 +125,7 @@ jobs:
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             echo "tag_name=$INPUT_TAG" >> "$GITHUB_OUTPUT"
           elif [[ "$EVENT_NAME" == "push" && "$REF_NAME" == "main" ]]; then
-            echo "tag_name=v0.0.2-ru.9" >> "$GITHUB_OUTPUT"
+            echo "tag_name=v0.0.2-ru.10" >> "$GITHUB_OUTPUT"
           else
             echo "tag_name=$REF_NAME" >> "$GITHUB_OUTPUT"
           fi
@@ -112,7 +137,7 @@ jobs:
           name: Deathwatch RU ${{ steps.tag.outputs.tag_name }}
           body: |
             Автоматически собранная версия системы Deathwatch RU для Foundry VTT.
-            Включает скомпилированные компендиумы, навыки, преимущества и требования талантов, переведённые поля интерфейса и локализованные варианты значений. Внутренние коды правил сохраняются; машинный перевод требует проверки терминологии.
+            Включает скомпилированные компендиумы и расширенную локализацию интерфейса/контента. Значения игровых механик сохраняются; машинный перевод требует терминологической и игровой проверки.
           files: deathwatch-ru.zip
           generate_release_notes: true
           make_latest: true
