@@ -40,6 +40,14 @@ jobs:
           cache: npm
           cache-dependency-path: upstream/package-lock.json
 
+      - name: Restore translation cache
+        uses: actions/cache@v4
+        with:
+          path: upstream/.cache/translation-cache.json
+          key: deathwatch-ru-translations-${{ github.sha }}
+          restore-keys: |
+            deathwatch-ru-translations-
+
       - name: Prepare source tree and build compendiums
         shell: bash
         run: |
