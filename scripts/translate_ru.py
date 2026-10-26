@@ -220,7 +220,21 @@ def add(s, store):
         store.update(plain_parts(match.group("value")))
 
 class MT:
-    def __init__(self): self.cache = dict(GLOSSARY); self.count = 0; self.fail = 0
+    def __init__(self):
+        self.cache = {}
+        self.count = 0
+        self.fail = 0
+        self.cache_file = ROOT.parent / ".cache" / "translation-cache.json"
+        if self.cache_file.exists():
+            try:
+                cached = json.loads(self.cache_file.read_text(encoding="utf-8"))
+                if isinstance(cached, dict):
+                    self.cache.update({k: v for k, v in cached.items() if isinstance(k, str) and isinstance(v, str)})
+                print(f"[CACHE] Loaded {len(self.cache)} cached translations.")
+            except Exception as exc:
+                print(f"[CACHE] Could not read translation cache: {exc}")
+        # Current curated glossary always wins over older machine-generated cache values.
+        self.cache.update(GLOSSARY)
     def batch(self, texts):
         sep = "ZXQSEP98371QXZ"
         q = "\n" + ("\n"+sep+"\n").join(texts) + "\n"
@@ -543,7 +557,16 @@ if RU.exists():
     for value in display_values:
         if eligible(value):
             ru[value] = translator.cache.get(value, value)
+    # Ship the generated translation memory inside lang/ru.json so runtime localization
+    # and later build caches can reuse exactly the same labels and text fragments.
+    ru.update({k: v for k, v in translator.cache.items() if isinstance(k, str) and isinstance(v, str) and k != v})
     RU.write_text(json.dumps(ru,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+
+# Persist machine translations outside the distributable source tree. GitHub Actions
+# restores this file from its cache on the next build, avoiding thousands of repeat requests.
+translator.cache_file.parent.mkdir(parents=True, exist_ok=True)
+translator.cache_file.write_text(json.dumps(translator.cache, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(f"[CACHE] Saved {len(translator.cache)} translations to {translator.cache_file}.")
 
 # Path references must resolve under the fork's ID.
 for p in ROOT.rglob("*"):
