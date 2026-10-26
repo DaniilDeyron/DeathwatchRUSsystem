@@ -19,6 +19,7 @@ JS_NOTIFY = re.compile(r'((?:ui\.notifications|Notifications)\.(?:info|warn|erro
 JS_NOTIFY_SQ = re.compile(r"((?:ui\.notifications|Notifications)\.(?:info|warn|error|success)\s*\(\s*)'((?:\\.|[^'\\])*)'")
 JS_SETATTR_DQ = re.compile(r'((?:\.setAttribute\s*\(\s*)["\'](?:title|placeholder|aria-label|alt|data-tooltip)["\']\s*,\s*)"((?:\\.|[^"\\])*)"', re.I)
 JS_SETATTR_SQ = re.compile(r"((?:\.setAttribute\s*\(\s*)[\"'](?:title|placeholder|aria-label|alt|data-tooltip)[\"']\s*,\s*)'((?:\\.|[^'\\])*)'", re.I)
+JS_ENUM_VALUE_RE = re.compile(r'\b(effectType|valueAffected|damageType|dmgType|location|resistDifficulty|modeRequirement|abilityCategory|abilityType)\s*:\s*["\']([^"\']+)["\']')
 TICK = chr(96)
 ALL_TICK = re.compile(TICK + r'(.*?)' + TICK, re.S)
 JS_HTML_DQ = re.compile(r'(?P<q>")(?P<value>(?:\\.|[^"\\])*?<[/!]?[A-Za-z][^>]*>(?:\\.|[^"\\])*)(?P=q)', re.S)
@@ -172,6 +173,7 @@ MANUAL.update({
     "Devastator Marine":"Девастатор","Librarian":"Библиарий","Tactical Marine":"Тактический десантник",
     "Techmarine":"Технодесантник","Chaplain":"Капеллан","Specialty Name":"Название специализации",
     "The Red Thirst":"Красная жажда","Black Rage":"Чёрная ярость",
+    "Ranged":"Дальнобойное оружие","Mounted":"Установленное оружие","n/a":"Не применимо",
     "ws":"Ближний бой","bs":"Стрельба","str":"Сила","tg":"Стойкость","ag":"Ловкость",
     "int":"Интеллект","per":"Восприятие","wil":"Сила воли","fs":"Общительность","fel":"Общительность",
     "interaction":"Взаимодействие","solo":"Индивидуальный режим","squad":"Режим отряда",
@@ -352,6 +354,9 @@ for p in js_files:
     for rx in (JS_TICK_PROP, JS_TICK_ASSIGN, JS_TICK_VAR, JS_TEXT_VAR_DQ, JS_TEXT_VAR_SQ, JS_TEXT_CALL_DQ, JS_TEXT_CALL_SQ):
         for m in rx.finditer(raw):
             add(m.group(2), phrases)
+    for m in JS_ENUM_VALUE_RE.finditer(raw):
+        display_values.add(m.group(2).strip())
+        add(m.group(2), phrases)
     for m in ALL_TICK.finditer(raw):
         add(m.group(1), phrases)
     for rx in (JS_HTML_DQ, JS_HTML_SQ):
@@ -425,6 +430,9 @@ for p in html_files:
             <option value="Pistol" {{#if (eq system.class "Pistol")}}selected{{/if}}>Пистолетное оружие</option>
             <option value="Melee" {{#if (eq system.class "Melee")}}selected{{/if}}>Ближний бой</option>
             <option value="Thrown" {{#if (eq system.class "Thrown")}}selected{{/if}}>Метательное оружие</option>
+            <option value="Ranged" {{#if (eq system.class "Ranged")}}selected{{/if}}>Дальнобойное оружие</option>
+            <option value="Mounted" {{#if (eq system.class "Mounted")}}selected{{/if}}>Установленное оружие</option>
+            <option value="n/a" {{#if (eq system.class "n/a")}}selected{{/if}}>Не применимо</option>
         </select>"""
         text = text.replace(old_class, localized_class)
         old_reload = '<input type="text" name="system.reload" value="{{system.reload}}" />'
