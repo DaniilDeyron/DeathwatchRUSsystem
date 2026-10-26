@@ -172,7 +172,21 @@ MANUAL.update({
     "Devastator Marine":"Девастатор","Librarian":"Библиарий","Tactical Marine":"Тактический десантник",
     "Techmarine":"Технодесантник","Chaplain":"Капеллан","Specialty Name":"Название специализации",
     "The Red Thirst":"Красная жажда","Black Rage":"Чёрная ярость",
-    "Attack":"Атака","Attack Pattern":"План атаки","Defensive Stance":"Оборонительная стойка",
+    "ws":"Ближний бой","bs":"Стрельба","str":"Сила","tg":"Стойкость","ag":"Ловкость",
+    "int":"Интеллект","per":"Восприятие","wil":"Сила воли","fs":"Общительность","fel":"Общительность",
+    "interaction":"Взаимодействие","solo":"Индивидуальный режим","squad":"Режим отряда",
+    "chapter":"Орден","codex":"Кодекс","attack-pattern":"План атаки","defensive-stance":"Оборонительная стойка",
+    "characteristic-bonus":"Бонус характеристики","skill":"Навык","characteristic":"Характеристика",
+    "armor":"Броня","movement":"Перемещение","critical-damage":"Критический урон","weapon-damage":"Урон оружия",
+    "psy-rating":"Рейтинг псайкера","movement-multiplier":"Множитель перемещения","weapon-blast":"Радиус взрыва",
+    "weapon-penetration":"Пробитие оружия","weapon-damage-override":"Замена урона оружия","custom":"Особый",
+    "behavior":"Поведение","characteristic-post-multiplier":"Множитель характеристики","magnitude-bonus-damage":"Бонус урона орды",
+    "weapon-range":"Дальность оружия","initiative":"Инициатива","wounds":"Раны","weapon-rof":"Скорострельность оружия",
+    "righteous-fury-threshold":"Порог Праведной ярости","ignores-natural-armour":"Игнорирует естественную броню",
+    "characteristic-damage":"Урон характеристике","weapon-penetration-modifier":"Модификатор пробития оружия",
+    "weapon-felling":"Поражение устойчивых целей","premature-detonation":"Преждевременная детонация",
+    "weapon-devastating":"Опустошающее оружие","movement-restriction":"Ограничение перемещения",
+    "modifier":"Модификатор","weapon-weight":"Вес оружия","challenging":"Сложная",
     "Solo Mode":"Индивидуальный режим","Squad Mode":"Режим отряда",
     "Characteristics":"Характеристики","Inventory":"Инвентарь","Combat":"Бой","Skills":"Навыки",
     "Ranged Weapons":"Стрелковое оружие","Melee Weapons":"Оружие ближнего боя","Grenades":"Гранаты",
@@ -181,7 +195,7 @@ MANUAL.update({
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
 
-DISPLAY_VALUE_KEYS = {"range","reload","renown","dmgtype","damagetype","location","class","action","sustained","opposed","specialty","chapter"}
+DISPLAY_VALUE_KEYS = {"range","reload","renown","dmgtype","damagetype","location","class","action","sustained","opposed","specialty","chapter","effecttype","valueaffected","type","resistdifficulty","moderequirement","abilitycategory","abilitytype","curselevel1target","curselevel2target","curselevel3target"}
 display_values = set()
 
 if "--validate" in sys.argv:
@@ -353,6 +367,14 @@ for p in html_files:
     text = text.replace("{{item.system.action}}", "{{localize item.system.action}}")
     text = text.replace("{{item.system.location}}", "{{localize item.system.location}}")
     text = text.replace("{{item.system.damageType}}", "{{localize item.system.damageType}}")
+    text = text.replace("{{modifier.effectType}}", "{{localize modifier.effectType}}")
+    text = text.replace("{{modifier.type}}", "{{localize modifier.type}}")
+    text = text.replace("{{modifier.valueAffected}}", "{{localize modifier.valueAffected}}")
+    text = text.replace("{{trauma.system.resistDifficulty}}", "{{localize trauma.system.resistDifficulty}}")
+    text = text.replace("{{system.activeCurse.target}}", "{{localize system.activeCurse.target}}")
+    text = text.replace("{{system.modeRequirement}}", "{{localize system.modeRequirement}}")
+    text = text.replace("{{system.abilityCategory}}", "{{localize system.abilityCategory}}")
+    text = text.replace("{{system.abilityType}}", "{{localize system.abilityType}}")
     text = text.replace("{{substring item.system.renown 0 4}}", "{{substring (localize item.system.renown) 0 4}}")
     if p.name == "item-weapon-sheet.html":
         old_class = '<input type="text" name="system.class" value="{{system.class}}" />'
