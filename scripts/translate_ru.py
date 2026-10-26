@@ -36,10 +36,18 @@ JS_TICK_PROP = re.compile(r'(\b(?:content|template|html|message|description|labe
 JS_TICK_ASSIGN = re.compile(r'(\b(?:innerHTML|textContent|innerText)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
 JS_TICK_VAR = re.compile(r'(\b(?:const|let|var)\s+(?:content|message|html|flavor|description|label|title|summary|notification|dialogContent|tooltip|chatContent|chatHtml)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
 CONFIG_OBJ = re.compile(r'(DWConfig\.[A-Za-z0-9_]+\s*=\s*\{.*?^\s*\};)', re.S|re.M)
+CHARACTERISTIC_NAMES_OBJ = re.compile(r'((?:const|let|var)\s+CHARACTERISTIC_NAMES\s*=\s*\{.*?^\s*\};)', re.S|re.M)
 CONFIG_DQ = re.compile(r'(:\s*)"((?:\\.|[^"\\])*)"')
 CONFIG_SQ = re.compile(r"(:\s*)'((?:\\.|[^'\\])*)'")
 
 MANUAL = {
+    "Weapon Skill":"Ближний бой","Ballistic Skill":"Стрельба","Strength":"Сила","Toughness":"Стойкость",
+    "Agility":"Ловкость","Intelligence":"Интеллект","Perception":"Восприятие","Willpower":"Сила воли",
+    "Fellowship":"Общительность","Psy Rating (PR)":"Рейтинг псайкера (PR)",
+    "Weapon Skill (WS)":"Ближний бой (WS)","Ballistic Skill (BS)":"Стрельба (BS)",
+    "Strength (S)":"Сила (S)","Toughness (T)":"Стойкость (T)","Agility (AG)":"Ловкость (AG)",
+    "Intelligence (INT)":"Интеллект (INT)","Perception (PER)":"Восприятие (PER)",
+    "Willpower (WP)":"Сила воли (WP)","Fellowship (FEL)":"Общительность (FEL)",
     "Awareness":"Внимательность",
     "Carouse":"Кутёж",
     "Charm":"Обаяние",
@@ -373,6 +381,9 @@ for p in js_files:
     for block in CONFIG_OBJ.findall(raw):
         for rx in (CONFIG_DQ,CONFIG_SQ):
             for m in rx.finditer(block): add(m.group(2),phrases)
+    for block in CHARACTERISTIC_NAMES_OBJ.findall(raw):
+        for rx in (CONFIG_DQ,CONFIG_SQ):
+            for m in rx.finditer(block): add(m.group(2),phrases)
     for rx in (JS_DQ,JS_SQ,JS_ASSIGN,JS_ASSIGN_SQ,JS_NOTIFY,JS_NOTIFY_SQ,JS_SETATTR_DQ,JS_SETATTR_SQ):
         for m in rx.finditer(raw):
             val=m.group(2)
@@ -594,6 +605,12 @@ def config_sub(m):
 
 def js_sub(p, raw):
     raw=CONFIG_OBJ.sub(config_sub,raw)
+    def translate_characteristic_names(match):
+        block = match.group(1)
+        block = CONFIG_DQ.sub(lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
+        block = CONFIG_SQ.sub(lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
+        return block
+    raw=CHARACTERISTIC_NAMES_OBJ.sub(translate_characteristic_names,raw)
     def dq(m): return m.group(1)+'"'+translator.rich(m.group(2))+'"'
     def sq(m): return m.group(1)+"'"+translator.rich(m.group(2))+"'"
     raw=JS_DQ.sub(dq,raw)
