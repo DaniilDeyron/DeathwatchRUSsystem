@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(sys.argv[1]).resolve()
 RU = ROOT / "lang" / "ru.json"
-USER_FIELDS = {"name","description","shortdescription","text","label","title","hint","caption","summary","flavour","flavor","notes","descriptor","effect","content","tooltip","placeholder","message","book","detail","details","specialrules","prerequisites","requirementstext","rulesummary","resulttext"}
+USER_FIELDS = {"name","description","shortdescription","text","label","title","hint","caption","summary","flavour","flavor","notes","descriptor","effect","content","tooltip","placeholder","message","book","detail","details","specialrules","prerequisites","prerequisite","benefit","requirement","requirements","requirementstext","rulesummary","resulttext","replacementlabel","cursename","cursedescription","curselevel1name","curselevel1description","curselevel2name","curselevel2description","curselevel3name","curselevel3description","fulltext","bodytext","specialdescription"}
 PROTECTED = re.compile(r'(<!--.*?-->|<[^>]*>|{{!--.*?--}}|{{.*?}}|\$\{.*?\}|&(?:#\d+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);)', re.S)
 SCRIPT_STYLE = re.compile(r'(<(?:script|style)\b[^>]*>.*?</(?:script|style)\s*>)', re.I|re.S)
 HTML_COMMENTS = re.compile(r'<!--.*?-->', re.S)
@@ -149,8 +149,26 @@ if RU.exists():
     try: existing = json.loads(RU.read_text(encoding="utf-8"))
     except Exception: pass
 MANUAL.update({"Deathwatch Core Rulebook":"Основная книга правил Deathwatch","Core Rulebook":"Основная книга правил","Profile":"Профиль","Health":"Здоровье","Fatigue":"Усталость","Wounds":"Раны"})
+MANUAL.update({
+    "Basic":"Основное оружие","Heavy":"Тяжёлое оружие","Pistol":"Пистолетное оружие",
+    "Melee":"Ближний бой","Thrown":"Метательное оружие","Ranged":"Дальний бой",
+    "Mounted":"Установленное","Chapter":"Орден","Codex":"Кодекс",
+    "Divination":"Предсказание","Telepathy":"Телепатия","Telekinesis":"Телекинез",
+    "Tzeentch":"Тзинч","Nurgle":"Нургл","Slaanesh":"Слаанеш","Unaligned":"Непокорённый",
+    "Respected":"Уважаемый","Distinguished":"Почётный","Distinguised":"Почётный",
+    "Disinguished":"Почётный","Famed":"Знаменитый","Hero":"Герой","Special":"Особое",
+    "Self":"На себя","None":"Нет","Yes":"Да","No":"Нет","Full":"Полное действие",
+    "Half":"Половина действия","Free":"Свободное действие","Free Action":"Свободное действие",
+    "Half Action":"Половина действия","Full Action":"Полное действие","Reaction":"Реакция",
+    "reaction":"Реакция","free":"Свободное действие","half":"Половина действия","full":"Полное действие",
+    "Half or Reaction":"Половина действия или реакция","Extended (2)":"Длительное (2)",
+    "Extended (3)":"Длительное (3)","Extended (5)":"Длительное (5)","Extended (10)":"Длительное (10)"
+})
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
+
+DISPLAY_VALUE_KEYS = {"range","reload","renown","dmgtype","damagetype","location","class","action","sustained","opposed","specialty","chapter"}
+display_values = set()
 
 if "--validate" in sys.argv:
     print("Localization script syntax and regular-expression patterns are valid.")
@@ -236,6 +254,9 @@ for p in ROOT.rglob("*.json"):
             for k,v in x.items():
                 if isinstance(v,str) and k.lower() in USER_FIELDS: add(v,phrases)
                 elif isinstance(v,str) and k.lower()=="descriptor": add(v,phrases)
+                elif isinstance(v,str) and k.lower() in DISPLAY_VALUE_KEYS and eligible(v):
+                    display_values.add(v.strip())
+                    add(v,phrases)
                 else: scan(v)
         elif isinstance(x,list):
             for v in x: scan(v)
@@ -311,6 +332,14 @@ for p in html_files:
     text = p.read_text(encoding="utf-8")
     text = text.replace("{{system.dmgType}}", "{{localize system.dmgType}}")
     text = text.replace("{{item.system.class}}", "{{localize item.system.class}}")
+    text = text.replace("{{item.system.specialty}}", "{{localize item.system.specialty}}")
+    text = text.replace("{{item.system.chapter}}", "{{localize item.system.chapter}}")
+    text = text.replace("{{chapterDemeanour.system.chapter}}", "{{localize chapterDemeanour.system.chapter}}")
+    text = text.replace("{{item.system.range}}", "{{localize item.system.range}}")
+    text = text.replace("{{item.system.action}}", "{{localize item.system.action}}")
+    text = text.replace("{{item.system.location}}", "{{localize item.system.location}}")
+    text = text.replace("{{item.system.damageType}}", "{{localize item.system.damageType}}")
+    text = text.replace("{{substring item.system.renown 0 4}}", "{{substring (localize item.system.renown) 0 4}}")
     if p.name == "item-weapon-sheet.html":
         old_class = '<input type="text" name="system.class" value="{{system.class}}" />'
         localized_class = """<select name="system.class">
@@ -377,6 +406,9 @@ if RU.exists():
             for m in pat.finditer(raw):
                 key=m.group(1)
                 if key not in ru and " " in key and eligible(key): ru[key]=translator.cache.get(key,key)
+    for value in display_values:
+        if eligible(value):
+            ru[value] = translator.cache.get(value, value)
     RU.write_text(json.dumps(ru,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 
 # Path references must resolve under the fork's ID.
