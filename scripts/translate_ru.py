@@ -406,6 +406,20 @@ if pack_source.exists():
 print(f"[SCAN] {len(phrases)} unique English phrases found.")
 translator.prepare(phrases)
 
+# Report readable phrases that still appear entirely English after translation.
+# Proper nouns may remain, so this is an audit signal rather than a hard failure.
+cyrillic_re = re.compile(r"[А-Яа-яЁё]")
+latin_re = re.compile(r"[A-Za-z]{3,}")
+untranslated_readable = sorted({
+    phrase for phrase in phrases
+    if likely_prose(phrase)
+    and not cyrillic_re.search(translator.cache.get(phrase, phrase))
+    and latin_re.search(translator.cache.get(phrase, phrase))
+})
+print(f"[AUDIT] Readable phrases still entirely English: {len(untranslated_readable)}")
+for phrase in untranslated_readable[:100]:
+    print("[AUDIT-EN]", phrase[:200])
+
 def translate_json(x):
     if isinstance(x,dict):
         out={}
