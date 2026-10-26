@@ -161,8 +161,9 @@ MANUAL.update({
     "Half":"Половина действия","Free":"Свободное действие","Free Action":"Свободное действие",
     "Half Action":"Половина действия","Full Action":"Полное действие","Reaction":"Реакция",
     "reaction":"Реакция","free":"Свободное действие","half":"Половина действия","full":"Полное действие",
-    "Half or Reaction":"Половина действия или реакция","Extended (2)":"Длительное (2)",
-    "Extended (3)":"Длительное (3)","Extended (5)":"Длительное (5)","Extended (10)":"Длительное (10)"
+    "Half or Reaction":"Половина действия или реакция","2 Full":"2 полных действия","3 Full":"3 полных действия",
+    "4 Full":"4 полных действия","5 Full":"5 полных действий","2Full":"2 полных действия",
+    "Extended (2)":"Длительное (2)","Extended (3)":"Длительное (3)","Extended (5)":"Длительное (5)","Extended (10)":"Длительное (10)"
 })
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
@@ -350,6 +351,104 @@ for p in html_files:
             <option value="Thrown" {{#if (eq system.class "Thrown")}}selected{{/if}}>Метательное оружие</option>
         </select>"""
         text = text.replace(old_class, localized_class)
+        old_reload = '<input type="text" name="system.reload" value="{{system.reload}}" />'
+        localized_reload = """<select name="system.reload">
+            <option value="" {{#unless system.reload}}selected{{/unless}}>—</option>
+            <option value="Full" {{#if (eq system.reload "Full")}}selected{{/if}}>Полное действие</option>
+            <option value="2 Full" {{#if (eq system.reload "2 Full")}}selected{{/if}}>2 полных действия</option>
+            <option value="2Full" {{#if (eq system.reload "2Full")}}selected{{/if}}>2 полных действия</option>
+            <option value="3 Full" {{#if (eq system.reload "3 Full")}}selected{{/if}}>3 полных действия</option>
+            <option value="4 Full" {{#if (eq system.reload "4 Full")}}selected{{/if}}>4 полных действия</option>
+            <option value="5 Full" {{#if (eq system.reload "5 Full")}}selected{{/if}}>5 полных действий</option>
+            <option value="Half" {{#if (eq system.reload "Half")}}selected{{/if}}>Половина действия</option>
+            <option value="—" {{#if (eq system.reload "—")}}selected{{/if}}>—</option>
+            <option value="–" {{#if (eq system.reload "–")}}selected{{/if}}>–</option>
+            <option value="-" {{#if (eq system.reload "-")}}selected{{/if}}>-</option>
+        </select>"""
+        text = text.replace(old_reload, localized_reload)
+
+    renown_input = '<input type="text" name="system.renown" value="{{system.renown}}" />'
+    renown_select = """<select name="system.renown">
+        <option value="" {{#unless system.renown}}selected{{/unless}}>—</option>
+        <option value="Respected" {{#if (eq system.renown "Respected")}}selected{{/if}}>Уважаемый</option>
+        <option value="Distinguished" {{#if (eq system.renown "Distinguished")}}selected{{/if}}>Почётный</option>
+        <option value="Distinguised" {{#if (eq system.renown "Distinguised")}}selected{{/if}}>Почётный</option>
+        <option value="Disinguished" {{#if (eq system.renown "Disinguished")}}selected{{/if}}>Почётный</option>
+        <option value="Famed" {{#if (eq system.renown "Famed")}}selected{{/if}}>Знаменитый</option>
+        <option value="Hero" {{#if (eq system.renown "Hero")}}selected{{/if}}>Герой</option>
+        <option value="Special" {{#if (eq system.renown "Special")}}selected{{/if}}>Особое</option>
+    </select>"""
+    text = text.replace(renown_input, renown_select)
+
+    if p.name == "item-psychic-power-sheet.html":
+        pairs = [
+            ('<input type="text" name="system.action" value="{{system.action}}" placeholder="Full, Half, Free" class="stat-input" />',
+             """<select name="system.action" class="stat-input">
+                <option value="" {{#unless system.action}}selected{{/unless}}>—</option>
+                <option value="Half" {{#if (eq system.action "Half")}}selected{{/if}}>Половина действия</option>
+                <option value="Half Action" {{#if (eq system.action "Half Action")}}selected{{/if}}>Половина действия</option>
+                <option value="half" {{#if (eq system.action "half")}}selected{{/if}}>Половина действия</option>
+                <option value="Full" {{#if (eq system.action "Full")}}selected{{/if}}>Полное действие</option>
+                <option value="Full Action" {{#if (eq system.action "Full Action")}}selected{{/if}}>Полное действие</option>
+                <option value="full" {{#if (eq system.action "full")}}selected{{/if}}>Полное действие</option>
+                <option value="Free" {{#if (eq system.action "Free")}}selected{{/if}}>Свободное действие</option>
+                <option value="Free Action" {{#if (eq system.action "Free Action")}}selected{{/if}}>Свободное действие</option>
+                <option value="free" {{#if (eq system.action "free")}}selected{{/if}}>Свободное действие</option>
+                <option value="Reaction" {{#if (eq system.action "Reaction")}}selected{{/if}}>Реакция</option>
+                <option value="reaction" {{#if (eq system.action "reaction")}}selected{{/if}}>Реакция</option>
+                <option value="Half or Reaction" {{#if (eq system.action "Half or Reaction")}}selected{{/if}}>Половина действия или реакция</option>
+                <option value="Extended (2)" {{#if (eq system.action "Extended (2)")}}selected{{/if}}>Длительное (2)</option>
+                <option value="Extended (3)" {{#if (eq system.action "Extended (3)")}}selected{{/if}}>Длительное (3)</option>
+                <option value="Extended (5)" {{#if (eq system.action "Extended (5)")}}selected{{/if}}>Длительное (5)</option>
+                <option value="Extended (10)" {{#if (eq system.action "Extended (10)")}}selected{{/if}}>Длительное (10)</option>
+                <option value="Special" {{#if (eq system.action "Special")}}selected{{/if}}>Особое</option>
+             </select>"""),
+            ('<input type="text" name="system.opposed" value="{{system.opposed}}" placeholder="Yes/No" class="stat-input" />',
+             """<select name="system.opposed" class="stat-input">
+                <option value="" {{#unless system.opposed}}selected{{/unless}}>—</option>
+                <option value="Yes" {{#if (eq system.opposed "Yes")}}selected{{/if}}>Да</option>
+                <option value="No" {{#if (eq system.opposed "No")}}selected{{/if}}>Нет</option>
+             </select>"""),
+            ('<input type="text" name="system.sustained" value="{{system.sustained}}" placeholder="Yes/No" class="stat-input" />',
+             """<select name="system.sustained" class="stat-input">
+                <option value="" {{#unless system.sustained}}selected{{/unless}}>—</option>
+                <option value="No" {{#if (eq system.sustained "No")}}selected{{/if}}>Нет</option>
+                <option value="Yes" {{#if (eq system.sustained "Yes")}}selected{{/if}}>Да</option>
+                <option value="None" {{#if (eq system.sustained "None")}}selected{{/if}}>Нет</option>
+                <option value="Free Action" {{#if (eq system.sustained "Free Action")}}selected{{/if}}>Свободное действие</option>
+                <option value="Half Action" {{#if (eq system.sustained "Half Action")}}selected{{/if}}>Половина действия</option>
+             </select>"""),
+            ('<input type="text" name="system.damageType" value="{{system.damageType}}" placeholder="Energy, Impact" class="stat-input" />',
+             """<select name="system.damageType" class="stat-input">
+                <option value="" {{#unless system.damageType}}selected{{/unless}}>—</option>
+                <option value="Energy" {{#if (eq system.damageType "Energy")}}selected{{/if}}>Энергетический</option>
+                <option value="Explosive" {{#if (eq system.damageType "Explosive")}}selected{{/if}}>Взрывной</option>
+                <option value="Impact" {{#if (eq system.damageType "Impact")}}selected{{/if}}>Ударный</option>
+                <option value="Rending" {{#if (eq system.damageType "Rending")}}selected{{/if}}>Режущий</option>
+             </select>""")
+        ]
+        for old, new in pairs:
+            text = text.replace(old, new)
+
+    if p.name == "item-critical-effect-sheet.html":
+        old_location = '<input type="text" name="system.location" value="{{system.location}}" placeholder="e.g., Head, Body, Arm, Leg" />'
+        new_location = """<select name="system.location">
+            <option value="" {{#unless system.location}}selected{{/unless}}>—</option>
+            <option value="Head" {{#if (eq system.location "Head")}}selected{{/if}}>Голова</option>
+            <option value="Body" {{#if (eq system.location "Body")}}selected{{/if}}>Тело</option>
+            <option value="Arm" {{#if (eq system.location "Arm")}}selected{{/if}}>Рука</option>
+            <option value="Leg" {{#if (eq system.location "Leg")}}selected{{/if}}>Нога</option>
+        </select>"""
+        old_damage = '<input type="text" name="system.damageType" value="{{system.damageType}}" placeholder="e.g., Impact, Energy, Rending" />'
+        new_damage = """<select name="system.damageType">
+            <option value="" {{#unless system.damageType}}selected{{/unless}}>—</option>
+            <option value="Energy" {{#if (eq system.damageType "Energy")}}selected{{/if}}>Энергетический</option>
+            <option value="Explosive" {{#if (eq system.damageType "Explosive")}}selected{{/if}}>Взрывной</option>
+            <option value="Impact" {{#if (eq system.damageType "Impact")}}selected{{/if}}>Ударный</option>
+            <option value="Rending" {{#if (eq system.damageType "Rending")}}selected{{/if}}>Режущий</option>
+        </select>"""
+        text = text.replace(old_location, new_location).replace(old_damage, new_damage)
+
     p.write_text(translate_html(text),encoding="utf-8")
 
 def config_sub(m):
