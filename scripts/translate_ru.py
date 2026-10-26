@@ -22,6 +22,8 @@ JS_SETATTR_SQ = re.compile(r"((?:\.setAttribute\s*\(\s*)[\"'](?:title|placeholde
 JS_ENUM_VALUE_RE = re.compile(r'\b(effectType|valueAffected|damageType|dmgType|location|resistDifficulty|modeRequirement|abilityCategory|abilityType)\s*:\s*["\']([^"\']+)["\']')
 JS_VALIDATION_DQ = re.compile(r'"((?:\\.|[^"\\])*)"')
 JS_VALIDATION_SQ = re.compile(r"'((?:\\.|[^'\\])*)'")
+JS_EXPR_RE = re.compile(r"\$" + r"\{.*?\}", re.S)
+TERNARY_LITERAL_RE = re.compile(r"(\?\s*)([\"'])(.*?)\2(\s*:\s*)([\"'])(.*?)\5", re.S)
 TICK = chr(96)
 ALL_TICK = re.compile(TICK + r'(.*?)' + TICK, re.S)
 JS_HTML_DQ = re.compile(r'(?P<q>")(?P<value>(?:\\.|[^"\\])*?<[/!]?[A-Za-z][^>]*>(?:\\.|[^"\\])*)(?P=q)', re.S)
@@ -246,6 +248,19 @@ def add(s, store):
     for match in ATTR.finditer(s):
         store.update(plain_parts(match.group("value")))
 
+def inside_html_tag(text, index):
+    return text.rfind("<", 0, index) > text.rfind(">", 0, index)
+
+def add_template(s, store):
+    add(s, store)
+    # Ternary labels embedded in visible template expressions need their own translations.
+    for match in JS_EXPR_RE.finditer(s):
+        if inside_html_tag(s, match.start()):
+            continue
+        for branch in TERNARY_LITERAL_RE.finditer(match.group(0)):
+            add(branch.group(3), store)
+            add(branch.group(6), store)
+
 class MT:
     def __init__(self):
         self.cache = {}
@@ -308,6 +323,15 @@ class MT:
         def attr_sub(m):
             return m.group("prefix")+m.group("q")+self.rich(m.group("value"))+m.group("q")
         s=ATTR.sub(attr_sub,s)
+        def translate_visible_expression(match):
+            if inside_html_tag(s, match.start()):
+                return match.group(0)
+            expression = match.group(0)
+            return TERNARY_LITERAL_RE.sub(
+                lambda branch: branch.group(1)+branch.group(2)+self.simple(branch.group(3))+branch.group(2)+branch.group(4)+branch.group(5)+self.simple(branch.group(6))+branch.group(5),
+                expression
+            )
+        s=JS_EXPR_RE.sub(translate_visible_expression,s)
         return "".join(p if not p or PROTECTED.fullmatch(p) else self.simple(p) for p in PROTECTED.split(s))
 
 translator=MT(); phrases=set()
@@ -355,7 +379,7 @@ for p in js_files:
             if chr(36)+"{" not in val and "{{" not in val: add(val,phrases)
     for rx in (JS_TICK_PROP, JS_TICK_ASSIGN, JS_TICK_VAR, JS_TEXT_VAR_DQ, JS_TEXT_VAR_SQ, JS_TEXT_CALL_DQ, JS_TEXT_CALL_SQ):
         for m in rx.finditer(raw):
-            add(m.group(2), phrases)
+            add_template(m.group(2), phrases)
     for m in JS_ENUM_VALUE_RE.finditer(raw):
         display_values.add(m.group(2).strip())
         add(m.group(2), phrases)
@@ -365,7 +389,7 @@ for p in js_files:
                 for m in rx.finditer(line):
                     add(m.group(1), phrases)
     for m in ALL_TICK.finditer(raw):
-        add(m.group(1), phrases)
+        add_template(m.group(1), phrases)
     for rx in (JS_HTML_DQ, JS_HTML_SQ):
         for m in rx.finditer(raw):
             add(m.group("value"), phrases)
