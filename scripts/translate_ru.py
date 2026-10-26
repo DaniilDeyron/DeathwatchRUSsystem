@@ -206,6 +206,28 @@ MANUAL.update({
     "Ranged Weapons":"Стрелковое оружие","Melee Weapons":"Оружие ближнего боя","Grenades":"Гранаты",
     "Recalculate":"Пересчитать","Edit Cohesion":"Изменить сплочённость","Confirm":"Подтвердить","Roll":"Бросок"
 })
+MANUAL.update({
+    "Battle-Brother":"Боевой брат","Battle-Brothers":"Боевые братья",
+    "Kill-team":"Боевой отряд","Kill-team Cohesion":"Сплочённость отряда","Cohesion":"Сплочённость",
+    "Fate Point":"Очко судьбы","Fate Points":"Очки судьбы","Righteous Fury":"Праведная ярость",
+    "Imperium of Man":"Империум Человечества","Adeptus Astartes":"Адептус Астартес",
+    "Space Marine":"Космодесантник","Space Marines":"Космодесантники",
+    "Chapter Master":"Мастер ордена","Power Armour":"Силовая броня","Power Armor":"Силовая броня",
+    "Storm Bolter":"Штурмовой болтер","Boltgun":"Болтер","Bolter":"Болтер",
+    "Chainsword":"Цепной меч","Chain Sword":"Цепной меч","Plasma Gun":"Плазмаган",
+    "Melta Gun":"Мельтаган","Flamer":"Огнемёт","Ork":"Орк","Orks":"Орки",
+    "Tyranid":"Тиранид","Tyranids":"Тираниды","Genestealer":"Генокрад","Genestealers":"Генокрады",
+    "Daemon":"Демон","Daemons":"Демоны","Psyker":"Псайкер","Psykers":"Псайкеры",
+    "The Emperor":"Император","Emperor":"Император","Primarch":"Примарх",
+    "Gene-seed":"Геносемя","Gene Seed":"Геносемя","Holy Terra":"Святая Терра","Astartes":"Астартес",
+    "Power Sword":"Силовой меч","Thunder Hammer":"Громовой молот","Servo-skull":"Череп-сервитор",
+    "Auspex":"Ауспекс","High Gothic":"Высокий готик","Low Gothic":"Низкий готик",
+    "Imperial Guard":"Имперская гвардия","Imperial Navy":"Имперский флот",
+    "Black Templars":"Чёрные Храмовники","Blood Angels":"Кровавые Ангелы",
+    "Dark Angels":"Тёмные Ангелы","Iron Hands":"Железные Руки",
+    "Space Wolves":"Космические Волки","Storm Wardens":"Стражи Бури",
+    "Ultramarines":"Ультрамарины","Novamarines":"Новомаринцы","Raptors":"Рапторы"
+})
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
 
