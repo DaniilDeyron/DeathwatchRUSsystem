@@ -10,7 +10,7 @@ PROTECTED = re.compile(r'(<!--.*?-->|<[^>]*>|{{!--.*?--}}|{{.*?}}|\$\{.*?\}|&(?:
 SCRIPT_STYLE = re.compile(r'(<(?:script|style)\b[^>]*>.*?</(?:script|style)\s*>)', re.I|re.S)
 HTML_COMMENTS = re.compile(r'<!--.*?-->', re.S)
 ATTR = re.compile(r'(?P<prefix>\b(?:title|placeholder|aria-label|alt|data-tooltip|data-label|aria-description)\s*=\s*)(?P<q>["\'])(?P<value>.*?)(?P=q)', re.I|re.S)
-JS_KEYS = "label|title|content|hint|placeholder|tooltip|caption|message|description|confirm|cancel|ok|yes|no|footer|header|text|buttonText|emptyLabel|confirmText|cancelText|successMessage|errorMessage|infoMessage|dialogTitle|dialogContent|windowTitle|notification|helpText|submitLabel"
+JS_KEYS = "label|name|title|content|hint|placeholder|tooltip|caption|message|description|confirm|cancel|ok|yes|no|footer|header|text|buttonText|emptyLabel|confirmText|cancelText|successMessage|errorMessage|infoMessage|dialogTitle|dialogContent|windowTitle|notification|helpText|submitLabel"
 JS_DQ = re.compile(r'(\b(?:'+JS_KEYS+r')\s*:\s*)"((?:\\.|[^"\\])*)"', re.S)
 JS_SQ = re.compile(r"(\b(?:"+JS_KEYS+r")\s*:\s*)'((?:\\.|[^'\\])*)'", re.S)
 JS_ASSIGN = re.compile(r'(\b(?:innerHTML|textContent|innerText|placeholder|ariaLabel|title|tooltip)\s*=\s*)"((?:\\.|[^"\\])*)"', re.S)
@@ -157,6 +157,7 @@ MANUAL.update({
     "Tzeentch":"Тзинч","Nurgle":"Нургл","Slaanesh":"Слаанеш","Unaligned":"Непокорённый",
     "Respected":"Уважаемый","Distinguished":"Почётный","Distinguised":"Почётный",
     "Disinguished":"Почётный","Famed":"Знаменитый","Hero":"Герой","Special":"Особое",
+    "Head":"Голова","Body":"Тело","Arm":"Рука","Leg":"Нога",
     "Self":"На себя","None":"Нет","Yes":"Да","No":"Нет","Full":"Полное действие",
     "Half":"Половина действия","Free":"Свободное действие","Free Action":"Свободное действие",
     "Half Action":"Половина действия","Full Action":"Полное действие","Reaction":"Реакция",
