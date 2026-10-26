@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(sys.argv[1]).resolve()
 RU = ROOT / "lang" / "ru.json"
-USER_FIELDS = {"name","description","shortdescription","text","label","title","hint","caption","summary","flavour","flavor","notes","descriptor","effect","content","tooltip","placeholder","message","book","detail","details","specialrules","prerequisites","prerequisite","benefit","requirement","requirements","requirementstext","rulesummary","resulttext","replacementlabel","cursename","cursedescription","curselevel1name","curselevel1description","curselevel2name","curselevel2description","curselevel3name","curselevel3description","fulltext","bodytext","specialdescription"}
+USER_FIELDS = {"name","description","shortdescription","text","label","title","hint","caption","summary","flavour","flavor","notes","descriptor","content","tooltip","placeholder","message","book","detail","details","specialrules","prerequisites","prerequisite","benefit","requirement","requirements","requirementstext","rulesummary","resulttext","replacementlabel","cursename","cursedescription","curselevel1name","curselevel1description","curselevel2name","curselevel2description","curselevel3name","curselevel3description","fulltext","bodytext","specialdescription"}
 PROTECTED = re.compile(r'(<!--.*?-->|<[^>]*>|{{!--.*?--}}|{{.*?}}|\$\{.*?\}|&(?:#\d+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);)', re.S)
 SCRIPT_STYLE = re.compile(r'(<(?:script|style)\b[^>]*>.*?</(?:script|style)\s*>)', re.I|re.S)
 HTML_COMMENTS = re.compile(r'<!--.*?-->', re.S)
@@ -196,7 +196,30 @@ GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip(
 GLOSSARY.update(MANUAL)
 
 DISPLAY_VALUE_KEYS = {"range","reload","renown","dmgtype","damagetype","location","class","action","sustained","opposed","specialty","chapter","effecttype","valueaffected","type","resistdifficulty","moderequirement","abilitycategory","abilitytype","curselevel1target","curselevel2target","curselevel3target"}
+TECHNICAL_KEYS = {
+    "_id","id","_sourceid","sourceid","type","img","src","path","folder","folderid",
+    "uuid","slug","key","systemid","compendiumid","formula","roll","expression","range",
+    "reload","rof","availability","class","damagetype","dmgtype","location","action",
+    "sustained","opposed","renown","specialty","chapter","valueaffected","effecttype",
+    "flags","tag","page","value","base","max","min","modifier","rank","weight","cost",
+    "price","units","coordinates","x","y","z","width","height","font","fontfamily",
+    "size","opacity","tint","rotation","scale","sort","sortorder","pack","permission",
+    "image","thumbnail","macrotype","source","kind","targetid","targettype"
+}
 display_values = set()
+
+def likely_prose(value):
+    if not isinstance(value, str):
+        return False
+    text = value.strip()
+    if not eligible(text) or not re.search(r"\\s", text):
+        return False
+    if any(token in text for token in ("{{", "}}", "${", "@UUID", "@Compendium")):
+        return False
+    if re.fullmatch(r"[A-Za-z0-9_./\\-]+", text):
+        return False
+    words = re.findall(r"[A-Za-zА-Яа-яЁё]{2,}", text)
+    return len(words) >= 2
 
 if "--validate" in sys.argv:
     print("Localization script syntax and regular-expression patterns are valid.")
@@ -299,6 +322,9 @@ for p in ROOT.rglob("*.json"):
                 elif isinstance(v,str) and k.lower() in DISPLAY_VALUE_KEYS and eligible(v):
                     display_values.add(v.strip())
                     add(v,phrases)
+                elif isinstance(v,str) and k.lower() not in TECHNICAL_KEYS and likely_prose(v):
+                    # Catch readable fields with names that differ between compendium types.
+                    add(v,phrases)
                 else: scan(v)
         elif isinstance(x,list):
             for v in x: scan(v)
@@ -350,6 +376,7 @@ def translate_json(x):
         for k,v in x.items():
             if isinstance(v,str) and k.lower() in USER_FIELDS: out[k]=translator.rich(v)
             elif isinstance(v,str) and k.lower()=="descriptor": out[k]=translator.simple(v)
+            elif isinstance(v,str) and k.lower() not in TECHNICAL_KEYS and likely_prose(v): out[k]=translator.rich(v)
             else: out[k]=translate_json(v)
         return out
     if isinstance(x,list): return [translate_json(v) for v in x]
