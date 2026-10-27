@@ -27,5 +27,7 @@ jobs:
       - name: Reject unsafe global backtick processing
         run: |
           ! grep -Fq "ALL_TICK.sub" scripts/translate_ru.py
+          ! grep -Fq "JS_HTML_DQ" scripts/translate_ru.py
+          ! grep -Fq "JS_HTML_SQ" scripts/translate_ru.py
           grep -Fq "def encode_js_string" scripts/translate_ru.py
           grep -Fq "def translate_template_content" scripts/translate_ru.py
