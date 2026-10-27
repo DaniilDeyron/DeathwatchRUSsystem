@@ -269,7 +269,16 @@ def likely_prose(value):
     return len(words) >= 2
 
 if "--validate" in sys.argv:
-    print("Localization script syntax and regular-expression patterns are valid.")
+    # Smoke-test the patterns against representative dynamic values without calling a translator.
+    handlebars = "{{item.system.class}}"
+    modifier = "{{modifier.effectType}}"
+    javascript = "${item.system.damageType}"
+    assert ENUM_INTERPOLATION_RE.fullmatch(handlebars).group(1) == "item.system.class"
+    assert ENUM_INTERPOLATION_RE.fullmatch(modifier).group(1) == "modifier.effectType"
+    assert JS_ENUM_EXPR_RE.fullmatch(javascript).group(1) == "item.system.damageType"
+    assert ENUM_INTERPOLATION_RE.fullmatch("{{#if system.class}}") is None
+    assert JS_ENUM_EXPR_RE.fullmatch("${damage + 1}") is None
+    print("Localization script syntax and enum interpolation smoke tests passed.")
     sys.exit(0)
 
 def eligible(s):
