@@ -97,10 +97,29 @@ jobs:
           const entryPath = 'upstream/src/module/deathwatch.mjs';
           let entry = fs.readFileSync(entryPath, 'utf8');
           entry = entry.replaceAll('registerSheet("deathwatch",', 'registerSheet("deathwatch-ru",');
+          entry = entry.replaceAll("registerSheet('deathwatch',", "registerSheet('deathwatch-ru',");
+          if (!entry.includes('registerSheet("deathwatch-ru", DeathwatchActorSheetV2')) {
+            throw new Error('Actor sheet registration was not migrated to system ID deathwatch-ru');
+          }
+          if (!entry.includes('registerSheet("deathwatch-ru", DeathwatchItemSheetV2')) {
+            throw new Error('Item sheet registration was not migrated to system ID deathwatch-ru');
+          }
           fs.writeFileSync(entryPath, entry);
           NODE
 
           python upstream/src/scripts/translate_ru.py upstream/src
+
+          # Fail the build if the custom actor/item sheets are not registered under this fork's ID.
+          grep -Fq 'registerSheet("deathwatch-ru", DeathwatchActorSheetV2' upstream/src/module/deathwatch.mjs
+          grep -Fq 'registerSheet("deathwatch-ru", DeathwatchItemSheetV2' upstream/src/module/deathwatch.mjs
+          ! grep -Fq 'registerSheet("deathwatch", DeathwatchActorSheetV2' upstream/src/module/deathwatch.mjs
+          ! grep -Fq 'registerSheet("deathwatch", DeathwatchItemSheetV2' upstream/src/module/deathwatch.mjs
+
+          # These custom templates are essential; if they are missing or empty, stop before release.
+          test -s upstream/src/templates/actor/actor-character-sheet.html
+          test -s upstream/src/templates/item/item-weapon-sheet.html
+          test -s upstream/src/templates/item/item-trait-sheet.html
+
           cd upstream
           npm install
           npm run build:packs
@@ -112,6 +131,16 @@ jobs:
           mkdir -p dist/deathwatch-ru
           rsync -a --exclude='/packs-source/' --exclude='/scripts/' --exclude='/README_RU.md' --exclude='*.test.mjs' upstream/src/ dist/deathwatch-ru/
           (cd dist/deathwatch-ru && zip -qr ../../deathwatch-ru.zip .)
+
+          # Inspect the exact ZIP that will be attached to the release.
+          unzip -p deathwatch-ru.zip module/deathwatch.mjs | grep -Fq 'registerSheet("deathwatch-ru", DeathwatchActorSheetV2'
+          unzip -p deathwatch-ru.zip module/deathwatch.mjs | grep -Fq 'registerSheet("deathwatch-ru", DeathwatchItemSheetV2'
+          unzip -l deathwatch-ru.zip | grep -Fq 'templates/actor/actor-character-sheet.html'
+          unzip -l deathwatch-ru.zip | grep -Fq 'templates/item/item-weapon-sheet.html'
+          unzip -l deathwatch-ru.zip | grep -Fq 'lang/ru.json'
+          unzip -l deathwatch-ru.zip | grep -Fq 'packs/weapons/'
+          unzip -l deathwatch-ru.zip | grep -Fq 'packs/talents/'
+
           ls -lh deathwatch-ru.zip
 
       - name: Determine release tag
