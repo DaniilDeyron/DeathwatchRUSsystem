@@ -36,15 +36,13 @@ JS_VALIDATION_SQ = re.compile(r"'((?:\\.|[^'\\])*)'")
 JS_EXPR_RE = re.compile(r"\$" + r"\{.*?\}", re.S)
 TERNARY_LITERAL_RE = re.compile(r"(\?\s*)([\"'])(.*?)\2(\s*:\s*)([\"'])(.*?)\5", re.S)
 TICK = chr(96)
-JS_HTML_DQ = re.compile(r'(?P<q>")(?P<value>(?:\\.|[^"\\])*?<[/!]?[A-Za-z][^>]*>(?:\\.|[^"\\])*)(?P=q)', re.S)
-JS_HTML_SQ = re.compile(r"(?P<q>')(?P<value>(?:\\.|[^'\\])*?<[/!]?[A-Za-z][^>]*>(?:\\.|[^'\\])*)(?P=q)", re.S)
-JS_TEXT_VAR_DQ = re.compile(r'(\b(?:const|let|var)\s+[A-Za-z_$][\w$]*(?:label|title|message|flavor|description|summary|notification|tooltip|dialogcontent|chatcontent|content|html|header|footer)\s*=\s*)"((?:\\.|[^"\\])*)"', re.S|re.I)
+JS_TEXT_VAR_DQ = re.compile(r'(\b(?:const|let|var)\s+[A-Za-z_$][\w$]*(?:label|title|message|flavor|description|summary|notification|tooltip|dialogcontent|chatcontent|content|html|template|header|footer)\s*=\s*)"((?:\\.|[^"\\])*)"', re.S|re.I)
 JS_TEXT_VAR_SQ = re.compile(r"(\b(?:const|let|var)\s+[A-Za-z_$][\w$]*(?:label|title|message|flavor|description|summary|notification|tooltip|dialogcontent|chatcontent|content|html|header|footer)\s*=\s*)'((?:\\.|[^'\\])*)'", re.S|re.I)
 JS_TEXT_CALL_DQ = re.compile(r'(\b[A-Za-z_$][\w$]*(?:build|create|make|format|show|render|display)[A-Za-z_$]*(?:Flavor|Message|Content|Dialog|Label|Title)\s*\(\s*)"((?:\\.|[^"\\])*)"', re.S|re.I)
 JS_TEXT_CALL_SQ = re.compile(r"(\b[A-Za-z_$][\w$]*(?:build|create|make|format|show|render|display)[A-Za-z_$]*(?:Flavor|Message|Content|Dialog|Label|Title)\s*\(\s*)'((?:\\.|[^'\\])*)'", re.S|re.I)
 JS_TICK_PROP = re.compile(r'(\b(?:content|template|html|message|description|label|title)\s*:\s*)' + TICK + r'(.*?)' + TICK, re.S)
 JS_TICK_ASSIGN = re.compile(r'(\b(?:innerHTML|textContent|innerText)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
-JS_TICK_VAR = re.compile(r'(\b(?:const|let|var)\s+(?:content|message|html|flavor|description|label|title|summary|notification|dialogContent|tooltip|chatContent|chatHtml)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
+JS_TICK_VAR = re.compile(r'(\b(?:const|let|var)\s+(?:content|message|html|template|flavor|description|label|title|summary|notification|dialogContent|tooltip|chatContent|chatHtml)\s*=\s*)' + TICK + r'(.*?)' + TICK, re.S)
 CONFIG_OBJ = re.compile(r'(DWConfig\.[A-Za-z0-9_]+\s*=\s*\{.*?^\s*\};)', re.S|re.M)
 CHARACTERISTIC_NAMES_OBJ = re.compile(r'((?:const|let|var)\s+CHARACTERISTIC_NAMES\s*=\s*\{.*?^\s*\};)', re.S|re.M)
 CONFIG_DQ = re.compile(r'(:\s*)"((?:\\.|[^"\\])*)"')
@@ -457,9 +455,7 @@ for p in js_files:
                 for m in rx.finditer(line):
                     add(m.group(1), phrases)
     # Only scan identified UI template literals. Arbitrary backticks in comments can span code.
-    for rx in (JS_HTML_DQ, JS_HTML_SQ):
-        for m in rx.finditer(raw):
-            add(m.group("value"), phrases)
+
 
 folder_labels = set()
 pack_source = ROOT / "packs-source"
@@ -684,8 +680,6 @@ def js_sub(p, raw):
     raw=JS_TEXT_VAR_SQ.sub(sq,raw)
     raw=JS_TEXT_CALL_DQ.sub(dq,raw)
     raw=JS_TEXT_CALL_SQ.sub(sq,raw)
-    raw=JS_HTML_DQ.sub(lambda m:encode_js_string(m.group("value"), '"'),raw)
-    raw=JS_HTML_SQ.sub(lambda m:encode_js_string(m.group("value"), "'"),raw)
     validation_lines=[]
     for line in raw.splitlines(keepends=True):
         if "Validation." in line:
