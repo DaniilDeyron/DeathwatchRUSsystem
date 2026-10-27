@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Translate visible Deathwatch UI and compendium text to Russian during CI build."""
-import json, re, sys, time, urllib.parse, urllib.request
+import ast, json, re, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(sys.argv[1]).resolve()
@@ -386,6 +386,22 @@ class MT:
 
 translator=MT(); phrases=set()
 
+def encode_js_string(raw_value, source_quote='"'):
+    try:
+        decoded = ast.literal_eval(source_quote + raw_value + source_quote)
+        if not isinstance(decoded, str):
+            decoded = raw_value
+    except Exception:
+        decoded = raw_value
+    return json.dumps(translator.rich(decoded), ensure_ascii=False)
+
+def translate_template_content(content):
+    body = translator.rich(content)
+    body = JS_ENUM_EXPR_RE.sub(lambda x: "$" + "{game.i18n.localize(" + x.group(1) + ")}", body)
+    for enum in ("dmgType","damageType","critLocation","location","effectType","valueAffected","resistDifficulty"):
+        body = body.replace("$" + "{" + enum + "}", "$" + "{game.i18n.localize(" + enum + ")}")
+    return body
+
 # Collect natural language in all pack-source JSON and display-data JSON.
 for p in ROOT.rglob("*.json"):
     rel=p.relative_to(ROOT).as_posix()
@@ -441,8 +457,7 @@ for p in js_files:
             for rx in (JS_VALIDATION_DQ, JS_VALIDATION_SQ):
                 for m in rx.finditer(line):
                     add(m.group(1), phrases)
-    for m in ALL_TICK.finditer(raw):
-        add_template(m.group(1), phrases)
+    # Only scan identified UI template literals. Arbitrary backticks in comments can span code.
     for rx in (JS_HTML_DQ, JS_HTML_SQ):
         for m in rx.finditer(raw):
             add(m.group("value"), phrases)
@@ -637,26 +652,24 @@ for p in html_files:
 
 def config_sub(m):
     block=m.group(1)
-    # Translate only presentation maps. Enum values in WeaponDamageType and other
-    # gameplay config maps must remain canonical English, since mechanics compare them.
+    # Translate only presentation maps; rule enums stay canonical.
     if "DWConfig.Skills" in block or "DWConfig.CharacteristicWords" in block:
-        block=CONFIG_DQ.sub(lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
-        block=CONFIG_SQ.sub(lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
+        block=CONFIG_DQ.sub(lambda x:x.group(1)+encode_js_string(x.group(2), '"'),block)
+        block=CONFIG_SQ.sub(lambda x:x.group(1)+encode_js_string(x.group(2), "'"),block)
     elif "DWConfig.TestDifficulties" in block:
-        block=re.sub(r'(\blabel\s*:\s*)"([^"]*)"',lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
-        block=re.sub(r"(\blabel\s*:\s*)'([^']*)'",lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
+        block=re.sub(r'(\blabel\s*:\s*)"((?:\\.|[^"\\])*)"',lambda x:x.group(1)+encode_js_string(x.group(2), '"'),block)
+        block=re.sub(r"(\blabel\s*:\s*)'((?:\\.|[^'\\])*)'",lambda x:x.group(1)+encode_js_string(x.group(2), "'"),block)
     return block
-
 def js_sub(p, raw):
     raw=CONFIG_OBJ.sub(config_sub,raw)
     def translate_characteristic_names(match):
         block = match.group(1)
-        block = CONFIG_DQ.sub(lambda x:x.group(1)+'"'+translator.simple(x.group(2))+'"',block)
-        block = CONFIG_SQ.sub(lambda x:x.group(1)+"'"+translator.simple(x.group(2))+"'",block)
+        block = CONFIG_DQ.sub(lambda x:x.group(1)+encode_js_string(x.group(2), '"'),block)
+        block = CONFIG_SQ.sub(lambda x:x.group(1)+encode_js_string(x.group(2), "'"),block)
         return block
     raw=CHARACTERISTIC_NAMES_OBJ.sub(translate_characteristic_names,raw)
-    def dq(m): return m.group(1)+'"'+translator.rich(m.group(2))+'"'
-    def sq(m): return m.group(1)+"'"+translator.rich(m.group(2))+"'"
+    def dq(m): return m.group(1)+encode_js_string(m.group(2), '"')
+    def sq(m): return m.group(1)+encode_js_string(m.group(2), "'")
     raw=JS_DQ.sub(dq,raw)
     raw=JS_SQ.sub(sq,raw)
     raw=JS_ASSIGN.sub(dq,raw)
@@ -665,15 +678,15 @@ def js_sub(p, raw):
     raw=JS_NOTIFY_SQ.sub(sq,raw)
     raw=JS_SETATTR_DQ.sub(dq,raw)
     raw=JS_SETATTR_SQ.sub(sq,raw)
-    raw=JS_TICK_PROP.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
-    raw=JS_TICK_ASSIGN.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
-    raw=JS_TICK_VAR.sub(lambda m:m.group(1)+TICK+translator.rich(m.group(2))+TICK,raw)
+    raw=JS_TICK_PROP.sub(lambda m:m.group(1)+TICK+translate_template_content(m.group(2))+TICK,raw)
+    raw=JS_TICK_ASSIGN.sub(lambda m:m.group(1)+TICK+translate_template_content(m.group(2))+TICK,raw)
+    raw=JS_TICK_VAR.sub(lambda m:m.group(1)+TICK+translate_template_content(m.group(2))+TICK,raw)
     raw=JS_TEXT_VAR_DQ.sub(dq,raw)
     raw=JS_TEXT_VAR_SQ.sub(sq,raw)
     raw=JS_TEXT_CALL_DQ.sub(dq,raw)
     raw=JS_TEXT_CALL_SQ.sub(sq,raw)
-    raw=JS_HTML_DQ.sub(lambda m:m.group("q")+translator.rich(m.group("value"))+m.group("q"),raw)
-    raw=JS_HTML_SQ.sub(lambda m:m.group("q")+translator.rich(m.group("value"))+m.group("q"),raw)
+    raw=JS_HTML_DQ.sub(lambda m:encode_js_string(m.group("value"), '"'),raw)
+    raw=JS_HTML_SQ.sub(lambda m:encode_js_string(m.group("value"), "'"),raw)
     validation_lines=[]
     for line in raw.splitlines(keepends=True):
         if "Validation." in line:
@@ -681,14 +694,6 @@ def js_sub(p, raw):
             line=JS_VALIDATION_SQ.sub(lambda m:"'"+translator.rich(m.group(1))+"'",line)
         validation_lines.append(line)
     raw="".join(validation_lines)
-    def localize_template_enums(match):
-        body = translator.rich(match.group(1))
-        body = JS_ENUM_EXPR_RE.sub(lambda x: "$" + "{game.i18n.localize(" + x.group(1) + ")}", body)
-        # These short locals are used by output cards and are displayed text, not game logic.
-        for enum in ("dmgType","damageType","critLocation","location","effectType","valueAffected","resistDifficulty"):
-            body = body.replace("$" + "{" + enum + "}", "$" + "{game.i18n.localize(" + enum + ")}")
-        return TICK + body + TICK
-    raw=ALL_TICK.sub(localize_template_enums,raw)
     # The fork has a different Foundry system ID. Register the custom sheets under
     # the installed ID, otherwise Foundry falls back to its generic actor/item sheets.
     raw=raw.replace('registerSheet("deathwatch",', 'registerSheet("deathwatch-ru",')
