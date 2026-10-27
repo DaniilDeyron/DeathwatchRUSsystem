@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: "Release tag to create (example: v0.0.2-ru.14)"
+        description: "Release tag to create (example: v0.0.2-ru.15)"
         required: true
-        default: "v0.0.2-ru.14"
+        default: "v0.0.2-ru.15"
         type: string
   push:
     branches: [main]
@@ -87,7 +87,7 @@ jobs:
           const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
           manifest.id = 'deathwatch-ru';
           manifest.title = 'Warhammer 40,000: Deathwatch — Русская версия';
-          manifest.version = '0.0.2-ru.14';
+          manifest.version = '0.0.2-ru.15';
           manifest.url = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem';
           manifest.manifest = 'https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/system.json';
           manifest.download = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases/latest/download/deathwatch-ru.zip';
@@ -125,7 +125,7 @@ jobs:
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             echo "tag_name=$INPUT_TAG" >> "$GITHUB_OUTPUT"
           elif [[ "$EVENT_NAME" == "push" && "$REF_NAME" == "main" ]]; then
-            echo "tag_name=v0.0.2-ru.14" >> "$GITHUB_OUTPUT"
+            echo "tag_name=v0.0.2-ru.15" >> "$GITHUB_OUTPUT"
           else
             echo "tag_name=$REF_NAME" >> "$GITHUB_OUTPUT"
           fi
@@ -136,8 +136,8 @@ jobs:
           tag_name: ${{ steps.tag.outputs.tag_name }}
           name: Deathwatch RU ${{ steps.tag.outputs.tag_name }}
           body: |
-            Автоматически собранная версия системы Deathwatch RU для Foundry VTT.
-            Включает скомпилированные компендиумы и расширенную локализацию интерфейса, проверок, динамических сообщений, характеристик и содержимого с унифицированным словарём Warhammer 40,000. Значения игровых механик сохраняются; машинный перевод требует терминологической и игровой проверки.
+            Единая русифицированная система Deathwatch RU для Foundry VTT.
+            Включает скомпилированные компендиумы, полный runtime-набор и расширенную локализацию шаблонов, динамических карточек и отображаемых значений. Значения игровых механик сохранены; требуется финальная проверка в Foundry.
           files: deathwatch-ru.zip
           generate_release_notes: true
           make_latest: true
