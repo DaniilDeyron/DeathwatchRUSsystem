@@ -689,10 +689,28 @@ def js_sub(p, raw):
             body = body.replace("$" + "{" + enum + "}", "$" + "{game.i18n.localize(" + enum + ")}")
         return TICK + body + TICK
     raw=ALL_TICK.sub(localize_template_enums,raw)
+    # The fork has a different Foundry system ID. Register the custom sheets under
+    # the installed ID, otherwise Foundry falls back to its generic actor/item sheets.
+    raw=raw.replace('registerSheet("deathwatch",', 'registerSheet("deathwatch-ru",')
+    raw=raw.replace("registerSheet('deathwatch',", "registerSheet('deathwatch-ru',")
     return raw.replace("systems/deathwatch/","systems/deathwatch-ru/")
 
 for p in js_files:
     p.write_text(js_sub(p,p.read_text(encoding="utf-8")),encoding="utf-8")
+
+# Critical packaging invariant: Foundry must register the custom sheets under this fork's ID.
+entry_file = ROOT / "module" / "deathwatch.mjs"
+if entry_file.exists():
+    entry_source = entry_file.read_text(encoding="utf-8")
+    required_registrations = (
+        'registerSheet("deathwatch-ru", DeathwatchActorSheetV2',
+        'registerSheet("deathwatch-ru", DeathwatchItemSheetV2'
+    )
+    missing = [needle for needle in required_registrations if needle not in entry_source]
+    if missing:
+        raise RuntimeError("Custom sheet registration failed for deathwatch-ru: " + ", ".join(missing))
+    if 'registerSheet("deathwatch", DeathwatchActorSheetV2' in entry_source or 'registerSheet("deathwatch", DeathwatchItemSheetV2' in entry_source:
+        raise RuntimeError("Found original deathwatch sheet IDs in the localized fork.")
 
 # Update the language dictionary with curated translations and translate missing direct localize keys.
 if RU.exists():
