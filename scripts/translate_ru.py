@@ -19,6 +19,17 @@ JS_NOTIFY = re.compile(r'((?:ui\.notifications|Notifications)\.(?:info|warn|erro
 JS_NOTIFY_SQ = re.compile(r"((?:ui\.notifications|Notifications)\.(?:info|warn|error|success)\s*\(\s*)'((?:\\.|[^'\\])*)'")
 JS_SETATTR_DQ = re.compile(r'((?:\.setAttribute\s*\(\s*)["\'](?:title|placeholder|aria-label|alt|data-tooltip)["\']\s*,\s*)"((?:\\.|[^"\\])*)"', re.I)
 JS_SETATTR_SQ = re.compile(r"((?:\.setAttribute\s*\(\s*)[\"'](?:title|placeholder|aria-label|alt|data-tooltip)[\"']\s*,\s*)'((?:\\.|[^'\\])*)'", re.I)
+DISPLAY_ENUM_FIELDS = (
+    "class|action|range|renown|dmgType|damageType|location|effectType|valueAffected|"
+    "specialty|chapter|opposed|sustained|resistDifficulty|modeRequirement|abilityCategory|"
+    "abilityType|target|curseLevel1Target|curseLevel2Target|curseLevel3Target"
+)
+ENUM_INTERPOLATION_RE = re.compile(
+    r'{{\s*((?:[A-Za-z_$][\w$]*\.)*[A-Za-z_$][\w$]*\.(' + DISPLAY_ENUM_FIELDS + r'))\s*}}'
+)
+JS_ENUM_EXPR_RE = re.compile(
+    r'\$\{((?:[A-Za-z_$][\w$]*\.)*[A-Za-z_$][\w$]*\.(' + DISPLAY_ENUM_FIELDS + r'))\}'
+)
 JS_ENUM_VALUE_RE = re.compile(r'\b(effectType|valueAffected|damageType|dmgType|location|resistDifficulty|modeRequirement|abilityCategory|abilityType)\s*:\s*["\']([^"\']+)["\']')
 JS_VALIDATION_DQ = re.compile(r'"((?:\\.|[^"\\])*)"')
 JS_VALIDATION_SQ = re.compile(r"'((?:\\.|[^'\\])*)'")
@@ -499,6 +510,8 @@ for p in html_files:
     text = text.replace("{{system.modeRequirement}}", "{{localize system.modeRequirement}}")
     text = text.replace("{{system.abilityCategory}}", "{{localize system.abilityCategory}}")
     text = text.replace("{{system.abilityType}}", "{{localize system.abilityType}}")
+    # Localize all simple displayed enum fields, including paths not hard-coded above.
+    text = ENUM_INTERPOLATION_RE.sub(lambda m: "{{localize " + m.group(1) + "}}", text)
     text = text.replace("{{substring item.system.renown 0 4}}", "{{substring (localize item.system.renown) 0 4}}")
     if p.name == "item-weapon-sheet.html":
         old_class = '<input type="text" name="system.class" value="{{system.class}}" />'
@@ -659,10 +672,14 @@ def js_sub(p, raw):
             line=JS_VALIDATION_SQ.sub(lambda m:"'"+translator.rich(m.group(1))+"'",line)
         validation_lines.append(line)
     raw="".join(validation_lines)
-    raw=ALL_TICK.sub(lambda m:TICK+translator.rich(m.group(1))+TICK,raw)
-    # Display enums in chat strings through localization; raw game values stay canonical.
-    for enum in ("dmgType","damageType","critLocation","location"):
-        raw=raw.replace("$" + "{" + enum + "}", "$" + "{game.i18n.localize(" + enum + ")}")
+    def localize_template_enums(match):
+        body = translator.rich(match.group(1))
+        body = JS_ENUM_EXPR_RE.sub(lambda x: "\${game.i18n.localize(" + x.group(1) + ")}", body)
+        # These short locals are used by output cards and are displayed text, not game logic.
+        for enum in ("dmgType","damageType","critLocation","location","effectType","valueAffected","resistDifficulty"):
+            body = body.replace("\${" + enum + "}", "\${game.i18n.localize(" + enum + ")}")
+        return TICK + body + TICK
+    raw=ALL_TICK.sub(localize_template_enums,raw)
     return raw.replace("systems/deathwatch/","systems/deathwatch-ru/")
 
 for p in js_files:
