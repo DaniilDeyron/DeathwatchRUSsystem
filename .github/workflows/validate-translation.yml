@@ -24,3 +24,8 @@ jobs:
         run: python -m py_compile scripts/translate_ru.py
       - name: Validate regular expressions
         run: python scripts/translate_ru.py . --validate
+      - name: Reject unsafe global backtick processing
+        run: |
+          ! grep -Fq "ALL_TICK.sub" scripts/translate_ru.py
+          grep -Fq "def encode_js_string" scripts/translate_ru.py
+          grep -Fq "def translate_template_content" scripts/translate_ru.py
