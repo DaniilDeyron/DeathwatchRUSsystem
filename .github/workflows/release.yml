@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: "Release tag to create (example: v0.0.2-ru.16)"
+        description: "Release tag to create (example: v0.0.2-ru.17)"
         required: true
-        default: "v0.0.2-ru.16"
+        default: "v0.0.2-ru.17"
         type: string
   push:
     branches: [main]
@@ -87,7 +87,7 @@ jobs:
           const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
           manifest.id = 'deathwatch-ru';
           manifest.title = 'Warhammer 40,000: Deathwatch — Русская версия';
-          manifest.version = '0.0.2-ru.16';
+          manifest.version = '0.0.2-ru.17';
           manifest.url = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem';
           manifest.manifest = 'https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/system.json';
           manifest.download = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases/latest/download/deathwatch-ru.zip';
@@ -114,6 +114,21 @@ jobs:
           grep -Fq 'registerSheet("deathwatch-ru", DeathwatchItemSheetV2' upstream/src/module/deathwatch.mjs
           ! grep -Fq 'registerSheet("deathwatch", DeathwatchActorSheetV2' upstream/src/module/deathwatch.mjs
           ! grep -Fq 'registerSheet("deathwatch", DeathwatchItemSheetV2' upstream/src/module/deathwatch.mjs
+
+          # A broken translated module prevents its init hook from registering sheets.
+          # Parse every runtime JS module before the release is assembled.
+          find upstream/src/module -type f \( -name '*.mjs' -o -name '*.js' \) -print0 |
+            while IFS= read -r -d '' file; do
+              if ! node --input-type=module --check < "$file"; then
+                echo "JavaScript syntax error after localization: $file" >&2
+                exit 1
+              fi
+            done
+
+          # Verify critical runtime paths were migrated to the fork's actual system ID.
+          grep -Fq 'systems/deathwatch-ru/templates/actor/actor-character-sheet.html' upstream/src/module/sheets/actor-sheet-v2.mjs
+          grep -Fq 'systems/deathwatch-ru/templates/item/item-weapon-sheet.html' upstream/src/module/sheets/item-sheet-v2.mjs
+          grep -Fq "systems/deathwatch-ru/module/data/skills.json" upstream/src/module/helpers/character/skill-loader.mjs
 
           # These custom templates are essential; if they are missing or empty, stop before release.
           test -s upstream/src/templates/actor/actor-character-sheet.html
@@ -154,7 +169,7 @@ jobs:
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             echo "tag_name=$INPUT_TAG" >> "$GITHUB_OUTPUT"
           elif [[ "$EVENT_NAME" == "push" && "$REF_NAME" == "main" ]]; then
-            echo "tag_name=v0.0.2-ru.16" >> "$GITHUB_OUTPUT"
+            echo "tag_name=v0.0.2-ru.17" >> "$GITHUB_OUTPUT"
           else
             echo "tag_name=$REF_NAME" >> "$GITHUB_OUTPUT"
           fi
