@@ -25,10 +25,10 @@ DISPLAY_ENUM_FIELDS = (
     "abilityType|target|curseLevel1Target|curseLevel2Target|curseLevel3Target"
 )
 ENUM_INTERPOLATION_RE = re.compile(
-    r'{{\s*((?:[A-Za-z_$][\w$]*\.)*[A-Za-z_$][\w$]*\.(' + DISPLAY_ENUM_FIELDS + r'))\s*}}'
+    r'{{\s*((?:[A-Za-z_$][\w$]*\.)*(?:' + DISPLAY_ENUM_FIELDS + r'))\s*}}'
 )
 JS_ENUM_EXPR_RE = re.compile(
-    r'\$\{((?:[A-Za-z_$][\w$]*\.)*[A-Za-z_$][\w$]*\.(' + DISPLAY_ENUM_FIELDS + r'))\}'
+    r'\$\{((?:[A-Za-z_$][\w$]*\.)*(?:' + DISPLAY_ENUM_FIELDS + r'))\}'
 )
 JS_ENUM_VALUE_RE = re.compile(r'\b(effectType|valueAffected|damageType|dmgType|location|resistDifficulty|modeRequirement|abilityCategory|abilityType)\s*:\s*["\']([^"\']+)["\']')
 JS_VALIDATION_DQ = re.compile(r'"((?:\\.|[^"\\])*)"')
@@ -674,10 +674,10 @@ def js_sub(p, raw):
     raw="".join(validation_lines)
     def localize_template_enums(match):
         body = translator.rich(match.group(1))
-        body = JS_ENUM_EXPR_RE.sub(lambda x: "\${game.i18n.localize(" + x.group(1) + ")}", body)
+        body = JS_ENUM_EXPR_RE.sub(lambda x: "$" + "{game.i18n.localize(" + x.group(1) + ")}", body)
         # These short locals are used by output cards and are displayed text, not game logic.
         for enum in ("dmgType","damageType","critLocation","location","effectType","valueAffected","resistDifficulty"):
-            body = body.replace("\${" + enum + "}", "\${game.i18n.localize(" + enum + ")}")
+            body = body.replace("$" + "{" + enum + "}", "$" + "{game.i18n.localize(" + enum + ")}")
         return TICK + body + TICK
     raw=ALL_TICK.sub(localize_template_enums,raw)
     return raw.replace("systems/deathwatch/","systems/deathwatch-ru/")
