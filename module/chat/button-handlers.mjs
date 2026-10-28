@@ -134,11 +134,11 @@ export class ChatButtonHandlers {
       const roll = await new Roll('1d100').evaluate();
       const success = roll.total <= targetNumber;
 
-      let flavor = `<strong>Shocking Toughness Test</strong><br>Target: ${targetNumber} (TG ${tg} + ${armorBonus} armor bonus)<br>`;
+      let flavor = `<strong>Проверка Выносливости против шокового эффекта</strong><br>Целевое значение: ${targetNumber} (Выносливость ${tg} + бонус брони ${armorBonus})<br>`;
       if (success) {
-        flavor += '<strong style="color: green;">SUCCESS - Not Stunned</strong>';
+        flavor += '<strong style="color: green;">УСПЕХ — не оглушён</strong>';
       } else {
-        flavor += `<strong style="color: red;">FAILED - Stunned for ${stunRounds} rounds!</strong>`;
+        flavor += `<strong style="color: red;">ПРОВАЛ — оглушён на ${stunRounds} раундов!</strong>`;
       }
 
       await roll.toMessage({
@@ -166,20 +166,20 @@ export class ChatButtonHandlers {
       const roll = await new Roll('1d100').evaluate();
       const success = roll.total <= targetNumber;
 
-      let flavor = `<strong>Toxic Toughness Test</strong><br>Target: ${targetNumber} (TG ${tg} - ${penalty} penalty)<br>`;
+      let flavor = `<strong>Проверка Выносливости против яда</strong><br>Целевое значение: ${targetNumber} (Выносливость ${tg} − штраф ${penalty})<br>`;
       if (success) {
-        flavor += '<strong style="color: green;">SUCCESS - No Additional Damage</strong>';
+        flavor += '<strong style="color: green;">УСПЕХ — дополнительного урона нет</strong>';
       } else {
         const toxicRoll = await new Roll('1d10').evaluate();
         const toxicDamage = toxicRoll.total;
-        flavor += `<strong style="color: red;">FAILED - Takes ${toxicDamage} Impact Damage (ignores armor & TB)</strong>`;
+        flavor += `<strong style="color: red;">ПРОВАЛ — получает ${toxicDamage} ед. ударного урона (игнорирует броню и Бонус Выносливости)</strong>`;
 
         const currentWounds = actor.system.wounds.value || 0;
         await actor.update({ 'system.wounds.value': currentWounds + toxicDamage });
 
         await toxicRoll.toMessage({
           speaker: ChatMessage.getSpeaker({ actor }),
-          flavor: '<strong>Toxic Damage</strong>',
+          flavor: '<strong>Урон от яда</strong>',
           rollMode: game.settings.get('core', 'rollMode')
         });
       }
@@ -251,7 +251,7 @@ export class ChatButtonHandlers {
         .filter(m => m.effectType === 'characteristic' && m.valueAffected === characteristic && m.source === 'Characteristic Damage')
         .reduce((sum, m) => sum + m.modifier, 0);
 
-      const flavor = `<strong>Characteristic Damage</strong><br><strong style="color: red;">${charName} takes ${charDamage} damage</strong><br>Total ${charName} Penalty: ${totalPenalty}`;
+      const flavor = `<strong>Урон характеристике</strong><br><strong style="color: red;">${charName}: урон ${charDamage}</strong><br>Общий штраф к ${charName}: ${totalPenalty}`;
 
       await roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor }),
@@ -289,16 +289,16 @@ export class ChatButtonHandlers {
 
       const safeAttackerName = Sanitizer.escape(attacker.name);
       const safeTargetName = Sanitizer.escape(target.name);
-      let flavor = `<strong style="background: #4a0080; color: #e0b0ff; padding: 2px 6px; border-radius: 3px;">🔮 Force: Channel Psychic Energy 🔮</strong>`;
-      flavor += `<br><strong>${safeAttackerName}</strong> WP ${attackerWP}: rolled ${attackerRoll.total} (${attackerDoS} DoS)`;
-      flavor += `<br><strong>${safeTargetName}</strong> WP ${targetWP}: rolled ${targetRoll.total} (${targetDoS} DoS)`;
+      let flavor = `<strong style="background: #4a0080; color: #e0b0ff; padding: 2px 6px; border-radius: 3px;">🔮 Силовое оружие: передача психической энергии 🔮</strong>`;
+      flavor += `<br><strong>${safeAttackerName}</strong> — Сила воли ${attackerWP}: бросок ${attackerRoll.total} (${attackerDoS} степ. успеха)`;
+      flavor += `<br><strong>${safeTargetName}</strong> — Сила воли ${targetWP}: бросок ${targetRoll.total} (${targetDoS} степ. успеха)`;
 
       if (attackerWins && netDoS > 0) {
         const forceDamageFormula = `${netDoS}d10`;
         const forceDamageRoll = await new Roll(forceDamageFormula).evaluate();
         const forceDamage = forceDamageRoll.total;
 
-        flavor += `<br><strong style="color: #9900cc;">SUCCESS (${netDoS} net DoS) - ${forceDamage} Energy Damage (ignores Armour & TB)</strong>`;
+        flavor += `<br><strong style="color: #9900cc;">УСПЕХ (${netDoS} чистых степ. успеха) — ${forceDamage} ед. энергетического урона (игнорирует броню и Бонус Выносливости)</strong>`;
 
         const currentWounds = target.system.wounds.value || 0;
         const maxWounds = target.system.wounds.max || 0;
@@ -307,7 +307,7 @@ export class ChatButtonHandlers {
 
         if (newWounds > maxWounds) {
           const criticalDamage = newWounds - maxWounds;
-          flavor += `<br><strong style="color: darkred; font-size: 1.1em;">☠ CRITICAL DAMAGE: ${criticalDamage} ☠</strong>`;
+          flavor += `<br><strong style="color: darkred; font-size: 1.1em;">☠ КРИТИЧЕСКИЙ УРОН: ${criticalDamage} ☠</strong>`;
           flavor += `<br><button class="roll-critical-btn" data-actor-id="${targetId}" data-location="Body" data-damage-type="Energy" data-critical-damage="${criticalDamage}">Apply Critical Effect</button>`;
         }
 
@@ -317,7 +317,7 @@ export class ChatButtonHandlers {
           rollMode: game.settings.get('core', 'rollMode')
         });
       } else {
-        flavor += `<br><strong style="color: green;">FAILED - Target resists the psychic force</strong>`;
+        flavor += `<br><strong style="color: green;">ПРОВАЛ — цель сопротивляется психической силе</strong>`;
 
         await attackerRoll.toMessage({
           speaker: ChatMessage.getSpeaker({ actor: attacker }),
@@ -378,14 +378,14 @@ export class ChatButtonHandlers {
       if (success) {
         await roll.toMessage({
           speaker: ChatMessage.getSpeaker({ actor: leader }),
-          flavor: `<strong>🛡 Rally Successful!</strong><br>${safeLeaderName} rallies the Kill-team! (Rolled ${roll.total} vs ${targetNumber})<br>Cohesion damage negated.`
+          flavor: `<strong>🛡 Сбор успешен!</strong><br>${safeLeaderName} сплачивает боевой отряд! (бросок ${roll.total} против ${targetNumber})<br>Потеря Сплочённости предотвращена.`
         });
       } else {
         await CohesionHelper.applyCohesionDamage(1);
         const cohesion = game.settings.get('deathwatch', 'cohesion');
         await roll.toMessage({
           speaker: ChatMessage.getSpeaker({ actor: leader }),
-          flavor: `<strong>⚠ Rally Failed!</strong><br>${safeLeaderName} fails to rally! (Rolled ${roll.total} vs ${targetNumber})<br>Kill-team loses 1 Cohesion. Now ${cohesion.value} / ${cohesion.max}`
+          flavor: `<strong>⚠ Сбор провален!</strong><br>${safeLeaderName} не смог сплотить отряд! (бросок ${roll.total} против ${targetNumber})<br>Боевой отряд теряет 1 Сплочённость: ${cohesion.value} / ${cohesion.max}`
         });
       }
     }, 'Rally Test')));
@@ -399,7 +399,7 @@ export class ChatButtonHandlers {
       await CohesionHelper.applyCohesionDamage(1);
       const cohesion = game.settings.get('deathwatch', 'cohesion');
       await ChatMessage.create({
-        content: `<div class="cohesion-chat"><strong>⚠ Cohesion Lost</strong> — Kill-team loses 1 Cohesion. Now ${cohesion.value} / ${cohesion.max}</div>`
+        content: `<div class="cohesion-chat"><strong>⚠ Потеря Сплочённости</strong> — боевой отряд теряет 1 Сплочённость: ${cohesion.value} / ${cohesion.max}</div>`
       });
     }, 'Accept Cohesion Damage')));
   }
@@ -416,9 +416,9 @@ export class ChatButtonHandlers {
       const ag = actor.system.characteristics?.ag?.value || 0;
       const safeActorName = Sanitizer.escape(actor.name);
       const content = `
-        <div style="margin-bottom: 8px;"><strong>Extinguish Attempt: ${safeActorName}</strong></div>
+        <div style="margin-bottom: 8px;"><strong>Попытка потушить огонь: ${safeActorName}</strong></div>
         <div class="form-group">
-          <label>AG: ${ag} | Base Target: ${ag - 20} (Hard −20)</label>
+          <label>Ловкость: ${ag} | Целевое значение: ${ag - 20} (тяжёлая проверка −20)</label>
         </div>
         <div class="form-group">
           <label>Misc Modifier:</label>
@@ -427,11 +427,11 @@ export class ChatButtonHandlers {
       `;
 
       foundry.applications.api.DialogV2.wait({
-        window: { title: `🔥 Extinguish: ${safeActorName}` },
+        window: { title: `🔥 Потушить огонь: ${safeActorName}` },
         content,
         buttons: [
           {
-            label: 'Roll', action: 'roll',
+            label: 'Бросок', action: 'roll',
             callback: async (event, button, dialog) => {
               const miscMod = parseInt(dialog.element.querySelector('#extinguishMod').value) || 0;
               const roll = await new Roll('1d100').evaluate();
@@ -449,7 +449,7 @@ export class ChatButtonHandlers {
               });
             }
           },
-          { label: 'Cancel', action: 'cancel' }
+          { label: 'Отмена', action: 'cancel' }
         ]
       });
     }, 'Extinguish Test')));
@@ -474,7 +474,7 @@ export class ChatButtonHandlers {
         : (targetId ? game.actors.get(targetId) : null);
 
       const content = `
-        <div style="margin-bottom: 8px;"><strong>Opposed Willpower Test: ${targetName}</strong></div>
+        <div style="margin-bottom: 8px;"><strong>Встречная проверка Силы воли: ${targetName}</strong></div>
         <div class="form-group">
           <label>Target WP:</label>
           <input type="number" id="opposeTargetWP" value="${targetWP}" style="width: 60px;" />
@@ -484,17 +484,17 @@ export class ChatButtonHandlers {
           <input type="number" id="opposeMiscMod" value="0" style="width: 60px;" />
         </div>
         <div class="form-group">
-          <label>Manual Roll (leave blank to auto-roll):</label>
+          <label>Результат броска вручную (оставьте пустым для автоматического броска):</label>
           <input type="number" id="opposeManualRoll" min="1" max="100" placeholder="Auto" style="width: 60px;" />
         </div>
       `;
 
       foundry.applications.api.DialogV2.wait({
-        window: { title: `Opposed Test: ${powerName}` },
+        window: { title: `Встречная проверка: ${powerName}` },
         content,
         buttons: [
           {
-            label: "Resolve", action: "resolve",
+            label: "Разрешить", action: "resolve",
             callback: async (event, button, dialog) => {
               const el = dialog.element;
               const wp = parseInt(el.querySelector('#opposeTargetWP').value) || 0;
@@ -527,7 +527,7 @@ export class ChatButtonHandlers {
               }
             }
           },
-          { label: "Cancel", action: "cancel" }
+          { label: "Отмена", action: "cancel" }
         ]
       });
     }, 'Psychic Oppose Test')));
