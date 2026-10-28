@@ -53,12 +53,12 @@ export class SkillHandlers {
   static async handleRoll(dataset, actor) {
     const skill = actor.system.skills?.[dataset.skill];
     if (!skill) {
-      ui.notifications.warn(\`Навык \${dataset.skill} не найден.\`);
+      ui.notifications.warn(`Навык ${dataset.skill} не найден.`);
       return null;
     }
 
     if (!skill.isBasic && !skill.trained) {
-      ui.notifications.warn(\`\${dataset.label || dataset.skill} — продвинутый навык; сначала нужно пройти обучение.\`);
+      ui.notifications.warn(`${dataset.label || dataset.skill} — продвинутый навык; сначала нужно пройти обучение.`);
       return null;
     }
 
@@ -71,4 +71,5 @@ export class SkillHandlers {
 
     // Keep legacy callers on the same dialog/roll path as the current V2 actor sheet.
     return RollExecutor.showSkillDialog(actor, skill, label, skillTotal);
-  }}
+  }
+}
