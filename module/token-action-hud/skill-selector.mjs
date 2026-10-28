@@ -29,7 +29,7 @@ export class TAHSkillSelector extends HandlebarsApplicationMixin(
   static DEFAULT_OPTIONS = {
     id: 'tah-skill-selector',
     window: {
-      title: 'Token Action HUD - Skill Selection',
+      title: 'Token Action HUD — выбор умения',
       minimizable: false,
       resizable: true
     },
