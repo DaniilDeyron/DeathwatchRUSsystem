@@ -1,6 +1,6 @@
 {
   "_id": "flam00000000001",
-  "name": "Astartes Flamer",
+  "name": "Огнемёт астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/flamer-astartes.webp",
   "system": {
@@ -18,8 +18,12 @@
     "wt": 15,
     "req": 10,
     "renown": "",
-    "attachedQualities": [{ "id": "flame" }],
-    "description": "<p>Flamers are a common weapon in the Deathwatch arsenal, and are particularly effective against infantry. They are capable of laying down a stream of incendiary fuel that can be devastating in close combat. The Astartes variant is more powerful and accurate than standard flamer variants.</p>",
+    "attachedQualities": [
+      {
+        "id": "flame"
+      }
+    ],
+    "description": "<p>Огнемёт — эффективное оружие против пехоты, позволяющее выкуривать врагов из укрытий и заливать огнём целые участки. В стандартной модели Адептус Астартес топливо подаётся из напорного резервуара за спиной или из сменной канистры. Огонь горит даже под водой, а высококачественное горючее особенно опасно: цель получает дополнительный урон за каждый раунд горения.</p>",
     "modifiers": []
   }
 }
