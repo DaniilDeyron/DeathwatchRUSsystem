@@ -5,7 +5,7 @@
   "img": "systems/deathwatch/icons/weapons/powerfist.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "174",
+    "page": "173",
     "class": "Melee",
     "dmg": "2d10",
     "dmgType": "Energy",
