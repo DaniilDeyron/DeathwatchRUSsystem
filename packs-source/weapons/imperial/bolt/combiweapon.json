@@ -5,7 +5,7 @@
   "img": "systems/deathwatch/icons/weapons/combi-weapon.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "162",
     "class": "Basic",
     "dmg": "1d10+9",
     "dmgType": "Explosive",
