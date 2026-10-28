@@ -1,6 +1,6 @@
 {
   "_id": "bolt00000000002",
-  "name": "Astartes Heavy Bolter",
+  "name": "Тяжёлый болтер астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/bolter-heavy.webp",
   "system": {
@@ -18,8 +18,12 @@
     "wt": 68,
     "req": 20,
     "renown": "",
-    "attachedQualities": [{ "id": "tearing" }],
-    "description": "<p>Heavy bolter variants have been widely adopted for Imperial forces beyond the Space Marines, although none can compare to the punishment doled out by the original design. These weapons are potent in a wide variety of roles, capable of turning entire infantry platoons into a carpet of gore as well as assailing vehicles in a hail of large, armour-penetrating explosions. Heavy bolters fire rounds of a much larger calibre than the standard bolt, contain more propellant and are capable of achieving longer ranges</p>",
+    "attachedQualities": [
+      {
+        "id": "tearing"
+      }
+    ],
+    "description": "<p>Тяжёлые болтеры встречаются и в других имперских войсках, однако они не сравнятся с образцами космодесанта. Это оружие эффективно и против пехоты, и против техники: поток крупных бронебойных снарядов способен разорвать целый взвод и пробить броню машины. Боеприпасы увеличенного калибра содержат больше метательного состава, поэтому летят дальше обычных болтов.</p>",
     "modifiers": []
   }
 }
