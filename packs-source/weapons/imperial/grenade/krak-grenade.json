@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000007",
-  "name": "Astartes Krak Grenade",
+  "name": "Крак-граната астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/krak-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "168",
     "class": "Thrown",
     "dmg": "3d10+4",
     "dmgType": "Explosive",
@@ -18,7 +18,7 @@
     "wt": 0.8,
     "req": 1,
     "renown": "",
-    "description": "<p>Krak grenades and missiles use concentrated explosives to punch holes in armoured targets such as vehicles or bunkers. The powerful detonations do not produce a blast effect however, making them impractical for use against most infantry or moving targets.</p>",
+    "description": "<p>Крак-гранаты и ракеты используют кумулятивный взрыв для пробивания брони техники и укреплений. У такого боеприпаса практически нет площадного поражения, поэтому он плохо подходит против многочисленных или подвижных целей.</p>",
     "modifiers": []
   }
 }
