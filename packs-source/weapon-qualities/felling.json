@@ -1,13 +1,13 @@
 {
   "_id": "felling",
-  "name": "Felling",
+  "name": "Разящее (Х)",
   "type": "weapon-quality",
   "img": "icons/svg/sword.svg",
   "system": {
-    "book": "Deathwatch Core Rulebook",
-    "page": "143",
+    "book": "Deathwatch — Основная книга правил v1.0",
+    "page": "158",
     "key": "felling",
     "value": "2",
-    "description": "<p>Felling weapons are designed to bring down even the toughest opponents. A weapon with the Felling (X) quality reduces the target's Unnatural Toughness multiplier by X (minimum 1) when calculating damage reduction.</p><p>For example, a Felling (2) weapon against a target with Unnatural Toughness x4 would reduce it to x2.</p>"
+    "description": "<p>Свойство помогает оружию пробивать защиту особенно сильных противников. При расчёте урона уменьшите множитель Сверхъестественной Выносливости цели на Х. Например, «Разящее (1)» превращает Сверхъестественную Выносливость ×2 в обычную Выносливость, а ×3 — в ×2.</p>"
   }
 }
