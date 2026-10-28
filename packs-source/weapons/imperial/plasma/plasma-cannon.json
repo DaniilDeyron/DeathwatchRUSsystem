@@ -7,7 +7,7 @@
     "book": "Deathwatch Core Rulebook",
     "page": "163",
     "class": "Heavy",
-    "dmg": "2d10+12",
+    "dmg": "2d10+11",
     "dmgType": "Energy",
     "penetration": "10",
     "range": "150",
@@ -21,7 +21,7 @@
     "attachedQualities": [
       {
         "id": "blast",
-        "value": "3"
+        "value": "1"
       },
       {
         "id": "volatile"
