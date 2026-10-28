@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000015",
-  "name": "Vortex Grenade",
+  "name": "Вихревая граната",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/vortex-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "169",
     "class": "Thrown",
     "dmg": "Special",
     "dmgType": "Explosive",
@@ -18,7 +18,7 @@
     "wt": 1,
     "req": 0,
     "renown": "",
-    "description": "<p>This dreaded example of lost technology tears open the very fabric of reality, creating a rift into the warp. Needless to say, the results of such a desperate action are highly unpredictable and almost as likely to backfire on he who used it. For all the nightmarish stories of daemons crawling through the breach, and vortexes that still re-appear like phantoms on old battlefields, there is no better way to ensure a threat is utterly destroyed than to see it sucked into the immaterium.</p><p>The secrets of vortex grenades are jealously guarded by the Adeptus Mechanicus, and some question whether Forge Worlds capable of their manufacture still exist. Certainly, their supply in the Adeptus Astartes seems ever-dwindling, and it is a dire threat indeed that warrants their precious and perilous expenditure. Like stasis grenades, a single grenade may only be allotted at the Watch Captain’s option.</p><p>The vortex grenade has a radius of 3 metres. Anyone within this area can spend his Reaction to attempt to Dodge out of it before the rift fully forms (see Dodging Area Effects on page 238). Those who fail, along with everything else in the area, are dragged into the warp, never to be seen again. Each Round, the capricious vortex winks in and out of existence. It has a 50% chance of closing permanently when this happens. Otherwise, it reappears 2d10 metres in a random direction from its last manifestation—see the Scatter Diagram on page 248.</p>",
+    "description": "<p>Эта реликвия утраченных технологий разрывает ткань реальности и открывает разлом в Варп. Её действие непредсказуемо и может обернуться против самого пользователя. Караул Смерти хранит подобные гранаты как чрезвычайно опасный ресурс; капитан может выделить только одну такую гранату, если угроза того требует.</p><p>Разлом имеет радиус 3 метра. Все в этой области могут потратить Реакцию на попытку Уклониться до полного формирования разлома. Неудача означает, что существо вместе со всем остальным в области будет втянуто в Варп и исчезнет навсегда. Каждый раунд у вихря есть 50% шанс закрыться окончательно; если он остаётся, то возникает вновь в 2к10 метрах от предыдущего места в случайном направлении.</p>",
     "modifiers": []
   }
 }
