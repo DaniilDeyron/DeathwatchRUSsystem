@@ -6,7 +6,7 @@ import { Sanitizer } from "../sanitizer.mjs";
 
 /**
  * Melee combat helper for Weapon Skill tests and close combat attacks.
- * Handles Standard Attack, All Out Attack, Charge, and Called Shot melee options.
+ * Handles Standard Attack, Атака всеми силами, Charge, and Точечная атака melee options.
  *
  * @example
  * // Resolve a melee attack with Charge
@@ -25,9 +25,9 @@ export class MeleeCombatHelper {
    *
    * Melee combat modifiers (Deathwatch Core p. 243):
    * - Aim: +0 (None), +10 (Half), +20 (Full)
-   * - All Out Attack: +20 (but cannot Parry/Dodge)
+   * - Атака всеми силами: +20 (but cannot Parry/Dodge)
    * - Charge: +10 (must move at least 4m)
-   * - Called Shot: −20
+   * - Точечная атака: −20
    * - Running Target: −20
    * - Defensive quality: −10
    * - Size modifiers: +30 (Enormous) to −30 (Minuscule)
@@ -37,9 +37,9 @@ export class MeleeCombatHelper {
    * @param {Object} [options={}] - Attack modifier options
    * @param {number} [options.ws=0] - Weapon Skill characteristic value
    * @param {number} [options.aim=0] - Aim modifier (+0, +10, or +20)
-   * @param {number} [options.allOut=0] - All Out Attack modifier (+20)
+   * @param {number} [options.allOut=0] - Атака всеми силами modifier (+20)
    * @param {number} [options.charge=0] - Charge modifier (+10)
-   * @param {number} [options.calledShot=0] - Called Shot penalty (−20)
+   * @param {number} [options.calledShot=0] - Точечная атака penalty (−20)
    * @param {number} [options.runningTarget=0] - Running Target penalty (−20)
    * @param {number} [options.miscModifier=0] - Miscellaneous modifier
    * @param {number} [options.sizeModifier=0] - Target size modifier (+30 to −30)
@@ -74,9 +74,9 @@ export class MeleeCombatHelper {
    * @param {Object} [options={}] - Modifier breakdown options
    * @param {number} [options.ws=0] - Weapon Skill value
    * @param {number} [options.aim=0] - Aim modifier
-   * @param {number} [options.allOut=0] - All Out Attack modifier
+   * @param {number} [options.allOut=0] - Атака всеми силами modifier
    * @param {number} [options.charge=0] - Charge modifier
-   * @param {number} [options.calledShot=0] - Called Shot penalty
+   * @param {number} [options.calledShot=0] - Точечная атака penalty
    * @param {number} [options.runningTarget=0] - Running Target penalty
    * @param {number} [options.miscModifier=0] - Miscellaneous modifier
    * @param {number} [options.defensivePenalty=0] - Defensive quality penalty
@@ -94,10 +94,10 @@ export class MeleeCombatHelper {
   static buildMeleeModifierParts({ ws = 0, aim = 0, allOut = 0, charge = 0, calledShot = 0, runningTarget = 0, miscModifier = 0, defensivePenalty = 0, sizeModifier = 0, sizeLabel = "" } = {}) {
     const parts = [`${ws} WS`];
     if (aim !== 0) parts.push(`+${aim} Aim`);
-    if (allOut !== 0) parts.push(`+${allOut} All Out Attack`);
+    if (allOut !== 0) parts.push(`+${allOut} Атака всеми силами`);
     if (charge !== 0) parts.push(`+${charge} Charge`);
     if (defensivePenalty !== 0) parts.push(`${defensivePenalty} Defensive`);
-    if (calledShot !== 0) parts.push(`${calledShot} Called Shot`);
+    if (calledShot !== 0) parts.push(`${calledShot} Точечная атака`);
     if (runningTarget !== 0) parts.push(`${runningTarget} Running Target`);
     if (miscModifier !== 0) parts.push(`${miscModifier >= 0 ? '+' : ''}${miscModifier} Misc`);
     if (sizeModifier !== 0) parts.push(`${sizeModifier >= 0 ? '+' : ''}${sizeModifier} ${sizeLabel || 'Target Size'}`);
@@ -120,9 +120,9 @@ export class MeleeCombatHelper {
    * @param {Object} options - Parsed attack options from dialog or preset
    * @param {number} options.hitValue - The d100 attack roll result (1-100)
    * @param {number} options.aim - Aim modifier (+0, +10, or +20)
-   * @param {number} options.allOut - All Out Attack modifier (+20)
+   * @param {number} options.allOut - Атака всеми силами modifier (+20)
    * @param {number} options.charge - Charge modifier (+10)
-   * @param {number} options.calledShot - Called Shot penalty (−20)
+   * @param {number} options.calledShot - Точечная атака penalty (−20)
    * @param {number} options.runningTarget - Running Target penalty (−20)
    * @param {number} options.miscModifier - Miscellaneous modifier
    * @param {number} [options.sizeModifier=0] - Target size modifier (+30 to −30)
@@ -195,15 +195,15 @@ export class MeleeCombatHelper {
           hitsParts.push(`Power Field: +1`);
         }
 
-        hitsParts.push(`<strong>Total: ${hitsTotal}</strong>`);
+        hitsParts.push(`<strong>Всего попаданий: ${hitsTotal}</strong>`);
       } else {
         // Single target - always 1 hit on success
-        hitsParts.push(`<strong>1 Hit</strong> (successful attack)`);
+        hitsParts.push(`<strong>1 попадание</strong> (атака успешна)`);
       }
     } else {
       // Miss
       hitsParts.push(`Degrees of Success: ${degreesOfSuccess} (negative = miss)`);
-      hitsParts.push(`<strong>Total: 0 Hits (MISS)</strong>`);
+      hitsParts.push(`<strong>Попаданий: 0 (ПРОМАХ)</strong>`);
     }
 
     return {
@@ -217,9 +217,9 @@ export class MeleeCombatHelper {
    *
    * This is the main entry point for melee attacks. Opens a dialog with:
    * - Aim options (None, Half, Full)
-   * - All Out Attack checkbox (+20 bonus, cannot Parry/Dodge)
+   * - Атака всеми силами checkbox (+20 bonus, cannot Parry/Dodge)
    * - Charge checkbox (+10 bonus)
-   * - Called Shot checkbox (−20 penalty, select hit location)
+   * - Точечная атака checkbox (−20 penalty, select hit location)
    * - Running Target checkbox (−20 penalty)
    * - Miscellaneous modifier input
    *
@@ -233,7 +233,7 @@ export class MeleeCombatHelper {
    * @param {Item} weapon - Melee weapon item
    * @param {Object} [options={}] - Optional preset attack parameters
    * @param {number} [options.aim] - Preset aim modifier (0, 1, or 2 for None/Half/Full)
-   * @param {boolean} [options.allOut] - Preset All Out Attack (true/false)
+   * @param {boolean} [options.allOut] - Preset Атака всеми силами (true/false)
    * @param {boolean} [options.charge] - Preset Charge (true/false)
    * @param {string} [options.calledShot] - Preset called shot location
    * @param {boolean} [options.runningTarget] - Preset Running Target (true/false)
@@ -275,7 +275,7 @@ export class MeleeCombatHelper {
         </select>
       </div>
       <div class="form-group" style="display: flex; gap: 20px;">
-        <label title="+${MELEE_MODIFIERS.ALL_OUT_ATTACK} bonus"><i class="far fa-square" id="allOutIcon"></i> All Out Attack
+        <label title="+${MELEE_MODIFIERS.ALL_OUT_ATTACK} bonus"><i class="far fa-square" id="allOutIcon"></i > Атака всеми силами
           <input type="checkbox" id="allOut" name="allOut" style="display:none;" />
         </label>
         <label title="+${MELEE_MODIFIERS.CHARGE} bonus"><i class="far fa-square" id="chargeIcon"></i> Charge
@@ -283,7 +283,7 @@ export class MeleeCombatHelper {
         </label>
       </div>
       <div class="form-group" style="display: flex; gap: 20px;">
-        <label title="${COMBAT_PENALTIES.CALLED_SHOT} penalty"><i class="far fa-square" id="calledShotIcon"></i> Called Shot
+        <label title="${COMBAT_PENALTIES.CALLED_SHOT} penalty"><i class="far fa-square" id="calledShotIcon"></i> Точечная атака
           <input type="checkbox" id="calledShot" name="calledShot" style="display:none;" />
         </label>
         <label title="${COMBAT_PENALTIES.RUNNING_TARGET} penalty"><i class="far fa-square" id="runningTargetIcon"></i> Running Target
@@ -303,7 +303,7 @@ export class MeleeCombatHelper {
     `;
 
     foundry.applications.api.DialogV2.wait({
-      window: { title: `Melee Attack: ${safeWeaponName}` },
+      window: { title: `Атака в ближнем бою: ${safeWeaponName}` },
       position: { width: 325 },
       content: content,
       render: (event, dialog) => {
@@ -354,7 +354,7 @@ export class MeleeCombatHelper {
       },
       buttons: [
         {
-          label: "Attack", action: "attack",
+          label: "Атаковать", action: "attack",
           callback: async (event, button, dialog) => {
             const el = dialog.element;
             const aim = parseInt(el.querySelector('#aim').value) || 0;
@@ -394,7 +394,7 @@ export class MeleeCombatHelper {
             });
           }
         },
-        { label: "Cancel", action: "cancel" }
+        { label: "Отмена", action: "cancel" }
       ]
     });
   }
