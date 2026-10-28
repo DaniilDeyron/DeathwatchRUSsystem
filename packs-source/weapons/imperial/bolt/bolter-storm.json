@@ -1,6 +1,6 @@
 {
   "_id": "bolt00000000004",
-  "name": "Astartes Storm Bolter",
+  "name": "Штормболтер астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/bolter-storm.webp",
   "system": {
@@ -18,8 +18,15 @@
     "wt": 26,
     "req": 20,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "tearing" }, { "id": "storm" }],
-    "description": "<p>Storm bolters originated and still reside almost exclusively in the Adeptus Astartes. These weapons resemble two bolters with a single casing and a single trigger. They can lay down a barrage of fire rivalling heavy weapons, but with better portability. A storm bolter uses twin clips to feed its dual firing mechanisms.</p>",
+    "attachedQualities": [
+      {
+        "id": "tearing"
+      },
+      {
+        "id": "storm"
+      }
+    ],
+    "description": "<p>Штормболтеры применяются почти исключительно Адептус Астартес. По сути, это два болтера в одном корпусе с единым спусковым механизмом. Они обеспечивают шквальный огонь, сопоставимый с тяжёлым вооружением, но удобнее в переноске. Для подачи боеприпасов используется сдвоенный магазин.</p>",
     "modifiers": []
   }
 }
