@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000004",
-  "name": "Astartes Lightning Claw",
+  "name": "Грозовые когти астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/lightning-claw.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "154",
+    "page": "174",
     "class": "Melee",
     "dmg": "1d10+6",
     "dmgType": "Energy",
@@ -19,10 +19,15 @@
     "req": 30,
     "renown": "Distinguished",
     "attachedQualities": [
-      { "id": "power-field" },
-      { "id": "proven", "value": "4" }
+      {
+        "id": "power-field"
+      },
+      {
+        "id": "proven",
+        "value": "4"
+      }
     ],
-    "description": "<p>Simply wearing lightning claws is a statement about the wielder's expertise in battle. Constantly honed melee prowess and a willingness to sacrifice easy access to ranged weaponry is necessary to utilise these weapons to their full effect. For these reasons, lightning claws are usually seen in the hands of senior assault specialists.</p><p>A lightning claw is a heavy gauntlet that replaces the normal glove on Astartes power armour. Its extra bulk contains the mechanisms that power four individual power blades, which extend like crackling talons from the back of the hand. While the lethal design of these weapons is enough to ensure they can shear through armour nearly as easily as flesh, when used as a pair by an accomplished close combatant, they become pure instruments of death.</p><p>Lightning claws do an additional point of Damage per degree of success on the Attack roll. When a character is equipped with a pair of lightning claws, they instead do 2 additional points of Damage per degree of success. The blades on lightning claws may be sheathed or unsheathed as a Ready action, but their bulk makes it impossible to effectively use ranged weapons of any class other than Thrown in the applicable hand(s) even when the blades are retracted. In addition, the poor manual dexterity penalty increases to –20. When Requisitioning a pair of lightning claws for one character, the Requisition needed for the second claw is halved.</p>",
+    "description": "<p>Грозовые когти свидетельствуют об опыте владельца: для их эффективного применения нужны отточенные навыки ближнего боя и готовность отказаться от удобного доступа к стрелковому оружию. Тяжёлая перчатка заменяет обычную перчатку силового доспеха и содержит четыре силовых лезвия, выступающих с тыльной стороны кисти. Пара когтей в руках опытного бойца превращается в особенно смертоносное оружие.</p><p>Грозовой коготь наносит дополнительно 1 ед. урона за каждую степень успеха атаки; пара когтей — 2 ед. за каждую степень успеха. Лезвия можно убрать или выдвинуть действием «Подготовка», но даже убранные когти мешают использовать в соответствующей руке любое стрелковое оружие, кроме метательного. Штраф за тонкую работу и манипуляции мелкими предметами увеличивается до −20. При запросе пары цена второго когтя уменьшается вдвое.</p>",
     "modifiers": [],
     "provenRating": 4
   }
