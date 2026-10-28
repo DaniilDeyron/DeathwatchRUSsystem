@@ -26,7 +26,7 @@ export class RollExecutor {
     const roll = new Roll('1d100', actor.getRollData());
     await roll.evaluate();
 
-    const flavorLabel = `[Skill] ${label}`;
+    const flavorLabel = `Проверка умения: ${label}`;
     const modifierParts = RollDialogBuilder.buildModifierParts(skillTotal, label, modifiers);
     const flavor = RollDialogBuilder.buildResultFlavor(flavorLabel, targetNum, roll, modifierParts);
 
@@ -49,7 +49,7 @@ export class RollExecutor {
     const roll = new Roll('1d100', actor.getRollData());
     await roll.evaluate();
 
-    const flavorLabel = `[Characteristic] ${label}`;
+    const flavorLabel = `Проверка характеристики: ${label}`;
     const modifierParts = RollDialogBuilder.buildModifierParts(characteristicValue, label, modifiers);
     const flavor = RollDialogBuilder.buildResultFlavor(flavorLabel, targetNum, roll, modifierParts);
 
@@ -76,7 +76,7 @@ export class RollExecutor {
     // Only read form values in the button callback. Execute the roll after DialogV2.wait
     // has resolved, so a roll/chat error cannot leave the modal open indefinitely.
     const response = await DialogV2.wait({
-      window: { title: `Roll ${label}` },
+      window: { title: `Бросок: ${label}` },
       content: RollDialogBuilder.buildModifierDialog(prefillModifier, prefillDifficulty),
       render: (event, dialog) => RollDialogBuilder.attachModifierInputHandlerV2(dialog.element),
       buttons: [
@@ -145,7 +145,7 @@ export class RollExecutor {
     }
 
     const response = await DialogV2.wait({
-      window: { title: `Roll ${label}` },
+      window: { title: `Бросок: ${label}` },
       content,
       render: (event, dialog) => RollDialogBuilder.attachModifierInputHandlerV2(dialog.element),
       buttons: [
