@@ -7,7 +7,7 @@
     "book": "Deathwatch Core Rulebook",
     "page": "168",
     "class": "Thrown",
-    "dmg": "2d10+2",
+    "dmg": "2d10",
     "dmgType": "Explosive",
     "penetration": "0",
     "range": "SBx3",
@@ -21,7 +21,7 @@
     "attachedQualities": [
       {
         "id": "blast",
-        "value": "4"
+        "value": "5"
       }
     ],
     "description": "<p>Крупные фраг-гранаты и ракеты Адептус Астартес начинены мощной взрывчаткой и аэродинамическими металлическими осколками. Высокоскоростной поток осколков особенно опасен для обычной пехоты.</p>",
