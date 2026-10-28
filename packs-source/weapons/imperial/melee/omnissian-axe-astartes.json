@@ -5,9 +5,9 @@
   "img": "systems/deathwatch/icons/weapons/omnissian_axe.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "174",
+    "page": "173",
     "class": "Melee",
-    "dmg": "1d10+11",
+    "dmg": "2d10+6",
     "dmgType": "Energy",
     "penetration": "6",
     "range": "",
@@ -15,15 +15,15 @@
     "clip": "",
     "reload": "",
     "equipped": false,
-    "wt": 30,
-    "req": 14,
+    "wt": 14,
+    "req": 30,
     "renown": "Distinguished",
     "attachedQualities": [
       {
         "id": "power-field"
       },
       {
-        "id": "unbalanced"
+        "id": "balanced"
       }
     ],
     "description": "<p>Технодесантники носят этот топор как знак преданности Омниссии. Длинное древко увенчано половиной круглой эмблемы Адептус Механикус — черепом и шестернёй; символ образует клинок, окружённый силовым полем. Энергетические дуги освещают зубчатую кромку и глазницы черепа. Несмотря на священную символику и узоры схем, это смертоносное оружие; кроме того, топор выполняет функцию комбинированного инструмента.</p>",
