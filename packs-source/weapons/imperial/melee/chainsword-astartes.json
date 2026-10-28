@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000001",
-  "name": "Astartes Chainsword",
+  "name": "Цепной меч астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/chainsword.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "153",
+    "page": "172",
     "class": "Melee",
     "dmg": "1d10+3",
     "dmgType": "Rending",
@@ -18,8 +18,15 @@
     "wt": 10,
     "req": 5,
     "renown": "",
-    "attachedQualities": [{ "id": "balanced" }, { "id": "tearing" }],
-    "description": "<p>The Chainsword has served many a Battle-Brother during his time in an Assault Squad. These weapons generally have a flat carapace containing the chain with only the forward curved section open where the spinning chain teeth can bite into flesh and bone.</p>",
+    "attachedQualities": [
+      {
+        "id": "balanced"
+      },
+      {
+        "id": "tearing"
+      }
+    ],
+    "description": "<p>Цепной меч часто сопровождает боевого брата в штурмовом отделении. В плоском корпусе скрыта цепь, наружу выступает лишь загнутый передний участок с вращающимися зубьями, способными вгрызаться в плоть и кость.</p>",
     "modifiers": []
   }
 }
