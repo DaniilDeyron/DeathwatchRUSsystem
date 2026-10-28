@@ -5,7 +5,7 @@
   "img": "systems/deathwatch/icons/weapons/melta-vulkan.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "164",
     "class": "Basic",
     "dmg": "2d10+14",
     "dmgType": "Energy",
