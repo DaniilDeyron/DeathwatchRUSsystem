@@ -1,6 +1,6 @@
 {
   "_id": "melt00000000006",
-  "name": "Astartes Meltagun (Vulkan)",
+  "name": "Мельтаган астартес («Вулкан»)",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/melta-vulkan.webp",
   "system": {
@@ -18,7 +18,7 @@
     "wt": 14,
     "req": 20,
     "renown": "Respected",
-    "description": "<p>Meltaguns are the most common form of melta weapon and are found in many Imperial forces. They are less prone to catastrophic failure than plasma guns and work best at shorter ranges. An ideal weapon for cutting through bulkheads or armour, the Deathwatch has no end of uses for it. The Vulkan-pattern uses a built-in fuel canister, but versions with a backpack attachment are also common.</p>",
+    "description": "<p>Мельтаган — распространённый вид мельта-оружия в имперских войсках. Он особенно эффективен на близкой дистанции и менее склонен к катастрофическому перегреву, чем плазменное оружие. Караул Смерти использует мельтаганы для прожигания брони и пробивания переборок. У паттерна «Вулкан» топливный баллон встроен в оружие, хотя модели с заплечным баком также встречаются часто.</p>",
     "modifiers": []
   }
 }
