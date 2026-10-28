@@ -76,7 +76,7 @@ export class RollExecutor {
     // Only read form values in the button callback. Execute the roll after DialogV2.wait
     // has resolved, so a roll/chat error cannot leave the modal open indefinitely.
     const response = await DialogV2.wait({
-      window: { title: \`Roll \${label}\` },
+      window: { title: `Roll ${label}` },
       content: RollDialogBuilder.buildModifierDialog(prefillModifier, prefillDifficulty),
       render: (event, dialog) => RollDialogBuilder.attachModifierInputHandlerV2(dialog.element),
       buttons: [
@@ -145,7 +145,7 @@ export class RollExecutor {
     }
 
     const response = await DialogV2.wait({
-      window: { title: \`Roll \${label}\` },
+      window: { title: `Roll ${label}` },
       content,
       render: (event, dialog) => RollDialogBuilder.attachModifierInputHandlerV2(dialog.element),
       buttons: [
@@ -166,7 +166,7 @@ export class RollExecutor {
                   const replacement = replacements.find(r => r.item.id === selectedSource);
                   if (replacement) {
                     selectedValue = replacement.value;
-                    selectedLabel = \`\${label} (\${replacement.label})\`;
+                    selectedLabel = `${label} (${replacement.label})`;
                   }
                 }
               }
