@@ -1,11 +1,11 @@
 {
   "_id": "plas00000000005",
-  "name": "Astartes Plasma Pistol",
+  "name": "Плазменный пистолет астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/plasma-pistol.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "163",
     "class": "Pistol",
     "dmg": "1d10+10",
     "dmgType": "Energy",
@@ -18,8 +18,12 @@
     "wt": 6,
     "req": 25,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "volatile" }],
-    "description": "<p>Few pistols are deadlier than the plasma pistol, and many ranking Adeptus Astartes find them worth the trouble of acquiring and the risk of using for their sheer efficiency in eliminating foes at close range.</p>",
+    "attachedQualities": [
+      {
+        "id": "volatile"
+      }
+    ],
+    "description": "<p>Немногие пистолеты столь же смертоносны, как плазменный. Многие высокопоставленные космодесантники считают, что его мощь и способность уничтожать противника на близкой дистанции оправдывают трудности получения и опасность применения.</p>",
     "modifiers": []
   }
 }
