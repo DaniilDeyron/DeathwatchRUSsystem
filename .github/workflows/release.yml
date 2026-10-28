@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: "Release tag to create (example: v0.0.2-ru.19)"
+        description: "Release tag to create (example: v0.0.2-ru.20)"
         required: true
-        default: "v0.0.2-ru.19"
+        default: "v0.0.2-ru.20"
         type: string
   push:
     branches: [main]
@@ -87,7 +87,7 @@ jobs:
           const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
           manifest.id = 'deathwatch-ru';
           manifest.title = 'Warhammer 40,000: Deathwatch — Русская версия';
-          manifest.version = '0.0.2-ru.19';
+          manifest.version = '0.0.2-ru.20';
           manifest.url = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem';
           manifest.manifest = 'https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/system.json';
           manifest.download = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases/latest/download/deathwatch-ru.zip';
@@ -169,7 +169,7 @@ jobs:
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             echo "tag_name=$INPUT_TAG" >> "$GITHUB_OUTPUT"
           elif [[ "$EVENT_NAME" == "push" && "$REF_NAME" == "main" ]]; then
-            echo "tag_name=v0.0.2-ru.19" >> "$GITHUB_OUTPUT"
+            echo "tag_name=v0.0.2-ru.20" >> "$GITHUB_OUTPUT"
           else
             echo "tag_name=$REF_NAME" >> "$GITHUB_OUTPUT"
           fi
@@ -181,7 +181,7 @@ jobs:
           name: Deathwatch RU ${{ steps.tag.outputs.tag_name }}
           body: |
             Единая русифицированная система Deathwatch RU для Foundry VTT.
-            Удалены небезопасные глобальные regex для backticks и HTML-строк, добавлена безопасная запись переведённых JS-строк и строгая проверка синтаксиса runtime-модулей. Проверяются регистрация листов, пути шаблонов, наличие всех обязательных шаблонов и скомпилированных компендиумов.
+            Исправлен поток бросков навыков и характеристик: диалог закрывается после чтения параметров, затем выполняется бросок и отправляется сообщение; ошибки показываются отдельно. Добавлено описание мультимельты «Огненный шторм», пустой в исходном компендиуме. Сохраняются проверки синтаксиса runtime-модулей, регистрации листов, шаблонов и компендиумов.
           files: deathwatch-ru.zip
           generate_release_notes: true
           make_latest: true
