@@ -5,7 +5,7 @@
   "img": "systems/deathwatch/icons/weapons/bolter-heavy.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "162",
     "class": "Heavy",
     "dmg": "1d10+12",
     "dmgType": "Explosive",
