@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000002",
-  "name": "Astartes Chainfist",
+  "name": "Цепной кулак астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/chainfist.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "153",
+    "page": "172",
     "class": "Melee",
     "dmg": "2d10",
     "dmgType": "Energy",
@@ -19,12 +19,20 @@
     "req": 40,
     "renown": "Famed",
     "attachedQualities": [
-      { "id": "power-field" },
-      { "id": "tearing" },
-      { "id": "unwieldy" },
-      { "id": "power-fist" }
+      {
+        "id": "power-field"
+      },
+      {
+        "id": "tearing"
+      },
+      {
+        "id": "unwieldy"
+      },
+      {
+        "id": "power-fist"
+      }
     ],
-    "description": "<p>A chainfist combines the matter-cleaving power field of a power fist with the rending adamantite teeth of a chainblade. The field envelopes both the huge gauntlet and the whirring blade, yielding a weapon capable of slicing through armour, vehicles, heavy cruiser bulkheads, or nearly any other substance in the galaxy given enough time. These weapons are too unbalanced for even a Battle-Brother in standard Astartes power armour to wield effectively; chainfists are only capable of being used with Terminator armour. This is just as well, as any foe dreadful enough to warrant use of this weapon certainly calls for equally potent protection.</p><p>A chainfist replaces the normal glove on Terminator Armour, and imposes the same weapon restrictions. In addition, the poor manual dexterity penalty increases to –20.</p>",
+    "description": "<p>Цепной кулак сочетает разрушительное силовое поле силового кулака с адамантиновыми зубьями цепного клинка. Поле охватывает перчатку и вращающийся клинок, позволяя прорезать броню, технику, переборки тяжёлых крейсеров и почти любое вещество. Оружие слишком громоздко для стандартного силового доспеха и используется только с терминаторским доспехом. Оно заменяет обычную перчатку и накладывает такие же ограничения на обращение с оружием и мелкими предметами.</p>",
     "modifiers": [],
     "doublesStrengthBonus": true
   }
