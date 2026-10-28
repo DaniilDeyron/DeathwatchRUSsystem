@@ -1,6 +1,6 @@
 {
   "_id": "soli00000000003",
-  "name": "Astartes Assault Cannon",
+  "name": "Штурмовая пушка астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/assault-cannon.webp",
   "system": {
@@ -19,10 +19,15 @@
     "req": 30,
     "renown": "Famed",
     "attachedQualities": [
-      { "id": "devastating", "value": "1" },
-      { "id": "tearing" }
+      {
+        "id": "devastating",
+        "value": "1"
+      },
+      {
+        "id": "tearing"
+      }
     ],
-    "description": "<p>An assault cannon is a massive, brutal weapon with a ring of rotating barrels that spray explosive shells at terrifying speed and velocity. This weapon’s incredible firepower can shred troops or vehicles even more efficiently than a heavy bolter, although its size and weight somewhat preclude manportability. The Adeptus Astartes circumvent that limitation by commonly employing them on Terminators.</p>",
+    "description": "<p>Штурмовая пушка — тяжёлое оружие с вращающимися стволами, выпускающее поток разрывных снарядов с огромной скоростью. Её огневая мощь позволяет уничтожать пехоту и технику даже эффективнее тяжёлого болтера. Из-за размеров и веса обычному человеку трудно нести такое оружие, поэтому Адептус Астартес часто устанавливает его на доспехи терминаторов.</p>",
     "modifiers": []
   }
 }
