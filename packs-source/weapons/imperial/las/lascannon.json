@@ -1,11 +1,11 @@
 {
   "_id": "lase00000000001",
-  "name": "Astartes Lascannon",
+  "name": "Лазпушка астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/lascannon.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "167",
     "class": "Heavy",
     "dmg": "5d10+10",
     "dmgType": "Energy",
@@ -18,8 +18,13 @@
     "wt": 75,
     "req": 30,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "proven", "value": "3" }],
-    "description": "<p>Las technology is generally of little interest to the Adeptus Astartes, who have access to more powerful weapons and do not answer to the Departmento Munitorum for their ammunition costs. The Lascannon is the exception. These guns use huge power packs that provide enough energy to punch holes in the thickest armour even at extreme ranges. Lascannons require separate power packs, which the Space Marines usually affix to their backpack generators.</p>",
+    "attachedQualities": [
+      {
+        "id": "proven",
+        "value": "3"
+      }
+    ],
+    "description": "<p>Обычно лазерные технологии мало интересуют Адептус Астартес, располагающих более мощным оружием. Лазпушка — исключение: её огромные блоки питания дают достаточно энергии, чтобы пробивать даже самую толстую броню на предельной дистанции. Отдельные блоки питания космодесантники обычно крепят к заплечному генератору.</p>",
     "modifiers": []
   }
 }
