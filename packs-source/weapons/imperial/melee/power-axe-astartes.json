@@ -5,18 +5,18 @@
   "img": "systems/deathwatch/icons/weapons/poweraxe.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "174",
+    "page": "173",
     "class": "Melee",
     "dmg": "1d10+8",
     "dmgType": "Energy",
-    "penetration": "7",
+    "penetration": "6",
     "range": "",
     "rof": "",
     "clip": "",
     "reload": "",
     "equipped": false,
-    "wt": 20,
-    "req": 10,
+    "wt": 10,
+    "req": 20,
     "renown": "Respected",
     "attachedQualities": [
       {
