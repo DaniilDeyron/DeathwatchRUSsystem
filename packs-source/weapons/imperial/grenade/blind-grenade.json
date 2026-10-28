@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000001",
-  "name": "Astartes Blind Grenade",
+  "name": "Ослепляющая граната астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/blind-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "168",
     "class": "Thrown",
     "dmg": "-",
     "dmgType": "Explosive",
@@ -18,7 +18,7 @@
     "wt": 0.8,
     "req": 10,
     "renown": "",
-    "description": "<p>Blind grenades explode with a burst of dense dark grey smoke including IR bafflers and broad-band EM spectrum chaff, all designed to block eyesight and even advanced visual detection. The effect is short-lived, but while it lasts provides excellent cover for advancing forces. The effects of this grenade last for 1d10 Rounds (shorter in conditions such as prevailing winds or industrial ventilation)..</p>",
+    "description": "<p>При взрыве граната выпускает плотное тёмно-серое дымовое облако с инфракрасными помехами и широкополосными электромагнитными помехами. Оно блокирует зрение и даже продвинутые системы обнаружения. Эффект длится 1к10 раундов, но ветер и промышленная вентиляция могут рассеять облако раньше.</p>",
     "modifiers": []
   }
 }
