@@ -18,8 +18,13 @@
     "wt": 72,
     "req": 35,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "blast", "value": "1" }],
-    "description": "<p>Meltaguns are the most common form of melta weapon and are found in many Imperial forces. They are less prone to catastrophic failure than plasma guns and work best at shorter ranges. An ideal weapon for cutting through bulkheads or armour, the Deathwatch has no end of uses for it. The Vulkan-pattern uses a built-in fuel canister, but versions with a backpack attachment are also common.</p>",
+    "attachedQualities": [
+      {
+        "id": "blast",
+        "value": "1"
+      }
+    ],
+    "description": "<p>Мультимельта — самый крупный тип мельта-оружия. Такие образцы редки из-за размеров; они требуют много топлива, обладают большой дальностью и поражают широкую область, способную испарить нескольких врагов за один выстрел. Оружие выделяет чрезвычайно много тепла, поэтому без силового доспеха стрелять из него неудобно.</p>",
     "modifiers": []
   }
 }
