@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000003",
-  "name": "Astartes Power Fist",
+  "name": "Силовой кулак астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/powerfist.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "153",
+    "page": "174",
     "class": "Melee",
     "dmg": "2d10",
     "dmgType": "Energy",
@@ -19,11 +19,17 @@
     "req": 30,
     "renown": "Distinguished",
     "attachedQualities": [
-      { "id": "power-field" },
-      { "id": "unwieldy" },
-      { "id": "power-fist" }
+      {
+        "id": "power-field"
+      },
+      {
+        "id": "unwieldy"
+      },
+      {
+        "id": "power-fist"
+      }
     ],
-    "description": "<p>A power fist generates an energy field so violently disruptive that the weapon inside it is of little consequence. Therefore, instead of surrounding a traditional weapon, the field envelopes an oversized and augmented glove. Backed by a Battle-Brother's strength, a power fist can sunder even the heaviest armour or rupture flesh as though bursting a bloody, overripe fruit. Keeping these superior energy fields charged requires heavy cables linked to the armour's power system. The generators are also rare and difficult to maintain, making such a weapon a sign of status, even within the Adeptus Astartes.</p><p>A power fist adds a multiplier to the wielder's Strength Bonus. (Note: A Space Marine already doubles his Strength Bonus from his Unnatural Strength Trait. Therefore, the Power Fist increases the multiplier by one, tripling the Space Marine's Strength Bonus) It replaces the normal glove on Astartes power armour. In addition, the poor manual dexterity penalty increases to –20.</p>",
+    "description": "<p>Силовое поле кулака настолько разрушительно, что обычное оружие внутри него не требуется: поле окружает массивную усиленную перчатку. Сила боевого брата позволяет пробивать тяжёлую броню и разрывать плоть. Для поддержания поля нужны тяжёлые кабели, подключённые к энергосистеме доспеха; генераторы редки и требуют сложного обслуживания, поэтому силовой кулак считается знаком статуса.</p><p>Силовой кулак увеличивает множитель бонуса Силы космодесантника до ×3. Он заменяет обычную перчатку силового доспеха и повышает штраф за тонкую работу и манипуляции мелкими предметами до −20.</p>",
     "modifiers": [],
     "doublesStrengthBonus": true
   }
