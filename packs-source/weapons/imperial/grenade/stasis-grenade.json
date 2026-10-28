@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000013",
-  "name": "Astartes Stasis Grenade",
+  "name": "Стазис-граната астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/stasis-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "169",
     "class": "Thrown",
     "dmg": "-",
     "dmgType": "Explosive",
@@ -18,7 +18,7 @@
     "wt": 1,
     "req": 0,
     "renown": "",
-    "description": "<p>Stasis fields are used throughout the Imperium to hold time at bay, essentially trapping whatever is inside them in a single moment. Uses run from mundane food storage to the preservation of the Ultramarine’s Primarch. A stasis grenade is simply an impacttriggered version of the same technology, most commonly used to temporarily neutralize a threat.</p><p>To call a stasis grenade rare and dangerous is a grave understatement. One may occasionally be distributed along with the general Requisition Points for a Mission if the Watch Captain deems necessary, but a stasis grenade may never be Requisitioned through the usual means.</p><p>The grenade generates a stasis field with a radius of two metres; it lasts for 1d5 rounds (which the GM should roll and reveal only when it expires). Everything inside this bubble is cut off from the normal flow of time. Anyone and anything inside the affected area does (and perceives) nothing until the field dissipates. Characters outside the stasis field can see the frozen moment but cannot interact with it in any way</p>",
+    "description": "<p>Стазисное поле останавливает течение времени внутри себя. Так сохраняют пищевые запасы и даже жизнь примарха Ультрадесанта; граната использует ту же технологию для временного обезвреживания угрозы. Это крайне редкое и опасное средство: его нельзя запросить обычным способом за очки Реквизиции, и выдать его может лишь капитан Караула по своему усмотрению.</p><p>Граната создаёт поле радиусом 2 метра на 1к5 раундов; ведущий бросает длительность тайно. Всё внутри поля замирает во времени и ничего не делает, пока поле не рассеется. Находящиеся снаружи видят замершую сцену, но не могут взаимодействовать с теми, кто внутри.</p>",
     "modifiers": []
   }
 }
