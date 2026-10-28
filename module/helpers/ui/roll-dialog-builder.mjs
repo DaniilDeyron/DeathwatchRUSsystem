@@ -12,13 +12,13 @@ export class RollDialogBuilder {
   static buildCharacteristicSourceSelector(naturalValue, label, replacements) {
     const naturalBonus = Math.floor(naturalValue / CHARACTERISTIC_CONSTANTS.BONUS_DIVISOR);
 
-    let content = '<div class="form-group"><label>Source:</label><select id="characteristic-source" name="source">';
-    content += `<option value="natural">Natural ${label} (${naturalValue}, Bonus: ${naturalBonus})</option>`;
+    let content = '<div class="form-group"><label>Источник:</label><select id="characteristic-source" name="source">';
+    content += `<option value="natural">Естественная характеристика: ${label} (${naturalValue}, бонус: ${naturalBonus})</option>`;
 
     for (const replacement of replacements) {
       const bonusText = replacement.item.system.unnaturalMultiplier > 1
-        ? `Bonus: ${replacement.bonus} [Unnatural x${replacement.item.system.unnaturalMultiplier}]`
-        : `Bonus: ${replacement.bonus}`;
+        ? `Бонус: ${replacement.bonus} [Сверхъестественный ×${replacement.item.system.unnaturalMultiplier}]`
+        : `Бонус: ${replacement.bonus}`;
       content += `<option value="${replacement.item.id}">${replacement.label} (${replacement.value}, ${bonusText})</option>`;
     }
 
@@ -44,7 +44,7 @@ export class RollDialogBuilder {
       }
     }
 
-    let content = `<div class="modifier-dialog"><div class="form-group"><label for="difficulty-select">Difficulty:</label><select id="difficulty-select" name="difficulty">`;
+    let content = `<div class="modifier-dialog"><div class="form-group"><label for="difficulty-select">Сложность проверки:</label><select id="difficulty-select" name="difficulty">`;
 
     for (const [key, difficulty] of Object.entries(DWConfig.TestDifficulties)) {
       const selected = key === selectedDifficultyKey ? 'selected' : '';
@@ -55,7 +55,7 @@ export class RollDialogBuilder {
       ? (prefillModifier > 0 ? `+${prefillModifier}` : `${prefillModifier}`)
       : '';
 
-    content += `</select></div><div class="form-group modifier-row"><label for="modifier">Misc:</label><input type="text" id="modifier" name="modifier" value="${modifierValue}" placeholder="e.g., +5, -10" /></div></div>`;
+    content += `</select></div><div class="form-group modifier-row"><label for="modifier">Доп. модификатор:</label><input type="text" id="modifier" name="modifier" value="${modifierValue}" placeholder="например: +5, -10" /></div></div>`;
     return content;
   }
 
@@ -113,14 +113,14 @@ export class RollDialogBuilder {
   }
 
   static buildModifierParts(baseValue, label, modifiers) {
-    const parts = [`${baseValue} ${label}`];
+    const parts = [`Базовое значение (${label}): ${baseValue}`];
     
     if (modifiers.difficultyModifier !== 0) {
-      parts.push(`${modifiers.difficultyModifier >= 0 ? '+' : ''}${modifiers.difficultyModifier} ${modifiers.difficultyLabel}`);
+      parts.push(`Сложность: ${modifiers.difficultyLabel} (${modifiers.difficultyModifier >= 0 ? '+' : ''}${modifiers.difficultyModifier})`);
     }
     
     if (modifiers.additionalModifier !== 0) {
-      parts.push(`${modifiers.additionalModifier >= 0 ? '+' : ''}${modifiers.additionalModifier} Misc`);
+      parts.push(`Доп. модификатор: ${modifiers.additionalModifier >= 0 ? '+' : ''}${modifiers.additionalModifier}`);
     }
     
     return parts;
@@ -129,12 +129,12 @@ export class RollDialogBuilder {
   static buildResultFlavor(label, target, roll, modifierParts) {
     const success = roll.total <= target;
     const degrees = Math.floor(Math.abs(target - roll.total) / ROLL_CONSTANTS.DEGREES_DIVISOR);
-    const resultText = success ? `<span style="color: green;">SUCCESS! (${degrees} DoS)</span>` : `FAILED! (${degrees} DoF)`;
+    const resultText = success ? `<span style="color: green;">УСПЕХ (${degrees} степ. успеха)</span>` : `ПРОВАЛ (${degrees} степ. провала)`;
 
-    let flavor = `${label} - Target: ${target}<br><strong>${resultText}</strong>`;
+    let flavor = `${label} — целевое значение: ${target}<br><strong>${resultText}</strong>`;
 
     if (modifierParts.length > 0) {
-      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Modifiers</summary><div style="font-size:0.85em;margin-top:4px;">${modifierParts.join('<br>')}</div></details>`;
+      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Модификаторы</summary><div style="font-size:0.85em;margin-top:4px;">${modifierParts.join('<br>')}</div></details>`;
     }
 
     return flavor;
