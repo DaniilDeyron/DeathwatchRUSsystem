@@ -136,30 +136,30 @@ export default class DeathwatchHorde extends DeathwatchEnemy {
       const destroyed = newMagnitude >= maxMagnitude;
       const magnitudeBonusDamage = hits[0]?.magnitudeBonusDamage || 0;
 
-      let message = `<strong>${actor.name}</strong> takes <strong>${hits.length}</strong> hit${hits.length > 1 ? 's' : ''}, loses <strong style="color: red;">${totalMagnitudeLost} Magnitude</strong> (${newMagnitude}/${maxMagnitude})`;
-      message += `<br><em>Armor: ${baseArmorValue} | TB: ${effectiveTB}</em>`;
+      let message = `<strong>${actor.name}</strong>: ${hits.length} попаданий; Орда потеряла <strong style="color: red;">${totalMagnitudeLost} ед. Численности</strong> (потери: ${newMagnitude} из ${maxMagnitude}).`;
+      message += `<br><em>Броня: ${baseArmorValue} | Бонус Выносливости: ${effectiveTB}</em>`;
       if (magnitudeBonusDamage > 0) {
-        message += `<br><em>+${magnitudeBonusDamage} bonus Magnitude per penetrating hit (ammunition/weapon quality)</em>`;
+        message += `<br><em>Каждое пробивающее попадание дополнительно уменьшает Численность на ${magnitudeBonusDamage} (боеприпасы/свойство оружия).</em>`;
       }
 
       if (hits.length > 1) {
         const penetrating = hitResults.filter(r => r.lost > 0).length;
         const absorbed = hitResults.length - penetrating;
-        message += `<details style="margin-top:4px;"><summary style="cursor:pointer; font-size:0.85em;">${penetrating} penetrating, ${absorbed} absorbed — click for details</summary>`;
+        message += `<details style="margin-top:4px;"><summary style="cursor:pointer; font-size:0.85em;">Пробито: ${penetrating}; поглощено: ${absorbed} — подробности</summary>`;
         message += `<table style="width:100%; font-size:0.85em; margin-top:4px; border-collapse:collapse;">`;
-        message += `<tr style="border-bottom:1px solid #999;"><th>#</th><th>Dmg</th><th>Pen</th><th>Result</th></tr>`;
+        message += `<tr style="border-bottom:1px solid #999;"><th>№</th><th>Урон</th><th>Бронебойность</th><th>Результат</th></tr>`;
         for (let i = 0; i < hitResults.length; i++) {
           const r = hitResults[i];
           const result = r.lost > 0
-            ? `<span style="color:red;">-${r.lost} Mag</span>`
-            : `<span style="color:gray;">Absorbed</span>`;
+            ? `<span style="color:red;">−${r.lost} ед. Численности</span>`
+            : `<span style="color:gray;">Поглощено</span>`;
           message += `<tr><td>${i + 1}</td><td>${r.damage}</td><td>${r.penetration}</td><td>${result}</td></tr>`;
         }
         message += `</table></details>`;
       }
 
       if (destroyed) {
-        message += `<br><strong style="color: darkred; font-size: 1.1em;">☠ HORDE DESTROYED ☠</strong>`;
+        message += `<br><strong style="color: darkred; font-size: 1.1em;">☠ ОРДА УНИЧТОЖЕНА ☠</strong>`;
       }
 
       await FoundryAdapter.createChatMessage({
@@ -173,7 +173,7 @@ export default class DeathwatchHorde extends DeathwatchEnemy {
       }
     } else {
       const safeActorName = Sanitizer.escape(actor.name);
-      const message = `<strong>${safeActorName}</strong> takes <strong>${hits.length}</strong> hit${hits.length > 1 ? 's' : ''} — armor and toughness absorb all damage<br><em>Armor: ${baseArmorValue} | TB: ${effectiveTB}</em>`;
+      const message = `<strong>${safeActorName}</strong>: ${hits.length} попаданий; весь урон поглощён бронёй и бонусом Выносливости.<br><em>Броня: ${baseArmorValue} | Бонус Выносливости: ${effectiveTB}</em>`;
       await FoundryAdapter.createChatMessage({
         content: message,
         speaker: FoundryAdapter.getChatSpeaker(actor)
