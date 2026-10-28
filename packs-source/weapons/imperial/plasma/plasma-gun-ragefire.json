@@ -1,6 +1,6 @@
 {
   "_id": "plas00000000004",
-  "name": "Astartes Plasma Gun (Ragefire)",
+  "name": "Плазмаган астартес («Неистовый огонь»)",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/plasma-gun-ragefire.webp",
   "system": {
@@ -18,8 +18,12 @@
     "wt": 27,
     "req": 20,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "volatile" }],
-    "description": "<p>The most common model of this uncommon technology, plasma guns are often deployed in situations where raw takedown power is required against highly resilient or armoured enemies</p>",
+    "attachedQualities": [
+      {
+        "id": "volatile"
+      }
+    ],
+    "description": "<p>Плазмаган — наиболее распространённая модель плазменного оружия, хотя само это оружие встречается нечасто. Его обычно используют, когда требуется высокая огневая мощь для поражения исключительно стойких или хорошо бронированных целей. Плазменное оружие удерживает водород в магнитном поле и выпускает перегретый плазменный сгусток; из-за нестабильности системы оно требует осторожного обращения.</p>",
     "modifiers": []
   }
 }
