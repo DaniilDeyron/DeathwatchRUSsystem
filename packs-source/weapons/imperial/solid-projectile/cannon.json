@@ -5,7 +5,7 @@
   "img": "systems/deathwatch/icons/weapons/assault-cannon.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "166",
     "class": "Mounted",
     "dmg": "2d10+12",
     "dmgType": "Impact",
