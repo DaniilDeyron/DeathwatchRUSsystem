@@ -236,6 +236,85 @@ MANUAL.update({
     "Space Wolves":"Космические Волки","Storm Wardens":"Стражи Бури",
     "Ultramarines":"Ультрамарины","Novamarines":"Новомаринцы","Raptors":"Рапторы"
 })
+# Canonical terminology from the user-provided Russian Deathwatch Core Rulebook.
+# These exact mappings replace the older machine-translated labels.
+MANUAL.update({
+    # Characteristics and skills: match the Russian rulebook, not generic RPG wording.
+    "Weapon Skill":"Ближний бой","Weapon Skill (WS)":"Ближний бой (ББ)","WS":"ББ",
+    "Ballistic Skill":"Дальний бой","Ballistic Skill (BS)":"Дальний бой (ДБ)","BS":"ДБ",
+    "Strength":"Сила","Toughness":"Выносливость","Agility":"Ловкость","Intelligence":"Интеллект",
+    "Perception":"Восприятие","Willpower":"Сила воли","Fellowship":"Общительность",
+    "Toughness Bonus":"Бонус Выносливости","TB":"БВ","Strength Bonus":"Бонус Силы",
+    "Skills":"Умения","Skill":"Умение","Basic Skills":"Основные умения","Advanced Skills":"Продвинутые умения",
+    "Skill Test":"Проверка умения","Characteristic Test":"Проверка характеристики",
+    "Degrees of Success":"Степени успеха","Degrees of Failure":"Степени провала","DoS":"степ. успеха","DoF":"степ. провала",
+    "Characteristics":"Характеристики","Wounds":"Раны","Fatigue":"Усталость","Fate Point":"Очко Судьбы","Fate Points":"Очки Судьбы",
+    # Combat actions, precisely as named in Chapter VIII.
+    "All Out Attack":"Атака всеми силами","Total Attack":"Атака всеми силами","Full Attack":"Атака всеми силами",
+    "Called Shot":"Точечная атака","Called Shots":"Точечные атаки",
+    "Aim":"Прицеливание","Standard Attack":"Стандартная атака","Charge":"Натиск",
+    "Suppressing Fire":"Огонь на подавление","Semi-Auto Burst":"Короткая очередь","Semi-Auto":"Короткая очередь",
+    "Full-Auto Burst":"Длинная очередь","Full-Auto":"Длинная очередь",
+    "Swift Attack":"Быстрая атака","Lightning Attack":"Молниеносная атака","Multiple Attacks":"Множественные атаки",
+    "Guarded Action":"Осторожная атака","Overwatch":"Контроль сектора","Knock Down":"Сбивание с ног",
+    "Grapple":"Захват","Feint":"Финт","Dodge":"Уклонение","Parry":"Парирование","Stun":"Оглушение",
+    "Righteous Fury":"Праведный гнев","Righteous Fury Confirmation":"Подтверждение Праведного гнева",
+    # Hordes use "Численность" in the book, not "величина".
+    "Horde":"Орда","Hordes":"Орды","Magnitude":"Численность","Horde Magnitude":"Численность Орды",
+    "Current Magnitude":"Текущая Численность","Magnitude Lost":"Потери Численности",
+    "Horde Damage":"Урон по Ордам","Horde Breaking Test":"Проверка на панику Орды",
+    "Renown":"Слава","Requisition":"Реквизиция","Availability":"Доступность","Quality":"Качество",
+    "Respected":"Уважаемый","Distinguished":"Заслуженный","Distinguised":"Заслуженный","Disinguished":"Заслуженный",
+    "Famed":"Прославленный","Hero":"Герой",
+    # Official item class terms from the armory tables.
+    "Basic":"Лёгкое","Heavy":"Тяжёлое","Pistol":"Пистолет","Melee":"Холодное","Thrown":"Метательное",
+    "Ranged":"Стрелковое","Mounted":"Станковое","Power Armour":"Силовой доспех","Power Armor":"Силовой доспех",
+    # Weapon qualities from Chapter V.
+    "Accurate":"Точное","Tearing":"Разрывающее","Reliable":"Надёжное","Storm":"Шквальное",
+    "Volatile":"Яростное","Concussive":"Оглушающее","Shocking":"Шоковое","Felling":"Разящее",
+    "Balanced":"Сбалансированное","Unbalanced":"Несбалансированное","Unwieldy":"Громоздкое",
+    "Power Field":"Силовое поле","Primitive":"Примитивное","Proven":"Проверенное","Scatter":"Разлёт",
+    "Overheats":"Перегревающееся","Snare":"Опутывающее","Blast":"Взрыв",
+    "Energy":"Энергетический","Explosive":"Взрывной","Impact":"Ударный","Rending":"Режущий",
+    # User-facing system terms that previously drifted from the book.
+    "Solo Mode":"Режим одиночки","Squad Mode":"Режим отряда","Cohesion":"Сплочённость",
+    "Talent":"Талант","Trait":"Особенность","Special Ability":"Особая способность",
+    "Profile":"Профиль","Description":"Описание","Attributes":"Характеристики","Inventory":"Снаряжение",
+    "Damage":"Урон","Damage Type":"Тип урона","Penetration":"Бронебойность","Armor Penetration":"Бронебойность",
+    "Armour Penetration":"Бронебойность","Target":"Цель","Target Number":"Целевое значение",
+    "Difficulty":"Сложность","Misc":"Дополнительный модификатор","Modifiers":"Модификаторы",
+    "Apply Damage":"Применить урон","Apply Critical Effect":"Применить эффект критического урона",
+    "Full":"Полное действие","Half":"Полудействие","Full Action":"Полное действие","Half Action":"Полудействие",
+    "Trivial":"Тривиальная","Elementary":"Элементарная","Simple":"Простая","Easy":"Лёгкая","Routine":"Рутинная",
+    "Ordinary":"Ординарная","Challenging":"Серьёзная","Difficult":"Сложная","Hard":"Тяжёлая",
+    "Very Hard":"Очень тяжёлая","Arduous":"Напряжённая","Punishing":"Мучительная","Hellish":"Адская",
+    # Book-aligned names for core weapons.
+    "Astartes bolt pistol":"Болт-пистолет астартес",
+    "Astartes Bolt Pistol":"Болт-пистолет астартес",
+    "Astartes bolter (Godwyn pattern)":"Болтер астартес («Годвин»)",
+    "Astartes Bolter (Godwyn pattern)":"Болтер астартес («Годвин»)",
+    "Astartes bolter (Stalker pattern)":"Болтер астартес («Сталкер»)",
+    "Astartes Bolter (Stalker pattern)":"Болтер астартес («Сталкер»)",
+    "Astartes combi-weapon":"Комбиоружие астартес","Astartes Combi-Weapon":"Комбиоружие астартес",
+    "Astartes heavy bolter":"Тяжёлый болтер астартес","Astartes Heavy Bolter":"Тяжёлый болтер астартес",
+    "Astartes storm bolter":"Штормболтер астартес","Astartes Storm Bolter":"Штормболтер астартес",
+    "Astartes plasma cannon":"Плазменная пушка астартес","Astartes Plasma Cannon":"Плазменная пушка астартес",
+    "Astartes plasma gun (ragefire-pattern)":"Плазмаган астартес (паттерн «Неистовый огонь»)",
+    "Astartes Plasma Gun (Ragefire-pattern)":"Плазмаган астартес (паттерн «Неистовый огонь»)",
+    "Astartes plasma pistol":"Плазменный пистолет астартес","Astartes Plasma Pistol":"Плазменный пистолет астартес",
+    "Astartes infernus pistol":"Инфернопистолет астартес","Astartes Infernus Pistol":"Инфернопистолет астартес",
+    "Astartes meltagun (Vulkan-pattern)":"Мельтаган астартес (паттерн «Вулкан»)",
+    "Astartes Meltagun (Vulkan-pattern)":"Мельтаган астартес (паттерн «Вулкан»)",
+    "Astartes multi-melta (Maxima pattern)":"Мультимельта астартес (паттерн «Максима»)",
+    "Astartes Multi-Melta (Maxima pattern)":"Мультимельта астартес (паттерн «Максима»)",
+    "Astartes flamer":"Огнемёт астартес","Astartes Flamer":"Огнемёт астартес",
+    "Astartes hand flamer":"Ручной огнемёт астартес","Astartes Hand Flamer":"Ручной огнемёт астартес",
+    "Astartes heavy flamer":"Тяжёлый огнемёт астартес","Astartes Heavy Flamer":"Тяжёлый огнемёт астартес",
+    "Astartes assault cannon":"Штурмовая пушка астартес","Astartes Assault Cannon":"Штурмовая пушка астартес",
+    "Astartes shotgun":"Дробовик астартес","Astartes Shotgun":"Дробовик астартес",
+    "Astartes chainsword":"Цепной меч астартес","Astartes Chainsword":"Цепной меч астартес",
+    "Astartes power sword":"Силовой меч астартес","Astartes Power Sword":"Силовой меч астартес",
+})
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
 
@@ -308,6 +387,54 @@ def add_template(s, store):
             add(branch.group(3), store)
             add(branch.group(6), store)
 
+RULEBOOK_TEXT_REWRITES = [
+    # Natural Russian forms observed in cached machine translations, normalized to the book.
+    (r"(?i)\bтотальная атака\b", "атака всеми силами"),
+    (r"(?i)\bтотальную атаку\b", "атаку всеми силами"),
+    (r"(?i)\bтотальной атакой\b", "атакой всеми силами"),
+    (r"(?i)\bтотальной атаки\b", "атаки всеми силами"),
+    (r"(?i)\bтотальной атаке\b", "атаке всеми силами"),
+    (r"(?i)\bтотальные атаки\b", "атаки всеми силами"),
+    (r"(?i)\bтотальных атак\b", "атак всеми силами"),
+    (r"(?i)\bназываемый выстрел\b", "точечная атака"),
+    (r"(?i)\bназываемого выстрела\b", "точечной атаки"),
+    (r"(?i)\bназываемому выстрелу\b", "точечной атаке"),
+    (r"(?i)\bназываемым выстрелом\b", "точечной атакой"),
+    (r"(?i)\bназываемом выстреле\b", "точечной атаке"),
+    (r"(?i)\bвыстрел по вызову\b", "точечная атака"),
+    (r"(?i)\bвыстрела по вызову\b", "точечной атаки"),
+    (r"(?i)\bвыстрелу по вызову\b", "точечной атаке"),
+    (r"(?i)\bвыстрелом по вызову\b", "точечной атакой"),
+    (r"(?i)\bправедная ярость\b", "праведный гнев"),
+    (r"(?i)\bправедной ярости\b", "праведного гнева"),
+    (r"(?i)\bправедную ярость\b", "праведный гнев"),
+    (r"(?i)\bправедной яростью\b", "праведным гневом"),
+    (r"(?i)\bиндивидуальный режим\b", "режим одиночки"),
+    (r"(?i)\bрежим одиночек\b", "режим одиночки"),
+    (r"(?i)\bизвестность\b", "слава"),
+    (r"(?i)\bбронепробиваемость\b", "бронебойность"),
+    (r"(?i)\bбонус стойкости\b", "бонус выносливости"),
+    (r"(?i)\bпроверка стойкости\b", "проверка выносливости"),
+    (r"(?i)\bтест стойкости\b", "проверка выносливости"),
+    (r"(?i)\bхарактеристика стойкость\b", "характеристика выносливость"),
+    (r"(?i)\bстепени успеха\b", "степени успеха"),
+    (r"(?i)\bстепени провала\b", "степени провала"),
+]
+
+def canonicalize_rulebook_text(value):
+    if not isinstance(value, str) or not value:
+        return value
+    for pattern, replacement in RULEBOOK_TEXT_REWRITES:
+        value = re.sub(
+            pattern,
+            lambda m, replacement=replacement: (
+                replacement[:1].upper() + replacement[1:]
+                if m.group(0)[:1].isupper() else replacement
+            ),
+            value
+        )
+    return value
+
 class MT:
     def __init__(self):
         self.cache = {}
@@ -364,7 +491,8 @@ class MT:
     def simple(self,s):
         if not isinstance(s,str) or not eligible(s): return s
         lead=s[:len(s)-len(s.lstrip())]; trail=s[len(s.rstrip()):]; core=s.strip()
-        return lead+self.cache.get(core,core)+trail
+        translated = self.cache.get(core, core)
+        return lead+canonicalize_rulebook_text(translated)+trail
     def rich(self,s):
         if not isinstance(s,str): return s
         def attr_sub(m):
