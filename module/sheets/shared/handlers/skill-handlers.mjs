@@ -1,5 +1,4 @@
-import { RollDialogBuilder } from '../../../helpers/ui/roll-dialog-builder.mjs';
-import { ChatMessageBuilder } from '../../../helpers/ui/chat-message-builder.mjs';
+import { RollExecutor } from '../../../helpers/roll-executor.mjs';
 
 /**
  * Handles skill roll events for actor sheets.
@@ -52,48 +51,24 @@ export class SkillHandlers {
    * @returns {Promise<void>}
    */
   static async handleRoll(dataset, actor) {
-    const skill = actor.system.skills[dataset.skill];
-    const label = `[Skill] ${dataset.label}`;
-
+    const skill = actor.system.skills?.[dataset.skill];
     if (!skill) {
-      ui.notifications.warn(`Skill ${dataset.skill} not found`);
-      return;
+      ui.notifications.warn(\`Навык \${dataset.skill} не найден.\`);
+      return null;
     }
 
     if (!skill.isBasic && !skill.trained) {
-      ui.notifications.warn(`${dataset.label || dataset.skill} is an advanced skill and must be trained to use.`);
-      return;
+      ui.notifications.warn(\`\${dataset.label || dataset.skill} — продвинутый навык; сначала нужно пройти обучение.\`);
+      return null;
     }
 
-    const characteristic = actor.system.characteristics[skill.characteristic];
+    const label = dataset.label || skill.label || dataset.skill;
+    const characteristic = actor.system.characteristics?.[skill.characteristic];
     const baseCharValue = characteristic ? characteristic.value : 0;
     const effectiveChar = skill.trained ? baseCharValue : Math.floor(baseCharValue / 2);
     const skillBonus = skill.expert ? 20 : (skill.mastered ? 10 : 0);
     const skillTotal = effectiveChar + skillBonus + (skill.modifier || 0) + (skill.modifierTotal || 0);
 
-    return foundry.applications.api.DialogV2.wait({
-      window: { title: `Roll ${dataset.label}` },
-      content: RollDialogBuilder.buildModifierDialog(),
-      render: (event, dialog) => RollDialogBuilder.attachModifierInputHandlerV2(dialog.element),
-      buttons: [
-        {
-          label: "Roll", action: "roll",
-          class: "dialog-button roll",
-          callback: async (event, button, dialog) => {
-            const modifiers = RollDialogBuilder.parseModifiersV2(dialog.element);
-            const target = skillTotal + modifiers.difficultyModifier + modifiers.additionalModifier;
-
-            const roll = new Roll('1d100', actor.getRollData());
-            await roll.evaluate();
-
-            const modifierParts = RollDialogBuilder.buildModifierParts(skillTotal, dataset.label, modifiers);
-            const flavor = RollDialogBuilder.buildResultFlavor(label, target, roll, modifierParts);
-
-            ChatMessageBuilder.createRollMessage(roll, actor, flavor);
-          }
-        },
-        { label: "Cancel", action: "cancel", class: "dialog-button cancel" }
-      ]
-    });
-  }
-}
+    // Keep legacy callers on the same dialog/roll path as the current V2 actor sheet.
+    return RollExecutor.showSkillDialog(actor, skill, label, skillTotal);
+  }}
