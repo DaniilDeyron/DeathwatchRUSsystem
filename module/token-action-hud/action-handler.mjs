@@ -121,7 +121,7 @@ export function createActionHandler(BaseActionHandler) {
           actions: [
             {
               id: `${weapon.id}-attack`,
-              name: 'Attack',
+              name: 'Атаковать',
               encodedValue: `weapon|${weapon.id}|attack`,
               img: weapon.img
             },
@@ -156,7 +156,7 @@ export function createActionHandler(BaseActionHandler) {
           actions: [
             {
               id: `${weapon.id}-attack`,
-              name: 'Attack',
+              name: 'Атаковать',
               encodedValue: `weapon|${weapon.id}|attack`,
               img: weapon.img
             },
@@ -192,7 +192,7 @@ export function createActionHandler(BaseActionHandler) {
           actions: [
             {
               id: `${grenade.id}-attack`,
-              name: 'Attack',
+              name: 'Атаковать',
               encodedValue: `weapon|${grenade.id}|attack`,
               img: grenade.img
             },
@@ -431,11 +431,11 @@ export function initializeActionHandler(coreModule) {
         const actions = [
           {
             id: `${weapon.id}-attack`,
-            name: "Attack",
+            name: "Атаковать",
             encodedValue: `weapon|${weapon.id}|attack`,
             icon1: '<i class="fas fa-crosshairs"></i>',
             info1: ammoDisplay ? { text: ammoDisplay } : null,
-            tooltip: `${weapon.name} - Attack Roll${ammoInfo}`
+            tooltip: `${weapon.name} — бросок атаки${ammoInfo}`
           },
           {
             id: `${weapon.id}-damage`,
@@ -480,10 +480,10 @@ export function initializeActionHandler(coreModule) {
         const actions = [
           {
             id: `${weapon.id}-attack`,
-            name: "Attack",
+            name: "Атаковать",
             encodedValue: `weapon|${weapon.id}|attack`,
             icon1: '<i class="fas fa-crosshairs"></i>',
-            tooltip: `${weapon.name} - Attack Roll`
+            tooltip: `${weapon.name} — бросок атаки`
           },
           {
             id: `${weapon.id}-damage`,
@@ -541,11 +541,11 @@ export function initializeActionHandler(coreModule) {
         const actions = [
           {
             id: `${weapon.id}-attack`,
-            name: "Attack",
+            name: "Атаковать",
             encodedValue: `weapon|${weapon.id}|attack`,
             icon1: '<i class="fas fa-crosshairs"></i>',
             info1: ammoDisplay ? { text: ammoDisplay } : null,
-            tooltip: `${weapon.name} - Attack Roll${ammoInfo}`
+            tooltip: `${weapon.name} — бросок атаки${ammoInfo}`
           },
           {
             id: `${weapon.id}-damage`,
