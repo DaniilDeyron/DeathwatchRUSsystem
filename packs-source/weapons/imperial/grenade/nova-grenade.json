@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000009",
-  "name": "Astartes Nova Grenade",
+  "name": "Нова-граната астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/nova-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "169",
     "class": "Thrown",
     "dmg": "1d10",
     "dmgType": "Energy",
@@ -18,8 +18,13 @@
     "wt": 0.8,
     "req": 15,
     "renown": "",
-    "attachedQualities": [{ "id": "blast", "value": "3" }],
-    "description": "<p>Photo-visors and similar ocular protection are common among the Deathwatch’s foes. This more powerful version of a flash grenade was designed to overpower standard input filtering. Each sphere contains a minute amount of plasma suspended in carbon gas. When ignited, the resulting fusion is similar to the effect of a collapsing star, and the emitted light achieves an extreme absolute magnitude. However, the ability to thwart auto-senses is a double-edged sword for Battle-Brothers, and nova grenades must be strategically utilised lest they blind their own forces.</p><p>In addition to taking damage from the shock wave, anyone within the Blast radius must make a <b>Very Hard (–30) Toughness Test or be Blinded</b> (see page 260) for 1d10 Rounds. Photo-visors, autosenses, and similar vision protection decreases this Test to Difficult (–10). Anyone within 20 metres of the detonation point must make a normal Toughness Test or be Blinded for 1d5 Rounds (identical to a flash grenade—vision protection works normally).</p>",
+    "attachedQualities": [
+      {
+        "id": "blast",
+        "value": "3"
+      }
+    ],
+    "description": "<p>Эта усовершенствованная разновидность фотонной гранаты предназначена для ослепления врагов, защищённых фотовизорами и фильтрами зрения. Сфера содержит ничтожное количество плазмы в углекислом газе; при детонации возникает вспышка чудовищной яркости, подобная схлопнувшейся звезде. Однако она может подавить авточувства союзников, поэтому нова-гранаты следует применять осторожно.</p><p>Все в зоне взрыва получают урон ударной волной и должны пройти очень тяжёлую (−30) проверку Выносливости, иначе будут ослеплены на 1к10 раундов. Фотовизоры, авточувства и похожая защита снижают сложность проверки до сложной (−10). Все в пределах 20 метров от точки взрыва также должны пройти обычную (+0) проверку Выносливости или будут ослеплены на 1к5 раундов; зрительная защита действует как против фотонной гранаты.</p>",
     "modifiers": []
   }
 }
