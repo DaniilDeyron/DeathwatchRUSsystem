@@ -43,7 +43,7 @@ export class GrenadeHelper {
   static async executeGrenadeThrow(actor, weapon) {
     const token = actor.getActiveTokens()[0];
     if (!token) {
-      ui.notifications.warn('You must have a token on the scene to throw a grenade.');
+      ui.notifications.warn('Чтобы бросить гранату, на сцене должен быть выбран токен.');
       return;
     }
 
@@ -122,6 +122,6 @@ export class GrenadeHelper {
     };
 
     await canvas.scene.createEmbeddedDocuments('Region', [regionData]);
-    ui.notifications.info(`${weapon.name} blast template placed — GM determines affected tokens.`);
+    ui.notifications.info(`Шаблон взрыва ${weapon.name} размещён. Ведущий определяет затронутые токены.`);
   }
 }
