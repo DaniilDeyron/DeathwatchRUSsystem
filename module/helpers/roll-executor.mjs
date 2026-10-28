@@ -30,7 +30,7 @@ export class RollExecutor {
     const modifierParts = RollDialogBuilder.buildModifierParts(skillTotal, label, modifiers);
     const flavor = RollDialogBuilder.buildResultFlavor(flavorLabel, targetNum, roll, modifierParts);
 
-    ChatMessageBuilder.createRollMessage(roll, actor, flavor);
+    await ChatMessageBuilder.createRollMessage(roll, actor, flavor);
 
     return roll;
   }
@@ -70,10 +70,13 @@ export class RollExecutor {
    * @returns {Promise<Roll|null>} The evaluated roll or null if canceled
    */
   static async showSkillDialog(actor, skill, label, skillTotal, prefillModifier = 0, prefillDifficulty = 0) {
-    const flavorLabel = `[Skill] ${label}`;
+    let submittedModifiers = null;
+    let submissionError = null;
 
-    return DialogV2.wait({
-      window: { title: `Roll ${label}` },
+    // Only read form values in the button callback. Execute the roll after DialogV2.wait
+    // has resolved, so a roll/chat error cannot leave the modal open indefinitely.
+    const response = await DialogV2.wait({
+      window: { title: \`Roll \${label}\` },
       content: RollDialogBuilder.buildModifierDialog(prefillModifier, prefillDifficulty),
       render: (event, dialog) => RollDialogBuilder.attachModifierInputHandlerV2(dialog.element),
       buttons: [
@@ -81,9 +84,13 @@ export class RollExecutor {
           label: "Roll",
           action: "roll",
           class: "dialog-button roll",
-          callback: async (event, button, dialog) => {
-            const modifiers = RollDialogBuilder.parseModifiersV2(dialog.element);
-            return this.executeSkillRoll(actor, skill, label, skillTotal, modifiers);
+          callback: (event, button, dialog) => {
+            try {
+              submittedModifiers = RollDialogBuilder.parseModifiersV2(dialog.element);
+            } catch (error) {
+              submissionError = error;
+            }
+            return "roll";
           }
         },
         {
@@ -93,6 +100,21 @@ export class RollExecutor {
         }
       ]
     });
+
+    if (response !== "roll") return null;
+    if (submissionError || !submittedModifiers) {
+      console.error("[Deathwatch RU] Could not read skill-roll dialog values.", submissionError);
+      ui.notifications.error("Не удалось прочитать параметры броска навыка. Проверьте консоль браузера.");
+      return null;
+    }
+
+    try {
+      return await this.executeSkillRoll(actor, skill, label, skillTotal, submittedModifiers);
+    } catch (error) {
+      console.error("[Deathwatch RU] Skill roll failed.", error);
+      ui.notifications.error("Не удалось выполнить бросок навыка. Подробности в консоли браузера.");
+      return null;
+    }
   }
 
   /**
@@ -108,14 +130,12 @@ export class RollExecutor {
    * @returns {Promise<Roll|null>} The evaluated roll or null if canceled
    */
   static async showCharacteristicDialog(actor, charKey, label, characteristic, prefillModifier = 0, prefillDifficulty = 0) {
-    const flavorLabel = `[Characteristic] ${label}`;
     const replacements = CyberneticHelper.getCharacteristicReplacements(actor, charKey);
     const hasReplacements = replacements.length > 0;
+    let submittedState = null;
+    let submissionError = null;
 
-    // Build dialog content
     let content = RollDialogBuilder.buildModifierDialog(prefillModifier, prefillDifficulty);
-
-    // Add source selector if cybernetics available
     if (hasReplacements) {
       content = RollDialogBuilder.buildCharacteristicSourceSelector(
         characteristic.value,
@@ -124,34 +144,37 @@ export class RollExecutor {
       ) + content;
     }
 
-    return DialogV2.wait({
-      window: { title: `Roll ${label}` },
-      content: content,
+    const response = await DialogV2.wait({
+      window: { title: \`Roll \${label}\` },
+      content,
       render: (event, dialog) => RollDialogBuilder.attachModifierInputHandlerV2(dialog.element),
       buttons: [
         {
           label: "Roll",
           action: "roll",
           class: "dialog-button roll",
-          callback: async (event, button, dialog) => {
-            const modifiers = RollDialogBuilder.parseModifiersV2(dialog.element);
+          callback: (event, button, dialog) => {
+            try {
+              const modifiers = RollDialogBuilder.parseModifiersV2(dialog.element);
+              let selectedValue = characteristic.value;
+              let selectedLabel = label;
 
-            // Get selected characteristic source
-            let selectedValue = characteristic.value;
-            let selectedLabel = label;
-            if (hasReplacements) {
-              const sourceSelect = dialog.element.querySelector('#characteristic-source');
-              const selectedSource = sourceSelect?.value;
-              if (selectedSource && selectedSource !== 'natural') {
-                const replacement = replacements.find(r => r.item.id === selectedSource);
-                if (replacement) {
-                  selectedValue = replacement.value;
-                  selectedLabel = `${label} (${replacement.label})`;
+              if (hasReplacements) {
+                const sourceSelect = dialog.element.querySelector("#characteristic-source");
+                const selectedSource = sourceSelect?.value;
+                if (selectedSource && selectedSource !== "natural") {
+                  const replacement = replacements.find(r => r.item.id === selectedSource);
+                  if (replacement) {
+                    selectedValue = replacement.value;
+                    selectedLabel = \`\${label} (\${replacement.label})\`;
+                  }
                 }
               }
+              submittedState = { modifiers, selectedValue, selectedLabel };
+            } catch (error) {
+              submissionError = error;
             }
-
-            return this.executeCharacteristicRoll(actor, selectedValue, selectedLabel, modifiers);
+            return "roll";
           }
         },
         {
@@ -161,5 +184,26 @@ export class RollExecutor {
         }
       ]
     });
+
+    if (response !== "roll") return null;
+    if (submissionError || !submittedState) {
+      console.error("[Deathwatch RU] Could not read characteristic-roll dialog values.", submissionError);
+      ui.notifications.error("Не удалось прочитать параметры броска характеристики. Проверьте консоль браузера.");
+      return null;
+    }
+
+    try {
+      return await this.executeCharacteristicRoll(
+        actor,
+        submittedState.selectedValue,
+        submittedState.selectedLabel,
+        submittedState.modifiers
+      );
+    } catch (error) {
+      console.error("[Deathwatch RU] Characteristic roll failed.", error);
+      ui.notifications.error("Не удалось выполнить бросок характеристики. Подробности в консоли браузера.");
+      return null;
+    }
   }
+
 }
