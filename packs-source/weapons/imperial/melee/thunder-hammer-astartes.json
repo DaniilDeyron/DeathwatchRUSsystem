@@ -5,18 +5,18 @@
   "img": "systems/deathwatch/icons/weapons/thunder_hammer.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "174",
+    "page": "173",
     "class": "Melee",
     "dmg": "2d10+5",
     "dmgType": "Energy",
-    "penetration": "9",
+    "penetration": "8",
     "range": "",
     "rof": "",
     "clip": "",
     "reload": "",
     "equipped": false,
-    "wt": 30,
-    "req": 18,
+    "wt": 18,
+    "req": 30,
     "renown": "Distinguished",
     "attachedQualities": [
       {
