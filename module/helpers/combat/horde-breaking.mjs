@@ -96,20 +96,20 @@ export class HordeBreakingHelper {
     const safeActorName = Sanitizer.escape(actor.name);
     const content = `
       <div class="horde-breaking-test" style="color: #f0f0f0;">
-        <p style="color: #f0f0f0;"><strong>${safeActorName}</strong> lost <strong style="color: #ff6666;">${percentLost.toFixed(0)}%</strong> magnitude last turn!</p>
-        <p style="color: #f0f0f0;"><strong>Current Status:</strong> ${currentPercent.toFixed(0)}% remaining</p>
+        <p style="color: #f0f0f0;"><strong>${safeActorName}</strong> потеряла <strong style="color: #ff6666;">${percentLost.toFixed(0)}%</strong> Численности за прошлый ход!</p>
+        <p style="color: #f0f0f0;"><strong>Оставшаяся Численность:</strong> ${currentPercent.toFixed(0)}%</p>
         <hr style="border-color: #666;">
-        <p style="color: #f0f0f0;"><strong>Base Willpower:</strong> ${wp} ${penalty !== 0 ? `(${penalty} below 50%)` : ''}</p>
+        <p style="color: #f0f0f0;"><strong>Базовая Сила воли:</strong> ${wp} ${penalty !== 0 ? `(${penalty} below 50%)` : ''}</p>
         <div style="margin: 10px 0;">
           <label for="situational-modifier" style="display: block; margin-bottom: 4px; color: #f0f0f0;">
-            <strong>Situational Modifier:</strong>
+            <strong>Ситуативный модификатор:</strong>
           </label>
           <input type="number" id="situational-modifier" name="situational-modifier" value="0"
                  style="width: 80px; padding: 4px; background: #2a2a2a; color: #f0f0f0; border: 1px solid #555;" step="10" />
-          <span style="margin-left: 8px; font-size: 0.9em; color: #bbb;">(+10 for advantage, -10 for difficulty)</span>
+          <span style="margin-left: 8px; font-size: 0.9em; color: #bbb;">(+10 за преимущество, −10 за сложность)</span>
         </div>
-        <p style="color: #f0f0f0;"><strong>Base Target Number:</strong> <span id="target-display">${targetNumber}</span></p>
-        <p class="notification info" style="color: #88ccff; background: #1a3a4a; padding: 8px; border-radius: 4px;">Roll 1d100 ≤ Target Number or the horde breaks!</p>
+        <p style="color: #f0f0f0;"><strong>Базовое целевое значение:</strong> <span id="target-display">${targetNumber}</span></p>
+        <p class="notification info" style="color: #88ccff; background: #1a3a4a; padding: 8px; border-radius: 4px;">Бросьте 1к100 ≤ целевого значения, иначе Орда впадёт в панику!</p>
       </div>
       <script>
         document.getElementById('situational-modifier').addEventListener('input', (e) => {
@@ -121,11 +121,11 @@ export class HordeBreakingHelper {
     `;
 
     const result = await foundry.applications.api.DialogV2.wait({
-      window: { title: `${actor.name} - Horde Breaking Test` },
+      window: { title: `${actor.name} — проверка на панику Орды` },
       content,
       buttons: [
         {
-          label: "Roll Test",
+          label: "Проверить",
           action: "roll",
           callback: async (event, button, dialog) => {
             const modifierInput = dialog.element.querySelector('#situational-modifier');
@@ -135,11 +135,11 @@ export class HordeBreakingHelper {
             const roll = await new Roll('1d100').evaluate();
             const success = roll.total <= finalTarget;
 
-            const flavorParts = [`<strong>Horde Breaking Test</strong>`];
-            if (penalty !== 0) flavorParts.push(`WP ${wp} ${penalty} (below 50%)`);
-            if (situationalModifier !== 0) flavorParts.push(`${situationalModifier > 0 ? '+' : ''}${situationalModifier} situational`);
-            flavorParts.push(`Target: ${finalTarget}`);
-            flavorParts.push(success ? '✅ <strong style="color: green;">HOLDS!</strong>' : '❌ <strong style="color: red;">BREAKS!</strong>');
+            const flavorParts = [`<strong>Проверка на панику Орды</strong>`];
+            if (penalty !== 0) flavorParts.push(`Сила воли ${wp}; штраф ${penalty} (Численность ниже 50%)`);
+            if (situationalModifier !== 0) flavorParts.push(`Ситуативный модификатор: ${situationalModifier > 0 ? '+' : ''}${situationalModifier}`);
+            flavorParts.push(`Целевое значение: ${finalTarget}`);
+            flavorParts.push(success ? '✅ <strong style="color: green;">ОРДА ДЕРЖИТСЯ!</strong>' : '❌ <strong style="color: red;">ОРДА ВПАДАЕТ В ПАНИКУ!</strong>');
 
             await roll.toMessage({
               speaker: FoundryAdapter.getChatSpeaker(actor),
@@ -186,16 +186,16 @@ export class HordeBreakingHelper {
     const currentPercent = ((currentMagnitude / maxMagnitude) * 100).toFixed(0);
 
     const reason = autoBreak
-      ? `<p style="color: #ff4444; font-weight: bold;">Magnitude below 25% (${currentPercent}% remaining) - automatically breaks!</p>`
-      : `<p style="color: #ff4444; font-weight: bold;">Failed Willpower test!</p>`;
+      ? `<p style="color: #ff4444; font-weight: bold;">Численность ниже 25% (${currentPercent}%): Орда автоматически впадает в панику.</p>`
+      : `<p style="color: #ff4444; font-weight: bold;">Проверка Силы воли провалена.</p>`;
 
     await FoundryAdapter.createChatMessage({
       content: `
         <div class="horde-broken" style="border: 3px solid #cc0000; padding: 12px; background: rgba(139, 0, 0, 0.2);">
-          <h3 style="color: #ff0000; margin-top: 0; font-weight: bold; text-shadow: 0 0 10px #ff0000;">💀 HORDE BREAKS!</h3>
-          <p style="font-size: 1.1em;"><strong style="color: #ffffff;">${safeActorName}</strong> <span style="color: #ffffff;">has broken and scattered!</span></p>
+          <h3 style="color: #ff0000; margin-top: 0; font-weight: bold; text-shadow: 0 0 10px #ff0000;">💀 ОРДА РАССЕЯЛАСЬ!</h3>
+          <p style="font-size: 1.1em;"><strong style="color: #ffffff;">${safeActorName}</strong> <span style="color: #ffffff;">распалась и разбегается по полю боя.</span></p>
           ${reason}
-          <p style="font-size: 0.95em; color: #dddddd;"><em>Individual creatures flee, lurk, or stalk according to their nature.</em></p>
+          <p style="font-size: 0.95em; color: #dddddd;"><em>Отдельные существа обращаются в бегство, прячутся или выслеживают врагов в соответствии со своей природой.</em></p>
         </div>
       `,
       speaker: FoundryAdapter.getChatSpeaker(actor)
