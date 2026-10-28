@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000007",
-  "name": "Astartes Thunder Hammer",
+  "name": "Громовой молот астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/thunder_hammer.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "155",
+    "page": "174",
     "class": "Melee",
     "dmg": "2d10+5",
     "dmgType": "Energy",
@@ -19,11 +19,17 @@
     "req": 18,
     "renown": "Distinguished",
     "attachedQualities": [
-      { "id": "power-field" },
-      { "id": "concussive" },
-      { "id": "unwieldy" }
+      {
+        "id": "power-field"
+      },
+      {
+        "id": "concussive"
+      },
+      {
+        "id": "unwieldy"
+      }
     ],
-    "description": "<p>The furious energy blast released when these weapons strike creates waves of booming concussive force as loud as thunder, from which their name originates. Enemies that survive the pulverising blow are likely to be incapacitated by the shockwave that follows. Many Battle-Brothers balance the clumsy nature of attempting to parry with a thunder hammer by pairing it with a storm shield; the Storm Wardens are said to be so fond of this combination that some practice a combat style developed specifically around it.</p>",
+    "description": "<p>При ударе громовой молот высвобождает мощный энергетический импульс, создающий оглушительную ударную волну — отсюда и название. Противники, пережившие сокрушительный удар, часто оказываются выведены из строя последующей волной. Из-за неудобства парирования многие боевые братья используют громовой молот вместе со штормовым щитом; орден Штормовых Стражей известен особой боевой техникой, построенной вокруг этой комбинации.</p>",
     "modifiers": []
   }
 }
