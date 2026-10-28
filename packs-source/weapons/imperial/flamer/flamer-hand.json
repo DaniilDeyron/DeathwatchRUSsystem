@@ -1,6 +1,6 @@
 {
   "_id": "flam00000000002",
-  "name": "Astartes Hand Flamer",
+  "name": "Ручной огнемёт астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/flamer-hand.webp",
   "system": {
@@ -18,8 +18,12 @@
     "wt": 6,
     "req": 10,
     "renown": "",
-    "attachedQualities": [{ "id": "flame" }],
-    "description": "<p>This hand-held flamer is still capable of unleashing large blasts of flame, but is good for only a few shots before the fuel canister must be switched out.</p>",
+    "attachedQualities": [
+      {
+        "id": "flame"
+      }
+    ],
+    "description": "<p>Этот одноручный огнемёт способен выпустить несколько мощных струй пламени, однако его небольшая топливная канистра быстро опустошается и требует замены.</p>",
     "modifiers": []
   }
 }
