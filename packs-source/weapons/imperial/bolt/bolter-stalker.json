@@ -1,6 +1,6 @@
 {
   "_id": "bolt00000000003",
-  "name": "Astartes Bolter (Stalker)",
+  "name": "Болтер астартес («Сталкер»)",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/bolter-stalker.webp",
   "system": {
@@ -19,11 +19,17 @@
     "req": 15,
     "renown": "Respected",
     "attachedQualities": [
-      { "id": "accurate" },
-      { "id": "tearing" },
-      { "id": "stalker-pattern" }
+      {
+        "id": "accurate"
+      },
+      {
+        "id": "tearing"
+      },
+      {
+        "id": "stalker-pattern"
+      }
     ],
-    "description": "<p>The Stalker-pattern boltgun is most impressive when used in conjunction with Stalker Rounds, but it is still an effective sniping weapon with any ammunition type. It significantly muffles the sound of any shell fired, and produces no muzzle flash.</p><p>Awareness Tests to hear shots made with a Stalker-pattern boltgun suffer an additional –30 penalty and can only be attempted at half the normal distance. See Stalker Rounds in the Ammunition section for more information on combining the two.</p>",
+    "description": "<p>Болтер паттерна «Сталкер» особенно эффективен с одноимёнными патронами, но и без них остаётся превосходным снайперским оружием. Он заметно приглушает звук выстрела и не даёт дульной вспышки. Проверки Бдительности, чтобы услышать выстрел из «Сталкера», получают дополнительный штраф −30 и доступны лишь с половины обычной дистанции.</p>",
     "modifiers": []
   }
 }
