@@ -315,6 +315,29 @@ MANUAL.update({
     "Astartes chainsword":"Цепной меч астартес","Astartes Chainsword":"Цепной меч астартес",
     "Astartes power sword":"Силовой меч астартес","Astartes Power Sword":"Силовой меч астартес",
 })
+MANUAL.update({
+    "All-Out Attack":"Атака всеми силами","All Out Attack":"Атака всеми силами",
+    "Called Shot":"Точечная атака","Called shot":"Точечная атака","Called Shots":"Точечные атаки",
+    "Overwatch":"Контроль сектора","Suppressing Fire":"Огонь на подавление",
+    "Full Auto":"Длинная очередь","Full-Auto":"Длинная очередь","Full Auto Burst":"Длинная очередь",
+    "Semi Auto":"Короткая очередь","Semi-Auto":"Короткая очередь","Semi-Auto Burst":"Короткая очередь",
+    "Quick Draw":"Быстрое выхватывание","Aim":"Прицеливание","Standard Attack":"Стандартная атака",
+    "Horde Breaking Test":"Проверка на панику Орды","Current Magnitude":"Текущая Численность",
+    "Damage to Horde Magnitude":"Урон по Численности Орды","Horde Damage":"Урон по Ордам",
+    "Armor Penetration":"Бронебойность","Armour Penetration":"Бронебойность","Penetration":"Бронебойность",
+    "Toughness":"Выносливость","Toughness Bonus":"Бонус Выносливости","Strength Bonus":"Бонус Силы",
+    "Weapon Skill":"Ближний бой","Ballistic Skill":"Дальний бой",
+    "Power Armour":"Силовой доспех","Power Armor":"Силовой доспех",
+    "Astartes Bolter (Godwyn)":"Болтер астартес («Годвин»)",
+    "Astartes Bolter (Stalker)":"Болтер астартес («Сталкер»)",
+    "Astartes Heavy Bolter":"Тяжёлый болтер астартес","Astartes Storm Bolter":"Штормболтер астартес",
+    "Astartes Combi-Weapon":"Комбиоружие астартес","Astartes Bolt Pistol":"Болт-пистолет астартес",
+    "Astartes Meltagun (Vulkan)":"Мельтаган астартес («Вулкан»)",
+    "Astartes Plasma Gun (Ragefire)":"Плазмаган астартес («Неистовый огонь»)",
+    "Astartes Plasma Cannon":"Плазменная пушка астартес","Astartes Flamer":"Огнемёт астартес",
+    "Astartes Hand Flamer":"Ручной огнемёт астартес","Astartes Heavy Flamer":"Тяжёлый огнемёт астартес",
+    "Astartes Assault Cannon":"Штурмовая пушка астартес","Astartes Shotgun":"Дробовик астартес"
+})
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
 
@@ -419,6 +442,17 @@ RULEBOOK_TEXT_REWRITES = [
     (r"(?i)\bхарактеристика стойкость\b", "характеристика выносливость"),
     (r"(?i)\bстепени успеха\b", "степени успеха"),
     (r"(?i)\bстепени провала\b", "степени провала"),
+    (r"(?i)\\bвеличина орды\\b", "численность Орды"),
+    (r"(?i)\\bвеличину орды\\b", "численность Орды"),
+    (r"(?i)\\bвеличины орды\\b", "численность Орды"),
+    (r"(?i)\\bвеличина\\b", "численность"),
+    (r"(?i)\\bвеличины\\b", "численности"),
+    (r"(?i)\\bвеличину\\b", "численность"),
+    (r"(?i)\\bвеличиной\\b", "численностью"),
+    (r"(?i)\\bвеличине\\b", "численности"),
+    (r"(?i)\\bвеличин\\b", "численности"),
+    (r"(?i)\\bназванный выстрел\\b", "точечная атака"),
+    (r"(?i)\\bназывается выстрел\\b", "точечная атака"),
 ]
 
 def canonicalize_rulebook_text(value):
@@ -433,6 +467,11 @@ def canonicalize_rulebook_text(value):
             ),
             value
         )
+    value = re.sub(
+        r"(?i)\\b(теряет|теряют|потеряла|потеряли|потеряет|уменьшает|уменьшила|уменьшил)\\s+(\\d+)\\s+численност(?:ь|и|ью)\\b",
+        lambda m: f"{m.group(1)} {m.group(2)} ед. Численности",
+        value
+    )
     return value
 
 class MT:
