@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000011",
-  "name": "Astartes Plasma Grenade",
+  "name": "Плазменная граната астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/plasma-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "169",
     "class": "Thrown",
     "dmg": "1d10+12",
     "dmgType": "Energy",
@@ -19,10 +19,15 @@
     "req": 20,
     "renown": "Distinguished",
     "attachedQualities": [
-      { "id": "blast", "value": "1" },
-      { "id": "volatile" }
+      {
+        "id": "blast",
+        "value": "1"
+      },
+      {
+        "id": "volatile"
+      }
     ],
-    "description": "<p>These highly lethal grenades use a deliberate plasma containment failure, erupting into blasts of white-hot energy. The dense plasma core of an Astartes plasma grenade is not fully consumed in the initial explosion and leaves a glowing, energized orb that continues to sear the area like a miniature sun. This tiny stellar body continues to do the plasma grenade’s full damage to the Blast area for an additional 1d5 Rounds after the Round it detonated.</p>",
+    "description": "<p>При взрыве нарушается удержание плазмы, и граната испускает вспышку белого жара. Плотное плазменное ядро не исчезает полностью при первичном взрыве: раскалённая сфера продолжает обжигать область поражения, как миниатюрное солнце. Она наносит полный урон плазменной гранаты в радиусе взрыва ещё 1к5 раундов после детонации.</p>",
     "modifiers": []
   }
 }
