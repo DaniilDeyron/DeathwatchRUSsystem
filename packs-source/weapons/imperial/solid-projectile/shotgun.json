@@ -1,6 +1,6 @@
 {
   "_id": "soli00000000004",
-  "name": "Astartes Shotgun",
+  "name": "Дробовик астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/shotgun.webp",
   "system": {
@@ -18,8 +18,15 @@
     "wt": 5,
     "req": 10,
     "renown": "",
-    "attachedQualities": [{ "id": "reliable" }, { "id": "scatter" }],
-    "description": "<p>Astartes combat shotgun.</p>",
+    "attachedQualities": [
+      {
+        "id": "reliable"
+      },
+      {
+        "id": "scatter"
+      }
+    ],
+    "description": "<p>Надёжное и универсальное оружие, обычно используемое разведчиками и боевыми братьями, которых не смущает его невысокая бронебойность. Это свойство полезно, когда нужно устранить противника, не пробив переборку и не повредив ценное оборудование. Широкий разлёт дроби делает дробовик особенно эффективным против многочисленных врагов.</p>",
     "modifiers": []
   }
 }
