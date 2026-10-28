@@ -1,13 +1,13 @@
 {
   "_id": "concussive",
-  "name": "Concussive",
+  "name": "Оглушающее",
   "type": "weapon-quality",
   "img": "icons/svg/sound.svg",
   "system": {
-    "book": "Deathwatch Core Rulebook",
-    "page": "142",
+    "book": "Deathwatch — Основная книга правил v1.0",
+    "page": "157",
     "key": "concussive",
     "value": "",
-    "description": "<p>The weapon causes a barrage of sound and force upon impact. When you strike an opponent with a Concussive weapon, he must make a <b>Toughness Test at a Difficulty of –10 per degree of success by which the attack succeeded or be Stunned for 1 Round</b>. Auditory protection confers a +10 bonus to this Test, but does not negate the kinetic energy of the blast. Additionally, any target taking Damage greater than his Strength Bonus from a Concussive weapon is automatically knocked down.</p>"
+    "description": "<p>Попадание вызывает оглушительный взрыв или ударную волну. Цель проходит проверку Выносливости со штрафом −10 за каждую степень успеха атаки. При провале она оглушена на один раунд. Защита слуха даёт +10 к проверке, но не устраняет ударную волну. Если урон от атаки превысил бонус Силы цели, она также падает на землю.</p>"
   }
 }
