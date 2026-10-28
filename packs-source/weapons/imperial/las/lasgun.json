@@ -1,11 +1,11 @@
 {
   "_id": "lase00000000002",
-  "name": "Lasgun",
+  "name": "Лазган",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/lasgun.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "167",
     "class": "Basic",
     "dmg": "1d10+3",
     "dmgType": "Energy",
@@ -18,8 +18,12 @@
     "wt": 4,
     "req": 0,
     "renown": "",
-    "attachedQualities": [{ "id": "reliable" }],
-    "description": "<p>Produced in a multitude of different styles and patterns, the lasgun can be found on almost every world of the Imperium, where its robust design and dependability make it a favoured weapon of both the Emperor’s faithful and many of their foes.</p>",
+    "attachedQualities": [
+      {
+        "id": "reliable"
+      }
+    ],
+    "description": "<p>Лазганы выпускаются во множестве моделей и паттернов и встречаются почти на любом мире Империума. Простая и прочная конструкция, а также высокая надёжность сделали это оружие любимым как среди верных слуг Императора, так и среди их врагов.</p>",
     "modifiers": []
   }
 }
