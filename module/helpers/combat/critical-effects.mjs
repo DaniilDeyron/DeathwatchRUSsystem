@@ -14,7 +14,7 @@ export class CriticalEffectsHelper {
     const critLocation = this.LOCATION_MAP[location] || 'body';
     const pack = game.packs.get('deathwatch.critical-effects');
     if (!pack) {
-      ui.notifications.warn('Critical effects compendium not found!');
+      ui.notifications.warn('Компендиум критических эффектов не найден.');
       return;
     }
 
@@ -25,7 +25,7 @@ export class CriticalEffectsHelper {
     const effectLevel = Math.min(totalCriticalDamage, 10);
 
     if (effectLevel < 1) {
-      ui.notifications.warn('No critical damage to apply!');
+      ui.notifications.warn('Нет критического урона для применения.');
       return;
     }
 
@@ -40,13 +40,13 @@ export class CriticalEffectsHelper {
 
     if (alreadyHas) {
       const safeActorName = Sanitizer.escape(actor.name);
-      ui.notifications.warn(`${safeActorName} already has this critical effect!`);
+      ui.notifications.warn(`У ${safeActorName} уже есть этот критический эффект.`);
       return;
     }
 
     const entry = index.find(e => e._id === effectId);
     if (!entry) {
-      ui.notifications.warn(`Critical effect not found for level ${effectLevel}!`);
+      ui.notifications.warn(`Критический эффект уровня ${effectLevel} не найден.`);
       return;
     }
 
@@ -61,7 +61,7 @@ export class CriticalEffectsHelper {
       const prevEntry = index.find(e => e._id === prevEffectId);
       if (prevEntry) {
         const prevEffect = await pack.getDocument(prevEntry._id);
-        description = `${prevEffect.system.description}<br><br><strong>Additionally:</strong> ${description}`;
+        description = `${prevEffect.system.description}<br><br><strong>Дополнительно:</strong> ${description}`;
 
         // Check if previous effect already exists
         const hasPrevEffect = existingCriticals.some(i => {
@@ -76,11 +76,11 @@ export class CriticalEffectsHelper {
 
     await Item.createDocuments(itemsToAdd, { parent: actor });
     const safeActorName = Sanitizer.escape(actor.name);
-    ui.notifications.info(`Critical effect Level ${effectLevel} added to ${safeActorName}`);
+    ui.notifications.info(`Персонажу ${safeActorName} добавлен критический эффект уровня ${effectLevel}.`);
 
     await ChatMessage.create({
       speaker: ChatMessage.getSpeaker(),
-      content: `<strong>${safeActorName}</strong> suffers <strong style="color: darkred;">Level ${effectLevel} Critical Damage</strong> to ${location}<br><strong>${critLocation} (${damageType})</strong><br><div style="margin-top: 8px;">${description}</div>`
+      content: `<strong>${safeActorName}</strong> получает <strong style="color: darkred;">критический урон уровня ${effectLevel}</strong> в область «${location}».<br><strong>${critLocation} (${damageType})</strong><br><div style="margin-top: 8px;">${description}</div>`
     });
   }
 }
