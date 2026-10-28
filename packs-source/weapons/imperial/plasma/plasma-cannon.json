@@ -1,6 +1,6 @@
 {
   "_id": "plas00000000001",
-  "name": "Astartes Plasma Cannon",
+  "name": "Плазменная пушка астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/plasma-cannon.webp",
   "system": {
@@ -19,10 +19,15 @@
     "req": 30,
     "renown": "Distinguished",
     "attachedQualities": [
-      { "id": "blast", "value": "3" },
-      { "id": "volatile" }
+      {
+        "id": "blast",
+        "value": "3"
+      },
+      {
+        "id": "volatile"
+      }
     ],
-    "description": "<p>The largest portable plasma weapon is the plasma cannon or heavy plasma gun, which is also seen in service on some Adeptus Astartes transports. Rather than using attached flasks, the wielder wears a large fuel canister that attaches to his backpack unit. This weapon has a much greater range and ammunition supply, and its violent discharges hurtle like miniature suns from its barrel, impacting a large area. It can also fire on Maximal mode which exhausts even more fuel but provides an even larger blast of heat on impact, creating a fireball capable of destroying heavily armoured targets.</p>",
+    "description": "<p>Плазменная пушка — крупнейшее переносное плазменное оружие; такие орудия встречаются и на некоторых боевых машинах Адептус Астартес. Вместо небольших флаконов стрелок носит большой бак, подключённый к заплечному блоку. Пушка обладает большей дальностью и запасом боеприпасов, а её плазменные сгустки, похожие на миниатюрные солнца, поражают широкую область. Максимальный режим создаёт ещё более мощный жаровой взрыв, способный уничтожать тяжело бронированные цели.</p>",
     "modifiers": []
   }
 }
