@@ -6,7 +6,7 @@ import { Sanitizer } from '../sanitizer.mjs';
  */
 export class FireHelper {
   /**
-   * Determine if an actor has fully enclosed armor (Power Armour).
+   * Determine if an actor has fully enclosed armor (силовой доспех).
    * @param {Object} actor - Actor document
    * @returns {boolean}
    */
@@ -32,21 +32,21 @@ export class FireHelper {
   static buildOnFireMessage(name, damage, currentWounds, maxWounds, newFatigue, wpResult, actorId, sceneId = '', tokenId = '') {
     const newWounds = currentWounds + damage;
     let content = `<strong>\uD83D\uDD25 On Fire \u2014 ${name}</strong><br>`;
-    content += `<strong style="color: red;">1d10 Energy Damage (ignores armor): ${damage}</strong> to Body`;
+    content += `<strong style="color: red;">1к10 энергетического урона (игнорирует броню): ${damage}</strong> в тело`;
 
     if (newWounds > maxWounds) {
       const critDmg = newWounds - maxWounds;
-      content += `<br><strong style="color: darkred;">\u2620 CRITICAL DAMAGE: ${critDmg} \u2620</strong>`;
+      content += `<br><strong style="color: darkred;">\u2620 КРИТИЧЕСКИЙ УРОН: ${critDmg} \u2620</strong>`;
     }
 
-    content += `<br><strong>+1 Fatigue</strong> (now ${newFatigue})`;
+    content += `<br><strong>+1 Усталость</strong> (now ${newFatigue})`;
 
     if (wpResult.autoPass) {
-      content += `<br><strong>Willpower Test:</strong> <strong style="color: green;">AUTO-PASS</strong> (Power Armour)`;
+      content += `<br><strong>Проверка Силы воли:</strong> <strong style="color: green;">АВТОМАТИЧЕСКИЙ УСПЕХ</strong> (силовой доспех)`;
     } else if (wpResult.success) {
-      content += `<br><strong>Willpower Test</strong> (WP ${wpResult.wp}): ${wpResult.roll} \u2014 <strong style="color: green;">SUCCESS</strong> \u2014 Can act normally`;
+      content += `<br><strong>Проверка Силы воли</strong> (WP ${wpResult.wp}): ${wpResult.roll} \u2014 <strong style="color: green;">УСПЕХ</strong> \u2014 может действовать как обычно`;
     } else {
-      content += `<br><strong>Willpower Test</strong> (WP ${wpResult.wp}): ${wpResult.roll} \u2014 <strong style="color: red;">FAILED</strong> \u2014 Can only run and scream (Full Action)!`;
+      content += `<br><strong>Проверка Силы воли</strong> (WP ${wpResult.wp}): ${wpResult.roll} \u2014 <strong style="color: red;">ПРОВАЛ</strong> \u2014 может только бежать и кричать (полное действие)!`;
     }
 
     const canAct = wpResult.autoPass || wpResult.success;
@@ -100,13 +100,13 @@ export class FireHelper {
    */
   static buildDodgeFlameFlavor(name, ag, result, miscMod = 0) {
     let flavor = `<strong>\uD83D\uDD25 Dodge Flame \u2014 ${name}</strong><br>`;
-    flavor += `Target: ${result.targetNumber} (AG ${ag}`;
+    flavor += `Целевое значение: ${result.targetNumber} (Ловкость ${ag}`;
     if (miscMod !== 0) flavor += ` ${miscMod >= 0 ? '+' : ''}${miscMod} Misc`;
     flavor += `)<br>`;
     if (result.success) {
-      flavor += '<strong style="color: green;">SUCCESS \u2014 Dodged the flames!</strong>';
+      flavor += '<strong style="color: green;">УСПЕХ \u2014 Уклонение от пламени удалось!</strong>';
     } else {
-      flavor += '<strong style="color: red;">FAILED \u2014 Hit by flames!</strong>';
+      flavor += '<strong style="color: red;">ПРОВАЛ \u2014 Поражён пламенем!</strong>';
     }
     return flavor;
   }
@@ -120,11 +120,11 @@ export class FireHelper {
    */
   static buildCatchFireFlavor(name, ag, result) {
     let flavor = `<strong>\uD83D\uDD25 Catch Fire Test \u2014 ${name}</strong><br>`;
-    flavor += `Target: ${ag} (AG)<br>`;
+    flavor += `Целевое значение: ${ag} (Ловкость)<br>`;
     if (result.success) {
-      flavor += '<strong style="color: green;">SUCCESS \u2014 Does not catch fire</strong>';
+      flavor += '<strong style="color: green;">УСПЕХ \u2014 Не загорелся</strong>';
     } else {
-      flavor += '<strong style="color: red;">FAILED \u2014 Target is On Fire!</strong>';
+      flavor += '<strong style="color: red;">ПРОВАЛ \u2014 Цель загорелась!</strong>';
     }
     return flavor;
   }
@@ -141,13 +141,13 @@ export class FireHelper {
   static buildExtinguishFlavor(name, ag, roll, result, miscMod = 0) {
     const safeName = Sanitizer.escape(name);
     let flavor = `<strong>\uD83D\uDD25 Extinguish Attempt \u2014 ${safeName}</strong><br>`;
-    flavor += `Target: ${result.targetNumber} (AG ${ag} \u2212 20`;
+    flavor += `Целевое значение: ${result.targetNumber} (Ловкость ${ag} \u2212 20`;
     if (miscMod !== 0) flavor += ` ${miscMod >= 0 ? '+' : ''}${miscMod} Misc`;
     flavor += `)<br>`;
     if (result.success) {
-      flavor += '<strong style="color: green;">SUCCESS \u2014 Fire extinguished!</strong>';
+      flavor += '<strong style="color: green;">УСПЕХ \u2014 Огонь потушен!</strong>';
     } else {
-      flavor += '<strong style="color: red;">FAILED \u2014 Still on fire!</strong>';
+      flavor += '<strong style="color: red;">ПРОВАЛ \u2014 Всё ещё горит!</strong>';
     }
     return flavor;
   }
