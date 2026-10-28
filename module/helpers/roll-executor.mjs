@@ -53,7 +53,7 @@ export class RollExecutor {
     const modifierParts = RollDialogBuilder.buildModifierParts(characteristicValue, label, modifiers);
     const flavor = RollDialogBuilder.buildResultFlavor(flavorLabel, targetNum, roll, modifierParts);
 
-    ChatMessageBuilder.createRollMessage(roll, actor, flavor);
+    await ChatMessageBuilder.createRollMessage(roll, actor, flavor);
 
     return roll;
   }
