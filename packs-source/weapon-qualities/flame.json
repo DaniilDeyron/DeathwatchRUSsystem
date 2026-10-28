@@ -1,13 +1,13 @@
 {
   "_id": "flame",
-  "name": "Flame",
+  "name": "Зажигательное",
   "type": "weapon-quality",
   "img": "icons/svg/fire.svg",
   "system": {
-    "book": "Deathwatch Core Rulebook",
-    "page": "142",
+    "book": "Deathwatch — Основная книга правил v1.0",
+    "page": "156",
     "key": "flame",
     "value": "",
-    "description": "<p>Flame weapons project a cone of flame out to the Range of the weapon. Unlike other weapons, flamers have just one range. When fired, they cast fiery death out to this distance. The wielder does not need to Test Ballistic Skill; he simply fires. The flame's path is a cone-shaped area extending in a 30 degree arc from the firer out to the weapon's Range. Any creatures caught in it must succeed on an <b>Agility Test or be struck by the flames and take damage normally</b>. If they take damage, they must succeed on a second Agility Test or catch on fire. (For the effects of being on Fire, see page 260.) Cover does not protect characters from attacks made by Flame weapons.</p><p>Normally, when a weapon is fired without the appropriate Weapon Training Talent or a heavy weapon is fired without bracing, the wielder suffers a –20 or –30 penalty respectively to his Ballistic Skill Test. When a wielder who does not possess the appropriate Weapon Training Talent fires a weapon with the Flame Quality, anyone in the area of effect gains a +20 bonus to his Agility Test to avoid damage. This bonus rises to +30 if the weapon is heavy and the wielder is not braced.</p>"
+    "description": "<p>Оружие создаёт конус пламени, охватывающий всю дальность поражения; проверка Дальнего боя для попадания не требуется. Все цели в конусе должны пройти проверку Ловкости или получить обычный урон оружия. Получившие урон проходят ещё одну проверку Ловкости или загораются. Укрытия не защищают от зажигательного оружия. При стрельбе без соответствующего таланта цели получают бонус к проверке Ловкости для уклонения: +20, а для тяжёлого оружия без опоры — +30.</p>"
   }
 }
