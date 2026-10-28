@@ -1,6 +1,6 @@
 {
   "_id": "bolt00000000008",
-  "name": "Astartes Bolt Pistol",
+  "name": "Болт-пистолет астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/bolt-pistol.webp",
   "system": {
@@ -18,8 +18,12 @@
     "wt": 5.5,
     "req": 5,
     "renown": "",
-    "attachedQualities": [{ "id": "tearing" }],
-    "description": "<p>As destructive as its full-size counterpart, a bolt pistol’s primary drawbacks are its smaller clip and slower rate of fire. However, they are ideal for Devastator units needing to take down an enemy at close quarters and for Assault specialists needing a vehicle for the Deathwatch’s many special bolt types.</p>",
+    "attachedQualities": [
+      {
+        "id": "tearing"
+      }
+    ],
+    "description": "<p>Болт-пистолет сохраняет разрушительную мощь полноразмерного болтера, но имеет меньший магазин и более низкую скорострельность. Он удобен для Опустошителей, которым приходится отражать врагов вблизи, и для Штурмовиков, использующих специальные боеприпасы Караула Смерти.</p>",
     "modifiers": []
   }
 }
