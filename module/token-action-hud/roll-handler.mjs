@@ -109,7 +109,7 @@ export function createRollHandler(BaseRollHandler, rollExecutor = RollExecutor, 
 
         if (jammedWeapons.length === 0) {
           if (typeof ui !== 'undefined') {
-            ui.notifications.warn('No jammed weapons found.');
+            ui.notifications.warn('Не найдено оружия с осечкой.');
           }
           return;
         }
@@ -118,7 +118,7 @@ export function createRollHandler(BaseRollHandler, rollExecutor = RollExecutor, 
       } else if (actionType === 'extinguish') {
         // TODO: Implement extinguish action
         if (typeof ui !== 'undefined') {
-          ui.notifications.info('Extinguish action not yet implemented.');
+          ui.notifications.info('Действие тушения огня ещё не реализовано.');
         }
       }
     }
@@ -164,7 +164,7 @@ export function createRollHandler(BaseRollHandler, rollExecutor = RollExecutor, 
 
       if (!power) {
         if (typeof ui !== 'undefined') {
-          ui.notifications.warn('Psychic power not found.');
+          ui.notifications.warn('Психосила не найдена.');
         }
         return;
       }
@@ -236,7 +236,7 @@ export function initializeRollHandler(coreModule) {
           break;
 
         default:
-          ui.notifications.warn(`Unknown action type: ${type}`);
+          ui.notifications.warn(`Неизвестный тип действия: ${type}`);
       }
     }
 
@@ -250,7 +250,7 @@ export function initializeRollHandler(coreModule) {
       const weapon = this.actor.items.get(weaponId);
 
       if (!weapon) {
-        ui.notifications.warn(`Weapon not found: ${weaponId}`);
+        ui.notifications.warn(`Оружие не найдено: ${weaponId}`);
         return;
       }
 
@@ -266,7 +266,7 @@ export function initializeRollHandler(coreModule) {
           break;
 
         default:
-          ui.notifications.warn(`Unknown weapon subaction: ${subaction}`);
+          ui.notifications.warn(`Неизвестное действие с оружием: ${subaction}`);
       }
     }
 
@@ -279,7 +279,7 @@ export function initializeRollHandler(coreModule) {
       const skill = this.actor.system.skills?.[skillKey];
 
       if (!skill) {
-        ui.notifications.warn(`Skill not found: ${skillKey}`);
+        ui.notifications.warn(`Умение не найдено: ${skillKey}`);
         return;
       }
 
@@ -296,7 +296,7 @@ export function initializeRollHandler(coreModule) {
       const characteristic = this.actor.system.characteristics[charKey];
 
       if (!characteristic) {
-        ui.notifications.warn(`Characteristic not found: ${charKey}`);
+        ui.notifications.warn(`Характеристика не найдена: ${charKey}`);
         return;
       }
 
@@ -326,7 +326,7 @@ export function initializeRollHandler(coreModule) {
       const power = this.actor.items.get(powerId);
 
       if (!power) {
-        ui.notifications.warn(`Psychic power not found: ${powerId}`);
+        ui.notifications.warn(`Психосила не найдена: ${powerId}`);
         return;
       }
 
