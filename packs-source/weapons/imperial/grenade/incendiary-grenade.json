@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000005",
-  "name": "Astartes Incendiary Grenade",
+  "name": "Зажигательная граната астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/incendiary-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "168",
     "class": "Thrown",
     "dmg": "1d10+4",
     "dmgType": "Energy",
@@ -18,8 +18,13 @@
     "wt": 1,
     "req": 15,
     "renown": "",
-    "attachedQualities": [{ "id": "blast", "value": "3" }],
-    "description": "<p>Incendiary explosives are commonly employed to flush out enemies entrenched behind cover. These projectiles contain slow-burning promethium distillate that ignites when the grenade explodes. Any target within the Blast radius must succeed on an Agility Test or catch fire. Furthermore, the area remains on fire for another 1d5 Rounds as the promethium continues to burn. Anyone remaining within that area must continue to take Agility Tests or catch fire until the flames die.</p>",
+    "attachedQualities": [
+      {
+        "id": "blast",
+        "value": "3"
+      }
+    ],
+    "description": "<p>Зажигательные боеприпасы предназначены для выкуривания врагов из укрытий. Взрыв рассеивает медленно горящую прометиевую смесь. Все цели в зоне взрыва должны пройти проверку Ловкости, иначе загорятся. Область продолжает гореть ещё 1к5 раундов, и остающиеся в ней существа должны повторять проверку Ловкости каждый раунд.</p>",
     "modifiers": []
   }
 }
