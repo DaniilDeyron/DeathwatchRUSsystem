@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000006",
-  "name": "Astartes Power Sword",
+  "name": "Силовой меч астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/powersword.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "155",
+    "page": "174",
     "class": "Melee",
     "dmg": "1d10+6",
     "dmgType": "Energy",
@@ -18,8 +18,15 @@
     "wt": 20,
     "req": 5,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "balanced" }, { "id": "power-field" }],
-    "description": "<p>Power weapons require great investments of time and rare materials to produce. Therefore, power swords are typically reserved for ranking members of the Adeptus Astartes. Elegant but effective, they allow the user greater attack options and defensive responses than many other varieties of power weapon. This efficient design makes them popular with officers regardless of whether they specialise in close combat or not.</p>",
+    "attachedQualities": [
+      {
+        "id": "balanced"
+      },
+      {
+        "id": "power-field"
+      }
+    ],
+    "description": "<p>Силовое оружие требует редких материалов и большого времени на изготовление, поэтому силовые мечи обычно предназначаются для высокопоставленных членов Адептус Астартес. Это изящное и эффективное оружие даёт больше возможностей для атаки и защиты, чем многие другие виды силового оружия, поэтому оно популярно среди офицеров независимо от их специализации.</p>",
     "modifiers": []
   }
 }
