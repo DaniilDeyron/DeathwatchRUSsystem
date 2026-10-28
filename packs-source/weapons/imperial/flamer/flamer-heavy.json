@@ -1,6 +1,6 @@
 {
   "_id": "flam00000000003",
-  "name": "Astartes Heavy Flamer",
+  "name": "Тяжёлый огнемёт астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/flamer-heavy.webp",
   "system": {
@@ -18,8 +18,12 @@
     "wt": 65,
     "req": 15,
     "renown": "",
-    "attachedQualities": [{ "id": "flame" }],
-    "description": "<p>While the size and weight of heavy flamers makes them an unpopular choice among many Imperial forces, these are hardly deterrents to a Space Marine in power armour. Terminator squads and many vehicles make frequent use of the large saturation area of heavy flamers. The twin nozzles produce huge gouts of fire, enough to purge the densest terrain of xenos.</p>",
+    "attachedQualities": [
+      {
+        "id": "flame"
+      }
+    ],
+    "description": "<p>Из-за размеров и веса тяжёлые огнемёты нравятся не всем имперским войскам, но для космодесантника в силовом доспехе это несущественное препятствие. Их используют отделения терминаторов и боевые машины. Два сопла выбрасывают широкие потоки огня, способные выжечь укрытия и уничтожить плотные скопления ксеносов.</p>",
     "modifiers": []
   }
 }
