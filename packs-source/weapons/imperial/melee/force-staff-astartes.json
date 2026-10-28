@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000012",
-  "name": "Astartes Force Staff",
+  "name": "Психосиловой посох астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/force-staff.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "155",
+    "page": "175",
     "class": "Melee",
     "dmg": "1d10+1",
     "dmgType": "Impact",
@@ -18,8 +18,15 @@
     "wt": 5,
     "req": 25,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "balanced" }, { "id": "force" }],
-    "description": "<p>A force staff houses its core psi-lattice inside a sturdy casing made from polished metal, bone, exotic wood, or any number of other materials. Usually topping a force staff is an elaborate, circuitry-laced concentration icon whose imagery coincides with the weapon’s origin. A force staff acts as an exceptional Psy-Focus, granting +15 to Invocation Tests. This bonus applies as long as the staff is held in at least one hand. However, striking with the weapon requires both hands.</p>",
+    "attachedQualities": [
+      {
+        "id": "balanced"
+      },
+      {
+        "id": "force"
+      }
+    ],
+    "description": "<p>Внутри прочного корпуса из полированного металла, кости, редкой древесины или других материалов размещена психическая решётка. Навершие обычно украшено знаком, покрытым схемами и соответствующим происхождению оружия. Психосиловой посох служит превосходным психофокусом и даёт +15 к проверкам Воззвания, пока владелец держит его хотя бы одной рукой. Для нанесения удара посохом нужны обе руки.</p>",
     "modifiers": []
   }
 }
