@@ -68,18 +68,18 @@ export class CombatDialogHelper {
 
   static buildModifierParts(bs, bsAdv, aim, autoFire, calledShot, autoRangeMod, runningTarget, miscModifier, accurateBonus = 0, twinLinkedBonus = 0, upgradeModifiers = [], sizeModifier = 0, sizeLabel = "", movementPenalty = 0) {
     const parts = [];
-    parts.push(`${bs} Base BS`);
-    if (bsAdv !== 0) parts.push(`${bsAdv >= 0 ? '+' : ''}${bsAdv} BS Advances`);
-    if (aim !== 0) parts.push(`+${aim} Aim`);
-    if (accurateBonus !== 0) parts.push(`+${accurateBonus} Accurate`);
-    if (twinLinkedBonus !== 0) parts.push(`+${twinLinkedBonus} Twin-Linked`);
-    if (autoFire !== 0) parts.push(`+${autoFire} Rate of Fire`);
-    if (movementPenalty !== 0) parts.push(`${movementPenalty} Moving while firing`);
-    if (calledShot !== 0) parts.push(`${calledShot} Called Shot`);
-    if (autoRangeMod !== 0) parts.push(`${autoRangeMod >= 0 ? '+' : ''}${autoRangeMod} Range`);
-    if (runningTarget !== 0) parts.push(`${runningTarget} Running Target`);
-    if (miscModifier !== 0) parts.push(`${miscModifier >= 0 ? '+' : ''}${miscModifier} Misc`);
-    if (sizeModifier !== 0) parts.push(`${sizeModifier >= 0 ? '+' : ''}${sizeModifier} ${sizeLabel || 'Target Size'}`);
+    parts.push(`Базовый показатель Дальнего боя: ${bs}`);
+    if (bsAdv !== 0) parts.push(`${bsAdv >= 0 ? '+' : ''}${bsAdv} — улучшения Дальнего боя`);
+    if (aim !== 0) parts.push(`+${aim} — прицеливание`);
+    if (accurateBonus !== 0) parts.push(`+${accurateBonus} — свойство «Точное»`);
+    if (twinLinkedBonus !== 0) parts.push(`+${twinLinkedBonus} — спаренное оружие`);
+    if (autoFire !== 0) parts.push(`+${autoFire} — очередь`);
+    if (movementPenalty !== 0) parts.push(`${movementPenalty} — стрельба при перемещении`);
+    if (calledShot !== 0) parts.push(`${calledShot} — точечная атака`);
+    if (autoRangeMod !== 0) parts.push(`${autoRangeMod >= 0 ? '+' : ''}${autoRangeMod} — дистанция`);
+    if (runningTarget !== 0) parts.push(`${runningTarget} — бегущая цель`);
+    if (miscModifier !== 0) parts.push(`${miscModifier >= 0 ? '+' : ''}${miscModifier} — прочий модификатор`);
+    if (sizeModifier !== 0) parts.push(`${sizeModifier >= 0 ? '+' : ''}${sizeModifier} — ${sizeLabel || 'размер цели'}`);
     for (const mod of upgradeModifiers) {
       if (mod.effectType === 'characteristic' && mod.valueAffected === 'bs') {
         const value = parseInt(mod.modifier) || 0;
@@ -143,13 +143,13 @@ export class CombatDialogHelper {
   static buildRofOptions(rofData) {
     let options = '';
     if (rofData.hasSingle) {
-      options += `<option value="${RATE_OF_FIRE_MODIFIERS.SINGLE}" data-rounds="1">Single (1 round)</option>`;
+      options += `<option value="${RATE_OF_FIRE_MODIFIERS.SINGLE}" data-rounds="1">Одиночный выстрел (1 патрон)</option>`;
     }
     if (rofData.hasSemiAuto) {
-      options += `<option value="${RATE_OF_FIRE_MODIFIERS.SEMI_AUTO}" data-rounds="${rofData.semiAutoRounds}">Semi-Auto (+${RATE_OF_FIRE_MODIFIERS.SEMI_AUTO}, ${rofData.semiAutoRounds} rounds)</option>`;
+      options += `<option value="${RATE_OF_FIRE_MODIFIERS.SEMI_AUTO}" data-rounds="${rofData.semiAutoRounds}">Короткая очередь (+${RATE_OF_FIRE_MODIFIERS.SEMI_AUTO}, ${rofData.semiAutoRounds} патронов)</option>`;
     }
     if (rofData.hasFullAuto) {
-      options += `<option value="${RATE_OF_FIRE_MODIFIERS.FULL_AUTO}" data-rounds="${rofData.fullAutoRounds}">Full-Auto (+${RATE_OF_FIRE_MODIFIERS.FULL_AUTO}, ${rofData.fullAutoRounds} rounds)</option>`;
+      options += `<option value="${RATE_OF_FIRE_MODIFIERS.FULL_AUTO}" data-rounds="${rofData.fullAutoRounds}">Длинная очередь (+${RATE_OF_FIRE_MODIFIERS.FULL_AUTO}, ${rofData.fullAutoRounds} патронов)</option>`;
     }
     return options;
   }
@@ -166,9 +166,9 @@ export class CombatDialogHelper {
   static buildAttackLabel(weaponName, targetNumber, hitsTotal, isJammed, isOverheated = false) {
     const safeWeaponName = Sanitizer.escape(weaponName);
     let warnings = '';
-    if (isJammed) warnings += '<br><strong style="color: red;">WEAPON JAMMED!</strong>';
-    if (isOverheated) warnings += '<br><strong style="color: orange;">WEAPON OVERHEATED!</strong>';
-    return `[Attack] ${safeWeaponName} - Target: ${targetNumber}<br><strong>${hitsTotal > 0 ? 'HIT!' : 'MISS!'} - ${hitsTotal} Hit${hitsTotal !== 1 ? 's' : ''}</strong>${warnings}`;
+    if (isJammed) warnings += '<br><strong style="color: red;">ОСЕЧКА!</strong>';
+    if (isOverheated) warnings += '<br><strong style="color: orange;">ОРУЖИЕ ПЕРЕГРЕЛОСЬ!</strong>';
+    return `<strong>Атака: ${safeWeaponName}</strong> — целевое значение: ${targetNumber}<br><strong>${hitsTotal > 0 ? 'ПОПАДАНИЕ!' : 'ПРОМАХ!'} Попаданий: ${hitsTotal}</strong>${warnings}`;
   }
 
   static buildAttackFlavor(label, modifierParts, hitsParts = []) {
@@ -176,12 +176,12 @@ export class CombatDialogHelper {
 
     // Add Hits section if hitsParts provided
     if (hitsParts.length > 0) {
-      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Hits</summary><div style="font-size:0.85em;margin-top:4px;">${hitsParts.join('<br>')}</div></details>`;
+      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Попадания</summary><div style="font-size:0.85em;margin-top:4px;">${hitsParts.join('<br>')}</div></details>`;
     }
 
     // Add Modifiers section if modifierParts provided
     if (modifierParts.length > 0) {
-      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Modifiers</summary><div style="font-size:0.85em;margin-top:4px;">${modifierParts.join('<br>')}</div></details>`;
+      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Модификаторы</summary><div style="font-size:0.85em;margin-top:4px;">${modifierParts.join('<br>')}</div></details>`;
     }
 
     return flavor;
@@ -318,27 +318,27 @@ export class CombatDialogHelper {
     const safeLocation = Sanitizer.escape(location);
     const safeDamageType = Sanitizer.escape(damageType);
     const tokenData = tokenInfo ? ` data-scene-id="${Sanitizer.escape(tokenInfo.sceneId)}" data-token-id="${Sanitizer.escape(tokenInfo.tokenId)}"` : '';
-    let message = `<strong>${safeTargetName}</strong> takes <strong style="color: red;">${woundsTaken} wounds</strong> to ${safeLocation}<br><em>Damage: ${damage} | Armor: ${armorValue} | Penetration: ${penetration} | Effective Armor: ${effectiveArmor} | TB: ${toughnessBonus}</em>`;
+    let message = `<strong>${safeTargetName}</strong> получает <strong style="color: red;">${woundsTaken} ед. урона</strong> в зону «${safeLocation}».<br><em>Урон: ${damage} | Броня: ${armorValue} | Бронебойность: ${penetration} | Эффективная броня: ${effectiveArmor} | Бонус Выносливости: ${toughnessBonus}</em>`;
     
     if (charDamageEffect && woundsTaken > 0) {
       const safeEffectName = Sanitizer.escape(charDamageEffect.name);
       const safeFormula = Sanitizer.escape(charDamageEffect.formula);
       const safeChar = Sanitizer.escape(charDamageEffect.characteristic);
-      message += `<br><button class="char-damage-btn" data-actor-id="${targetId}"${tokenData} data-formula="${safeFormula}" data-characteristic="${safeChar}" data-name="${safeEffectName}">${safeEffectName}: Roll ${safeFormula}</button>`;
+      message += `<br><button class="char-damage-btn" data-actor-id="${targetId}"${tokenData} data-formula="${safeFormula}" data-characteristic="${safeChar}" data-name="${safeEffectName}">${safeEffectName}: бросить ${safeFormula}</button>`;
     }
     
     if (isShocking && woundsTaken > 0) {
       const stunRounds = Math.floor(woundsTaken / 2);
-      message += `<br><button class="shocking-test-btn" data-actor-id="${targetId}"${tokenData} data-armor-value="${armorValue}" data-stun-rounds="${stunRounds}">Shocking: Roll Toughness Test</button>`;
+      message += `<br><button class="shocking-test-btn" data-actor-id="${targetId}"${tokenData} data-armor-value="${armorValue}" data-stun-rounds="${stunRounds}">Шоковое: проверка Выносливости</button>`;
     }
     
     if (isToxic && woundsTaken > 0) {
       const penalty = woundsTaken * 5;
-      message += `<br><button class="toxic-test-btn" data-actor-id="${targetId}"${tokenData} data-penalty="${penalty}">Toxic: Roll Toughness Test (-${penalty})</button>`;
+      message += `<br><button class="toxic-test-btn" data-actor-id="${targetId}"${tokenData} data-penalty="${penalty}">Отравление: проверка Выносливости (-${penalty})</button>`;
     }
     
     if (forceWeaponData && woundsTaken > 0) {
-      message += `<br><button class="force-channel-btn" data-attacker-id="${forceWeaponData.attackerId}" data-target-id="${targetId}"${tokenData} data-psy-rating="${forceWeaponData.psyRating}">Force: Channel Psychic Energy (Opposed Willpower)</button>`;
+      message += `<br><button class="force-channel-btn" data-attacker-id="${forceWeaponData.attackerId}" data-target-id="${targetId}"${tokenData} data-psy-rating="${forceWeaponData.psyRating}">Силовое оружие: направить психическую энергию (встречная проверка Силы воли)</button>`;
     }
     
     if (drainLifeMessage) {
@@ -346,11 +346,11 @@ export class CombatDialogHelper {
     }
     
     if (isCritical) {
-      message += `<br><strong style="color: darkred; font-size: 1.1em;">☠ CRITICAL DAMAGE: ${criticalDamage} ☠</strong>`;
+      message += `<br><strong style="color: darkred; font-size: 1.1em;">☠ КРИТИЧЕСКИЙ УРОН: ${criticalDamage} ☠</strong>`;
       if (criticalDamageBonus > 0) {
-        message += `<br><em style="color: #888; font-size: 0.85em;">(${criticalDamage - criticalDamageBonus} base + ${criticalDamageBonus} talent bonus)</em>`;
+        message += `<br><em style="color: #888; font-size: 0.85em;">(${criticalDamage - criticalDamageBonus} базовый урон + ${criticalDamageBonus} от таланта)</em>`;
       }
-      message += `<br><button class="roll-critical-btn" data-actor-id="${targetId}"${tokenData} data-location="${safeLocation}" data-damage-type="${safeDamageType}" data-critical-damage="${criticalDamage}">Apply Critical Effect</button>`;
+      message += `<br><button class="roll-critical-btn" data-actor-id="${targetId}"${tokenData} data-location="${safeLocation}" data-damage-type="${safeDamageType}" data-critical-damage="${criticalDamage}">Применить эффект критического урона</button>`;
     }
     
     return message;
@@ -359,7 +359,7 @@ export class CombatDialogHelper {
   static buildArmorAbsorbMessage(targetName, location, damage, armorValue, penetration, toughnessBonus) {
     const safeTargetName = Sanitizer.escape(targetName);
     const safeLocation = Sanitizer.escape(location);
-    return `<strong>${safeTargetName}</strong>'s armor and toughness absorb all damage to ${safeLocation}<br><em>Damage: ${damage} | Armor: ${armorValue} | Penetration: ${penetration} | TB: ${toughnessBonus}</em>`;
+    return `<strong>${safeTargetName}</strong>: весь урон в зону «${safeLocation}» поглощён бронёй и бонусом Выносливости.<br><em>Урон: ${damage} | Броня: ${armorValue} | Бронебойность: ${penetration} | Бонус Выносливости: ${toughnessBonus}</em>`;
   }
 
   static calculateClearJamTarget(bs, bsAdv) {
