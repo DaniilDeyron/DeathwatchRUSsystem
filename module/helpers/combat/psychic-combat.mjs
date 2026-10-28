@@ -163,14 +163,14 @@ export class PsychicCombatHelper {
     const levelLabel = POWER_LEVEL_LABELS[powerLevel] || powerLevel;
     let resultText;
     if (roll >= 91) {
-      resultText = '<strong style="color: red;">FAILED (Automatic failure: 91+)</strong>';
+      resultText = '<strong style="color: red;">ПРОВАЛ (автоматический провал: 91+)</strong>';
     } else if (success) {
-      resultText = `<strong style="color: green;">SUCCESS</strong> (${dos} Degree${dos !== 1 ? "s" : ""} of Success)`;
+      resultText = `<strong style="color: green;">УСПЕХ</strong> (${dos} степ. успеха)`;
     } else {
       const dof = Math.floor((roll - targetNumber) / ROLL_CONSTANTS.DEGREES_DIVISOR);
-      resultText = `<strong style="color: red;">FAILED</strong> (${dof} Degree${dof !== 1 ? "s" : ""} of Failure)`;
+      resultText = `<strong style="color: red;">ПРОВАЛ</strong> (${dof} степ. провала)`;
     }
-    return `[Focus Power] ${powerName} — Target: ${targetNumber}<br>Effective Psy Rating: ${effectivePR} (${levelLabel})<br>${resultText}`;
+    return `Психосила: ${powerName} — целевое значение: ${targetNumber}<br>Эффективный рейтинг псайкера: ${effectivePR} (${levelLabel})<br>${resultText}`;
   }
 
   /**
@@ -185,7 +185,7 @@ export class PsychicCombatHelper {
     let flavor = label;
     if (phenomenaLine) flavor += `<br>${phenomenaLine}`;
     if (modifierParts.length > 0) {
-      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Modifiers</summary><div style="font-size:0.85em;margin-top:4px;">${modifierParts.join("<br>")}</div></details>`;
+      flavor += `<details style="margin-top:4px;"><summary style="cursor:pointer;font-size:0.9em;">Модификаторы</summary><div style="font-size:0.85em;margin-top:4px;">${modifierParts.join("<br>")}</div></details>`;
     }
     return flavor;
   }
@@ -200,10 +200,10 @@ export class PsychicCombatHelper {
     const lines = [];
     if (effects.phenomena) {
       const reason = powerLevel === POWER_LEVELS.PUSH ? "Push!" : "Doubles rolled!";
-      lines.push(`⚡ <strong>PSYCHIC PHENOMENA</strong> — ${reason}`);
+      lines.push(`⚡ <strong>ПСИХИЧЕСКИЕ ФЕНОМЕНЫ</strong> — ${reason}`);
     }
     if (effects.fatigue) {
-      lines.push('💀 <strong>FATIGUE</strong> — Doubles on Push! (+1 Fatigue)');
+      lines.push('💀 <strong>УСТАЛОСТЬ</strong> — удваивается при форсировании! (+1 Усталость)');
     }
     return lines.join("<br>");
   }
@@ -261,16 +261,16 @@ export class PsychicCombatHelper {
   static buildOpposedResultMessage(targetName, targetWP, targetRoll, result, powerName, psykerDoS) {
     let msg = `<strong>⚔ Opposed Willpower Test — ${powerName}</strong>`;
     msg += `<br>Psyker: ${psykerDoS} Degree${psykerDoS !== 1 ? "s" : ""} of Success`;
-    msg += `<br><strong>${targetName}</strong> WP ${result.targetNumber}: rolled ${targetRoll}`;
+    msg += `<br><strong>${targetName}</strong> — Сила воли ${result.targetNumber}: бросок ${targetRoll}`;
     if (result.targetSuccess) {
-      msg += ` — <strong style="color: green;">SUCCESS</strong> (${result.targetDoS} DoS)`;
+      msg += ` — <strong style="color: green;">УСПЕХ</strong> (${result.targetDoS} степ. успеха)`;
     } else {
-      msg += ` — <strong style="color: red;">FAILED</strong> (0 DoS)`;
+      msg += ` — <strong style="color: red;">ПРОВАЛ</strong> (0 степ. успеха)`;
     }
     if (result.psykerWins) {
-      msg += `<br><strong style="color: #9900cc;">POWER MANIFESTS</strong> (${result.netDoS} net DoS)`;
+      msg += `<br><strong style="color: #9900cc;">ПСИХОСИЛА ПРОЯВЛЯЕТСЯ</strong> (${result.netDoS} net DoS)`;
     } else {
-      msg += `<br><strong style="color: green;">POWER RESISTED</strong> by ${targetName}`;
+      msg += `<br><strong style="color: green;">ПСИХОСИЛА ОТРАЖЕНА</strong>: ${targetName}`;
     }
     return msg;
   }
@@ -390,7 +390,7 @@ export class PsychicCombatHelper {
         const safeActorName = Sanitizer.escape(actor.name);
         await FoundryAdapter.sendRollToChat(backlashRoll, {
           speaker,
-          flavor: `<strong>\uD83D\uDC1B Hive Mind Backlash \u2014 ${safeActorName}</strong><br><strong style="color: red;">1d10 Energy Damage (ignores armor & TB): ${backlashDamage}</strong><br><em>Tyranid psyker loses control \u2014 no Phenomena or Perils table roll.</em>`
+          flavor: `<strong>\uD83D\uDC1B Ответный удар Разума-улья \u2014 ${safeActorName}</strong><br><strong style="color: red;">1к10 энергетического урона (игнорирует броню и Бонус Выносливости): ${backlashDamage}</strong><br><em>Tyranid psyker loses control \u2014 no Phenomena or Perils table roll.</em>`
         });
       } else {
         const draw = await this.rollPhenomena();
@@ -403,7 +403,7 @@ export class PsychicCombatHelper {
             if (noPerils) {
               const speaker = FoundryAdapter.getChatSpeaker(actor);
               await FoundryAdapter.createChatMessage({
-                content: `\uD83D\uDEE1 <strong>Perils of the Warp suppressed</strong> by ${noPerilsSource}`,
+                content: `\uD83D\uDEE1 <strong>Опасности Варпа подавлены</strong> by ${noPerilsSource}`,
                 speaker
               });
             } else {
@@ -474,12 +474,12 @@ export class PsychicCombatHelper {
         <img src="${power.img}" alt="${safePowerName}" style="max-width: 100px; max-height: 100px; border: none;" />
       </div>
       <div style="display: flex; gap: 20px; margin-bottom: 8px; font-size: 0.9em;">
-        <span><strong>Action:</strong> ${power.system.action || "—"}</span>
-        <span><strong>Range:</strong> ${power.system.range || "—"}</span>
+        <span><strong>Действие:</strong> ${power.system.action || "—"}</span>
+        <span><strong>Дальность:</strong> ${power.system.range || "—"}</span>
       </div>
       <div style="display: flex; gap: 20px; margin-bottom: 8px; font-size: 0.9em;">
-        <span><strong>Opposed:</strong> ${power.system.opposed || "No"}</span>
-        <span><strong>Sustained:</strong> ${power.system.sustained || "No"}</span>
+        <span><strong>Встречная проверка:</strong> ${power.system.opposed || "No"}</span>
+        <span><strong>Поддерживаемая:</strong> ${power.system.sustained || "No"}</span>
       </div>
       <div class="form-group">
         <label>Power Level:</label>
@@ -490,8 +490,8 @@ export class PsychicCombatHelper {
         </select>
       </div>
       <div class="form-group" style="display: flex; gap: 20px; align-items: center;">
-        <span><strong>Effective PR:</strong> <span id="effectivePR">${basePR}</span></span>
-        <span><strong>WP Bonus:</strong> <input type="number" id="wpBonus" value="${5 * basePR}" min="0" max="${5 * basePR}" style="width: 50px;" /></span>
+        <span><strong>Эффективный рейтинг псайкера:</strong> <span id="effectivePR">${basePR}</span></span>
+        <span><strong>Бонус Силы воли:</strong> <input type="number" id="wpBonus" value="${5 * basePR}" min="0" max="${5 * basePR}" style="width: 50px;" /></span>
         <span style="font-size: 0.85em; color: #666;">(max +<span id="wpBonusMax">${5 * basePR}</span>)</span>
       </div>
       <div class="form-group">
@@ -501,7 +501,7 @@ export class PsychicCombatHelper {
     `;
 
     await foundry.applications.api.DialogV2.wait({
-      window: { title: `Focus Power: ${safePowerName}` },
+      window: { title: `Применение психосилы: ${safePowerName}` },
       content,
       render: (event, dialog) => {
         const el = dialog.element;
@@ -523,7 +523,7 @@ export class PsychicCombatHelper {
       },
       buttons: [
         {
-          label: "Focus Power", action: "focus",
+          label: "Применить психосилу", action: "focus",
           callback: async (event, button, dialog) => {
             const el = dialog.element;
             const powerLevel = el.querySelector("#powerLevel").value;
@@ -590,7 +590,7 @@ export class PsychicCombatHelper {
             }
           }
         },
-        { label: "Cancel", action: "cancel" }
+        { label: "Отмена", action: "cancel" }
       ]
     });
   }
@@ -717,7 +717,7 @@ export class PsychicCombatHelper {
 
         const hitInfo = numHits > 1 ? ` (${i + 1}/${numHits})` : "";
         const safePowerName = Sanitizer.escape(power.name);
-        const flavor = `<strong style="font-size: 1.1em;">\uD83D\uDD2E ${safePowerName}${hitInfo}</strong><br><strong>Penetration:</strong> ${penetration} | <strong>Type:</strong> ${damageType}<br>${applyButton}`;
+        const flavor = `<strong style="font-size: 1.1em;">\uD83D\uDD2E ${safePowerName}${hitInfo}</strong><br><strong>Бронебойность:</strong> ${penetration} | <strong>Тип урона:</strong> ${damageType}<br>${applyButton}`;
         const speaker = FoundryAdapter.getChatSpeaker(actor);
         await FoundryAdapter.sendRollToChat(damageRoll, { speaker, flavor });
       }
