@@ -1,13 +1,13 @@
 {
   "_id": "accurate",
-  "name": "Accurate",
+  "name": "Точное",
   "type": "weapon-quality",
   "img": "icons/svg/target.svg",
   "system": {
-    "book": "Deathwatch Core Rulebook",
-    "page": "142",
+    "book": "Deathwatch — Основная книга правил v1.0",
+    "page": "159",
     "key": "accurate",
     "value": "",
-    "description": "<p>Some weapons are designed with precision in mind and respond superbly in skilled hands. They grant an additional bonus of +10 to the firer’s Ballistic Skill when used with an Aim Action in addition to the bonus Aiming grants. When firing a single shot from a single Accurate Basic Weapon, if such an attack also uses the Aim action, it gains an extra 1d10 of damage for every two degrees of success to a maximum of two extra d10.</p>"
+    "description": "<p>Оружие с этим свойством особенно точно и эффективно в умелых руках. Если стрелок использует действие «Прицеливание», он получает дополнительный бонус +10 к проверке Дальнего боя; этот бонус складывается с обычным бонусом за прицеливание. Если стрелок прицелился и сделал одиночный выстрел из лёгкого оружия с этим свойством, каждые две степени успеха добавляют +1к10 урона, максимум +2к10.</p>"
   }
 }
