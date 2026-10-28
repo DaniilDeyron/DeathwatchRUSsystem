@@ -7,7 +7,7 @@
     "book": "Deathwatch Core Rulebook",
     "page": "161",
     "class": "Basic",
-    "dmg": "1d10+9",
+    "dmg": "2d10+5",
     "dmgType": "Explosive",
     "penetration": "5",
     "range": "200",
