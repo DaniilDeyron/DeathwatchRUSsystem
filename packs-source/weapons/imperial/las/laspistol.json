@@ -7,7 +7,7 @@
     "book": "Deathwatch Core Rulebook",
     "page": "167",
     "class": "Pistol",
-    "dmg": "1d10+3",
+    "dmg": "1d10+2",
     "dmgType": "Energy",
     "penetration": "0",
     "range": "30",
