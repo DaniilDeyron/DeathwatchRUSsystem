@@ -1,11 +1,11 @@
 {
   "_id": "grenade000000010",
-  "name": "Photon Flash Grenade",
+  "name": "Фотонная вспышка",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/photon-flash-grenade.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "150",
+    "page": "168",
     "class": "Thrown",
     "dmg": "Special",
     "dmgType": "Explosive",
@@ -18,7 +18,7 @@
     "wt": 0.5,
     "req": 5,
     "renown": "",
-    "description": "<p>Photon flash or simply flash grenades detonate in a sudden and brilliant flare, blinding anyone nearby and overloading many common vision protection systems such as visors. Those caught without high quality eye protection are usually left blinded and defenceless. Anyone within 15 metres of a photon flash grenade when it detonates must succeed on a <b>Toughness Test or be blinded for 1d5 Rounds</b>.</p>",
+    "description": "<p>Фотонная вспышка создаёт внезапный ослепительный свет, ослепляя находящихся рядом и перегружая многие обычные системы защиты зрения, включая визоры. Любой в пределах 15 метров от взрыва должен пройти проверку Выносливости, иначе будет ослеплён на 1к5 раундов.</p>",
     "modifiers": []
   }
 }
