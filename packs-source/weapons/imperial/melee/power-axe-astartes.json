@@ -1,11 +1,11 @@
 {
   "_id": "melee0000000005",
-  "name": "Astartes Power Axe",
+  "name": "Силовой топор астартес",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/poweraxe.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "20",
+    "page": "174",
     "class": "Melee",
     "dmg": "1d10+8",
     "dmgType": "Energy",
@@ -18,8 +18,15 @@
     "wt": 20,
     "req": 10,
     "renown": "Respected",
-    "attachedQualities": [{ "id": "power-field" }, { "id": "unbalanced" }],
-    "description": "<p>Power axes allow for greater impact when striking than a power sword, but are less nimble in the hand. Their inferior defensive capabilities are often mitigated by pairing them with combat shields or even more sophisticated means of protection. Still, they have a reputation as a brutal and unsubtle weapon; the choice to employ one is often more personal than strategic.</p>",
+    "attachedQualities": [
+      {
+        "id": "power-field"
+      },
+      {
+        "id": "unbalanced"
+      }
+    ],
+    "description": "<p>Силовой топор позволяет наносить более мощные удары, чем силовой меч, но им менее удобно владеть и труднее парировать атаки противника. Этот недостаток можно компенсировать боевым щитом или другими средствами защиты. Топор считается жестоким и прямолинейным оружием, которое часто выбирают по личным предпочтениям, а не из тактических соображений.</p>",
     "modifiers": []
   }
 }
