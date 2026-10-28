@@ -135,6 +135,20 @@ jobs:
           test -s upstream/src/templates/item/item-weapon-sheet.html
           test -s upstream/src/templates/item/item-trait-sheet.html
 
+          # Regression guards for the two issues found in user testing.
+          grep -Fq 'const response = await DialogV2.wait' upstream/src/module/helpers/roll-executor.mjs
+          grep -Fq 'return "roll";' upstream/src/module/helpers/roll-executor.mjs
+          grep -Fq 'return await this.executeSkillRoll' upstream/src/module/helpers/roll-executor.mjs
+          grep -Fq 'return await this.executeCharacteristicRoll' upstream/src/module/helpers/roll-executor.mjs
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          item = json.loads(Path("upstream/src/packs-source/weapons/imperial/melta/melta-multi-firestorm.json").read_text(encoding="utf-8"))
+          description = item.get("system", {}).get("description", "")
+          assert len(description.replace("<p>", "").replace("</p>", "").strip()) > 20, "Firestorm multi-melta description is empty"
+          print("Firestorm multi-melta description check passed.")
+          PY
+
           cd upstream
           npm install
           npm run build:packs
