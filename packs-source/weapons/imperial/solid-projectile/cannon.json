@@ -7,7 +7,7 @@
     "book": "Deathwatch Core Rulebook",
     "page": "166",
     "class": "Mounted",
-    "dmg": "2d10+12",
+    "dmg": "3d10+6",
     "dmgType": "Impact",
     "penetration": "6",
     "range": "150",
@@ -19,10 +19,6 @@
     "req": 30,
     "renown": "Famed",
     "attachedQualities": [
-      {
-        "id": "devastating",
-        "value": "1"
-      },
       {
         "id": "tearing"
       }
