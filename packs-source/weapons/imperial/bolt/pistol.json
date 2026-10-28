@@ -5,7 +5,7 @@
   "img": "systems/deathwatch/icons/weapons/bolt-pistol.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "160",
     "class": "Pistol",
     "dmg": "1d10+9",
     "dmgType": "Explosive",
