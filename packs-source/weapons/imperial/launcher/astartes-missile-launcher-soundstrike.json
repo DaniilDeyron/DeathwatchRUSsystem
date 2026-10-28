@@ -1,11 +1,11 @@
 {
   "_id": "laun00000000001",
-  "name": "Astartes Missile Launcher (Soundstrike)",
+  "name": "Ракетная установка астартес («Звуковой удар»)",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/astartes-missile-launcher.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "170",
     "class": "Heavy",
     "dmg": "Varies",
     "dmgType": "Explosive",
@@ -18,7 +18,7 @@
     "wt": 50,
     "req": 10,
     "renown": "",
-    "description": "<p>A missile is fitted with stabilisation and guidance systems to aid in its accuracy, which is excellent at long ranges. Access to the variety of long distance warfare options these explosive rounds provide requires a missile launcher. The standard Astartes missile launcher is a tube-like weapon that fires a single round at great accuracy. The Soundstrike pattern overcomes the single capacity of the launch tube by attaching a special missile rack and auto-loader to a backpack power unit. The auto-loader’s gripping claw rapidly refills the launcher from the back-mounted ammo source, allowing the Battle-Brother to fire the missiles of his choice without interruption until his missile rack is depleted. </p>",
+    "description": "<p>Ракеты снабжены системами стабилизации и наведения, обеспечивающими высокую точность на большой дистанции. Паттерн «Звуковой удар» устраняет главный недостаток обычной пусковой трубы — одиночный боезапас: специальная ракетная стойка и автоматический заряжающий механизм подключены к заплечному энергоблоку. Захватная клешня быстро подаёт ракеты из заднего боезапаса, позволяя стрелять выбранным типом, пока стойка не опустеет.</p>",
     "modifiers": []
   }
 }
