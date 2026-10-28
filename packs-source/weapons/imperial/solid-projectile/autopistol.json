@@ -1,24 +1,25 @@
 {
   "_id": "soli00000000002",
-  "name": "Autopistol",
+  "name": "Автопистолет",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/autopistol.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "166",
     "class": "Pistol",
-    "dmg": "1d10+3",
+    "dmg": "1d10+2",
     "dmgType": "Impact",
     "penetration": "0",
     "range": "30",
-    "rof": "S/2/-",
+    "rof": "S/-/6",
     "clip": "18",
     "reload": "Full",
     "equipped": false,
     "wt": 2.5,
     "req": 0,
     "renown": "",
-    "description": "<p>Small but effective, autopistols are a favourite among many military veterans as a supplement for their standard lasgun. They have a faster rate of fire than most pistols, and can put down un-armoured targets in a single burst of shells.</p>",
-    "modifiers": []
+    "description": "<p>Небольшой, но эффективный автопистолет — любимое дополнительное оружие многих ветеранов. По скорострельности он превосходит многие похожие пистолеты и способен свалить незащищённую цель одной очередью.</p>",
+    "modifiers": [],
+    "attachedQualities": []
   }
 }
