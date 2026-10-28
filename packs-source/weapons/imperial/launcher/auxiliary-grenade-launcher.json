@@ -1,11 +1,11 @@
 {
   "_id": "laun00000000002",
-  "name": "Auxiliary Grenade Launcher",
+  "name": "Вспомогательный гранатомёт",
   "type": "weapon",
   "img": "systems/deathwatch/icons/weapons/grenade-launcher.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "170",
     "class": "n/a",
     "dmg": "Varies",
     "dmgType": "Explosive",
@@ -18,7 +18,7 @@
     "wt": 3,
     "req": 15,
     "renown": "Respected",
-    "description": "<p>When a Space Marine’s enhanced strength is not adequate to propel his choice of grenades far enough, an auxiliary grenade launcher can be employed. These compact tubes hold a small row of pre-primed grenades. An auxiliary grenade launcher is most commonly mounted above or below the barrel of a basic weapon in a manner similar to a combi-weapon. However, models with standalone trigger mechanisms are also available. If attached to another weapon, the user must choose which one to fire; the launcher cannot be fired in the same Turn as the weapon it is attached to. This weapon may also be mounted on Terminator Armour. Doing so, however, doubles this weapon’s Requisition cost.</p>",
+    "description": "<p>Когда даже улучшенной силы космодесантника недостаточно, чтобы метнуть гранату на нужную дистанцию, используют вспомогательный гранатомёт. Компактные трубки обычно содержат несколько заранее подготовленных гранат и крепятся над или под стволом основного оружия, как у комбиоружия. Существуют и автономные модели. Если гранатомёт установлен на другом оружии, за один ход можно выстрелить только из одного из них. Его также можно установить на терминаторский доспех, но это удваивает стоимость реквизиции.</p>",
     "modifiers": []
   }
 }
