@@ -104,38 +104,38 @@ export class ChatMessageBuilder {
     const naturalArmourData = ignoresNaturalArmour ? ` data-ignores-natural-armour="true"` : '';
     const critBonusData = criticalDamageBonus > 0 ? ` data-critical-damage-bonus="${criticalDamageBonus}"` : '';
     const qualitiesData = weaponQualities.length > 0 ? ` data-weapon-qualities='${JSON.stringify(weaponQualities)}'` : '';
-    return `<button class="apply-damage-btn" data-damage="${damage}" data-penetration="${penetration}" data-location="${safeLocation}" data-target-id="${targetId}" data-damage-type="${safeDamageType}" data-is-primitive="${isPrimitive}" data-is-razor-sharp="${isRazorSharp}" data-degrees-of-success="${degreesOfSuccess}" data-is-scatter="${isScatter}" data-is-long-or-extreme-range="${isLongOrExtremeRange}" data-is-shocking="${isShocking}" data-is-toxic="${isToxic}" data-is-melta-range="${isMeltaRange}"${charDamageData}${forceData}${tokenData}${magnitudeData}${naturalArmourData}${critBonusData}${qualitiesData}>Apply Damage</button>`;
+    return `<button class="apply-damage-btn" data-damage="${damage}" data-penetration="${penetration}" data-location="${safeLocation}" data-target-id="${targetId}" data-damage-type="${safeDamageType}" data-is-primitive="${isPrimitive}" data-is-razor-sharp="${isRazorSharp}" data-degrees-of-success="${degreesOfSuccess}" data-is-scatter="${isScatter}" data-is-long-or-extreme-range="${isLongOrExtremeRange}" data-is-shocking="${isShocking}" data-is-toxic="${isToxic}" data-is-melta-range="${isMeltaRange}"${charDamageData}${forceData}${tokenData}${magnitudeData}${naturalArmourData}${critBonusData}${qualitiesData}>Применить урон</button>`;
   }
 
   static createDamageFlavor(weapon, hitNumber, totalHits, location, degreesOfSuccess, penetration, isMelee, strBonus, applyButton = '') {
     const safeWeapon = Sanitizer.escape(weapon);
     const safeLocation = Sanitizer.escape(location);
     const hitInfo = totalHits > 1 ? ` (${hitNumber}/${totalHits})` : '';
-    const dosInfo = hitNumber === 1 && degreesOfSuccess > 0 ? `<br><strong>DoS:</strong> ${degreesOfSuccess}` : '';
-    const strInfo = isMelee && strBonus !== 0 && hitNumber === 1 ? `<br><em>Includes STR Bonus: ${strBonus}</em>` : '';
+    const dosInfo = hitNumber === 1 && degreesOfSuccess > 0 ? `<br><strong>Степени успеха:</strong> ${degreesOfSuccess}` : '';
+    const strInfo = isMelee && strBonus !== 0 && hitNumber === 1 ? `<br><em>Включает бонус Силы: ${strBonus}</em>` : '';
     const applyInfo = applyButton ? `<br>${applyButton}` : '';
 
-    return `<strong style="font-size: 1.1em;">${safeWeapon}${hitInfo}</strong><br><strong>Hit ${hitNumber}:</strong> ${safeLocation}${dosInfo}<br><strong>Penetration:</strong> ${penetration}${strInfo}${applyInfo}`;
+    return `<strong style="font-size: 1.1em;">${safeWeapon}${hitInfo}</strong><br><strong>Попадание ${hitNumber}:</strong> ${safeLocation}${dosInfo}<br><strong>Бронебойность:</strong> ${penetration}${strInfo}${applyInfo}`;
   }
 
   static createVolatileAutoConfirmFlavor() {
-    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ RIGHTEOUS FURY CONFIRMATION ⚡</strong><br><em style="color: orange;">Volatile weapon — auto-confirmed!</em>`;
+    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ ПОДТВЕРЖДЕНИЕ ПРАВЕДНОГО ГНЕВА ⚡</strong><br><em style="color: orange;">Свойство «Яростное»: Праведный гнев подтверждён автоматически.</em>`;
   }
 
   static createDeathwatchTrainingAutoConfirmFlavor() {
-    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ RIGHTEOUS FURY CONFIRMATION ⚡</strong><br><em style="color: #cc7000;">Deathwatch Training — auto-confirmed vs Xenos!</em>`;
+    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ ПОДТВЕРЖДЕНИЕ ПРАВЕДНОГО ГНЕВА ⚡</strong><br><em style="color: #cc7000;">Обучение Караула Смерти: Праведный гнев автоматически подтверждён против ксеносов.</em>`;
   }
 
   static createRighteousFuryFlavor(targetNumber, confirmed) {
-    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ RIGHTEOUS FURY CONFIRMATION ⚡</strong><br>Target: ${targetNumber} - ${confirmed ? '<strong style="color: green;">CONFIRMED!</strong>' : '<strong style="color: red;">Failed</strong>'}`;
+    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ ПОДТВЕРЖДЕНИЕ ПРАВЕДНОГО ГНЕВА ⚡</strong><br>Целевое значение: ${targetNumber} — ${confirmed ? '<strong style="color: green;">ПОДТВЕРЖДЁН!</strong>' : '<strong style="color: red;">Не подтверждён</strong>'}`;
   }
 
   static createRighteousFuryDamageFlavor(furyCount) {
-    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ RIGHTEOUS FURY DAMAGE ${furyCount} ⚡</strong>`;
+    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ УРОН ОТ ПРАВЕДНОГО ГНЕВА ${furyCount} ⚡</strong>`;
   }
 
   static createRighteousFurySummary(furyCount, location, totalDamage, applyButton = '') {
     const applyInfo = applyButton ? `<br>${applyButton}` : '';
-    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ Righteous Fury x${furyCount} ⚡</strong><br><strong>Location:</strong> ${location}<br><strong>Total Damage: ${totalDamage}</strong>${applyInfo}`;
+    return `<strong style="background: #8b4513; color: gold; padding: 2px 6px; border-radius: 3px;">⚡ Праведный гнев ×${furyCount} ⚡</strong><br><strong>Зона попадания:</strong> ${location}<br><strong>Общий урон: ${totalDamage}</strong>${applyInfo}`;
   }
 }
