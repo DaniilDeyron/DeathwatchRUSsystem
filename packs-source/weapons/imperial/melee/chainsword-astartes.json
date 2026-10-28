@@ -5,11 +5,11 @@
   "img": "systems/deathwatch/icons/weapons/chainsword.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "172",
+    "page": "173",
     "class": "Melee",
     "dmg": "1d10+3",
     "dmgType": "Rending",
-    "penetration": "3",
+    "penetration": "4",
     "range": "",
     "rof": "",
     "clip": "",
