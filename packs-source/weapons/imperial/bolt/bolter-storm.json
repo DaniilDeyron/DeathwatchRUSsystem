@@ -7,11 +7,11 @@
     "book": "Deathwatch Core Rulebook",
     "page": "162",
     "class": "Basic",
-    "dmg": "1d10+9",
+    "dmg": "2d10+5",
     "dmgType": "Explosive",
     "penetration": "5",
     "range": "100",
-    "rof": "S/4/-",
+    "rof": "S/2/-",
     "clip": "60",
     "reload": "2 Full",
     "equipped": false,
@@ -20,10 +20,10 @@
     "renown": "Respected",
     "attachedQualities": [
       {
-        "id": "tearing"
+        "id": "storm"
       },
       {
-        "id": "storm"
+        "id": "tearing"
       }
     ],
     "description": "<p>Штормболтеры применяются почти исключительно Адептус Астартес. По сути, это два болтера в одном корпусе с единым спусковым механизмом. Они обеспечивают шквальный огонь, сопоставимый с тяжёлым вооружением, но удобнее в переноске. Для подачи боеприпасов используется сдвоенный магазин.</p>",
