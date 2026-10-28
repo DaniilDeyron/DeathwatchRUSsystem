@@ -46,7 +46,7 @@ export class CombatHelper {
    * @example
    * const { attackerToken, targetToken, targetActor } = CombatHelper.getAttackTokens(actor);
    * if (!targetToken) {
-   *   ui.notifications.warn("No target selected");
+   *   ui.notifications.warn("Цель не выбрана");
    *   return;
    * }
    */
@@ -184,11 +184,11 @@ export class CombatHelper {
            data-weapon-name="${safeWeaponName}"
            data-timestamp="${timestamp}">
         <h3>🔥 ${title}: ${safeWeaponName}</h3>
-        <p><strong>Damage:</strong> ${damage}</p>
-        <p><strong>Penetration:</strong> ${penetration}</p>
-        <p><strong>Damage Type:</strong> ${Sanitizer.escape(damageType)}</p>
-        <p><strong>Range:</strong> ${range}m</p>
-        <em>Run Flame Attack macro for each target in cone.</em>
+        <p><strong>Урон:</strong> ${damage}</p>
+        <p><strong>Бронебойность:</strong> ${penetration}</p>
+        <p><strong>Тип урона:</strong> ${Sanitizer.escape(damageType)}</p>
+        <p><strong>Дальность:</strong> ${range}m</p>
+        <em>Примените макрос огнемётной атаки к каждой цели в конусе.</em>
       </div>
     `;
 
@@ -245,7 +245,7 @@ export class CombatHelper {
     // Show out-of-ammo warning
     if (newAmmoValue === 0) {
       const safeWeaponName = Sanitizer.escape(weapon.name);
-      ui.notifications.warn(`${safeWeaponName} is out of ammunition!`);
+      ui.notifications.warn(`У ${safeWeaponName} закончились боеприпасы!`);
     }
 
     // Refresh sheet to show updated ammo
@@ -262,20 +262,20 @@ export class CombatHelper {
    * @returns {{modifier: number, label: string}} Range modifier (+30 to -30) and band label
    * @example
    * const result = CombatHelper.calculateRangeModifier(15, 30);
-   * // Returns: { modifier: +10, label: "Short" }
+   * // Returns: { modifier: +10, label: "Короткая" }
    */
   static calculateRangeModifier(distance, weaponRange) {
     Logger.category('COMBAT.RANGED').debug(`Distance: ${distance}m, Weapon Range: ${weaponRange}m`);
     if (distance <= 2) {
-      return { modifier: RANGE_MODIFIERS.POINT_BLANK, label: "Point Blank" };
+      return { modifier: RANGE_MODIFIERS.POINT_BLANK, label: "В упор" };
     } else if (distance < (weaponRange * 0.5)) {
-      return { modifier: RANGE_MODIFIERS.SHORT, label: "Short" };
+      return { modifier: RANGE_MODIFIERS.SHORT, label: "Короткая" };
     } else if (distance >= (weaponRange * 3)) {
-      return { modifier: RANGE_MODIFIERS.EXTREME, label: "Extreme" };
+      return { modifier: RANGE_MODIFIERS.EXTREME, label: "Экстремальная" };
     } else if (distance >= (weaponRange * 2)) {
-      return { modifier: RANGE_MODIFIERS.LONG, label: "Long" };
+      return { modifier: RANGE_MODIFIERS.LONG, label: "Длинная" };
     } else {
-      return { modifier: RANGE_MODIFIERS.NORMAL, label: "Normal" };
+      return { modifier: RANGE_MODIFIERS.NORMAL, label: "Обычная" };
     }
   }
 
@@ -383,7 +383,7 @@ export class CombatHelper {
 
     const roll = await FoundryAdapter.evaluateRoll(dmg);
     const safeWeaponName = Sanitizer.escape(weapon.name);
-    const flavor = `<strong style="font-size: 1.1em;">\uD83D\uDD25 ${safeWeaponName}</strong><br><strong>Range:</strong> ${range}m | <strong>Damage:</strong> ${roll.total} | <strong>Pen:</strong> ${penetration} | <strong>Type:</strong> ${dmgType}<br><em>No attack roll — all targets in 30° cone must test Agility to dodge. Use \uD83D\uDD25 Flame Attack macro to apply damage per target.</em>`;
+    const flavor = `<strong style="font-size: 1.1em;">\uD83D\uDD25 ${safeWeaponName}</strong><br><strong>Дальность:</strong> ${range}m | <strong>Урон:</strong> ${roll.total} | <strong>Бронебойность:</strong> ${penetration} | <strong>Тип урона:</strong> ${dmgType}<br><em>No attack roll — all targets in 30° cone must test Agility to dodge. Use \uD83D\uDD25 Flame Attack macro to apply damage per target.</em>`;
 
     const speaker = FoundryAdapter.getChatSpeaker(actor);
     await FoundryAdapter.sendRollToChat(roll, { speaker, flavor });
@@ -792,13 +792,13 @@ export class CombatHelper {
   /* istanbul ignore next */
   static async weaponDamageRoll(actor, weapon, options = {}) {
     const dmg = weapon.system.effectiveDamage || weapon.system.dmg;
-    if (!dmg) return ui.notifications.warn("This weapon has no damage value.");
+    if (!dmg) return ui.notifications.warn("Для этого оружия не задан урон.");
 
     // Flamer attack: create simple chat message with data attributes for macro consumption
     if (options.isFlamerAttack) {
       const dmg = weapon.system.effectiveDamage || weapon.system.dmg;
       if (!dmg) {
-        ui.notifications.warn("This weapon has no damage value.");
+        ui.notifications.warn("Для этого оружия не задан урон.");
         return;
       }
 
@@ -835,7 +835,7 @@ export class CombatHelper {
         penetration,
         damageType,
         range,
-        title: 'Flamer'
+        title: 'Огнемёт'
       });
 
 
@@ -850,7 +850,7 @@ export class CombatHelper {
           const newAmmoValue = Math.max(0, loadedAmmo.system.capacity.value - 1);
           await loadedAmmo.update({ 'system.capacity.value': newAmmoValue });
           if (newAmmoValue === 0) {
-            ui.notifications.warn(`${safeWeaponName} is out of ammunition!`);
+            ui.notifications.warn(`У ${safeWeaponName} закончились боеприпасы!`);
           }
           actor.sheet.render(false);
         }
@@ -889,16 +889,16 @@ export class CombatHelper {
         <label>Modifier:</label>
         <input type="text" id="miscDamageModifier" name="miscDamageModifier" value="" placeholder="e.g., 5 or 1d10" />
       </div>
-      ${targetToken ? `<div class="form-group"><strong>Target:</strong> ${Sanitizer.escape(targetToken.actor.name)}</div>` : ''}
+      ${targetToken ? `<div class="form-group"><strong>Цель:</strong> ${Sanitizer.escape(targetToken.actor.name)}</div>` : ''}
     `;
 
     const safeWeaponName = Sanitizer.escape(weapon.name);
     foundry.applications.api.DialogV2.wait({
-      window: { title: `Damage: ${safeWeaponName}` },
+      window: { title: `Урон: ${safeWeaponName}` },
       content: content,
       buttons: [
         {
-          label: "Roll Damage", action: "roll",
+          label: "Бросить урон", action: "roll",
           callback: async (event, button, dialog) => {
             const el = dialog.element;
             const attackRollInput = el.querySelector('#attackRoll').value;
@@ -1045,7 +1045,7 @@ export class CombatHelper {
             }
           }
         },
-        { label: "Cancel", action: "cancel" }
+        { label: "Отмена", action: "cancel" }
       ]
     });
   }
