@@ -118,7 +118,7 @@ export class RangedCombatHelper {
     }
 
     if (!scatterTable) {
-      ui.notifications.warn("Scatter table not found! Import it from the Tables compendium.");
+      ui.notifications.warn("Таблица рассеивания не найдена. Импортируйте её из компендиума таблиц.");
       return null;
     }
 
@@ -137,10 +137,10 @@ export class RangedCombatHelper {
 
     let scatterMessage = `<div class="deathwatch-chat-card">
       <h3>🎯 Thrown Weapon Scatter</h3>
-      <p><strong>${safeActorName}</strong> missed with <strong>${safeWeaponName}</strong>!</p>
+      <p><strong>${safeActorName}</strong> промахивается из <strong>${safeWeaponName}</strong>.</p>
       <div style="margin: 8px 0;">
-        <p><strong>Direction:</strong> ${direction}</p>
-        <p><strong>Distance:</strong> ${distance} meter${distance !== 1 ? 's' : ''}</p>
+        <p><strong>Направление:</strong> ${direction}</p>
+        <p><strong>Дистанция:</strong> ${distance} м</p>
       </div>
       <p style="font-size: 0.9em; color: #666; margin-top: 8px;">
         <em>The weapon lands ${distance}m ${direction.toLowerCase()} from the intended target.</em>
@@ -441,7 +441,7 @@ export class RangedCombatHelper {
       }
     }
 
-    hitsParts.push(`<strong>Total: ${hitsTotal} Hit${hitsTotal !== 1 ? 's' : ''}</strong>`);
+    hitsParts.push(`<strong>Всего попаданий: ${hitsTotal}</strong>`);
 
     return {
       hitValue, targetNumber, hitsTotal, maxHits, roundsFired,
@@ -511,7 +511,7 @@ export class RangedCombatHelper {
     const { attackerToken, targetToken } = CombatHelper.getAttackTokens(actor);
 
     if (!options.targetLocation && !targetToken) {
-      ui.notifications.warn("No target selected. Please target a token before attacking.");
+      ui.notifications.warn("Сначала выберите цель: укажите токен перед атакой.");
     }
 
     let autoRangeMod = 0;
@@ -543,10 +543,10 @@ export class RangedCombatHelper {
           const rangeInfo = CombatHelper.calculateRangeModifier(distance, weaponRange);
           autoRangeMod = rangeInfo.modifier;
           rangeLabel = rangeInfo.label;
-          distanceText = `<div class="form-group"><strong>Distance:</strong> ${Math.round(distance)}m (${rangeLabel} Range: ${autoRangeMod >= 0 ? '+' : ''}${autoRangeMod})</div>`;
+          distanceText = `<div class="form-group"><strong>Дистанция:</strong> ${Math.round(distance)}m (${rangeLabel}: ${autoRangeMod >= 0 ? '+' : ''}${autoRangeMod})</div>`;
         }
       } else {
-        distanceText = `<div class="form-group"><strong>Warning:</strong> Weapon has no range value set (range: ${weapon.system.range})</div>`;
+        distanceText = `<div class="form-group"><strong>Внимание:</strong> для оружия не задана дальность (range: ${weapon.system.range})</div>`;
       }
     }
 
@@ -618,7 +618,7 @@ export class RangedCombatHelper {
 
     let attackResult = null;
     await foundry.applications.api.DialogV2.wait({
-      window: { title: `Ranged Attack: ${safeWeaponName}` },
+      window: { title: `Стрелковая атака: ${safeWeaponName}` },
       position: { width: 325 },
       content: content,
       render: (event, dialog) => {
@@ -744,7 +744,7 @@ export class RangedCombatHelper {
       },
       buttons: [
         {
-          label: "Attack", action: "attack",
+          label: "Атаковать", action: "attack",
           callback: async (event, button, dialog) => {
             const el = dialog.element;
             const aim = parseInt(el.querySelector('#aim').value) || 0;
@@ -770,7 +770,7 @@ export class RangedCombatHelper {
             const { targetNumber, hasPrematureDetonation, isOverheated, hasReliable,
                     ammoExpended, modifierParts, hitsParts, isStorm, isTwinLinked } = result;
 
-            // Flame vs Horde: extra 1d5 hits (requires a roll)
+            // Огонь по Орде: дополнительные попадания по броску 1к5
             if (targetActor?.type === 'horde' && hitsTotal > 0) {
               const isFlame = await WeaponQualityHelper.hasQuality(weapon, 'flame');
               if (isFlame) {
@@ -780,15 +780,15 @@ export class RangedCombatHelper {
 
                 // Update hitsParts with flame bonus
                 if (hitsParts && Array.isArray(hitsParts)) {
-                  hitsParts.push(`Flame vs Horde: +${flameRoll.total} (1d5)`);
+                  hitsParts.push(`Зажигательная атака по Орде: +${flameRoll.total} попаданий (1к5)`);
                   // Update total line (remove old, add new)
                   hitsParts.pop(); // Remove old total
-                  hitsParts.push(`<strong>Total: ${hitsTotal}</strong>`);
+                  hitsParts.push(`<strong>Всего попаданий: ${hitsTotal}</strong>`);
                 }
 
                 await flameRoll.toMessage({
                   speaker: ChatMessage.getSpeaker({ actor }),
-                  flavor: `<strong>Flame vs Horde:</strong> +${flameRoll.total} additional hits (1d5)`,
+                  flavor: `<strong>Зажигательная атака по Орде:</strong> +${flameRoll.total} дополнительных попаданий (1к5)`,
                   rollMode: game.settings.get('core', 'rollMode')
                 });
               }
@@ -800,7 +800,7 @@ export class RangedCombatHelper {
               const safeWeaponName = Sanitizer.escape(weapon.name);
               await reliableRoll.toMessage({
                 speaker: ChatMessage.getSpeaker({ actor }),
-                flavor: `<strong>Reliable Check:</strong> ${safeWeaponName} - ${reliableRoll.total === 10 ? 'Jammed!' : 'Not Jammed'}`,
+                flavor: `<strong>Проверка свойства «Надёжное»:</strong> ${safeWeaponName} — ${reliableRoll.total === 10 ? 'осечка!' : 'осечки нет'}`,
                 rollMode: game.settings.get('core', 'rollMode')
               });
               isJammed = reliableRoll.total === 10;
@@ -815,7 +815,7 @@ export class RangedCombatHelper {
             if (hasPrematureDetonation) {
               await weapon.update({ "system.jammed": true });
               const safeWeaponName = Sanitizer.escape(weapon.name);
-              ui.notifications.error(`${safeWeaponName} detonated prematurely!`);
+              ui.notifications.error(`${safeWeaponName} сдетонировало преждевременно!`);
               const armLocation = Math.random() < 0.5 ? "Right Arm" : "Left Arm";
               const weaponDamage = weapon.system.effectiveDamage || weapon.system.dmg;
               const damageRoll = await new Roll(weaponDamage).evaluate();
@@ -826,7 +826,7 @@ export class RangedCombatHelper {
               const safeActorName = Sanitizer.escape(actor.name);
               await damageRoll.toMessage({
                 speaker: ChatMessage.getSpeaker({ actor }),
-                flavor: `<h3>Premature Detonation!</h3><p><strong>${safeWeaponName}</strong> exploded in ${safeActorName}'s hands!</p><p><strong>Location:</strong> ${armLocation}</p><p><strong>Penetration:</strong> 5</p>`
+                flavor: `<h3>Преждевременная детонация!</h3><p><strong>${safeWeaponName}</strong> взорвалось в руках персонажа ${safeActorName}!</p><p><strong>Зона попадания:</strong> ${armLocation}</p><p><strong>Бронебойность:</strong> 5</p>`
               });
             }
 
@@ -870,7 +870,7 @@ export class RangedCombatHelper {
             await CombatHelper.deductAmmo(actor, weapon, ammoExpended, hasAmmoManagement);
           }
         },
-        { label: "Cancel", action: "cancel" }
+        { label: "Отмена", action: "cancel" }
       ]
     });
     return attackResult;
@@ -956,15 +956,15 @@ export class RangedCombatHelper {
 
         // Update hitsParts with flame bonus
         if (hitsParts && Array.isArray(hitsParts)) {
-          hitsParts.push(`Flame vs Horde: +${flameRoll.total} (1d5)`);
+          hitsParts.push(`Зажигательная атака по Орде: +${flameRoll.total} попаданий (1к5)`);
           // Update total line (remove old, add new)
           hitsParts.pop(); // Remove old total
-          hitsParts.push(`<strong>Total: ${hitsTotal}</strong>`);
+          hitsParts.push(`<strong>Всего попаданий: ${hitsTotal}</strong>`);
         }
 
         await flameRoll.toMessage({
           speaker: ChatMessage.getSpeaker({ actor }),
-          flavor: `<strong>Flame vs Horde:</strong> +${flameRoll.total} additional hits (1d5)`,
+          flavor: `<strong>Зажигательная атака по Орде:</strong> +${flameRoll.total} дополнительных попаданий (1к5)`,
           rollMode: game.settings.get('core', 'rollMode')
         });
       }
@@ -975,7 +975,7 @@ export class RangedCombatHelper {
       const safeWeaponName = Sanitizer.escape(weapon.name);
       await reliableRoll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor }),
-        flavor: `<strong>Reliable Check:</strong> ${safeWeaponName} - ${reliableRoll.total === 10 ? 'Jammed!' : 'Not Jammed'}`,
+        flavor: `<strong>Проверка свойства «Надёжное»:</strong> ${safeWeaponName} — ${reliableRoll.total === 10 ? 'осечка!' : 'осечки нет'}`,
         rollMode: game.settings.get('core', 'rollMode')
       });
       isJammed = reliableRoll.total === 10;
@@ -986,7 +986,7 @@ export class RangedCombatHelper {
     if (hasPrematureDetonation) {
       await weapon.update({ "system.jammed": true });
       const safeWeaponName = Sanitizer.escape(weapon.name);
-      ui.notifications.error(`${safeWeaponName} detonated prematurely!`);
+      ui.notifications.error(`${safeWeaponName} сдетонировало преждевременно!`);
       const armLocation = Math.random() < 0.5 ? "Right Arm" : "Left Arm";
       const weaponDamage = weapon.system.effectiveDamage || weapon.system.dmg;
       const damageRoll = await new Roll(weaponDamage).evaluate();
@@ -997,7 +997,7 @@ export class RangedCombatHelper {
       const safeActorName = Sanitizer.escape(actor.name);
       await damageRoll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor }),
-        flavor: `<h3>Premature Detonation!</h3><p><strong>${safeWeaponName}</strong> exploded in ${safeActorName}'s hands!</p><p><strong>Location:</strong> ${armLocation}</p><p><strong>Penetration:</strong> 5</p>`
+        flavor: `<h3>Преждевременная детонация!</h3><p><strong>${safeWeaponName}</strong> взорвалось в руках персонажа ${safeActorName}!</p><p><strong>Зона попадания:</strong> ${armLocation}</p><p><strong>Бронебойность:</strong> 5</p>`
       });
     }
 
@@ -1039,7 +1039,7 @@ export class RangedCombatHelper {
         await loadedAmmo.update({ "system.capacity.value": newAmmoValue });
         if (newAmmoValue === 0) {
           const safeWeaponName = Sanitizer.escape(weapon.name);
-          ui.notifications.warn(`${safeWeaponName} is out of ammunition!`);
+          ui.notifications.warn(`У ${safeWeaponName} закончились боеприпасы!`);
         }
         actor.sheet.render(false);
       }
