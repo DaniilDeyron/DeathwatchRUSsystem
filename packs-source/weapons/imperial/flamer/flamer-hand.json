@@ -5,7 +5,7 @@
   "img": "systems/deathwatch/icons/weapons/flamer-hand.webp",
   "system": {
     "book": "Deathwatch Core Rulebook",
-    "page": "145",
+    "page": "165",
     "class": "Pistol",
     "dmg": "1d10+7",
     "dmgType": "Energy",
