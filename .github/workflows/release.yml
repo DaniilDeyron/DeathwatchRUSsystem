@@ -1,4 +1,5 @@
 name: Build and publish Deathwatch RU
+# [build-ru] v0.0.2-ru.21 rulebook terminology release
 
 on:
   workflow_dispatch:
