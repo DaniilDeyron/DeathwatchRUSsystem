@@ -258,6 +258,12 @@ MANUAL.update({
     "Swift Attack":"Быстрая атака","Lightning Attack":"Молниеносная атака","Multiple Attacks":"Множественные атаки",
     "Guarded Action":"Осторожная атака","Overwatch":"Контроль сектора","Knock Down":"Сбивание с ног",
     "Grapple":"Захват","Feint":"Финт","Dodge":"Уклонение","Parry":"Парирование","Stun":"Оглушение",
+    "Run":"Бег","Disengage":"Выход из боя","Jump or Leap":"Прыжок","Knock Down":"Сбивание с ног",
+    "Reload":"Перезарядка","Ready":"Подготовка","Stand/Mount":"Подъём на ноги/оседлание",
+    "Tactical Advance":"Тактическое перемещение","Guarded Action":"Осторожная атака",
+    "All-Out Attack":"Атака всеми силами","All-Out":"Атака всеми силами",
+    "Called-Shot":"Точечная атака","Called shot":"Точечная атака","Called Shots":"Точечные атаки",
+    "Aim Action":"Прицеливание","Full Action":"Полное действие","Half Action":"Полудействие",
     "Righteous Fury":"Праведный гнев","Righteous Fury Confirmation":"Подтверждение Праведного гнева",
     # Hordes use "Численность" in the book, not "величина".
     "Horde":"Орда","Hordes":"Орды","Magnitude":"Численность","Horde Magnitude":"Численность Орды",
@@ -383,7 +389,11 @@ if "--validate" in sys.argv:
     assert JS_ENUM_EXPR_RE.fullmatch(javascript).group(1) == "item.system.damageType"
     assert ENUM_INTERPOLATION_RE.fullmatch("{{#if system.class}}") is None
     assert JS_ENUM_EXPR_RE.fullmatch("${damage + 1}") is None
-    print("Localization script syntax and enum interpolation smoke tests passed.")
+    assert canonicalize_rulebook_text("Тотальная атака") == "Атака всеми силами"
+    assert canonicalize_rulebook_text("Называется выстрел") == "Точечная атака"
+    assert canonicalize_rulebook_text("Проигрывает: 2 Величина") == "Орда теряет 2 ед. Численности"
+    assert canonicalize_rulebook_text("Орда теряет 3 величины") == "Орда теряет 3 ед. Численности"
+    print("Localization script, rulebook terminology, and enum interpolation smoke tests passed.")
     sys.exit(0)
 
 def eligible(s):
