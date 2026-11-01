@@ -379,23 +379,6 @@ def likely_prose(value):
     words = re.findall(r"[A-Za-zА-Яа-яЁё]{2,}", text)
     return len(words) >= 2
 
-if "--validate" in sys.argv:
-    # Smoke-test the patterns against representative dynamic values without calling a translator.
-    handlebars = "{{item.system.class}}"
-    modifier = "{{modifier.effectType}}"
-    javascript = "${item.system.damageType}"
-    assert ENUM_INTERPOLATION_RE.fullmatch(handlebars).group(1) == "item.system.class"
-    assert ENUM_INTERPOLATION_RE.fullmatch(modifier).group(1) == "modifier.effectType"
-    assert JS_ENUM_EXPR_RE.fullmatch(javascript).group(1) == "item.system.damageType"
-    assert ENUM_INTERPOLATION_RE.fullmatch("{{#if system.class}}") is None
-    assert JS_ENUM_EXPR_RE.fullmatch("${damage + 1}") is None
-    assert canonicalize_rulebook_text("Тотальная атака") == "Атака всеми силами"
-    assert canonicalize_rulebook_text("Называется выстрел") == "Точечная атака"
-    assert canonicalize_rulebook_text("Проигрывает: 2 Величина") == "Орда теряет 2 ед. Численности"
-    assert canonicalize_rulebook_text("Орда теряет 3 величины") == "Орда теряет 3 ед. Численности"
-    print("Localization script, rulebook terminology, and enum interpolation smoke tests passed.")
-    sys.exit(0)
-
 def eligible(s):
     t = s.strip()
     if not t or not re.search(r"[A-Za-z]", t): return False
@@ -502,6 +485,24 @@ def canonicalize_rulebook_text(value):
         value
     )
     return value
+
+
+if "--validate" in sys.argv:
+    # Smoke-test the patterns against representative dynamic values without calling a translator.
+    handlebars = "{{item.system.class}}"
+    modifier = "{{modifier.effectType}}"
+    javascript = "${item.system.damageType}"
+    assert ENUM_INTERPOLATION_RE.fullmatch(handlebars).group(1) == "item.system.class"
+    assert ENUM_INTERPOLATION_RE.fullmatch(modifier).group(1) == "modifier.effectType"
+    assert JS_ENUM_EXPR_RE.fullmatch(javascript).group(1) == "item.system.damageType"
+    assert ENUM_INTERPOLATION_RE.fullmatch("{{#if system.class}}") is None
+    assert JS_ENUM_EXPR_RE.fullmatch("${damage + 1}") is None
+    assert canonicalize_rulebook_text("Тотальная атака") == "Атака всеми силами"
+    assert canonicalize_rulebook_text("Называется выстрел") == "Точечная атака"
+    assert canonicalize_rulebook_text("Проигрывает: 2 Величина") == "Орда теряет 2 ед. Численности"
+    assert canonicalize_rulebook_text("Орда теряет 3 величины") == "Орда теряет 3 ед. Численности"
+    print("Localization script, rulebook terminology, and enum interpolation smoke tests passed.")
+    sys.exit(0)
 
 class MT:
     def __init__(self):
