@@ -1,33 +1,71 @@
 {
   "_id": "enmychaos0000004",
-  "name": "Chaos Heretic",
+  "name": "Еретик Хаоса",
   "type": "enemy",
   "img": "systems/deathwatch/icons/enemies/chaos/chaos-heretic.webp",
   "system": {
     "characteristics": {
-      "ws": { "base": 28 },
-      "bs": { "base": 25 },
-      "str": { "base": 30 },
-      "tg": { "base": 30 },
-      "ag": { "base": 30 },
-      "int": { "base": 20 },
-      "per": { "base": 30 },
-      "wil": { "base": 40 },
-      "fs": { "base": 20 }
+      "ws": {
+        "base": 28
+      },
+      "bs": {
+        "base": 25
+      },
+      "str": {
+        "base": 30
+      },
+      "tg": {
+        "base": 30
+      },
+      "ag": {
+        "base": 30
+      },
+      "int": {
+        "base": 20
+      },
+      "per": {
+        "base": 30
+      },
+      "wil": {
+        "base": 40
+      },
+      "fs": {
+        "base": 20
+      }
     },
-    "wounds": { "base": 10, "max": 10, "value": 0 },
-    "fatigue": { "value": 0, "max": 0 },
+    "wounds": {
+      "base": 10,
+      "max": 10,
+      "value": 0
+    },
+    "fatigue": {
+      "value": 0,
+      "max": 0
+    },
     "skills": {
-      "awareness": { "trained": true },
-      "climb": { "trained": true },
-      "speak_language": { "trained": true },
-      "swim": { "trained": true },
-      "survival": { "trained": true }
+      "awareness": {
+        "trained": true
+      },
+      "climb": {
+        "trained": true
+      },
+      "speak_language": {
+        "trained": true
+      },
+      "swim": {
+        "trained": true
+      },
+      "survival": {
+        "trained": true
+      }
     },
-    "psyRating": { "value": 0, "base": 0 },
+    "psyRating": {
+      "value": 0,
+      "base": 0
+    },
     "modifiers": [],
     "conditions": {},
-    "description": "<p>Few prosper or survive in the service and worship of the Dark Gods thanks to their cruelty, capriciousness and thirst for human life. Those that do are fanatics, dark souls who have given themselves over utterly to the worship of Chaos, steeped in sin and depravity and far from sane. Although often undisciplined and unskilled in the arts of warfare, they are nevertheless extraordinarily dangerous, particularly in large numbers, because they are without fear and willing to die for their foul gods. They stop at nothing, no matter how horrific the deed, in the name of Chaos.</p><p><strong>Skills:</strong> Awareness (Per), Climb (S), Speak Language (Low Gothic, Unholy Tongue) (Int), Swim (S), Survival (Int).</p><p><strong>Talents:</strong> Berserk Charge, Furious Assault, Melee Weapon Training (Primitive), Pistol Training (SP).</p><p><strong>Traits:</strong> Resistance (Fear).</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 364</p>",
+    "description": "<p>Некоторые служители Тёмных богов выживают и даже процветают благодаря своей жестокости, непредсказуемости и жажде жизни. Так появляются фанатики — тёмные души, без остатка отдавшие себя поклонению Хаосу. Они погрязли во грехе и разврате и бесконечно далеки от здравомыслия. Как правило, это недисциплинированные и неумелые вояки, но это не делает их менее опасными: сбившись в большую толпу, фанатики забывают о страхе и готовы умереть за своих нечестивых богов. Во имя Хаоса они не останавливаются ни перед чем, даже перед самым ужасным деянием.</p><p><strong>Умения:</strong> Внимательность (Вос), Лазание (С), Знание языка (Низкий готик, Нечестивый язык) (Инт), Плавание (С), Выживание (Инт).</p><p><strong>Таланты:</strong> Неистовый натиск, Яростное нападение, Владение холодным оружием (Примитивное), Владение пистолетами (Твёрдотельное).</p><p><strong>Особенности:</strong> Сопротивление (Страх).</p><p><strong>Источник:</strong> Deathwatch: Основная книга правил, стр. 415.</p>",
     "classification": "chaos"
   },
   "items": [
@@ -162,6 +200,9 @@
     "disposition": -1,
     "width": 1,
     "height": 1,
-    "bar1": { "attribute": "wounds" }
-  }
+    "bar1": {
+      "attribute": "wounds"
+    }
+  },
+  "description": "<p>Некоторые служители Тёмных богов выживают и даже процветают благодаря своей жестокости, непредсказуемости и жажде жизни. Так появляются фанатики — тёмные души, без остатка отдавшие себя поклонению Хаосу. Они погрязли во грехе и разврате и бесконечно далеки от здравомыслия. Как правило, это недисциплинированные и неумелые вояки, но это не делает их менее опасными: сбившись в большую толпу, фанатики забывают о страхе и готовы умереть за своих нечестивых богов. Во имя Хаоса они не останавливаются ни перед чем, даже перед самым ужасным деянием.</p><p><strong>Умения:</strong> Внимательность (Вос), Лазание (С), Знание языка (Низкий готик, Нечестивый язык) (Инт), Плавание (С), Выживание (Инт).</p><p><strong>Таланты:</strong> Неистовый натиск, Яростное нападение, Владение холодным оружием (Примитивное), Владение пистолетами (Твёрдотельное).</p><p><strong>Особенности:</strong> Сопротивление (Страх).</p><p><strong>Источник:</strong> Deathwatch: Основная книга правил, стр. 415.</p>"
 }
