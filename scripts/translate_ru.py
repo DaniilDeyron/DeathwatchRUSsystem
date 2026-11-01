@@ -320,6 +320,7 @@ MANUAL.update({
     "Astartes shotgun":"Дробовик астартес","Astartes Shotgun":"Дробовик астартес",
     "Astartes chainsword":"Цепной меч астартес","Astartes Chainsword":"Цепной меч астартес",
     "Astartes power sword":"Силовой меч астартес","Astartes Power Sword":"Силовой меч астартес",
+    "Chaos Heretic":"Еретик Хаоса","Chaos Heretics":"Еретики Хаоса",
 })
 MANUAL.update({
     "All-Out Attack":"Атака всеми силами","All Out Attack":"Атака всеми силами",
