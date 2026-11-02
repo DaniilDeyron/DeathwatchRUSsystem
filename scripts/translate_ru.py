@@ -644,7 +644,7 @@ if "--validate" in sys.argv:
     assert canonicalize_rulebook_text("Называется выстрел") == "Точечная атака"
     assert canonicalize_rulebook_text("Проигрывает: 2 Величина") == "Орда теряет 2 ед. Численности"
     assert canonicalize_rulebook_text("Орда теряет 3 величины") == "Орда теряет 3 ед. Численности"
-    assert canonicalize_rulebook_text("Урон по величине Орды") == "урон по Ордам"
+    assert canonicalize_rulebook_text("Урон по величине Орды") == "Урон по Ордам"
     assert canonicalize_rulebook_text("Точный выстрел") == "Точечная атака"
     assert GLOSSARY.get("Awareness") == "Бдительность"
     assert GLOSSARY.get("Contortionist") == "Ловкач"
