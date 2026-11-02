@@ -766,14 +766,14 @@ def encode_js_string(raw_value, source_quote='"'):
             decoded = raw_value
     except Exception:
         decoded = raw_value
-    return json.dumps(translator.rich(decoded), ensure_ascii=False)
+    return json.dumps(canonicalize_rulebook_text(translator.rich(decoded)), ensure_ascii=False)
 
 def translate_template_content(content):
     body = translator.rich(content)
     body = JS_ENUM_EXPR_RE.sub(lambda x: "$" + "{game.i18n.localize(" + x.group(1) + ")}", body)
     for enum in ("dmgType","damageType","critLocation","location","effectType","valueAffected","resistDifficulty"):
         body = body.replace("$" + "{" + enum + "}", "$" + "{game.i18n.localize(" + enum + ")}")
-    return body
+    return canonicalize_rulebook_text(body)
 
 # Collect natural language in all pack-source JSON and display-data JSON.
 for p in ROOT.rglob("*.json"):
@@ -863,9 +863,9 @@ def translate_json(x):
     if isinstance(x,dict):
         out={}
         for k,v in x.items():
-            if isinstance(v,str) and k.lower() in USER_FIELDS: out[k]=translator.rich(v)
-            elif isinstance(v,str) and k.lower()=="descriptor": out[k]=translator.simple(v)
-            elif isinstance(v,str) and k.lower() not in TECHNICAL_KEYS and likely_prose(v): out[k]=translator.rich(v)
+            if isinstance(v,str) and k.lower() in USER_FIELDS: out[k]=canonicalize_rulebook_text(translator.rich(v))
+            elif isinstance(v,str) and k.lower()=="descriptor": out[k]=canonicalize_rulebook_text(translator.simple(v))
+            elif isinstance(v,str) and k.lower() not in TECHNICAL_KEYS and likely_prose(v): out[k]=canonicalize_rulebook_text(translator.rich(v))
             else: out[k]=translate_json(v)
         return out
     if isinstance(x,list): return [translate_json(v) for v in x]
@@ -881,11 +881,11 @@ for p in ROOT.rglob("*.json"):
 
 def translate_html(raw):
     def attr_sub(m):
-        return m.group("prefix")+m.group("q")+translator.rich(m.group("value"))+m.group("q")
+        return m.group("prefix")+m.group("q")+canonicalize_rulebook_text(translator.rich(m.group("value")))+m.group("q")
     def region_sub(region):
         region=ATTR.sub(attr_sub,region)
-        return "".join(piece if not piece or PROTECTED.fullmatch(piece) else translator.simple(piece) for piece in PROTECTED.split(region))
-    return "".join(x if not x or SCRIPT_STYLE.fullmatch(x) else region_sub(x) for x in SCRIPT_STYLE.split(raw))
+        return canonicalize_rulebook_text("".join(piece if not piece or PROTECTED.fullmatch(piece) else translator.simple(piece) for piece in PROTECTED.split(region)))
+    return canonicalize_rulebook_text("".join(x if not x or SCRIPT_STYLE.fullmatch(x) else region_sub(x) for x in SCRIPT_STYLE.split(raw)))
 
 for p in html_files:
     text = p.read_text(encoding="utf-8")
@@ -1060,8 +1060,8 @@ def js_sub(p, raw):
     validation_lines=[]
     for line in raw.splitlines(keepends=True):
         if "Validation." in line:
-            line=JS_VALIDATION_DQ.sub(lambda m:'"'+translator.rich(m.group(1))+'"',line)
-            line=JS_VALIDATION_SQ.sub(lambda m:"'"+translator.rich(m.group(1))+"'",line)
+            line=JS_VALIDATION_DQ.sub(lambda m:'"'+canonicalize_rulebook_text(translator.rich(m.group(1)))+'"',line)
+            line=JS_VALIDATION_SQ.sub(lambda m:"'"+canonicalize_rulebook_text(translator.rich(m.group(1)))+"'",line)
         validation_lines.append(line)
     raw="".join(validation_lines)
     # The fork has a different Foundry system ID. Register the custom sheets under
