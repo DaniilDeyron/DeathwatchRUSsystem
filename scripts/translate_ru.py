@@ -626,7 +626,7 @@ def canonicalize_rulebook_text(value):
 
     # Normalize Horde-specific phrase after the individual noun replacements above.
     value = re.sub(
-        r"(?i)\\bурон по (?:величин[еы]|численност[ьи]) орды\\b",
+        r"(?i)\bурон по (?:величин[еы]|численност[ьи]) орды\b",
         lambda m: "Урон по Ордам" if m.group(0)[:1].isupper() else "урон по Ордам",
         value
     )
