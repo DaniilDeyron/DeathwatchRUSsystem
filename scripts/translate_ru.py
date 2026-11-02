@@ -351,6 +351,147 @@ MANUAL.update({
     "Astartes Hand Flamer":"Ручной огнемёт астартес","Astartes Heavy Flamer":"Тяжёлый огнемёт астартес",
     "Astartes Assault Cannon":"Штурмовая пушка астартес","Astartes Shotgun":"Дробовик астартес"
 })
+
+# Rulebook v1.0 terminology overrides. These mappings take precedence over old cache values.
+MANUAL.update({
+    # Exact skill names from Chapter III, pp. 96-102.
+    "Awareness":"Бдительность",
+    "Carouse":"Кутёж",
+    "Charm":"Обаяние",
+    "Climb":"Лазание",
+    "Concealment":"Скрытность",
+    "Contortionist":"Ловкач",
+    "Deceive":"Обман",
+    "Dodge":"Уклонение",
+    "Evaluate":"Оценка",
+    "Gamble":"Азартные игры",
+    "Inquiry":"Дознание",
+    "Intimidate":"Запугивание",
+    "Logic":"Логика",
+    "Scrutiny":"Проницательность",
+    "Search":"Поиск",
+    "Silent Move":"Бесшумный шаг",
+    "Swim":"Плавание",
+    "Acrobatics":"Акробатика",
+    "Security":"Безопасность",
+    "Demolitions":"Взрывотехника",
+    "Drive - Ground":"Вождение (Наземная техника)",
+    "Invocation":"Воззвание",
+    "Survival":"Выживание",
+    "Tracking":"Выслеживание",
+    "Literacy":"Грамотность",
+    "Interrogation":"Допрос",
+    "Wrangling":"Дрессура",
+    "Forbidden Lore":"Запретное знание",
+    "Performer":"Исполнитель",
+    "Sleight of Hand":"Ловкость рук",
+    "Medicae":"Медика",
+    "Navigation":"Навигация",
+    "Common Lore":"Обыденное знание",
+    "Pilot":"Пилотирование",
+    "Psyniscience":"Псичувство",
+    "Trade":"Ремесло",
+    "Shadowing":"Слежка",
+    "Tactics":"Тактика",
+    "Tech-Use":"Техпользование",
+    "Scholastic Lore":"Учёное знание",
+    "Chem-Use":"Химика",
+    "Cipher":"Шифры",
+    "Speak Language":"Языкознание",
+    "Basic Skills":"Основные умения",
+    "Advanced Skills":"Продвинутые умения",
+    "Skills":"Умения",
+    "Skill":"Умение",
+
+    # The characteristic is called Toughness in English and Выносливость in this book.
+    "Toughness":"Выносливость",
+    "Toughness (T)":"Выносливость (Вын)",
+    "Toughness Bonus":"Бонус Выносливости",
+    "TB":"БВ",
+    "Weapon Skill":"Ближний бой",
+    "Weapon Skill (WS)":"Ближний бой (ББ)",
+    "WS":"ББ",
+    "Ballistic Skill":"Дальний бой",
+    "Ballistic Skill (BS)":"Дальний бой (ДБ)",
+    "BS":"ДБ",
+
+    # Exact combat-action labels from Table 8-1, p. 267 and Chapter VIII.
+    "All Out Attack":"Атака всеми силами",
+    "All-Out Attack":"Атака всеми силами",
+    "Total Attack":"Атака всеми силами",
+    "Full Attack":"Атака всеми силами",
+    "Called Shot":"Точечная атака",
+    "Called shot":"Точечная атака",
+    "Called-Shot":"Точечная атака",
+    "Aim":"Прицеливание",
+    "Standard Attack":"Стандартная атака",
+    "Charge":"Натиск",
+    "Run":"Бег",
+    "Delay":"Выжидание",
+    "Disengage":"Выход из боя",
+    "Move":"Движение",
+    "Full Auto Burst":"Длинная очередь",
+    "Full-Auto Burst":"Длинная очередь",
+    "Semi-Auto Burst":"Короткая очередь",
+    "Grapple":"Захват",
+    "Defensive Stance":"Защитная стойка",
+    "Use Warp":"Использование Варпа",
+    "Use Skill":"Использование умения",
+    "Overwatch":"Контроль сектора",
+    "Maneuver":"Манёвр",
+    "Multiple Attacks":"Множественные атаки",
+    "Stun":"Оглушение",
+    "Suppressing Fire":"Огонь на подавление",
+    "Guarded Action":"Осторожная атака",
+    "Parry":"Парирование",
+    "Reload":"Перезарядка",
+    "Ready":"Подготовка",
+    "Stand/Mount":"Подъём на ноги/оседлание",
+    "Jump or Leap":"Прыжок",
+    "Knock Down":"Сбивание с ног",
+    "Tactical Advance":"Тактическое перемещение",
+    "Dodge":"Уклонение",
+    "Brace Heavy Weapon":"Установка тяжёлого оружия",
+    "Called Shots":"Точечные атаки",
+
+    # Exact difficulty names from Table 7-3, p. 230.
+    "Ordinary":"Ординарная",
+    "Challenging":"Серьёзная",
+    "Difficult":"Сложная",
+    "Arduous":"Напряжённая",
+
+    # Core book names that occur on enemy profiles.
+    "Berserk Charge":"Яростный натиск",
+    "Furious Assault":"Неистовый натиск",
+    "Melee Weapon Training":"Владение холодным оружием",
+    "Pistol Weapon Training":"Владение пистолетами",
+    "Primitive":"Примитивное",
+    "Solid Projectile":"Твёрдотельное",
+    "Resistance":"Сопротивляемость",
+    "Fear":"Страх",
+    "Horde":"Орда",
+    "Hordes":"Орды",
+    "Magnitude":"Численность",
+    "Horde Magnitude":"Численность Орды",
+    "Current Magnitude":"Текущая Численность",
+    "Magnitude Lost":"Потери Численности",
+    "Horde Damage":"Урон по Ордам",
+    "Horde Breaking Test":"Проверка на панику Орды",
+
+    # Book terminology for the armory and combat summaries.
+    "Righteous Fury":"Праведный гнев",
+    "Righteous Fury Confirmation":"Подтверждение Праведного гнева",
+    "Penetration":"Бронебойность",
+    "Armor Penetration":"Бронебойность",
+    "Armour Penetration":"Бронебойность",
+    "Power Armour":"Силовой доспех",
+    "Power Armor":"Силовой доспех",
+    "Damage":"Урон",
+    "Damage Type":"Тип урона",
+    "Wounds":"Раны",
+    "Fatigue":"Усталость"
+})
+
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
 
@@ -411,80 +552,81 @@ def add_template(s, store):
             add(branch.group(6), store)
 
 RULEBOOK_TEXT_REWRITES = [
-    # Natural Russian forms observed in cached machine translations, normalized to the book.
-    (r"(?i)\bтотальная атака\b", "атака всеми силами"),
-    (r"(?i)\bтотальную атаку\b", "атаку всеми силами"),
-    (r"(?i)\bтотальной атакой\b", "атакой всеми силами"),
-    (r"(?i)\bтотальной атаки\b", "атаки всеми силами"),
-    (r"(?i)\bтотальной атаке\b", "атаке всеми силами"),
-    (r"(?i)\bтотальные атаки\b", "атаки всеми силами"),
-    (r"(?i)\bтотальных атак\b", "атак всеми силами"),
-    (r"(?i)\bназываемый выстрел\b", "точечная атака"),
-    (r"(?i)\bназываемого выстрела\b", "точечной атаки"),
-    (r"(?i)\bназываемому выстрелу\b", "точечной атаке"),
-    (r"(?i)\bназываемым выстрелом\b", "точечной атакой"),
-    (r"(?i)\bназываемом выстреле\b", "точечной атаке"),
-    (r"(?i)\bвыстрел по вызову\b", "точечная атака"),
-    (r"(?i)\bвыстрела по вызову\b", "точечной атаки"),
-    (r"(?i)\bвыстрелу по вызову\b", "точечной атаке"),
-    (r"(?i)\bвыстрелом по вызову\b", "точечной атакой"),
-    (r"(?i)\bправедная ярость\b", "праведный гнев"),
-    (r"(?i)\bправедной ярости\b", "праведного гнева"),
-    (r"(?i)\bправедную ярость\b", "праведный гнев"),
-    (r"(?i)\bправедной яростью\b", "праведным гневом"),
+    # Exact Russian-book terms. Do not globally replace the ordinary noun "величина":
+    # only references to an Orda's game statistic are normalized to "Численность".
+    (r"(?i)\bтотальная атака\b", "Атака всеми силами"),
+    (r"(?i)\bтотальную атаку\b", "Атаку всеми силами"),
+    (r"(?i)\bтотальной атакой\b", "Атакой всеми силами"),
+    (r"(?i)\bтотальной атаки\b", "Атаки всеми силами"),
+    (r"(?i)\bтотальной атаке\b", "Атаке всеми силами"),
+    (r"(?i)\bтотальные атаки\b", "Атаки всеми силами"),
+    (r"(?i)\bтотальных атак\b", "Атак всеми силами"),
+    (r"(?i)\bназывается выстрел\b", "Точечная атака"),
+    (r"(?i)\bназываемый выстрел\b", "Точечная атака"),
+    (r"(?i)\bназываемого выстрела\b", "Точечной атаки"),
+    (r"(?i)\bназываемому выстрелу\b", "Точечной атаке"),
+    (r"(?i)\bназываемым выстрелом\b", "Точечной атакой"),
+    (r"(?i)\bназываемом выстреле\b", "Точечной атаке"),
+    (r"(?i)\bвыстрел по вызову\b", "Точечная атака"),
+    (r"(?i)\bточный выстрел\b", "Точечная атака"),
+    (r"(?i)\bточного выстрела\b", "Точечной атаки"),
+    (r"(?i)\bточному выстрелу\b", "Точечной атаке"),
+    (r"(?i)\bточным выстрелом\b", "Точечной атакой"),
+    (r"(?i)\bправедная ярость\b", "Праведный гнев"),
+    (r"(?i)\bправедной ярости\b", "Праведного гнева"),
+    (r"(?i)\bправедную ярость\b", "Праведный гнев"),
+    (r"(?i)\bправедной яростью\b", "Праведным гневом"),
     (r"(?i)\bиндивидуальный режим\b", "режим одиночки"),
     (r"(?i)\bрежим одиночек\b", "режим одиночки"),
-    (r"(?i)\bизвестность\b", "слава"),
-    (r"(?i)\bбронепробиваемость\b", "бронебойность"),
-    (r"(?i)\bбонус стойкости\b", "бонус выносливости"),
-    (r"(?i)\bпроверка стойкости\b", "проверка выносливости"),
-    (r"(?i)\bтест стойкости\b", "проверка выносливости"),
-    (r"(?i)\bхарактеристика стойкость\b", "характеристика выносливость"),
-    (r"(?i)\bстепени успеха\b", "степени успеха"),
-    (r"(?i)\bстепени провала\b", "степени провала"),
-    # Horde strength is an abstract stat called "Численность" in Chapter XIII.
+    (r"(?i)\bизвестность\b", "Слава"),
+    (r"(?i)\bбронепробиваемость\b", "Бронебойность"),
+    (r"(?i)\bбонус стойкости\b", "бонус Выносливости"),
+    (r"(?i)\bпроверка стойкости\b", "проверка Выносливости"),
+    (r"(?i)\bтест стойкости\b", "проверка Выносливости"),
+    (r"(?i)\bхарактеристика стойкость\b", "характеристика Выносливость"),
     (r"(?i)\bвеличина\s+орды\b", "Численность Орды"),
     (r"(?i)\bвеличину\s+орды\b", "Численность Орды"),
     (r"(?i)\bвеличины\s+орды\b", "Численности Орды"),
     (r"(?i)\bвеличиной\s+орды\b", "Численностью Орды"),
-    (r"(?i)\bвеличина\b", "Численность"),
-    (r"(?i)\bвеличины\b", "Численности"),
-    (r"(?i)\bвеличину\b", "Численность"),
-    (r"(?i)\bвеличиной\b", "Численностью"),
-    (r"(?i)\bвеличине\b", "Численности"),
-    (r"(?i)\bвеличин\b", "Численности"),
-    (r"(?i)\bназванный выстрел\b", "точечная атака"),
-    (r"(?i)\bназывается выстрел\b", "точечная атака"),
+    (r"(?i)\bвеличине\s+орды\b", "Численности Орды"),
+    (r"(?i)\bурон по величине орды\b", "урон по Ордам"),
+    (r"(?i)\bурон величине орды\b", "урон по Ордам"),
 ]
 
 def canonicalize_rulebook_text(value):
     if not isinstance(value, str) or not value:
         return value
     for pattern, replacement in RULEBOOK_TEXT_REWRITES:
-        value = re.sub(
-            pattern,
-            lambda m, replacement=replacement: (
-                replacement[:1].upper() + replacement[1:]
-                if m.group(0)[:1].isupper() else replacement
-            ),
-            value
-        )
-    # Phrase-level forms used in combat chat must read naturally in Russian.
+        value = re.sub(pattern, lambda m, replacement=replacement: (
+            replacement[:1].upper() + replacement[1:] if m.group(0)[:1].isupper() else replacement
+        ), value)
+
+    # The English combat-card output has no explicit subject; in Horde context it means
+    # the Horde loses a point of its abstract Strength/Count, not generic damage.
     value = re.sub(
-        r"(?i)\b(теряет|теряют|потеряла|потеряли|потеряет|уменьшает|уменьшила|уменьшил)\s*:\s*(\d+)\s*(?:единиц[уы]?\s+)?(?:величин[ауы]?|численност[ьиью])\b",
-        lambda m: f"{m.group(1).capitalize()} {m.group(2)} ед. Численности",
-        value
-    )
-    value = re.sub(
-        r"(?i)\b(теряет|теряют|потеряла|потеряли|потеряет|уменьшает|уменьшила|уменьшил)\s+(\d+)\s+(?:единиц[уы]?\s+)?(?:величин[ауы]?|численност[ьиью])\b",
-        lambda m: f"{m.group(1)} {m.group(2)} ед. Численности",
-        value
-    )
-    value = re.sub(
-        r"(?i)\b(?:проигрывает|теряет)\s*:\s*(\d+)\s*(?:величин[ауы]?|численност[ьиью])\b",
+        r"(?i)\b(?:проигрывает|теряет|потеряла|потеряли|теряют|уменьшает|уменьшила|уменьшил)\s*:\s*(\d+)\s*(?:единиц[уы]?\s+)?(?:величин[ауы]?|численност[ьиью])\b",
         lambda m: f"Орда теряет {m.group(1)} ед. Численности",
         value
     )
+    value = re.sub(
+        r"(?i)\b(?:орда\s+)?(?:теряет|потеряла|потеряли|теряют|уменьшает|уменьшила|уменьшил)\s+(\d+)\s*(?:единиц[уы]?\s+)?(?:величин[ауы]?|численност[ьиью])\b",
+        lambda m: f"Орда теряет {m.group(1)} ед. Численности",
+        value
+    )
+
+    # Translate field headings that appear inside enemy/item profile descriptions.
+    for pattern, replacement in (
+        (r"(?i)\bSkills:", "Умения:"),
+        (r"(?i)\bTalents:", "Таланты:"),
+        (r"(?i)\bTraits:", "Особенности:"),
+        (r"(?i)\bArmor:", "Броня:"),
+        (r"(?i)\bArmour:", "Броня:"),
+        (r"(?i)\bWeapons:", "Вооружение:"),
+        (r"(?i)\bGear:", "Снаряжение:"),
+        (r"(?i)\bSpecial Rules:", "Специальные правила:"),
+        (r"(?i)\bSource:", "Источник:")
+    ):
+        value = re.sub(pattern, replacement, value)
     return value
 
 
@@ -502,7 +644,13 @@ if "--validate" in sys.argv:
     assert canonicalize_rulebook_text("Называется выстрел") == "Точечная атака"
     assert canonicalize_rulebook_text("Проигрывает: 2 Величина") == "Орда теряет 2 ед. Численности"
     assert canonicalize_rulebook_text("Орда теряет 3 величины") == "Орда теряет 3 ед. Численности"
-    print("Localization script, rulebook terminology, and enum interpolation smoke tests passed.")
+    assert canonicalize_rulebook_text("Урон по величине Орды") == "урон по Ордам"
+    assert canonicalize_rulebook_text("Точный выстрел") == "Точечная атака"
+    assert GLOSSARY.get("Awareness") == "Бдительность"
+    assert GLOSSARY.get("Contortionist") == "Ловкач"
+    assert GLOSSARY.get("Inquiry") == "Дознание"
+    assert GLOSSARY.get("Defensive Stance") == "Защитная стойка"
+    print("Localization script, rulebook terminology, skill glossary, and enum interpolation tests passed.")
     sys.exit(0)
 
 class MT:
@@ -691,6 +839,7 @@ def translate_json(x):
             else: out[k]=translate_json(v)
         return out
     if isinstance(x,list): return [translate_json(v) for v in x]
+    if isinstance(x,str): return canonicalize_rulebook_text(x)
     return x
 
 for p in ROOT.rglob("*.json"):
