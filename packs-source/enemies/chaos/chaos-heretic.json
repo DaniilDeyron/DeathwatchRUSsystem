@@ -65,14 +65,14 @@
     },
     "modifiers": [],
     "conditions": {},
-    "description": "<p>Некоторые служители Тёмных богов выживают и даже процветают благодаря своей жестокости, непредсказуемости и жажде жизни. Так появляются фанатики — тёмные души, без остатка отдавшие себя поклонению Хаосу. Они погрязли во грехе и разврате и бесконечно далеки от здравомыслия. Как правило, это недисциплинированные и неумелые вояки, но это не делает их менее опасными: сбившись в большую толпу, фанатики забывают о страхе и готовы умереть за своих нечестивых богов. Во имя Хаоса они не останавливаются ни перед чем, даже перед самым ужасным деянием.</p><p><strong>Skills:</strong> Awareness (Per), Climb (S), Speak Language (Low Gothic, Unholy Tongue) (Int), Swim (S), Survival (Int).</p><p><strong>Talents:</strong> Berserk Charge, Furious Assault, Melee Weapon Training (Primitive), Pistol Training (SP).</p><p><strong>Traits:</strong> Resistance (Fear).</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 364</p>",
+    "description": "<p>Некоторые служители Тёмных богов выживают и даже процветают, благодаря своей жестокости, непредсказуемости и жажде жизни. Так появляются фанатики, тёмные души, что без остатка отдали себя поклонению Хаосу. Они шествуют во грехе и разврате и бесконечно далеки от здравомыслия. Как правило, это недисциплинированные и неумелые вояки, но это не делает их менее опасными: сбившись в большую толпу, фанатики забывают о страхе и готовы умереть за своих нечестивых богов. Во имя Хаоса они не останавливаются ни перед чем, даже перед самым ужасным деянием.</p>\n<p><strong>Характеристики:</strong> Ближний бой 28; Дальний бой 25; Сила 30; Выносливость 30; Ловкость 30; Интеллект 20; Восприятие 30; Сила воли 40; Общительность 20.</p>\n<p><strong>Передвижение:</strong> 3/6/9/18. <strong>Раны:</strong> 10. <strong>Численность:</strong> 34.</p>\n<p><strong>Умения:</strong> Бдительность (Вос), Лазание (С), Языкознание (Низкий готический, Нечестивый язык) (Инт), Плавание (С), Выживание (Инт).</p>\n<p><strong>Таланты:</strong> Яростный натиск, Неистовый натиск, Владение холодным оружием (Примитивное), Владение пистолетами (Твёрдотельное).</p>\n<p><strong>Особенности:</strong> Кровожадная толпа (Орда), Размер (Огромный).</p>\n<p><strong>Броня:</strong> Флак-робы и медные панцири (Орда 5).</p>\n<p><strong>Вооружение:</strong> моноклинок (1к10+3 Р; ББ 2), автопистолет (30 м.; О/—/6; 1к10+2 У; ББ 0; Маг. 18; Пер. ПД).</p>\n<p><strong>Снаряжение:</strong> респиратор, три магазина для автопистолета.</p>\n<p><strong>Правило Орды:</strong> еретики Хаоса могут образовывать Орды (см. стр. 413).</p>\n<p><strong>Источник:</strong> Основная книга правил Deathwatch, стр. 415.</p>",
     "classification": "chaos"
   },
   "items": [
     {
       "_id": "eichaos040000001",
       "_sourceId": "tal00000000027",
-      "name": "Berserk Charge",
+      "name": "Яростный натиск",
       "type": "talent",
       "img": "systems/deathwatch/icons/talents/generic.webp",
       "system": {
@@ -88,7 +88,7 @@
     {
       "_id": "eichaos040000002",
       "_sourceId": "tal00000000091",
-      "name": "Furious Assault",
+      "name": "Неистовый натиск",
       "type": "talent",
       "img": "systems/deathwatch/icons/talents/generic.webp",
       "system": {
@@ -104,7 +104,7 @@
     {
       "_id": "eichaos040000003",
       "_sourceId": "tal00000000164",
-      "name": "Melee Weapon Training (Primitive)",
+      "name": "Владение холодным оружием (Примитивное)",
       "type": "talent",
       "img": "systems/deathwatch/icons/talents/generic.webp",
       "system": {
@@ -120,7 +120,7 @@
     {
       "_id": "eichaos040000004",
       "_sourceId": "tal00000000198",
-      "name": "Pistol Weapon Training (SP)",
+      "name": "Владение пистолетами (Твёрдотельное)",
       "type": "talent",
       "img": "systems/deathwatch/icons/talents/generic.webp",
       "system": {
@@ -135,7 +135,7 @@
     },
     {
       "_id": "eichaos040000005",
-      "name": "Flak Robes and Brazen Carapace",
+      "name": "Флак-робы и медные панцири",
       "type": "armor",
       "img": "systems/deathwatch/icons/generic/armor.webp",
       "system": {
@@ -145,14 +145,14 @@
         "right_arm": 5,
         "left_leg": 4,
         "right_leg": 4,
-        "description": "<p>Makeshift armor composed of flak cloth robes and scavenged carapace plates bearing the blasphemous symbols of Chaos.</p>",
+        "description": "<p>Флак-робы и медные панцири.</p>",
         "modifiers": [],
         "equipped": true
       }
     },
     {
       "_id": "eichaos040000006",
-      "name": "Monoedged Blade",
+      "name": "Моноклинок",
       "type": "weapon",
       "img": "systems/deathwatch/icons/weapons/combat_knife.webp",
       "system": {
@@ -167,13 +167,13 @@
         "equipped": true,
         "attachedQualities": [],
         "attachedUpgrades": [],
-        "description": "<p>A crude blade with a single sharpened edge, deadly in the hands of a fanatic.</p>",
+        "description": "",
         "modifiers": []
       }
     },
     {
       "_id": "eichaos040000007",
-      "name": "Autopistol",
+      "name": "Автопистолет",
       "type": "weapon",
       "img": "systems/deathwatch/icons/weapons/autopistol.webp",
       "system": {
@@ -188,13 +188,13 @@
         "equipped": true,
         "attachedQualities": [],
         "attachedUpgrades": [],
-        "description": "<p>A common solid-projectile sidearm, favored by cultists and heretics.</p>",
+        "description": "",
         "modifiers": []
       }
     }
   ],
   "prototypeToken": {
-    "name": "Chaos Heretic",
+    "name": "Еретик Хаоса",
     "displayName": 30,
     "actorLink": false,
     "disposition": -1,
@@ -204,5 +204,5 @@
       "attribute": "wounds"
     }
   },
-  "description": "<p>Некоторые служители Тёмных богов выживают и даже процветают благодаря своей жестокости, непредсказуемости и жажде жизни. Так появляются фанатики — тёмные души, без остатка отдавшие себя поклонению Хаосу. Они погрязли во грехе и разврате и бесконечно далеки от здравомыслия. Как правило, это недисциплинированные и неумелые вояки, но это не делает их менее опасными: сбившись в большую толпу, фанатики забывают о страхе и готовы умереть за своих нечестивых богов. Во имя Хаоса они не останавливаются ни перед чем, даже перед самым ужасным деянием.</p><p><strong>Skills:</strong> Awareness (Per), Climb (S), Speak Language (Low Gothic, Unholy Tongue) (Int), Swim (S), Survival (Int).</p><p><strong>Talents:</strong> Berserk Charge, Furious Assault, Melee Weapon Training (Primitive), Pistol Training (SP).</p><p><strong>Traits:</strong> Resistance (Fear).</p><p><strong>Source:</strong> Deathwatch Core Rulebook, p. 364</p>"
+  "description": "<p>Некоторые служители Тёмных богов выживают и даже процветают, благодаря своей жестокости, непредсказуемости и жажде жизни. Так появляются фанатики, тёмные души, что без остатка отдали себя поклонению Хаосу. Они шествуют во грехе и разврате и бесконечно далеки от здравомыслия. Как правило, это недисциплинированные и неумелые вояки, но это не делает их менее опасными: сбившись в большую толпу, фанатики забывают о страхе и готовы умереть за своих нечестивых богов. Во имя Хаоса они не останавливаются ни перед чем, даже перед самым ужасным деянием.</p>\n<p><strong>Характеристики:</strong> Ближний бой 28; Дальний бой 25; Сила 30; Выносливость 30; Ловкость 30; Интеллект 20; Восприятие 30; Сила воли 40; Общительность 20.</p>\n<p><strong>Передвижение:</strong> 3/6/9/18. <strong>Раны:</strong> 10. <strong>Численность:</strong> 34.</p>\n<p><strong>Умения:</strong> Бдительность (Вос), Лазание (С), Языкознание (Низкий готический, Нечестивый язык) (Инт), Плавание (С), Выживание (Инт).</p>\n<p><strong>Таланты:</strong> Яростный натиск, Неистовый натиск, Владение холодным оружием (Примитивное), Владение пистолетами (Твёрдотельное).</p>\n<p><strong>Особенности:</strong> Кровожадная толпа (Орда), Размер (Огромный).</p>\n<p><strong>Броня:</strong> Флак-робы и медные панцири (Орда 5).</p>\n<p><strong>Вооружение:</strong> моноклинок (1к10+3 Р; ББ 2), автопистолет (30 м.; О/—/6; 1к10+2 У; ББ 0; Маг. 18; Пер. ПД).</p>\n<p><strong>Снаряжение:</strong> респиратор, три магазина для автопистолета.</p>\n<p><strong>Правило Орды:</strong> еретики Хаоса могут образовывать Орды (см. стр. 413).</p>\n<p><strong>Источник:</strong> Основная книга правил Deathwatch, стр. 415.</p>"
 }
