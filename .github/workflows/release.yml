@@ -1,13 +1,13 @@
 name: Build and publish Deathwatch RU
-# [build-ru] v0.0.2-ru.21 rulebook terminology and sourcebook description alignment including Maxima multi-melta
+# [build-ru] v0.0.2-ru.22 rulebook terminology crosswalk, corrected enemy profile and Maxima description
 
 on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: "Release tag to create (example: v0.0.2-ru.21)"
+        description: "Release tag to create (example: v0.0.2-ru.22)"
         required: true
-        default: "v0.0.2-ru.21"
+        default: "v0.0.2-ru.22"
         type: string
   push:
     branches: [main]
@@ -88,7 +88,7 @@ jobs:
           const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
           manifest.id = 'deathwatch-ru';
           manifest.title = 'Warhammer 40,000: Deathwatch — Русская версия';
-          manifest.version = '0.0.2-ru.21';
+          manifest.version = '0.0.2-ru.22';
           manifest.url = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem';
           manifest.manifest = 'https://raw.githubusercontent.com/DaniilDeyron/DeathwatchRUSsystem/main/system.json';
           manifest.download = 'https://github.com/DaniilDeyron/DeathwatchRUSsystem/releases/latest/download/deathwatch-ru.zip';
@@ -184,7 +184,7 @@ jobs:
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             echo "tag_name=$INPUT_TAG" >> "$GITHUB_OUTPUT"
           elif [[ "$EVENT_NAME" == "push" && "$REF_NAME" == "main" ]]; then
-            echo "tag_name=v0.0.2-ru.21" >> "$GITHUB_OUTPUT"
+            echo "tag_name=v0.0.2-ru.22" >> "$GITHUB_OUTPUT"
           else
             echo "tag_name=$REF_NAME" >> "$GITHUB_OUTPUT"
           fi
