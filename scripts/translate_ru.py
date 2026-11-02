@@ -624,6 +624,13 @@ def canonicalize_rulebook_text(value):
             replacement[:1].upper() + replacement[1:] if m.group(0)[:1].isupper() else replacement
         ), value)
 
+    # Normalize Horde-specific phrase after the individual noun replacements above.
+    value = re.sub(
+        r"(?i)\\bурон по (?:величин[еы]|численност[ьи]) орды\\b",
+        lambda m: "Урон по Ордам" if m.group(0)[:1].isupper() else "урон по Ордам",
+        value
+    )
+
     # The English combat-card output has no explicit subject; in Horde context it means
     # the Horde loses a point of its abstract Strength/Count, not generic damage.
     value = re.sub(
