@@ -492,6 +492,29 @@ MANUAL.update({
     "Fatigue":"Усталость"
 })
 
+MANUAL.update({
+    # The table in the supplied book is titled "Базовые умения", not "Основные навыки".
+    "Basic Skill":"Базовое умение",
+    "Basic Skills":"Базовые умения",
+    "Advanced Skill":"Продвинутое умение",
+    "Advanced Skills":"Продвинутые умения",
+    "Toughness (T)":"Выносливость (Вын)",
+    "Toughness (TG)":"Выносливость (Вын)",
+    "Strength (S)":"Сила (С)",
+    "Agility (AG)":"Ловкость (Лов)",
+    "Intelligence (INT)":"Интеллект (Инт)",
+    "Perception (PER)":"Восприятие (Вос)",
+    "Willpower (WP)":"Сила воли (СВ)",
+    "Fellowship (FEL)":"Общительность (Общ)",
+    "S":"С",
+    "T":"Вын",
+    "AG":"Лов",
+    "INT":"Инт",
+    "PER":"Вос",
+    "WP":"СВ",
+    "FEL":"Общ"
+})
+
 GLOSSARY = {k: v for k, v in existing.items() if isinstance(v, str) and v.strip() and v.strip() != k.strip()}
 GLOSSARY.update(MANUAL)
 
